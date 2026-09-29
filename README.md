@@ -18,6 +18,15 @@ Each class has three tabs: `late` (best tested setup), `full` (longer full-rotat
 
 Alternate versions (`alts`) use the same stack format: `{"t": title, "s": note, "macros": [[...]], "delays": [ms per entry], "hold": [...], "extra": [{"label": ..., "stack": [...]}]}`. `extra` draws a hand-pressed key stack that isn't part of the macro.
 
+### Stigmas page (`stigmas.html` + `stigmas.js`)
+
+| File | What's in it |
+|---|---|
+| `data/stigmas.json` | Per class: `builds` (6 picks as `[name, target level]`, sorted most important first; one has `"main": true`), `order` (level-up steps `{"s": [[name, level], ...], "n": note}`; the page adds up the shard costs), `milestones` (`[label, text]`), `tiers` (`S/A/B/C` → `[name, why]`, all 13 stigmas), `image` (the list from the shared screenshot) + `imageNote`. Build `tag` picks the badge color: `Most used`, `Battle tank`, `Battle healer`, `Raid`, `PvP`, `Solo`, anything else = grey. |
+| `data/stigma_db.json` | All 104 stigmas keyed `class:Name`: TW/KO names, icon, cooldown, MP, level-1 description, effects at 5/10/15/20, `s25` (level-25 effect, KR/TW) and `note` (KR/TW patch differences). Refresh with `python tools/fetch_stigmas.py`; it keeps `s25` and `note`. |
+
+Shard costs are built into `stigmas.js`: levels 1–5 cost 1 shard each, 6–10 cost 2, 11–15 cost 4, 16–20 cost 8, and 21–25 cost 1 Advanced shard each.
+
 ### Stack format
 
 A macro is a list of entries, and each entry is the 4 rows of one hotbar key, **row 0 first** (row 0 fires first and sits just above the key in game):
@@ -34,7 +43,8 @@ A macro is a list of entries, and each entry is the 4 rows of one hotbar key, **
 
 1. Edit `data/macros.json` (and `data/skills.json` if cooldowns changed).
 2. Bump `meta.updated` and `meta.patchBaseline`, and add a line to `changelog`.
-3. Commit and push. GitHub Pages redeploys in about a minute.
+3. If a patch touched stigmas, run `python tools/fetch_stigmas.py`, update `s25`/`note` in `data/stigma_db.json` and the builds in `data/stigmas.json`, and bump its `meta.updated`.
+4. Commit and push. GitHub Pages redeploys in about a minute.
 
 ### Adding a skill icon
 

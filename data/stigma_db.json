@@ -1,0 +1,3238 @@
+{
+"_about": "All Stigma skills (13 per class) from the aion2.app Global client DB: names, icons, level-1 description, specialties at 5/10/15/20. s25 = level-25 specialty from the KR/TW client (not in the Global DB yet). note = KR/TW patch differences. Regenerate with tools/fetch_stigmas.py (keeps s25/note).",
+"gladiator:Armor of Balance": {
+"id": "11130000",
+"en": "Armor of Balance",
+"icon": "ICON_GL_SKILL_013",
+"d": "Increases Impact-type Resist by 50% for 10s.",
+"s": [
+[
+5,
+"+20% Ailment-type and Mental-type Resist"
+],
+[
+10,
+"x1.5 [Blood Absorption] effect for the duration"
+],
+[
+15,
+"x1.5 [Protection Armor] effect for the duration"
+],
+[
+20,
+"+50% Impact-type Resist increase"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 90.0,
+"mp": null,
+"tw": "均衡盔甲",
+"ko": "균형의 갑옷",
+"s25": "+30% Ailment Resist for the duration"
+},
+"gladiator:Assault Strike": {
+"id": "11700000",
+"en": "Assault Strike",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 998-998 damage up to 4 enemies within 4m of the target, with a 30% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Knockdown Chance"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲一擊",
+"ko": "강습 일격",
+"s25": "-1 min cooldown"
+},
+"gladiator:Blade Toss": {
+"id": "11080000",
+"en": "Blade Toss",
+"icon": "ICON_GL_SKILL_008",
+"d": "Deals 534-534 damage to a target within 20m and reduces Defense by 30% and Incoming Heal by 50% for 10s. 5 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+20% [Blade Toss] Incoming Heal reduction"
+],
+[
+10,
+"[Blade Toss] inflicts Slow for 5s"
+],
+[
+15,
+"[Blade Toss] breaks Protective Shields"
+],
+[
+20,
+"[Blade Dance] has 30% chance to inflict Knockdown for 3s"
+]
+],
+"m": 1,
+"cls": "gladiator",
+"cd": 20.0,
+"mp": null,
+"tw": "飛刀",
+"ko": "칼날 날리기",
+"s25": "Chains up to 2 extra hits"
+},
+"gladiator:Focused Block": {
+"id": "11110000",
+"en": "Focused Block",
+"icon": "ICON_GL_SKILL_011",
+"d": "Temporarily increases Block Damage Reduction by 100% and guarantees Parry. Restores 110 MP and Stamina once on Parry.",
+"s": [
+[
+5,
+"+1 consecutive use"
+],
+[
+10,
+"Changes to mobile skill"
+],
+[
+15,
+"+20% Move Speed for 3s on Parry"
+],
+[
+20,
+"Restores 10% HP once on Parry"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 20.0,
+"mp": null,
+"tw": "集中格擋",
+"ko": "집중 막기",
+"s25": "+1s block duration"
+},
+"gladiator:Forced Restraint": {
+"id": "11430000",
+"en": "Forced Restraint",
+"icon": "ICON_GL_SKILL_043",
+"d": "Deals 1059-1059 damage to a target within 4m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"50% chance to inflict Root for 5s"
+],
+[
+10,
+"-1,000 Stamina"
+],
+[
+15,
+"+2s Seal duration"
+],
+[
+20,
+"+25% Seal Chance"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 60.0,
+"mp": 100,
+"tw": "強制結縛",
+"ko": "강제 결박",
+"s25": "Ignores Block and Evasion"
+},
+"gladiator:Fracturing Rush": {
+"id": "11450000",
+"en": "Fracturing Rush",
+"icon": "ICON_GL_SKILL_045",
+"d": "Rushes forward 10m and deals 974-974 damage to up to 4 enemies on the path, with a 60% chance to inflict Root for 3s. 100% chance to inflict Root on NPC targets. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+2 max targets hit"
+],
+[
+10,
+"Adds [Destructive Rush] Chain Skill"
+],
+[
+15,
+"+20% Root Chance"
+],
+[
+20,
+"50% chance to inflict Airborne for 3s"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 90.0,
+"mp": 100,
+"tw": "粉碎突進",
+"ko": "분쇄 돌진",
+"s25": "Adds a 3rd chain skill"
+},
+"gladiator:Lifestealing Blade": {
+"id": "11340000",
+"en": "Lifestealing Blade",
+"icon": "ICON_GL_SKILL_034",
+"d": "Deals 1522-1522 damage to up to 4 enemies within 4m and absorbs 10% HP. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"Predation effect on party members for 20s"
+],
+[
+15,
+"-30s cooldown"
+],
+[
+20,
+"+5% HP absorbed"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 90.0,
+"mp": 200,
+"tw": "吸血劍",
+"ko": "흡혈의 검",
+"s25": "Predation extra damage always lands as a Critical Hit"
+},
+"gladiator:Lunge Stance": {
+"id": "11400000",
+"en": "Lunge Stance",
+"icon": "ICON_GL_SKILL_040",
+"d": "Increases the caster's Combat Speed by 20% for 10s.",
+"s": [
+[
+5,
+"+5% Double Chance for the duration"
+],
+[
+10,
+"Increases Move Speed by 20% for the duration"
+],
+[
+15,
+"x1.5 [Identify Weakness] effect for the duration"
+],
+[
+20,
+"50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 60.0,
+"mp": null,
+"tw": "突擊姿態",
+"ko": "돌격 자세",
+"s25": "50% chance to deal extra damage on Critical Hit for the duration",
+"note": "KR/TW Aug 12: the 20% MP-cost reduction was removed."
+},
+"gladiator:Rage Burst": {
+"id": "11390000",
+"en": "Rage Burst",
+"icon": "ICON_GL_SKILL_039",
+"d": "Deals 1327-1327 damage to a target within 4m. Inflicts Wounded for 10s on hit, reducing the enemy's Attack by 10%, and increases the caster's PvE Damage Boost by 10% and PvP Damage Boost by 5% for 10s. Triggers [Overhead Slam] on the target for 10s on hit. Wounded does not stack with the Shrink effect from the Templar skill [Taunt]. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"-15s [Rage Burst] cooldown"
+],
+[
+10,
+"+10% Attack reduction"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+10% PvE Damage Boost increase and +5% PvP Damage Boost increase"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 45.0,
+"mp": 100,
+"tw": "激怒爆炸",
+"ko": "격노 폭발",
+"s25": "Ignores Block and Evasion"
+},
+"gladiator:Tenaciousness": {
+"id": "11380000",
+"en": "Tenaciousness",
+"icon": "ICON_GL_SKILL_038",
+"d": "The caster becomes immune to damage and status effects for 3s. Increases PvE Damage Tolerance by 50% and PvP Damage Tolerance by 25% for 3s when the effect ends. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, and Barrier Spell effects cannot be applied for 30s if Invincibility stacking is blocked.",
+"s": [
+[
+5,
+"+100% Incoming Heal"
+],
+[
+10,
+"Restores 20% Max HP when the effect ends"
+],
+[
+15,
+"+20% Attack"
+],
+[
+20,
+"Trigger [Tenaciousness] when afflicted with Impact-type status"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 150.0,
+"mp": null,
+"tw": "毅力",
+"ko": "근성",
+"s25": "+2s duration"
+},
+"gladiator:Wave Armor": {
+"id": "11410000",
+"en": "Wave Armor",
+"icon": "ICON_GL_SKILL_041",
+"d": "Deals 207-207 Damage over Time to up to 4 enemies within 3m of the caster for 10s.",
+"s": [
+[
+5,
+"Absorbs 2% HP"
+],
+[
+10,
+"x1.5 [Experienced Counterstrike] effect for the duration"
+],
+[
+15,
+"x1.5 [Murderous Burst] effect for the duration"
+],
+[
+20,
+"Reflects 10% of damage taken"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 60.0,
+"mp": 200,
+"tw": "波動甲冑",
+"ko": "파동의 갑주",
+"s25": "Becomes a 2-hit attack (Jul 8)"
+},
+"gladiator:Wrath Wave": {
+"id": "11240000",
+"en": "Wrath Wave",
+"icon": "ICON_GL_SKILL_007",
+"d": "Deals 1068-1068 damage to up to 4 enemies within 5m of the caster and has a 50% chance to inflict Knockdown for 3s. 100% chance to inflict Knockdown on NPC targets. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"Reduces Attack by 20% for 5s"
+],
+[
+15,
+"Deals damage 1 additional time"
+],
+[
+20,
+"+25% Knockdown Chance"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 60.0,
+"mp": 200,
+"tw": "憤怒波動",
+"ko": "분노의 파동",
+"s25": "Becomes a ranged skill"
+},
+"gladiator:Zikel's Blessing": {
+"id": "11250000",
+"en": "Zikel's Blessing",
+"icon": "ICON_GL_SKILL_024",
+"d": "Increases the caster's Attack by 20% and Accuracy by 100 for 10s.",
+"s": [
+[
+5,
+"+50% Stagger Gauge Damage"
+],
+[
+10,
+"+10% PvE Damage Boost and +5% PvP Damage Boost"
+],
+[
+15,
+"+50% Multi-Hit chance"
+],
+[
+20,
+"+20% Status Effect Chance"
+]
+],
+"m": 0,
+"cls": "gladiator",
+"cd": 120.0,
+"mp": null,
+"tw": "吉凱爾祝福",
+"ko": "지켈의 축복",
+"s25": "+5s duration (Jul 8)",
+"note": "KR/TW Jul 8: self only (no longer party-wide); base effect adds +100 Accuracy."
+},
+"templar:Armor of Balance": {
+"id": "12200000",
+"en": "Armor of Balance",
+"icon": "ICON_GL_SKILL_013",
+"d": "Increases Impact-type Resist by 50% for 10s.",
+"s": [
+[
+5,
+"+20% Ailment-type, Mental-type Resist for the duration"
+],
+[
+10,
+"+20% Move Speed for the duration"
+],
+[
+15,
+"x1.5 [Warding Shield] effect for the duration"
+],
+[
+20,
+"+50% Impact-type Resist increase"
+]
+],
+"m": 1,
+"cls": "templar",
+"cd": 90.0,
+"mp": null,
+"tw": "均衡盔甲",
+"ko": "균형의 갑옷",
+"s25": "+30% Ailment Resist for the duration"
+},
+"templar:Assault Fury": {
+"id": "12700000",
+"en": "Assault Fury",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 951-951 damage to up to 4 enemies within 4m with a 30% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Stun Chance"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲猛擊",
+"ko": "강습 맹격",
+"s25": "-1 min cooldown"
+},
+"templar:Battlefield Banner": {
+"id": "12450000",
+"en": "Battlefield Banner",
+"icon": "ICON_TE_SKILL_045",
+"d": "Increases Attack proportional to Defense for 10s.",
+"s": [
+[
+5,
+"+10% Multi-Hit Chance for duration"
+],
+[
+10,
+"+10% Weapon Damage Boost for duration"
+],
+[
+15,
+"+20% Attack increase proportional to Defense"
+],
+[
+20,
+"-30s cooldown"
+]
+],
+"m": 1,
+"cls": "templar",
+"cd": 90.0,
+"mp": null,
+"tw": "戰場旗幟",
+"ko": "전장의 깃발",
+"s25": "+10% Combat Speed for the duration"
+},
+"templar:Comrade in Arms": {
+"id": "12250000",
+"en": "Comrade in Arms",
+"icon": "ICON_TE_SKILL_024",
+"d": "Increases the caster's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% and redirects damage taken by a party member within 40m each time they are attacked, sharing 50% to the caster and 50% to the attacked party member for 6s. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"Restores 25% of Max HP once if hit during Comrade in Arms while HP is 25% or less"
+],
+[
+10,
+"x1.5 [Guarding Seal] Protective Shield effect for the duration"
+],
+[
+15,
+"x1.5 [Block Pain] effect for the duration"
+],
+[
+20,
+"Restores 50% of caster's Max HP when the effect ends"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 120.0,
+"mp": null,
+"tw": "戰友保護",
+"ko": "전우 보호",
+"s25": "+20% Ailment Resist for the duration"
+},
+"templar:Doom Shield": {
+"id": "12070000",
+"en": "Doom Shield",
+"icon": "ICON_TE_SKILL_007",
+"d": "Rushes to a target within 20m and deals 1254-1254 damage. Has a 75% chance to inflict Knockdown for 3s. Grants a Protective Shield that blocks damage equaling 5% Max HP for 5s on hit. Triggers [Judgment] for 3s. 100% chance to inflict Knockdown on NPC targets. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Resets [Annihilate] cooldown on hit"
+],
+[
+10,
+"+200 Block for 5s on hit"
+],
+[
+15,
+"Resets cooldown on defeating an enemy"
+],
+[
+20,
+"+25% Knockdown Chance"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 30.0,
+"mp": null,
+"tw": "破滅盾牌",
+"ko": "파멸의 방패",
+"s25": "Ignores Block and Evasion"
+},
+"templar:Empyrean Lord's Punishment": {
+"id": "12310000",
+"en": "Empyrean Lord's Punishment",
+"icon": "ICON_TE_SKILL_029",
+"d": "Selects a target within 20m and deals 939-939 damage to up to 4 enemies within 4m of the target. Has a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% damage when less targets hit"
+],
+[
+10,
+"+50 Stagger Gauge Damage"
+],
+[
+15,
+"+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+],
+[
+20,
+"+25% Stun Chance"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 60.0,
+"mp": 200,
+"tw": "主神懲罰",
+"ko": "주신의 징벌",
+"s25": "+200% damage to targets with Incapacitated Immunity"
+},
+"templar:Executing Blade": {
+"id": "12410000",
+"en": "Executing Blade",
+"icon": "ICON_TE_SKILL_041",
+"d": "Deals 1335-1335 damage to up to 4 enemies within 4m and reduces Defense by 30% for 5s. Deals 20% more damage on attacking a target inflicted with Impact-type status. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"-15s cooldown"
+],
+[
+10,
+"Inflict Exposed for 5s on hit"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+30% damage on attacking a target inflicted with Impact-type status"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 45.0,
+"mp": 100,
+"tw": "處刑劍",
+"ko": "처형의 검",
+"s25": "Target's skill cooldowns +3%"
+},
+"templar:Grapple": {
+"id": "12220000",
+"en": "Grapple",
+"icon": "ICON_TE_SKILL_021",
+"d": "Selects a target within 20m and deals 1045-1045 damage to up to 4 enemies within 7m of the target, pulling them in front of the caster. Inflicts Root for 3s. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"50% chance to inflict Stun for 3s on hit"
+],
+[
+10,
+"20% of Max HP as Protective Shield for 10s on use"
+],
+[
+15,
+"-30s cooldown"
+],
+[
+20,
+"Up to +20% PvE Damage Tolerance and +10% PvP Damage Tolerance when more targets hit"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 90.0,
+"mp": 200,
+"tw": "逮捕",
+"ko": "나포",
+"s25": "+2 targets"
+},
+"templar:Nezekan's Shield": {
+"id": "12320000",
+"en": "Nezekan's Shield",
+"icon": "ICON_TE_SKILL_030",
+"d": "Grants a Protective Shield that blocks damage equaling 41% of Max HP for 3s to the caster and nearby party members within 40m.",
+"s": [
+[
+5,
+"+20% all Element Tolerance for Protective Shield duration"
+],
+[
+10,
+"+2s Protective Shield duration"
+],
+[
+15,
+"+20% PvE Damage Tolerance and +10% PvP Damage Tolerance for Protective Shield duration"
+],
+[
+20,
+"Restores 20% of Max HP when Protective Shield is removed"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 60.0,
+"mp": null,
+"tw": "奈薩肯盾牌",
+"ko": "네자칸의 방패",
+"s25": "+100% shield amount"
+},
+"templar:Noble Armor": {
+"id": "12230000",
+"en": "Noble Armor",
+"icon": "ICON_TE_SKILL_022",
+"d": "Increases Max HP by 5.4% for 300s and immediately restores HP by 5.4% of Max HP. Not affected by buff dispel effects.",
+"s": [
+[
+5,
+"+5% Defense for the duration"
+],
+[
+10,
+"x1.5 [Insulting Roar] effect for the duration"
+],
+[
+15,
+"x1.5 [Fury] effect for the duration"
+],
+[
+20,
+"+10% Incoming Heal for the duration"
+]
+],
+"m": 1,
+"cls": "templar",
+"cd": 300.0,
+"mp": null,
+"tw": "高潔甲冑",
+"ko": "고결의 갑주",
+"s25": "+10% PvE and +5% PvP Damage Tolerance for the duration",
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. The Global DB still shows 300 s."
+},
+"templar:Second Skin": {
+"id": "12190000",
+"en": "Second Skin",
+"icon": "ICON_TE_SKILL_018",
+"d": "Increases PvE Damage Tolerance by 30% and PvP Damage Tolerance by 15% for 10s. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"+10% all Element Tolerance for the duration"
+],
+[
+10,
+"+20% Block for the duration"
+],
+[
+15,
+"x1.5 [Ironclad Defense] effect for the duration"
+],
+[
+20,
+"+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase"
+]
+],
+"m": 1,
+"cls": "templar",
+"cd": 90.0,
+"mp": null,
+"tw": "雙重盔甲",
+"ko": "이중 갑옷",
+"s25": "Enrage effect x1.5 and -30s cooldown (Jul 8)"
+},
+"templar:Shield of Protection": {
+"id": "12110000",
+"en": "Shield of Protection",
+"icon": "ICON_TE_SKILL_011",
+"d": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
+"s": [
+[
+5,
+"+1 consecutive use"
+],
+[
+10,
+"Changes to mobile skill"
+],
+[
+15,
+"+20% Move Speed for 3s on Block"
+],
+[
+20,
+"Restores 10% HP once on Block"
+]
+],
+"m": 0,
+"cls": "templar",
+"cd": 20.0,
+"mp": null,
+"tw": "保護盾牌",
+"ko": "보호의 방패",
+"s25": "+1 consecutive use (Jul 29)"
+},
+"templar:Taunt": {
+"id": "12120000",
+"en": "Taunt",
+"icon": "ICON_TE_SKILL_012",
+"d": "Deals 888-888 damage to a target within 20m and increases Enmity by 20000. Inflict Shrink for 15s on hit and has a 50% chance to inflict Taunt for 3s if the target is a player. Shrink: Reduces Accuracy by 200 and Attack by 10% 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Adds 10% PvE Damage Tolerance reduction and 5% PvP Damage Tolerance reduction effect to Shrink"
+],
+[
+10,
+"+10% Shrink Attack reduction"
+],
+[
+15,
+"-5s cooldown"
+],
+[
+20,
+"+2s Taunt duration, +5s Shrink duration"
+]
+],
+"m": 1,
+"cls": "templar",
+"cd": 30.0,
+"mp": null,
+"tw": "挑釁",
+"ko": "도발",
+"s25": "Shrink also lowers the target's crit-damage resist by 5% (Jul 8, tuned Jul 22)",
+"note": "Its level-25 crit-damage-resist shred helps every party member, which is why Taunt is a top 25 pick even for DPS parties."
+},
+"assassin:Aerial Bind": {
+"id": "13230000",
+"en": "Aerial Bind",
+"icon": "ICON_AS_SKILL_026",
+"d": "Deals 837-837 damage to a target within 4m, with a 50% chance to inflict Airborne for 3s. Has a 100% chance to inflict Airborne for 3s on targets with 5 stacks of Insignia. 100% chance to inflict Airborne on NPC targets. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+16m [Aerial Bind] range"
+],
+[
+10,
+"Adds [Aerial Slaughter] Chain Skill"
+],
+[
+15,
+"x1.5 [Ambush Stance] effect for 10s on first strike of [Aerial Bind]"
+],
+[
+20,
+"-30s cooldown"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 120.0,
+"mp": 150,
+"tw": "空中捕縛",
+"ko": "공중 포박",
+"s25": "Ignores Block and Evasion"
+},
+"assassin:Assault Ambush": {
+"id": "13700000",
+"en": "Assault Ambush",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 977-977 damage to up to 4 enemies within 4m, with a 30% chance to inflict Blind for 5s. 100% chance to inflict Blind on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m range"
+],
+[
+20,
+"+20% Blind Chance"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲襲擊",
+"ko": "강습 습격",
+"s25": "-1 min cooldown"
+},
+"assassin:Evasion Contract": {
+"id": "13370000",
+"en": "Evasion Contract",
+"icon": "ICON_AS_SKILL_039",
+"d": "Removes Slow and Root from the caster and increases the caster's Evasion by 200 for 10s. Grants Slow and Root Immunity. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"25% chance of Projectile Immunity for the duration"
+],
+[
+10,
+"+30% Move Speed for the duration"
+],
+[
+15,
+"50% chance to reduce all skill cooldowns by 1s on Evasion for the duration"
+],
+[
+20,
+"+100 Evasion increase"
+]
+],
+"m": 1,
+"cls": "assassin",
+"cd": 90.0,
+"mp": null,
+"tw": "迴避契約",
+"ko": "회피의 계약",
+"s25": "Removes damage-over-time effects and grants immunity to them"
+},
+"assassin:Evasion Stance": {
+"id": "13080000",
+"en": "Evasion Stance",
+"icon": "ICON_AS_SKILL_024",
+"d": "Grants guaranteed evasion of all damage for a brief duration. Restores 110 MP and Stamina once on Evasion.",
+"s": [
+[
+5,
+"+1 consecutive use"
+],
+[
+10,
+"Changes to mobile skill"
+],
+[
+15,
+"+20% Move Speed for 3s on Evasion"
+],
+[
+20,
+"Restore 10% HP once after successfully evading"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 20.0,
+"mp": null,
+"tw": "迴避姿態",
+"ko": "회피 자세",
+"s25": "+1s duration"
+},
+"assassin:Illusive Clone": {
+"id": "13310000",
+"en": "Illusive Clone",
+"icon": "ICON_AS_SKILL_029",
+"d": "Removes [Heart Gore] cooldown and deals 20% of damage dealt as extra damage for 10s.",
+"s": [
+[
+5,
+"+10% Status Effect Chance for the duration"
+],
+[
+10,
+"+20% Critical Damage Boost for the duration"
+],
+[
+15,
+"x1.5 [Exploit Weakness] effect for the duration"
+],
+[
+20,
+"50% chance to deal extra damage on Critical Hit for the duration"
+]
+],
+"m": 1,
+"cls": "assassin",
+"cd": 90.0,
+"mp": 200,
+"tw": "幻影分身",
+"ko": "환영 분신",
+"s25": "Rear Critical Hits cut Illusive Clone's cooldown by 1s (Jul 8)"
+},
+"assassin:Savage Fang": {
+"id": "13270000",
+"en": "Savage Fang",
+"icon": "ICON_AS_SKILL_025",
+"d": "Deals 1074-1074 damage to up to 4 enemies within 4m and engraves 5 Insignias for 10s. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"+50 Stagger Gauge Damage"
+],
+[
+15,
+"+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+],
+[
+20,
+"Critical Hit on hit"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 60.0,
+"mp": 200,
+"tw": "猛獸獠牙",
+"ko": "맹수의 송곳니",
+"s25": "+200% damage to targets with Incapacitated Immunity"
+},
+"assassin:Shadow Walk": {
+"id": "13180000",
+"en": "Shadow Walk",
+"icon": "ICON_AS_SKILL_016",
+"d": "Grants Stealth for 20s. Cannot be used in combat and the effect is removed upon entering combat.",
+"s": [
+[
+5,
+"Critical Hit on attack during Stealth"
+],
+[
+10,
+"+20% Move Speed for the duration"
+],
+[
+15,
+"Available in combat"
+],
+[
+20,
+"Resets cooldown on player kill assists"
+]
+],
+"m": 1,
+"cls": "assassin",
+"cd": 120.0,
+"mp": null,
+"tw": "影步",
+"ko": "그림자 보행",
+"s25": "Attacking from behind while stealthed stuns for 3s"
+},
+"assassin:Shadowstep": {
+"id": "13140000",
+"en": "Shadowstep",
+"icon": "ICON_AS_SKILL_014",
+"d": "Deals 832-832 damage to a target within 4m. The caster moves back and gains Stealth for 3s.",
+"s": [
+[
+5,
+"40% chance to rotate and inflict Stun for 3s on hit"
+],
+[
+10,
+"Engraves 5 Insignias for 10s on hit"
+],
+[
+15,
+"+200 Evasion for 10s on use"
+],
+[
+20,
+"-15s cooldown"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 45.0,
+"mp": 100,
+"tw": "暗影步",
+"ko": "암영보",
+"s25": "+2s stealth duration"
+},
+"assassin:Smoke Bomb": {
+"id": "13250000",
+"en": "Smoke Bomb",
+"icon": "ICON_AS_SKILL_023",
+"d": "Deals 966-966 to a target within 10m and inflicts Blind for 5s. 15 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+10m range"
+],
+[
+10,
+"Changes to AoE Skill"
+],
+[
+15,
+"Inflicts Slow for 5s on hit"
+],
+[
+20,
+"+1 consecutive use"
+]
+],
+"m": 1,
+"cls": "assassin",
+"cd": 30.0,
+"mp": 100,
+"tw": "煙幕彈",
+"ko": "연막탄",
+"s25": "Applies Weakness for 5s on hit"
+},
+"assassin:Spiral Slice": {
+"id": "13280000",
+"en": "Spiral Slice",
+"icon": "ICON_AS_SKILL_022",
+"d": "Rushes to a target within 20m and deals 1074-1074 damage, removing 1 buff. Deals 386-386 extra damage based on the number of buffs removed. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Removes up to 2 buffs"
+],
+[
+10,
+"Rotates and inflicts Stun for 3s when removing 2 or more buffs"
+],
+[
+15,
+"Removes up to 3 buffs"
+],
+[
+20,
+"-30s cooldown"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 90.0,
+"mp": 200,
+"tw": "螺旋斬",
+"ko": "나선 베기",
+"s25": "Ignores Block and Evasion"
+},
+"assassin:Swift Contract": {
+"id": "13390000",
+"en": "Swift Contract",
+"icon": "ICON_AS_SKILL_037",
+"d": "Increases the caster's Combat Speed by 20% for 10s.",
+"s": [
+[
+5,
+"-20% MP Cost for the duration"
+],
+[
+10,
+"x1.5 [Rear Smite] effect for the duration"
+],
+[
+15,
+"x1.5 [Assault Stance] effect for the duration"
+],
+[
+20,
+"+10% additional Combat Speed"
+]
+],
+"m": 1,
+"cls": "assassin",
+"cd": 60.0,
+"mp": null,
+"tw": "神速契約",
+"ko": "신속의 계약",
+"s25": "+10% Attack for the duration"
+},
+"assassin:Throw Shadowblade": {
+"id": "13020000",
+"en": "Throw Shadowblade",
+"icon": "ICON_AS_SKILL_031",
+"d": "Deals 778-778 damage to a target within 20m and inflicts Slow, which reduces Move Speed by 40% for 5s. 15 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Adds [Shadowblade Pursuit] Chain Skill"
+],
+[
+10,
+"Resets cooldown on defeating an enemy"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"Changes to AoE Skill"
+]
+],
+"m": 1,
+"cls": "assassin",
+"cd": 30.0,
+"mp": null,
+"tw": "投擲暗劍",
+"ko": "암검 투척",
+"s25": "+30% Skill Speed"
+},
+"assassin:Triniel's Dagger": {
+"id": "13300000",
+"en": "Triniel's Dagger",
+"icon": "ICON_AS_SKILL_028",
+"d": "Deals 1374-1374 damage to a target within 4m and increases all of the target's skill cooldowns by 5% of their duration. Increases damage by 30% if attacking from behind the target. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Changes to mobile skill"
+],
+[
+10,
+"-10% all skill cooldowns on hit"
+],
+[
+15,
+"Resets cooldown on defeating an enemy with [Triniel's Dagger]"
+],
+[
+20,
+"+3% all skill cooldowns"
+]
+],
+"m": 0,
+"cls": "assassin",
+"cd": 45.0,
+"mp": 200,
+"tw": "崔妮爾匕首",
+"ko": "트리니엘의 비수",
+"s25": "+10% Back Damage Boost for 5s on hit"
+},
+"ranger:Ambush Kick": {
+"id": "14120000",
+"en": "Ambush Kick",
+"icon": "ICON_RA_SKILL_012",
+"d": "Moves behind a target within 5m and deals 857-857 damage and inflicts Knock Back. The caster moves back.",
+"s": [
+[
+5,
+"+5m Range"
+],
+[
+10,
+"10% Max HP Protective Shield for 5s on hit"
+],
+[
+15,
+"50% chance to inflict Stun for 3s on hit"
+],
+[
+20,
+"+50% Stun Chance"
+]
+],
+"m": 0,
+"cls": "ranger",
+"cd": 30.0,
+"mp": null,
+"tw": "突襲踢",
+"ko": "기습 차기",
+"s25": "2s stealth on use"
+},
+"ranger:Arrow Storm": {
+"id": "14270000",
+"en": "Arrow Storm",
+"icon": "ICON_RA_SKILL_026",
+"d": "Selects a target within 20m and deals 1184-1184 damage to up to 4 enemies within 4m of the target. Has a 50% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% max damage when more targets hit"
+],
+[
+10,
+"Inflicts Slow for 10s on hit"
+],
+[
+15,
+"+1s Stun duration"
+],
+[
+20,
+"+25% Stun Chance"
+]
+],
+"m": 0,
+"cls": "ranger",
+"cd": 60.0,
+"mp": 200,
+"tw": "箭矢暴風",
+"ko": "화살 폭풍",
+"s25": "Up to -30s cooldown, more the more targets it hits"
+},
+"ranger:Assault Smite": {
+"id": "14700000",
+"en": "Assault Smite",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 902-902 damage to up to 4 enemies within 4m of the target. Has a 30% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Stun Chance"
+]
+],
+"m": 0,
+"cls": "ranger",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲強擊",
+"ko": "강습 강타",
+"s25": "-1 min cooldown"
+},
+"ranger:Bow of Blessing": {
+"id": "14220000",
+"en": "Bow of Blessing",
+"icon": "ICON_RA_SKILL_030",
+"d": "Increases the caster's Critical Hit by 200 and Accuracy by 100 for 10s.",
+"s": [
+[
+5,
+"+50% Multi-Hit Chance for duration"
+],
+[
+10,
+"Increases Attack proportional to Critical Hit for the duration"
+],
+[
+15,
+"+20% Critical Damage Boost for the duration"
+],
+[
+20,
+"+7% Double Chance for the duration"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 120.0,
+"mp": null,
+"tw": "祝福之弓",
+"ko": "축복의 활",
+"s25": "+5s duration"
+},
+"ranger:Ensnaring Trap": {
+"id": "14180000",
+"en": "Ensnaring Trap",
+"icon": "ICON_RA_SKILL_018",
+"d": "Sets an explosive trap at the caster's location. The trap lasts for 30 seconds and deals 1218-1218 damage to up to 4 enemies within 5m when stepped on. Inflicts Airborne for 3s. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Adds [Guerilla Strike] Chain Skill"
+],
+[
+10,
+"Removes up to 2 buffs"
+],
+[
+15,
+"+1s Airborne duration"
+],
+[
+20,
+"-30s cooldown"
+]
+],
+"m": 0,
+"cls": "ranger",
+"cd": 90.0,
+"mp": null,
+"tw": "結縛圈套",
+"ko": "결박의 덫",
+"s25": "Ignores Block and Evasion"
+},
+"ranger:Explosive Arrow": {
+"id": "14360000",
+"en": "Explosive Arrow",
+"icon": "ICON_RA_SKILL_023",
+"d": "Selects a target within 20m and deals 1426-1426 damage to up to 4 enemies within 4m. Increases damage by 20% to targets afflicted with Slow or Root. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"-15s cooldown"
+],
+[
+10,
+"+10% additional damage to targets afflicted with Slow or Root"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+20% additional damage to targets afflicted with Slow or Root"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 45.0,
+"mp": null,
+"tw": "爆炸箭",
+"ko": "폭발 화살",
+"s25": "-50% [Explosive Arrow] cooldown on hitting a Slowed or Rooted target"
+},
+"ranger:Griffon Arrow": {
+"id": "14060000",
+"en": "Griffon Arrow",
+"icon": "ICON_RA_SKILL_006",
+"d": "Selects a target within 20m and deals 964-964 damage to up to 4 enemies within 4m. Inflicts Crimson Flames for 10s. Crimson Flames: Takes 482-482 Fire Damage over Time every 1s. Damage over Time amount increases when targets move. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Changes to mobile skill"
+],
+[
+10,
+"+5s Damage over Time duration"
+],
+[
+15,
+"Enhanced Crimson Flames - Extra damage when hit while afflicted with Crimson Flames"
+],
+[
+20,
+"-50% Damage over Time intervals"
+]
+],
+"m": 0,
+"cls": "ranger",
+"cd": 45.0,
+"mp": 200,
+"tw": "葛利芬箭",
+"ko": "그리폰 화살",
+"s25": "+20% damage to targets with Crimson Flames"
+},
+"ranger:Illusory Arrow": {
+"id": "14150000",
+"en": "Illusory Arrow",
+"icon": "ICON_RA_SKILL_015",
+"d": "Deals 1099-1099 to a target within 20m and inflicts Blind for 3s. 15 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+1s Blind duration"
+],
+[
+10,
+"Changes to AoE Skill"
+],
+[
+15,
+"Inflicts Slow for 5s on hit"
+],
+[
+20,
+"+1 consecutive use"
+]
+],
+"m": 0,
+"cls": "ranger",
+"cd": 30.0,
+"mp": 200,
+"tw": "幻影箭",
+"ko": "환영 화살",
+"s25": "Applies Weakness for 5s on hit"
+},
+"ranger:Mother Nature's Breath": {
+"id": "14350000",
+"en": "Mother Nature's Breath",
+"icon": "ICON_RA_SKILL_035",
+"d": "Increases the caster's PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and Critical Hit Resist by 200 for 6s. Grants Mother Nature's Embrace for the duration. Mother Nature's Embrace: The caster has a 50% chance to absorb 25% of damage taken as HP. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"Removes and grants immunity to Damage over Time effects"
+],
+[
+10,
+"x1.5 [Vigilant Eye] effect for the duration"
+],
+[
+15,
+"x1.5 [Unyielding Resolve] effect for the duration"
+],
+[
+20,
+"+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 90.0,
+"mp": null,
+"tw": "大自然吐息",
+"ko": "대자연의 숨결",
+"s25": "+15% Mother Nature proc chance"
+},
+"ranger:Sealing Arrow": {
+"id": "14160000",
+"en": "Sealing Arrow",
+"icon": "ICON_RA_SKILL_016",
+"d": "Deals 1043-1043 damage to a target within 20m. Has a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"50% chance to inflict Root for 5s on hit"
+],
+[
+10,
+"-1000 enemy Max Stamina for 5s on hit"
+],
+[
+15,
+"+2s Seal duration"
+],
+[
+20,
+"+25% Seal chance"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 60.0,
+"mp": 200,
+"tw": "封印箭",
+"ko": "봉인 화살",
+"s25": "Ignores Block and Evasion"
+},
+"ranger:Stealth": {
+"id": "14190000",
+"en": "Stealth",
+"icon": "ICON_RA_SKILL_019",
+"d": "Enter Stealth for 10s. Cannot be used in combat and the Stealth effect is removed upon entering combat.",
+"s": [
+[
+5,
+"Critical Hit on attack during Stealth"
+],
+[
+10,
+"+20% Move Speed for the duration"
+],
+[
+15,
+"Available in combat"
+],
+[
+20,
+"+10s Stealth duration"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 120.0,
+"mp": null,
+"tw": "隱身",
+"ko": "은신",
+"s25": "Attacking from stealth grants +1000 Crit for 5s"
+},
+"ranger:Supporting Fire": {
+"id": "14380000",
+"en": "Supporting Fire",
+"icon": "ICON_RA_SKILL_038",
+"d": "Summons an orb that provides supporting fire for 15s near the caster. The orb has a 25% chance to fire a shot dealing 243-243 damage and absorbing 1.5% HP. Firing Cooldown: 0.5s",
+"s": [
+[
+5,
+"+25% activation chance"
+],
+[
+10,
+"+15s duration"
+],
+[
+15,
+"-30s cooldown"
+],
+[
+20,
+"Critical Hit on hit"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 90.0,
+"mp": null,
+"tw": "支援射擊",
+"ko": "지원 사격",
+"s25": "10% chance to fire an extra shot; the extra shot has no life-steal and +30% PvE damage (Jul 8)"
+},
+"ranger:Vaizel's Authority": {
+"id": "14310000",
+"en": "Vaizel's Authority",
+"icon": "ICON_RA_SKILL_022",
+"d": "Increases the caster's Attack by 20% for 10s.",
+"s": [
+[
+5,
+"+10% Perfect Chance for the duration"
+],
+[
+10,
+"x1.5 [Focused Eye] effect for the duration"
+],
+[
+15,
+"x1.5 [Hunter's Soul] effect for the duration"
+],
+[
+20,
+"50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration"
+]
+],
+"m": 1,
+"cls": "ranger",
+"cd": 60.0,
+"mp": null,
+"tw": "白傑爾權能",
+"ko": "바이젤의 권능",
+"s25": "+10% Weapon Damage Boost for the duration"
+},
+"sorcerer:Arctic Armor": {
+"id": "15230000",
+"en": "Arctic Armor",
+"icon": "ICON_SO_SKILL_021",
+"d": "Increases the caster's PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and grants a 5% chance to inflict Frost for 3s on enemies that attack the caster from within 7m for 10s. Grants Magic Displacement while MP is 50% or more for the duration. Magic Displacement: Damage taken by the caster is divided, directing 50% to HP and 10% to MP. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"+20% Impact-type Resist"
+],
+[
+10,
+"x1.5 [Absorb Essence] effect"
+],
+[
+15,
+"x1.5 [Robe of Cold] effect"
+],
+[
+20,
+"+20% PvE Damage Tolerance increase and +10% PvP Damage Tolerance increase"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 90.0,
+"mp": null,
+"tw": "冰雪甲冑",
+"ko": "빙설의 갑주",
+"s25": "Stronger Mana Conversion (less HP and MP lost)"
+},
+"sorcerer:Assault Bombardment": {
+"id": "15700000",
+"en": "Assault Bombardment",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 886-886 damage to up to 4 enemies within 4m, with a 30% chance to inflict Frost for 3s. 100% chance to land Frost on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Frost Chance"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲轟炸",
+"ko": "강습 폭격",
+"s25": "-1 min cooldown"
+},
+"sorcerer:Cold Storm": {
+"id": "15200000",
+"en": "Cold Storm",
+"icon": "ICON_SO_SKILL_019",
+"d": "Selects a target within 20m and deals 945-945 Water damage, inflicting Slow on up to 4 enemies within 5m. Summons a Cold Storm at the target's location for 7s, inflicting Frostbite. Frostbite: Deals 472-472 Water Damage over Time every 1s for 10s. The Damage over Time amount increases when targets move. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Enhanced Frostbite - Grants extra damage when landing an attack"
+],
+[
+10,
+"30% chance to inflict Root for 2s"
+],
+[
+15,
+"+3s [Cold Storm] summoning duration"
+],
+[
+20,
+"+10s Frostbite duration"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 60.0,
+"mp": 200,
+"tw": "冷氣暴風",
+"ko": "냉기 폭풍",
+"s25": "5% chance to inflict Frost for 3s when attacking a target with Frostbite",
+"note": "With two Sorcerers in one party only the stronger Cold Storm debuff counts (Sep 17 player test), so only one of you needs it high."
+},
+"sorcerer:Curse: Tree": {
+"id": "15140000",
+"en": "Curse: Tree",
+"icon": "ICON_SO_SKILL_014",
+"d": "Polymorphs a target within 20m into a tree for 10s, reducing their Fire Tolerance by 20%, while the caster moves back. Polymorph is canceled if the target is attacked. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Increases number of hits required to remove Polymorph"
+],
+[
+10,
+"-200 Block, Evasion for 10s when Polymorph ends"
+],
+[
+15,
+"-20% Impact-type Resist for 10s when Polymorph ends"
+],
+[
+20,
+"Inflicts debuff even if Polymorph is removed through attacks"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 90.0,
+"mp": null,
+"tw": "詛咒：樹",
+"ko": "저주: 나무",
+"s25": "+50% Transformation hit chance"
+},
+"sorcerer:Delayed Explosion": {
+"id": "15320000",
+"en": "Delayed Explosion",
+"icon": "ICON_SO_SKILL_032",
+"d": "Deals 1116-1116 Fire damage to a target within 20m after 4s. Increases damage taken from the caster by 15% during the delay.",
+"s": [
+[
+5,
+"Restores 200 MP"
+],
+[
+10,
+"-10s [Delayed Explosion] cooldown"
+],
+[
+15,
+"Changes to AoE Skill"
+],
+[
+20,
+"+10% additional Damage Taken"
+]
+],
+"m": 1,
+"cls": "sorcerer",
+"cd": 30.0,
+"mp": 200,
+"tw": "延遲爆炸",
+"ko": "지연 폭발",
+"s25": "Ignores Block and Evasion and lands as a Critical Hit"
+},
+"sorcerer:Divine Burst": {
+"id": "15360000",
+"en": "Divine Burst",
+"icon": "ICON_SO_SKILL_036",
+"d": "Deals 1140-1140 Fire damage to a target within 20m. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+20% Skill Speed"
+],
+[
+10,
+"Absorbs 10% HP"
+],
+[
+15,
+"75% chance to inflict Knock Back"
+],
+[
+20,
+"Inflict Stun for 3s after Knock Back"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 60.0,
+"mp": 200,
+"tw": "神聖爆炸",
+"ko": "신성 폭발",
+"s25": "+100% damage to targets with Incapacitated Immunity"
+},
+"sorcerer:Element Enhancement": {
+"id": "15400000",
+"en": "Element Enhancement",
+"icon": "ICON_SO_SKILL_040",
+"d": "Increases the caster's Fire Attack by 20% and Water Attack by 20% for 10s.",
+"s": [
+[
+5,
+"+200 Accuracy"
+],
+[
+10,
+"x1.5 [Robe of Flame] effect"
+],
+[
+15,
+"x1.5 [Grace of Enhancement] effect"
+],
+[
+20,
+"+10% additional Fire and Water Attack"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 60.0,
+"mp": null,
+"tw": "元素強化",
+"ko": "원소 강화",
+"s25": "+7% Double Chance"
+},
+"sorcerer:Fire Wall": {
+"id": "15390000",
+"en": "Fire Wall",
+"icon": "ICON_SO_SKILL_039",
+"d": "Summon a Fire Wall that lasts for 3s at the location of a target within 20m. Deals 1300-1300 Fire damage and inflicts Embers on up to 4 enemies within the Fire Wall area (1x10m) for 10s. Embers: Deals 650-650 Fire Damage over Time every 1s for 10s. Damage over Time amount increases when targets move.",
+"s": [
+[
+5,
+"Enhanced Embers - Grants extra damage when landing an attack"
+],
+[
+10,
+"+2m wall width"
+],
+[
+15,
+"+2s [Fire Wall] summoning duration"
+],
+[
+20,
+"+10s Embers duration"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 60.0,
+"mp": 200,
+"tw": "火之障壁",
+"ko": "불의 장벽",
+"s25": "+10% damage when attacking targets with Embers"
+},
+"sorcerer:Glacial Smite": {
+"id": "15120000",
+"en": "Glacial Smite",
+"icon": "ICON_SO_SKILL_012",
+"d": "Selects a target within 20m and deals 1477-1477 Water damage to up to 4 enemies within 4m of the target. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"-30s cooldown"
+],
+[
+15,
+"50% chance to inflict Frost for 3s"
+],
+[
+20,
+"Ignores Block and Evasion and lands as Multi-Hit"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 90.0,
+"mp": 200,
+"tw": "冰河強擊",
+"ko": "빙하 강타",
+"s25": "+25% Frost chance"
+},
+"sorcerer:Hibernation": {
+"id": "15410000",
+"en": "Hibernation",
+"icon": "ICON_SO_SKILL_041",
+"d": "Grants Hibernation to the caster for 5s. The caster becomes immune to damage and status effects while Hibernation is active. Using [Remove Hibernation] while Hibernation is active immediately removes the effect, restores 20% Max HP, and moves the caster backward. Cannot block certain powerful attacks and is unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"+100% Incoming Heal"
+],
+[
+10,
+"Restores 5% Max HP every 1s for the duration"
+],
+[
+15,
+"+2s duration"
+],
+[
+20,
+"Triggers when afflicted with Impact-type status"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 180.0,
+"mp": null,
+"tw": "冬眠",
+"ko": "동면",
+"s25": "Breaking Hibernation has a 75% chance to Freeze up to 4 nearby enemies for 3s"
+},
+"sorcerer:Lumiel's Space": {
+"id": "15300000",
+"en": "Lumiel's Space",
+"icon": "ICON_SO_SKILL_017",
+"d": "Selects a target within 20m and deals 998-998 damage to up to 4 enemies within 4m of the target, with a 75% chance to inflict Airborne for 3s. 100% chance to inflict Airborne on NPC targets.",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"Adds [The Depths] Chain Skill"
+],
+[
+15,
+"+1s [The Depths] Knockdown duration"
+],
+[
+20,
+"-30s [Lumiel's Space] cooldown"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 90.0,
+"mp": 300,
+"tw": "露梅爾空間",
+"ko": "루미엘의 공간",
+"s25": "Double Aerial Bind chance on Frozen or Slowed targets"
+},
+"sorcerer:Soul Freeze": {
+"id": "15130000",
+"en": "Soul Freeze",
+"icon": "ICON_SO_SKILL_013",
+"d": "Deals 1037-1037 Water damage to a target within 20m with a 75% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"50% chance to inflict Root for 5s"
+],
+[
+10,
+"-1,000 Stamina"
+],
+[
+15,
+"+2s Seal duration"
+],
+[
+20,
+"+25% Seal chance"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 60.0,
+"mp": 200,
+"tw": "靈魂凍結",
+"ko": "영혼 동결",
+"s25": "Ignores Block and Evasion"
+},
+"sorcerer:Steel Barrier": {
+"id": "15160000",
+"en": "Steel Barrier",
+"icon": "ICON_SO_SKILL_016",
+"d": "Grants a 16% Max HP Protective Shield for 60s. Increases PvE Damage Tolerance by 10% and PvP Damage Tolerance by 5% for the shield's duration, and restores 300 Stamina when the effect ends.",
+"s": [
+[
+5,
+"+10% Move Speed"
+],
+[
+10,
+"HP Regen at fixed intervals"
+],
+[
+15,
+"+10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase"
+],
+[
+20,
+"-15s cooldown"
+]
+],
+"m": 0,
+"cls": "sorcerer",
+"cd": 60.0,
+"mp": null,
+"tw": "鋼鐵屏障",
+"ko": "강철 보호막",
+"s25": "No extra damage from rear attacks"
+},
+"spiritmaster:Assault Terror": {
+"id": "16700000",
+"en": "Assault Terror",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 939-939 damage to up to 4 enemies within 4m of the target, with a 30% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% caster's Attack for 5s"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Fear Chance"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲恐懼",
+"ko": "강습 공포",
+"s25": "-50% cooldown"
+},
+"spiritmaster:Command: Proxy": {
+"id": "16170000",
+"en": "Command: Proxy",
+"icon": "ICON_EL_SKILL_017",
+"d": "Increases the Spirit's PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 4s, and redirects damage taken each time the Spiritmaster is attacked, sharing 50% to the Spiritmaster and 50% to the Spirit. This effect is applied to the summoned Spirit with the highest HP. If HP is equal, it will be applied to the closer target. Damage is only shared if the Spirit is within 25m. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"+2s Command: Proxy duration"
+],
+[
+10,
+"+10% PVP Damage Tolerance increase and +5% PvP Damage Tolerance increase to Spirit"
+],
+[
+15,
+"x1.5 [Spirit Protection] effect during Command: Proxy"
+],
+[
+20,
+"Restores 3% of Spirit's HP every 1s for Command: Proxy duration"
+]
+],
+"m": 1,
+"cls": "spiritmaster",
+"cd": 60.0,
+"mp": null,
+"tw": "命令：替身",
+"ko": "명령: 대역",
+"s25": "Spirits can't drop below 50% HP while Proxy is active"
+},
+"spiritmaster:Cry of Terror": {
+"id": "16080000",
+"en": "Cry of Terror",
+"icon": "ICON_EL_SKILL_008",
+"d": "Selects a target within 20m and deals 859-859 damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Fear for 5s. 100% chance to inflict Fear on NPC targets.",
+"s": [
+[
+5,
+"Root for 5s on hit"
+],
+[
+10,
+"Up to +20% damage when more targets hit"
+],
+[
+15,
+"+2s Fear duration"
+],
+[
+20,
+"+20% Fear Chance"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 90.0,
+"mp": 200,
+"tw": "恐懼呼喊",
+"ko": "공포의 절규",
+"s25": "-30s cooldown"
+},
+"spiritmaster:Cursed Cloud": {
+"id": "16220000",
+"en": "Cursed Cloud",
+"icon": "ICON_EL_SKILL_022",
+"d": "Selects a target within 20m and deals 601-601 damage to up to 4 enemies within 4m, and deals 1203-1203 Damage over Time every 1s for 10s. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"-1000 enemy Max Stamina during Damage over Time"
+],
+[
+10,
+"-20% Max HP of PC targets during Damage over Time"
+],
+[
+15,
+"+10s Damage over Time duration"
+],
+[
+20,
+"-30% Status Effect Resist during Damage over Time"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 90.0,
+"mp": 200,
+"tw": "詛咒之雲",
+"ko": "저주의 구름",
+"s25": "Damage-over-time ticks 50% faster"
+},
+"spiritmaster:Enhance: Spirit's Benediction": {
+"id": "16190000",
+"en": "Enhance: Spirit's Benediction",
+"icon": "ICON_EL_SKILL_019",
+"d": "Increases PvE Damage Boost by 20%, PvP Damage Boost by 10%, PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and restores 1850-2035 HP every 1s for 10s to the caster and Spirit. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"Restores 10% of Max HP on cast"
+],
+[
+10,
+"x1.5 [Spirit Strike] Damage Boost effect"
+],
+[
+15,
+"x1.5 activation chance and amount healed from [Spirit Communion]"
+],
+[
+20,
+"+25% PvE Damage Boost and Damage Tolerance, +12.5% PvP Damage Boost and Damage Tolerance for caster and Spirit"
+]
+],
+"m": 1,
+"cls": "spiritmaster",
+"cd": 60.0,
+"mp": null,
+"tw": "強化：精靈加護",
+"ko": "강화: 정령의 가호",
+"s25": "+3s duration (Jul 8)"
+},
+"spiritmaster:Flame Blessing": {
+"id": "16370000",
+"en": "Flame Blessing",
+"icon": "ICON_EL_SKILL_037",
+"d": "Has a 50% chance to deal 234-234 extra damage to enemies on landing an attack for 10s. Cooldown: 1s",
+"s": [
+[
+5,
+"+100 Accuracy"
+],
+[
+10,
+"+100 Critical Hit"
+],
+[
+15,
+"+10% Critical Damage Boost"
+],
+[
+20,
+"-50% extra damage cooldown"
+]
+],
+"m": 1,
+"cls": "spiritmaster",
+"cd": 60.0,
+"mp": null,
+"tw": "烈焰祝福",
+"ko": "불길의 축복",
+"s25": "+100% damage to targets with Incapacitated Immunity (raised from 50%)"
+},
+"spiritmaster:Jointstrike: Corrode": {
+"id": "16150000",
+"en": "Jointstrike: Corrode",
+"icon": "ICON_EL_SKILL_015",
+"d": "Selects a target within 20m and deals 429-429 damage to up to 4 enemies within 4m of the target, inflicting Corrode for 20s. Corrode: Increases damage taken from the Spirit by 10% and deals 859-859 Damage over Time every 1s The Spirit joins for a coordinated assault. Fire: 544-544 AoE damage and Knockdown Water: 653-653 damage and Slow Earth: 590-590 damage and Seal Wind: 489-489 AoE damage and Stun Ancient: 925-925 AoE damage and Knockdown 10 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+15% extra damage taken from Spirit during Corrode"
+],
+[
+10,
+"-20% Combat Speed on hit for 10s"
+],
+[
+15,
+"-70% Incoming Heal during Corrode"
+],
+[
+20,
+"+10s Corrode effect duration"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 45.0,
+"mp": 200,
+"tw": "合擊：腐蝕",
+"ko": "협공: 부식",
+"s25": "+25% damage taken from the Spiritmaster during Corrode (Aug 26)"
+},
+"spiritmaster:Jointstrike: Destructive Attack": {
+"id": "16240000",
+"en": "Jointstrike: Destructive Attack",
+"icon": "ICON_EL_SKILL_024",
+"d": "Deals 573-573 damage to a target within 20m. The Spirit joins you in a coordinated assault. Fire: 664-664 AoE damage Water: 797-797 damage Earth: 731-731 damage Wind: 598-598 AoE damage Ancient: 1063-1063 AoE damage 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Changes to Charge Skill, dealing up to 200% more [Jointstrike: Destructive Attack] damage"
+],
+[
+10,
+"+30% Skill Speed"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"Reset [Jointstrike: Curse] and [Jointstrike: Corrode] cooldown on landing [Jointstrike: Destructive Attack] first hit"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 60.0,
+"mp": 200,
+"tw": "合擊：破滅攻勢",
+"ko": "협공: 파멸의 공세",
+"s25": "+200% damage to targets with Incapacitated Immunity",
+"note": "KR/TW Sep 10: the Jointstrike no longer overwrites the previous one, so it can be used on cooldown (full charge)."
+},
+"spiritmaster:Kaisinel's Power": {
+"id": "16360000",
+"en": "Kaisinel's Power",
+"icon": "ICON_EL_SKILL_036",
+"d": "Increases Status Effect Chance by 20% and Status Effect Resist by 20% for the caster for 10s.",
+"s": [
+[
+5,
+"+150 Block and Evasion"
+],
+[
+10,
+"+15% Status Effect Resist"
+],
+[
+15,
+"+150 Accuracy"
+],
+[
+20,
+"+15% Status Effect Chance"
+]
+],
+"m": 1,
+"cls": "spiritmaster",
+"cd": 60.0,
+"mp": null,
+"tw": "凱西內爾權能",
+"ko": "카이시넬의 권능",
+"s25": "+30% duration"
+},
+"spiritmaster:Magic Block": {
+"id": "16260000",
+"en": "Magic Block",
+"icon": "ICON_EL_SKILL_026",
+"d": "Deals 1071-1071 damage to a target within 20m, with a 75% chance to inflict Seal for 5s. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"50% chance to inflict Root for 5s on hit"
+],
+[
+10,
+"-1000 enemy Max Stamina for 5s on hit"
+],
+[
+15,
+"+2s Seal duration"
+],
+[
+20,
+"+25% Seal chance"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 60.0,
+"mp": 200,
+"tw": "魔法阻斷",
+"ko": "마법 차단",
+"s25": "Ignores Block and Evasion"
+},
+"spiritmaster:Seize Magic": {
+"id": "16230000",
+"en": "Seize Magic",
+"icon": "ICON_EL_SKILL_023",
+"d": "Selects a target within 20m and deals 1031-1031 damage to up to 4 enemies within 4m of the target, removing up to 2 buffs. Deals 371-495 extra damage based on the number of buffs removed. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Removes up to 3 buffs"
+],
+[
+10,
+"Inflicts Seal for 5s when removing 3 or more buffs"
+],
+[
+15,
+"Removes up to 5 buffs"
+],
+[
+20,
+"-30s cooldown"
+]
+],
+"m": 1,
+"cls": "spiritmaster",
+"cd": 90.0,
+"mp": 200,
+"tw": "魔法搶奪",
+"ko": "마법 강탈",
+"s25": "Ignores Block and Evasion"
+},
+"spiritmaster:Siphon": {
+"id": "16060000",
+"en": "Siphon",
+"icon": "ICON_EL_SKILL_006",
+"d": "Deals 1180-1180 damage and 300 MP damage to a target within 20m. Absorbs 10% HP and restores 300 MP.",
+"s": [
+[
+5,
+"+20% Skill Speed"
+],
+[
+10,
+"+5% HP absorbed"
+],
+[
+15,
+"30% of Max HP as Protective Shield for 30s on use"
+],
+[
+20,
+"Stun for 3s on hit"
+]
+],
+"m": 0,
+"cls": "spiritmaster",
+"cd": 30.0,
+"mp": null,
+"tw": "吸引",
+"ko": "흡인",
+"s25": "+30% shield amount"
+},
+"spiritmaster:Summon: Ancient Spirit": {
+"id": "16250000",
+"en": "Summon: Ancient Spirit",
+"icon": "ICON_EL_SKILL_025",
+"d": "Summons an Ancient Spirit for 30s and grants Four Elements status each time the Ancient Spirit uses its skill. The Ancient Spirit uses a skill on a target within 20m, dealing 1082-1082 damage to up to 4 enemies within 4m. The Ancient Spirit fights alongside the caster using basic attacks and reuses its skill after 7 basic attacks. It is dismissed upon selecting the summon icon. Each skill level increases the Ancient Spirit's Attack, Defense, Accuracy, and Critical Hit by 2%. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+10% Ancient Spirit Attack"
+],
+[
+10,
+"x1.5 [Spirit's Descent] activation chance and damage for 30s"
+],
+[
+15,
+"Ancient Spirit uses skill after 5 basic attacks"
+],
+[
+20,
+"+20% Ancient Spirit Stats"
+]
+],
+"m": 1,
+"cls": "spiritmaster",
+"cd": 90.0,
+"mp": 200,
+"tw": "召喚：古代精靈",
+"ko": "소환: 고대의 정령",
+"s25": "Ancient Spirit uses its skill after 3 basic attacks"
+},
+"cleric:Absolution": {
+"id": "17290000",
+"en": "Absolution",
+"icon": "ICON_CL_SKILL_028",
+"d": "Removes up to 2 debuffs and restores 1602-1762 HP to the caster and party members within 40m.",
+"s": [
+[
+5,
+"-30s cooldown"
+],
+[
+10,
+"Removes all debuffs"
+],
+[
+15,
+"+5% HP restored"
+],
+[
+20,
+"Restores 1.5% HP every 2s for 10s"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 90.0,
+"mp": null,
+"tw": "免罪",
+"ko": "면죄",
+"s25": "+10% instant heal and +3% heal over time"
+},
+"cleric:Assault Mark": {
+"id": "17700000",
+"en": "Assault Mark",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 891-891 damage to up to 4 enemies within 4m with a 30% chance to inflict Root. 100% chance to inflict Root on NPC targets. Increases Defense by max 20% proportional to hit targets.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Root Chance"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲烙印",
+"ko": "강습 낙인",
+"s25": "-1 min cooldown"
+},
+"cleric:Benevolence": {
+"id": "17160000",
+"en": "Benevolence",
+"icon": "ICON_CL_SKILL_047",
+"d": "Grants Benevolence to the caster for 20s. Restores 90-100 HP every 2s to the caster and party members within 40m for the duration.",
+"s": [
+[
+5,
+"+10s duration"
+],
+[
+10,
+"Restores 200 Stamina every 5s for the duration"
+],
+[
+15,
+"Restores 2% HP every 5s for the duration"
+],
+[
+20,
+"Cleansing effect every 5s for the duration"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 90.0,
+"mp": null,
+"tw": "生命權能",
+"ko": "생명의 권능",
+"s25": "Action Points, HP and cleanse ticks come 1s faster"
+},
+"cleric:Earth Punishment": {
+"id": "17400000",
+"en": "Earth Punishment",
+"icon": "ICON_CL_SKILL_040",
+"d": "Deals 1186-1186 Earth damage to a target within 20m and 1186 damage every 1s for 10s. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"[Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]"
+],
+[
+10,
+"+10% Double Chance to caster and +5% to party members from [Earth's Blessing]"
+],
+[
+15,
+"+10% Attack and Defense to caster and +5% to party members from [Earth's Blessing]"
+],
+[
+20,
+"+10s [Earth Punishment] and [Earth's Blessing] duration"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 30.0,
+"mp": 200,
+"tw": "大地懲罰",
+"ko": "대지의 징벌",
+"s25": "Extra damage when [Earth's Blessing] attacks land"
+},
+"cleric:Light of Protection": {
+"id": "17410000",
+"en": "Light of Protection",
+"icon": "ICON_CL_SKILL_041",
+"d": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with the Damage Boost effect from the Chanter skill [Undefeated Mantra] and only the highest skill level effect applies. If both skills are the same level, Undefeated Mantra will be applied.",
+"s": [
+[
+5,
+"+10% Incoming Heal"
+],
+[
+10,
+"+100 Accuracy"
+],
+[
+15,
+"+10% Max HP"
+],
+[
+20,
+"+10% Perfect Chance"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 5.0,
+"mp": null,
+"tw": "保護之光",
+"ko": "보호의 빛",
+"s25": "+5% Double Chance",
+"note": "Toggle. Doesn't stack with Chanter's Undefeated Mantra (higher level wins; a tie goes to Undefeated), so drop it when a Chanter is in the party. KR/TW Sep 23: disabled in Abyss boss fights, Rifts and Time-Space battles."
+},
+"cleric:Noble Aura": {
+"id": "17440000",
+"en": "Noble Aura",
+"icon": "ICON_CL_SKILL_046",
+"d": "Summons a Noble Aura near the caster that lasts for 300s. The Aura follows the caster and attacks their target together. Deals 472-472 damage to a target within 20m. Aura Attack Cooldown: 2s",
+"s": [
+[
+5,
+"+200 Aura Critical Hit"
+],
+[
+10,
+"+20 damage to targets afflicted with Debilitating Mark"
+],
+[
+15,
+"+30% damage to targets with Incapacitated Immunity"
+],
+[
+20,
+"-1s Aura attack cooldown"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 60.0,
+"mp": null,
+"tw": "高潔氣息",
+"ko": "고결한 기운",
+"s25": "+30% additional damage to targets with Incapacitated Immunity"
+},
+"cleric:Power Burst": {
+"id": "17280000",
+"en": "Power Burst",
+"icon": "ICON_CL_SKILL_027",
+"d": "Deals 1154-1154 Earth damage to a target within 20m. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"+20% Skill Speed"
+],
+[
+10,
+"Critical Hit on hit"
+],
+[
+15,
+"75% chance to inflict Knock Back"
+],
+[
+20,
+"75% chance to inflict Stun for 3s"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 60.0,
+"mp": 200,
+"tw": "權能爆炸",
+"ko": "권능 폭발",
+"s25": "+200% damage to targets with Incapacitated Immunity"
+},
+"cleric:Prayer of Amplification": {
+"id": "17430000",
+"en": "Prayer of Amplification",
+"icon": null,
+"d": "Increases Attack by 20% for 10s.",
+"s": [
+[
+5,
+"+20% PvE Damage Boost and +10% PvP Damage Boost"
+],
+[
+10,
+"x1.5 [Empyrean Lord's Grace] effect for the duration"
+],
+[
+15,
+"x1.5 [Earth's Grace] effect for the duration"
+],
+[
+20,
+"+15% additional Attack"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 60.0,
+"mp": null,
+"tw": "增幅祈禱",
+"ko": "증폭의 기도",
+"s25": "+10% PvE and +5% PvP Damage Boost"
+},
+"cleric:Root": {
+"id": "17190000",
+"en": "Root",
+"icon": "ICON_CL_SKILL_019",
+"d": "Selects a target within 20m and deals 939-939 Earth damage to up to 4 enemies within 4m of the target. Has a 75% chance to inflict Root for 10s. 100% chance to inflict Root on NPC targets. 15 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Changes to mobile skill"
+],
+[
+10,
+"+2s Root duration"
+],
+[
+15,
+"+25% Root chance"
+],
+[
+20,
+"x2 Damage over Time on Root targets"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 60.0,
+"mp": 200,
+"tw": "束縛",
+"ko": "속박",
+"s25": "Ignores Block and Evasion"
+},
+"cleric:Salvation": {
+"id": "17270000",
+"en": "Salvation",
+"icon": null,
+"d": "The caster is immune to damage and status effects for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell effects, and Unstoppable effect cannot be applied for 30s if Invincibility stacking is blocked.",
+"s": [
+[
+5,
+"+100% Incoming Heal"
+],
+[
+10,
+"Restores 20% of Max HP at the end of [Salvation]"
+],
+[
+15,
+"Grants base effect of [Salvation] to the party member with the lowest HP"
+],
+[
+20,
+"Triggers [Salvation] when afflicted with Impact-type status"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 150.0,
+"mp": null,
+"tw": "救援",
+"ko": "구원",
+"s25": "Gives the whole party Salvation's base effect"
+},
+"cleric:Summon Resurrection": {
+"id": "17390000",
+"en": "Summon Resurrection",
+"icon": "ICON_CL_SKILL_039",
+"d": "Resurrects a fallen party member within 40m near the caster.",
+"s": [
+[
+5,
+"-1s casting time"
+],
+[
+10,
+"Invincible for 3s after resurrection"
+],
+[
+15,
+"Restores 20% of Max HP"
+],
+[
+20,
+"Invincible for 5s after resurrection"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 120.0,
+"mp": null,
+"tw": "召喚復活",
+"ko": "소환 부활",
+"s25": "On cast, grants an in-place resurrection for 1 min"
+},
+"cleric:Voice of Doom": {
+"id": "17300000",
+"en": "Voice of Doom",
+"icon": "ICON_CL_SKILL_029",
+"d": "Selects a target within 20m and deals 1100-1100 Earth damage to up to 4 enemies within 4m of the target. Deals 2862 damage every 1s and reduces enemy Incoming Heal and HP Potion Recovery by 60% for 20s.",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"Removes Protective Shields on hit"
+],
+[
+15,
+"-200 Critical Hit Resist for duration"
+],
+[
+20,
+"-50% Damage over Time intervals"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 60.0,
+"mp": 200,
+"tw": "破滅之語",
+"ko": "파멸의 목소리",
+"s25": "-20% target Ailment Resist for the duration"
+},
+"cleric:Yustiel's Power": {
+"id": "17420000",
+"en": "Yustiel's Power",
+"icon": "ICON_CL_SKILL_042",
+"d": "Increases PvE Damage Tolerance by 20% and PvP Damage Tolerance by 10% for 10s for the caster and party members within 40m. Unaffected by cooldown increase effects.",
+"s": [
+[
+5,
+"10% Max HP Protective Shield"
+],
+[
+10,
+"+100 Block, Evasion"
+],
+[
+15,
+"+20% Status Effect Resist"
+],
+[
+20,
+"+10% PvE Damage Tolerance increase and +5% PvP Damage Tolerance increase"
+]
+],
+"m": 0,
+"cls": "cleric",
+"cd": 60.0,
+"mp": null,
+"tw": "尤斯迪埃權能",
+"ko": "유스티엘의 권능",
+"s25": "Shield gains another 20% of max HP"
+},
+"chanter:Assault Shock": {
+"id": "18700000",
+"en": "Assault Shock",
+"icon": "ICON_CO_SKILL_003",
+"d": "Selects a target within 20m and deals 986-986 damage to up to 4 enemies within 4m with a 30% chance to inflict Stun for 3s. 100% chance to inflict Stun on NPC targets. Increases Defense by up to 20% proportional to the number of targets hit.",
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m Range"
+],
+[
+20,
+"+20% Stun Chance"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 120.0,
+"mp": null,
+"tw": "強襲衝擊",
+"ko": "강습 충격",
+"s25": "-1 min cooldown"
+},
+"chanter:Barrier Spell": {
+"id": "18440000",
+"en": "Barrier Spell",
+"icon": "ICON_CH_SKILL_044",
+"d": "Prevents the HP of the caster and party members within 40m from falling below 10% for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell effects, and Unstoppable effect cannot be applied for 30s if Invincibility stacking is blocked.",
+"s": [
+[
+5,
+"Restores 10% HP when effect expires naturally"
+],
+[
+10,
+"+10% PvE Damage Tolerance and +5% PvP Damage Tolerance for 10s when effect expires naturally"
+],
+[
+15,
+"+10% HP limit"
+],
+[
+20,
+"+1s effect duration"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 180.0,
+"mp": null,
+"tw": "結界咒語",
+"ko": "결계의 주문",
+"s25": "Removes all debuffs when it ends naturally"
+},
+"chanter:Ensnaring Mark": {
+"id": "18230000",
+"en": "Ensnaring Mark",
+"icon": "ICON_CH_SKILL_023",
+"d": "Selects a target within 20m and deals 1034-1034 damage to up to 4 enemies within 4m, with a 50% chance to inflict Seal for 5s. 100% chance to inflict Seal on NPC targets. [Dark Crush] becomes available for 3s on skill use.",
+"s": [
+[
+5,
+"50% chance to inflict Root"
+],
+[
+10,
+"50% chance to inflict -1000 enemy Max Stamina"
+],
+[
+15,
+"+3s Seal, Root, Max Stamina reduction effect"
+],
+[
+20,
+"+25% Seal, Root, Max Stamina reduction chance"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 60.0,
+"mp": 200,
+"tw": "結縛之印",
+"ko": "결박의 낙인",
+"s25": "Ignores Block and Evasion"
+},
+"chanter:Focused Defense": {
+"id": "18140000",
+"en": "Focused Defense",
+"icon": "ICON_CH_SKILL_014",
+"d": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
+"s": [
+[
+5,
+"+1 consecutive use"
+],
+[
+10,
+"Changes to mobile skill"
+],
+[
+15,
+"+20% Move Speed for 3s on Block"
+],
+[
+20,
+"Restores 5% HP once on Parry"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 20.0,
+"mp": null,
+"tw": "集中防禦",
+"ko": "집중 방어",
+"s25": "+1s Weapon Block duration"
+},
+"chanter:Fracturing Blow": {
+"id": "18130000",
+"en": "Fracturing Blow",
+"icon": "ICON_CH_SKILL_043",
+"d": "Rushes to a target within 20m and deals 1288-1288 damage and reduces their Defense by 30% for 5s. Increases damage by 20% to targets afflicted with an Impact-type status. 20 Stagger Gauge Damage",
+"s": [
+[
+5,
+"-15s cooldown"
+],
+[
+10,
+"Inflict Exposed for 5s on hit"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+30% additional Impact-type Status target damage"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 45.0,
+"mp": 100,
+"tw": "粉碎擊",
+"ko": "분쇄격",
+"s25": "Target's skill cooldowns +3%"
+},
+"chanter:Guardian Blessing": {
+"id": "18420000",
+"en": "Guardian Blessing",
+"icon": "ICON_CH_SKILL_042",
+"d": "Increases the caster's Max HP by 5.4% for 300s and immediately restores 5.4% HP. Not affected by buff dispel effects.",
+"s": [
+[
+5,
+"+10% Status Effect Resist"
+],
+[
+10,
+"x1.5 [Crossguard] effect for the duration"
+],
+[
+15,
+"x1.5 [Wind's Promise] effect for the duration"
+],
+[
+20,
+"+10% Incoming Heal"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 300.0,
+"mp": null,
+"tw": "守護祝福",
+"ko": "수호의 축복",
+"s25": "+10% PvE and +5% PvP Damage Tolerance",
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. The Global DB still shows 300 s."
+},
+"chanter:Healing Touch": {
+"id": "18170000",
+"en": "Healing Touch",
+"icon": "ICON_CH_SKILL_017",
+"d": "Restores 927-1020 HP for the caster and party members within 40m.",
+"s": [
+[
+5,
+"+20% amount healed when HP is 50% or less"
+],
+[
+10,
+"Restores 1000 Stamina"
+],
+[
+15,
+"Removes 5 debuff(s)"
+],
+[
+20,
+"+5% HP restored"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 30.0,
+"mp": null,
+"tw": "痊癒之手",
+"ko": "쾌유의 손길",
+"s25": "-5s cooldown"
+},
+"chanter:Impeding Authority": {
+"id": "18240000",
+"en": "Impeding Authority",
+"icon": "ICON_CH_SKILL_024",
+"d": "Grants a Protective Shield that blocks damage equaling 16% of Max HP for 20s to the caster and nearby party members within 40m.",
+"s": [
+[
+5,
+"+15% Defense"
+],
+[
+10,
+"+10% Incoming Heal"
+],
+[
+15,
+"+10% PvE Damage Tolerance, +5% PvP Damage Tolerance"
+],
+[
+20,
+"Restores 7% of Max HP when Protective Shield ends or is broken"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 90.0,
+"mp": null,
+"tw": "阻斷權能",
+"ko": "차단의 권능",
+"s25": "+10% PvE and +5% PvP Damage Tolerance"
+},
+"chanter:Marchutan's Wrath": {
+"id": "18330000",
+"en": "Marchutan's Wrath",
+"icon": "ICON_CH_SKILL_033",
+"d": "Selects a target within 20m and deals 1384-1384 damage to up to 4 enemies within 4m. [Dark Crush] becomes available for 3s on skill use.",
+"s": [
+[
+5,
+"Up to +20% damage when less targets hit"
+],
+[
+10,
+"50% chance to inflict Stun for 3s"
+],
+[
+15,
+"-70% Incoming Heal and Potion Recovery"
+],
+[
+20,
+"+25% additional Stun Chance"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 30.0,
+"mp": null,
+"tw": "瑪爾庫坦憤怒",
+"ko": "마르쿠탄의 분노",
+"s25": "Ignores Block and Evasion"
+},
+"chanter:Obliterate": {
+"id": "18220000",
+"en": "Obliterate",
+"icon": "ICON_CH_SKILL_022",
+"d": "Deals 1078-1078 damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Knockdown. 100% chance to land Knockdown on NPC targets. 50 Stagger Gauge Damage",
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"+20% Skill Speed"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+25% Knockdown Chance"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 60.0,
+"mp": 200,
+"tw": "滅禍",
+"ko": "멸화",
+"s25": "+200% damage to targets with Incapacitated Immunity"
+},
+"chanter:Power of the Storm": {
+"id": "18250000",
+"en": "Power of the Storm",
+"icon": "ICON_CH_SKILL_025",
+"d": "Increases Combat Speed by 20% and reduces skill cooldowns by 20% for 10s. Increases Combat Speed by 20% and reduces skill cooldowns by 10% for party members within 40m. Cannot receive effect of [Power of the Storm] if Cleric skill [Earth's Blessing] effect is active.",
+"s": [
+[
+5,
+"-30s cooldown"
+],
+[
+10,
+"+200 Accuracy"
+],
+[
+15,
+"+200 Critical Hit"
+],
+[
+20,
+"+20% Caster Attack and +10% party member Attack"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 120.0,
+"mp": null,
+"tw": "疾風權能",
+"ko": "질풍의 권능",
+"s25": "+5% Weapon Damage Boost",
+"note": "Doesn't stack with Cleric's Earth's Blessing (Storm applies). KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles."
+},
+"chanter:Sprint Mantra": {
+"id": "18160000",
+"en": "Sprint Mantra",
+"icon": "ICON_CH_SKILL_016",
+"d": "Increases Move Speed by 10.5% and grants a 15% chance to restore 127-140 HP on landing an attack to the caster and nearby party members. Healing Cooldown: 1s",
+"s": [
+[
+5,
+"+10% Incoming Heal"
+],
+[
+10,
+"+30% Natural Stamina Regen"
+],
+[
+15,
+"+50% amount restored when HP is 50% or less"
+],
+[
+20,
+"+10% Restoration"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 5.0,
+"mp": null,
+"tw": "疾走真言",
+"ko": "질주의 진언",
+"s25": "+5% Iron Wall (Block) chance",
+"note": "Toggle. Two Chanters don't stack: only the higher level applies."
+},
+"chanter:Undefeated Mantra": {
+"id": "18190000",
+"en": "Undefeated Mantra",
+"icon": "ICON_CH_SKILL_019",
+"d": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members. Does not stack with the Damage Boost effect from the Cleric skill [Light of Protection]; only the higher-level skill effect applies. If both skills are the same level, Undefeated Mantra takes precedence.",
+"s": [
+[
+5,
+"+100 Critical Hit"
+],
+[
+10,
+"+100 Accuracy"
+],
+[
+15,
+"+5% Critical Damage Boost"
+],
+[
+20,
+"+5% Double Chance"
+]
+],
+"m": 0,
+"cls": "chanter",
+"cd": 5.0,
+"mp": null,
+"tw": "不敗真言",
+"ko": "불패의 진언",
+"s25": "+10% Perfect Chance",
+"note": "Toggle. Two Chanters don't stack: only the higher level applies. Doesn't stack with Cleric's Light of Protection (higher level wins; a tie goes to Undefeated). KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles (Battlefield Authority buff replaces party synergies)."
+}
+}

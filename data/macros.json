@@ -9,6 +9,10 @@
  "changelog": [
   {
    "date": "2026-09-29",
+   "text": "Added a Stigmas page (top of the page): 6-slot builds, level-up order with shard costs, milestones, variants (incl. Gladiator battle tank and Chanter battle healer) and tier lists for all 8 classes."
+  },
+  {
+   "date": "2026-09-29",
    "text": "New 'Full rotation' tab for all 8 classes: longer macros with buffs, each with its source and the DPS trade-off. Held/mashed key stacks are now drawn on cards. Gladiator corrected (Rage Burst and Lifestealing Blade sit under Overhead Slam). Level-25 augments corrected for 8 stigmas changed after July. KR/TW cooldowns for Warding Strike, Spinning Strike and Impactful Crush. Zikel's Blessing and Lunge Stance icons fixed (swapped in the database). Templar switched to the optimizer's Sep 5 guide, pinned as current after Sep 16 (Shield Smite in the Judgment line, Annihilate as line 2, Flash Rampage above Punishment)."
   },
   {

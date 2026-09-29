@@ -27,8 +27,9 @@ for name, s in skills.items():
         desc = strip(d.group(1)) if d else ""
         mobile = bool(re.search(r'whitespace-pre-line mt-2"><span>Mobile</span>', h))
         specs = []
-        for block in re.split(r'<div class="flex items-start gap-2 ">', h)[1:]:
-            block = block.split("</div>", 1)[0]
+        # the DB changed this class to "... gap-2 opacity-40" in Sep 2026; match any suffix
+        for block in re.split(r'<div class="flex items-start gap-2[^"]*"', h)[1:]:
+            block = block.split("</span></div>", 1)[0]
             lv = re.search(r'>Level<!-- --> <!-- -->(\d+)</span>', block)
             if not lv:
                 continue

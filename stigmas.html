@@ -1,0 +1,274 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aion 2 Stigma Builds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@500;700&display=swap">
+<style>
+/* Stigma builds page. Same poster look as the macro sheet (index.html). Content comes from data/stigmas.json + data/stigma_db.json. */
+:root{
+  --ink:#0b0708; --ember:#5a0d16;
+  --panel:#1b2029; --panel-2:#232a35; --edge:#343d4b;
+  --text:#eef0f3; --muted:#98a1b0; --dim:#6f7888;
+  --neon:#d9f41c; --gold:#e3a918; --gold-2:#b67e0a;
+  --warn:#ff6a5c; --ok:#5fd18a; --info:#6fb6ff;
+  --t-s:#ff5c7a; --t-a:#ffb13b; --t-b:#5fd18a; --t-c:#6f7888;
+  --f-display:"Archivo","Arial Black",Impact,sans-serif;
+  --f-body:"Barlow","Segoe UI",system-ui,sans-serif;
+  --f-ui:"Barlow Condensed","Arial Narrow",sans-serif;
+  --f-tc:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:
+    radial-gradient(70% 40% at 50% 12%, var(--ember) 0%, transparent 70%),
+    radial-gradient(40% 25% at 8% 55%, #3a0a14 0%, transparent 70%),
+    radial-gradient(40% 25% at 92% 55%, #3a0a14 0%, transparent 70%),
+    var(--ink);
+  color:var(--text); font:15px/1.5 var(--f-body);
+  padding-block:clamp(20px,4vw,44px); padding-inline:clamp(16px,3vw,36px); min-height:100vh;
+}
+.wrap{max-width:1360px;margin:0 auto;display:grid;gap:clamp(22px,3vw,36px)}
+a{color:#c7ccd4} a:focus-visible,button:focus-visible{outline:2px solid var(--neon);outline-offset:2px}
+.tc{font-family:var(--f-tc);font-weight:500}
+
+/* site nav + header */
+.sitenav{display:flex;justify-content:center;gap:4px}
+.sitenav a{font:700 .9rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:9px 16px;border:1px solid #3b4453;background:#12161c}
+.sitenav a[aria-current="page"]{background:var(--neon);color:#1b1f05;border-color:var(--neon)}
+header{text-align:center;display:grid;gap:12px;justify-items:center}
+h1{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:118%;font-size:clamp(2.1rem,6.4vw,4.8rem);line-height:.95;color:var(--neon);text-transform:uppercase;text-wrap:balance;text-shadow:0 0 28px rgba(217,244,28,.28),0 4px 0 rgba(0,0,0,.55)}
+.sub{margin:0;color:var(--muted);max-width:72ch;text-wrap:balance}
+.sub b{color:var(--text);font-weight:600}
+.stamp{font:600 .8rem/1.2 var(--f-ui);letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+.stamp b{color:var(--ok)}
+.notice{margin:0;max-width:78ch;padding:9px 14px;border:1px solid #6b4b12;background:rgba(227,169,24,.08);color:#f3dca0;font-size:.88rem}
+
+/* panels */
+.panel{background:rgba(20,24,31,.94);border:1px solid #2b323d;padding:clamp(16px,2vw,24px);display:grid;gap:14px;align-content:start;min-width:0}
+.panel h2,.panel h3{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:112%;text-transform:uppercase;line-height:1.05;color:#fff;text-wrap:balance}
+.panel h2{font-size:clamp(1.2rem,2vw,1.55rem)}
+.panel h3{font-size:clamp(1rem,1.5vw,1.15rem)}
+.panel h2 small,.panel h3 small{display:block;margin-top:6px;font:600 .74rem/1.3 var(--f-ui);letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.k{display:inline-block;font:700 .68rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--neon)}
+
+/* how it works */
+.how{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:clamp(14px,2vw,26px)}
+@media (max-width:1100px){.how{grid-template-columns:minmax(0,1fr)}}
+.how-col{display:grid;gap:10px;align-content:start;font-size:.9rem;color:#d4d8de;min-width:0}
+.how-col p{margin:0} .how-col b{color:#fff}
+.how h4{margin:0;font:700 .8rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--neon)}
+.ladder{display:grid;grid-template-columns:repeat(25,minmax(0,1fr));gap:2px;align-items:end;padding:10px 8px 6px;background:#12161c;border:1px solid #2b323d}
+.ladder .lv{display:grid;gap:3px;justify-items:center;font:600 .62rem/1 var(--f-ui);color:var(--dim)}
+.ladder .lv i{display:block;width:100%;background:#3b4453}
+.ladder .lv.t1 i{height:6px} .ladder .lv.t2 i{height:12px} .ladder .lv.t4 i{height:24px} .ladder .lv.t8 i{height:48px}
+.ladder .lv.adv i{height:10px;background:var(--gold)}
+.ladder .lv.unlock i{background:var(--neon)}
+.ladder .lv.unlock.adv i{background:#fff2b8}
+.ladder .lv.unlock span{color:#fff}
+.lad-key{display:flex;flex-wrap:wrap;gap:6px 16px;font:600 .74rem/1.2 var(--f-ui);color:var(--muted)}
+.lad-key span{display:inline-flex;gap:6px;align-items:center}
+.lad-key i{width:10px;height:10px;display:inline-block}
+table{width:100%;border-collapse:collapse;font-size:.86rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #2e3643;vertical-align:top}
+th{font:700 .66rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+td b{color:#fff}
+ul.facts{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+ul.facts li{padding-left:11px;border-left:2px solid #3a4352}
+ul.facts li.warn{border-left-color:var(--warn)} ul.facts li.good{border-left-color:var(--ok)}
+
+/* class picker */
+.picker{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:8px 0;background:linear-gradient(rgba(11,7,8,.96),rgba(11,7,8,.88));backdrop-filter:blur(4px)}
+.picker button{appearance:none;cursor:pointer;display:grid;gap:2px;justify-items:center;min-width:112px;padding:9px 12px;border:1px solid #3b4453;background:#12161c;color:var(--muted);font:800 .95rem/1 var(--f-display);font-stretch:108%;text-transform:uppercase;letter-spacing:.02em}
+.picker button small{font:500 .74rem/1 var(--f-tc);color:var(--dim);text-transform:none;letter-spacing:0}
+.picker button[aria-pressed="true"]{background:var(--neon);border-color:var(--neon);color:#1b1f05}
+.picker button[aria-pressed="true"] small{color:#3d4510}
+.picker button:hover:not([aria-pressed="true"]){border-color:#6a7385;color:#fff}
+@media (max-width:760px){
+  .picker{gap:4px;padding:6px 0;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;scrollbar-width:none}
+  .picker::-webkit-scrollbar{display:none}
+  .picker button{flex:none;min-width:0;padding:8px 10px;font-size:.78rem}
+  .picker button small{display:none}
+}
+
+/* class view */
+.cls-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px}
+.cls-head h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:112%;font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1;text-transform:uppercase;color:#fff;text-shadow:0 3px 0 rgba(0,0,0,.6)}
+.cls-head h2 .tc{font-size:.5em;color:var(--muted);margin-left:8px;vertical-align:middle;text-shadow:none}
+.role{font:600 .82rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cls-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(16px,2vw,26px);align-items:start}
+@media (max-width:1100px){.cls-grid{grid-template-columns:minmax(0,1fr)}}
+.col{display:grid;gap:clamp(16px,2vw,22px);min-width:0}
+
+/* stigma window (the "art"): 6 slots like the in-game stigma panel */
+.sw{background:var(--panel);border:1px solid var(--edge);box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.sw-top{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 12px;border-bottom:1px solid var(--edge);background:linear-gradient(#262d38,#1f252f)}
+.sw-title{font:700 .95rem/1.1 var(--f-ui);color:#fff;letter-spacing:.02em}
+.tag{font:700 .64rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;padding:4px 7px;background:#2c3441;color:#cfd4dc;white-space:nowrap}
+.tag.main{background:var(--neon);color:#1b1f05}
+.tag.tank{background:#6fb6ff;color:#06203a}
+.tag.heal{background:var(--ok);color:#06240f}
+.tag.raid{background:var(--warn);color:#2a0705}
+.tag.pvp{background:#b18cff;color:#1d0d3a}
+.tag.solo{background:#e8ebef;color:#1b1f25}
+.tag.img{background:var(--gold);color:#3a2600}
+.slots{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;padding:14px 12px 12px}
+.sw.small .slots{gap:8px;padding:12px 10px 10px}
+@media (max-width:620px){.slots{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.slot{position:relative;display:grid;justify-items:center;gap:6px;text-align:center;min-width:0}
+.slot .frame{position:relative;width:100%;max-width:64px;aspect-ratio:1;border:1px solid #4a5364;background:#0d1117;box-shadow:inset 0 0 0 1px rgba(0,0,0,.6),0 0 0 3px #151a21}
+.sw.small .slot .frame{max-width:48px}
+.slot .frame img,.slot .frame .none{display:block;width:100%;height:100%;object-fit:cover}
+.none{display:grid!important;place-items:center;background:#171b22;color:var(--muted);font:800 .9rem/1 var(--f-display)}
+.slot .no{position:absolute;top:-7px;left:-7px;width:18px;height:18px;display:grid;place-items:center;background:#0b0e12;border:1px solid #4a5364;font:700 .66rem/1 var(--f-ui);color:#cfd4dc}
+.lvb{position:absolute;right:-6px;bottom:-7px;min-width:24px;padding:3px 4px;font:800 .72rem/1 var(--f-display);text-align:center;background:#232a35;color:#fff;border:1px solid #4a5364}
+.lvb.l25{background:linear-gradient(#f2c23a,var(--gold) 55%,var(--gold-2));color:#2c1c00;border-color:#f7d56b}
+.lvb.l2x{background:#3a3217;color:#f3dca0;border-color:#8a7426}
+.lvb.l20{background:#2b3240;color:#fff;border-color:#6a7385}
+.lvb.lo{background:#171b22;color:var(--muted)}
+.slot .nm{font:600 .8rem/1.12 var(--f-ui);color:#fff;overflow-wrap:break-word;hyphens:auto;max-width:100%}
+.slot .nm small{display:block;margin-top:2px;font:500 .7rem/1.2 var(--f-tc);color:var(--muted)}
+.sw-body{padding:0 14px 14px;display:grid;gap:8px;font-size:.88rem;color:#d4d8de}
+.sw-body p{margin:0}
+.src{font:600 .74rem/1.35 var(--f-ui);letter-spacing:.03em;color:var(--dim)}
+.src a{color:var(--muted)}
+.variants{display:grid;gap:clamp(12px,1.6vw,16px)}
+.vh{margin:4px 0 -4px;font:700 .8rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.variants .sw{box-shadow:none}
+.match{font:600 .72rem/1 var(--f-ui);letter-spacing:.06em;text-transform:uppercase}
+.slot.miss .frame{outline:2px dashed var(--warn);outline-offset:2px}
+.slot.hit .frame{outline:2px solid var(--ok);outline-offset:2px}
+
+/* priority list */
+ol.prio{margin:0;padding:0;list-style:none;display:grid;gap:12px;counter-reset:p}
+ol.prio li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:11px;counter-increment:p}
+ol.prio li::before{content:counter(p);display:grid;place-items:center;width:30px;height:30px;background:var(--neon);color:#1b1f05;font:900 .95rem/1 var(--f-display)}
+ol.prio li.adv::before{background:var(--gold);color:#2c1c00}
+.steps{display:flex;flex-wrap:wrap;gap:5px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 8px 3px 3px;background:#1f252f;border:1px solid #394252;font:600 .8rem/1.1 var(--f-ui);color:#fff}
+.chip img,.chip .none{width:22px;height:22px;flex:none;font-size:.6rem}
+.chip .to{color:var(--neon);font-weight:700}
+.chip .to.a{color:var(--gold)}
+.cost{margin-top:5px;font:600 .74rem/1.3 var(--f-ui);letter-spacing:.03em;color:var(--muted);font-variant-numeric:tabular-nums}
+.cost b{color:#fff}
+.pnote{margin:4px 0 0;font-size:.84rem;color:#cfd4dc}
+
+/* milestones */
+ul.ms{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.ms li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:9px;align-items:start;font-size:.86rem;color:#d4d8de}
+ul.ms img,ul.ms .none{width:26px;height:26px}
+ul.ms b{display:block;font:700 .8rem/1.2 var(--f-ui);color:#fff}
+
+/* tier list */
+.tiers{display:grid;gap:6px}
+.tier{display:grid;grid-template-columns:44px minmax(0,1fr);background:#12161c;border:1px solid #2b323d;min-height:58px}
+.tier>b{display:grid;place-items:center;font:900 1.35rem/1 var(--f-display);color:#12161c}
+.tier.S>b{background:var(--t-s)} .tier.A>b{background:var(--t-a)} .tier.B>b{background:var(--t-b)} .tier.C>b{background:var(--t-c)}
+.tier .items{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px 14px;padding:9px 10px}
+.ti{display:grid;grid-template-columns:34px minmax(0,1fr);gap:8px;align-items:center}
+.ti img,.ti .none{width:34px;height:34px;border:1px solid rgba(255,255,255,.2)}
+.ti .t{font:700 .8rem/1.1 var(--f-ui);color:#fff}
+.ti .t small{display:block;font:500 .74rem/1.25 var(--f-body);color:var(--muted)}
+.tier-key{font-size:.8rem;color:var(--muted);margin:0}
+
+/* hover card (same as macro sheet) */
+[data-sk]{cursor:help}
+[data-sk]:focus-visible{outline:2px solid var(--neon);outline-offset:1px}
+.skilltip{position:fixed;z-index:50;width:min(360px,calc(100vw - 20px));max-height:calc(100vh - 20px);overflow:auto;background:#10141b;border:1px solid #4a5364;box-shadow:0 18px 40px rgba(0,0,0,.7);padding:12px 13px;display:grid;gap:8px;font-size:.84rem;line-height:1.45;color:#d4d8de;pointer-events:none}
+.skilltip[hidden]{display:none}
+.tt-head{display:flex;gap:10px;align-items:center}
+.tt-head img{width:44px;height:44px;border:1px solid rgba(255,255,255,.25)}
+.tt-name{font:700 1rem/1.1 var(--f-ui);color:#fff}
+.tt-sub{font:500 .76rem/1.3 var(--f-tc);color:var(--muted)}
+.tt-facts{display:flex;flex-wrap:wrap;gap:4px}
+.tt-facts span{font:600 .72rem/1 var(--f-ui);letter-spacing:.03em;padding:4px 6px;background:#1f252f;border:1px solid #394252;color:#e8ebef}
+.tt-desc{margin:0;white-space:pre-line}
+.tt-spec-h{font:700 .68rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--neon)}
+.tt-specs{margin:0;padding:0;list-style:none;display:grid;gap:3px}
+.tt-specs li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:6px}
+.tt-specs b{font:700 .72rem/1.5 var(--f-ui);color:#1b1f05;background:var(--neon);text-align:center;height:18px}
+.tt-specs li.s25 b{background:var(--gold)}
+.tt-note{margin:0;padding-left:8px;border-left:2px solid var(--warn);color:#f1c9c4}
+.tt-foot{margin:0;font-size:.72rem;color:var(--dim)}
+
+ul.changelog{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.86rem;color:#cfd4dc}
+ul.changelog b{color:#fff;font:700 .8rem/1.2 var(--f-ui);margin-right:6px}
+footer{font-size:.8rem;color:var(--dim);display:grid;gap:8px;max-width:110ch;margin:0 auto;text-align:center}
+footer p{margin:0} footer a{color:var(--muted)}
+.loading,.err{text-align:center;color:var(--muted)}
+.err{color:var(--warn)}
+</style>
+
+<div class="wrap">
+<nav class="sitenav" aria-label="Pages">
+  <a href="index.html">Macros</a>
+  <a href="stigmas.html" aria-current="page">Stigmas</a>
+</nav>
+
+<header>
+  <h1>Stigma Builds</h1>
+  <p class="sub">Which <b>6 stigmas</b> to run for every class, <b>what level</b> to take each to, the <b>order to level them</b> with shard costs, the unlocks worth hitting, and a <b>tier list</b> of all 13. Hover or tap any icon for its full description and level 5–25 effects.</p>
+  <div class="stamp" id="stamp"></div>
+  <p class="notice" id="notice" hidden></p>
+</header>
+
+<nav class="picker" id="picker" aria-label="Class"></nav>
+
+<main id="view"><p class="loading">Loading stigma data…</p></main>
+
+<section class="panel" aria-labelledby="h-how">
+  <h2 id="h-how">How stigma levels work<small>KR/TW live rules · they decide every priority list below</small></h2>
+  <div class="how">
+    <div class="how-col">
+      <h4>Shards per level, 1 → 25</h4>
+      <div class="ladder" id="ladder" aria-label="Shard cost for each stigma level"></div>
+      <div class="lad-key">
+        <span><i style="background:#3b4453"></i>Stigma shards</span>
+        <span><i style="background:var(--neon)"></i>New effect unlocks (5 · 10 · 15 · 20)</span>
+        <span><i style="background:var(--gold)"></i>Advanced shard (21–25, effect at 25)</span>
+      </div>
+      <table>
+        <thead><tr><th>Levels</th><th>Cost each</th><th>Total to reach</th></tr></thead>
+        <tbody>
+          <tr><td>1–5</td><td>1 shard</td><td><b>Lv 5: 5</b></td></tr>
+          <tr><td>6–10</td><td>2 shards</td><td><b>Lv 10: 15</b></td></tr>
+          <tr><td>11–15</td><td>4 shards</td><td><b>Lv 15: 35</b></td></tr>
+          <tr><td>16–20</td><td>8 shards</td><td><b>Lv 20: 75</b></td></tr>
+          <tr><td>21–25</td><td>1 Advanced shard</td><td><b>Lv 25: 75 + 5 Advanced</b></td></tr>
+        </tbody>
+      </table>
+      <p>Levels 16–20 cost as much as 1–15 combined. That's why every priority list gets several stigmas to their cheap unlocks (5 or 10) before pushing anything to 20.</p>
+    </div>
+    <div class="how-col">
+      <h4>Advanced shards (levels 21–25)</h4>
+      <ul class="facts">
+        <li class="good"><b>+1</b> for each character level from 46 to 50 (5 total).</li>
+        <li class="good"><b>+1</b> for every stigma you take to 20 (refunded if you reset it).</li>
+        <li>More are sold in the Abyss exchange shop.</li>
+        <li>With 6 stigmas at 20 you have 11: <b>two at 25 + one at 21</b>.</li>
+        <li>The ceiling is all 13 at 20 (975 shards), which gives 18: <b>three at 25 + one at 23</b>. That's what "Lv 23" means in the builds.</li>
+      </ul>
+    </div>
+    <div class="how-col">
+      <h4>Slots and rules</h4>
+      <ul class="facts">
+        <li>Stigmas unlock at character level <b>22</b>. Each class has <b>13</b>.</li>
+        <li><b>6 slots</b> in KR/TW since the Jul 1 Chapter 1 update (4 at launch, 5 from March). Global may start with fewer: take picks in the numbered order.</li>
+        <li class="warn">Same-name party buffs don't stack: two Chanters' mantras, Undefeated Mantra vs Light of Protection, Power of the Storm vs Earth's Blessing, two Sorcerers' Cold Storm. The higher one wins.</li>
+        <li class="warn">Sep 23: during Abyss boss fights, Rifts and Time-Space battles, <b>Battlefield Might</b> replaces party synergies (Undefeated Mantra, Light of Protection, Power of the Storm and others do nothing there).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="h-log"><h2 id="h-log">Update log<small>Newest first</small></h2><ul class="changelog" id="changelog"></ul></section>
+
+<footer>
+  <p><b style="color:#fff">How this was checked.</b> Every build, swap and tier comes from Korean Inven class-board threads (Jul 1 – Sep 29, 2026): guides, dummy tests, raid-clear write-ups and the replies under them. Cards link their threads. Where a card is my own assembly from the stigma effects rather than a single source, it says so. Level 5–20 effects, cooldowns and icons come from the aion2.app client database (Global). Level-25 effects are KR/TW in-game tooltips, with later patch changes applied. The "From your image" card is the list you shared, checked against the main build. Skill icons and names © NC; this is a fan-made reference.</p>
+  <p><a href="index.html">← Back to the macro sheet</a></p>
+</footer>
+</div>
+
+<script src="stigmas.js" charset="utf-8"></script>

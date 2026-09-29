@@ -195,9 +195,19 @@ details .inner{gap:16px}
 .keys-h{font:700 .72rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .loss{border-left:2px solid var(--warn);padding-left:9px}
 .switch{flex-wrap:wrap;justify-content:center}
+/* v6: page nav (macros | stigmas) */
+.sitenav{display:flex;justify-content:center;gap:4px}
+.sitenav a{font:700 .9rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:9px 16px;border:1px solid #3b4453;background:#12161c}
+.sitenav a[aria-current="page"]{background:var(--neon);color:#1b1f05;border-color:var(--neon)}
+.sitenav a:hover:not([aria-current]){border-color:#6a7385;color:#fff}
 </style>
 
 <div class="wrap">
+<nav class="sitenav" aria-label="Pages">
+  <a href="index.html" aria-current="page">Macros</a>
+  <a href="stigmas.html">Stigmas</a>
+</nav>
+
 <header>
   <h1 id="title">Late Game Macros</h1>
   <p class="sub">Every class's in-game macro <span class="tc">(基本技能輔助功能)</span>, rebuilt with the <b>full 4-skill stack</b> behind each slot. Row <b>0 fires first</b> and sits right above the key, just like the game. Hover or tap any skill for its description.</p>

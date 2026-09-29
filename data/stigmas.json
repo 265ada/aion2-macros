@@ -1,0 +1,363 @@
+{
+ "meta": {
+  "updated": "2026-09-29",
+  "baseline": "KR/TW live, after the Sep 23 patch",
+  "notice": "Global (NA/EU) early access opened Sep 30. If your client has fewer stigma slots or no level 25 yet, take each build's picks in the order shown: they're sorted most important first.",
+  "note": "Builds, tiers and priorities come from Korean Inven class boards (Jul 1 – Sep 29, 2026: guides, dummy tests and dungeon threads). Level-25 effects are KR/TW client tooltips; Lv 5–20 effects are from the Global client DB."
+ },
+ "changelog": [
+  {"date": "2026-09-29", "text": "New Stigmas page: 6-slot builds with target levels for all 8 classes, level-up order with shard costs, unlock milestones, variants (Gladiator battle tank, Chanter battle healer, raid, solo, PvP), full 13-stigma tier lists, and the list from your image for comparison."}
+ ],
+ "classes": [
+  {
+   "id": "assassin", "en": "Assassin", "tw": "殺星", "role": "Melee burst DPS",
+   "image": ["Illusive Clone", "Swift Contract", "Savage Fang", "Throw Shadowblade"],
+   "imageNote": "Same core as Korea. Korean players add Triniel's Dagger (their third level-25 pick) and Evasion Stance for stun mechanics.",
+   "builds": [
+    {"t": "PvE DPS", "tag": "Most used", "main": true,
+     "pick": [["Illusive Clone", 25], ["Swift Contract", 25], ["Triniel's Dagger", 25], ["Savage Fang", 20], ["Evasion Stance", 20], ["Throw Shadowblade", 20]],
+     "why": "Illusive Clone and Swift Contract are your burst window (Heart Gore has no cooldown during Clone), so they get the first two level-25s. Triniel's Dagger is the third (+10% back damage at 25). Savage Fang is in the macro and adds +10% PvE damage at 15. Evasion Stance dodges stun mechanics. Throw Shadowblade is a ranged gap-closer and clears trash.",
+     "src": [["25 order: Clone > Swift > Dagger", "https://www.inven.co.kr/board/aion2/6449/17743"], ["6th slot debate", "https://www.inven.co.kr/board/aion2/6449/19505"]]},
+    {"t": "Dummy / short boss burst", "tag": "Swap",
+     "pick": [["Illusive Clone", 25], ["Swift Contract", 25], ["Triniel's Dagger", 25], ["Savage Fang", 20], ["Assault Ambush", 20], ["Evasion Stance", 20]],
+     "why": "Assault Ambush gives +20% Attack for 5s on hit at level 5. Use it as the opener only when the boss dies in about 20s; otherwise its slow wind-up costs damage and Throw Shadowblade or Smoke Bomb is comfier.",
+     "src": [["Ambush vs Smoke Bomb vs Shadowblade", "https://www.inven.co.kr/board/aion2/6449/18807"]]},
+    {"t": "Solo / farming", "tag": "Solo",
+     "pick": [["Illusive Clone", 20], ["Swift Contract", 20], ["Savage Fang", 20], ["Throw Shadowblade", 20], ["Triniel's Dagger", 20], ["Evasion Stance", 10]],
+     "why": "Throw Shadowblade resets its cooldown on kills (Lv 10) and turns into an AoE (Lv 20), which makes pack farming fast. Keep Evasion Stance for elites.",
+     "src": [["Shadowblade for trash", "https://www.inven.co.kr/board/aion2/6449/19505"]]},
+    {"t": "PvP", "tag": "PvP",
+     "pick": [["Swift Contract", 25], ["Smoke Bomb", 25], ["Evasion Stance", 25], ["Illusive Clone", 20], ["Aerial Bind", 20], ["Shadow Walk", 20]],
+     "why": "Swift Contract's +10% Attack at 25, Smoke Bomb's Weakness at 25 and Evasion Stance's longer dodge are the picks Korean players keep. Their Aug 29 write-up says Assassin PvP stigmas are weak overall, so treat this as the least-bad set.",
+     "src": [["Assassin PvP stigma review", "https://www.inven.co.kr/board/aion2/6449/20500"]]}
+   ],
+   "order": [
+    {"s": [["Illusive Clone", 10], ["Swift Contract", 10], ["Triniel's Dagger", 10]], "n": "Illusive Clone 10 = +20% crit damage in your burst. Triniel's 10 = -10% to all your cooldowns on hit."},
+    {"s": [["Savage Fang", 15], ["Evasion Stance", 5], ["Throw Shadowblade", 5]], "n": "Savage Fang 15 adds +10% PvE damage for 10s. Evasion Stance 5 = a second dodge."},
+    {"s": [["Illusive Clone", 20], ["Swift Contract", 20]], "n": "Clone 20: 50% chance of extra damage on crits. Swift 20: +10% more combat speed."},
+    {"s": [["Triniel's Dagger", 20], ["Savage Fang", 20]], "n": "Savage Fang 20 always crits."},
+    {"s": [["Evasion Stance", 20], ["Throw Shadowblade", 20]]},
+    {"s": [["Illusive Clone", 25], ["Swift Contract", 25], ["Triniel's Dagger", 25]], "n": "Advanced shards, one per level above 20."}
+   ],
+   "milestones": [
+    ["Illusive Clone 15", "x1.5 Exploit Weakness during the clone window"],
+    ["Swift Contract 10 / 15", "x1.5 Rear Smite, then x1.5 Assault Stance while it's up"],
+    ["Illusive Clone 25", "Rear crits cut Illusive Clone's cooldown by 1s (Jul 8)"],
+    ["Triniel's Dagger 25", "+10% back damage for 5s on hit"]
+   ],
+   "tiers": {
+    "S": [["Illusive Clone", "Your burst window: no Heart Gore cooldown, +20% extra damage"], ["Swift Contract", "+20–30% combat speed, feeds Rear Smite"]],
+    "A": [["Triniel's Dagger", "Strong hit; cuts your cooldowns"], ["Savage Fang", "Macro skill, +10% PvE damage at 15"]],
+    "B": [["Evasion Stance", "Dodges stun mechanics (2 uses)"], ["Throw Shadowblade", "Gap-closer, trash clear"], ["Smoke Bomb", "Weakness at 25; mostly PvP"], ["Assault Ambush", "Opener only on short fights"]],
+    "C": [["Aerial Bind", "PvP CC"], ["Shadow Walk", "PvP stealth opener"], ["Evasion Contract", "Evasion PvP builds"], ["Shadowstep", "PvP"], ["Spiral Slice", "Buff strip, nerfed Sep 3"]]
+   }
+  },
+  {
+   "id": "cleric", "en": "Cleric", "tw": "治癒星", "role": "Healer",
+   "image": ["Earth Punishment", "Prayer of Amplification", "Benevolence", "Light of Protection", "Summon Resurrection", "Noble Aura"],
+   "imageNote": "Close to the Korean list. Summon Resurrection is the one Korean clerics drop: they call it a learning-run crutch that costs a care slot. Salvation takes that slot.",
+   "builds": [
+    {"t": "Healer, no Chanter", "tag": "Most used", "main": true,
+     "pick": [["Light of Protection", 25], ["Earth Punishment", 25], ["Prayer of Amplification", 25], ["Noble Aura", 23], ["Benevolence", 20], ["Salvation", 20]],
+     "why": "Light of Protection is a party-wide damage and damage-tolerance toggle. Earth Punishment and Prayer of Amplification are your party damage (tested level-25 damage order: Prayer > Earth Punishment > Light > Noble Aura). Benevolence is your group heal-over-time and cleanse. Salvation is your personal invulnerability; some dungeons (Deus, Noiran) need it.",
+     "src": [["Max = three 25s + one 23", "https://www.inven.co.kr/board/aion2/6452/28722"], ["DPS stigma thread", "https://www.inven.co.kr/board/aion2/6452/28350"]]},
+    {"t": "With a Chanter in the party", "tag": "Swap",
+     "pick": [["Earth Punishment", 25], ["Prayer of Amplification", 25], ["Noble Aura", 25], ["Benevolence", 20], ["Salvation", 20], ["Absolution", 20]],
+     "why": "Chanter's Undefeated Mantra and your Light of Protection don't stack (the higher level wins), so drop Light and move its level 25 to Noble Aura.",
+     "src": [["Presets with / without Chanter", "https://www.inven.co.kr/board/aion2/6452/28978"], ["Expedition 25 picks", "https://www.inven.co.kr/board/aion2/6452/29085"]]},
+    {"t": "Raid care (Snowfield of Sorrow)", "tag": "Raid",
+     "pick": [["Light of Protection", 25], ["Salvation", 25], ["Earth Punishment", 25], ["Benevolence", 23], ["Absolution", 20], ["Prayer of Amplification", 20]],
+     "why": "Salvation 25 gives the whole party its base effect for wipe mechanics. With a Chanter, swap Light of Protection for Yustiel's Power 25 (party damage tolerance). Absolution cleanses and heals.",
+     "src": [["Sanctuary 4 cleric presets", "https://www.inven.co.kr/board/aion2/6452/28978"]]},
+    {"t": "Solo / open world", "tag": "Solo",
+     "pick": [["Earth Punishment", 20], ["Prayer of Amplification", 20], ["Noble Aura", 20], ["Light of Protection", 20], ["Benevolence", 15], ["Salvation", 15]],
+     "why": "The same six as the main build, levelled in the order below. Korean clerics tested Root and Voice of Doom as extra damage and found they barely help."}
+   ],
+   "order": [
+    {"s": [["Earth Punishment", 10], ["Prayer of Amplification", 5], ["Light of Protection", 5]], "n": "Prayer 5 = +20% PvE damage boost for the party. Earth Punishment 10 = +10% Double Chance (party +5%)."},
+    {"s": [["Noble Aura", 5], ["Benevolence", 5], ["Salvation", 5]], "n": "Cheap levels: each 1→5 costs 5 shards."},
+    {"s": [["Earth Punishment", 20], ["Prayer of Amplification", 20]], "n": "Earth Punishment 15 adds party Attack and Defense; 20 adds +10s duration."},
+    {"s": [["Light of Protection", 20], ["Noble Aura", 15]], "n": "Noble Aura 15: +30% damage to targets with Incapacitated Immunity (bosses)."},
+    {"s": [["Salvation", 20], ["Benevolence", 20], ["Noble Aura", 20]], "n": "Salvation 15 also covers your lowest-HP party member; 20 triggers it automatically when you're stunned or knocked down."},
+    {"s": [["Earth Punishment", 25], ["Prayer of Amplification", 25], ["Light of Protection", 25]], "n": "With a regular Chanter, put the third 25 into Noble Aura instead. Leftover 3 levels: Noble Aura 23."}
+   ],
+   "milestones": [
+    ["Prayer of Amplification 5", "+20% PvE damage boost: the biggest cheap party buff you have"],
+    ["Earth Punishment 5", "Condemnation always crits on targets with Earth Punishment"],
+    ["Benevolence 20", "Cleanses every 5s while it's up"],
+    ["Salvation 25", "Whole party gets Salvation's base effect"]
+   ],
+   "tiers": {
+    "S": [["Earth Punishment", "Party Double Chance and Attack; Condemnation crits"], ["Prayer of Amplification", "Highest damage per level-25 in tests"], ["Light of Protection", "Party damage and tolerance (drop it if a Chanter is there)"]],
+    "A": [["Noble Aura", "5-minute pet that hits bosses hard; 25 when Light is dropped"], ["Benevolence", "Group heal-over-time and cleanse"], ["Salvation", "Invulnerability; party-wide at 25"]],
+    "B": [["Yustiel's Power", "Raid tolerance when a Chanter covers Light"], ["Absolution", "Cleanse and burst heal; less needed in Sanctuary 4"]],
+    "C": [["Summon Resurrection", "Learning runs only"], ["Voice of Doom", "Long cast, little damage"], ["Root", "Only helps with Voice of Doom"], ["Power Burst", "Filler damage"], ["Assault Mark", "Shared Assault skill"]]
+   }
+  },
+  {
+   "id": "sorcerer", "en": "Sorcerer", "tw": "魔道星", "role": "Ranged magic DPS",
+   "image": ["Element Enhancement", "Fire Wall", "Cold Storm", "Delayed Explosion"],
+   "imageNote": "Matches the Korean damage core. The two stigmas Korea adds are defensive: Arctic Armor (their third level-25) and Steel Barrier.",
+   "builds": [
+    {"t": "PvE DPS", "tag": "Most used", "main": true,
+     "pick": [["Element Enhancement", 25], ["Fire Wall", 25], ["Arctic Armor", 25], ["Delayed Explosion", 20], ["Cold Storm", 20], ["Steel Barrier", 20]],
+     "why": "Element Enhancement (+7% Double Chance at 25) and Fire Wall (+10% damage to targets with Embers at 25) are the two damage 25s. Arctic Armor is the third: players report its Mana Conversion is active about 70–75% of the time in PvE, so you can stand in damage instead of dodging. Delayed Explosion and Cold Storm are in your Hellfire key.",
+     "src": [["25 picks thread (Sep 17)", "https://www.inven.co.kr/board/aion2/6453/17368"], ["Priority thread", "https://www.inven.co.kr/board/aion2/6453/17196"]]},
+    {"t": "Two Sorcerers in the party", "tag": "Swap",
+     "pick": [["Element Enhancement", 25], ["Fire Wall", 25], ["Arctic Armor", 25], ["Delayed Explosion", 20], ["Steel Barrier", 20], ["Hibernation", 20]],
+     "why": "Only the stronger Cold Storm debuff counts when two Sorcerers use it, so one of you can drop it for Hibernation.",
+     "src": [["Cold Storm doesn't stack", "https://www.inven.co.kr/board/aion2/6453/17368"]]},
+    {"t": "Raid safety (Snowfield of Sorrow)", "tag": "Raid",
+     "pick": [["Arctic Armor", 25], ["Element Enhancement", 25], ["Fire Wall", 25], ["Steel Barrier", 20], ["Delayed Explosion", 20], ["Hibernation", 20]],
+     "why": "One player's day-1 clear setup: Arctic Armor, Steel Barrier and Hibernation for mechanics, with Element Enhancement, Fire Wall and Delayed Explosion for damage. Replies say Hibernation is optional once you know the fight.",
+     "src": [["Sanctuary 4 setup", "https://www.inven.co.kr/board/aion2/6453/17172"]]},
+    {"t": "PvP", "tag": "PvP",
+     "pick": [["Arctic Armor", 25], ["Soul Freeze", 25], ["Element Enhancement", 20], ["Steel Barrier", 20], ["Glacial Smite", 20], ["Hibernation", 20]],
+     "why": "Arctic Armor is the fixed 25. Soul Freeze at 25 ignores block and evasion. Glacial Smite is the best single-target hit for its cast time. Hibernation is an escape.",
+     "src": [["PvP stigma thread", "https://www.inven.co.kr/board/aion2/6453/15652"], ["PvP reasons", "https://www.inven.co.kr/board/aion2/6453/15952"]]}
+   ],
+   "order": [
+    {"s": [["Element Enhancement", 10], ["Fire Wall", 5], ["Delayed Explosion", 10]], "n": "Delayed Explosion 10 = -10s cooldown. Fire Wall 5 = Embers deal extra damage on hit."},
+    {"s": [["Cold Storm", 5], ["Arctic Armor", 10], ["Steel Barrier", 5]]},
+    {"s": [["Element Enhancement", 20], ["Fire Wall", 20]], "n": "Element Enhancement 20: +10% more Fire and Water Attack. Fire Wall 20: +10s Embers."},
+    {"s": [["Delayed Explosion", 20], ["Cold Storm", 20]], "n": "Delayed Explosion 15 turns it into an AoE."},
+    {"s": [["Arctic Armor", 20], ["Steel Barrier", 20]], "n": "Arctic Armor 20: another +20% PvE damage tolerance."},
+    {"s": [["Element Enhancement", 25], ["Fire Wall", 25], ["Arctic Armor", 25]], "n": "Leftover 3 levels: Delayed Explosion or Steel Barrier 23."}
+   ],
+   "milestones": [
+    ["Element Enhancement 10 / 15", "x1.5 Robe of Flame, then x1.5 Grace of Enhancement while it's up"],
+    ["Delayed Explosion 15", "Becomes an AoE"],
+    ["Fire Wall 25", "+10% damage to targets with Embers"],
+    ["Delayed Explosion 25", "Ignores Block and Evasion and always crits"]
+   ],
+   "tiers": {
+    "S": [["Element Enhancement", "+Fire and Water Attack; x1.5 two passives"], ["Fire Wall", "Embers damage-over-time; +10% at 25"]],
+    "A": [["Arctic Armor", "Tolerance and Mana Conversion; lets you trade hits"], ["Delayed Explosion", "+15–25% damage taken from you; in the Hellfire key"], ["Cold Storm", "Frostbite damage-over-time; one per party"]],
+    "B": [["Steel Barrier", "Long shield and tolerance"], ["Hibernation", "Invulnerability for raids and PvP"], ["Divine Burst", "Burst plus lifesteal, clunky in rotation"]],
+    "C": [["Glacial Smite", "PvP single-target"], ["Soul Freeze", "PvP Seal"], ["Lumiel's Space", "PvP Aerial Bind"], ["Curse: Tree", "PvP polymorph"], ["Assault Bombardment", "Shared Assault skill"]]
+   }
+  },
+  {
+   "id": "templar", "en": "Templar", "tw": "守護星", "role": "Sword & shield tank",
+   "image": ["Doom Shield", "Battlefield Banner", "Shield of Protection", "Taunt"],
+   "imageNote": "All four are in the Korean tank build. Korea adds Empyrean Lord's Punishment (a level-25 pick) and Noble Armor to fill six slots.",
+   "builds": [
+    {"t": "Party tank", "tag": "Most used", "main": true,
+     "pick": [["Taunt", 25], ["Battlefield Banner", 25], ["Empyrean Lord's Punishment", 25], ["Shield of Protection", 20], ["Doom Shield", 20], ["Noble Armor", 20]],
+     "why": "Taunt's Shrink lowers the boss's damage tolerance for the whole party (5) and its crit-damage resist (25), so every DPS benefits. Battlefield Banner is your damage. Empyrean Lord's Punishment adds +10% PvE damage (15) and opens fights. Shield of Protection blocks stuns (2 uses, 3 at 25). Doom Shield engages and resets Annihilate. Noble Armor is always-on HP (2-min cooldown in KR/TW).",
+     "src": [["Sep 28 replies: 5 fixed + 1", "https://www.inven.co.kr/board/aion2/6438/27186"], ["PvE six", "https://www.inven.co.kr/board/aion2/6438/22197"], ["Newbie 25 order", "https://www.inven.co.kr/board/aion2/6438/22485"]]},
+    {"t": "Hard raid / Snowfield of Sorrow", "tag": "Raid",
+     "pick": [["Taunt", 25], ["Battlefield Banner", 25], ["Nezekan's Shield", 25], ["Shield of Protection", 20], ["Noble Armor", 20], ["Doom Shield", 20]],
+     "why": "Nezekan's Shield puts a party-wide shield worth 41% of max HP up (+100% at 25) for unavoidable hits. Some tanks take Second Skin 25 instead for personal survival.",
+     "src": [["Snowfield setup", "https://www.inven.co.kr/board/aion2/6438/26147"], ["Nezekan 25 for Muspel", "https://www.inven.co.kr/board/aion2/6438/22090"]]},
+    {"t": "Natural-block DPS (geared)", "tag": "Swap",
+     "pick": [["Taunt", 25], ["Battlefield Banner", 25], ["Assault Fury", 25], ["Doom Shield", 20], ["Noble Armor", 20], ["Empyrean Lord's Punishment", 20]],
+     "why": "If your block stat already stops the hits, drop Shield of Protection for Assault Fury (+20% Attack for 5s on hit). The author calls it the highest-damage Templar setup.",
+     "src": [["Three Templar setups", "https://www.inven.co.kr/board/aion2/6438/21914"]]},
+    {"t": "Solo / open world", "tag": "Solo",
+     "pick": [["Doom Shield", 20], ["Battlefield Banner", 20], ["Empyrean Lord's Punishment", 20], ["Noble Armor", 20], ["Shield of Protection", 15], ["Second Skin", 15]],
+     "why": "Taunt does nothing solo, so Second Skin (damage tolerance) takes its slot. Doom Shield opens each pull and resets Annihilate.",
+     "src": [["Assembled from the stigma effects; not a single source", ""]]},
+    {"t": "PvP (solo / party)", "tag": "PvP",
+     "pick": [["Doom Shield", 25], ["Battlefield Banner", 25], ["Shield of Protection", 25], ["Comrade in Arms", 20], ["Second Skin", 20], ["Noble Armor", 20]],
+     "why": "Doom Shield 25 ignores block and evasion, so the knockdown lands. In party PvP, swap Battlefield Banner for Nezekan's Shield 25 (a 60k party shield) and make Comrade in Arms 25.",
+     "src": [["Templar PvP stigma write-up", "https://www.inven.co.kr/board/aion2/6438/22228"]]}
+   ],
+   "order": [
+    {"s": [["Taunt", 5], ["Doom Shield", 5], ["Shield of Protection", 5]], "n": "Taunt 5 = boss takes more damage from everyone. Doom Shield 5 = resets Annihilate. Shield of Protection 5 = a second block."},
+    {"s": [["Battlefield Banner", 10], ["Empyrean Lord's Punishment", 10], ["Noble Armor", 5]], "n": "Banner 10: +10% weapon damage boost."},
+    {"s": [["Taunt", 20], ["Battlefield Banner", 20]], "n": "Taunt 15: -5s cooldown. Banner 20: -30s cooldown."},
+    {"s": [["Empyrean Lord's Punishment", 20], ["Shield of Protection", 20]], "n": "Empyrean Lord's Punishment 15: +10% PvE damage for 10s on hit."},
+    {"s": [["Doom Shield", 20], ["Noble Armor", 20]], "n": "Noble Armor 15: x1.5 Fury while it's up."},
+    {"s": [["Taunt", 25], ["Battlefield Banner", 25], ["Empyrean Lord's Punishment", 25]], "n": "If you get stunned a lot, make Shield of Protection the third 25. Leftover 3 levels: Shield of Protection 23."}
+   ],
+   "milestones": [
+    ["Taunt 5", "Shrink also cuts the boss's PvE damage tolerance by 10% for the party"],
+    ["Doom Shield 5", "Resets Annihilate on hit (Annihilate → Doom Shield → Annihilate)"],
+    ["Battlefield Banner 20", "-30s cooldown"],
+    ["Shield of Protection 25", "Third consecutive block (Jul 29)"],
+    ["Taunt 25", "Shrink also lowers the target's crit-damage resist by 5%"]
+   ],
+   "tiers": {
+    "S": [["Taunt", "Party-wide boss debuff; the reason DPS want a Templar"], ["Battlefield Banner", "Your main damage cooldown"]],
+    "A": [["Empyrean Lord's Punishment", "+10% PvE damage and opener stun"], ["Shield of Protection", "Blocks stuns (2–3 uses)"], ["Doom Shield", "Engage, shield, Annihilate reset"], ["Noble Armor", "Always-on HP; 2-min cooldown in KR/TW"]],
+    "B": [["Nezekan's Shield", "Party shield for hard raids"], ["Second Skin", "Personal tolerance; Enrage x1.5 at 25"], ["Assault Fury", "Natural-block DPS setups"]],
+    "C": [["Comrade in Arms", "Party PvP"], ["Grapple", "Pulls, PvP"], ["Armor of Balance", "PvP CC resist"], ["Executing Blade", "Korean players call it a design miss"]]
+   }
+  },
+  {
+   "id": "chanter", "en": "Chanter", "tw": "護法星", "role": "Buffer / melee support",
+   "image": ["Undefeated Mantra", "Sprint Mantra", "Marchutan's Wrath", "Power of the Storm", "Guardian Blessing"],
+   "imageNote": "The exact core Korean Chanters use. The sixth slot is Healing Touch (party heal) or, in raids, Impeding Authority / Focused Defense.",
+   "builds": [
+    {"t": "Buffer DPS", "tag": "Most used", "main": true,
+     "pick": [["Undefeated Mantra", 25], ["Power of the Storm", 25], ["Sprint Mantra", 25], ["Marchutan's Wrath", 20], ["Guardian Blessing", 20], ["Healing Touch", 20]],
+     "why": "Undefeated Mantra (party damage and tolerance) and Power of the Storm (party combat speed and cooldowns) are why parties bring you: level them first and to 25. Sprint Mantra is the third 25. Marchutan's Wrath opens Dark Crush. Guardian Blessing must be at least 15 (x1.5 Wind's Promise). Healing Touch removes 5 debuffs at 15.",
+     "src": [["Chanter PvE guide (stigma section)", "https://www.inven.co.kr/board/aion2/6451/116"], ["PvE order replies", "https://www.inven.co.kr/board/aion2/6451/22241"]]},
+    {"t": "Battle healer (no Cleric)", "tag": "Battle healer",
+     "pick": [["Undefeated Mantra", 25], ["Power of the Storm", 25], ["Healing Touch", 25], ["Sprint Mantra", 20], ["Guardian Blessing", 20], ["Impeding Authority", 20]],
+     "why": "Keeps both party buffs and turns the rest into healing. Healing Touch 25 (-5s cooldown) is your burst heal and 5-debuff cleanse. Impeding Authority gives the party a 16%-HP shield, and 7% HP back when it breaks at 20. Sprint Mantra heals on hit. The guide author cleared Muspel boss 2 without a Cleric using these.",
+     "src": [["No-Cleric party run", "https://www.inven.co.kr/board/aion2/6451/116"], ["Support 25s: Healing Touch, Sprint, Storm", "https://www.inven.co.kr/board/aion2/6451/22811"]]},
+    {"t": "Raid (Sanctuary 4 / Snowfield)", "tag": "Raid",
+     "pick": [["Power of the Storm", 25], ["Undefeated Mantra", 25], ["Guardian Blessing", 25], ["Sprint Mantra", 20], ["Impeding Authority", 20], ["Focused Defense", 20]],
+     "why": "Tested on a clear: Storm 25 for the opening burst, Undefeated 25 over the Cleric's Light, and Guardian Blessing 25 for always-on damage tolerance. Impeding Authority pre-shields the jump-rope patterns. Focused Defense lets you block boss 1's block mechanic.",
+     "src": [["Sanctuary 4 clear notes", "https://www.inven.co.kr/board/aion2/6451/22909"]]},
+    {"t": "Abyss boss / Rift / PvP", "tag": "PvP",
+     "pick": [["Marchutan's Wrath", 25], ["Healing Touch", 25], ["Focused Defense", 20], ["Guardian Blessing", 20], ["Impeding Authority", 20], ["Sprint Mantra", 20]],
+     "why": "Since Sep 23, Undefeated Mantra and Power of the Storm do nothing while Battlefield Might is active (Abyss boss fights, Rifts, Time-Space battles). Free those slots: Marchutan's Wrath 20 adds heal reduction and a stun in PvP, and Focused Defense is your block.",
+     "src": [["Sep 22 live: Battlefield Might rules", "https://www.inven.co.kr/board/aion2/6388/274249"], ["My adaptation of that rule", ""]]},
+    {"t": "Solo / open world", "tag": "Solo",
+     "pick": [["Undefeated Mantra", 20], ["Power of the Storm", 20], ["Marchutan's Wrath", 20], ["Sprint Mantra", 15], ["Focused Defense", 10], ["Healing Touch", 15]],
+     "why": "The mantras are self-buffs too. Marchutan's Wrath keeps Dark Crush available. The guide author says solo Nightmare was much easier with Focused Defense.",
+     "src": [["Solo Nightmare note", "https://www.inven.co.kr/board/aion2/6451/116"]]}
+   ],
+   "order": [
+    {"s": [["Undefeated Mantra", 5], ["Power of the Storm", 5], ["Sprint Mantra", 5], ["Marchutan's Wrath", 5]], "n": "The guide's exact order starts here. Storm 5 = -30s cooldown."},
+    {"s": [["Healing Touch", 10], ["Undefeated Mantra", 20]], "n": "Undefeated 20: +5% Double Chance on top of the party buff."},
+    {"s": [["Sprint Mantra", 10], ["Power of the Storm", 20]], "n": "Storm 20: +20% Attack for you, +10% for the party."},
+    {"s": [["Guardian Blessing", 15], ["Healing Touch", 20], ["Marchutan's Wrath", 20]], "n": "Guardian Blessing 15 = x1.5 Wind's Promise. Players call 15 the minimum."},
+    {"s": [["Sprint Mantra", 20], ["Guardian Blessing", 20]]},
+    {"s": [["Undefeated Mantra", 25], ["Power of the Storm", 25], ["Sprint Mantra", 25]], "n": "Raid: make Guardian Blessing the third 25 instead of Sprint."}
+   ],
+   "milestones": [
+    ["Power of the Storm 5", "-30s cooldown (cheapest big upgrade you have)"],
+    ["Guardian Blessing 15", "x1.5 Wind's Promise: the must-hit level"],
+    ["Healing Touch 15", "Removes 5 debuffs"],
+    ["Undefeated Mantra 25", "+10% Perfect Chance"],
+    ["Power of the Storm 25", "+5% weapon damage boost"]
+   ],
+   "tiers": {
+    "S": [["Undefeated Mantra", "Party damage and tolerance; highest level in the party wins"], ["Power of the Storm", "Party speed and cooldowns; opening burst"]],
+    "A": [["Sprint Mantra", "Move speed and heal on hit"], ["Guardian Blessing", "Always-on HP and tolerance; 15 minimum"], ["Marchutan's Wrath", "Opens Dark Crush; PvP heal cut"], ["Healing Touch", "Party heal and 5-debuff cleanse"]],
+    "B": [["Impeding Authority", "Party shield for raids"], ["Focused Defense", "Block for mechanics and solo"], ["Barrier Spell", "Can't-die window; long cooldown"]],
+    "C": [["Fracturing Blow", "Gap-closer; replaced by Marchutan's"], ["Obliterate", "Filler"], ["Ensnaring Mark", "PvP CC"], ["Assault Shock", "Shared Assault skill"]]
+   }
+  },
+  {
+   "id": "gladiator", "en": "Gladiator", "tw": "劍星", "role": "Greatsword tank / DPS",
+   "image": ["Rage Burst", "Zikel's Blessing", "Lunge Stance", "Lifestealing Blade", "Focused Block"],
+   "imageNote": "Same five Korean Gladiators start from. The sixth is Wave Armor or Armor of Balance, and Focused Block drops out when a Templar is tanking.",
+   "builds": [
+    {"t": "Party DPS", "tag": "Most used", "main": true,
+     "pick": [["Lunge Stance", 25], ["Zikel's Blessing", 25], ["Wave Armor", 25], ["Lifestealing Blade", 20], ["Rage Burst", 20], ["Armor of Balance", 20]],
+     "why": "Lunge Stance and Zikel's Blessing are fixed 25s for PvE and PvP. Wave Armor 25 hits twice and multiplies Murderous Burst and Experienced Counterstrike. Lifestealing Blade is about 6% of your damage (its 25 makes Predation always crit). Rage Burst is +10% PvE damage at 20. Armor of Balance is the high-end pick if you keep your front to the boss. Swap in Focused Block if you're getting hit in pugs.",
+     "src": [["Gladiator stigma analysis", "https://www.inven.co.kr/board/aion2/6448/22520"], ["Chapter 1 guide: Lifestealing fixed", "https://www.inven.co.kr/board/aion2/6448/22705"], ["PvE dummy test", "https://www.inven.co.kr/board/aion2/6448/22823"]]},
+    {"t": "Battle tank (no Templar)", "tag": "Battle tank",
+     "pick": [["Lunge Stance", 25], ["Zikel's Blessing", 25], ["Armor of Balance", 25], ["Focused Block", 20], ["Wave Armor", 20], ["Rage Burst", 20]],
+     "why": "When you hold the boss, Focused Block parries keep Experienced Counterstrike's frontal damage buff up (and restore HP at 20). Armor of Balance (+30% ailment resist at 25) and Wave Armor both multiply your passives, and Wave Armor reflects 10% damage. Players are main-tanking Trial stage 16 and Sanctuary 4 this way. For progression pulls, trade Rage Burst for Tenaciousness (3s invulnerability).",
+     "src": [["Tank combo (no Templar)", "https://www.inven.co.kr/board/aion2/6448/22575"], ["Trial 16 main tank report", "https://www.inven.co.kr/board/aion2/6448/32301"]]},
+    {"t": "With a Templar tanking", "tag": "Swap",
+     "pick": [["Lunge Stance", 25], ["Zikel's Blessing", 25], ["Armor of Balance", 25], ["Wave Armor", 20], ["Rage Burst", 20], ["Lifestealing Blade", 20]],
+     "why": "The Templar takes the block mechanics, so Focused Block goes and you run both armors plus Lifestealing Blade.",
+     "src": [["Party combos", "https://www.inven.co.kr/board/aion2/6448/22575"]]},
+    {"t": "Solo / leveling", "tag": "Solo",
+     "pick": [["Lunge Stance", 20], ["Zikel's Blessing", 20], ["Rage Burst", 20], ["Lifestealing Blade", 20], ["Wave Armor", 15], ["Focused Block", 10]],
+     "why": "Lifestealing Blade and Wave Armor both heal you while hitting packs, and Focused Block covers elites. Rage Burst 5 cuts its cooldown from 45s to 30s.",
+     "src": [["Assembled from the stigma effects; not a single source", ""]]},
+    {"t": "PvP", "tag": "PvP",
+     "pick": [["Lunge Stance", 25], ["Focused Block", 20], ["Armor of Balance", 25], ["Tenaciousness", 20], ["Rage Burst", 25], ["Blade Toss", 20]],
+     "why": "Focused Block and Tenaciousness are your defense. Rage Burst 25 ignores block and evasion. Blade Toss cuts healing received by 50–70%, and players call it mandatory against healers. For group fights, swap one of them for Zikel's Blessing.",
+     "src": [["PvP picks (Sep 9)", "https://www.inven.co.kr/board/aion2/6448/31743"], ["Blade Toss heal cut", "https://vortexgaming.io/postdetail/728097"]]}
+   ],
+   "order": [
+    {"s": [["Lunge Stance", 10], ["Zikel's Blessing", 10], ["Rage Burst", 5]], "n": "Rage Burst 5 = -15s cooldown. Zikel's 10 = +10% PvE damage."},
+    {"s": [["Wave Armor", 10], ["Lifestealing Blade", 10], ["Armor of Balance", 5]], "n": "Wave Armor 10 = x1.5 Experienced Counterstrike. Lifestealing 10 = party Predation."},
+    {"s": [["Lunge Stance", 20], ["Zikel's Blessing", 20]], "n": "Lunge 20: 50% chance to cut all cooldowns 1s on crit."},
+    {"s": [["Wave Armor", 20], ["Lifestealing Blade", 20]], "n": "Wave Armor 15 = x1.5 Murderous Burst. Lifestealing 15 = -30s cooldown."},
+    {"s": [["Rage Burst", 20], ["Armor of Balance", 20]], "n": "Rage Burst 20: +10% PvE damage boost."},
+    {"s": [["Lunge Stance", 25], ["Zikel's Blessing", 25], ["Wave Armor", 25]], "n": "Leftover 3 levels: Armor of Balance 23 (a longer window)."}
+   ],
+   "milestones": [
+    ["Rage Burst 5", "-15s cooldown (45s → 30s): the best 5 shards you can spend"],
+    ["Zikel's Blessing 10", "+10% PvE damage boost while it's up"],
+    ["Lunge Stance 25", "50% chance of extra damage on crit, about 5% of your total damage"],
+    ["Zikel's Blessing 25", "+5s duration (Jul 8)"],
+    ["Wave Armor 25", "Becomes a 2-hit attack (Jul 8)"]
+   ],
+   "tiers": {
+    "S": [["Lunge Stance", "Combat speed plus crit procs; fixed 25"], ["Zikel's Blessing", "+20% Attack, +10% PvE damage; fixed 25"]],
+    "A": [["Wave Armor", "Multiplies your passives; stable uptime"], ["Lifestealing Blade", "About 6% of damage plus party Predation"], ["Rage Burst", "+10% PvE damage at 20; in the macro"], ["Armor of Balance", "Highest ceiling if you stay frontal"]],
+    "B": [["Focused Block", "Tanking and pugs; drop it behind a Templar"], ["Tenaciousness", "Invulnerability for progression and PvP"]],
+    "C": [["Blade Toss", "PvP heal cut"], ["Forced Restraint", "PvP Seal"], ["Fracturing Rush", "PvP gap-closer"], ["Wrath Wave", "AoE knockdown"], ["Assault Strike", "Shared Assault skill"]]
+   }
+  },
+  {
+   "id": "spiritmaster", "en": "Spiritmaster", "tw": "精靈星", "role": "Summoner / ranged DPS",
+   "image": ["Flame Blessing", "Summon: Ancient Spirit", "Jointstrike: Corrode", "Enhance: Spirit's Benediction"],
+   "imageNote": "The same four Korean Spiritmasters call the only real PvE stigmas. The last two slots are Jointstrike: Destructive Attack (fixed Sep 10) and Siphon.",
+   "builds": [
+    {"t": "PvE DPS", "tag": "Most used", "main": true,
+     "pick": [["Jointstrike: Corrode", 25], ["Summon: Ancient Spirit", 25], ["Flame Blessing", 25], ["Enhance: Spirit's Benediction", 20], ["Jointstrike: Destructive Attack", 20], ["Siphon", 20]],
+     "why": "Corrode is the first 25 (+25% damage taken from you at 25). Players who dropped it saw damage fall sharply. Ancient Spirit 25 casts after 3 basic attacks instead of 5. Flame Blessing 25 adds +100% to its procs on bosses (Incapacitated Immunity). Benediction is party damage and tolerance. Full-charge Destructive Attack about 3–4s after summoning Ancient Spirit.",
+     "src": [["Newbie guide stigma table", "https://www.inven.co.kr/board/aion2/6454/8165"], ["Which single 25 first", "https://www.inven.co.kr/board/aion2/6454/10221"], ["Sep 16 optimizer", "https://www.inven.co.kr/board/aion2/6454/10286"]]},
+    {"t": "Benediction 25", "tag": "Swap",
+     "pick": [["Jointstrike: Corrode", 25], ["Summon: Ancient Spirit", 25], ["Enhance: Spirit's Benediction", 25], ["Flame Blessing", 23], ["Jointstrike: Destructive Attack", 20], ["Siphon", 20]],
+     "why": "Benediction 25 (+3s) and Flame Blessing 25 tested about even. With the 3 leftover levels, some players put Benediction at 25 and Flame Blessing at 23, since Flame Blessing's duration also grows per level.",
+     "src": [["Leftover levels thread", "https://www.inven.co.kr/board/aion2/6454/8996"]]},
+    {"t": "Survival / solo", "tag": "Solo",
+     "pick": [["Jointstrike: Corrode", 25], ["Summon: Ancient Spirit", 25], ["Siphon", 25], ["Enhance: Spirit's Benediction", 20], ["Flame Blessing", 20], ["Jointstrike: Destructive Attack", 20]],
+     "why": "Siphon heals, and from 15 it shields you for 30% of max HP (+30% at 25). Players who moved their third 25 from Flame Blessing to Siphon report much easier survival.",
+     "src": [["Siphon 25 thread", "https://www.inven.co.kr/board/aion2/6454/10248"]]}
+   ],
+   "order": [
+    {"s": [["Jointstrike: Corrode", 5], ["Summon: Ancient Spirit", 10], ["Flame Blessing", 10]], "n": "Corrode 5 = +15% spirit damage on the target. Ancient Spirit 10 = x1.5 Spirit's Descent."},
+    {"s": [["Enhance: Spirit's Benediction", 10], ["Jointstrike: Destructive Attack", 5], ["Siphon", 5]], "n": "Destructive Attack 5 turns into a charge skill (up to +200%)."},
+    {"s": [["Jointstrike: Corrode", 20], ["Summon: Ancient Spirit", 20]], "n": "Ancient Spirit 15 = skill after 5 basic attacks. Corrode 20 = +10s duration."},
+    {"s": [["Flame Blessing", 20], ["Enhance: Spirit's Benediction", 20]], "n": "Benediction 20: +25% PvE damage and tolerance for you and the spirit."},
+    {"s": [["Jointstrike: Destructive Attack", 20], ["Siphon", 20]], "n": "Destructive Attack 20 resets Curse and Corrode cooldowns on its first hit. Siphon 15 adds a 30%-HP shield."},
+    {"s": [["Jointstrike: Corrode", 25], ["Summon: Ancient Spirit", 25], ["Flame Blessing", 25]], "n": "If you can only make one 25, make it Corrode."}
+   ],
+   "milestones": [
+    ["Jointstrike: Corrode 5", "+15% extra damage from spirits during Corrode"],
+    ["Jointstrike: Destructive Attack 20", "First hit resets Jointstrike: Curse and Corrode"],
+    ["Summon: Ancient Spirit 25", "Uses its skill after 3 basic attacks"],
+    ["Jointstrike: Corrode 25", "+25% damage taken from the Spiritmaster during Corrode (Aug 26)"]
+   ],
+   "tiers": {
+    "S": [["Jointstrike: Corrode", "Target takes more damage from you and spirits"], ["Summon: Ancient Spirit", "Burst window; Four Elements stacks"]],
+    "A": [["Flame Blessing", "Extra damage procs; big vs bosses at 25"], ["Enhance: Spirit's Benediction", "Damage plus tolerance for you and the spirit"]],
+    "B": [["Jointstrike: Destructive Attack", "Charge nuke; usable on cooldown since Sep 10"], ["Siphon", "Heal and shield; survival 25"]],
+    "C": [["Command: Proxy", "Spirit tanks for you; costs damage in PvE"], ["Assault Terror", "Shared Assault skill"], ["Cursed Cloud", "Damage loss in tests"], ["Kaisinel's Power", "Status effect buff"], ["Cry of Terror", "PvP Fear"], ["Magic Block", "PvP Seal"], ["Seize Magic", "PvP buff strip"]]
+   }
+  },
+  {
+   "id": "ranger", "en": "Ranger", "tw": "弓星", "role": "Ranged physical DPS",
+   "image": ["Vaizel's Authority", "Griffon Arrow", "Bow of Blessing", "Supporting Fire"],
+   "imageNote": "Right on: these are the four Korean Rangers use. They add Explosive Arrow and Mother Nature's Breath (the 6th-slot pick, set it and forget it).",
+   "builds": [
+    {"t": "PvE DPS", "tag": "Most used", "main": true,
+     "pick": [["Vaizel's Authority", 25], ["Supporting Fire", 25], ["Bow of Blessing", 25], ["Griffon Arrow", 23], ["Explosive Arrow", 20], ["Mother Nature's Breath", 20]],
+     "why": "Dummy test, 5 × 1 min each: Vaizel + Bow of Blessing + Supporting Fire at 25 was the strongest trio (102.2% vs 100% for Vaizel + Bow + Griffon). Supporting Fire also lifesteals and doesn't care about boss invulnerability phases. The 6th slot is Mother Nature's Breath: damage stigmas there added only about 0.4%.",
+     "src": [["PvE stigma DPS test", "https://www.inven.co.kr/board/aion2/6450/15518"], ["25 and 6th slot summary", "https://www.inven.co.kr/board/aion2/6450/15571"]]},
+    {"t": "Griffon 25 (Vaizel · Griffon · Supporting)", "tag": "Swap",
+     "pick": [["Vaizel's Authority", 25], ["Griffon Arrow", 25], ["Supporting Fire", 25], ["Bow of Blessing", 20], ["Explosive Arrow", 20], ["Mother Nature's Breath", 20]],
+     "why": "Some players get higher numbers in real dungeons with Griffon at 25 (+20% damage to targets with Crimson Flames). On the dummy it tests about 2% lower. Pick one and check your Ctrl+X meter.",
+     "src": [["'Final' stigma thread", "https://www.inven.co.kr/board/aion2/6450/15965"]]},
+    {"t": "PvP", "tag": "PvP",
+     "pick": [["Vaizel's Authority", 25], ["Mother Nature's Breath", 25], ["Illusory Arrow", 25], ["Ambush Kick", 20], ["Bow of Blessing", 20], ["Ensnaring Trap", 20]],
+     "why": "Burst them down fast; the longer the fight, the worse for you. Ensnaring Trap strips buffs, Ambush Kick 25 gives 2s stealth, and Mother Nature cleanses damage-over-time.",
+     "src": [["PvP 25 picks", "https://www.inven.co.kr/board/aion2/6450/17672"]]}
+   ],
+   "order": [
+    {"s": [["Vaizel's Authority", 10], ["Bow of Blessing", 10], ["Supporting Fire", 15]], "n": "Supporting Fire 15 = -30s cooldown. Vaizel 10 = x1.5 Focused Eye."},
+    {"s": [["Griffon Arrow", 5], ["Explosive Arrow", 5], ["Mother Nature's Breath", 5]], "n": "Griffon 5 = castable while moving. Explosive 5 = -15s cooldown."},
+    {"s": [["Vaizel's Authority", 20], ["Supporting Fire", 20]], "n": "Supporting Fire 20 always crits."},
+    {"s": [["Bow of Blessing", 20], ["Griffon Arrow", 20]], "n": "Bow 15 = +20% crit damage. Griffon 20 = damage-over-time ticks twice as fast."},
+    {"s": [["Explosive Arrow", 20], ["Mother Nature's Breath", 20]]},
+    {"s": [["Vaizel's Authority", 25], ["Supporting Fire", 25], ["Bow of Blessing", 25]], "n": "Tester's order: Vaizel, then Supporting Fire, then Bow. Leftover 3 levels: Griffon Arrow 23."}
+   ],
+   "milestones": [
+    ["Supporting Fire 10 / 15", "+15s duration, then -30s cooldown: near-permanent orb"],
+    ["Bow of Blessing 15", "+20% crit damage while it's up"],
+    ["Vaizel's Authority 25", "+10% weapon damage boost while it's up"],
+    ["Supporting Fire 25", "10% chance of an extra shot with +30% PvE damage"]
+   ],
+   "tiers": {
+    "S": [["Vaizel's Authority", "+20% Attack; best level-25 value"], ["Supporting Fire", "High uptime, no risk, lifesteal"], ["Bow of Blessing", "Crit and crit-damage window"]],
+    "A": [["Griffon Arrow", "Crimson Flames damage-over-time; fire element"], ["Explosive Arrow", "Big hit on slowed targets"], ["Mother Nature's Breath", "Best 6th slot: tolerance and cleanse"]],
+    "B": [["Illusory Arrow", "Only +0.4% in PvE and roots you"], ["Ambush Kick", "Escape and PvP stun"]],
+    "C": [["Sealing Arrow", "PvP Seal"], ["Ensnaring Trap", "PvP buff strip"], ["Stealth", "Open-world"], ["Arrow Storm", "AoE stun"], ["Assault Smite", "Shared Assault skill"]]
+   }
+  }
+ ]
+}
