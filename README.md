@@ -11,7 +11,10 @@ All content lives in two files. You never need to touch the HTML or JS.
 | File | What's in it |
 |---|---|
 | `data/macros.json` | Per-class stacks, held keys, manual skills, notes, sources, alternate versions, changelog, "updated" date |
-| `data/skills.json` | Skill reference: TW/KO names, cooldown, MP, icon file. Add a skill here before using it in a stack. |
+| `data/skills.json` | Skill reference: TW/KO names, cooldown, MP, icon file, optional `note` (shown in the hover card, e.g. KR/TW patch changes the Global DB doesn't have yet). Add a skill here before using it in a stack. |
+| `data/descriptions.json` | Hover-card text: English description, specialties by unlock level, range, castable-while-moving, Mastery/Stigma. Generated, don't hand-edit. Refresh with `python tools/fetch_descriptions.py` after adding skills or after a patch. |
+
+Alternate versions (`alts`) use the same stack format: `{"t": title, "s": note, "macros": [[...]], "delays": [ms per entry], "hold": [...], "extra": [{"label": ..., "stack": [...]}]}`. `extra` draws a hand-pressed key stack that isn't part of the macro.
 
 ### Stack format
 
