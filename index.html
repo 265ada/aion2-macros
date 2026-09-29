@@ -188,6 +188,13 @@ details .inner{gap:16px}
 .alt p{margin:0;color:#cfd4dc}
 .alt .mw{box-shadow:none}
 .extra{display:grid;gap:6px}
+
+/* v5: full rotation tab + key stacks */
+.rec.full{background:var(--warn);color:#2a0705}
+.keys{display:grid;gap:8px;padding:10px;background:rgba(15,19,24,.9);border:1px solid #2b323d}
+.keys-h{font:700 .72rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.loss{border-left:2px solid var(--warn);padding-left:9px}
+.switch{flex-wrap:wrap;justify-content:center}
 </style>
 
 <div class="wrap">
@@ -196,6 +203,7 @@ details .inner{gap:16px}
   <p class="sub">Every class's in-game macro <span class="tc">(基本技能輔助功能)</span>, rebuilt with the <b>full 4-skill stack</b> behind each slot. Row <b>0 fires first</b> and sits right above the key, just like the game. Hover or tap any skill for its description.</p>
   <div class="switch" role="group" aria-label="Game stage">
     <button type="button" id="btn-late" aria-pressed="true">Late game · Sept 2026</button>
+    <button type="button" id="btn-full" aria-pressed="false">Full rotation · with buffs</button>
     <button type="button" id="btn-early" aria-pressed="false">Early game · improved</button>
   </div>
   <div class="stamp" id="stamp"></div>
@@ -249,7 +257,7 @@ details .inner{gap:16px}
       <tr><td><b>Gladiator</b></td><td>Upward Strike ~97–102 · Overhead Slam ~190–200 (high-end gear)</td><td>Remove any second macro line, including stigmas.</td></tr>
       <tr><td><b>Chanter</b></td><td>Dark Crush ~58–60 casts</td><td>Try the Impactful Crush split in "Other versions".</td></tr>
       <tr><td><b>Cleric</b></td><td>Attack speed caps at 94.4%, so extra speed past that is wasted</td><td>Aim for 32.6% cooldown reduction instead.</td></tr>
-      <tr><td><b>Assassin</b></td><td>Attack-speed breakpoints from April testing: 88.1% (Heart Gore jumps) and 92%. Avoid 99.9–100.7%.</td><td>These predate the summer overhauls, so re-check them on a dummy.</td></tr>
+      <tr><td><b>Assassin</b></td><td>Heart Gore ~300 · Insignia Explosion ~70 (post-Sep 16, 1.0M+ gear). Attack-speed breakpoints from April: 88.1% and 92%; avoid 99.9–100.7%.</td><td>Low Heart Gore usually means the macro slot is missing Savage Roar, or buffs are in the macro.</td></tr>
     </tbody>
   </table></div>
 </section>
@@ -279,7 +287,7 @@ details .inner{gap:16px}
       <li><div>Press <kbd>K</kbd>. In the skill window, drag skills into the <b>rows above a hotbar key</b>, in the order on the card (row 0 at the bottom).</div></li>
       <li><div>Click <span class="tc">基本技能輔助功能</span> [Macro] at the top right, then <span class="tc">新增輔助功能</span> [Add Macro]. A basic-attack entry appears. Click its icon and pick the <b>slot</b> you stacked. Set <span class="tc">延遲</span> [Delay] to <b>10 ms</b>.</div></li>
       <li><div>Bind the key: <span class="path"><span class="tc">設定 → 按鍵設定 → 一般</span> [Settings → Key Settings → General]</span>. Most players use a mouse side button.</div></li>
-      <li><div>Play in <b>Target</b> mode and pick a target. Hold <b>basic attack + macro key</b>, plus the third key if the class card lists one.</div></li>
+      <li><div>Play in <b>Target</b> mode and pick a target. Hold <b>basic attack + macro key</b>, plus the third key if the class card lists one. Check your numbers on the training dummy with the in-game DPS meter (<kbd>Ctrl</kbd>+<kbd>X</kbd>).</div></li>
       <li><div>Set <span class="tc">技能預約</span> [skill queue] as the class card says. If skills stutter or get skipped, flip it and test again.</div></li>
     </ol>
   </section>
@@ -308,6 +316,7 @@ details .inner{gap:16px}
       <tr><td>Sep 16</td><td><b>Ranger</b></td><td>Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire.</td><td>No stack change.</td></tr>
       <tr><td>Sep 16</td><td><b>Chanter</b></td><td>Guardian Blessing 5 min → 2 min.</td><td>Stack it on top of Power of the Storm.</td></tr>
       <tr><td>Sep 10</td><td><b>Spiritmaster</b></td><td>Jointstrike: Destructive Attack's spirit follow-up now fires immediately (fixes a Jointstrike overwrite bug).</td><td>Use it on cooldown except when lining up the Ancient Spirit window.</td></tr>
+      <tr><td>Aug 26</td><td><b>Templar · Chanter</b></td><td>Core rework: Judgment now opens after any shield attack, and Dark Crush after any ranged skill (was: stunned target). Minimum skill-cancel time added to every skill. Warding Strike CD 25 s; Spinning Strike CD 15 s / 100 MP; Impactful Crush CD 10 s.</td><td>This is why Shield Smite and Doom Shield sit in the Judgment line, and Spinning Strike and Impactful Crush in the Dark Crush line.</td></tr>
       <tr><td>Aug 26</td><td><b>Gladiator</b></td><td>The Overhead Slam→Rending Blow cancel (内絕 / 내절) came back.</td><td>Mash Overhead Slam while holding basic attack and the macro.</td></tr>
       <tr><td>Sep 23</td><td><b>All (Abyss)</b></td><td>"Battlefield Might" replaces Undefeated Mantra, Power of the Storm, Fury, Experienced Counterstrike and others while an Abyss boss is up.</td><td>Those buffs do nothing there, so you don't need them in the buff slot during Abyss boss fights.</td></tr>
     </tbody>

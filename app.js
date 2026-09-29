@@ -52,9 +52,12 @@
   const chips = (a) => `<div class="chips">${a.map((x, i) => (i ? '<span class="plus">+</span>' : "") + chip(x)).join("")}</div>`;
   const list = (a) => `<div class="chips">${a.map(chip).join("")}</div>`;
 
+  function keyStacks(list, note) {
+    return (list || []).map((e) => `<div class="extra"><span class="k gold">${esc(e.label)}</span><div class="stackwrap">${stackHtml(e.stack)}
+      <div class="keyrow">${icon(e.stack[0], "sm")}<span>${note}</span></div></div></div>`).join("");
+  }
   function altHtml(a) {
-    const extra = (a.extra || []).map((e) => `<div class="extra"><span class="k gold">${esc(e.label)}</span><div class="stackwrap">${stackHtml(e.stack)}
-      <div class="keyrow">${icon(e.stack[0], "sm")}<span>Not in the macro</span></div></div></div>`).join("");
+    const extra = keyStacks(a.extra, "Not in the macro");
     return `<div class="alt"><b>${esc(a.t)}</b>
       ${macroWindow(a.macros, a.delays)}
       ${a.hold ? `<div><span class="k">Hold together</span>${chips(a.hold)}</div>` : ""}
@@ -67,8 +70,10 @@
     const alts = (d.alts || []).map(altHtml).join("");
     return `<section class="cls" id="${c.id}" aria-labelledby="h-${c.id}">
       <div class="cls-h"><h2 id="h-${c.id}">${esc(c.en)}<span class="tc">${esc(c.tw)}</span></h2><span class="role">${esc(c.role)}</span></div>
-      ${macroWindow(d.macros, d.delays, mode === "early" ? '<span class="rec">Improved</span>' : "")}
+      ${macroWindow(d.macros, d.delays, mode === "early" ? '<span class="rec">Improved</span>' : mode === "full" ? '<span class="rec full">Full rotation</span>' : "")}
+      ${d.keys ? `<div class="keys"><div class="keys-h">Other keys (not in the macro)</div>${keyStacks(d.keys, "Its own hotbar key \u00b7 row 0 first")}</div>` : ""}
       <div class="notes">
+        ${d.loss ? `<p class="loss"><span class="k red">Trade-off</span>${esc(d.loss)}</p>` : ""}
         <div><span class="k">Hold together</span>${chips(d.hold)}</div>
         <div><span class="k gold">Press yourself</span>${list(d.manual)}</div>
         <p><span class="k">Why</span>${esc(d.why)}</p>
@@ -130,19 +135,19 @@
   function render() {
     hide();
     $("board").innerHTML = DATA.classes.map(card).join("");
-    $("title").textContent = mode === "late" ? "Late Game Macros" : "Early Game Macros";
+    $("title").textContent = { late: "Late Game Macros", early: "Early Game Macros", full: "Full Rotation Macros" }[mode];
     $("stamp").innerHTML = mode === "late"
       ? `Current as of <b>${esc(DATA.meta.patchBaseline)}</b> \u00b7 updated ${esc(DATA.meta.updated)}`
-      : `<b>Improved</b> from the video using the tested late-game orders \u00b7 updated ${esc(DATA.meta.updated)}`;
-    $("btn-late").setAttribute("aria-pressed", mode === "late");
-    $("btn-early").setAttribute("aria-pressed", mode === "early");
+      : mode === "full"
+        ? `<b>Longer macros with buffs</b> \u00b7 each card shows its source and what it costs vs the Late game setup \u00b7 updated ${esc(DATA.meta.updated)}`
+        : `<b>Improved</b> from the video using the tested late-game orders \u00b7 updated ${esc(DATA.meta.updated)}`;
+    ["late", "full", "early"].forEach((m) => { const b = $("btn-" + m); if (b) b.setAttribute("aria-pressed", mode === m); });
   }
   function setMode(m) { mode = m; render(); try { localStorage.setItem("aion2-mode", m); } catch (e) {} }
 
-  $("btn-late").addEventListener("click", () => setMode("late"));
-  $("btn-early").addEventListener("click", () => setMode("early"));
-  try { const m = localStorage.getItem("aion2-mode"); if (m === "early" || m === "late") mode = m; } catch (e) {}
-  if (location.hash === "#early") mode = "early";
+  ["late", "full", "early"].forEach((m) => { const b = $("btn-" + m); if (b) b.addEventListener("click", () => setMode(m)); });
+  try { const m = localStorage.getItem("aion2-mode"); if (["early", "late", "full"].includes(m)) mode = m; } catch (e) {}
+  if (["#early", "#full", "#late"].includes(location.hash)) mode = location.hash.slice(1);
 
   const load = (f) => fetch(f).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
   Promise.all([load("data/macros.json"), load("data/skills.json"), load("data/descriptions.json").catch(() => ({}))])

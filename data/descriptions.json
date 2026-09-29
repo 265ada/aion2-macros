@@ -2494,5 +2494,95 @@
 "r": null,
 "k": "Stigma",
 "q": 22
+},
+"Battlefield Banner": {
+"d": "Increases Attack proportional to Defense for 10s.",
+"s": [],
+"m": 1,
+"r": null,
+"k": "Stigma",
+"q": 22
+},
+"Empyrean Lord's Punishment": {
+"d": "Selects a target within 20m and deals 939-939 damage to up to 4 enemies within 4m of the target. Has a 50% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n50 Stagger Gauge Damage",
+"s": [],
+"m": 0,
+"r": "20 m",
+"k": "Stigma",
+"q": 22
+},
+"Prayer of Amplification": {
+"d": "Increases Attack by 20% for 10s.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Stigma",
+"q": 22
+},
+"Flame Blessing": {
+"d": "Has a 50% chance to deal 234-234 extra damage to enemies on landing an attack for 10s.\n\nCooldown: 1s",
+"s": [],
+"m": 1,
+"r": null,
+"k": "Stigma",
+"q": 22
+},
+"Flame Scattershot": {
+"d": "Deals 120-120 Fire damage to a target afflicted with Stagger within 20m.",
+"s": [
+[
+8,
+"Absorbs 5% HP"
+],
+[
+8,
+"Restores 120 MP"
+],
+[
+8,
+"Changes to mobile skill"
+],
+[
+12,
+"Multi-Hit on hit"
+],
+[
+16,
+"-1s all skill cooldowns on hit"
+]
+],
+"m": 0,
+"r": "20 m",
+"k": "Mastery",
+"q": 5
+},
+"Flash Rampage": {
+"d": "Deals 152-152 damage to a target afflicted with Stagger within 4m and increases Enmity.",
+"s": [
+[
+8,
+"Absorbs 5% HP"
+],
+[
+8,
+"Restores 120 MP on hit"
+],
+[
+8,
+"Changes to mobile skill"
+],
+[
+12,
+"Multi-Hit on hit"
+],
+[
+16,
+"-1s all cooldowns on hit"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 5
 }
 }

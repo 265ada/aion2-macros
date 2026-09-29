@@ -52,8 +52,9 @@
 "ko": "지켈의 축복",
 "cd": 120,
 "mp": null,
-"icon": "ICON_GL_SKILL_024",
-"s25": "+10% PvE and +5% PvP Damage Boost"
+"icon": "ICON_GL_SKILL_040",
+"s25": "+5s duration (Jul 8)",
+"note": "KR/TW Jul 8: self only (no longer party-wide); base effect adds +100 Accuracy."
 },
 "Sword Aura Rampage": {
 "cls": "gladiator",
@@ -100,8 +101,9 @@
 "ko": "돌격 자세",
 "cd": 60,
 "mp": null,
-"icon": "ICON_GL_SKILL_040",
-"s25": "50% chance to deal extra damage on Critical Hit for the duration"
+"icon": "ICON_GL_SKILL_024",
+"s25": "50% chance to deal extra damage on Critical Hit for the duration",
+"note": "KR/TW Aug 12: the 20% MP-cost reduction was removed."
 },
 "Wave Armor": {
 "cls": "gladiator",
@@ -111,7 +113,7 @@
 "cd": 60,
 "mp": 200,
 "icon": "ICON_GL_SKILL_041",
-"s25": "25% chance to pull enemies in"
+"s25": "Becomes a 2-hit attack (Jul 8)"
 },
 "Vicious Strike": {
 "cls": "templar",
@@ -149,7 +151,8 @@
 "ko": "징벌",
 "cd": 30,
 "mp": 200,
-"icon": "ICON_TE_SKILL_009"
+"icon": "ICON_TE_SKILL_009",
+"note": "KR/TW Aug 26: now a projectile AoE fired at a target within 20m; Executor PvE bonus 20%."
 },
 "Shield Smite": {
 "cls": "templar",
@@ -168,7 +171,7 @@
 "cd": 20,
 "mp": null,
 "icon": "ICON_TE_SKILL_011",
-"s25": "+1s Block duration"
+"s25": "+1 consecutive use (Jul 29)"
 },
 "Taunt": {
 "cls": "templar",
@@ -178,7 +181,7 @@
 "cd": 30,
 "mp": null,
 "icon": "ICON_TE_SKILL_012",
-"s25": "Applies Shrink to player (PC) targets (reportedly nerfed Jul 21)"
+"s25": "Shrink also lowers the target's crit-damage resist by 5% (Jul 8, tuned Jul 22)"
 },
 "Poach": {
 "cls": "templar",
@@ -207,7 +210,8 @@
 "ko": "심판",
 "cd": 5,
 "mp": null,
-"icon": "ICON_TE_SKILL_004"
+"icon": "ICON_TE_SKILL_004",
+"note": "KR/TW Aug 26: now usable after any shield attack skill (was: stunned/knocked-down target). Doom Shield opens it on yourself for 3s."
 },
 "Debilitating Smash": {
 "cls": "templar",
@@ -232,9 +236,10 @@
 "id": "12350000",
 "tw": "庇護一擊",
 "ko": "비호의 일격",
-"cd": 30,
+"cd": 25,
 "mp": 200,
-"icon": "ICON_TE_SKILL_035"
+"icon": "ICON_TE_SKILL_035",
+"note": "KR/TW Aug 26: cooldown 30s to 25s, 30% faster wind-up, castable while moving, spec #1 now -5s cooldown. The Global DB may still show 30s."
 },
 "Shield Rush": {
 "cls": "templar",
@@ -337,7 +342,7 @@
 "cd": 90,
 "mp": 200,
 "icon": "ICON_AS_SKILL_029",
-"s25": "+20% additional Status Effect Chance"
+"s25": "Rear Critical Hits cut Illusive Clone's cooldown by 1s (Jul 8)"
 },
 "Storm Slice": {
 "cls": "assassin",
@@ -504,7 +509,7 @@
 "cd": 90,
 "mp": null,
 "icon": "ICON_RA_SKILL_038",
-"s25": "10% chance to fire an extra shot"
+"s25": "10% chance to fire an extra shot; the extra shot has no life-steal and +30% PvE damage (Jul 8)"
 },
 "Firestorm": {
 "cls": "sorcerer",
@@ -707,7 +712,7 @@
 "cd": 45,
 "mp": 200,
 "icon": "ICON_EL_SKILL_015",
-"s25": "+20% damage taken from the Spiritmaster during Corrode"
+"s25": "+25% damage taken from the Spiritmaster during Corrode (Aug 26)"
 },
 "Enhance: Spirit's Benediction": {
 "cls": "spiritmaster",
@@ -717,7 +722,7 @@
 "cd": 60,
 "mp": null,
 "icon": "ICON_EL_SKILL_019",
-"s25": "Restores an extra 20% HP on cast"
+"s25": "+3s duration (Jul 8)"
 },
 "Jointstrike: Destructive Attack": {
 "cls": "spiritmaster",
@@ -908,9 +913,10 @@
 "id": "18060000",
 "tw": "打擊碎",
 "ko": "타격쇄",
-"cd": 15,
+"cd": 10,
 "mp": 100,
-"icon": "ICON_CH_SKILL_006"
+"icon": "ICON_CH_SKILL_006",
+"note": "KR/TW Aug 26: cooldown 15s to 10s, +30% PvE damage."
 },
 "Wave Blow": {
 "cls": "chanter",
@@ -937,7 +943,8 @@
 "ko": "암격쇄",
 "cd": 5,
 "mp": null,
-"icon": "ICON_CH_SKILL_010"
+"icon": "ICON_CH_SKILL_010",
+"note": "KR/TW Aug 26: now usable after any ranged skill (was: stunned/knocked-down target). Marchutan's Wrath opens it on yourself for 3s."
 },
 "Recuperation": {
 "cls": "chanter",
@@ -994,9 +1001,10 @@
 "id": "18290000",
 "tw": "旋轉擊",
 "ko": "회전격",
-"cd": 30,
-"mp": 250,
-"icon": "ICON_CH_SKILL_029"
+"cd": 15,
+"mp": 100,
+"icon": "ICON_CH_SKILL_029",
+"note": "KR/TW Aug 26: cooldown 30s to 15s, MP 250 to 100, castable while moving, +30% skill speed. Dark Crush now opens on any ranged skill. The Global DB may still show the old values."
 },
 "Gust Rampage": {
 "cls": "chanter",
@@ -1075,5 +1083,59 @@
 "mp": null,
 "icon": "ICON_RA_SKILL_030",
 "s25": "+5s duration"
+},
+"Battlefield Banner": {
+"cls": "templar",
+"id": "12450000",
+"tw": "戰場旗幟",
+"ko": "전장의 깃발",
+"cd": 90,
+"mp": null,
+"icon": "ICON_TE_SKILL_045"
+},
+"Empyrean Lord's Punishment": {
+"cls": "templar",
+"id": "12310000",
+"tw": "主神懲罰",
+"ko": "주신의 징벌",
+"cd": 60,
+"mp": 200,
+"icon": "ICON_TE_SKILL_029"
+},
+"Prayer of Amplification": {
+"cls": "cleric",
+"id": "17430000",
+"tw": "增幅祈禱",
+"ko": "증폭의 기도",
+"cd": 60,
+"mp": null,
+"icon": null
+},
+"Flame Blessing": {
+"cls": "spiritmaster",
+"id": "16370000",
+"tw": "烈焰祝福",
+"ko": "불길의 축복",
+"cd": 60,
+"mp": null,
+"icon": "ICON_EL_SKILL_037"
+},
+"Flame Scattershot": {
+"cls": "sorcerer",
+"id": "15010000",
+"tw": "火焰掃射",
+"ko": "화염 난사",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_001"
+},
+"Flash Rampage": {
+"cls": "templar",
+"id": "12340000",
+"tw": "閃光亂舞",
+"ko": "섬광 난무",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_027"
 }
 }

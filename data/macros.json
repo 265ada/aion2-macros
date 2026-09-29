@@ -1,12 +1,16 @@
 {
  "meta": {
   "title": "Aion 2 Macro Sheet",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "patchBaseline": "KR/TW patches through Sep 23, 2026",
   "notice": "Global (NA/EU) early access opens Sep 30, 2026, with full free-to-play on Oct 5. The Global client can lag the Korea/Taiwan patches this sheet is built on. For example, the Global database still lists Noble Armor and Guardian Blessing at 5 min. If a Global skill doesn't behave as described, check the Global patch notes.",
   "note": "Stacks are listed row 0 first (row 0 fires first and sits directly above the key in game). null = empty row. A trailing '?' on a skill name marks an icon-matched row that the source didn't name."
  },
  "changelog": [
+  {
+   "date": "2026-09-29",
+   "text": "New 'Full rotation' tab for all 8 classes: longer macros with buffs, each with its source and the DPS trade-off. Held/mashed key stacks are now drawn on cards. Gladiator corrected (Rage Burst and Lifestealing Blade sit under Overhead Slam). Level-25 augments corrected for 8 stigmas changed after July. KR/TW cooldowns for Warding Strike, Spinning Strike and Impactful Crush. Zikel's Blessing and Lunge Stance icons fixed (swapped in the database). Templar switched to the optimizer's Sep 5 guide, pinned as current after Sep 16 (Shield Smite in the Judgment line, Annihilate as line 2, Flash Rampage above Punishment)."
+  },
   {
    "date": "2026-09-28",
    "text": "Added the missing Stigma level-25 specialty to the hover card of all 37 stigma skills on the sheet (read from KR in-game tooltips, Inven, Jul 1 2026)."
@@ -75,6 +79,22 @@
         null
        ]
       ]
+     },
+     {
+      "t": "Two more Assassin players, Sep 28",
+      "s": "Both use the same single macro slot: Insignia Explosion → Heart Gore → Savage Roar. One holds left click (Quick Slice) + the macro; the other also mashes Storm Rampage and Ambush on their own keys.",
+      "macros": [
+       [
+        "Insignia Explosion",
+        "Heart Gore",
+        "Savage Roar",
+        null
+       ]
+      ],
+      "hold": [
+       "Quick Slice",
+       "Macro key"
+      ]
      }
     ]
    },
@@ -116,6 +136,36 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Built from the Inven 9/18 layout's buff keys (the macro line is the tested one)",
+    "link": "https://www.inven.co.kr/board/aion2/6449/23617",
+    "macros": [
+     [
+      "Insignia Explosion",
+      "Heart Gore",
+      "Savage Roar",
+      null
+     ],
+     [
+      "Illusive Clone",
+      "Savage Fang",
+      "Triniel's Dagger",
+      "Assault Ambush"
+     ]
+    ],
+    "hold": [
+     "Quick Slice",
+     "Macro key"
+    ],
+    "manual": [
+     "Ambush",
+     "Storm Slice",
+     "Shadowstrike"
+    ],
+    "why": "Line 1 is the tested damage line. Line 2 fires your burst skills in the order that feeds it: Illusive Clone removes Heart Gore's cooldown for 10 s, Savage Fang engraves 5 Insignias so the next Insignia Explosion hits at full stacks, then Triniel's Dagger (+10% back damage at 25) and Assault Ambush.",
+    "loss": "Heart Gore is checked every other loop instead of every loop, and burst buffs also fire on trash or during mechanics. Expect a few percent lower DPS than the 1-line setup (for scale, a second line cost Gladiator 5–6% of its main hits).",
+    "tip": "Keep Ambush and Storm Slice out of the macro and press them yourself; the source found Ambush in any line lowers hits."
    }
   },
   {
@@ -183,6 +233,18 @@
        "Earth's Retribution",
        "Macro key"
       ]
+     },
+     {
+      "t": "Inven 8/26 cross-check",
+      "s": "A separate player: taking Debilitating Mark out of the Condemnation macro raised DPS, which matches the 9/24 guide.",
+      "macros": [
+       [
+        "Earth Punishment",
+        "Divine Aura",
+        "Condemnation",
+        "Chain of Torment"
+       ]
+      ]
      }
     ]
    },
@@ -226,6 +288,39 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 9/24 two-line option (rows 1–2 of each line are from the guide)",
+    "link": "https://www.inven.co.kr/board/aion2/6452/29213",
+    "macros": [
+     [
+      "Condemnation",
+      "Chain of Torment",
+      null,
+      null
+     ],
+     [
+      "Earth Punishment",
+      "Divine Aura",
+      "Noble Aura",
+      "Prayer of Amplification"
+     ]
+    ],
+    "hold": [
+     "Earth's Retribution",
+     "Macro key",
+     "Lightning Strike Scattershot"
+    ],
+    "manual": [
+     "Bolt",
+     "Healing Light",
+     "Radiant Recovery",
+     "Debilitating Mark",
+     "Judgment Thunder"
+    ],
+    "why": "The 9/24 guide splits Condemnation → Chain of Torment and Earth Punishment → Divine Aura into two lines and leaves the empty rows for 'skills you want automatic'. Noble Aura (a 5-minute summon) and Prayer of Amplification (party damage buff, stronger since Aug 26) fill them, so your whole damage kit plus two buffs run from one key.",
+    "loss": "Cleric loses almost nothing from a second line because its attack speed caps at 94.4%, so this is the cheapest full rotation of any class. Prayer of Amplification is best saved for burst windows, so it's the part you give up by automating.",
+    "tip": "Keep Bolt manual so a charge never delays a heal, and keep heals on their own keys."
    }
   },
   {
@@ -234,7 +329,7 @@
    "tw": "魔道星",
    "role": "Spellbook · ranged nuker",
    "late": {
-    "src": "Inven 9/22 (post-patch)",
+    "src": "Inven 9/22 + 8/27 (image-verified, identical main line)",
     "link": "https://www.inven.co.kr/board/aion2/6453/17462",
     "queue": "Debated on Inven 9/21, so test both",
     "macros": [
@@ -248,7 +343,7 @@
     "hold": [
      "Flame Arrow",
      "Macro key",
-     "Hellfire line"
+     "Hellfire key (hold)"
     ],
     "manual": [
      "Element Enhancement",
@@ -256,10 +351,27 @@
      "Cold Storm",
      "Winter's Shackles"
     ],
-    "why": "Only one macro line. Sorcerer loses the most damage of any class from a second line. Holding the Hellfire line reproduces the manual timing: Delayed Explosion, then a fully charged Hellfire. A Flame Scattershot cancel follows on its own.",
+    "why": "Only one macro line: Sorcerer loses the most damage of any class from a second line. The held Hellfire key reproduces the manual timing. Delayed Explosion goes first, Hellfire follows fully charged, then Winter's Shackles, and Flame Scattershot sits at the top so its stagger cancel fires on its own. That key's stack is from the Aug 27 top-DPS post; the Sep 22 guide describes the same key.",
     "tip": "Opener: Element Enhancement → Delayed Explosion → full-charge Hellfire → drop Fire Wall and Cold Storm → hold. Keep the ground AoEs in one slot and mash it when the boss stands still. Level Hellfire, Blaze, Firestorm and Wish of Concentration to 20, then Bittercold Wind. Sorcerer needs only one passive, and the guide says to push it toward level 36.",
     "patch": "Sep 16: Fire Mark now procs 100%, and Blaze no longer consumes it.",
     "alts": [
+     {
+      "t": "Sep 17 Sorcerer guide video (신사, 50k views)",
+      "s": "Same three-key setup (skill macro, basic attack, Hellfire key). Viewers point out the author keeps Winter's Shackles on its own key instead of in the Hellfire line, and a viewer reported +250k DPS and +70 hits/min after copying the mouse-macro setup.",
+      "macros": [
+       [
+        "Bittercold Wind",
+        "Blaze",
+        "Firestorm",
+        "Wish of Concentration"
+       ]
+      ],
+      "hold": [
+       "Flame Arrow",
+       "Macro key",
+       "Hellfire key (hold)"
+      ]
+     },
      {
       "t": "TW Bahamut 5/27 (pre-patch, rows read from icons)",
       "s": "Four entries, all 10 ms. Flame Arrow is also the basic attack.",
@@ -288,6 +400,17 @@
         null,
         null
        ]
+      ]
+     }
+    ],
+    "keys": [
+     {
+      "label": "Hellfire key (hold)",
+      "stack": [
+       "Delayed Explosion",
+       "Hellfire",
+       "Winter's Shackles",
+       "Flame Scattershot"
       ]
      }
     ]
@@ -337,6 +460,46 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 8/27 top-DPS post (image-verified: both lines exactly as shown)",
+    "link": "https://www.inven.co.kr/board/aion2/6453/16644",
+    "macros": [
+     [
+      "Bittercold Wind",
+      "Blaze",
+      "Firestorm",
+      "Wish of Concentration"
+     ],
+     [
+      "Element Enhancement",
+      "Fire Wall",
+      "Cold Storm",
+      null
+     ]
+    ],
+    "keys": [
+     {
+      "label": "Hellfire key (hold)",
+      "stack": [
+       "Delayed Explosion",
+       "Hellfire",
+       "Winter's Shackles",
+       "Flame Scattershot"
+      ]
+     }
+    ],
+    "hold": [
+     "Flame Arrow",
+     "Macro key",
+     "Hellfire key (hold)"
+    ],
+    "manual": [
+     "Frost"
+    ],
+    "why": "The author's own setup: line 2 automates Element Enhancement and both ground AoEs. Since a patch shortened their animations, they say it's fine to keep the Element Enhancement line in the macro rather than pressing it.",
+    "loss": "Sorcerer is the class that loses the most per extra line. The AoE line can also fire before the Delayed Explosion and Winter's Shackles buffs are up (a 9/20 player saw exactly this), and ground AoEs are wasted when the boss moves.",
+    "tip": "Opener: Element Enhancement → Delayed Explosion → full-charge Hellfire → Fire Wall → Cold Storm → macro on. The author notes the Hellfire key sometimes gets stuck, so tap it again if it stops."
    }
   },
   {
@@ -345,34 +508,83 @@
    "tw": "守護星",
    "role": "Sword & shield · main tank",
    "late": {
-    "src": "Inven 9/16 (post-patch)",
-    "link": "https://www.inven.co.kr/board/aion2/6438/26522",
-    "queue": "Skill queue OFF",
+    "src": "Inven 9/5 optimizer guide, pinned as current after 9/16 (image-verified)",
+    "link": "https://www.inven.co.kr/board/aion2/6438/25862",
+    "queue": "Not stated; the 9/16 and 9/17 players disagree (OFF / ON), so test both",
     "macros": [
      [
       "Judgment",
       "Warding Strike",
-      "Doom Shield",
+      "Shield Smite",
       "Pummel"
+     ],
+     [
+      "Annihilate",
+      null,
+      null,
+      null
      ]
+    ],
+    "keys": [
+     {
+      "label": "Punishment key (hold to charge)",
+      "stack": [
+       "Punishment",
+       "Flash Rampage",
+       null,
+       null
+      ]
+     }
     ],
     "hold": [
      "Vicious Strike",
-     "Macro key"
+     "Macro key",
+     "Punishment key (hold)"
     ],
     "manual": [
-     "Annihilate",
-     "Punishment",
-     "Taunt",
+     "Doom Shield",
      "Noble Armor",
-     "Shield of Protection",
-     "Poach",
-     "Shield Rush"
+     "Battlefield Banner",
+     "Empyrean Lord's Punishment",
+     "Taunt",
+     "Shield of Protection"
     ],
-    "why": "After Sept 16 the Pummel→Judgment cancel no longer works. The top setup now cancels Vicious Strike→Judgment: hold Vicious Strike (left click) with the macro. Annihilate and Punishment sit on their own keys. The source presses them from its mouse macro, so with in-game macros only, press them yourself.",
-    "tip": "Press Taunt, Punishment (full charge), Noble Armor and Warding Strike yourself when you need them. Use Shield of Protection every ~20 s or on boss crowd-control mechanics. Open with Poach or Shield Rush.",
+    "why": "Pummel sits in the same line as Judgment. That's what makes your held Vicious Strike cancel straight into Judgment (the 'Vicious–Judgment' cancel), which the guide's author pinned as the one to use after the Sep 16 patch killed the Pummel–Judgment cancel. Shield Smite and Warding Strike are shield attacks, so they re-open Judgment (Aug 26 rework). Annihilate gets its own macro line. Flash Rampage sits above Punishment on the charge key so its stagger cancel fires on its own.",
+    "tip": "Opener: press Noble Armor, Battlefield Banner and Empyrean Lord's Punishment, full-charge Punishment for the Executor buff, then rush in. Top-end trick: Doom Shield resets Annihilate, so Annihilate → Doom Shield → Annihilate. Pummel and Judgment go to 20. Use Shield of Protection every ~20 s or on boss crowd-control mechanics.",
     "patch": "Sep 16: longer cancel delay on Pummel, Punishing Strike and Judgment. Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min. Taunt threat now scales with damage.",
     "alts": [
+     {
+      "t": "Inven 9/16 'current top DPS' post (image-verified)",
+      "s": "Doom Shield instead of Shield Smite in row 2, skill queue OFF, and Annihilate and Punishment on their own mouse-macro keys.",
+      "macros": [
+       [
+        "Judgment",
+        "Warding Strike",
+        "Doom Shield",
+        "Pummel"
+       ]
+      ],
+      "hold": [
+       "Vicious Strike",
+       "Macro key"
+      ]
+     },
+     {
+      "t": "Inven 9/17 one-click player",
+      "s": "Doom Shield and Shield Smite both in the line, no Pummel, skill queue ON; a second key (Annihilate → Noble Armor → Battlefield Banner → Empyrean Lord's Punishment) is mashed. See the Full rotation tab.",
+      "macros": [
+       [
+        "Judgment",
+        "Warding Strike",
+        "Doom Shield",
+        "Shield Smite"
+       ]
+      ],
+      "hold": [
+       "Vicious Strike",
+       "Macro key"
+      ]
+     },
      {
       "t": "Community question, Inven 9/19 (untested)",
       "s": "Annihilate is kept on its own key.",
@@ -396,7 +608,7 @@
      [
       "Judgment",
       "Warding Strike",
-      "Doom Shield",
+      "Shield Smite",
       "Pummel"
      ]
     ],
@@ -405,13 +617,13 @@
      "Macro key"
     ],
     "manual": [
+     "Doom Shield",
      "Punishment",
      "Taunt",
-     "Annihilate",
-     "Shield Smite"
+     "Annihilate"
     ],
-    "why": "The video split this into two entries. With one line, Judgment is checked every loop, and that matters because Judgment only opens briefly. Doom Shield (row 2) rushes in, gives a 5% max-HP shield and opens Judgment for 3 s, so the next loop catches Judgment in row 0. Warding Strike gives +20% damage reduction for 10 s.",
-    "tip": "Hold Vicious Strike (left click) with the macro, and take its +20% MP-restored specialty for leveling. After Sep 16, Pummel no longer cancels into Judgment, so don't rely on it.",
+    "why": "The same line the late-game guide uses, and every skill in it is learned early (Doom Shield is a level-22 stigma, so it stays manual). With one line, Judgment is checked every loop. Shield Smite and Warding Strike are shield attacks, so they keep re-opening Judgment, and Pummel in the same line makes your held Vicious Strike cancel into it.",
+    "tip": "Hold Vicious Strike (left click) with the macro, and take its +20% MP-restored specialty for leveling. When you get Doom Shield, press it to open fights (it rushes 20 m and shields you).",
     "alts": [
      {
       "t": "Video version (also matches your in-game bar)",
@@ -436,6 +648,38 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 9/17 one-click setup (both stacks image-verified)",
+    "link": "https://www.inven.co.kr/board/aion2/6438/26762",
+    "macros": [
+     [
+      "Judgment",
+      "Warding Strike",
+      "Doom Shield",
+      "Shield Smite"
+     ],
+     [
+      "Annihilate",
+      "Noble Armor",
+      "Battlefield Banner",
+      "Empyrean Lord's Punishment"
+     ]
+    ],
+    "hold": [
+     "Vicious Strike",
+     "Macro key"
+    ],
+    "manual": [
+     "Punishment",
+     "Taunt",
+     "Shield of Protection",
+     "Poach",
+     "Shield Rush"
+    ],
+    "why": "Line 1 is the Vicious Strike → Judgment damage line; Shield Smite and Doom Shield keep Judgment lit (Judgment now opens after any shield attack). Line 2 adds Annihilate plus your buffs: Noble Armor (2 min since Sep 16), Battlefield Banner and Empyrean Lord's Punishment. The author says line 2 works in the macro, but mashing it on its own key did slightly better.",
+    "loss": "Another Templar (Aug 28) notes that automating Banner and Empyrean Lord's Punishment costs speed and can overlap a Chanter's Power of the Storm. Press them yourself in groups if you want the top number.",
+    "tip": "Skill queue ON for this setup. Charge Punishment yourself (or bind it to a mouse key)."
    }
   },
   {
@@ -468,7 +712,7 @@
      "Recuperation"
     ],
     "why": "\"Dark–Spin–Impact–Incandescent\" was the most stable order. Holding Gust Rampage adds its stagger cancel, which lowers its cooldown and keeps the damage going.",
-    "tip": "Stack Guardian Blessing on top of Power of the Storm so it never gets forgotten. That frees keys for Undefeated and Sprint Mantra. Marchutan's Wrath is no longer required, so swap in a utility stigma or Fracturing Blow. Dark Crush and Onslaught go to 20, and Spinning Strike and Recuperation are close behind. Passives: Wind's Promise, Impact Hit, Attack Preparation.",
+    "tip": "Stack Guardian Blessing on top of Power of the Storm so it never gets forgotten. That frees keys for Undefeated Mantra and Sprint Mantra, which are toggle skills that must never go in a macro, because a second press switches them off. Marchutan's Wrath is no longer required, so swap in a utility stigma or Fracturing Blow. Dark Crush and Onslaught go to 20, and Spinning Strike and Recuperation are close behind. Passives: Wind's Promise, Impact Hit, Attack Preparation.",
     "patch": "Sep 16: Guardian Blessing 5 min → 2 min. Earlier bugs where Marchutan's Wrath or Spinning Strike got eaten are fixed.",
     "alts": [
      {
@@ -491,6 +735,23 @@
       "hold": [
        "Onslaught",
        "Macro key"
+      ]
+     },
+     {
+      "t": "Viewer test on the Sep 2 Chanter guide video (single source)",
+      "s": "A commenter on the 43k-view Sep 2 guide by 하구 tested moving Spinning Strike to its own key and pressing it on cooldown: +1.5–2% DPS. It's the same idea as the Impactful Crush split: stop the Dark Crush openers from overlapping.",
+      "macros": [
+       [
+        "Dark Crush",
+        "Impactful Crush",
+        "Marchutan's Wrath",
+        "Incandescent Blow"
+       ]
+      ],
+      "hold": [
+       "Onslaught",
+       "Macro key",
+       "Gust Rampage"
       ]
      },
      {
@@ -559,6 +820,17 @@
        ]
       ]
      }
+    ],
+    "keys": [
+     {
+      "label": "Buff key (press yourself)",
+      "stack": [
+       "Power of the Storm",
+       "Guardian Blessing",
+       null,
+       null
+      ]
+     }
     ]
    },
    "early": {
@@ -605,6 +877,44 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 9/3 full-auto test (lines 1–2 image-verified) + 9/17 buff stack",
+    "link": "https://www.inven.co.kr/board/aion2/6451/22314",
+    "macros": [
+     [
+      "Dark Crush",
+      "Spinning Strike",
+      "Marchutan's Wrath",
+      "Incandescent Blow"
+     ],
+     [
+      "Impactful Crush",
+      null,
+      null,
+      null
+     ],
+     [
+      "Power of the Storm",
+      "Guardian Blessing",
+      null,
+      null
+     ]
+    ],
+    "hold": [
+     "Onslaught",
+     "Macro key",
+     "Gust Rampage"
+    ],
+    "manual": [
+     "Undefeated Mantra",
+     "Sprint Mantra",
+     "Recuperation",
+     "Rushing Smash"
+    ],
+    "why": "Lines 1–2 are the '100% in-game macro' setup a 900k Chanter built so nothing needs pressing: splitting Impactful Crush out stops the three Dark Crush openers from overlapping (+3–5 Dark Crush/min). Line 3 adds the 9/17 guide's buff stack so Power of the Storm and Guardian Blessing run themselves.",
+    "loss": "Three lines means each slot is checked a third of the time. Power of the Storm is a party burst buff, so automating it can waste it outside burst windows, and in the Abyss 'Battlefield Might' replaces it during boss fights.",
+    "tip": "Never macro Undefeated or Sprint Mantra: they're toggles, and a second press switches them off."
    }
   },
   {
@@ -613,7 +923,7 @@
    "tw": "劍星",
    "role": "Greatsword · tank / DPS",
    "late": {
-    "src": "Inven 9/5 + 8/26, matches TW 5/27",
+    "src": "Inven 9/5 (image-verified) + 8/26, matches TW 5/27",
     "link": "https://www.inven.co.kr/board/aion2/6448/31551",
     "queue": "Not stated in the source, so test both",
     "macros": [
@@ -627,18 +937,17 @@
     "hold": [
      "Keen Strike",
      "Macro key",
-     "Overhead Slam (mash)"
+     "Overhead Slam key (mash)"
     ],
     "manual": [
      "Ruinous Blow",
-     "Rage Burst",
-     "Lifestealing Blade",
-     "Wave Armor",
      "Lunge Stance",
-     "Zikel's Blessing"
+     "Zikel's Blessing",
+     "Wave Armor",
+     "Leaping Slam"
     ],
     "why": "Sword Aura Rampage sits directly under Rending Blow so its stagger cancel fires cleanly. Hold basic attack and the macro while mashing Overhead Slam. That is the Overhead Slam→Rending Blow cancel (内絕 / 내절), which came back on Aug 26.",
-    "tip": "Opener: buffs → Ruinous Blow (Prepare for Battle) → start weaving. For comfort, stack your stigmas under Overhead Slam. For the best numbers, press them yourself so they aren't wasted during mechanics. Aerial Snare under Overhead Slam adds DPS. Aim for ~97–102 Upward Strike hits per minute. Rending Blow and Overhead Slam go to 20. Passives: Experienced Counterstrike and Murderous Burst first.",
+    "tip": "Opener: buffs → Ruinous Blow (Prepare for Battle) → start weaving. Rage Burst and Lifestealing Blade sit under Overhead Slam on the mashed key, so they fire the moment they're ready. Press Lunge Stance, Zikel's Blessing and Wave Armor yourself so they aren't wasted during mechanics or on trash (both the top-end and comfort layouts in the 9/5 guide do this). Aerial Snare under Overhead Slam adds DPS. Aim for ~97–102 Upward Strike hits per minute. Rending Blow and Overhead Slam go to 20. Passives: Experienced Counterstrike and Murderous Burst first.",
     "patch": "Sep 16: Leaping Slam and Ruinous Blow can't be used while bound. Sep 23: Fracturing Rush now follows your key direction.",
     "alts": [
      {
@@ -668,6 +977,26 @@
          "Rage Burst"
         ]
        }
+      ]
+     }
+    ],
+    "keys": [
+     {
+      "label": "Overhead Slam key (mash)",
+      "stack": [
+       "Rage Burst",
+       "Lifestealing Blade",
+       "Overhead Slam",
+       null
+      ]
+     },
+     {
+      "label": "Buff key (press yourself)",
+      "stack": [
+       "Lunge Stance",
+       "Zikel's Blessing",
+       "Wave Armor",
+       null
       ]
      }
     ]
@@ -712,6 +1041,41 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 9/5 guide, 'comfort' layout (image-verified)",
+    "link": "https://www.inven.co.kr/board/aion2/6448/31551",
+    "macros": [
+     [
+      "Rage Burst",
+      "Lifestealing Blade",
+      "Sword Aura Rampage",
+      "Rending Blow"
+     ]
+    ],
+    "keys": [
+     {
+      "label": "Overhead Slam key (mash)",
+      "stack": [
+       "Lunge Stance",
+       "Zikel's Blessing",
+       "Wave Armor",
+       "Overhead Slam"
+      ]
+     }
+    ],
+    "hold": [
+     "Keen Strike",
+     "Macro key",
+     "Overhead Slam key (mash)"
+    ],
+    "manual": [
+     "Ruinous Blow",
+     "Leaping Slam"
+    ],
+    "why": "The guide's own comfort setup: every stigma fires by itself. Rage Burst and Lifestealing Blade lead the macro line, and the buffs sit under Overhead Slam on the mashed key, which the guide says makes them turn on faster than a second macro line would.",
+    "loss": "The guide recommends pressing stigmas yourself for the top number, because automated buffs get wasted during mechanics and on trash. Adding the buffs as a second macro line instead costs even more (a second line cost 5–6% of Overhead Slam hits in an Aug 12 test).",
+    "tip": "Start fights with Ruinous Blow for Prepare for Battle, then hold."
    }
   },
   {
@@ -752,6 +1116,28 @@
     "tip": "Opener: buffs → Earth Tremor at 4–5 stacks and Element Unification full → summon the Ancient Spirit → 3–4 s later, full-charge Destructive Attack. For comfort, put Rapid Scattershot on the Destructive Attack key; for top numbers, keep it separate. Its cancel fires on its own during stagger. Fight from about 3 m. Keep Cold Shock's 5-stack attack buff running. Passives: Spirit Strike, Element Unification, Mental Focus.",
     "patch": "Sep 10: Destructive Attack's spirit follow-up now fires instantly (Jointstrike overwrite bug fixed).",
     "alts": [
+     {
+      "t": "Inven 8/13 alternative (skill queue OFF)",
+      "s": "A different tested approach: skill queue OFF so the macro skills always win, Elemental Fusion and the spirits in the in-game macro, Curse / Dimensional Control / Combustion mashed by mouse software, and Corrode kept out (it fires on trash and scrambles cooldowns). Opener: hold macro → Corrode → wait for party buffs (Power of the Storm, Fury, Earth Punishment) → Flame Blessing → Spirit's Benediction → Ancient Spirit → Destructive Attack → Corrode.",
+      "macros": [
+       [
+        "Elemental Fusion",
+        null,
+        null,
+        null
+       ],
+       [
+        "Summon: Water Spirit",
+        "Summon: Earth Spirit",
+        "Summon: Fire Spirit",
+        null
+       ]
+      ],
+      "hold": [
+       "Cold Shock",
+       "Macro key"
+      ]
+     },
      {
       "t": "TW Bahamut 5/27 (rows confirmed against icons)",
       "s": "Spirits are stacked on key 1 and pressed by hand.",
@@ -837,6 +1223,48 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 9/16 lines + the 9/06 player's buff stack",
+    "link": "https://www.inven.co.kr/board/aion2/6454/10286",
+    "macros": [
+     [
+      "Jointstrike: Corrode",
+      "Jointstrike: Curse",
+      "Dimensional Control",
+      "Combustion"
+     ],
+     [
+      "Summon: Water Spirit",
+      "Summon: Earth Spirit",
+      "Summon: Wind Spirit",
+      "Summon: Fire Spirit"
+     ],
+     [
+      "Elemental Fusion",
+      null,
+      null,
+      null
+     ],
+     [
+      "Enhance: Spirit's Benediction",
+      "Flame Blessing",
+      null,
+      null
+     ]
+    ],
+    "hold": [
+     "Cold Shock",
+     "Macro key"
+    ],
+    "manual": [
+     "Summon: Ancient Spirit",
+     "Jointstrike: Destructive Attack",
+     "Rapid Scattershot"
+    ],
+    "why": "Everything except the timing-sensitive burst runs from one key: debuffs, all four spirits, Fusion and your two self-buffs. Ancient Spirit and Destructive Attack stay manual because the guide times them (Ancient Spirit after Earth Tremor 4–5 stacks, Destructive Attack 3–4 s later).",
+    "loss": "Elemental Fusion in the macro tested lower than mashing it on its own key (9/16), and four lines spread the loop thin. Another tested guide (8/13) keeps Corrode out because it fires on trash and scrambles cooldowns.",
+    "tip": "Fight from about 3 m. If Fusion stacks feel slow, pull line 3 back out and tap Fusion yourself; that recovers most of the loss."
    }
   },
   {
@@ -847,7 +1275,7 @@
    "late": {
     "src": "Inven 9/6, image-verified",
     "link": "https://www.inven.co.kr/board/aion2/6450/19498",
-    "queue": "OFF in both 9/6 setups. Another tester (9/3) prefers ON and saw little DPS difference.",
+    "queue": "OFF in both 9/6 setups; a 9/3 tester prefers ON (buffs press instantly) and saw little DPS difference.",
     "macros": [
      [
       "Griffon Arrow",
@@ -957,6 +1385,41 @@
       ]
      }
     ]
+   },
+   "full": {
+    "src": "Inven 9/6 lines (image-verified) + 8/30 buff line",
+    "link": "https://www.inven.co.kr/board/aion2/6450/19104",
+    "macros": [
+     [
+      "Griffon Arrow",
+      "Explosive Arrow",
+      "Arrow Scattershot",
+      "Tempest Shot"
+     ],
+     [
+      "Gale Arrow",
+      "Burst Arrow",
+      "Drill Dart",
+      "Snare Shot"
+     ],
+     [
+      "Vaizel's Authority",
+      "Supporting Fire",
+      "Bow of Blessing",
+      null
+     ]
+    ],
+    "hold": [
+     "Snipe",
+     "Macro key",
+     "Deadshot"
+    ],
+    "manual": [
+     "Marking Shot"
+    ],
+    "why": "Lines 1–2 are the tested Tempest Shot cancel setup. Line 3 is the buff line an Aug 30 Ranger runs in their one-click setup (Vaizel's Authority → Supporting Fire → Bow of Blessing). They measured no real DPS difference against the tuned 28-Deadshot setup on the dummy.",
+    "loss": "A Sep 3 Ranger warns that buffs in the macro can drop Snipe below 16–18 hits/min. Check Snipe on the dummy, and if it drops, press the buffs yourself.",
+    "tip": "Cast Marking Shot yourself while standing still, refreshing it with ~2 s left."
    }
   }
  ]
