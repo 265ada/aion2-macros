@@ -95,7 +95,7 @@
     if (d.r) facts.push("Range " + d.r);
     if (d.m) facts.push("Castable while moving");
     if (d.q) facts.push("Learned at Lv " + d.q);
-    const specs = (d.s || []).map(([lv, t]) => `<li><b>${lv}</b>${esc(t)}</li>`).join("");
+    const specs = (d.s || []).concat(s.s25 && !(d.s || []).some((x) => x[0] === 25) ? [[25, s.s25 + " (KR/TW Stigma Lv 25)"]] : []).map(([lv, t]) => `<li><b>${lv}</b>${esc(t)}</li>`).join("");
     return `<div class="tt-head">${s.icon ? `<img src="icons/${s.icon}.webp" alt="" width="44" height="44">` : ""}<div><div class="tt-name">${esc(name)}</div><div class="tt-sub">${esc(s.tw || "")} \u00b7 ${esc(s.ko || "")}</div></div></div>
       <div class="tt-facts">${facts.map((f) => `<span>${esc(f)}</span>`).join("")}</div>
       ${d.d ? `<p class="tt-desc">${esc(d.d)}</p>` : '<p class="tt-desc">No description in the database.</p>'}

@@ -9,6 +9,10 @@
  "changelog": [
   {
    "date": "2026-09-28",
+   "text": "Added the missing Stigma level-25 specialty to the hover card of all 37 stigma skills on the sheet (read from KR in-game tooltips, Inven, Jul 1 2026)."
+  },
+  {
+   "date": "2026-09-28",
    "text": "Hover any skill for its description, range and specialty unlocks. \"Other versions\" are now drawn as full macro stacks. Vicious Strike and Pummel now use the player-skill database entries (no cooldown; Pummel costs 120 MP). Taiwan Ranger stacks decoded."
   },
   {

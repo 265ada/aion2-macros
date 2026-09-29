@@ -52,7 +52,8 @@
 "ko": "지켈의 축복",
 "cd": 120,
 "mp": null,
-"icon": "ICON_GL_SKILL_024"
+"icon": "ICON_GL_SKILL_024",
+"s25": "+10% PvE and +5% PvP Damage Boost"
 },
 "Sword Aura Rampage": {
 "cls": "gladiator",
@@ -79,7 +80,8 @@
 "ko": "흡혈의 검",
 "cd": 90,
 "mp": 200,
-"icon": "ICON_GL_SKILL_034"
+"icon": "ICON_GL_SKILL_034",
+"s25": "Predation extra damage always lands as a Critical Hit"
 },
 "Rage Burst": {
 "cls": "gladiator",
@@ -88,7 +90,8 @@
 "ko": "격노 폭발",
 "cd": 45,
 "mp": 100,
-"icon": "ICON_GL_SKILL_039"
+"icon": "ICON_GL_SKILL_039",
+"s25": "Ignores Block and Evasion"
 },
 "Lunge Stance": {
 "cls": "gladiator",
@@ -97,7 +100,8 @@
 "ko": "돌격 자세",
 "cd": 60,
 "mp": null,
-"icon": "ICON_GL_SKILL_040"
+"icon": "ICON_GL_SKILL_040",
+"s25": "50% chance to deal extra damage on Critical Hit for the duration"
 },
 "Wave Armor": {
 "cls": "gladiator",
@@ -106,7 +110,8 @@
 "ko": "파동의 갑주",
 "cd": 60,
 "mp": 200,
-"icon": "ICON_GL_SKILL_041"
+"icon": "ICON_GL_SKILL_041",
+"s25": "25% chance to pull enemies in"
 },
 "Vicious Strike": {
 "cls": "templar",
@@ -134,7 +139,8 @@
 "ko": "파멸의 방패",
 "cd": 30,
 "mp": null,
-"icon": "ICON_TE_SKILL_007"
+"icon": "ICON_TE_SKILL_007",
+"s25": "Ignores Block and Evasion"
 },
 "Punishment": {
 "cls": "templar",
@@ -161,7 +167,8 @@
 "ko": "보호의 방패",
 "cd": 20,
 "mp": null,
-"icon": "ICON_TE_SKILL_011"
+"icon": "ICON_TE_SKILL_011",
+"s25": "+1s Block duration"
 },
 "Taunt": {
 "cls": "templar",
@@ -170,7 +177,8 @@
 "ko": "도발",
 "cd": 30,
 "mp": null,
-"icon": "ICON_TE_SKILL_012"
+"icon": "ICON_TE_SKILL_012",
+"s25": "Applies Shrink to player (PC) targets (reportedly nerfed Jul 21)"
 },
 "Poach": {
 "cls": "templar",
@@ -189,7 +197,8 @@
 "cd": 120,
 "mp": null,
 "icon": "ICON_TE_SKILL_022",
-"note": "KR/TW Sep 16 patch: 5 min to 2 min. The Global client DB still shows 300 s."
+"note": "KR/TW Sep 16 patch: 5 min to 2 min. The Global client DB still shows 300 s.",
+"s25": "+10% PvE and +5% PvP Damage Tolerance for the duration"
 },
 "Judgment": {
 "cls": "templar",
@@ -252,7 +261,8 @@
 "ko": "암검 투척",
 "cd": 30,
 "mp": null,
-"icon": "ICON_AS_SKILL_031"
+"icon": "ICON_AS_SKILL_031",
+"s25": "+30% Skill Speed"
 },
 "Flash Slice": {
 "cls": "assassin",
@@ -306,7 +316,8 @@
 "ko": "맹수의 송곳니",
 "cd": 60,
 "mp": 200,
-"icon": "ICON_AS_SKILL_025"
+"icon": "ICON_AS_SKILL_025",
+"s25": "+200% damage to targets with Incapacitated Immunity"
 },
 "Triniel's Dagger": {
 "cls": "assassin",
@@ -315,7 +326,8 @@
 "ko": "트리니엘의 비수",
 "cd": 45,
 "mp": 200,
-"icon": "ICON_AS_SKILL_028"
+"icon": "ICON_AS_SKILL_028",
+"s25": "+10% Back Damage Boost for 5s on hit"
 },
 "Illusive Clone": {
 "cls": "assassin",
@@ -324,7 +336,8 @@
 "ko": "환영 분신",
 "cd": 90,
 "mp": 200,
-"icon": "ICON_AS_SKILL_029"
+"icon": "ICON_AS_SKILL_029",
+"s25": "+20% additional Status Effect Chance"
 },
 "Storm Slice": {
 "cls": "assassin",
@@ -360,7 +373,8 @@
 "ko": "강습 습격",
 "cd": 120,
 "mp": null,
-"icon": "ICON_CO_SKILL_003"
+"icon": "ICON_CO_SKILL_003",
+"s25": "-1 min cooldown"
 },
 "Deadshot": {
 "cls": "ranger",
@@ -396,7 +410,8 @@
 "ko": "그리폰 화살",
 "cd": 45,
 "mp": 200,
-"icon": "ICON_RA_SKILL_006"
+"icon": "ICON_RA_SKILL_006",
+"s25": "+20% damage to targets with Crimson Flames"
 },
 "Burst Arrow": {
 "cls": "ranger",
@@ -450,7 +465,8 @@
 "ko": "폭발 화살",
 "cd": 45,
 "mp": null,
-"icon": "ICON_RA_SKILL_023"
+"icon": "ICON_RA_SKILL_023",
+"s25": "-50% [Explosive Arrow] cooldown on hitting a Slowed or Rooted target"
 },
 "Vaizel's Authority": {
 "cls": "ranger",
@@ -459,7 +475,8 @@
 "ko": "바이젤의 권능",
 "cd": 60,
 "mp": null,
-"icon": "ICON_RA_SKILL_022"
+"icon": "ICON_RA_SKILL_022",
+"s25": "+10% Weapon Damage Boost for the duration"
 },
 "Arrow Scattershot": {
 "cls": "ranger",
@@ -486,7 +503,8 @@
 "ko": "지원 사격",
 "cd": 90,
 "mp": null,
-"icon": "ICON_RA_SKILL_038"
+"icon": "ICON_RA_SKILL_038",
+"s25": "10% chance to fire an extra shot"
 },
 "Firestorm": {
 "cls": "sorcerer",
@@ -549,7 +567,8 @@
 "ko": "냉기 폭풍",
 "cd": 60,
 "mp": 200,
-"icon": "ICON_SO_SKILL_019"
+"icon": "ICON_SO_SKILL_019",
+"s25": "5% chance to inflict Frost for 3s when attacking a target with Frostbite"
 },
 "Flame Arrow": {
 "cls": "sorcerer",
@@ -585,7 +604,8 @@
 "ko": "지연 폭발",
 "cd": 30,
 "mp": 200,
-"icon": "ICON_SO_SKILL_032"
+"icon": "ICON_SO_SKILL_032",
+"s25": "Ignores Block and Evasion and lands as a Critical Hit"
 },
 "Fire Wall": {
 "cls": "sorcerer",
@@ -594,7 +614,8 @@
 "ko": "불의 장벽",
 "cd": 60,
 "mp": 200,
-"icon": "ICON_SO_SKILL_039"
+"icon": "ICON_SO_SKILL_039",
+"s25": "+10% damage when attacking targets with Embers"
 },
 "Element Enhancement": {
 "cls": "sorcerer",
@@ -603,7 +624,8 @@
 "ko": "원소 강화",
 "cd": 60,
 "mp": null,
-"icon": "ICON_SO_SKILL_040"
+"icon": "ICON_SO_SKILL_040",
+"s25": "+7% Double Chance"
 },
 "Cold Shock": {
 "cls": "spiritmaster",
@@ -684,7 +706,8 @@
 "ko": "협공: 부식",
 "cd": 45,
 "mp": 200,
-"icon": "ICON_EL_SKILL_015"
+"icon": "ICON_EL_SKILL_015",
+"s25": "+20% damage taken from the Spiritmaster during Corrode"
 },
 "Enhance: Spirit's Benediction": {
 "cls": "spiritmaster",
@@ -693,7 +716,8 @@
 "ko": "강화: 정령의 가호",
 "cd": 60,
 "mp": null,
-"icon": "ICON_EL_SKILL_019"
+"icon": "ICON_EL_SKILL_019",
+"s25": "Restores an extra 20% HP on cast"
 },
 "Jointstrike: Destructive Attack": {
 "cls": "spiritmaster",
@@ -702,7 +726,8 @@
 "ko": "협공: 파멸의 공세",
 "cd": 60,
 "mp": 200,
-"icon": "ICON_EL_SKILL_024"
+"icon": "ICON_EL_SKILL_024",
+"s25": "+200% damage to targets with Incapacitated Immunity"
 },
 "Summon: Ancient Spirit": {
 "cls": "spiritmaster",
@@ -711,7 +736,8 @@
 "ko": "소환: 고대의 정령",
 "cd": 90,
 "mp": 200,
-"icon": "ICON_EL_SKILL_025"
+"icon": "ICON_EL_SKILL_025",
+"s25": "Ancient Spirit uses its skill after 3 basic attacks"
 },
 "Elemental Fusion": {
 "cls": "spiritmaster",
@@ -846,7 +872,8 @@
 "ko": "대지의 징벌",
 "cd": 30,
 "mp": 200,
-"icon": "ICON_CL_SKILL_040"
+"icon": "ICON_CL_SKILL_040",
+"s25": "Extra damage when [Earth's Blessing] attacks land"
 },
 "Noble Aura": {
 "cls": "cleric",
@@ -855,7 +882,8 @@
 "ko": "고결한 기운",
 "cd": 60,
 "mp": null,
-"icon": "ICON_CL_SKILL_046"
+"icon": "ICON_CL_SKILL_046",
+"s25": "+30% additional damage to targets with Incapacitated Immunity"
 },
 "Onslaught": {
 "cls": "chanter",
@@ -928,7 +956,8 @@
 "ko": "분쇄격",
 "cd": 45,
 "mp": 100,
-"icon": "ICON_CH_SKILL_043"
+"icon": "ICON_CH_SKILL_043",
+"s25": "Target's skill cooldowns +3%"
 },
 "Sprint Mantra": {
 "cls": "chanter",
@@ -937,7 +966,8 @@
 "ko": "질주의 진언",
 "cd": 5,
 "mp": null,
-"icon": "ICON_CH_SKILL_016"
+"icon": "ICON_CH_SKILL_016",
+"s25": "+5% Iron Wall (Block) chance"
 },
 "Undefeated Mantra": {
 "cls": "chanter",
@@ -946,7 +976,8 @@
 "ko": "불패의 진언",
 "cd": 5,
 "mp": null,
-"icon": "ICON_CH_SKILL_019"
+"icon": "ICON_CH_SKILL_019",
+"s25": "+10% Perfect Chance"
 },
 "Power of the Storm": {
 "cls": "chanter",
@@ -955,7 +986,8 @@
 "ko": "질풍의 권능",
 "cd": 120,
 "mp": null,
-"icon": "ICON_CH_SKILL_025"
+"icon": "ICON_CH_SKILL_025",
+"s25": "+5% Weapon Damage Boost"
 },
 "Spinning Strike": {
 "cls": "chanter",
@@ -982,7 +1014,8 @@
 "ko": "마르쿠탄의 분노",
 "cd": 30,
 "mp": null,
-"icon": "ICON_CH_SKILL_033"
+"icon": "ICON_CH_SKILL_033",
+"s25": "Ignores Block and Evasion"
 },
 "Guardian Blessing": {
 "cls": "chanter",
@@ -992,7 +1025,8 @@
 "cd": 120,
 "mp": null,
 "icon": "ICON_CH_SKILL_042",
-"note": "KR/TW Sep 16 patch: 5 min to 2 min. The Global client DB still shows 300 s."
+"note": "KR/TW Sep 16 patch: 5 min to 2 min. The Global client DB still shows 300 s.",
+"s25": "+10% PvE and +5% PvP Damage Tolerance"
 },
 "Glacial Smite": {
 "cls": "sorcerer",
@@ -1001,7 +1035,8 @@
 "ko": "빙하 강타",
 "cd": 90,
 "mp": 200,
-"icon": "ICON_SO_SKILL_012"
+"icon": "ICON_SO_SKILL_012",
+"s25": "+25% Frost chance"
 },
 "Frost Burst": {
 "cls": "sorcerer",
@@ -1019,7 +1054,8 @@
 "ko": "결박의 낙인",
 "cd": 60,
 "mp": 200,
-"icon": "ICON_CH_SKILL_023"
+"icon": "ICON_CH_SKILL_023",
+"s25": "Ignores Block and Evasion"
 },
 "Bursting Blow": {
 "cls": "chanter",
@@ -1037,6 +1073,7 @@
 "ko": "축복의 활",
 "cd": 120,
 "mp": null,
-"icon": "ICON_RA_SKILL_030"
+"icon": "ICON_RA_SKILL_030",
+"s25": "+5s duration"
 }
 }
