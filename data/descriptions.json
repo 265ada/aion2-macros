@@ -147,7 +147,24 @@
 },
 "Zikel's Blessing": {
 "d": "Increases the caster's Attack by 20% and Accuracy by 100 for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+50% Stagger Gauge Damage"
+],
+[
+10,
+"+10% PvE Damage Boost and +5% PvP Damage Boost"
+],
+[
+15,
+"+50% Multi-Hit chance"
+],
+[
+20,
+"+20% Status Effect Chance"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -213,7 +230,24 @@
 },
 "Lifestealing Blade": {
 "d": "Deals 1522-1522 damage to up to 4 enemies within 4m and absorbs 10% HP.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"Predation effect on party members for 20s"
+],
+[
+15,
+"-30s cooldown"
+],
+[
+20,
+"+5% HP absorbed"
+]
+],
 "m": 0,
 "r": "4 m",
 "k": "Stigma",
@@ -221,7 +255,24 @@
 },
 "Rage Burst": {
 "d": "Deals 1327-1327 damage to a target within 4m. Inflicts Wounded for 10s on hit, reducing the enemy's Attack by 10%, and increases the caster's PvE Damage Boost by 10% and PvP Damage Boost by 5% for 10s. Triggers [Overhead Slam] on the target for 10s on hit.\nWounded does not stack with the Shrink effect from the Templar skill [Taunt].\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"-15s [Rage Burst] cooldown"
+],
+[
+10,
+"+10% Attack reduction"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+10% PvE Damage Boost increase and +5% PvP Damage Boost increase"
+]
+],
 "m": 0,
 "r": "4 m",
 "k": "Stigma",
@@ -229,7 +280,24 @@
 },
 "Lunge Stance": {
 "d": "Increases the caster's Combat Speed by 20% for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+5% Double Chance for the duration"
+],
+[
+10,
+"Increases Move Speed by 20% for the duration"
+],
+[
+15,
+"x1.5 [Identify Weakness] effect for the duration"
+],
+[
+20,
+"50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -237,7 +305,24 @@
 },
 "Wave Armor": {
 "d": "Deals 207-207 Damage over Time to up to 4 enemies within 3m of the caster for 10s.",
-"s": [],
+"s": [
+[
+5,
+"Absorbs 2% HP"
+],
+[
+10,
+"x1.5 [Experienced Counterstrike] effect for the duration"
+],
+[
+15,
+"x1.5 [Murderous Burst] effect for the duration"
+],
+[
+20,
+"Reflects 10% of damage taken"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -303,7 +388,24 @@
 },
 "Doom Shield": {
 "d": "Rushes to a target within 20m and deals 1254-1254 damage. Has a 75% chance to inflict Knockdown for 3s. Grants a Protective Shield that blocks damage equaling 5% Max HP for 5s on hit. Triggers [Judgment] for 3s.\n100% chance to inflict Knockdown on NPC targets.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Resets [Annihilate] cooldown on hit"
+],
+[
+10,
+"+200 Block for 5s on hit"
+],
+[
+15,
+"Resets cooldown on defeating an enemy"
+],
+[
+20,
+"+25% Knockdown Chance"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -369,7 +471,24 @@
 },
 "Shield of Protection": {
 "d": "Temporarily increases Block Damage Reduction by 100% and guarantees Block. Restores 110 MP and Stamina once on Block.",
-"s": [],
+"s": [
+[
+5,
+"+1 consecutive use"
+],
+[
+10,
+"Changes to mobile skill"
+],
+[
+15,
+"+20% Move Speed for 3s on Block"
+],
+[
+20,
+"Restores 10% HP once on Block"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -377,7 +496,24 @@
 },
 "Taunt": {
 "d": "Deals 888-888 damage to a target within 20m and increases Enmity by 20000. Inflict Shrink for 15s on hit and has a 50% chance to inflict Taunt for 3s if the target is a player.\nShrink: Reduces Accuracy by 200 and Attack by 10%\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Adds 10% PvE Damage Tolerance reduction and 5% PvP Damage Tolerance reduction effect to Shrink"
+],
+[
+10,
+"+10% Shrink Attack reduction"
+],
+[
+15,
+"-5s cooldown"
+],
+[
+20,
+"+2s Taunt duration, +5s Shrink duration"
+]
+],
 "m": 1,
 "r": "20 m",
 "k": "Stigma",
@@ -414,7 +550,24 @@
 },
 "Noble Armor": {
 "d": "Increases Max HP by 5.4% for 300s and immediately restores HP by 5.4% of Max HP.\n\nNot affected by buff dispel effects.",
-"s": [],
+"s": [
+[
+5,
+"+5% Defense for the duration"
+],
+[
+10,
+"x1.5 [Insulting Roar] effect for the duration"
+],
+[
+15,
+"x1.5 [Fury] effect for the duration"
+],
+[
+20,
+"+10% Incoming Heal for the duration"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -596,7 +749,24 @@
 },
 "Throw Shadowblade": {
 "d": "Deals 778-778 damage to a target within 20m and inflicts Slow, which reduces Move Speed by 40% for 5s.\n\n15 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Adds [Shadowblade Pursuit] Chain Skill"
+],
+[
+10,
+"Resets cooldown on defeating an enemy"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"Changes to AoE Skill"
+]
+],
 "m": 1,
 "r": "20 m",
 "k": "Stigma",
@@ -749,7 +919,24 @@
 },
 "Savage Fang": {
 "d": "Deals 1074-1074 damage to up to 4 enemies within 4m and engraves 5 Insignias for 10s.\n\n50 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"+50 Stagger Gauge Damage"
+],
+[
+15,
+"+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+],
+[
+20,
+"Critical Hit on hit"
+]
+],
 "m": 0,
 "r": "4 m",
 "k": "Stigma",
@@ -757,7 +944,24 @@
 },
 "Triniel's Dagger": {
 "d": "Deals 1374-1374 damage to a target within 4m and increases all of the target's skill cooldowns by 5% of their duration. Increases damage by 30% if attacking from behind the target.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Changes to mobile skill"
+],
+[
+10,
+"-10% all skill cooldowns on hit"
+],
+[
+15,
+"Resets cooldown on defeating an enemy with [Triniel's Dagger]"
+],
+[
+20,
+"+3% all skill cooldowns"
+]
+],
 "m": 0,
 "r": "4 m",
 "k": "Stigma",
@@ -765,7 +969,24 @@
 },
 "Illusive Clone": {
 "d": "Removes [Heart Gore] cooldown and deals 20% of damage dealt as extra damage for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+10% Status Effect Chance for the duration"
+],
+[
+10,
+"+20% Critical Damage Boost for the duration"
+],
+[
+15,
+"x1.5 [Exploit Weakness] effect for the duration"
+],
+[
+20,
+"50% chance to deal extra damage on Critical Hit for the duration"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -839,7 +1060,24 @@
 },
 "Assault Ambush": {
 "d": "Selects a target within 20m and deals 977-977 damage to up to 4 enemies within 4m, with a 30% chance to inflict Blind for 5s.\n100% chance to inflict Blind on NPC targets.\n\nIncreases Defense by up to 20% proportional to the number of targets hit.",
-"s": [],
+"s": [
+[
+5,
+"+20% Attack for 5s on hit"
+],
+[
+10,
+"500 MP damage on hit"
+],
+[
+15,
+"+10m range"
+],
+[
+20,
+"+20% Blind Chance"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -934,7 +1172,24 @@
 },
 "Griffon Arrow": {
 "d": "Selects a target within 20m and deals 964-964 damage to up to 4 enemies within 4m. Inflicts Crimson Flames for 10s.\nCrimson Flames: Takes 482-482 Fire Damage over Time every 1s. Damage over Time amount increases when targets move.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Changes to mobile skill"
+],
+[
+10,
+"+5s Damage over Time duration"
+],
+[
+15,
+"Enhanced Crimson Flames - Extra damage when hit while afflicted with Crimson Flames"
+],
+[
+20,
+"-50% Damage over Time intervals"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -1066,7 +1321,24 @@
 },
 "Explosive Arrow": {
 "d": "Selects a target within 20m and deals 1426-1426 damage to up to 4 enemies within 4m. Increases damage by 20% to targets afflicted with Slow or Root.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"-15s cooldown"
+],
+[
+10,
+"+10% additional damage to targets afflicted with Slow or Root"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+20% additional damage to targets afflicted with Slow or Root"
+]
+],
 "m": 1,
 "r": "20 m",
 "k": "Stigma",
@@ -1074,7 +1346,24 @@
 },
 "Vaizel's Authority": {
 "d": "Increases the caster's Attack by 20% for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+10% Perfect Chance for the duration"
+],
+[
+10,
+"x1.5 [Focused Eye] effect for the duration"
+],
+[
+15,
+"x1.5 [Hunter's Soul] effect for the duration"
+],
+[
+20,
+"50% chance to reduce all skill cooldowns by 1s on Critical Hit for the duration"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -1140,7 +1429,24 @@
 },
 "Supporting Fire": {
 "d": "Summons an orb that provides supporting fire for 15s near the caster. The orb has a 25% chance to fire a shot dealing 243-243 damage and absorbing 1.5% HP.\n\nFiring Cooldown: 0.5s",
-"s": [],
+"s": [
+[
+5,
+"+25% activation chance"
+],
+[
+10,
+"+15s duration"
+],
+[
+15,
+"-30s cooldown"
+],
+[
+20,
+"Critical Hit on hit"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -1322,7 +1628,24 @@
 },
 "Cold Storm": {
 "d": "Selects a target within 20m and deals 945-945 Water damage, inflicting Slow on up to 4 enemies within 5m. Summons a Cold Storm at the target's location for 7s, inflicting Frostbite.\nFrostbite: Deals 472-472 Water Damage over Time every 1s for 10s. The Damage over Time amount increases when targets move.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Enhanced Frostbite - Grants extra damage when landing an attack"
+],
+[
+10,
+"30% chance to inflict Root for 2s"
+],
+[
+15,
+"+3s [Cold Storm] summoning duration"
+],
+[
+20,
+"+10s Frostbite duration"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -1417,7 +1740,24 @@
 },
 "Delayed Explosion": {
 "d": "Deals 1116-1116 Fire damage to a target within 20m after 4s. Increases damage taken from the caster by 15% during the delay.",
-"s": [],
+"s": [
+[
+5,
+"Restores 200 MP"
+],
+[
+10,
+"-10s [Delayed Explosion] cooldown"
+],
+[
+15,
+"Changes to AoE Skill"
+],
+[
+20,
+"+10% additional Damage Taken"
+]
+],
 "m": 1,
 "r": "20 m",
 "k": "Stigma",
@@ -1425,7 +1765,24 @@
 },
 "Fire Wall": {
 "d": "Summon a Fire Wall that lasts for 3s at the location of a target within 20m. Deals 1300-1300 Fire damage and inflicts Embers on up to 4 enemies within the Fire Wall area (1x10m) for 10s.\nEmbers: Deals 650-650 Fire Damage over Time every 1s for 10s. Damage over Time amount increases when targets move.",
-"s": [],
+"s": [
+[
+5,
+"Enhanced Embers - Grants extra damage when landing an attack"
+],
+[
+10,
+"+2m wall width"
+],
+[
+15,
+"+2s [Fire Wall] summoning duration"
+],
+[
+20,
+"+10s Embers duration"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -1433,7 +1790,24 @@
 },
 "Element Enhancement": {
 "d": "Increases the caster's Fire Attack by 20% and Water Attack by 20% for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+200 Accuracy"
+],
+[
+10,
+"x1.5 [Robe of Flame] effect"
+],
+[
+15,
+"x1.5 [Grace of Enhancement] effect"
+],
+[
+20,
+"+10% additional Fire and Water Attack"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -1673,7 +2047,24 @@
 },
 "Jointstrike: Corrode": {
 "d": "Selects a target within 20m and deals 429-429 damage to up to 4 enemies within 4m of the target, inflicting Corrode for 20s.\n\nCorrode: Increases damage taken from the Spirit by 10% and deals 859-859 Damage over Time every 1s\n\nThe Spirit joins for a coordinated assault.\nFire: 544-544 AoE damage and Knockdown\nWater: 653-653 damage and Slow\nEarth: 590-590 damage and Seal\nWind: 489-489 AoE damage and Stun\nAncient: 925-925 AoE damage and Knockdown\n\n10 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"+15% extra damage taken from Spirit during Corrode"
+],
+[
+10,
+"-20% Combat Speed on hit for 10s"
+],
+[
+15,
+"-70% Incoming Heal during Corrode"
+],
+[
+20,
+"+10s Corrode effect duration"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -1681,7 +2072,24 @@
 },
 "Enhance: Spirit's Benediction": {
 "d": "Increases PvE Damage Boost by 20%, PvP Damage Boost by 10%, PvE Damage Tolerance by 20%, PvP Damage Tolerance by 10%, and restores 1850-2035 HP every 1s for 10s to the caster and Spirit.\n\nUnaffected by cooldown increase effects.",
-"s": [],
+"s": [
+[
+5,
+"Restores 10% of Max HP on cast"
+],
+[
+10,
+"x1.5 [Spirit Strike] Damage Boost effect"
+],
+[
+15,
+"x1.5 activation chance and amount healed from [Spirit Communion]"
+],
+[
+20,
+"+25% PvE Damage Boost and Damage Tolerance, +12.5% PvP Damage Boost and Damage Tolerance for caster and Spirit"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -1689,7 +2097,24 @@
 },
 "Jointstrike: Destructive Attack": {
 "d": "Deals 573-573 damage to a target within 20m.\n\nThe Spirit joins you in a coordinated assault.\nFire: 664-664 AoE damage\nWater: 797-797 damage\nEarth: 731-731 damage\nWind: 598-598 AoE damage\nAncient: 1063-1063 AoE damage\n\n50 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Changes to Charge Skill, dealing up to 200% more [Jointstrike: Destructive Attack] damage"
+],
+[
+10,
+"+30% Skill Speed"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"Reset [Jointstrike: Curse] and [Jointstrike: Corrode] cooldown on landing [Jointstrike: Destructive Attack] first hit"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -1697,7 +2122,24 @@
 },
 "Summon: Ancient Spirit": {
 "d": "Summons an Ancient Spirit for 30s and grants Four Elements status each time the Ancient Spirit uses its skill.\nThe Ancient Spirit uses a skill on a target within 20m, dealing 1082-1082 damage to up to 4 enemies within 4m.\nThe Ancient Spirit fights alongside the caster using basic attacks and reuses its skill after 7 basic attacks. It is dismissed upon selecting the summon icon.\nEach skill level increases the Ancient Spirit's Attack, Defense, Accuracy, and Critical Hit by 2%.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"+10% Ancient Spirit Attack"
+],
+[
+10,
+"x1.5 [Spirit's Descent] activation chance and damage for 30s"
+],
+[
+15,
+"Ancient Spirit uses skill after 5 basic attacks"
+],
+[
+20,
+"+20% Ancient Spirit Stats"
+]
+],
 "m": 1,
 "r": "20 m",
 "k": "Stigma",
@@ -2111,7 +2553,24 @@
 },
 "Earth Punishment": {
 "d": "Deals 1186-1186 Earth damage to a target within 20m and 1186 damage every 1s for 10s.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"[Condemnation] lands as a Critical Hit on targets afflicted with [Earth Punishment]"
+],
+[
+10,
+"+10% Double Chance to caster and +5% to party members from [Earth's Blessing]"
+],
+[
+15,
+"+10% Attack and Defense to caster and +5% to party members from [Earth's Blessing]"
+],
+[
+20,
+"+10s [Earth Punishment] and [Earth's Blessing] duration"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -2119,7 +2578,24 @@
 },
 "Noble Aura": {
 "d": "Summons a Noble Aura near the caster that lasts for 300s. The Aura follows the caster and attacks their target together.\n\nDeals 472-472 damage to a target within 20m.\nAura Attack Cooldown: 2s",
-"s": [],
+"s": [
+[
+5,
+"+200 Aura Critical Hit"
+],
+[
+10,
+"+20 damage to targets afflicted with Debilitating Mark"
+],
+[
+15,
+"+30% damage to targets with Incapacitated Immunity"
+],
+[
+20,
+"-1s Aura attack cooldown"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -2330,7 +2806,24 @@
 },
 "Fracturing Blow": {
 "d": "Rushes to a target within 20m and deals 1288-1288 damage and reduces their Defense by 30% for 5s. Increases damage by 20% to targets afflicted with an Impact-type status.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"-15s cooldown"
+],
+[
+10,
+"Inflict Exposed for 5s on hit"
+],
+[
+15,
+"Critical Hit on hit"
+],
+[
+20,
+"+30% additional Impact-type Status target damage"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -2338,7 +2831,24 @@
 },
 "Sprint Mantra": {
 "d": "Increases Move Speed by 10.5% and grants a 15% chance to restore 127-140 HP on landing an attack to the caster and nearby party members.\n\nHealing Cooldown: 1s",
-"s": [],
+"s": [
+[
+5,
+"+10% Incoming Heal"
+],
+[
+10,
+"+30% Natural Stamina Regen"
+],
+[
+15,
+"+50% amount restored when HP is 50% or less"
+],
+[
+20,
+"+10% Restoration"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -2346,7 +2856,24 @@
 },
 "Undefeated Mantra": {
 "d": "Increases PvE Damage Boost and PvE Damage Tolerance by 10.5% and PvP Damage Boost and PvP Damage Tolerance by 5.25% for the caster and nearby party members.\n\nDoes not stack with the Damage Boost effect from the Cleric skill [Light of Protection]; only the higher-level skill effect applies. If both skills are the same level, Undefeated Mantra takes precedence.",
-"s": [],
+"s": [
+[
+5,
+"+100 Critical Hit"
+],
+[
+10,
+"+100 Accuracy"
+],
+[
+15,
+"+5% Critical Damage Boost"
+],
+[
+20,
+"+5% Double Chance"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -2354,7 +2881,24 @@
 },
 "Power of the Storm": {
 "d": "Increases Combat Speed by 20% and reduces skill cooldowns by 20% for 10s.\nIncreases Combat Speed by 20% and reduces skill cooldowns by 10% for party members within 40m.\n\nCannot receive effect of [Power of the Storm] if Cleric skill [Earth's Blessing] effect is active.",
-"s": [],
+"s": [
+[
+5,
+"-30s cooldown"
+],
+[
+10,
+"+200 Accuracy"
+],
+[
+15,
+"+200 Critical Hit"
+],
+[
+20,
+"+20% Caster Attack and +10% party member Attack"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -2420,7 +2964,24 @@
 },
 "Marchutan's Wrath": {
 "d": "Selects a target within 20m and deals 1384-1384 damage to up to 4 enemies within 4m.\n\n[Dark Crush] becomes available for 3s on skill use.",
-"s": [],
+"s": [
+[
+5,
+"Up to +20% damage when less targets hit"
+],
+[
+10,
+"50% chance to inflict Stun for 3s"
+],
+[
+15,
+"-70% Incoming Heal and Potion Recovery"
+],
+[
+20,
+"+25% additional Stun Chance"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -2428,7 +2989,24 @@
 },
 "Guardian Blessing": {
 "d": "Increases the caster's Max HP by 5.4% for 300s and immediately restores 5.4% HP.\n\nNot affected by buff dispel effects.",
-"s": [],
+"s": [
+[
+5,
+"+10% Status Effect Resist"
+],
+[
+10,
+"x1.5 [Crossguard] effect for the duration"
+],
+[
+15,
+"x1.5 [Wind's Promise] effect for the duration"
+],
+[
+20,
+"+10% Incoming Heal"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -2436,7 +3014,24 @@
 },
 "Glacial Smite": {
 "d": "Selects a target within 20m and deals 1477-1477 Water damage to up to 4 enemies within 4m of the target.\n\n20 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Up to +20% damage when more targets hit"
+],
+[
+10,
+"-30s cooldown"
+],
+[
+15,
+"50% chance to inflict Frost for 3s"
+],
+[
+20,
+"Ignores Block and Evasion and lands as Multi-Hit"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -2473,7 +3068,24 @@
 },
 "Ensnaring Mark": {
 "d": "Selects a target within 20m and deals 1034-1034 damage to up to 4 enemies within 4m, with a 50% chance to inflict Seal for 5s.\n100% chance to inflict Seal on NPC targets.\n\n[Dark Crush] becomes available for 3s on skill use.",
-"s": [],
+"s": [
+[
+5,
+"50% chance to inflict Root"
+],
+[
+10,
+"50% chance to inflict -1000 enemy Max Stamina"
+],
+[
+15,
+"+3s Seal, Root, Max Stamina reduction effect"
+],
+[
+20,
+"+25% Seal, Root, Max Stamina reduction chance"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -2489,7 +3101,24 @@
 },
 "Bow of Blessing": {
 "d": "Increases the caster's Critical Hit by 200 and Accuracy by 100 for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+50% Multi-Hit Chance for duration"
+],
+[
+10,
+"Increases Attack proportional to Critical Hit for the duration"
+],
+[
+15,
+"+20% Critical Damage Boost for the duration"
+],
+[
+20,
+"+7% Double Chance for the duration"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -2497,7 +3126,24 @@
 },
 "Battlefield Banner": {
 "d": "Increases Attack proportional to Defense for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+10% Multi-Hit Chance for duration"
+],
+[
+10,
+"+10% Weapon Damage Boost for duration"
+],
+[
+15,
+"+20% Attack increase proportional to Defense"
+],
+[
+20,
+"-30s cooldown"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -2505,7 +3151,24 @@
 },
 "Empyrean Lord's Punishment": {
 "d": "Selects a target within 20m and deals 939-939 damage to up to 4 enemies within 4m of the target. Has a 50% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n50 Stagger Gauge Damage",
-"s": [],
+"s": [
+[
+5,
+"Up to +20% damage when less targets hit"
+],
+[
+10,
+"+50 Stagger Gauge Damage"
+],
+[
+15,
+"+10% PvE Damage Boost and +5% PvP Damage Boost for 10s on hit"
+],
+[
+20,
+"+25% Stun Chance"
+]
+],
 "m": 0,
 "r": "20 m",
 "k": "Stigma",
@@ -2513,7 +3176,24 @@
 },
 "Prayer of Amplification": {
 "d": "Increases Attack by 20% for 10s.",
-"s": [],
+"s": [
+[
+5,
+"+20% PvE Damage Boost and +10% PvP Damage Boost"
+],
+[
+10,
+"x1.5 [Empyrean Lord's Grace] effect for the duration"
+],
+[
+15,
+"x1.5 [Earth's Grace] effect for the duration"
+],
+[
+20,
+"+15% additional Attack"
+]
+],
 "m": 0,
 "r": null,
 "k": "Stigma",
@@ -2521,7 +3201,24 @@
 },
 "Flame Blessing": {
 "d": "Has a 50% chance to deal 234-234 extra damage to enemies on landing an attack for 10s.\n\nCooldown: 1s",
-"s": [],
+"s": [
+[
+5,
+"+100 Accuracy"
+],
+[
+10,
+"+100 Critical Hit"
+],
+[
+15,
+"+10% Critical Damage Boost"
+],
+[
+20,
+"-50% extra damage cooldown"
+]
+],
 "m": 1,
 "r": null,
 "k": "Stigma",
@@ -2584,5 +3281,674 @@
 "r": "4 m",
 "k": "Mastery",
 "q": 5
+},
+"Survival Stance": {
+"d": "Increases the caster's HP by 200. Increases Max HP by an additional 7%, Natural HP Regen by 20, PvE Damage Tolerance by 5.5%, and PvP Damage Tolerance by 2.75%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Protection Armor": {
+"d": "Increases the caster's Block by 200 and restores 53-64 HP on Block.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Blood Absorption": {
+"d": "The caster has a 50% chance to restore 20-24 HP and 1.6% Max HP on landing an attack.\nImmediately restores 26% Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Identify Weakness": {
+"d": "Increases the caster's Critical Hit by 100 and Perfect Chance by 0.5%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Attack Preparation": {
+"d": "Increases the caster's PvE Damage Boost by 5.5%, PvP Damage Boost by 2.75%, Defense by 2%, and Accuracy by 100.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Impact Hit": {
+"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Destructive Impulse": {
+"d": "Deals 146-146 extra damage to targets afflicted with Stagger or an Impact-type status.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Experienced Counterstrike": {
+"d": "Increases Front Attack Damage Boost by 0.4%. Increases PvE Damage Boost by 5.4%, PvP Damage Boost by 2.7% for 20s for the caster and party members on Block.\n\nPvE Damage Boost and PvP Damage Boost does not stack with Templar's [Fury] effect.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Survival Willpower": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Murderous Burst": {
+"d": "Grants a stack of Menace for 3s when landing an attack. Removes Menace at 5 stacks and deals 539-539 damage to up to 4 enemies within 5m of the caster and increases the caster's Critical Damage Boost by 5.5% for 3s.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Enhance Health": {
+"d": "Increases the caster's HP by 250. Increases Max HP by an additional 7.5% and Incoming Heal by 6%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Warding Shield": {
+"d": "Increases the caster's Block by 200 and restores 53-64 HP on Block.\n\nCooldown: 3s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Punishing Benediction": {
+"d": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Ironclad Defense": {
+"d": "Increases the caster's Defense by 7% and Endurance by 1%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Guarding Seal": {
+"d": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less.\n\nCooldown: 60s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Impact Hit (templar)": {
+"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Insulting Roar": {
+"d": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack.\n\nCooldown: 5s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Fury": {
+"d": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Survival Willpower (templar)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Block Pain": {
+"d": "Grants Block Pain for 10s when struck by an enemy.\nBlock Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5%\n\nCooldown: 20s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Heightened Sixth Sense": {
+"d": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion.\n\nCooldown: 3s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Exploit Weakness": {
+"d": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Whirlwind Slice": {
+"d": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+"s": [
+[
+8,
+"+50% Multi-Hit on hit"
+],
+[
+8,
+"Changes to AoE damage"
+],
+[
+8,
+"+16m range"
+],
+[
+12,
+"+20% Stun Chance"
+],
+[
+16,
+"25% chance to reset [Whirlwind Slice] cooldown on Evasion"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 7
+},
+"Apply Poison": {
+"d": "Has a 15% chance to reduce the target's Incoming Heal by 12% and inflict Poison for 10s on landing an attack. Poison deals 233~233 Damage over Time every 1s.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Rear Smite": {
+"d": "Increases the caster's Back Attack Damage Boost by 3%, PvE Damage Boost by 3%, and PvP Damage Boost by 1.5%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Assault Stance": {
+"d": "Increases the caster's Critical Damage Boost by 6%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Impact Hit (assassin)": {
+"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Ambush Stance": {
+"d": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal 152-152 damage on landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Defense Break": {
+"d": "Reduces the target's Defense by 12% and Status Effect Resist by 11% for 10s when landing an attack on a target afflicted with Stagger or an Impact-type status.\n\nCooldown: 20s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Revitalization Contract": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\nImmediately restores 35% Max HP when HP is 10% or less.\n\nHealing Cooldown: 60s\nStatus Effect Resist Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Determination": {
+"d": "Deals 228-228 damage when landing an attack on a target with 30% HP or less.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Vigilant Eye": {
+"d": "Increases the caster's Evasion by 200, Max HP by 6%, and restores 85-102 HP on Evasion.\n\nCooldown: 3s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Concentrated Fire": {
+"d": "Has a 50% chance to deal 56-56 damage to a target taking Damage over Time.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Wind Vigor": {
+"d": "Increases Max Stamina by 15. Increases Move Speed by 10% for 1s when attacked.\n\nCooldown: 5s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Focused Eye": {
+"d": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Hunter's Resolve": {
+"d": "Increases the caster's Critical Damage Boost by 6%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Unyielding Resolve": {
+"d": "Increases the caster's Ailment-type Resist and Impact-type Resist by 11.2%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Rooting Eye": {
+"d": "Has a 50% chance to deal 143-143 damage when landing an attack on a target afflicted with Slow or Root.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Melee Fire": {
+"d": "Has a 25% chance to inflict 148-148 extra damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Revitalization Contract (ranger)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\nImmediately restores 35% Max HP when HP is 10% or less.\n\nHealing Cooldown: 60s\nStatus Effect Resist Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Hunter's Soul": {
+"d": "Has a 50% chance to deal 344-344 damage on a Critical Hit.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Fire Mark": {
+"d": "Has a 20% chance to inflict Fire Mark for 5s on landing a Fire attack.\nFire Mark: Has a 20% chance to take 32-32 extra damage when taking Fire damage while afflicted with Fire Mark.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Robe of Earth": {
+"d": "Increases Max MP by 7% and Natural MP Regen by 5. Increases Critical Hit by 105 when MP is 50% or more.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Cold Snap": {
+"d": "Has a 50% chance to deal 43-43 extra damage when landing an attack on a target afflicted with Slow.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Robe of Flame": {
+"d": "Increases the caster's Accuracy by 100, PvE Damage Boost by 1%, PvP Damage Boost by 0.5%, and Double Chance by 0.2%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Absorb Essence": {
+"d": "Increases Ailment-type and Mental-type Chance by 10.7% and restores 25 MP on landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Grace of Resistance": {
+"d": "Increases the caster's Mental-type Resist and Impact-type Resist by 11.2%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Robe of Cold": {
+"d": "Increases the caster's Defense by 1% and Critical Hit Resist by 55 and inflicts Slow on an enemy when struck by them, reducing the enemy's Move Speed by 25% for 2s.\n\nCooldown: 10s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Grace of Enhancement": {
+"d": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal 106-106 damage on landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Revitalization Contract (sorcerer)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\nImmediately restores 35% Max HP when HP is 10% or less.\n\nHealing Cooldown: 60s\nStatus Effect Resist Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Vitality Evaporation": {
+"d": "Deals 261-261 damage on hit if the target's HP is above 70%.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Spirit Strike": {
+"d": "Increases the caster's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance by 0.4%. Increases the Spirit's PvE Damage Boost by 6%, PvP Damage Boost by 3%, and Perfect Chance 0.4%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Spirit Protection": {
+"d": "Increases the caster's Defense by 2% and Spirit's Defense by 2%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Spirit's Descent": {
+"d": "Has a 50% chance to deal 47-47 extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Corrode": {
+"d": "Increases the caster's Critical Hit by 100, with a 50% chance to deal 124-124 damage on landing a Critical Hit.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Spirit Revitalization": {
+"d": "Has a 11% chance to reduce the cooldown of Spirit summon skills by 1s on hit. Immediately heals the Spirit for 12% of its Max HP when its HP is 50% or less.\n\nCooldown: 1s\nSpirit Healing Cooldown: 30s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Mental Focus": {
+"d": "Increases the caster's Mental-type Chance(s) by 11% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Consecutive Countercurrent": {
+"d": "Has a 50% chance to deal 97-97 extra damage on landing an attack on a target that is taking Damage over Time.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Spirit Communion": {
+"d": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by 182-200 when landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Revitalization Contract (spiritmaster)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\nImmediately restores 35% Max HP when HP is 10% or less.\n\nHealing Cooldown: 60s\nStatus Effect Resist Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Element Unification": {
+"d": "Increases Critical Damage Boost by 1.1% for the caster and Spirit for 10s upon landing a Spirit skill attack. Stacks up to 5 times.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Warm Benediction": {
+"d": "Increases the caster's Max HP by 6% and Max MP by 7.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Empyrean Lords' Benediction": {
+"d": "Increases the caster's Block by 200 and restores 53-64 HP on Block.\n\nCooldown: 3s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Empyrean Lord's Grace": {
+"d": "Increases the caster's Critical Hit by 100, Double Chance by 0.2% and deals 71-71 extra damage on landing an attack on a target.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Healing Enhancement": {
+"d": "Increases the caster's Heal Boost by 22400% of Attack.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Immortal Veil": {
+"d": "Increases the caster's Defense by 2% and Critical Hit Resist by 100.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Heal Block": {
+"d": "Has a 7% chance to reduce the target's Incoming Heal by 32% for 5s on landing an attack.\n\nCooldown: 5s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Prayer of Concentration": {
+"d": "Forms a Protective Shield which blocks 424 damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Earth's Grace": {
+"d": "Increases the caster's Critical Damage Boost by 10.5% and Accuracy by 100.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Survival Willpower (cleric)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Radiant Benediction": {
+"d": "Restores 384-461 HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Blessing of Life": {
+"d": "Increases the caster's HP by 15300. Increases Max HP by an additional 1.5% and Heal Boost by 15300% of Attack.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Crossguard": {
+"d": "Increases the caster's Block by 200 and restores 53-58 HP on Block.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Protection Circle": {
+"d": "Grants a Protection Circle that lasts for 5s on landing an attack. Removes the Protection Circle at 10 stacks and grants Divine Barrier to the caster and party members, which blocks damage equaling 3.1% of Max HP for 10s. The Divine Barrier refreshes upon reaching 10 stacks of Protection Circle while Divine Barrier is active.\nGrants a Noble Protective Shield for 5s that blocks 21% damage when the caster's HP drops below 50%.\n\nProtection Circle Cooldown: 0.5s\nNoble Protective Shield Cooldown: 60s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Inspiring Spell": {
+"d": "Increases the caster's Critical Hit by 100 and Perfect Chance by 0.5%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Attack Preparation (chanter)": {
+"d": "Increases the caster's PvE Damage Boost by 5.5%, PvP Damage Boost by 2.75%, Defense by 2%, and Accuracy by 100.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Impact Hit (chanter)": {
+"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Raging Spell": {
+"d": "Deals 146-146 extra damage to targets afflicted with Stagger or an Impact-type status.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Earth's Promise": {
+"d": "Reduces the target's PvE Damage Tolerance by 5.4% and PvP Damage Tolerance by 2.7% for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Survival Willpower (chanter)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Wind's Promise": {
+"d": "Increases the caster's Critical Damage Boost by 5.7% and has a 50% chance to deal 554-554 extra damage to the target on landing a Critical Hit.\n\nExtra Damage Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
 }
 }

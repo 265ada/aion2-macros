@@ -1137,5 +1137,814 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_GL_SKILL_027"
+},
+"Survival Stance": {
+"cls": "gladiator",
+"id": "11710000",
+"tw": "生存姿態",
+"ko": "생존 자세",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_001",
+"passive": 1
+},
+"Protection Armor": {
+"cls": "gladiator",
+"id": "11720000",
+"tw": "保護盔甲",
+"ko": "보호의 갑옷",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_002",
+"passive": 1
+},
+"Blood Absorption": {
+"cls": "gladiator",
+"id": "11730000",
+"tw": "血之吸收",
+"ko": "피의 흡수",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_003",
+"passive": 1
+},
+"Identify Weakness": {
+"cls": "gladiator",
+"id": "11740000",
+"tw": "掌握弱點",
+"ko": "약점 파악",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_004",
+"passive": 1
+},
+"Attack Preparation": {
+"cls": "gladiator",
+"id": "11750000",
+"tw": "攻擊準備",
+"ko": "공격 준비",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_005",
+"passive": 1
+},
+"Impact Hit": {
+"cls": "gladiator",
+"id": "11760000",
+"tw": "衝擊擊中",
+"ko": "충격 적중",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_006",
+"passive": 1
+},
+"Destructive Impulse": {
+"cls": "gladiator",
+"id": "11770000",
+"tw": "破壞衝動",
+"ko": "파괴 충동",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_007",
+"passive": 1
+},
+"Experienced Counterstrike": {
+"cls": "gladiator",
+"id": "11780000",
+"tw": "老練反擊",
+"ko": "노련한 반격",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_008",
+"passive": 1
+},
+"Survival Willpower": {
+"cls": "gladiator",
+"id": "11790000",
+"tw": "生存意志",
+"ko": "생존 의지",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_009",
+"passive": 1
+},
+"Murderous Burst": {
+"cls": "gladiator",
+"id": "11800000",
+"tw": "殺氣破裂",
+"ko": "살기 파열",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_010",
+"passive": 1
+},
+"Enhance Health": {
+"cls": "templar",
+"id": "12710000",
+"tw": "體力強化",
+"ko": "체력 강화",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_001",
+"passive": 1
+},
+"Warding Shield": {
+"cls": "templar",
+"id": "12720000",
+"tw": "庇護盾牌",
+"ko": "비호의 방패",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_002",
+"passive": 1
+},
+"Punishing Benediction": {
+"cls": "templar",
+"id": "12730000",
+"tw": "斷罪加護",
+"ko": "단죄의 가호",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_003",
+"passive": 1
+},
+"Ironclad Defense": {
+"cls": "templar",
+"id": "12740000",
+"tw": "銅牆鐵壁",
+"ko": "철벽 방어",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_004",
+"passive": 1
+},
+"Guarding Seal": {
+"cls": "templar",
+"id": "12750000",
+"tw": "守護印章",
+"ko": "수호의 인장",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_005",
+"passive": 1
+},
+"Impact Hit (templar)": {
+"cls": "templar",
+"id": "12760000",
+"tw": "衝擊擊中",
+"ko": "충격 적중",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_006",
+"passive": 1
+},
+"Insulting Roar": {
+"cls": "templar",
+"id": "12770000",
+"tw": "侮辱咆哮",
+"ko": "모욕의 포효",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_007",
+"passive": 1
+},
+"Fury": {
+"cls": "templar",
+"id": "12780000",
+"tw": "激昂",
+"ko": "격앙",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_008",
+"passive": 1
+},
+"Survival Willpower (templar)": {
+"cls": "templar",
+"id": "12790000",
+"tw": "生存意志",
+"ko": "생존 의지",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_009",
+"passive": 1
+},
+"Block Pain": {
+"cls": "templar",
+"id": "12800000",
+"tw": "痛苦阻斷",
+"ko": "고통 차단",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_Passive_010",
+"passive": 1
+},
+"Heightened Sixth Sense": {
+"cls": "assassin",
+"id": "13710000",
+"tw": "第六感最大化",
+"ko": "육감 극대화",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_001",
+"passive": 1
+},
+"Exploit Weakness": {
+"cls": "assassin",
+"id": "13720000",
+"tw": "瞄準破綻",
+"ko": "빈틈 노리기",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_002",
+"passive": 1
+},
+"Whirlwind Slice": {
+"cls": "assassin",
+"id": "13210000",
+"tw": "旋風斬",
+"ko": "회오리 베기",
+"cd": 10.0,
+"mp": null,
+"icon": "ICON_AS_SKILL_019"
+},
+"Apply Poison": {
+"cls": "assassin",
+"id": "13730000",
+"tw": "抹毒",
+"ko": "독 바르기",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_003",
+"passive": 1
+},
+"Rear Smite": {
+"cls": "assassin",
+"id": "13740000",
+"tw": "背後強擊",
+"ko": "배후 강타",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_004",
+"passive": 1
+},
+"Assault Stance": {
+"cls": "assassin",
+"id": "13750000",
+"tw": "強襲姿態",
+"ko": "강습 자세",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_006",
+"passive": 1
+},
+"Impact Hit (assassin)": {
+"cls": "assassin",
+"id": "13760000",
+"tw": "衝擊擊中",
+"ko": "충격 적중",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_011",
+"passive": 1
+},
+"Ambush Stance": {
+"cls": "assassin",
+"id": "13770000",
+"tw": "突襲姿態",
+"ko": "기습 자세",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_007",
+"passive": 1
+},
+"Defense Break": {
+"cls": "assassin",
+"id": "13780000",
+"tw": "防禦裂縫",
+"ko": "방어 균열",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_008",
+"passive": 1
+},
+"Revitalization Contract": {
+"cls": "assassin",
+"id": "13790000",
+"tw": "回生契約",
+"ko": "회생의 계약",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_009",
+"passive": 1
+},
+"Determination": {
+"cls": "assassin",
+"id": "13800000",
+"tw": "覺悟",
+"ko": "각오",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_010",
+"passive": 1
+},
+"Vigilant Eye": {
+"cls": "ranger",
+"id": "14710000",
+"tw": "警戒之眼",
+"ko": "경계의 눈",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_004",
+"passive": 1
+},
+"Concentrated Fire": {
+"cls": "ranger",
+"id": "14720000",
+"tw": "集中砲火",
+"ko": "집중 포화",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_003",
+"passive": 1
+},
+"Wind Vigor": {
+"cls": "ranger",
+"id": "14730000",
+"tw": "風之活力",
+"ko": "바람의 활력",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_006",
+"passive": 1
+},
+"Focused Eye": {
+"cls": "ranger",
+"id": "14740000",
+"tw": "集中之眼",
+"ko": "집중의 눈",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_001",
+"passive": 1
+},
+"Hunter's Resolve": {
+"cls": "ranger",
+"id": "14750000",
+"tw": "獵人決心",
+"ko": "사냥꾼의 결의",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_011",
+"passive": 1
+},
+"Unyielding Resolve": {
+"cls": "ranger",
+"id": "14760000",
+"tw": "抵抗決心",
+"ko": "저항의 결의",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_012",
+"passive": 1
+},
+"Rooting Eye": {
+"cls": "ranger",
+"id": "14770000",
+"tw": "束縛之眼",
+"ko": "속박의 눈",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_008",
+"passive": 1
+},
+"Melee Fire": {
+"cls": "ranger",
+"id": "14780000",
+"tw": "近距離射擊",
+"ko": "근접 사격",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_013",
+"passive": 1
+},
+"Revitalization Contract (ranger)": {
+"cls": "ranger",
+"id": "14790000",
+"tw": "回生契約",
+"ko": "회생의 계약",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_009",
+"passive": 1
+},
+"Hunter's Soul": {
+"cls": "ranger",
+"id": "14800000",
+"tw": "獵人之魂",
+"ko": "사냥꾼의 혼",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_Passive_007",
+"passive": 1
+},
+"Fire Mark": {
+"cls": "sorcerer",
+"id": "15710000",
+"tw": "火之標識",
+"ko": "불의 표식",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_002",
+"passive": 1
+},
+"Robe of Earth": {
+"cls": "sorcerer",
+"id": "15720000",
+"tw": "大地長袍",
+"ko": "대지의 로브",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_006",
+"passive": 1
+},
+"Cold Snap": {
+"cls": "sorcerer",
+"id": "15730000",
+"tw": "召喚冷氣",
+"ko": "냉기 소환",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_003",
+"passive": 1
+},
+"Robe of Flame": {
+"cls": "sorcerer",
+"id": "15740000",
+"tw": "火花長袍",
+"ko": "불꽃의 로브",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_004",
+"passive": 1
+},
+"Absorb Essence": {
+"cls": "sorcerer",
+"id": "15760000",
+"tw": "精氣吸收",
+"ko": "정기 흡수",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_001",
+"passive": 1
+},
+"Grace of Resistance": {
+"cls": "sorcerer",
+"id": "15770000",
+"tw": "抵抗恩惠",
+"ko": "저항의 은혜",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_038",
+"passive": 1
+},
+"Robe of Cold": {
+"cls": "sorcerer",
+"id": "15750000",
+"tw": "冷氣長袍",
+"ko": "냉기의 로브",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_005",
+"passive": 1
+},
+"Grace of Enhancement": {
+"cls": "sorcerer",
+"id": "15780000",
+"tw": "強化恩惠",
+"ko": "강화의 은혜",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_007",
+"passive": 1
+},
+"Revitalization Contract (sorcerer)": {
+"cls": "sorcerer",
+"id": "15790000",
+"tw": "回生契約",
+"ko": "회생의 계약",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_009",
+"passive": 1
+},
+"Vitality Evaporation": {
+"cls": "sorcerer",
+"id": "15800000",
+"tw": "活力蒸發",
+"ko": "생기 증발",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_Passive_008",
+"passive": 1
+},
+"Spirit Strike": {
+"cls": "spiritmaster",
+"id": "16710000",
+"tw": "精靈打擊",
+"ko": "정령 타격",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_004",
+"passive": 1
+},
+"Spirit Protection": {
+"cls": "spiritmaster",
+"id": "16720000",
+"tw": "精靈保護",
+"ko": "정령 보호",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_002",
+"passive": 1
+},
+"Spirit's Descent": {
+"cls": "spiritmaster",
+"id": "16730000",
+"tw": "精靈降臨",
+"ko": "정령 강림",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_003",
+"passive": 1
+},
+"Corrode": {
+"cls": "spiritmaster",
+"id": "16740000",
+"tw": "侵蝕",
+"ko": "침식",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_012",
+"passive": 1
+},
+"Spirit Revitalization": {
+"cls": "spiritmaster",
+"id": "16750000",
+"tw": "精靈回生",
+"ko": "정령 회생",
+"cd": 30.0,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_011",
+"passive": 1
+},
+"Mental Focus": {
+"cls": "spiritmaster",
+"id": "16760000",
+"tw": "精神集中",
+"ko": "정신 집중",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_006",
+"passive": 1
+},
+"Consecutive Countercurrent": {
+"cls": "spiritmaster",
+"id": "16800000",
+"tw": "連續逆流",
+"ko": "연속 역류",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_013",
+"passive": 1
+},
+"Spirit Communion": {
+"cls": "spiritmaster",
+"id": "16770000",
+"tw": "精靈交流",
+"ko": "정령 교감",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_007",
+"passive": 1
+},
+"Revitalization Contract (spiritmaster)": {
+"cls": "spiritmaster",
+"id": "16790000",
+"tw": "回生契約",
+"ko": "회생의 계약",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_Passive_009",
+"passive": 1
+},
+"Element Unification": {
+"cls": "spiritmaster",
+"id": "16780000",
+"tw": "元素集結",
+"ko": "원소 결집",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_Passive_008",
+"passive": 1
+},
+"Warm Benediction": {
+"cls": "cleric",
+"id": "17710000",
+"tw": "溫暖加護",
+"ko": "따뜻한 가호",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_001",
+"passive": 1
+},
+"Empyrean Lords' Benediction": {
+"cls": "cleric",
+"id": "17720000",
+"tw": "主神加護",
+"ko": "주신의 가호",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_002",
+"passive": 1
+},
+"Empyrean Lord's Grace": {
+"cls": "cleric",
+"id": "17730000",
+"tw": "主神恩寵",
+"ko": "주신의 은총",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_012",
+"passive": 1
+},
+"Healing Enhancement": {
+"cls": "cleric",
+"id": "17740000",
+"tw": "治癒力強化",
+"ko": "치유력 강화",
+"cd": null,
+"mp": null,
+"icon": null,
+"passive": 1
+},
+"Immortal Veil": {
+"cls": "cleric",
+"id": "17750000",
+"tw": "不死帳幕",
+"ko": "불사의 장막",
+"cd": null,
+"mp": null,
+"icon": null,
+"passive": 1
+},
+"Heal Block": {
+"cls": "cleric",
+"id": "17760000",
+"tw": "恢復阻斷",
+"ko": "회복 차단",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_005",
+"passive": 1
+},
+"Prayer of Concentration": {
+"cls": "cleric",
+"id": "17770000",
+"tw": "集中祈禱",
+"ko": "집중의 기도",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_006",
+"passive": 1
+},
+"Earth's Grace": {
+"cls": "cleric",
+"id": "17780000",
+"tw": "大地恩寵",
+"ko": "대지의 은총",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_008",
+"passive": 1
+},
+"Survival Willpower (cleric)": {
+"cls": "cleric",
+"id": "17790000",
+"tw": "生存意志",
+"ko": "생존 의지",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_009",
+"passive": 1
+},
+"Radiant Benediction": {
+"cls": "cleric",
+"id": "17800000",
+"tw": "燦爛加護",
+"ko": "찬란한 가호",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_Passive_007",
+"passive": 1
+},
+"Blessing of Life": {
+"cls": "chanter",
+"id": "18710000",
+"tw": "生命祝福",
+"ko": "생명의 축복",
+"cd": null,
+"mp": null,
+"icon": null,
+"passive": 1
+},
+"Crossguard": {
+"cls": "chanter",
+"id": "18720000",
+"tw": "十字防禦",
+"ko": "십자 방어",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_Passive_002",
+"passive": 1
+},
+"Protection Circle": {
+"cls": "chanter",
+"id": "18730000",
+"tw": "保護陣",
+"ko": "보호진",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_Passive_001",
+"passive": 1
+},
+"Inspiring Spell": {
+"cls": "chanter",
+"id": "18740000",
+"tw": "鼓吹咒語",
+"ko": "고취의 주문",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_Passive_011",
+"passive": 1
+},
+"Attack Preparation (chanter)": {
+"cls": "chanter",
+"id": "18750000",
+"tw": "攻擊準備",
+"ko": "공격 준비",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_005",
+"passive": 1
+},
+"Impact Hit (chanter)": {
+"cls": "chanter",
+"id": "18760000",
+"tw": "衝擊擊中",
+"ko": "충격 적중",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_006",
+"passive": 1
+},
+"Raging Spell": {
+"cls": "chanter",
+"id": "18770000",
+"tw": "激怒咒語",
+"ko": "격노의 주문",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_Passive_007",
+"passive": 1
+},
+"Earth's Promise": {
+"cls": "chanter",
+"id": "18780000",
+"tw": "大地約定",
+"ko": "대지의 약속",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_Passive_010",
+"passive": 1
+},
+"Survival Willpower (chanter)": {
+"cls": "chanter",
+"id": "18790000",
+"tw": "生存意志",
+"ko": "생존 의지",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_Passive_009",
+"passive": 1
+},
+"Wind's Promise": {
+"cls": "chanter",
+"id": "18800000",
+"tw": "風之約定",
+"ko": "바람의 약속",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_Passive_008",
+"passive": 1
 }
 }

@@ -29,6 +29,10 @@ Two views, switched at the top of the page: **Global Season 1** (default: 4 slot
 
 `specs` (per class) = skill specializations for regular skills: `{"n": skill name in skills.json, "pick": [option numbers in in-game order], "u20": [2 options before skill level 20], "note", "src": [label, url]}`. Option text comes from `data/descriptions.json`, so it stays in sync with the database.
 
+`skills` (per class) = the "Skills to level" section: `{"first": [two skill names to take to 20 first], "act": [[name, target level, tag, why]], "pas": [[passive name, why]], "wings": text, "src": [[label, url]]}`. `tag` is `dps`, `buff`, `heal`, `debuff` or `utility`. Names must exist in `data/skills.json` (passives are flagged `"passive": 1`; a name shared by two classes is suffixed, e.g. `Impact Hit (templar)`).
+
+The "Damage basics" panel in `stigmas.html` is hand-written from Kanon's Aion 2 Bible (Sep 20, 2026); its numbers are Korean endgame values.
+
 Shard costs are built into `stigmas.js`: levels 1–5 cost 1 shard each, 6–10 cost 2, 11–15 cost 4, 16–20 cost 8, and 21–25 cost 1 Advanced shard each.
 
 ### Stack format

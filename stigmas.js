@@ -137,6 +137,28 @@
       <div class="specs">${cards}</div></section>`;
   }
 
+  /* ---------- regular skills to level (DPS / buffs / passives) ---------- */
+  const nice = (n) => n.replace(/\s*\((gladiator|templar|assassin|ranger|sorcerer|spiritmaster|cleric|chanter)\)$/, "");
+  const hovS = (n) => (SK[n] ? ` data-skn="${esc(n)}" tabindex="0"` : "");
+  function skillsSec(c) {
+    const k = c.skills;
+    if (!k) return "";
+    const tagCls = { DPS: "t-dps", Buff: "t-buff", Heal: "t-heal", Debuff: "t-deb", Utility: "t-util" };
+    const act = k.act.map(([n, lv, tag, why]) => `<li${hovS(n)}>${skImg(n)}<div><b>${esc(nice(n))}<small>${esc((SK[n] || {}).tw || "")}</small><i class="rt ${tagCls[tag] || ""}">${esc(tag)}</i></b><span>${esc(why)}</span></div>
+      <div class="lt"><b class="lvb ${lv === "20" ? "l20" : "lo"}">${esc(lv.replace("-", "\u2013"))}</b></div></li>`).join("");
+    const pas = k.pas.map(([n, why], i) => `<li${hovS(n)}>${skImg(n)}<div><b>${i + 1}. ${esc(nice(n))}<small>${esc((SK[n] || {}).tw || "")}</small></b><span>${esc(why)}</span></div></li>`).join("");
+    const first = k.first.map((n) => `<span class="chip"${hovS(n)}>${skImg(n)}${esc(n)} <span class="to">${ARROW} 20</span></span>`).join("");
+    return `<section class="panel inset" id="skills"><h3>Skills to level<small>Your regular skills \u00b7 best DPS and buff skills \u00b7 target skill level</small></h3>
+      <div class="first2"><span class="k">Push these two to 20 first</span><div class="steps">${first}</div>
+        <p>Skill points only reach level 10. Levels 11${DASH}20 come from ring and weapon lines, Daevanion tiles and Arcana cards, and Global launches with fewer Arcana cards, so lock in two skills before spreading out.</p></div>
+      <div class="skl-grid">
+        <div><h4 class="sh">Active skills</h4><ul class="lvl skl">${act}</ul></div>
+        <div><h4 class="sh">Passives, in priority order</h4><ul class="lvl skl">${pas}</ul>
+          <p class="snote">Passives have no picks: every level just adds more. Level them with armor, necklace and earring lines, Daevanion tiles and Bell / Mirror Arcana cards. Korean endgame players sit at 25${DASH}36 on their top passive.</p>
+          ${k.wings ? `<p class="snote"><b>Most-used wings in Korea (Aug 21):</b> ${esc(k.wings)}. Some may not be in Global at launch.</p>` : ""}</div>
+      </div>${srcHtml(k.src)}</section>`;
+  }
+
   function view(c) {
     const v = V(c);
     const main = v.builds.find((b) => b.main) || v.builds[0];
@@ -155,6 +177,7 @@
           ${milestones(c)}
         </div>
       </div>
+      ${skillsSec(c)}
       ${specs(c)}
       <section class="panel inset"><h3>Tier list \u00b7 all 13 ${esc(c.en)} stigmas<small>Why each one is where it is</small></h3>${tiers(c)}</section></section>`;
   }
@@ -187,13 +210,32 @@
     if (y + h > innerHeight - pad) y = Math.max(pad, innerHeight - h - pad);
     tipEl.style.left = x + "px"; tipEl.style.top = y + "px";
   }
-  function show(t) { const k = t.getAttribute("data-sk"); if (!k) return; if (tipFor !== t) { tipEl.innerHTML = tipHtml(k); tipFor = t; } tipEl.hidden = false; place(t); }
+  function skillTip(n) {
+    const s = SK[n] || {}, d = DS[n] || {};
+    const facts = [s.passive ? "Passive" : "Skill"];
+    if (s.cd) facts.push("Cooldown " + cdText(s.cd));
+    if (s.mp) facts.push("MP " + s.mp);
+    if (d.m) facts.push("Castable while moving");
+    const opts = (d.s || []).map(([lv, t], i) => `<li><b>${i + 1}</b>${esc(t)} (Lv ${lv})</li>`).join("");
+    return `<div class="tt-head">${s.icon ? `<img src="icons/${s.icon}.webp" alt="" width="44" height="44">` : ""}<div><div class="tt-name">${esc(nice(n))}</div><div class="tt-sub">${esc(s.tw || "")}${DOT}${esc(s.ko || "")}</div></div></div>
+      <div class="tt-facts">${facts.map((f) => `<span>${esc(f)}</span>`).join("")}</div>
+      <p class="tt-desc">${esc(d.d || "No description in the database.")}</p>
+      ${opts ? `<div class="tt-spec-h">Specialty options (pick up to 3)</div><ul class="tt-specs">${opts}</ul>` : ""}
+      ${s.note ? `<p class="tt-note">${esc(s.note)}</p>` : ""}
+      <p class="tt-foot">Skill level 1 values from the Global client database.</p>`;
+  }
+  function show(t) {
+    const k = t.getAttribute("data-sk"), n = t.getAttribute("data-skn");
+    if (!k && !n) return;
+    if (tipFor !== t) { tipEl.innerHTML = k ? tipHtml(k) : skillTip(n); tipFor = t; }
+    tipEl.hidden = false; place(t);
+  }
   function hide() { tipEl.hidden = true; tipFor = null; }
-  document.addEventListener("mouseover", (e) => { const t = e.target.closest("[data-sk]"); if (t) show(t); });
-  document.addEventListener("mouseout", (e) => { const t = e.target.closest("[data-sk]"); if (t && !t.contains(e.relatedTarget)) hide(); });
-  document.addEventListener("focusin", (e) => { const t = e.target.closest("[data-sk]"); if (t) show(t); });
+  document.addEventListener("mouseover", (e) => { const t = e.target.closest("[data-sk],[data-skn]"); if (t) show(t); });
+  document.addEventListener("mouseout", (e) => { const t = e.target.closest("[data-sk],[data-skn]"); if (t && !t.contains(e.relatedTarget)) hide(); });
+  document.addEventListener("focusin", (e) => { const t = e.target.closest("[data-sk],[data-skn]"); if (t) show(t); });
   document.addEventListener("focusout", hide);
-  document.addEventListener("click", (e) => { const t = e.target.closest("[data-sk]"); if (t) { tipFor === t && !tipEl.hidden ? hide() : show(t); } else if (!tipEl.contains(e.target)) hide(); });
+  document.addEventListener("click", (e) => { const t = e.target.closest("[data-sk],[data-skn]"); if (t) { tipFor === t && !tipEl.hidden ? hide() : show(t); } else if (!tipEl.contains(e.target)) hide(); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") hide(); });
   addEventListener("scroll", () => { if (tipFor) place(tipFor); }, { passive: true });
 
@@ -225,7 +267,7 @@
   function setMode(m, keep) {
     mode = m; document.body.dataset.mode = m;
     ["gl", "kr"].forEach((x) => { const b = $("btn-" + x); if (b) b.setAttribute("aria-pressed", x === m); });
-    $("h1").textContent = m === "gl" ? "Stigma Builds" : "Stigma Builds KR/TW";
+    $("h1").textContent = m === "gl" ? "Stigmas & Skills" : "Stigmas & Skills KR/TW";
     ladder();
     if (DATA) { stamp(); select(cur, false); }
     if (!keep) { try { localStorage.setItem("aion2-stigma-mode", m); } catch (e) {} }

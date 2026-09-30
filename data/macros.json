@@ -3,10 +3,14 @@
   "title": "Aion 2 Macro Sheet",
   "updated": "2026-09-29",
   "patchBaseline": "KR/TW patches through Sep 23, 2026",
-  "notice": "Global (NA/EU) early access opens Sep 30, 2026, with full free-to-play on Oct 5. The Global client can lag the Korea/Taiwan patches this sheet is built on. For example, the Global database still lists Noble Armor and Guardian Blessing at 5 min. If a Global skill doesn't behave as described, check the Global patch notes.",
+  "notice": "Global (NA/EU) early access opened Sep 30, 2026, with full free-to-play on Oct 5. The Global client can lag the Korea/Taiwan patches this sheet is built on. For example, the Global database still lists Noble Armor and Guardian Blessing at 5 min. If a Global skill doesn't behave as described, check the Global patch notes.",
   "note": "Stacks are listed row 0 first (row 0 fires first and sits directly above the key in game). null = empty row. A trailing '?' on a skill name marks an icon-matched row that the source didn't name."
  },
  "changelog": [
+  {
+   "date": "2026-09-30",
+   "text": "Accuracy pass: every skill name, icon, cooldown and MP cost re-checked against the game database (all match). Restored the level 5-20 effects in stigma hover cards (the database changed its page layout and the updater had stopped reading them). Stigmas page gained a 'Skills to level' section and a damage-basics panel; KR/TW Gladiator stigmas corrected."
+  },
   {
    "date": "2026-09-30",
    "text": "Stigmas page: new Global Season 1 view (4 slots, max level 20) with how high to level each stigma and why, plus the skill specializations (3 of 5) to pick for every class."
@@ -171,7 +175,7 @@
      "Storm Slice",
      "Shadowstrike"
     ],
-    "why": "Line 1 is the tested damage line. Line 2 fires your burst skills in the order that feeds it: Illusive Clone removes Heart Gore's cooldown for 10 s, Savage Fang engraves 5 Insignias so the next Insignia Explosion hits at full stacks, then Triniel's Dagger (+10% back damage at 25) and Assault Ambush.",
+    "why": "Line 1 is the tested damage line. Line 2 fires your burst skills in the order that feeds it: Illusive Clone removes Heart Gore's cooldown for 10 s, Savage Fang engraves 5 Insignias so the next Insignia Explosion hits at full stacks, then Triniel's Dagger (cuts all your cooldowns by 10% at stigma level 10) and Assault Ambush.",
     "loss": "Heart Gore is checked every other loop instead of every loop, and burst buffs also fire on trash or during mechanics. Expect a few percent lower DPS than the 1-line setup (for scale, a second line cost Gladiator 5–6% of its main hits).",
     "tip": "Keep Ambush and Storm Slice out of the macro and press them yourself; the source found Ambush in any line lowers hits."
    }

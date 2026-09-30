@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aion 2 Stigma Builds</title>
+<title>Aion 2 Stigmas &amp; Skills</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@500;700&display=swap">
@@ -225,6 +225,19 @@ ol.opts li small{font:600 .66rem/1 var(--f-ui);color:var(--dim)}
 ol.opts li.on{color:#fff;background:#1d2530;border-color:#3b4453}
 ol.opts li.on i{opacity:1}
 ol.opts li.o1 i{background:#6fcf6a} ol.opts li.o2 i{background:#6fb6ff} ol.opts li.o3 i{background:#f2d03a} ol.opts li.o4 i{background:#ff9a3c} ol.opts li.o5 i{background:#ff5c5c}
+/* v3: skills to level */
+[data-skn]{cursor:help}
+[data-skn]:focus-visible{outline:2px solid var(--neon);outline-offset:1px}
+.first2{display:grid;gap:8px;padding:12px;border:1px solid #3b4453;background:#12161c}
+.first2 p{margin:0;font-size:.84rem;color:#cfd4dc;max-width:110ch}
+.skl-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(14px,2vw,26px)}
+@media (max-width:1000px){.skl-grid{grid-template-columns:minmax(0,1fr)}}
+.sh{margin:0 0 10px;font:700 .8rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--neon)}
+ul.skl li{grid-template-columns:34px minmax(0,1fr) auto}
+ul.skl b small{display:inline;margin-left:6px;font:500 .72rem/1.2 var(--f-tc);color:var(--muted)}
+ul.skl .lt .lvb{min-width:34px}
+.rt{display:inline-block;margin-left:7px;padding:2px 5px;font:700 .6rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;font-style:normal;vertical-align:middle;background:#2c3441;color:#cfd4dc}
+.rt.t-dps{background:var(--warn);color:#2a0705} .rt.t-buff{background:var(--neon);color:#1b1f05} .rt.t-heal{background:var(--ok);color:#06240f} .rt.t-deb{background:#b18cff;color:#1d0d3a}
 .u20{margin:0;font-size:.8rem;color:var(--muted)} .u20 b{color:#fff}
 .snote{margin:0;font-size:.82rem;color:#cfd4dc}
 ul.changelog{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.86rem;color:#cfd4dc}
@@ -238,12 +251,12 @@ footer p{margin:0} footer a{color:var(--muted)}
 <div class="wrap">
 <nav class="sitenav" aria-label="Pages">
   <a href="index.html">Macros</a>
-  <a href="stigmas.html" aria-current="page">Stigmas</a>
+  <a href="stigmas.html" aria-current="page">Stigmas &amp; Skills</a>
 </nav>
 
 <header>
-  <h1 id="h1">Stigma Builds</h1>
-  <p class="sub">Which stigmas to run for every class, <b>how high to level each</b> and why, the <b>order to level them</b> with shard costs, the <b>skill specializations</b> to pick, and a <b>tier list</b> of all 13. Hover or tap any icon for its full description and effects by level.</p>
+  <h1 id="h1">Stigmas &amp; Skills</h1>
+  <p class="sub">Which stigmas to run for every class and <b>how high to level each</b>, the <b>best DPS and buff skills</b> with their target levels, the <b>specializations</b> to pick, the passives to push, and a <b>tier list</b> of all 13 stigmas. Hover or tap any icon for its full description and effects by level.</p>
   <div class="switch" role="group" aria-label="Game version">
     <button type="button" id="btn-gl" aria-pressed="true">Global · Season 1 · 4 slots</button>
     <button type="button" id="btn-kr" aria-pressed="false">KR/TW now · 6 slots · Lv 25</button>
@@ -282,9 +295,9 @@ footer p{margin:0} footer a{color:var(--muted)}
     <div class="how-col gl-only">
       <h4>Global Season 1</h4>
       <ul class="facts">
-        <li><b>4 stigma slots</b> and a stigma level cap of <b>20</b>, like Korea's launch season (Nov 2025 – Mar 2026). Global-focused guides report this; NCSOFT hasn't published it.</li>
+        <li><b>4 stigma slots</b> and a stigma level cap of <b>20</b>, like Korea's launch season (Nov 2025 – Mar 2026). The 4 slots were confirmed on NC's official livestream (Season 1 only); the level-20 cap is what Global guides report.</li>
         <li>No level 21–25 and no Advanced shards yet. Korea added the 5th slot on Mar 25 and the 6th slot plus level 25 on Jul 1, so expect Global to follow later.</li>
-        <li class="good">Balance matches the Global client database, which already has Korea's Aug 26 rework (not Sep 16). The level effects in every hover card are the Global ones.</li>
+        <li class="good">Skill effects are read from the Global client database. It already has the mechanics of Korea's Aug 26 rework but not the Sep 16 patch, and a few numbers (for example Spinning Strike's cooldown) still show older values.</li>
         <li>Korean players' advice for the shard-tight early game: get each pick to its first big unlock (5 or 10) before pushing any one to 20, and don't overlevel a stigma you'll swap out.</li>
       </ul>
     </div>
@@ -308,6 +321,44 @@ footer p{margin:0} footer a{color:var(--muted)}
       </ul>
     </div>
   </div>
+</section>
+
+<section class="panel" aria-labelledby="h-dmg">
+  <h2 id="h-dmg">Damage basics<small>What actually moves your numbers · summarized from Kanon's Aion 2 Bible (Sep 20, 2026)</small></h2>
+  <div class="how">
+    <div class="how-col">
+      <h4>Where skill levels come from</h4>
+      <ul class="facts">
+        <li>Skill points take an active skill to <b>10</b>. Everything above that is bonus levels.</li>
+        <li class="good"><b>Active skills:</b> ring lines, weapon and guard lines, blue Daevanion tiles, and Parchment / Compass / Chalice Arcana cards.</li>
+        <li class="good"><b>Passives:</b> armor, necklace and earring lines, green Daevanion tiles, and Bell / Mirror / Chalice Arcana cards.</li>
+        <li><b>Level 8:</b> first 3 specialty options and 1 slot. <b>12:</b> option 4 and a 2nd slot. <b>16:</b> option 5. <b>20:</b> the 3rd slot.</li>
+        <li>Korean endgame has 2–5 skills at 20 depending on class. Gladiator (Overhead Slam) and Templar (Judgment) get over 60% of their damage from one skill, so that skill goes first.</li>
+        <li>On the Daevanion boards, take the skill tiles for your key actives before anything else; respec is nearly free.</li>
+      </ul>
+    </div>
+    <div class="how-col">
+      <h4>Which stats are worth the most</h4>
+      <ul class="facts">
+        <li class="good"><b>Double Chance</b> &gt; <b>Front/Back Damage Boost</b> &gt; <b>Weapon Damage Boost</b> ≈ <b>Crit Damage Boost</b> &gt; Damage Boost.</li>
+        <li>Flat attack: <b>Attack</b> &gt; Max Attack &gt; Attack Bonus &gt; PvE / Boss Attack.</li>
+        <li>Korean endgame values per 1%: Double Chance ≈ 0.6%, Front/Back ≈ 0.6%, Weapon Damage Boost ≈ 0.5%, Crit Damage ≈ 0.4–0.6%, plain Damage Boost ≈ 0.35%. At launch, with fewer stats, each point is worth more.</li>
+        <li>Classes with a crit-damage passive (Gladiator, Chanter, Ranger, Assassin, Cleric) gain a bit less from extra Crit Damage Boost.</li>
+        <li>Multi-hit: each extra hit is 5% of the hit, so 1% multi-hit ≈ 0.33% damage.</li>
+      </ul>
+    </div>
+    <div class="how-col">
+      <h4>What this means for your macro</h4>
+      <ul class="facts">
+        <li class="warn"><b>Ping and FPS matter a lot.</b> Macros are hit-count setups: in Kanon's tests, a 150–200 ms ping difference was worth roughly 50–70% damage. If your hits per minute are far under the targets on the macro sheet, check ping before changing the macro.</li>
+        <li><b>Combat Speed</b> is the stat to stack; more hits also means more procs from everything else.</li>
+        <li class="warn"><b>Crit caps at 80%.</b> If a skill already crits at the cap, a "+crit" specialty does nothing, so take a different pick.</li>
+        <li>Accuracy works the same way against a boss's Block. Korean raid targets (not confirmed for Global): Ludra 1,500 Accuracy / 1,600 Crit; Corroded 2,350 / 2,500; Muspel Hard 2,800 / 3,150.</li>
+        <li>Power Shards: regular ≈ +4.7% damage, Superior ≈ +8.9%.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a> (twitch.tv/kanonxo). It also covers gear lines, Arcana, pets and wings in depth. The numbers are Korean endgame values and the author marks several as unconfirmed for Global.</p>
 </section>
 
 <section class="panel" aria-labelledby="h-log"><h2 id="h-log">Update log<small>Newest first</small></h2><ul class="changelog" id="changelog"></ul></section>
