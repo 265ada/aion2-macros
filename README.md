@@ -25,6 +25,10 @@ Alternate versions (`alts`) use the same stack format: `{"t": title, "s": note, 
 | `data/stigmas.json` | Per class: `builds` (6 picks as `[name, target level]`, sorted most important first; one has `"main": true`), `order` (level-up steps `{"s": [[name, level], ...], "n": note}`; the page adds up the shard costs), `milestones` (`[label, text]`), `tiers` (`S/A/B/C` → `[name, why]`, all 13 stigmas), `image` (the list from the shared screenshot) + `imageNote`. Build `tag` picks the badge color: `Most used`, `Battle tank`, `Battle healer`, `Raid`, `PvP`, `Solo`, anything else = grey. |
 | `data/stigma_db.json` | All 104 stigmas keyed `class:Name`: TW/KO names, icon, cooldown, MP, level-1 description, effects at 5/10/15/20, `s25` (level-25 effect, KR/TW) and `note` (KR/TW patch differences). Refresh with `python tools/fetch_stigmas.py`; it keeps `s25` and `note`. |
 
+Two views, switched at the top of the page: **Global Season 1** (default: 4 slots, stigma max 20) reads each class's `gl` object (`builds` with 4 picks, `levels` = `[name, target level, why]`, `order`, `imageNote`) and optional `gtiers`; **KR/TW** reads the top-level `builds` / `order` / `tiers`. Milestones for levels 21–25 are hidden in the Global view.
+
+`specs` (per class) = skill specializations for regular skills: `{"n": skill name in skills.json, "pick": [option numbers in in-game order], "u20": [2 options before skill level 20], "note", "src": [label, url]}`. Option text comes from `data/descriptions.json`, so it stays in sync with the database.
+
 Shard costs are built into `stigmas.js`: levels 1–5 cost 1 shard each, 6–10 cost 2, 11–15 cost 4, 16–20 cost 8, and 21–25 cost 1 Advanced shard each.
 
 ### Stack format

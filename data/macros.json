@@ -8,6 +8,10 @@
  },
  "changelog": [
   {
+   "date": "2026-09-30",
+   "text": "Stigmas page: new Global Season 1 view (4 slots, max level 20) with how high to level each stigma and why, plus the skill specializations (3 of 5) to pick for every class."
+  },
+  {
    "date": "2026-09-29",
    "text": "Added a Stigmas page (top of the page): 6-slot builds, level-up order with shard costs, milestones, variants (incl. Gladiator battle tank and Chanter battle healer) and tier lists for all 8 classes."
   },
