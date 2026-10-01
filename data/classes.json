@@ -1,0 +1,215 @@
+{
+ "_about": "Class overview content for the class pages (overview, party value, mechanics, opener, mistakes, gear, patch history). Hand-edited. Skill names must match data/skills.json or a stigma in data/stigma_db.json so the hover cards work. Gear notes are Korean endgame advice from the Sep 2026 optimizer guides unless marked otherwise.",
+ "gearCommon": "Korean endgame advice (Sep 2026 optimizer guides). Gear stat lines: Damage Boost, Crit Damage Boost and Double Chance first on every piece, then Attack and your key passives. Bracelet: Justice and Space instead of Freedom and Death for PvE (the new raid's Accuracy/Crit requirements came out low). Pet Genus slots 3 and 9: Double Chance; slots 2, 5, 8: Attack Bonus or Max Attack; the rest Boss Attack. Pantheon: Illusion 51 / Wisdom 101 is the realistic top. Global launches with fewer stats and cards, so treat these as the direction to build toward.",
+ "classes": {
+  "gladiator": {
+   "glance": "Two-skill melee: the Overhead Slam → Rending Blow cancel is the class.",
+   "summary": "A greatsword fighter whose damage comes from two skills that cancel into each other. Overhead Slam (plus its Upward Strike chain) and Rending Blow made up about two-thirds of the damage in the Aug 26–30 Korean dummy logs. Everything else (stigmas, buffs, Ruinous Blow) exists to make those two hit harder and faster. It can also off-tank.",
+   "brings": [
+    ["Experienced Counterstrike", "Passive: every Block gives you and the party +5.4% PvE damage for 20 s. Doesn't stack with a Templar's Fury, so the higher one wins."],
+    ["Lifestealing Blade", "Stigma level 10 adds Predation for the party for 20 s."],
+    ["Rage Burst", "Wounded: the enemy's Attack -10% for 10 s, and you get +10% PvE damage."],
+    ["Rending Blow", "Raises Enmity. The Battle tank stigma build turns that into a real off-tank."]
+   ],
+   "core": [
+    ["The 내절 cancel", "Pressing Rending Blow right after Overhead Slam cuts Overhead Slam's recovery. The Aug 26 patch brought it back. Hold the macro and the Overhead Slam key and the cancel happens by itself.", "Overhead Slam"],
+    ["Prepare for Battle", "Ruinous Blow gives +20% PvE damage, +100 Crit and +15% status chance for 20 s. Open every pull with it, and recast it on cooldown (45 s).", "Ruinous Blow"],
+    ["Stagger windows", "Sword Aura Rampage only hits staggered targets. Placed directly under Rending Blow, its cancel fires on its own whenever the boss is staggered.", "Sword Aura Rampage"],
+    ["Stigmas multiply passives", "Wave Armor 10 makes Experienced Counterstrike ×1.5, Wave Armor 15 makes Murderous Burst ×1.5, and Lunge Stance 15 makes Identify Weakness ×1.5. That's why those stigmas go to 15–20 first.", "Wave Armor"]
+   ],
+   "opener": ["Lunge Stance, Zikel's Blessing, Wave Armor", "Ruinous Blow (Prepare for Battle)", "Hold the macro and mash (or hold) the Overhead Slam key. Rage Burst fires from under it", "Recast Ruinous Blow every 45 s. Use Leaping Slam to close gaps"],
+   "good": ["Simple core: two skills carry the damage", "Strong self-healing (Lifestealing Blade, lifesteal options)", "Can tank in a pinch (Battle tank stigma build)"],
+   "hard": ["Front melee: Front Damage Boost is your stat, so stay in front of the boss", "A hit-count class: Combat Speed, FPS and ping matter a lot", "Top numbers need fast Overhead Slam presses (the one-key layout avoids that)"],
+   "mistakes": ["Putting buffs in a second macro line: that cost 5–6% of Overhead Slam hits in an Aug 12 test", "Skipping the Ruinous Blow opener (Prepare for Battle is +20% PvE damage)", "Leveling anything before Overhead Slam and Rending Blow reach 20", "Expecting Experienced Counterstrike and a Templar's Fury to stack: only the higher one counts"],
+   "gear": {"stones": "Front Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.", "genus": "Slots 3 and 9: Double Chance and Front Damage Boost", "passives": "Gear lines also carry your 5 key passives (Experienced Counterstrike, Murderous Burst, Attack Preparation, Identify Weakness, Impact Hit)", "wings": "Eroded 73%, Talisra 18.5% (Korea, Aug 21)"},
+   "hits": "Upward Strike ~95–102 · Overhead Slam ~176–200 · ~980–1,020 total hits per minute (Korean endgame dummy)",
+   "patches": [
+    ["Sep 23", "Fracturing Rush now follows your key direction."],
+    ["Sep 16", "Leaping Slam and Ruinous Blow can't be used while bound."],
+    ["Aug 26", "The Overhead Slam → Rending Blow cancel (内絕 / 내절) came back. Mash Overhead Slam while holding basic attack and the macro."],
+    ["Jul 7–8", "Experienced Counterstrike ×1.5 moved from Armor of Balance to Wave Armor."]
+   ],
+   "src": [["Inven Sep 5 Gladiator guide", "https://www.inven.co.kr/board/aion2/6448/31551"], ["Inven Aug 26 macro update", "https://www.inven.co.kr/board/aion2/6448/30223"], ["Inven Aug 30 in-game macro", "https://www.inven.co.kr/board/aion2/6448/30880"]]
+  },
+  "templar": {
+   "glance": "Main tank whose damage runs through Judgment, opened by shield attacks.",
+   "summary": "The sword-and-shield main tank. Since the Aug 26 rework, Judgment (no cooldown) opens for 2 s after any shield attack. Kanon's guide puts over 60% of Templar damage on Judgment alone. Templar also brings the party's best defensive tools and a damage buff that triggers when you block.",
+   "brings": [
+    ["Fury", "Passive: every Block gives you and the party +5.5% PvE damage for 20 s (doesn't stack with a Gladiator's Experienced Counterstrike)."],
+    ["Debilitating Smash", "On Block, Debilitate the target: Defense -25% for 5 s."],
+    ["Nezekan's Shield", "Stigma: a shield worth 41% of Max HP on you and nearby party members."],
+    ["Comrade in Arms", "Stigma: take half the damage a party member is hit with, for 6 s."]
+   ],
+   "core": [
+    ["Judgment windows", "Warding Strike, Shield Smite and Doom Shield are shield attacks: each opens Judgment for 2 s. That's why they share Judgment's macro line.", "Judgment"],
+    ["Vicious → Judgment cancel", "Hold Vicious Strike (basic attack) with the macro and it cancels straight into Judgment. The Sep 16 patch killed the old Pummel → Judgment cancel.", "Vicious Strike"],
+    ["Executor", "A fully charged Punishment gives Executor: +200 Accuracy and +20% PvE damage for 20 s. Charge it before the pull and keep it up.", "Punishment"],
+    ["Annihilate reset", "Doom Shield resets Annihilate, so Annihilate → Doom Shield → Annihilate is the top-end burst.", "Annihilate"]
+   ],
+   "opener": ["Noble Armor, Battlefield Banner, Empyrean Lord's Punishment", "Fully charge Punishment (Executor)", "Rush in, hold Vicious Strike + the macro + the Punishment key", "Annihilate → Doom Shield → Annihilate. Shield of Protection every ~20 s or on boss crowd control"],
+   "good": ["The tankiest class, with party shields and damage sharing", "Party damage buff from blocking (Fury)", "Judgment makes the damage plan simple"],
+   "hard": ["You hold aggro and face the boss, so positioning and Taunt are on you", "Damage is concentrated in Judgment: if its level or its windows lag, damage drops", "The Sep 16 cancel nerf made the old macros worse"],
+   "mistakes": ["Still using the Pummel → Judgment cancel (dead since Sep 16)", "Letting Executor fall off instead of recharging Punishment", "Leveling other skills before Judgment and Pummel reach 20", "Running Fury and a Gladiator's Experienced Counterstrike for the same party buff: they don't stack"],
+   "gear": {"stones": "Front Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.", "genus": "Slots 3 and 9: Double Chance and Front Damage Boost. Leftover slots: Boss Attack or Defense", "passives": "Three key passives on gear: Fury, Insulting Roar, Impact Hit", "wings": "Eroded 77%, Talisra 9% (Korea, Aug 21)", "board": ["Korean Templar Daevanion node guide", "https://www.inven.co.kr/board/aion2/6438/22546"]},
+   "hits": "",
+   "patches": [
+    ["Sep 16", "Longer cancel delay on Pummel, Punishing Strike and Judgment (aimed at mouse macros). Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min. Taunt threat now scales with damage."],
+    ["Aug 26", "Judgment now opens after any shield attack (was: stunned target). Minimum skill-cancel time added to every skill. Warding Strike cooldown 25 s."]
+   ],
+   "src": [["Inven Sep 5 Templar guide", "https://www.inven.co.kr/board/aion2/6438/25862"], ["Inven Sep 16 top DPS cycle", "https://www.inven.co.kr/board/aion2/6438/26522"], ["Templar Daevanion nodes", "https://www.inven.co.kr/board/aion2/6438/22546"]]
+  },
+  "assassin": {
+   "glance": "Back-attack burst: build Insignias, detonate them, chain Heart Gore on crits.",
+   "summary": "A dagger melee built around Insignia stacks and crits. Ambush, Heart Gore and Savage Fang engrave Insignias on the target. Insignia Explosion detonates up to 5 stacks, and Heart Gore fires again every time you crit. Illusive Clone removes Heart Gore's cooldown for 10 s, which is the burst window. You want to be behind the boss.",
+   "brings": [
+    ["Defense Break", "Passive: the target's Defense -12% and Status Effect Resist -11% for 10 s when you hit a staggered or impact-stunned target."],
+    ["Assault Ambush", "Stigma: an AoE hit that blinds NPCs 100% of the time."],
+    ["Apply Poison", "Passive: Poison damage over time, plus less incoming healing on the target (PvP)."]
+   ],
+   "core": [
+    ["Insignias", "Ambush from behind engraves 2, Heart Gore's option 2 engraves 1, Savage Fang engraves 5. Insignia Explosion's damage and stun chance scale with the stack count (max 5).", "Insignia Explosion"],
+    ["Heart Gore on crits", "Heart Gore can only fire after you land a crit. Option 5 (skill level 16) resets its cooldown on every crit, so crit chance = Heart Gore count.", "Heart Gore"],
+    ["Illusive Clone window", "10 s with no Heart Gore cooldown and +20% extra damage. Press Swift Contract first, because its attack-speed buff shortens Clone's animation.", "Illusive Clone"],
+    ["Storm Rampage cancel", "Holding the Storm Rampage key during stagger cancels into Heart Gore faster and keeps Illusive Clone up longer (Sep 30 guide).", "Storm Rampage"]
+   ],
+   "opener": ["Swift Contract → Illusive Clone", "Savage Fang → Triniel's Dagger (the Dagger only cuts cooldowns already running)", "Hold Quick Slice + the macro, plus the Storm Rampage key in stagger windows", "Stay behind the boss. Use Shadowstep or Throw Shadowblade to get back there"],
+   "good": ["The highest burst of any class", "Simple macro: one line does it", "Strong mobility stigmas"],
+   "hard": ["Needs back attacks (Back Damage Boost): you lose a lot when stuck in front", "Attack-speed breakpoints matter (April test: 88.1% and 92%; avoid 99.9–100.7%)", "Patches change the cancels often"],
+   "mistakes": ["Buffs in the macro: low Heart Gore counts usually mean buffs in the macro or a missing Savage Roar", "Taking Ambush option 5 (+2 uses): it slows the motion and lowered damage", "Dropping Heart Gore option 2 for lifesteal: damage drops, so let Ambush's lifesteal cover sustain", "Pressing Triniel's Dagger before Savage Fang"],
+   "gear": {"stones": "Back Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.", "genus": "Slots 3 and 9: Double Chance; Back Damage Boost on up to 4 slots", "passives": "Rear Smite close to 36 (Back damage + PvE damage), then Assault Stance (Crit Damage); Exploit Weakness and Impact Hit where they fit", "wings": "Talisra 58%, Awakened Pride 30% (rising) (Korea, Aug 21)", "note": "Kanon's guide suggests Death instead of Space on the bracelet for Assassin; the newer Sep 30 Korean guide says Justice + Space is better for PvE."},
+   "hits": "Heart Gore ~300 · Insignia Explosion ~70 per minute (after Sep 16, 1.0M+ gear)",
+   "patches": [
+    ["Sep 16", "Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE."]
+   ],
+   "src": [["Inven Sep 30 Assassin guide", "https://www.inven.co.kr/board/aion2/6449/24247"], ["Inven Sep 18 macro", "https://www.inven.co.kr/board/aion2/6449/23617"], ["Attack-speed cap tests", "https://www.inven.co.kr/board/aion2/6449/10014"]]
+  },
+  "ranger": {
+   "glance": "Bow sniper: Marking Shot crits, Deadshot charges and the Tempest Shot cancel.",
+   "summary": "A bow DPS that plays from range on a two-line macro (the most Ranger can use without losing hits). Marking Shot gives Precision (+300 Crit), and Deadshot hits 35% harder with it. Slow and Root effects make Burst Arrow, Explosive Arrow and the Rooting Eye passive hit harder. Few actives need to reach 20, so passives carry a lot.",
+   "brings": [
+    ["Shackling Arrow", "Root (100% on NPCs) for adds and positioning."],
+    ["Snare Shot", "Slow, which also powers Burst Arrow and Explosive Arrow (+20% to Slowed or Rooted targets)."],
+    ["Supporting Fire", "Stigma: a 15 s orb that shoots and heals you."]
+   ],
+   "core": [
+    ["Precision", "Marking Shot gives +300 Crit for 10 s and Deadshot +35% damage. Cast it standing still, and refresh it with ~2 s left.", "Marking Shot"],
+    ["Tempest Shot cancel", "Tempest Shot sits at the top of a different line from the short-cooldown arrows. That gives more Tempest Shot hits (~+3%). Arrow Scattershot directly under it catches the stagger cancel.", "Tempest Shot"],
+    ["Slow / Root synergy", "Burst Arrow only fires on Slowed or Rooted targets. Explosive Arrow and Rooting Eye hit harder on them.", "Burst Arrow"],
+    ["Deadshot charge", "Deadshot has 3 charge levels. It's held on its own key next to the macro.", "Deadshot"]
+   ],
+   "opener": ["Marking Shot (standing) → Gale Arrow (+7% Combat Speed)", "Vaizel's Authority and Bow of Blessing for burst", "Hold Snipe + the macro + Deadshot", "Supporting Fire on cooldown"],
+   "good": ["Safe ranged damage", "Lots of control (Slow, Root)", "Only 2–3 skills need 20"],
+   "hard": ["Two-line macro, and buffs in a third line drop Snipe below 16/min", "Hit-count sensitive: checks like Tempest Shot 250+/min tell you if something is off", "Moving while casting Marking Shot costs damage"],
+   "mistakes": ["Putting buffs in the macro (Snipe falls under 16–18/min)", "Tempest Shot in the same line as Drill Dart: the cancel is lost", "Casting Marking Shot while moving", "Skipping Shackling Arrow and Snare Shot's move-cast option (+2–3%)"],
+   "gear": {"stones": "Many Korean Rangers run Front Damage Boost (great on the dummy and in Nightmare). The Sep 6 guide warns it may not hold if bosses make you move; otherwise Weapon Damage Boost.", "genus": "Slots 3 and 9: Double Chance", "passives": "Focused Eye and Hunter's Resolve on gear (a recent buff widened the gap), then Crit in leftover gear slots", "wings": "Eroded 54.5%, Talisra 25.5% (Korea, Aug 21)"},
+   "hits": "Snipe 16–18 · Deadshot 24–28 · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total per minute",
+   "patches": [
+    ["Sep 16", "Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire."]
+   ],
+   "src": [["Inven Sep 6 Ranger guide", "https://www.inven.co.kr/board/aion2/6450/19498"], ["Inven Sep 6 macro settings", "https://www.inven.co.kr/board/aion2/6450/13828"], ["Hits vs DPS (Aug 30)", "https://www.inven.co.kr/board/aion2/6450/19104"]]
+  },
+  "sorcerer": {
+   "glance": "Ranged nuker: fully charged Hellfire after Delayed Explosion, plus ground AoEs.",
+   "summary": "A spellbook caster with the highest ceiling among ranged classes. It's also the least forgiving: low HP, slow animations and ground AoEs that miss when the boss moves. Damage is spread over many skills (Hellfire ~21%, Fire Wall ~16%, Blaze ~13–16%, Bittercold Wind ~13–16%, Cold Storm ~10%), so missing any one of them hurts. It relies on cooldown reduction more than any other class.",
+   "brings": [
+    ["Cold Storm", "Stigma: ground AoE that slows and roots. Two Sorcerers' Cold Storms don't stack."],
+    ["Fire Wall", "Stigma: ground AoE with Embers damage over time."],
+    ["Winter's Shackles", "Option 3: +20% PvE damage for 5 s when it lands (you only)."]
+   ],
+   "core": [
+    ["Delayed Explosion → Hellfire", "Delayed Explosion makes the target take +15% damage from you (+10% more at stigma 20) for 4 s. Land your fully charged Hellfire inside that window.", "Delayed Explosion"],
+    ["Fire Mark → Blaze", "Blaze only hits targets with Fire Mark. Flame Arrow's option 4 (skill level 12) applies Fire Mark, and option 5 (16) resets Blaze's cooldown. In KR/TW, the Sep 16 patch made Fire Mark proc 100%.", "Blaze"],
+    ["Cooldown engine", "Wish of Concentration option 5 cuts all cooldowns by 10 s. Firestorm option 4 cuts Hellfire by 2 s per fireball, and Blaze option 5 cuts Wish of Concentration. Korean players aim for 43% cooldown reduction.", "Wish of Concentration"],
+    ["Element Enhancement", "+20% Fire and Water Attack for 10 s. Stigma level 10 makes Robe of Flame ×1.5, your one key passive.", "Element Enhancement"]
+   ],
+   "opener": ["Element Enhancement → Delayed Explosion", "Fully charged Hellfire", "Hold Flame Arrow + the macro (Fire Wall and Cold Storm drop from the macro)", "Recharge Hellfire by hand on cooldown, right after Delayed Explosion lands"],
+   "good": ["The highest ranged damage ceiling", "Strong AoE", "Only one passive to push"],
+   "hard": ["Lowest HP and slow, 'stuttering' animations", "Ground AoEs miss moving bosses", "Wants 43% cooldown reduction and 112%+ Combat Speed to hit the Korean numbers"],
+   "mistakes": ["Leaving Fire Wall and Cold Storm for 'later': together they're about a quarter of your damage", "Firing Hellfire before Delayed Explosion lands", "Splitting the main Bittercold Wind line into many different lines (Sorcerer loses the most per unique extra line)", "Ignoring Flame Arrow's options 4 and 5, which make Blaze fire often"],
+   "gear": {"stones": "Weapon Damage Boost first (your kit doesn't use Front/Back damage); Crit Damage Boost if short", "genus": "Slots 3 and 9: Double Chance", "passives": "Robe of Flame toward 36. It's your one key passive", "wings": "Talisra 91.5% (Korea, Aug 21)", "note": "Sorcerer gets the most out of Illusion (cooldown) of any class: use Illusion instead of Wisdom on the Mirror Arcana card."},
+   "hits": "Hellfire 26–28 casts · ~960–1,000 total hits per minute (Korean endgame, 43% cooldown reduction)",
+   "patches": [
+    ["Sep 16", "Fire Mark passive procs 100% (was 20%) and Blaze no longer consumes it. The Global database still shows 20%."]
+   ],
+   "src": [["Inven Sep 22 Sorcerer guide", "https://www.inven.co.kr/board/aion2/6453/17462"], ["Inven Sep 4 in-game macro", "https://www.inven.co.kr/board/aion2/6453/16932"], ["Inven Aug 26 1,000-hit macro", "https://www.inven.co.kr/board/aion2/6453/16608"], ["1,000-hit checklist (Aug 29)", "https://www.inven.co.kr/board/aion2/6453/16734"]]
+  },
+  "spiritmaster": {
+   "glance": "Summoner: four spirits on timers feed Elemental Fusion and Jointstrikes.",
+   "summary": "An orb caster who fights with four spirits. Each spirit's skill gives you an element. At 4 stacks you get Four Elements and can fire Elemental Fusion. Jointstrikes add a spirit follow-up on top of your own hit. The Ancient Spirit (30 s) is the burst window. Part of the damage comes from the spirits themselves, which Kanon notes may make ping matter a little less than for other classes.",
+   "brings": [
+    ["Summon: Earth Spirit", "Taunts (+3,750 Enmity) and can hold adds."],
+    ["Jointstrike: Curse", "Damage over time, and the target deals 10% less damage to you."],
+    ["Jointstrike: Corrode", "The target takes +10% damage from your spirit for 20 s."]
+   ],
+   "core": [
+    ["Four Elements", "Every spirit skill adds an element. At 4 you can fire Elemental Fusion (mash it on its own key). The Ancient Spirit grants Four Elements every time it uses its skill.", "Elemental Fusion"],
+    ["Spirit line", "The four summons share a 15 s cooldown pattern and get their own macro line. Water → Earth first keeps skills from being eaten and the Fire Spirit up.", "Summon: Water Spirit"],
+    ["Ancient Spirit window", "Summon the Ancient Spirit, then fully charge Destructive Attack 3–4 s later. Since Sep 10 its spirit follow-up fires instantly.", "Summon: Ancient Spirit"],
+    ["Cold Shock stacks", "Keep Cold Shock's 5-stack attack buff running. Fight from about 3 m.", "Cold Shock"]
+   ],
+   "opener": ["Buffs, then Earth Tremor at 4–5 stacks and Element Unification at full", "Summon: Ancient Spirit", "3–4 s later: fully charged Jointstrike: Destructive Attack", "Hold Cold Shock + the macro and mash Elemental Fusion"],
+   "good": ["Spirits keep dealing damage while you move", "Self-sustain (Wind Spirit, Spirit Communion)", "Earth Spirit can tank adds"],
+   "hard": ["Lots of moving parts: spirit timers, Fusion stacks, Ancient window", "Spirit skills can get eaten if the summon order is wrong", "Ground and positioning rules (about 3 m) for best results"],
+   "mistakes": ["Summoning in the wrong order (Water → Earth first)", "Using Destructive Attack outside the Ancient Spirit window", "Putting Elemental Fusion in the macro instead of mashing it", "Letting Cold Shock's 5-stack buff drop"],
+   "gear": {"stones": "Weapon Damage Boost first", "genus": "Slots 3 and 9: Double Chance (pull Double Chance from the Genus, damage boosts from stones)", "passives": "Spirit Strike, Element Unification, Mental Focus", "wings": "Eroded 45%, Talisra 43.5% (Korea, Aug 21)"},
+   "hits": "",
+   "patches": [
+    ["Sep 10", "Jointstrike: Destructive Attack's spirit follow-up now fires immediately (fixes a Jointstrike overwrite bug)."]
+   ],
+   "src": [["Inven Sep 16 Spiritmaster guide", "https://www.inven.co.kr/board/aion2/6454/10286"], ["Inven newcomer guide (skills, gear, Arcana)", "https://www.inven.co.kr/board/aion2/6454/8165"], ["Inven Sep 6 macro settings", "https://www.inven.co.kr/board/aion2/6454/8421"]]
+  },
+  "cleric": {
+   "glance": "Healer with real damage: Chain of Torment opens Condemnation, Earth Punishment makes it crit.",
+   "summary": "A mace healer whose damage matters in Korean raids. Condemnation (no cooldown) only hits targets with Chain of Torment. Earth Punishment makes Condemnation always crit. Cleric's attack speed caps at 94.4% while other classes reach about 121.6%, so Cleric chases cooldown reduction instead and can afford a second macro line.",
+   "brings": [
+    ["Light of Protection", "Stigma: +10.5% PvE damage and damage tolerance for the party (doesn't stack with a Chanter's Undefeated Mantra)."],
+    ["Chain of Torment", "Enemy PvE damage tolerance -5% (doesn't stack with a Chanter's Earth's Promise)."],
+    ["Earth Punishment", "Stigma: damage over time, +10% Double Chance for you and +5% for the party."],
+    ["Summon Resurrection", "Stigma: raise a fallen party member, invincible for 3–5 s."],
+    ["Yustiel's Power", "Stigma: +20% PvE damage tolerance for the party for 10 s."]
+   ],
+   "core": [
+    ["Chain → Condemnation", "Condemnation only hits targets with Chain of Torment, which is why Chain sits in the same macro line.", "Condemnation"],
+    ["Earth Punishment crits", "With Earth Punishment on the target, Condemnation always crits. Earth Punishment leads the macro line.", "Earth Punishment"],
+    ["Attack-speed cap", "Cleric attack speed caps at 94.4%. Anything past it is wasted, so aim for 32.6% cooldown reduction instead.", "Earth's Retribution"],
+    ["Healing stays manual", "Bolt and heals stay off the macro so a charge never delays a heal. Debilitating Mark only when the party is hurting.", "Bolt"]
+   ],
+   "opener": ["Light of Protection / buffs", "Earth Punishment → Chain of Torment → Condemnation (from the macro)", "Hold Earth's Retribution + the macro + Lightning Strike Scattershot", "Heal and Bolt by hand"],
+   "good": ["Required in most parties: heals, cleanses, resurrection", "Real damage on top (Condemnation)", "Two macro lines cost almost nothing"],
+   "hard": ["You split attention between damage and healing", "Attack speed is capped, so gear priorities differ from other classes", "Several party buffs clash with Chanter buffs (only the higher one counts)"],
+   "mistakes": ["Stacking attack speed past 94.4%", "Casting Debilitating Mark on cooldown (loses damage)", "Putting Bolt in the macro (a charge can delay a heal)", "Taking Empyrean Lord's Grace before Earth's Grace (Earth's Grace tested higher)"],
+   "gear": {"stones": "Weapon Damage Boost first, then Crit Damage Boost. Front/Back by taste.", "genus": "Slots 3 and 9: Double Chance; lock 2/5/8 when Attack Bonus or Max Attack rolls high", "passives": "Earth's Grace before Empyrean Lord's Grace", "wings": "Eroded 45%, Talisra 35% (Korea, Aug 21)", "board": ["Korean Cleric Daevanion node guide", "https://www.inven.co.kr/board/aion2/6452/27247"], "note": "Talisra wings when you need maximum Salvation cooldown (new raid tries)."},
+   "hits": "Attack speed caps at 94.4%: extra past that is wasted, aim for 32.6% cooldown reduction",
+   "patches": [],
+   "src": [["Inven Sep 24 Cleric guide", "https://www.inven.co.kr/board/aion2/6452/29213"], ["Cleric Daevanion nodes", "https://www.inven.co.kr/board/aion2/6452/27247"], ["Inven PvE guide (May, skills and macros)", "https://www.inven.co.kr/board/aion2/6452/19538"]]
+  },
+  "chanter": {
+   "glance": "Support melee: party buffs plus Dark Crush, opened by ranged skills.",
+   "summary": "A staff fighter who buffs the whole party and still deals solid damage. Its mantras and Power of the Storm are some of the strongest party buffs in the game. Its damage runs through Dark Crush, which opens for 2 s after ranged skills since the Aug 26 rework. It can also cover heals and shields as a battle healer.",
+   "brings": [
+    ["Undefeated Mantra", "Toggle: +10.5% PvE damage and damage tolerance for nearby party members (doesn't stack with a Cleric's Light of Protection)."],
+    ["Power of the Storm", "Party +20% Combat Speed and -10% cooldowns for 10 s (you: -20%). Blocked by a Cleric's Earth's Blessing."],
+    ["Earth's Promise", "Enemy PvE damage tolerance -5.4% (doesn't stack with a Cleric's Chain of Torment)."],
+    ["Fracturing Blow", "Target Defense -30% for 5 s."],
+    ["Recuperation", "Party heal + cleanse, with a heal over time."]
+   ],
+   "core": [
+    ["Dark Crush windows", "Spinning Strike, Impactful Crush and Marchutan's Wrath are ranged skills: each opens Dark Crush for 2 s. Spinning Strike also stacks +15% Crit Damage (×2).", "Dark Crush"],
+    ["Toggles never go in a macro", "Undefeated Mantra and Sprint Mantra are toggles. A second press switches them off, so keep them on their own keys.", "Undefeated Mantra"],
+    ["Gust Rampage cancel", "Hold Gust Rampage with the macro: its stagger cancel lowers its cooldown and keeps damage flowing.", "Gust Rampage"],
+    ["Guardian Blessing on Storm", "Stack Guardian Blessing on top of Power of the Storm (both 2 min since Sep 16) so it's never forgotten.", "Power of the Storm"]
+   ],
+   "opener": ["Undefeated Mantra and Sprint Mantra on", "Power of the Storm + Guardian Blessing", "Hold Onslaught + the macro + Gust Rampage", "Recuperation when the party needs it"],
+   "good": ["Huge party value: damage, speed and cooldown buffs", "Can heal, cleanse and shield (battle healer)", "Melee with solid personal damage"],
+   "hard": ["Buff management on top of a damage rotation", "Several buffs clash with Cleric buffs, so coordinate", "Dark Crush windows collide if the macro is built wrong"],
+   "mistakes": ["Putting toggle mantras in the macro (the macro switches them off)", "Stacking Spinning Strike, Impactful Crush and Marchutan's Wrath so their Dark Crush windows overlap", "Running Power of the Storm with a Cleric's Earth's Blessing active (blocked)", "Still slotting Marchutan's Wrath out of habit: it's no longer required"],
+   "gear": {"stones": "Weapon Damage Boost for now (the guide expects new damage stats soon)", "genus": "Slots 3 and 9: Double Chance (take Double Chance from the Genus, damage boosts from stones)", "passives": "Wind's Promise, Impact Hit, Attack Preparation (Inspiring Spell only if there's room)", "wings": "Eroded 45%, Talisra 23%, Awakened Pride 12.5% (Korea, Aug 21)"},
+   "hits": "Dark Crush ~58–60 casts per minute",
+   "patches": [
+    ["Sep 16", "Guardian Blessing 5 min → 2 min. Stack it on top of Power of the Storm."],
+    ["Aug 26", "Dark Crush now opens after any ranged skill (was: stunned target). Spinning Strike cooldown 15 s / 100 MP; Impactful Crush 10 s."]
+   ],
+   "src": [["Inven Sep 17 Chanter guide", "https://www.inven.co.kr/board/aion2/6451/22932"], ["Inven Sep 3 in-game macro test", "https://www.inven.co.kr/board/aion2/6451/22314"], ["Inven PvE guide (327k views)", "https://www.inven.co.kr/board/aion2/6451/116"]]
+  }
+ }
+}

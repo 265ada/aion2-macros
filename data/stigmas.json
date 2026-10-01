@@ -525,7 +525,7 @@
       4,
       5
      ],
-     "note": "1 instead of 2 for sustain; 3, 4, 5 if your crit is low.",
+     "note": "Sep 30 guide: option 2 is now required, or damage drops. Ambush's lifesteal in the macro covers sustain.",
      "src": [
       "KR Mar 31 Assassin specialization guide",
       "https://vortexgaming.io/postdetail/726439"
@@ -564,7 +564,7 @@
       2,
       4
      ],
-     "note": "Sep 18: drop 5 (extra uses) for 1 and 4. Press it on its own key, not in the macro.",
+     "note": "Not 5 (extra uses): it slows the motion and lowered damage. Ambush now sits in row 1 of the macro line (Sep 30 guide).",
      "src": [
       "KR Sep 18 Assassin setup (screenshot)",
       "https://www.inven.co.kr/board/aion2/6449/23617"
@@ -617,7 +617,7 @@
       "Ambush",
       "20",
       "DPS",
-      "Ranked just below the four above. Press it on its own key."
+      "Ranked just below the four above. Row 1 of the Heart Gore line since the Sep 30 guide."
      ],
      [
       "Shadowstrike",

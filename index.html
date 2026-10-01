@@ -1,346 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aion 2 Macro Sheet</title>
+<title>Aion 2 Class Guides</title>
+<meta name="description" content="Aion 2 class guides for all 8 classes: in-game macros, Global Season 1 stigmas, skill levels, specializations, gear and the basics behind them.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@500;700&display=swap">
-<style>
-/* Layout: poster board like the source video. Neon headline, Late/Early switch, 4×2 class grid in the video's order.
-   Each card = replica of the in-game macro window; every macro entry expands into its 4-row slot stack (row 0 fires first). */
-:root{
-  --ink:#0b0708; --ember:#5a0d16;
-  --panel:#1b2029; --panel-2:#232a35; --edge:#343d4b;
-  --text:#eef0f3; --muted:#98a1b0; --dim:#6f7888;
-  --neon:#d9f41c; --gold:#e3a918; --gold-2:#b67e0a;
-  --warn:#ff6a5c; --ok:#5fd18a; --info:#6fb6ff;
-  --f-display:"Archivo","Arial Black",Impact,sans-serif;
-  --f-body:"Barlow","Segoe UI",system-ui,sans-serif;
-  --f-ui:"Barlow Condensed","Arial Narrow",sans-serif;
-  --f-tc:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif;
-  color-scheme:dark;
-}
-*{box-sizing:border-box}
-body{
-  background:
-    radial-gradient(70% 40% at 50% 22%, var(--ember) 0%, transparent 70%),
-    radial-gradient(40% 25% at 10% 60%, #3a0a14 0%, transparent 70%),
-    radial-gradient(40% 25% at 90% 60%, #3a0a14 0%, transparent 70%),
-    var(--ink);
-  color:var(--text); font:15px/1.5 var(--f-body);
-  padding-block:clamp(20px,4vw,44px); padding-inline:clamp(16px,3vw,36px); min-height:100vh;
-}
-.wrap{max-width:1440px;margin:0 auto;display:grid;gap:clamp(24px,3.5vw,40px)}
-a{color:#c7ccd4} a:focus-visible,button:focus-visible{outline:2px solid var(--neon);outline-offset:2px}
-.tc{font-family:var(--f-tc);font-weight:500}
-
-/* header */
-header{text-align:center;display:grid;gap:12px;justify-items:center}
-h1{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:118%;font-size:clamp(2.1rem,6.6vw,5rem);line-height:.95;color:var(--neon);text-transform:uppercase;text-wrap:balance;text-shadow:0 0 28px rgba(217,244,28,.28),0 4px 0 rgba(0,0,0,.55)}
-.sub{margin:0;color:var(--muted);max-width:70ch;text-wrap:balance}
-.sub b{color:var(--text);font-weight:600}
-.switch{display:inline-flex;border:1px solid #3b4453;background:#12161c;padding:3px;gap:3px}
-.switch button{appearance:none;border:0;background:transparent;color:var(--muted);font:700 .95rem/1 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;cursor:pointer}
-.switch button[aria-pressed="true"]{background:var(--neon);color:#1b1f05}
-.stamp{font:600 .8rem/1.2 var(--f-ui);letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
-.stamp b{color:var(--ok)}
-
-/* legend */
-.legend{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;font-size:.86rem;color:var(--muted)}
-.legend span{display:inline-flex;align-items:center;gap:7px}
-.pr{display:inline-grid;place-items:center;width:20px;height:20px;border:1px solid #4a5364;font:700 .72rem/1 var(--f-ui);color:#fff;background:#11151b;flex:none}
-.pr.p0{background:var(--neon);color:#1b1f05;border-color:var(--neon)}
-
-/* grid */
-.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(18px,2vw,26px) clamp(12px,1.4vw,20px);align-items:start}
-@media (max-width:1280px){.board{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:680px){.board{grid-template-columns:minmax(0,1fr)}}
-.cls{display:grid;gap:10px;min-width:0}
-.cls-h{text-align:center;display:grid;gap:2px}
-.cls h2{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:108%;font-size:clamp(1.55rem,2.4vw,2.2rem);line-height:1;text-transform:uppercase;color:#fff;text-shadow:0 3px 0 rgba(0,0,0,.6)}
-.cls h2 .tc{font-size:.55em;color:var(--muted);margin-left:6px;vertical-align:middle;text-shadow:none;letter-spacing:0}
-.role{font:600 .78rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-
-/* macro window */
-.mw{background:var(--panel);border:1px solid var(--edge);box-shadow:0 14px 30px rgba(0,0,0,.55);min-width:0}
-.mw-top{position:relative;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px;border-bottom:1px solid var(--edge);background:linear-gradient(#262d38,#1f252f);font:600 .82rem/1 var(--f-ui);color:#cfd4dc}
-.mw-top::before{content:"";position:absolute;top:-4px;left:50%;width:7px;height:7px;background:#8b95a3;transform:translateX(-50%) rotate(45deg)}
-.mw-top .tc{font-size:.78rem;color:var(--muted)}
-.mw-top .x{position:absolute;right:9px;color:#8a93a1}
-.entry{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;padding:10px 10px 9px;border-bottom:1px solid #2a313c}
-.entry .n{font:700 1rem/1 var(--f-ui);color:#aeb5c0;padding-top:4px}
-.stack{display:grid;gap:4px;min-width:0}
-.sk{display:grid;grid-template-columns:20px 28px minmax(0,1fr);gap:7px;align-items:center;min-width:0}
-.sk .nm{font:600 .86rem/1.15 var(--f-ui);color:#fff;overflow-wrap:anywhere}
-.sk .nm small{display:block;font:500 .74rem/1.2 var(--f-tc);color:var(--muted)}
-.sk.empty .nm{color:var(--dim);font-weight:500}
-.sk .flag{font:700 .6rem/1 var(--f-ui);letter-spacing:.08em;color:var(--info);text-transform:uppercase;margin-left:4px}
-.delay{display:flex;align-items:center;gap:6px;margin-top:4px;padding-left:27px;font:500 .72rem/1 var(--f-ui);color:#aeb5c0}
-.delay b{display:inline-block;min-width:34px;padding:3px 4px;background:#11151b;border:1px solid #3b4453;color:#fff;text-align:center;font-variant-numeric:tabular-nums}
-.add{margin:11px auto;display:block;width:max-content;padding:6px 22px;background:linear-gradient(#f2c23a,var(--gold) 55%,var(--gold-2));color:#3a2600;font:700 .74rem/1 var(--f-ui);border:1px solid #f7d56b;box-shadow:0 2px 0 rgba(0,0,0,.4)}
-
-
-/* notes */
-.notes{display:grid;gap:8px;font-size:.87rem;line-height:1.45;color:#d4d8de}
-.notes p{margin:0}
-.k{display:inline-block;font:700 .68rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;margin-right:6px;color:var(--neon)}
-.k.gold{color:var(--gold)} .k.red{color:var(--warn)} .k.blue{color:var(--info)}
-.chips{display:flex;flex-wrap:wrap;gap:5px}
-.chip{display:inline-flex;align-items:center;gap:5px;padding:3px 7px 3px 3px;background:#1f252f;border:1px solid #394252;font:600 .8rem/1.1 var(--f-ui);color:#fff}
-.chip .ic{width:20px;height:20px}
-.chip.key{padding:3px 8px;background:#262d38}
-.plus{color:var(--muted);font:700 .85rem/1 var(--f-ui)}
-.patch{border-left:2px solid var(--warn);padding-left:9px}
-.src{font:600 .74rem/1.3 var(--f-ui);letter-spacing:.04em;color:var(--dim)}
-.src a{color:var(--muted)}
-details{border:1px solid #2b323d;background:#141920}
-details summary{cursor:pointer;padding:7px 10px;font:700 .78rem/1.2 var(--f-ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-details[open] summary{border-bottom:1px solid #2b323d}
-details .inner{padding:10px;display:grid;gap:8px;font-size:.85rem;color:#cfd4dc}
-.alt{display:grid;gap:3px}
-.alt b{font:700 .8rem/1.2 var(--f-ui);color:#fff}
-
-/* lower panels */
-.lower{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,22px)}
-@media (max-width:1100px){.lower{grid-template-columns:minmax(0,1fr)}}
-.panel{background:rgba(20,24,31,.94);border:1px solid #2b323d;padding:clamp(16px,2vw,24px);display:grid;gap:14px;align-content:start;min-width:0}
-.panel h3{margin:0;font-family:var(--f-display);font-weight:900;font-stretch:112%;text-transform:uppercase;font-size:clamp(1.15rem,1.8vw,1.45rem);line-height:1.05;color:#fff;text-wrap:balance}
-.panel h3 small{display:block;margin-top:6px;font:600 .74rem/1.25 var(--f-ui);letter-spacing:.12em;color:var(--muted)}
-ol.steps{margin:0;padding:0;list-style:none;display:grid;gap:12px;counter-reset:s}
-ol.steps li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:11px;counter-increment:s}
-ol.steps li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;background:var(--neon);color:#1b1f05;font:900 .95rem/1 var(--f-display)}
-ol.steps b,ul.rules b{color:#fff}
-kbd{font:600 .8rem/1 var(--f-ui);padding:2px 6px;border:1px solid #4a5364;border-bottom-width:2px;background:#232a35;color:#fff;white-space:nowrap}
-.path{font:600 .88rem/1.35 var(--f-ui);color:var(--neon)}
-ul.rules{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-ul.rules li{padding-left:12px;border-left:2px solid #3a4352}
-ul.rules li.no{border-left-color:var(--warn)} ul.rules li.yes{border-left-color:var(--ok)}
-.tbl-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:.86rem;font-variant-numeric:tabular-nums}
-th,td{text-align:left;padding:7px 8px;border-bottom:1px solid #2e3643;vertical-align:top}
-th{font:700 .68rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-td b{color:#fff}
-.demo{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:center}
-.demo-col{display:grid;gap:4px}
-.demo-col .row{display:flex;align-items:center;gap:6px;font:600 .8rem/1 var(--f-ui);color:#cfd4dc}
-.demo-col .cell{width:34px;height:34px;border:1px solid #3b4453;background:#1e242d;display:grid;place-items:center}
-.demo-col .cell .ic{width:30px;height:30px}
-.demo-col .hot{border-color:#6a7385;background:#0f1318}
-.lab{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,26px)}
-@media (max-width:1100px){.lab{grid-template-columns:minmax(0,1fr)}}
-.lab-col{display:grid;gap:10px;align-content:start;min-width:0;font-size:.9rem;color:#d4d8de}
-.lab-col p{margin:0}
-.lab-col b{color:#fff}
-.lab h4{margin:0;font:700 .8rem/1.2 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--neon)}
-ol.why2{margin:0;padding-left:20px;display:grid;gap:8px}
-.bars{display:grid;gap:6px;padding:10px;background:#12161c;border:1px solid #2b323d}
-.bar-row{display:grid;grid-template-columns:70px minmax(0,1fr) 48px;align-items:center;gap:8px;font:600 .8rem/1 var(--f-ui);color:#cfd4dc}
-.bar{height:14px;background:#1f252f}
-.bar i{display:block;height:100%;background:var(--neon)}
-.bar-row b{text-align:right;font-variant-numeric:tabular-nums}
-.cap{margin:2px 0 0;font-size:.78rem;color:var(--muted)}
-.rec{display:inline-block;font:700 .66rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;color:#1b1f05;background:var(--gold);padding:3px 6px;margin-left:6px;vertical-align:middle}
-footer{color:var(--muted);font-size:.8rem;line-height:1.55;display:grid;gap:6px;max-width:110ch}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-
-/* v3: real icons, bottom-up stacks */
-img.ic,.ic{width:32px;height:32px;border:1px solid rgba(255,255,255,.22);box-shadow:0 0 0 1px rgba(0,0,0,.6);background:#0d1117;object-fit:cover;display:block;flex:none}
-.ic.sm{width:22px;height:22px}
-.ic.none{background:#171b22;border-style:dashed;border-color:#3b4453;box-shadow:none}
-.sk{grid-template-columns:20px 32px minmax(0,1fr)}
-.sk .nm small{display:flex;flex-wrap:wrap;gap:0 8px}
-.sk .cd{font:600 .7rem/1.3 var(--f-ui);color:var(--dim);letter-spacing:.02em}
-.stackwrap{display:grid;gap:5px;min-width:0}
-.stack{display:grid;gap:4px;padding:6px;background:#161b23;border:1px solid #2b323d}
-.keyrow{display:flex;align-items:center;gap:7px;padding:4px 6px;background:#0f1318;border:1px solid #3b4453;font:600 .7rem/1.2 var(--f-ui);letter-spacing:.04em;color:var(--muted)}
-.keyrow .ic{opacity:.55}
-.delay{padding-left:0}
-.chip .ic{width:20px;height:20px}
-.chip .tc{color:var(--muted);font-size:.72rem}
-.flag{font:700 .6rem/1 var(--f-ui);letter-spacing:.08em;color:var(--info);text-transform:uppercase;margin-left:4px}
-.loading,.err{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 0}
-.err{color:var(--warn)}
-.changelog{margin:0;padding-left:18px;display:grid;gap:4px}
-.changelog b{color:#fff;font-variant-numeric:tabular-nums}
-.notice{margin:0;max-width:78ch;padding:9px 12px;border:1px solid #5a4a12;background:rgba(227,169,24,.08);color:#f1dfa8;font-size:.86rem;text-align:left}
-
-/* v4: hover cards + drawn alternate versions */
-[data-skill]{cursor:help}
-[data-skill]:focus-visible{outline:2px solid var(--neon);outline-offset:1px}
-.skilltip{position:fixed;z-index:50;width:min(360px,calc(100vw - 20px));max-height:calc(100vh - 20px);overflow:auto;background:#10141b;border:1px solid #4a5364;box-shadow:0 18px 40px rgba(0,0,0,.7);padding:12px 13px;display:grid;gap:8px;font-size:.84rem;line-height:1.45;color:#d4d8de;pointer-events:none}
-.skilltip[hidden]{display:none}
-.tt-head{display:flex;gap:10px;align-items:center}
-.tt-head img{width:44px;height:44px;border:1px solid rgba(255,255,255,.25)}
-.tt-name{font:700 1rem/1.1 var(--f-ui);color:#fff}
-.tt-sub{font:500 .76rem/1.3 var(--f-tc);color:var(--muted)}
-.tt-facts{display:flex;flex-wrap:wrap;gap:4px}
-.tt-facts span{font:600 .72rem/1 var(--f-ui);letter-spacing:.03em;padding:4px 6px;background:#1f252f;border:1px solid #394252;color:#e8ebef}
-.tt-desc{margin:0;white-space:pre-line}
-.tt-spec-h{font:700 .68rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--neon)}
-.tt-specs{margin:0;padding:0;list-style:none;display:grid;gap:3px}
-.tt-specs li{display:grid;grid-template-columns:26px minmax(0,1fr);gap:6px}
-.tt-specs b{font:700 .72rem/1.5 var(--f-ui);color:#1b1f05;background:var(--gold);text-align:center;height:18px}
-.tt-note{margin:0;padding-left:8px;border-left:2px solid var(--warn);color:#f1c9c4}
-.tt-foot{margin:0;font-size:.72rem;color:var(--dim)}
-details .inner{gap:16px}
-.alt{display:grid;gap:8px;padding-bottom:14px;border-bottom:1px dashed #333b48}
-.alt:last-child{border-bottom:0;padding-bottom:0}
-.alt>b{font:700 .9rem/1.2 var(--f-ui);color:#fff}
-.alt p{margin:0;color:#cfd4dc}
-.alt .mw{box-shadow:none}
-.extra{display:grid;gap:6px}
-
-/* v5: full rotation tab + key stacks */
-.rec.full{background:var(--warn);color:#2a0705}
-.keys{display:grid;gap:8px;padding:10px;background:rgba(15,19,24,.9);border:1px solid #2b323d}
-.keys-h{font:700 .72rem/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.loss{border-left:2px solid var(--warn);padding-left:9px}
-.switch{flex-wrap:wrap;justify-content:center}
-/* v6: page nav (macros | stigmas) */
-.sitenav{display:flex;justify-content:center;gap:4px}
-.sitenav a{font:700 .9rem/1 var(--f-ui);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:9px 16px;border:1px solid #3b4453;background:#12161c}
-.sitenav a[aria-current="page"]{background:var(--neon);color:#1b1f05;border-color:var(--neon)}
-.sitenav a:hover:not([aria-current]){border-color:#6a7385;color:#fff}
-</style>
-
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
 <div class="wrap">
-<nav class="sitenav" aria-label="Pages">
-  <a href="index.html" aria-current="page">Macros</a>
-  <a href="stigmas.html">Stigmas &amp; Skills</a>
+<nav class="sitenav" aria-label="Classes">
+  <a class="home" href="index.html" aria-current="page">Home</a>
+  <a href="gladiator.html">Gladiator<small>劍星</small></a>
+  <a href="templar.html">Templar<small>守護星</small></a>
+  <a href="assassin.html">Assassin<small>殺星</small></a>
+  <a href="ranger.html">Ranger<small>弓星</small></a>
+  <a href="sorcerer.html">Sorcerer<small>魔道星</small></a>
+  <a href="spiritmaster.html">Spiritmaster<small>精靈星</small></a>
+  <a href="cleric.html">Cleric<small>治癒星</small></a>
+  <a href="chanter.html">Chanter<small>護法星</small></a>
 </nav>
 
 <header>
-  <h1 id="title">Late Game Macros</h1>
-  <p class="sub">Every class's in-game macro <span class="tc">(基本技能輔助功能)</span>, rebuilt with the <b>full 4-skill stack</b> behind each slot. Row <b>0 fires first</b> and sits right above the key, just like the game. Hover or tap any skill for its description.</p>
-  <div class="switch" role="group" aria-label="Game stage">
-    <button type="button" id="btn-late" aria-pressed="true">Late game · Sept 2026</button>
-    <button type="button" id="btn-full" aria-pressed="false">Full rotation · with buffs</button>
-    <button type="button" id="btn-early" aria-pressed="false">Early game · improved</button>
-  </div>
+  <h1>Aion 2 Class Guides</h1>
+  <p class="sub">One page per class with everything in one place: <b>how it plays</b>, the <b>in-game macro</b> with its full 4-skill stacks, <b>Global Season 1 stigmas</b> and how high to level them, the <b>skills to push to 20</b>, specializations, a stigma tier list, gear notes and patch history. Below the classes are the basics that apply to everyone.</p>
   <div class="stamp" id="stamp"></div>
   <p class="notice" id="notice" hidden></p>
-  <div class="legend">
-    <span><i class="pr p0">0</i> fires first when ready</span>
-    <span><i class="pr">3</i> fires last (filler)</span>
-    <span><span class="k blue" style="margin:0">likely</span> icon match, not named in the source</span>
-  </div>
 </header>
 
-<main class="board" id="board"><p class="loading">Loading macro data…</p></main>
+<main class="cards" id="cards" aria-label="Classes"><p class="loading">Loading classes…</p></main>
 
-<section class="panel chain-lab" aria-labelledby="h-chain">
-  <h3 id="h-chain">Chaining: when a second 4-stack helps and when it hurts<small>Reportedly up to 20 entries of up to 4 skills each. More entries is usually slower.</small></h3>
-  <div class="lab">
-    <div class="lab-col">
+<section class="panel" aria-labelledby="h-how">
+  <h2 id="h-how">Macro basics<small>How the in-game macro window works · applies to every class</small></h2>
+  <div class="cols3">
+    <div class="col">
+      <h4>How a slot stack works</h4>
+      <div class="demo">
+        <div class="demo-col" aria-hidden="true">
+          <div class="row"><span class="cell"></span>3</div>
+          <div class="row"><span class="cell"><img class="ic" src="icons/ICON_AS_SKILL_009.webp" alt=""></span>2</div>
+          <div class="row"><span class="cell"><img class="ic" src="icons/ICON_AS_SKILL_035.webp" alt=""></span>1</div>
+          <div class="row"><span class="cell"><img class="ic" src="icons/ICON_AS_SKILL_013.webp" alt=""></span>0</div>
+          <div class="row"><span class="cell hot"><img class="ic" src="icons/ICON_AS_SKILL_013.webp" alt=""></span>key</div>
+        </div>
+        <div style="display:grid;gap:8px;min-width:0">
+          <p>Each hotbar key has four rows above it, numbered <b>0–3</b>. Pressing the key casts the <b>lowest-numbered skill that's ready</b>. Row 0 goes first, and row 3 is the filler.</p>
+          <p>A macro entry points to a <b>slot</b>, not a skill. When the macro reaches that entry, it uses the whole stack in priority order. The hotbar icon shows whichever skill is ready next.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="h-setup">
+      <h4>Set it up (TW client, Global names in brackets)</h4>
+      <ol class="steps">
+        <li><div>Press <kbd>K</kbd>. Drag skills into the <b>rows above a hotbar key</b> in the order on the class page (row 0 at the bottom).</div></li>
+        <li><div>Click <span class="tc">基本技能輔助功能</span> [Macro], then <span class="tc">新增輔助功能</span> [Add Macro]. Click the entry's icon, pick the <b>slot</b> you stacked, and set <span class="tc">延遲</span> [Delay] to <b>10 ms</b>.</div></li>
+        <li><div>Bind the key: <span class="path"><span class="tc">設定 → 按鍵設定 → 一般</span> [Settings → Key Settings → General → Skill Macro]</span>. Most players use a mouse button.</div></li>
+        <li><div>Play in <b>Target</b> mode. Hold <b>basic attack + macro key</b> (plus any third key the class page lists). Check your numbers on the training dummy with the DPS meter (<kbd>Ctrl</kbd>+<kbd>X</kbd>).</div></li>
+        <li><div>Set <span class="tc">技能預約</span> [Skill queue] as the class page says. If skills stutter or get skipped, flip it and test again.</div></li>
+      </ol>
+    </div>
+    <div class="col">
+      <h4>Rules the top players agree on</h4>
+      <ul class="rules">
+        <li class="yes"><b>Fewer different lines is better.</b> Every extra entry cuts the turns each slot gets. Repeating your main line (Sorcerer's in-game setup lists it 3 times out of 6) keeps its share up.</li>
+        <li class="no"><b>Never stack two skills with the same cooldown in one slot.</b> They block each other.</li>
+        <li class="no"><b>Toggles never go in a macro</b> (Chanter mantras): a second press switches them off.</li>
+        <li class="no"><b>Keep charge skills manual</b> unless the class page holds that slot on purpose.</li>
+        <li><b>Only raise the delay if skills get skipped.</b> 10 ms is standard.</li>
+        <li><b>Mouse-software macros</b> (Logitech, Razer) top the Korean meters. NC patched against them on Sep 16, and every class page has an in-game-only setup.</li>
+        <li class="warn"><b>Check ping and FPS before blaming the macro.</b> In Kanon's tests, a 150–200 ms ping gap was worth roughly 50–70% damage.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="panel" aria-labelledby="h-chain">
+  <h2 id="h-chain">When a second macro line helps, and when it hurts<small>Reportedly up to 20 entries of up to 4 skills each</small></h2>
+  <div class="cols3">
+    <div class="col">
       <h4>Why extra entries cost damage</h4>
-      <p>Holding the key walks the list top to bottom, weaves a basic attack, then loops. Each entry is one turn in that loop. With one entry, your row-0 skill is checked every turn. With two entries it's checked every other turn, so a proc skill like Heart Gore, Judgment or Sword Aura Rampage waits longer to fire and the cancel windows between entries get longer. Korean testers all saw the same thing: <b>each added line lowers the hits every slot gets</b>.</p>
+      <p>Holding the key walks the list top to bottom, weaves a basic attack, then loops. Each entry is one turn in that loop. With one entry, your row-0 skill is checked every turn; with two different entries, every other turn. Korean testers all saw the same thing: <b>each added line lowers the hits every slot gets</b>.</p>
       <div class="bars" role="img" aria-label="Gladiator Overhead Slam hits per minute: 77 with one entry, 72.5 with two entries">
         <div class="bar-row"><span>1 entry</span><div class="bar"><i style="width:100%"></i></div><b>77</b></div>
         <div class="bar-row"><span>2 entries</span><div class="bar"><i style="width:94%"></i></div><b>72–73</b></div>
         <p class="cap">Gladiator, Overhead Slam hits per minute. Adding Sword Aura Rampage as a second entry cost 5–6% (Inven, Aug 12).</p>
       </div>
     </div>
-    <div class="lab-col">
-      <h4>Add a second entry only for one of these reasons</h4>
+    <div class="col">
+      <h4>Good reasons for more entries</h4>
       <ol class="why2">
-        <li><b>Two skills in the stack keep colliding.</b> Chanter: Spinning Strike, Impactful Crush and Marchutan's Wrath all open Dark Crush windows. Stacked together, their windows overlap and get wasted. Moving Impactful Crush to its own entry gave <b>+3–5 Dark Crush casts/min</b> and about +100–150k DPS in Expedition (Inven, Sep 3).</li>
-        <li><b>A group runs on its own timer.</b> Spiritmaster spirits (15 s each) get their own line. Putting that line in the macro tested better than mashing it by hand (Sep 16).</li>
-        <li><b>A cancel needs a skill on a different line.</b> Ranger's Tempest Shot has to sit in a different line from the short-cooldown arrows to get the Tempest Shot cancel (~+3%). The Ranger ceiling is exactly two entries: the Drill Dart line and the damage line (Sep 3).</li>
-        <li><b>Cleric only:</b> its low attack-speed cap means two lines cost almost nothing (Sep 24).</li>
+        <li><b>Skills keep colliding.</b> Chanter: moving Impactful Crush to its own entry gave +3–5 Dark Crush casts/min (Sep 3).</li>
+        <li><b>A group runs on its own timer.</b> Spiritmaster's four spirits get their own line.</li>
+        <li><b>A cancel needs a skill on a different line.</b> Ranger's Tempest Shot cancel (~+3%). Gladiator's one-key setup alternates a Rending Blow line and an Overhead Slam line so the 내절 cancel happens on its own.</li>
+        <li><b>It automates damage you'd otherwise miss.</b> Sorcerer's ground AoEs are about a quarter of its damage, so the in-game setup puts them in the macro.</li>
+        <li><b>Cleric:</b> its attack-speed cap means two lines cost almost nothing.</li>
       </ol>
     </div>
-    <div class="lab-col">
-      <h4>Never chain these</h4>
+    <div class="col">
+      <h4>Rows inside a stack</h4>
+      <p><b>Row 0:</b> the skill that hurts most when delayed: a short proc window (Judgment, Heart Gore, Sword Aura Rampage) or a long-cooldown hit everything else benefits from. <b>Rows 1–2:</b> the other cooldown skills, by value. <b>Row 3:</b> a no-cooldown filler that plugs every gap.</p>
+      <h4 style="margin-top:6px">Usually keep out of the macro</h4>
       <ul class="rules">
-        <li class="no"><b>A buff line.</b> Ranger Snipe drops below 16–18/min, and Gladiator loses hits across the board. Press buffs yourself.</li>
-        <li class="no"><b>Skills you mash faster than the loop can.</b> Gladiator Overhead Slam and Spiritmaster Elemental Fusion. Mash them on their own key.</li>
-        <li class="no"><b>Assassin Ambush</b> in any line. Hits dropped in testing.</li>
-        <li class="no"><b>Charge skills</b> (Punishment, Bolt, Deadshot, Rushing Smash). Hold or press them on their own key.</li>
+        <li class="no"><b>Buffs that should wait for the boss.</b> Automated buffs fire on trash and during mechanics.</li>
+        <li class="no"><b>Skills you mash faster than the loop can</b> (Spiritmaster's Elemental Fusion).</li>
+        <li class="no"><b>Charge skills</b> (Punishment, Bolt, Deadshot, Hellfire): hold or press them on their own key.</li>
       </ul>
-      <h4 style="margin-top:6px">Rows inside a stack</h4>
-      <p><b>Row 0:</b> the skill that hurts most when delayed, meaning a short proc window (Judgment, Heart Gore, Sword Aura Rampage) or a long-cooldown hit that everything else benefits from. <b>Rows 1–2:</b> the other cooldown skills, by value. <b>Row 3:</b> a filler with no cooldown that plugs every gap. <b>Never put two skills with the same cooldown</b> in one stack.</p>
     </div>
   </div>
-  <div class="tbl-wrap"><table>
-    <thead><tr><th>Check your setup</th><th>Target per 1-minute dummy test</th><th>If you're under</th></tr></thead>
-    <tbody>
-      <tr><td><b>Ranger</b></td><td>Snipe 16–18 · Deadshot 24–28 · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total hits</td><td>Take buffs out of the macro. Make sure Tempest Shot isn't below Drill Dart.</td></tr>
-      <tr><td><b>Gladiator</b></td><td>Upward Strike ~97–102 · Overhead Slam ~190–200 (high-end gear)</td><td>Remove any second macro line, including stigmas.</td></tr>
-      <tr><td><b>Chanter</b></td><td>Dark Crush ~58–60 casts</td><td>Try the Impactful Crush split in "Other versions".</td></tr>
-      <tr><td><b>Cleric</b></td><td>Attack speed caps at 94.4%, so extra speed past that is wasted</td><td>Aim for 32.6% cooldown reduction instead.</td></tr>
-      <tr><td><b>Assassin</b></td><td>Heart Gore ~300 · Insignia Explosion ~70 (post-Sep 16, 1.0M+ gear). Attack-speed breakpoints from April: 88.1% and 92%; avoid 99.9–100.7%.</td><td>Low Heart Gore usually means the macro slot is missing Savage Roar, or buffs are in the macro.</td></tr>
-    </tbody>
-  </table></div>
 </section>
 
-<div class="lower">
-  <section class="panel" aria-labelledby="h-how">
-    <h3 id="h-how">How a slot stack works<small>This is why one macro line can fire four skills</small></h3>
-    <div class="demo">
-      <div class="demo-col" aria-hidden="true">
-        <div class="row"><span class="cell"></span>3</div>
-        <div class="row"><span class="cell"><img class="ic" src="icons/ICON_AS_SKILL_009.webp" alt=""></span>2</div>
-        <div class="row"><span class="cell"><img class="ic" src="icons/ICON_AS_SKILL_035.webp" alt=""></span>1</div>
-        <div class="row"><span class="cell"><img class="ic" src="icons/ICON_AS_SKILL_013.webp" alt=""></span>0</div>
-        <div class="row"><span class="cell hot"><img class="ic" src="icons/ICON_AS_SKILL_013.webp" alt=""></span>key</div>
+<section class="panel" aria-labelledby="h-stig">
+  <h2 id="h-stig">How stigma levels work<small>These rules decide every level-up order on the class pages</small></h2>
+  <div class="cols3">
+    <div class="col">
+      <h4>Shards per level</h4>
+      <div class="ladder" id="ladder" aria-label="Shard cost for each stigma level"></div>
+      <div class="lad-key">
+        <span><i style="background:#3b4453"></i>Stigma shards</span>
+        <span><i style="background:var(--neon)"></i>New effect unlocks (5 · 10 · 15 · 20)</span>
+        <span><i style="background:var(--gold)"></i>Advanced shard (21–25, KR/TW only)</span>
       </div>
-      <div style="display:grid;gap:8px;font-size:.88rem;color:#d4d8de;min-width:0">
-        <p style="margin:0">Each hotbar key has four rows above it, numbered <b>0–3</b>. Pressing the key casts the <b>lowest-numbered skill that's ready</b>. Row 0 goes first, and row 3 is the filler.</p>
-        <p style="margin:0">A macro entry points to a <b>slot</b>, not a skill. The name in the macro window is just the slot's representative. When the macro reaches that entry, it uses every skill in that stack in priority order.</p>
-        <p style="margin:0">The hotbar icon changes to whichever skill in the stack is ready next. That's why your key can show a different skill than the macro list.</p>
-      </div>
+      <table>
+        <thead><tr><th>Levels</th><th>Cost each</th><th>Total to reach</th></tr></thead>
+        <tbody>
+          <tr><td>1–5</td><td>1 shard</td><td><b>Lv 5: 5</b></td></tr>
+          <tr><td>6–10</td><td>2 shards</td><td><b>Lv 10: 15</b></td></tr>
+          <tr><td>11–15</td><td>4 shards</td><td><b>Lv 15: 35</b></td></tr>
+          <tr><td>16–20</td><td>8 shards</td><td><b>Lv 20: 75</b></td></tr>
+          <tr><td>21–25</td><td>1 Advanced shard</td><td><b>Lv 25: 75 + 5 Advanced</b></td></tr>
+        </tbody>
+      </table>
+      <p>Levels 16–20 cost as much as 1–15 combined. That's why every priority list gets several stigmas to their cheap unlocks (5 or 10) first. A full Global build at 20 / 20 / 20 / 15 costs about 260 shards.</p>
     </div>
-  </section>
+    <div class="col">
+      <h4>Global Season 1</h4>
+      <ul class="facts">
+        <li><b>4 stigma slots</b> (confirmed on NC's official livestream) and a stigma level cap of <b>20</b>, like Korea's launch season (Nov 2025 – Mar 2026).</li>
+        <li>No level 21–25 and no Advanced shards yet. Korea added the 5th slot on Mar 25 and the 6th slot plus level 25 on Jul 1, so expect Global to follow later.</li>
+        <li class="good">Effects are read from the Global client database. It has Korea's Aug 26 rework but not the Sep 16 patch.</li>
+        <li>Stigmas unlock at character level <b>22</b>. Each class has <b>13</b>. Every effect at 5 / 10 / 15 / 20 is automatic; there are no picks.</li>
+        <li class="warn">Same-name party buffs don't stack: two Chanters' mantras, Undefeated Mantra vs Light of Protection, Power of the Storm vs Earth's Blessing, two Sorcerers' Cold Storm. The higher one wins.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>KR/TW: Advanced shards (21–25)</h4>
+      <ul class="facts">
+        <li class="good"><b>+1</b> for each character level from 46 to 50 (5 total).</li>
+        <li class="good"><b>+1</b> for every stigma you take to 20 (refunded if you reset it).</li>
+        <li>More are sold in the Abyss exchange shop.</li>
+        <li>With 6 stigmas at 20 you have 11: <b>two at 25 + one at 21</b>. The ceiling (all 13 at 20, 975 shards) gives <b>three at 25 + one at 23</b>.</li>
+        <li class="warn">Sep 23 (KR/TW): during Abyss boss fights, Rifts and Time-Space battles, <b>Battlefield Might</b> replaces party synergies (Undefeated Mantra, Light of Protection, Power of the Storm, Fury, Experienced Counterstrike and others do nothing there).</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <section class="panel" aria-labelledby="h-setup">
-    <h3 id="h-setup">Set it up on the TW client<small>Global client names are in brackets</small></h3>
-    <ol class="steps">
-      <li><div>Press <kbd>K</kbd>. In the skill window, drag skills into the <b>rows above a hotbar key</b>, in the order on the card (row 0 at the bottom).</div></li>
-      <li><div>Click <span class="tc">基本技能輔助功能</span> [Macro] at the top right, then <span class="tc">新增輔助功能</span> [Add Macro]. A basic-attack entry appears. Click its icon and pick the <b>slot</b> you stacked. Set <span class="tc">延遲</span> [Delay] to <b>10 ms</b>.</div></li>
-      <li><div>Bind the key: <span class="path"><span class="tc">設定 → 按鍵設定 → 一般</span> [Settings → Key Settings → General]</span>. Most players use a mouse side button.</div></li>
-      <li><div>Play in <b>Target</b> mode and pick a target. Hold <b>basic attack + macro key</b>, plus the third key if the class card lists one. Check your numbers on the training dummy with the in-game DPS meter (<kbd>Ctrl</kbd>+<kbd>X</kbd>).</div></li>
-      <li><div>Set <span class="tc">技能預約</span> [skill queue] as the class card says. If skills stutter or get skipped, flip it and test again.</div></li>
-    </ol>
-  </section>
+<section class="panel" aria-labelledby="h-dmg">
+  <h2 id="h-dmg">Damage basics<small>What actually moves your numbers · summarized from Kanon's Aion 2 Bible (Sep 20, 2026)</small></h2>
+  <div class="cols3">
+    <div class="col">
+      <h4>Where skill levels come from</h4>
+      <ul class="facts">
+        <li>Skill points (Wisdom Stones) take an active skill to <b>10</b>. Everything above that is bonus levels.</li>
+        <li class="good"><b>Active skills:</b> ring lines, weapon and guard lines, blue Daevanion tiles, and Parchment / Compass / Chalice Arcana cards.</li>
+        <li class="good"><b>Passives:</b> armor, necklace and earring lines, green Daevanion tiles, and Bell / Mirror / Chalice Arcana cards.</li>
+        <li><b>Level 8:</b> first 3 specialty options and 1 slot. <b>12:</b> option 4 and a 2nd slot. <b>16:</b> option 5. <b>20:</b> the 3rd slot.</li>
+        <li>Korean endgame has 2–5 skills at 20 depending on class. Gladiator (Overhead Slam) and Templar (Judgment) get over 60% of their damage from one skill, so that skill goes first.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Which stats are worth the most</h4>
+      <ul class="facts">
+        <li class="good"><b>Double Chance</b> &gt; <b>Front/Back Damage Boost</b> &gt; <b>Weapon Damage Boost</b> ≈ <b>Crit Damage Boost</b> &gt; Damage Boost.</li>
+        <li>Flat attack: <b>Attack</b> &gt; Max Attack &gt; Attack Bonus &gt; PvE / Boss Attack.</li>
+        <li>Korean endgame values per 1%: Double Chance ≈ 0.6%, Front/Back ≈ 0.6%, Weapon Damage Boost ≈ 0.5%, Crit Damage ≈ 0.4–0.6%, plain Damage Boost ≈ 0.35%. At launch, with fewer stats, each point is worth more.</li>
+        <li>Classes with a crit-damage passive (Gladiator, Chanter, Ranger, Assassin, Cleric) gain a bit less from extra Crit Damage Boost.</li>
+        <li>Bosses have no Front/Back, Weapon, Crit or Multi-hit stats, so those tolerances are worthless in PvE.</li>
+        <li>Multi-hit: each extra hit is 5% of the hit, so 1% multi-hit ≈ 0.33% damage.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>What this means for your macro</h4>
+      <ul class="facts">
+        <li class="warn"><b>Ping and FPS matter a lot.</b> Macros are hit-count setups: a 150–200 ms ping difference was worth roughly 50–70% damage. If your hits per minute are far under the class page's targets, check ping first.</li>
+        <li><b>Combat Speed</b> is the stat to stack; more hits also means more procs from everything else.</li>
+        <li class="warn"><b>Crit caps at 80%.</b> If a skill already crits at the cap, a "+crit" specialty does nothing, so take a different pick.</li>
+        <li>Accuracy works the same way against a boss's Block. Korean raid targets (not confirmed for Global): Ludra 1,500 Accuracy / 1,600 Crit; Corroded 2,350 / 2,500; Muspel Hard 2,800 / 3,150.</li>
+        <li>Power Shards: regular ≈ +4.7% damage, Superior ≈ +8.9%.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a> (twitch.tv/kanonxo). The numbers are Korean endgame values, and the author marks several as unconfirmed for Global.</p>
+</section>
 
-  <section class="panel" aria-labelledby="h-rules">
-    <h3 id="h-rules">Rules the top players agree on<small>From Korean and Taiwanese forum testing</small></h3>
-    <ul class="rules">
-      <li class="yes"><b>Use one macro line if you can.</b> Every extra entry cuts the hits each slot gets. Sorcerer loses the most, and Cleric can afford two.</li>
-      <li class="no"><b>Never stack two skills with the same cooldown in one slot.</b> They block each other and add delay.</li>
-      <li class="no"><b>Split your two biggest hitters into different slots</b> if they share cast time (Cleric: Condemnation vs Judgment Thunder).</li>
-      <li class="no"><b>Keep charge skills manual</b> unless the guide holds that slot on purpose (Sorcerer's Hellfire line is built to be held).</li>
-      <li><b>Only raise the delay if skills get skipped.</b> 10 ms is standard, and the TW Cleric setup uses 40/20/20.</li>
-      <li><b>Mouse-software macros</b> (Razer, G Hub) top the Korean DPS meters. NC patched against them on Sept 16, so this sheet treats them as optional.</li>
-      <li><b>Check ping and FPS before blaming the macro.</b> A macro is a hit-count setup, and in Kanon's tests a 150–200 ms ping gap was worth roughly 50–70% damage. Combat Speed is the stat that adds hits.</li>
-      <li><b>Level the skills the macro leans on.</b> Each class's first two skills to 20, target skill levels and stat priority are on the <a href="stigmas.html#h-dmg">Stigmas &amp; Skills page</a>.</li>
-    </ul>
-  </section>
-</div>
+<section class="panel" aria-labelledby="h-gear">
+  <h2 id="h-gear">Gear and progression<small>Stat lines, stones, Pantheon, Arcana, boards and Pet Genus · from Kanon's Aion 2 Bible (Global lines)</small></h2>
+  <div class="cols3">
+    <div class="col">
+      <h4>Stat lines to keep (rarest first)</h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Piece</th><th>Lines</th></tr></thead>
+        <tbody>
+          <tr><td><b>Weapon / Guard</b></td><td>Damage Boost, Combat Speed, Weapon Damage Boost, Might, Multi-hit, Precision, Attack</td></tr>
+          <tr><td><b>Helmet</b></td><td>Double Chance, Attack Increase, Attack, then passives</td></tr>
+          <tr><td><b>Cloak</b></td><td>Double Chance, Attack Increase, Perfect, Attack, then passives</td></tr>
+          <tr><td><b>Shoulder</b></td><td>Double Chance, Crit Damage Boost, Attack, then passives</td></tr>
+          <tr><td><b>Chest</b></td><td>Perfect, Damage Boost, Attack, then passives</td></tr>
+          <tr><td><b>Pants</b></td><td>Attack Increase, Perfect, Damage Tolerance, Attack, then passives</td></tr>
+          <tr><td><b>Gloves</b></td><td>Perfect, Combat Speed, Attack, then passives</td></tr>
+          <tr><td><b>Shoes</b></td><td>Perfect, Move Speed, Attack, then passives</td></tr>
+          <tr><td><b>Necklace / Earring</b></td><td>Combat Speed or Move Speed, Might, Precision, Attack, then passives (Accuracy if needed)</td></tr>
+          <tr><td><b>Rings</b></td><td>Might, Precision, Attack, then <b>active skills</b></td></tr>
+        </tbody>
+      </table></div>
+      <p class="snote">Listed by how rare the roll is, not by value. Reroll single lines with Synch Stones of the same grade; never use a lower-grade stone (10% chance).</p>
+    </div>
+    <div class="col">
+      <h4>Manastones, Soulstones, Pantheon</h4>
+      <ul class="facts">
+        <li><b>Manastones</b> (weapons and armor) and <b>Soulstones</b> (accessories) roll random lines and are <b>lost when you transfer gear</b>, so don't sink Superiors into gear you'll replace.</li>
+        <li class="good">Stone lines, best to worst: Front/Back Damage Boost &gt; Weapon Damage Boost ≈ Crit Damage Boost &gt; Damage Boost &gt; Attack. Aim for at least one yellow Damage Boost line (yellow = 100 = 1%).</li>
+        <li>Each <b>Pantheon stat</b> gives two effects. Damage picks: <b>Destruction</b> (Attack Increase), <b>Wisdom</b> (Double Chance), <b>Illusion</b> (cooldowns), <b>Time</b> (Combat Speed), <b>Death</b> (Crit). Defensive: Justice, Space, Freedom, Life, Destiny.</li>
+        <li>Bracelet: Illusion, Wisdom, Destruction, Time, plus Justice and Space for PvE (Korea's Sep guides).</li>
+        <li>Theostones add very little damage; pick the one you like the look of.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Arcana, Daevanion boards, Pet Genus</h4>
+      <ul class="facts">
+        <li><b>Arcana</b> cards give Pantheon stats and skill levels. Kanon expects Global to start like Asia: 5 cards (Chalice, Parchment, Compass, Bell, Mirror) and 2 sets. Key lines: Chalice <b>Time</b> (Combat Speed), Bell <b>Destruction</b>, Mirror <b>Wisdom</b>.</li>
+        <li class="good">Get your two key actives to 20 first, even with a cheaper card set, then craft 4-line cards (Chalice first).</li>
+        <li><b>Daevanion:</b> the four white boards (Nezekan, Zikel, Vaizel, Triniel) share points and give skill levels. Take your key active tiles first, then orange tiles. Multi-hit Resist (Triniel) and Crit Damage Tolerance (Vaizel) are useless in PvE. Respec is nearly free.</li>
+        <li><b>Pet Genus:</b> level each board to 10 before locking any line, then roll for Double Chance and Front/Back Damage Boost lines.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a>, Sep 20, 2026 update. Class-specific choices (which stone stat, which passives) are on each class page.</p>
+</section>
 
 <section class="panel" aria-labelledby="h-patch">
-  <h3 id="h-patch">Patches that changed macros<small>Korea and Taiwan get the same patch on the same day, confirmed on the official TW notes</small></h3>
+  <h2 id="h-patch">Patches that changed macros<small>Korea and Taiwan patch on the same day · Global can lag behind</small></h2>
   <div class="tbl-wrap"><table>
     <thead><tr><th>Date</th><th>Class</th><th>Change</th><th>What to do</th></tr></thead>
     <tbody>
-      <tr><td>Sep 16</td><td><b>Templar</b></td><td>Longer cancel delay on Pummel, Punishing Strike and Judgment, aimed at mouse macros. Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min.</td><td>The Pummel→Judgment cancel is dead. Vicious Strike→Judgment is the new top setup.</td></tr>
-      <tr><td>Sep 16</td><td><b>Assassin</b></td><td>Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE.</td><td>Korean players still stack Insignia Explosion → Heart Gore → Savage Roar in one slot.</td></tr>
-      <tr><td>Sep 16</td><td><b>Sorcerer</b></td><td>Fire Mark passive now procs 100% (was 20%). Blaze no longer consumes it.</td><td>Fire skills in the macro are stronger. The stack order is unchanged.</td></tr>
-      <tr><td>Sep 16</td><td><b>Ranger</b></td><td>Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire.</td><td>No stack change.</td></tr>
-      <tr><td>Sep 16</td><td><b>Chanter</b></td><td>Guardian Blessing 5 min → 2 min.</td><td>Stack it on top of Power of the Storm.</td></tr>
-      <tr><td>Sep 10</td><td><b>Spiritmaster</b></td><td>Jointstrike: Destructive Attack's spirit follow-up now fires immediately (fixes a Jointstrike overwrite bug).</td><td>Use it on cooldown except when lining up the Ancient Spirit window.</td></tr>
-      <tr><td>Aug 26</td><td><b>Templar · Chanter</b></td><td>Core rework: Judgment now opens after any shield attack, and Dark Crush after any ranged skill (was: stunned target). Minimum skill-cancel time added to every skill. Warding Strike CD 25 s; Spinning Strike CD 15 s / 100 MP; Impactful Crush CD 10 s.</td><td>This is why Shield Smite and Doom Shield sit in the Judgment line, and Spinning Strike and Impactful Crush in the Dark Crush line.</td></tr>
-      <tr><td>Aug 26</td><td><b>Gladiator</b></td><td>The Overhead Slam→Rending Blow cancel (内絕 / 내절) came back.</td><td>Mash Overhead Slam while holding basic attack and the macro.</td></tr>
-      <tr><td>Sep 23</td><td><b>All (Abyss)</b></td><td>"Battlefield Might" replaces Undefeated Mantra, Power of the Storm, Fury, Experienced Counterstrike and others while an Abyss boss is up.</td><td>Those buffs do nothing there, so you don't need them in the buff slot during Abyss boss fights.</td></tr>
+      <tr><td>Sep 23</td><td><b>All (Abyss)</b></td><td>"Battlefield Might" replaces Undefeated Mantra, Power of the Storm, Fury, Experienced Counterstrike and others while an Abyss boss is up.</td><td>Those buffs do nothing there.</td></tr>
+      <tr><td>Sep 16</td><td><a href="templar.html#patches"><b>Templar</b></a></td><td>Longer cancel delay on Pummel, Punishing Strike and Judgment. Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min.</td><td>The Pummel→Judgment cancel is dead. Vicious Strike→Judgment is the new top setup.</td></tr>
+      <tr><td>Sep 16</td><td><a href="assassin.html#patches"><b>Assassin</b></a></td><td>Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE.</td><td>Sep 30 guide: Insignia Explosion → Ambush → Heart Gore → Savage Roar in one line.</td></tr>
+      <tr><td>Sep 16</td><td><a href="sorcerer.html#patches"><b>Sorcerer</b></a></td><td>Fire Mark passive now procs 100% (was 20%). Blaze no longer consumes it.</td><td>Fire skills hit more often. The stack order is unchanged.</td></tr>
+      <tr><td>Sep 16</td><td><a href="ranger.html#patches"><b>Ranger</b></a></td><td>Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire.</td><td>No stack change.</td></tr>
+      <tr><td>Sep 16</td><td><a href="chanter.html#patches"><b>Chanter</b></a></td><td>Guardian Blessing 5 min → 2 min.</td><td>Stack it on top of Power of the Storm.</td></tr>
+      <tr><td>Sep 10</td><td><a href="spiritmaster.html#patches"><b>Spiritmaster</b></a></td><td>Destructive Attack's spirit follow-up now fires immediately.</td><td>Use it on cooldown except when lining up the Ancient Spirit window.</td></tr>
+      <tr><td>Aug 26</td><td><b>Templar · Chanter</b></td><td>Core rework: Judgment opens after any shield attack, and Dark Crush after any ranged skill. Minimum skill-cancel time added to every skill.</td><td>Shield attacks share Judgment's line; ranged skills share Dark Crush's.</td></tr>
+      <tr><td>Aug 26</td><td><a href="gladiator.html#patches"><b>Gladiator</b></a></td><td>The Overhead Slam→Rending Blow cancel (内絕 / 내절) came back.</td><td>Mash Overhead Slam while holding the macro, or use the one-key layout.</td></tr>
     </tbody>
   </table></div>
 </section>
 
-<section class="panel" aria-labelledby="h-log"><h3 id="h-log">Update log<small>Newest first</small></h3><ul class="changelog" id="changelog"></ul></section>
+<section class="panel" aria-labelledby="h-log"><h2 id="h-log">Update log<small>Newest first</small></h2><ul class="changelog" id="changelog"></ul></section>
 
 <footer>
-  <p><b style="color:#fff">How this was checked.</b> Each late-game stack was read from the newest Korean Inven guides (Aug 26 – Sep 24, 2026), which are all post-patch. They were cross-checked against a Taiwanese Bahamut built-in-macro guide (May 27, 2026) and the early-game video you shared. Skill names and cooldowns come from the game-client database at aion2.app (Global, Korean and Traditional Chinese). Where a source only showed icons, I matched them against the database icons. Those rows are marked <span class="k blue" style="margin:0">likely</span>. Skill icons and names © NC; this is a fan-made reference.</p>
-  <p>Sources: <a href="https://www.inven.co.kr/board/aion2/6444/1899" target="_blank" rel="noopener">Inven: slot &amp; line concept</a> · <a href="https://forum.gamer.com.tw/C.php?bsn=82913&amp;snA=5422" target="_blank" rel="noopener">Bahamut: 內置巨集 8 classes</a> · <a href="https://www.inven.co.kr/board/aion2/6451/22932" target="_blank" rel="noopener">Chanter 9/17</a> · <a href="https://www.inven.co.kr/board/aion2/6452/29213" target="_blank" rel="noopener">Cleric 9/24</a> · <a href="https://www.inven.co.kr/board/aion2/6453/17462" target="_blank" rel="noopener">Sorcerer 9/22</a> · <a href="https://www.inven.co.kr/board/aion2/6454/10286" target="_blank" rel="noopener">Spiritmaster 9/16</a> · <a href="https://www.inven.co.kr/board/aion2/6450/19498" target="_blank" rel="noopener">Ranger 9/6</a> · <a href="https://www.inven.co.kr/board/aion2/6438/26522" target="_blank" rel="noopener">Templar 9/16</a> · <a href="https://www.inven.co.kr/board/aion2/6449/23617" target="_blank" rel="noopener">Assassin 9/18</a> · <a href="https://www.inven.co.kr/board/aion2/6448/31551" target="_blank" rel="noopener">Gladiator 9/5</a> · <a href="https://tw.ncsoft.com/aion2/board/update/view?articleId=6aa9bffad97eae18cc40df8c" target="_blank" rel="noopener">TW patch 9/16</a> · <a href="https://aion2hub.com/updates/aion-2-update-2026-09-16" target="_blank" rel="noopener">AION2 Hub patch notes</a> · <a href="https://aion2.app/db/skills" target="_blank" rel="noopener">aion2.app skill DB</a> · <a href="https://www.aoeah.com/news/4806--best-aion-2-chanter-builds-skills--macro-setup-2026-pvp--pve" target="_blank" rel="noopener">AOEAH Chanter guide</a></p>
+  <p><b style="color:#fff">How this was checked.</b> Macros come from the newest Korean Inven class guides (Aug 26 – Sep 30, 2026), which are all post-patch, cross-checked against Taiwanese Bahamut guides and in-game screenshots. Where a source only showed icons, they were matched against the database icons (marked <span class="k blue" style="margin:0">likely</span>). Global Season 1 stigma builds use what Korean players ran in their own 4-slot, level-20 season. Skill names, cooldowns, icons and effects come from the aion2.app game-client database (Global, Korean and Traditional Chinese). Skill icons and names © NC; this is a fan-made reference.</p>
 </footer>
 </div>
-
-<script src="app.js" charset="utf-8"></script>
+<script src="home.js" charset="utf-8"></script>
+</body>
+</html>
