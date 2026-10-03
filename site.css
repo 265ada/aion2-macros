@@ -354,3 +354,8 @@ ul.changelog b{color:#fff;font:700 .8rem/1.2 var(--f-ui);margin-right:6px;font-v
 footer{font-size:.8rem;color:var(--dim);display:grid;gap:8px;max-width:110ch;margin:0 auto;text-align:center;line-height:1.55}
 footer a{color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* macro row badges */
+.bdg{display:inline-block;margin-left:5px;padding:2px 4px;font:700 .56rem/1 var(--f-ui);letter-spacing:.08em;text-transform:uppercase;vertical-align:1px;white-space:nowrap}
+.bdg.st{background:var(--gold);color:#2c1c00}
+.bdg.kr{background:#4a1d1a;color:#ffb4ab;border:1px solid #7a2f2a}
+.bdg.lv{background:#22303f;color:#bcd9ff;border:1px solid #35506b}

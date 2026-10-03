@@ -61,6 +61,19 @@
   }
 
   /* ---------- macros ---------- */
+  /* row badges: stigmas (and whether they're in the Global 4-slot build), learn level of regular skills */
+  let GL4 = null;
+  const gl4 = () => GL4 || (GL4 = new Set(((S.gl && (S.gl.builds.find((b) => b.main) || S.gl.builds[0])) || { pick: [] }).pick.map((p) => p[0])));
+  const isStigma = (n) => !!DB[CLS + ":" + base(n)];
+  function badge(n) {
+    const b = base(n);
+    if (isStigma(n)) {
+      return gl4().has(b) ? `<span class="bdg st" title="Stigma: needs character level 22+ and a free stigma slot (Global: 1 slot at 22, 2 at 27, 3 at 32, 4 at 37)">Stigma</span>`
+        : `<span class="bdg kr" title="A stigma that isn't in the Global Season 1 4-slot build on this page. If you don't slot it, the game skips this row.">Not in Global 4</span>`;
+    }
+    const q = (DS[b] || {}).q;
+    return mmode === "early" && q > 1 ? `<span class="bdg lv" title="Learned at character level ${q}; until then the game skips this row">Lv ${q}</span>` : "";
+  }
   function row(name, i) {
     const p0 = i === 0 ? " p0" : "";
     if (!name) return `<div class="sk empty"><i class="pr${p0}">${i}</i><span class="ic none" aria-hidden="true"></span><div class="nm">empty</div></div>`;
@@ -68,7 +81,7 @@
     const bits = [];
     if (f && f.s.cd) bits.push("CD " + cdText(f.s.cd));
     if (f && f.s.mp) bits.push("MP " + f.s.mp);
-    return `<div class="sk"${hov(name)}><i class="pr${p0}">${i}</i>${ic(name)}<div class="nm">${esc(nice(base(name)))}${likely ? '<span class="flag">likely</span>' : ""}<small>${f ? `<span class="tc">${esc(f.s.tw || "")}</span>` : ""}${bits.length ? `<span class="cd">${bits.join(DOT)}</span>` : ""}</small></div></div>`;
+    return `<div class="sk"${hov(name)}><i class="pr${p0}">${i}</i>${ic(name)}<div class="nm">${esc(nice(base(name)))}${likely ? '<span class="flag">likely</span>' : ""}${badge(name)}<small>${f ? `<span class="tc">${esc(f.s.tw || "")}</span>` : ""}${bits.length ? `<span class="cd">${bits.join(DOT)}</span>` : ""}</small></div></div>`;
   }
   const stackHtml = (st) => `<div class="stack">${[3, 2, 1, 0].map((i) => row(st[i] || null, i)).join("")}</div>`;
   function entry(st, n, delay) {
@@ -91,7 +104,7 @@
   }
   function chip(n) {
     const f = find(n);
-    return f ? `<span class="chip"${f.attr}>${ic(n, "ic sm")}${esc(nice(n))} <span class="tc">${esc(f.s.tw || "")}</span></span>` : `<span class="chip key">${esc(n)}</span>`;
+    return f ? `<span class="chip"${f.attr}>${ic(n, "ic sm")}${esc(nice(n))} <span class="tc">${esc(f.s.tw || "")}</span>${badge(n)}</span>` : `<span class="chip key">${esc(n)}</span>`;
   }
   const chips = (a) => `<div class="chips">${(a || []).map((x, i) => (i ? '<span class="plus">+</span>' : "") + chip(x)).join("")}</div>`;
   const list = (a) => `<div class="chips">${(a || []).map(chip).join("")}</div>`;
@@ -128,8 +141,8 @@
           ${d.patch ? `<p class="patch"><span class="k red">Patch</span>${esc(d.patch)}</p>` : ""}
           ${d.queue ? `<p><span class="k blue">Skill queue</span>${esc(d.queue)} <span class="tc">技能預約</span></p>` : ""}
           ${O.hits && mmode !== "early" ? `<p class="check"><span class="k blue">Check your numbers</span>${esc(O.hits)}. Test for 1 minute on the training dummy with the DPS meter (<kbd>Ctrl</kbd>+<kbd>X</kbd>).</p>` : ""}
-          ${d.src ? `<p class="src">Source: <a href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.src)}</a></p>` : `<p class="src">Built from the tested late-game order using only early skills. Alternatives are under "Other versions".</p>`}
-          <div class="legend"><span><i class="pr p0">0</i> fires first when ready</span><span><i class="pr">3</i> fires last (filler)</span><span><span class="k blue" style="margin:0">likely</span> icon match, not named in the source</span></div>
+          ${d.src ? `<p class="src">Source: <a href="${esc(d.link)}" target="_blank" rel="noopener">${esc(d.src)}</a></p>` : `<p class="src">Built from the class's tested order using the skills you have while leveling. Alternatives are under "Other versions".</p>`}
+          <div class="legend"><span><i class="pr p0">0</i> fires first when ready</span><span><i class="pr">3</i> fires last (filler)</span><span><span class="k blue" style="margin:0">likely</span> icon match, not named in the source</span><span><span class="bdg st">Stigma</span> level 22+</span><span><span class="bdg kr">Not in Global 4</span> KR/TW stigma, row skipped unless slotted</span></div>
           <p class="snote">New to the macro window? <a href="index.html#h-how">How a slot stack works</a>${DOT}<a href="index.html#h-setup">set it up</a>${DOT}<a href="index.html#h-chain">when a second line helps</a>.</p>
         </div>
       </div>

@@ -1,12 +1,16 @@
 {
  "meta": {
   "title": "Aion 2 Class Guides",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "patchBaseline": "KR/TW patches through Sep 23, 2026",
   "notice": "Global (NA/EU) early access opened Sep 30, 2026, with full free-to-play on Oct 5. The Global client can lag the Korea/Taiwan patches this sheet is built on. For example, the Global database still lists Noble Armor and Guardian Blessing at 5 min. If a Global skill doesn't behave as described, check the Global patch notes.",
   "note": "Stacks are listed row 0 first (row 0 fires first and sits directly above the key in game). null = empty row. A trailing '?' on a skill name marks an icon-matched row that the source didn't name."
  },
  "changelog": [
+  {
+   "date": "2026-10-02",
+   "text": "Chanter: the Late game card now explains the Dark Crush build (no-cooldown Dark Crush, the Piercing Strike chain, why it's one entry, delay, how to check your timing). Its Early card no longer uses stigmas. Sorcerer: new Early card for levels 1–21 with no stigmas (the Korean leveling setup on ice AoE), plus a levels 22–36 version that adds stigmas as slots open (22 / 27 / 32 / 37). Fixed: Ice Chain costs MP; Flame Arrow refills it. Macro rows now show which skills are stigmas, which aren't in your Global 4, and the level each skill is learned."
+  },
   {
    "date": "2026-10-01",
    "text": "Site reorganized: one page per class (overview, macros, stigmas, skills, specializations, tier list, gear, patches) plus a home page with the shared basics. New for every class: how it plays, what it brings to a party, core mechanics, opener, common mistakes, class-specific gear notes and patch history. New home panel: gear and progression (stat lines, stones, Pantheon, Arcana, boards, Pet Genus)."
@@ -424,8 +428,8 @@
      "Hellfire",
      "Ice Chain"
     ],
-    "why": "No mouse software needed and only Hellfire is pressed by hand. Element Enhancement, Fire Wall and Cold Storm fire by themselves. Fire Wall and Cold Storm alone are about a quarter of Sorcerer damage on the meter, so missing them by hand costs more than the extra entries do. The Bittercold Wind line appears 3 times out of 6, so your main damage line still gets most turns. That's how this layout gets around the usual 'Sorcerer wants one line' rule. Delayed Explosion leads its own entry, so its damage-taken window is usually up when you fire Hellfire.",
-    "tip": "Opener: Element Enhancement → Delayed Explosion → fully charged Hellfire → hold Flame Arrow + macro key. After that, fully charge Hellfire by hand every time it comes back, ideally right after Delayed Explosion lands. Korean dummy numbers with endgame gear (43% cooldown reduction, 112%+ Combat Speed): Hellfire 26–28 casts/min, about 960–1,000 total hits. Fresh Global characters will see fewer. If the boss moves a lot, Fire Wall and Cold Storm land on empty ground, so for those fights move them to a key you press. Ice Chain (no cooldown) stays on its own key for trash packs and MP.",
+    "why": "Needs all 4 Global stigmas (4th slot at level 37), so use the Early game card until then. No mouse software needed and only Hellfire is pressed by hand. Element Enhancement, Fire Wall and Cold Storm fire by themselves. Fire Wall and Cold Storm alone are about a quarter of Sorcerer damage on the meter, so missing them by hand costs more than the extra entries do. The Bittercold Wind line appears 3 times out of 6, so your main damage line still gets most turns. That's how this layout gets around the usual 'Sorcerer wants one line' rule. Delayed Explosion leads its own entry, so its damage-taken window is usually up when you fire Hellfire.",
+    "tip": "Opener: Element Enhancement → Delayed Explosion → fully charged Hellfire → hold Flame Arrow + macro key. After that, fully charge Hellfire by hand every time it comes back, ideally right after Delayed Explosion lands. Korean dummy numbers with endgame gear (43% cooldown reduction, 112%+ Combat Speed): Hellfire 26–28 casts/min, about 960–1,000 total hits. Fresh Global characters will see fewer. If the boss moves a lot, Fire Wall and Cold Storm land on empty ground, so for those fights move them to a key you press. Ice Chain (no cooldown) stays on its own key for trash packs. It costs 120 MP; Flame Arrow is what refills MP.",
     "patch": "Sep 16 (KR/TW): Fire Mark procs 100% and Blaze no longer consumes it. The Global database still shows the old 20% Fire Mark. Until Flame Arrow reaches skill level 12 (option 4 adds Fire Mark) and 16 (option 5 resets Blaze), Blaze fires less often on Global.",
     "alts": [
      {
@@ -554,48 +558,13 @@
    "early": {
     "macros": [
      [
-      "Delayed Explosion",
-      "Winter's Shackles",
-      null,
-      null
-     ],
-     [
       "Bittercold Wind",
       "Blaze",
-      "Firestorm",
-      "Wish of Concentration"
-     ],
-     [
-      "Element Enhancement",
-      "Fire Wall",
-      "Cold Storm",
-      "Frost Burst"
-     ],
-     [
-      "Delayed Explosion",
-      "Winter's Shackles",
-      null,
-      null
-     ],
-     [
-      "Bittercold Wind",
-      "Blaze",
-      "Firestorm",
-      "Wish of Concentration"
-     ],
-     [
-      "Bittercold Wind",
-      "Blaze",
-      "Firestorm",
-      "Wish of Concentration"
+      "Frost Burst",
+      "Ice Chain"
      ]
     ],
     "delays": [
-     10,
-     10,
-     10,
-     10,
-     10,
      10
     ],
     "hold": [
@@ -603,22 +572,50 @@
      "Macro key"
     ],
     "manual": [
+     "Winter's Shackles",
+     "Frost",
      "Hellfire",
-     "Ice Chain",
-     "Frost"
+     "Wish of Concentration"
     ],
-    "why": "Same 6-entry layout as Late game, so you set it up once and it grows with you. Rows for skills you haven't learned are skipped. Bittercold Wind (Lv 3), Blaze (Lv 4) and Firestorm (Lv 1) work from the start. Winter's Shackles (Lv 8) fires from the Delayed Explosion entries, and Frost Burst (Lv 10) from the Element Enhancement entries. Wish of Concentration joins at 12. The stigma rows (Delayed Explosion, Element Enhancement, Fire Wall, Cold Storm) fill in at level 22.",
-    "tip": "Press Hellfire yourself from Lv 14 and fully charge it. Frost (Lv 7) on its own key sets up Frost Burst. Ice Chain (no cooldown) is your mana and trash-pack tool. Blaze only hits a target with Fire Mark, so it fires less early. Pushing Flame Arrow to skill level 12 and 16 (options 4 and 5) fixes that. In open-world packs, press Winter's Shackles yourself when the pack reaches you.",
+    "why": "For levels 1–21, with no stigmas yet (the first slot opens at 22). Built from the Korean leveling guides: until Flame Arrow reaches skill level 16, Sorcerer levels on ice AoE, not fire. Ice Chain (Lv 1) is your main hit on packs: it hits 4 targets and slows them, which feeds the Cold Snap passive. Bittercold Wind (Lv 3) hits 4 and goes first. Frost Burst (Lv 10) fires whenever a target is frozen. Blaze (Lv 4) sits above Ice Chain, but it only fires when Fire Mark procs (20% on fire hits in the Global database). When it does, it hits harder and gives back 100 MP.",
+    "tip": "MP: Ice Chain costs 120 MP, and every Flame Arrow hit restores 100, so holding both keeps you roughly even. If you run low, let go of the macro key for a few Flame Arrows. From Lv 21 the Grace of Enhancement passive gives +20% PvE damage only while MP is at 25% or more, so don't run dry. Winter's Shackles (Lv 8): press it when the pack is on you. Frost (Lv 7) freezes, and its option 3 resets Frost Burst, so Frost → Frost Burst is your burst. Hellfire (Lv 14): a 1-charge cast is enough for packs (Korean leveling guide); fully charge it on bosses. Wish of Concentration (Lv 12): before big pulls and bosses.",
     "alts": [
      {
-      "t": "One-line version (this sheet's old early card)",
-      "s": "Just the Bittercold Wind line, with everything else pressed by hand. It's simpler to set up, but you have to keep Winter's Shackles and the AoEs going yourself.",
+      "t": "Levels 22–36: add stigmas by hand as slots open",
+      "s": "Keep the same line and press your stigmas yourself. Slot order (Korean beginner path): 22 Element Enhancement, 27 Delayed Explosion, 32 Fire Wall, 37 Cold Storm. On bosses: Element Enhancement → Delayed Explosion → Hellfire inside the Delayed Explosion window → hold. Fire Wall goes down where the pack or boss stands. At 37, with all 4 stigmas, switch to the Late game card.",
       "macros": [
        [
         "Bittercold Wind",
         "Blaze",
+        "Frost Burst",
+        "Ice Chain"
+       ]
+      ],
+      "hold": [
+       "Flame Arrow",
+       "Macro key"
+      ],
+      "extra": [
+       {
+        "label": "Stigma key, press yourself (fills as slots open)",
+        "stack": [
+         "Element Enhancement",
+         "Delayed Explosion",
+         "Fire Wall",
+         "Cold Storm"
+        ]
+       }
+      ]
+     },
+     {
+      "t": "Bosses once Flame Arrow is skill level 16 (Korean Jan guide one-button)",
+      "s": "When Flame Arrow reaches skill level 16 (options 4 and 5: it applies Fire Mark and resets Blaze), Sorcerer switches to fire. This is the leveling guide's one-button line from that point. Hold Flame Arrow with it, and press Hellfire and the stigmas yourself.",
+      "macros": [
+       [
+        "Wish of Concentration",
+        "Blaze",
         "Firestorm",
-        "Wish of Concentration"
+        "Frost Burst"
        ]
       ],
       "hold": [
@@ -648,7 +645,9 @@
        "Macro key"
       ]
      }
-    ]
+    ],
+    "src": "Korean leveling guides: Inven Nov 20, 2025 (early main quests) + PvE guide (Nov 2025 – Jan 2026)",
+    "link": "https://www.inven.co.kr/board/aion2/6453/66"
    },
    "full": {
     "src": "Inven 8/27 top-DPS post (image-verified: both lines exactly as shown)",
@@ -877,7 +876,7 @@
    "tw": "護法星",
    "role": "Staff · support / melee",
    "late": {
-    "src": "Inven 9/17 (post-patch), image-verified",
+    "src": "Inven Sep 17 optimizer guide (image-verified) + Korean Dark Crush timing tests (Aug 14 – Sep 4)",
     "link": "https://www.inven.co.kr/board/aion2/6451/22932",
     "queue": "Not stated in the source, so test both",
     "macros": [
@@ -900,13 +899,13 @@
      "Sprint Mantra",
      "Recuperation"
     ],
-    "why": "\"Dark–Spin–Impact–Incandescent\" was the most stable order. Holding Gust Rampage adds its stagger cancel, which lowers its cooldown and keeps the damage going.",
-    "tip": "Stack Guardian Blessing on top of Power of the Storm so it never gets forgotten. That frees keys for Undefeated Mantra and Sprint Mantra, which are toggle skills that must never go in a macro, because a second press switches them off. Marchutan's Wrath is no longer required, so swap in a utility stigma or Fracturing Blow. Dark Crush and Onslaught go to 20, and Spinning Strike and Recuperation are close behind. Passives: Wind's Promise, Impact Hit, Attack Preparation.",
-    "patch": "Sep 16: Guardian Blessing 5 min → 2 min. Earlier bugs where Marchutan's Wrath or Spinning Strike got eaten are fixed.",
+    "why": "This is the Dark Crush build, and it needs only one macro entry. Dark Crush can only be used for 2 s after a ranged skill: Impactful Crush or Spinning Strike (Marchutan's Wrath gives 3 s, but it isn't in the Global 4). With option 5 (skill level 16) Dark Crush has no cooldown, so while a window is open, row 0 is ready on every macro turn. The macro then casts Dark Crush, the Piercing Strike chain (option 4), and Dark Crush again until the window closes. Korean players count about 3 Dark Crush / Piercing Strike casts per window. When the window closes, Dark Crush isn't usable, so the macro drops to rows 1–2 and casts Spinning Strike or Impactful Crush. That opens the next window. Incandescent Blow fills the gaps. A second entry only makes the macro check Dark Crush less often during its 2 s window.",
+    "tip": "Settings: one entry, delay 10 ms (raise it to 30–50 ms only if skills get skipped), and Dark Crush options 3 · 4 · 5 (crit on hit, Piercing Strike chain, no cooldown). Hold Onslaught + the macro key, and Gust Rampage too for its stagger cancel. How to check it's working: in the DPS meter, the average time between Dark Crush casts should be about 750 ms at 122% Combat Speed, ~800 ms at 118.5% and ~850 ms at 90.5%. Those are Korean values after the Aug 26 patch added 100 ms. If you're much slower, check Combat Speed and ping before the macro. If Incandescent Blow fires right after Impactful Crush instead of Dark Crush, that's the Sep 4 Korean bug tied to Impactful Crush's +30% skill speed option; drop that option until it's fixed on Global. Stack Guardian Blessing on top of Power of the Storm. Undefeated Mantra and Sprint Mantra are toggles: never put them in a macro, because a second press switches them off.",
+    "patch": "Aug 26: Dark Crush now opens after any ranged skill (was: stunned target). Minimum cancel time added; the Onslaught → Dark Crush weave got 100 ms slower. Sep 16: Guardian Blessing 5 min → 2 min.",
     "alts": [
      {
       "t": "Inven 9/3 two-line test (worth trying)",
-      "s": "The three Dark Crush openers stop overlapping, which gave +3–5 Dark Crush/min and ~+100–150k in Expedition. That's one player's full-auto test, not a top-end setup.",
+      "s": "The three Dark Crush openers stop overlapping, which gave +3–5 Dark Crush/min and ~+100–150k in Expedition. That's one player's full-auto test, not a top-end setup. Global: Marchutan's Wrath isn't in your 4 stigmas, so its row is skipped. What's left is Dark Crush / Spinning Strike / Incandescent Blow plus Impactful Crush on its own entry.",
       "macros": [
        [
         "Dark Crush",
@@ -1020,6 +1019,9 @@
        null
       ]
      }
+    ],
+    "delays": [
+     10
     ]
    },
    "early": {
@@ -1031,21 +1033,24 @@
       "Incandescent Blow"
      ]
     ],
+    "delays": [
+     10
+    ],
     "hold": [
      "Onslaught",
      "Macro key"
     ],
     "manual": [
      "Rushing Smash",
-     "Undefeated Mantra",
+     "Wave Blow",
      "Recuperation"
     ],
-    "why": "The video used two entries (Spinning Strike alone, then the Dark Crush stack). One line with Dark Crush in row 0 does the same job with half the loop turns. Spinning Strike (20 m, hits 4, +15% crit damage) and Impactful Crush open Dark Crush windows, and Dark Crush in row 0 catches every one.",
-    "tip": "Add Gust Rampage as a third held key once you have it. If Impactful Crush isn't learned yet, put Marchutan's Wrath in that row. Keep Rushing Smash manual because it's a charge skill.",
+    "why": "The same Dark Crush line as Late game, and every skill in it is a regular skill, so it works from level 4. Impactful Crush (Lv 3) opens Dark Crush (Lv 4) for 2 s; Spinning Strike joins at Lv 14 (its row is skipped until then). Skill points stop at skill level 10, so while leveling Dark Crush still has its 5 s cooldown: one Dark Crush per window. The Piercing Strike chain comes at skill level 12 and no cooldown at 16 (through gear lines, Daevanion and Arcana). The macro doesn't change when that happens.",
+    "tip": "Rushing Smash (Lv 1) gap-closes to the next pack; keep it manual if you take its charge option. Impactful Crush stuns normal mobs, so Wave Blow (Lv 12, needs a stunned target) hits hard right after it. Add Gust Rampage (Lv 5) as a third held key once you're fighting bosses with stagger bars. Stigmas from level 22 don't change the macro. Slot them in this order: 22 Undefeated Mantra (toggle it on), 27 Power of the Storm, 32 Guardian Blessing (stack it on Power of the Storm's key), 37 Sprint Mantra (toggle).",
     "alts": [
      {
       "t": "Video version",
-      "s": "Two entries, where the improved build needs one.",
+      "s": "Two entries, where the improved build needs one. Marchutan's Wrath is a stigma (level 22+), so before 22 that row is empty.",
       "macros": [
        [
         "Spinning Strike",
@@ -1065,7 +1070,9 @@
        "Macro key"
       ]
      }
-    ]
+    ],
+    "src": "Same line as the Late game card (Inven Sep 17 optimizer guide); every row is a regular skill",
+    "link": "https://www.inven.co.kr/board/aion2/6451/22932"
    },
    "full": {
     "src": "Inven 9/3 full-auto test (lines 1–2 image-verified) + 9/17 buff stack",
@@ -1102,7 +1109,7 @@
      "Rushing Smash"
     ],
     "why": "Lines 1–2 are the '100% in-game macro' setup a 900k Chanter built so nothing needs pressing: splitting Impactful Crush out stops the three Dark Crush openers from overlapping (+3–5 Dark Crush/min). Line 3 adds the 9/17 guide's buff stack so Power of the Storm and Guardian Blessing run themselves.",
-    "loss": "Three lines means each slot is checked a third of the time. Power of the Storm is a party burst buff, so automating it can waste it outside burst windows, and in the Abyss 'Battlefield Might' replaces it during boss fights.",
+    "loss": "Three lines means each slot is checked a third of the time. Power of the Storm is a party burst buff, so automating it can waste it outside burst windows, and in the Abyss 'Battlefield Might' replaces it during boss fights. Global: Marchutan's Wrath isn't in the Global 4 stigma build, so its row is skipped unless you slot it.",
     "tip": "Never macro Undefeated or Sprint Mantra: they're toggles, and a second press switches them off."
    }
   },
