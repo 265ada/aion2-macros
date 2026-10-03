@@ -105,7 +105,265 @@
      "Inven Aug 30 in-game macro",
      "https://www.inven.co.kr/board/aion2/6448/30880"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Keen Strike",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Rending Blow",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Leaping Slam",
+      "12",
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      "Mocking Blade",
+      "16",
+      [
+       1,
+       5
+      ]
+     ],
+     [
+      "Overhead Slam",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Sword Aura Rampage",
+      "",
+      []
+     ],
+     [
+      "Ankle Slice",
+      "12",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Crushing Wave",
+      "12",
+      [
+       1,
+       4
+      ]
+     ],
+     [
+      "Rush Strike",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Aerial Snare",
+      "12",
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      "Ruinous Blow",
+      "20",
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     [
+      "Defiance (gladiator)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Impact Hit",
+     "Attack Preparation",
+     "Experienced Counterstrike",
+     "Murderous Burst",
+     "Identify Weakness"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Lunge Stance"
+     ],
+     [
+      2,
+      "Zikel's Blessing"
+     ],
+     [
+      3,
+      "Wave Armor"
+     ],
+     [
+      4,
+      "Rage Burst"
+     ],
+     [
+      0,
+      "Lifestealing Blade"
+     ],
+     [
+      0,
+      "Focused Block"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1)"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1)"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1)"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1)"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1)"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1)"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Impact Hit > Attack Preparation > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Impact Hit > Attack Preparation > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Impact Hit > Attack Preparation > > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Impact Hit > Attack Preparation > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Impact Hit > Attack Preparation > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Impact Hit > Attack Preparation > Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Impact Hit > Attack Preparation >  Experienced Counterstrike > Might > Precision > Accuracy > Crit > Attack",
+     "Rings": "Main Skill 1 > Main Skill 2 > Main Skill 3 > Might > Precision > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "You will experience mana issues until you get RMB to lvl16 so hold down lmb + rmb (macro) early on as your lmb will be your source of mana"
+    ],
+    "wings": "Eroded Wings (45%) / Talisra Wings (23%) /  Awakened Pride Wings (12.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Front Damage Boost (IF Frontal Build) > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    }
+   }
   },
   "templar": {
    "glance": "Main tank whose damage runs through Judgment, opened by shield attacks.",
@@ -206,7 +464,267 @@
      "Templar Daevanion nodes",
      "https://www.inven.co.kr/board/aion2/6438/22546"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Vicious Strike",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Pummel",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Poach",
+      "12",
+      [
+       1,
+       4
+      ]
+     ],
+     [
+      "Shield Smite",
+      "12",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Judgment",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Flash Rampage",
+      "",
+      []
+     ],
+     [
+      "Debilitating Smash",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Warding Strike",
+      "16",
+      [
+       1,
+       5
+      ]
+     ],
+     [
+      "Shield Rush",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Annihilate",
+      "12",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Punishment",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Defiance (templar)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Fury",
+     "Impact Hit (templar)",
+     "Insulting Roar"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Battlefield Banner"
+     ],
+     [
+      2,
+      "Taunt"
+     ],
+     [
+      3,
+      "Noble Armor"
+     ],
+     [
+      4,
+      "Doom Shield"
+     ],
+     [
+      0,
+      "Executing Blade"
+     ],
+     [
+      0,
+      "Shield of Protection"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1)"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1)"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1)"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1)"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1)"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1)"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Fury > Impact Hit > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Fury > Impact Hit > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost >  Fury > Impact Hit  > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance >  Fury > Impact Hit > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed >  Fury > Impact Hit > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Fury > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Fury > Impact Hit > Insulting Roar > Might > Precision > Accuracy > Crit > Attack > N/A",
+     "Rings": "Vicious Strike > Punishment > Judgment > Might > Precision > Pummel > Warding Strike > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Manually press your Judgement buff and noble aura off-cd",
+     "Option 1: Hold down 2 buttons. LMB (Left click) + In-Macro Key of your choice (RMB Recommended)",
+     "Option 2: Mouse button (either hold or toggle) which uses both lmb + in-game macro",
+     "Macro: [ = left click , ] = ingame macro"
+    ],
+    "wings": "Eroded Wings (77%) / Talisra Wings (18.5%) /  Brawler Wings (3.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Front Damage Boost > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    }
+   }
   },
   "assassin": {
    "glance": "Back-attack burst: build Insignias, detonate them, chain Heart Gore on crits.",
@@ -296,7 +814,262 @@
      "Attack-speed cap tests",
      "https://www.inven.co.kr/board/aion2/6449/10014"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Quick Slice",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Savage Roar",
+      "16",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Shadowstrike",
+      "12",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Ambush",
+      "12",
+      [
+       1,
+       2
+      ]
+     ],
+     [
+      "Heart Gore",
+      "20",
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     [
+      "Storm Rampage",
+      "16",
+      [
+       4,
+       5
+      ]
+     ],
+     [
+      "Whirlwind Slice",
+      "12",
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      "Flash Slice",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Infiltrate",
+      "12",
+      [
+       1,
+       2
+      ]
+     ],
+     [
+      "Shadow Fall",
+      "12",
+      [
+       1,
+       2
+      ]
+     ],
+     [
+      "Insignia Explosion",
+      "20",
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Defiance (assassin)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Rear Smite",
+     "Assault Stance",
+     "Exploit Weakness",
+     "Impact Hit (assassin)"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Illusive Clone"
+     ],
+     [
+      2,
+      "Swift Contract"
+     ],
+     [
+      3,
+      "Triniel's Dagger"
+     ],
+     [
+      4,
+      "Savage Fang"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1)"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1)"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1)"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1)"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1)"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1)"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Spirit Strike > Mental Focus > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Spirit Strike > Mental Focus > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Spirit Strike > Mental Focus > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Spirit Strike > Mental Focus > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Spirit Strike > Mental Focus > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Wind's Promise > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Rear Smite > Assault Stance> Exploit Weakness > Might > Precision > Accuracy > Crit > Attack > N/A",
+     "Rings": "Main Skill 1 > Main Skill 2 > Main Skill 3 > Might > Precision > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Manually press your buffs and other active skills outside the macro. Hold lmb + ingame macro. Dash when needed.",
+     "Hold down 2 buttons: LMB (Left click) + In-Macro Key of your choice (RMB Recommended)",
+     "(Ignore the 5 Key (Block skill) and Green Hand icons as they are your 5th and 6th stigmas which we wont have at global launch)"
+    ],
+    "wings": "Eroded Wings (45%) / Talisra Wings (23%) /  Awakened Pride Wings (12.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Back Damage Boost > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    },
+    "guide": "https://aion2-assassin-guide.onrender.com/#skills"
+   }
   },
   "ranger": {
    "glance": "Bow sniper: Marking Shot crits, Deadshot charges and the Tempest Shot cancel.",
@@ -385,7 +1158,272 @@
      "Hits vs DPS (Aug 30)",
      "https://www.inven.co.kr/board/aion2/6450/19104"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Snipe",
+      "20",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Tempest Shot",
+      "20",
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Snare Shot",
+      "12",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Marking Shot",
+      "16",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Drill Dart",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Arrow Scattershot",
+      "",
+      []
+     ],
+     [
+      "Gale Arrow",
+      "20",
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     [
+      "Explosion Trap",
+      "12",
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      "Burst Arrow",
+      "16+",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Suppressing Arrow",
+      "12",
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      "Deadshot",
+      "20",
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     [
+      "Defiance (ranger)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Focused Eye",
+     "Hunter's Resolve",
+     "Hunter's Soul",
+     "Concentrated Fire",
+     "Vigilant Eye",
+     "Rooting Eye"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Vaizel's Authority"
+     ],
+     [
+      2,
+      "Bow of Blessing"
+     ],
+     [
+      3,
+      "Supporting Fire"
+     ],
+     [
+      4,
+      "Griffon Arrow"
+     ],
+     [
+      0,
+      "Mother Nature's Breath"
+     ],
+     [
+      0,
+      "Explosive Arrow"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1) Snipe (2) Tempest Shot (3) Focused Eye (4) Hunter's Resolve"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1) Drill Dart (2) Snipe (3) Tempest Shot  (4) Burst Arrow"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1) Deadshot (2) Gale Arrow (3) Burst Arrow"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1) Hunter's Resolve (2) Revitalization Contract (3) Vigilant Eye (4) Rooting Eye"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1) Focused Eye (2) Melee Fire (3) Concentrated Fire"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1) Focused Eye (2) Hunter's Resolve (3) Deadshot"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Focused Eye > Hunter's Resolve > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Focused Eye > Hunter's Resolve > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Focused Eye > Hunter's Resolve > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Focused Eye > Hunter's Resolve > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Focused Eye > Hunter's Resolve > Perfect Chance",
+     "Cape": "Focused Eye > Hunter's Resolve > Double Chance > Perfect Chance"
+    },
+    "acc": {
+     "Earring & Necklace": "Focused Eye > Hunter's Resolve > Might > Precision > Accuracy > Crit > Attack",
+     "Rings": "Gale Arrow > Deadshot  > Tempest Shot > Drill Dart > Might > Precision > Burst Arrow > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion. Freedom and death to fill in / Crit and Accuracy / Life",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Option 1: Hold down 2 buttons. LMB (Left click) + In-Macro Key of your choice (RMB Recommended)",
+     "Option 2: Mouse button (either hold or toggle) which uses both lmb + in-game macro",
+     "Manually Press E and upkeep the debuff. Can also move the 3 buffs out of the macro and manually press them pre-pull",
+     "Macro: [ = left click , ] = ingame macro"
+    ],
+    "wings": "Eroded Wings (54.5%) / Talisra Wings (18.5%) /  Illusory Echo Wings (6.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance  Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Front Damage Boost (IF Frontal Build) > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    },
+    "guide": "https://docs.google.com/document/d/1evrt_6e6WSHRT1vMem2i3O7ZlfANJbqyZoSn66IFrBo/edit?tab=t.mtdd5mt631lc",
+    "creator": "https://www.twitch.tv/j0eitv"
+   }
   },
   "sorcerer": {
    "glance": "Ranged nuker: fully charged Hellfire after Delayed Explosion, plus ground AoEs.",
@@ -479,7 +1517,268 @@
      "1,000-hit checklist (Aug 29)",
      "https://www.inven.co.kr/board/aion2/6453/16734"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Flame Arrow",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Ice Chain",
+      "12",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Firestorm",
+      "20",
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     [
+      "Bittercold Wind",
+      "20",
+      [
+       1,
+       2,
+       4
+      ]
+     ],
+     [
+      "Blaze",
+      "20",
+      [
+       1,
+       3,
+       5
+      ]
+     ],
+     [
+      "Flame Scattershot",
+      "",
+      []
+     ],
+     [
+      "Frost",
+      "12",
+      [
+       1,
+       2
+      ]
+     ],
+     [
+      "Winter's Shackles",
+      "16",
+      [
+       3,
+       5
+      ]
+     ],
+     [
+      "Frost Burst",
+      "12",
+      [
+       1,
+       4
+      ]
+     ],
+     [
+      "Wish of Concentration",
+      "20",
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     [
+      "Hellfire",
+      "20",
+      [
+       1,
+       3,
+       5
+      ]
+     ],
+     [
+      "Defiance (sorcerer)",
+      "16",
+      [
+       2,
+       3
+      ]
+     ]
+    ],
+    "passives": [
+     "Robe of Flame",
+     "Fire Mark"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Element Enhancement"
+     ],
+     [
+      2,
+      "Fire Wall"
+     ],
+     [
+      3,
+      "Delayed Explosion"
+     ],
+     [
+      4,
+      "Cold Storm"
+     ],
+     [
+      0,
+      "Steel Barrier"
+     ],
+     [
+      0,
+      "Glacial Smite"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1) Wish of Concentration (2) Hellfire (3) Flame Arrow (4) Robe of Flame"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1) Wish of Concentration (2) Hellfire (3) Blaze (4) Firestorm"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1) Bittercold Wind (2) Winter's Shackles"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1) Fire Mark"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1) Robe of Flame"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1) Flame Arrow (2) Firestorm (3) Robe of Flame (4) Fire Mark"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Robe of Flame > Fire Mark > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Robe of Flame > Fire Mark >  Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Robe of Flame > Fire Mark >  Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Robe of Flame > Fire Mark >  Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Robe of Flame > Fire Mark >  Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Robe of Flame > Fire Mark >  Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Robe of Flame > Might > Precision > Fire Mark >  Accuracy > Crit > Attack > N/A",
+     "Rings": "Wish of Concentration > Hellfire > Might > Precision > Bittercold Wind > Blaze > Flame Arrow > Firestorm",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Elemental Enhancement (Buff) > Delayed Explosion (Debuff for Hellfire + Glacial Smite) > Hellfire > Fire Wall > Cold Storm > Glacial Smite > Bitterwind Cold > Wish of Concentration (CD reset + buff) > Bitterwind Cold > Blaze > Firestorm > Winter's Shackles (Buff, you can also use this on opener instead) > Delayed Explosion > Hellfire",
+     "Blaze + Firestorm (RMB) + LMB on downtime, send everything else whenever they’re up",
+     "In-game Macro: RMB (right click)"
+    ],
+    "wings": "Talisra Wings (91.5%) / Eroded Wings (5%) /  Brawler Wings (2.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    },
+    "guide": "https://docs.google.com/document/d/1XVciQ8mC7bHo7bAApRk7hLwmT61MxVWTm2III6rUzsM/edit?tab=t.3up96tckgsd3"
+   }
   },
   "spiritmaster": {
    "glance": "Summoner: four spirits on timers feed Elemental Fusion and Jointstrikes.",
@@ -568,7 +1867,264 @@
      "Inven Sep 6 macro settings",
      "https://www.inven.co.kr/board/aion2/6454/8421"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Cold Shock",
+      "16+",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Combustion",
+      "20",
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     [
+      "Summon: Fire Spirit",
+      "16-20",
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Summon: Water Spirit",
+      "16-20",
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Jointstrike: Curse",
+      "16-20",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     [
+      "Rapid Scattershot",
+      "",
+      []
+     ],
+     [
+      "Summon: Earth Spirit",
+      "12-16",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Dimensional Control",
+      "16",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Summon: Wind Spirit",
+      "",
+      []
+     ],
+     [
+      "Soul's Cry",
+      "",
+      []
+     ],
+     [
+      "Elemental Fusion",
+      "20",
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Defiance (spiritmaster)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Spirit Strike",
+     "Mental Focus",
+     "Element Unification",
+     "Spirit Revitalization"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Summon: Ancient Spirit"
+     ],
+     [
+      2,
+      "Enhance: Spirit's Benediction"
+     ],
+     [
+      3,
+      "Jointstrike: Corrode"
+     ],
+     [
+      4,
+      "Flame Blessing"
+     ],
+     [
+      0,
+      "Jointstrike: Destructive Attack"
+     ],
+     [
+      0,
+      "Siphon"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1) Elemental Fusion (2) Combustion (3) Spirit Strike (4) Mental Focus"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1) Elemental Fusion (2) Curse (3) Fire Spirit (4) Cold Shock"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1) Combustion (2) Water Spirit"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1) Spirit Strike (2) Elemental Unification (3) Spirit Revitalization"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1) Mental Focus"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1) Curse (2) Fire/Water Spirit (3) Spirit Strike (4) Mental Focus"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Spirit Strike > Mental Focus > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Spirit Strike > Mental Focus > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Spirit Strike > Mental Focus > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Spirit Strike > Mental Focus > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Spirit Strike > Mental Focus > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Wind's Promise > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Spirit Strike > Mental Focus > Might > Precision > Attack Preparation > Accuracy > Crit > Attack > N/A",
+     "Rings": "Elemental Fusion > Combustion > Curse > Might > Precision > Fire Spirit > Water Spirit > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Manually Press Keys 1-3 buffs and then hold down LMB + RMB (Macro). Your Wind Spirit (4 Key) is kinda useless - Mainly used for mobbing. Can also summon your pets manually a few seconds before pre-pull then start your rotation.",
+     "Option 1: Hold down 2 buttons. LMB (Left click) + In-Macro Key of your choice (RMB Recommended)",
+     "Option 2: Mouse button (either hold or toggle) which uses both lmb + in-game macro",
+     "Macro: [ = left click , ] = ingame macro"
+    ],
+    "wings": "Eroded Wings (45%) /  Talisra Wings (43.5%) / Brawler Wings (5.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    },
+    "guide": "https://aion2-elementalist-guide.netlify.app/#overview"
+   }
   },
   "cleric": {
    "glance": "Healer with real damage: Chain of Torment opens Condemnation, Earth Punishment makes it crit.",
@@ -665,7 +2221,264 @@
      "Inven PvE guide (May, skills and macros)",
      "https://www.inven.co.kr/board/aion2/6452/19538"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Earth's Retribution",
+      "12",
+      [
+       2,
+       5
+      ]
+     ],
+     [
+      "Judgment Thunder",
+      "20",
+      [
+       1,
+       2,
+       5
+      ]
+     ],
+     [
+      "Debilitating Mark",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Divine Aura",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Chain of Torment",
+      "12",
+      [
+       2,
+       4
+      ]
+     ],
+     [
+      "Lightning Strike Scattershot",
+      "",
+      []
+     ],
+     [
+      "Light of Regeneration",
+      "16",
+      [
+       4,
+       5
+      ]
+     ],
+     [
+      "Condemnation",
+      "20",
+      [
+       2,
+       4,
+       5
+      ]
+     ],
+     [
+      "Healing Light",
+      "20",
+      [
+       1,
+       4,
+       5
+      ]
+     ],
+     [
+      "Radiant Recovery",
+      "20",
+      [
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Bolt",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Defiance (cleric)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Empyrean Lord's Grace",
+     "Earth's Grace",
+     "Healing Enhancement",
+     "Warm Benediction"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Light of Protection"
+     ],
+     [
+      2,
+      "Earth Punishment"
+     ],
+     [
+      3,
+      "Noble Aura"
+     ],
+     [
+      4,
+      "Prayer of Amplification"
+     ]
+    ],
+    "stigmaNotes": [
+     "Stigmas above are more personal dmg focus once stuff is on farm. Can swap out #3 or #4 for Benevolence or Summon Resurrection if needed for prog. Swap out Light of Protection if running with a chanter."
+    ],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1) Condemnation (2) Bolt (3) Empyrean Lord's Grace (4) Earth's Grace"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1) Condemnation (2) Bolt (3) Radiant Recovery"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1) Divine Aura (2) Judgment Thunder"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1) Empyrean Lord's Grace"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1) Earth's Grace"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1) Empyrean Lord's Grace (2) Earth's Grace (3) Judgment Thunder"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Empyrean Lord's Grace > Earth's Grace > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Empyrean Lord's Grace > Earth's Grace > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Empyrean Lord's Grace > Earth's Grace > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Empyrean Lord's Grace > Earth's Grace > Perfect Increase > ATK increase > Crit > Atk",
+     "Gloves/Boots": "Speed > Empyrean Lord's Grace > Earth's Grace > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Empyrean Lord's Grace > Earth's Grace > Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Empyrean Lord's Grace > Earth's Grace > Might > Precision > Healing Enhancement > Accuracy > Crit > Attack",
+     "Rings": "Condemnation > Bolt > Radiant Recovery > Might > Precision > Divine Aura > Judgment Thunder> Healing Light > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Hold Down The Macro / Charge your (3) Bolt / Use Heals when needed",
+     "IF running Prayer of Amplification first as that your biggest self buff. Noble Aura is your top 2 damage skill so make sure it's summoned pre pull then go ahead and hold down the macro as well as LMB early on.",
+     "Early on you have to weave in LMB because you won't be able to sustain your mana holding down the macro."
+    ],
+    "wings": "Eroded Wings (45%) / Talisra Wings (35%) /  Illusory Echo Wings (9%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    },
+    "creator": "https://www.twitch.tv/youmadsin"
+   }
   },
   "chanter": {
    "glance": "Support melee: party buffs plus Dark Crush, opened by ranged skills.",
@@ -766,7 +2579,791 @@
      "Inven PvE guide (327k views)",
      "https://www.inven.co.kr/board/aion2/6451/116"
     ]
-   ]
+   ],
+   "sheet": {
+    "skills": [
+     [
+      "Onslaught",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Incandescent Blow",
+      "16",
+      [
+       3,
+       5
+      ]
+     ],
+     [
+      "Rushing Smash",
+      "12",
+      [
+       1,
+       4
+      ]
+     ],
+     [
+      "Impactful Crush",
+      "12",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Dark Crush",
+      "20",
+      [
+       3,
+       4,
+       5
+      ]
+     ],
+     [
+      "Gust Rampage",
+      "",
+      []
+     ],
+     [
+      "Heat Wave Blow",
+      "12",
+      [
+       3,
+       4
+      ]
+     ],
+     [
+      "Recuperation",
+      "16-20",
+      [
+       1,
+       4
+      ]
+     ],
+     [
+      "Tremor Crush",
+      "12",
+      [
+       2,
+       3
+      ]
+     ],
+     [
+      "Wave Blow",
+      "12",
+      [
+       1,
+       4
+      ]
+     ],
+     [
+      "Spinning Strike",
+      "20",
+      [
+       1,
+       2,
+       3
+      ]
+     ],
+     [
+      "Defiance (chanter)",
+      "16",
+      [
+       3,
+       5
+      ]
+     ]
+    ],
+    "passives": [
+     "Wind's Promise",
+     "Impact Hit (chanter)",
+     "Attack Preparation (chanter)",
+     "Earth's Promise",
+     "Inspiring Spell"
+    ],
+    "stigmas": [
+     [
+      1,
+      "Undefeated Mantra"
+     ],
+     [
+      2,
+      "Power of the Storm"
+     ],
+     [
+      3,
+      "Sprint Mantra"
+     ],
+     [
+      4,
+      "Marchutan's Wrath"
+     ],
+     [
+      5,
+      "Guardian Blessing"
+     ],
+     [
+      6,
+      "Focused Defense"
+     ],
+     [
+      6,
+      "Impeding Authority"
+     ]
+    ],
+    "stigmaNotes": [],
+    "cards": [
+     [
+      "Chalice (Vigor)",
+      "Time",
+      "(1) Dark Crush (2) Wind's Promise (3) Impact Hit (4) Onslaught"
+     ],
+     [
+      "Parchment (Vigor)",
+      "Life / Destiny",
+      "(1) Dark Crush (2) Onslaught (3) Spinning Strike"
+     ],
+     [
+      "Compass (Magic)",
+      "Death / Freedom",
+      "(1) Incandescent Blow (2) Recuperation"
+     ],
+     [
+      "Bell (Magic)",
+      "Destruction",
+      "(1) Attack Preparation"
+     ],
+     [
+      "Mirror (Magic)",
+      "Illusion / Wisdom",
+      "(1) Wind's Promise (1) Impact Hit (3) Inspiring Spell (4) Earth's Promise"
+     ],
+     [
+      "Scales",
+      "Destruction",
+      "(1) Spinning Strike (2) Wind's Promise (3) Impact Hit (4) Attack Preparation"
+     ],
+     [
+      "Key",
+      "Attack",
+      "(1) Boss Damage (2) Critical Damage"
+     ],
+     [
+      "Hourglass",
+      "Defense",
+      "(1) Max Attack (2) Boss Attack (3) Critical Attack"
+     ],
+     [
+      "Dice",
+      "Accuracy",
+      "(1) Double Chance"
+     ],
+     [
+      "Lantern",
+      "Evasion",
+      "(1) Endurance"
+     ]
+    ],
+    "gear": {
+     "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
+     "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
+     "Helmet": "Incoming Heal > Wind's Promise > Impact Hit > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Wind's Promise > Impact Hit > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Wind's Promise > Impact Hit > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Wind's Promise > Impact Hit > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Wind's Promise > Impact Hit > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Wind's Promise > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+    },
+    "acc": {
+     "Earring & Necklace": "Wind's Promise > Impact Hit > Attack Preparation > Might > Precision > Accuracy > Crit > Attack > N/A",
+     "Rings": "Dark Crush > Onslaught > Might > Precision > Spinning Strike > Recuperation > Incandescent Blow > Attack",
+     "Bracelets": "Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny",
+     "Brooches": "Might > Precision > Accuracy > Crit > Constitution",
+     "Seals": "Attack > Boss Attack > Max Attack > Crit Attack > PvE Attack > Power Shard Damage Bonus"
+    },
+    "genus": {
+     "Cogni Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Critical Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Natura Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4 & 7):  Multi Hit / Perfect Chance",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Special Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Double Chance",
+      "Line (7): Damage Tolerance > Endurance"
+     ],
+     "Fera Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4): Weapon Damage Boost > Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ],
+     "Varian Board": [
+      "Line (1 & 5): Max Attack > Attack Bonus",
+      "Line (2 & 8): HP Increase %",
+      "Line (3,6,9): Crit, Accuracy > Power Shard if cap is not reached",
+      "Line (4):  Front/Back Damage Boost",
+      "Line (7): DMG Tolerance, PVE DMG Tolerance > Endurance"
+     ]
+    },
+    "notes": [
+     "Manually Press (3) Marchutan when the macro runs out of Dark Crush procs to extend your uptime on Dark Crush",
+     "Macro: [ = left click , ] = ingame macro",
+     "Option 1: Hold down 2 buttons. LMB (Left click) + In-Macro Key of your choice (RMB Recommended)",
+     "Option 2: Mouse button (either hold or toggle) which uses both lmb + in-game macro"
+    ],
+    "wings": "Eroded Wings (45%) / Talisra Wings (23%) /  Awakened Pride Wings (12.5%)",
+    "wingsLevel": "Azure Flash Wings / Awakened Pride Wings / Blue Wave Wings / Brawler Wings / Dramata Nest Wings / Eroded Wings / Forest Spirit Wings / Illusory Echo Wings / Nightmare Wings / Salvation Wings / Talisra / Ultimate Daeva Wings",
+    "enhance": "Double Chance Bonuses > Weapon DMG Boost > Regular DMG Boost > Attack > Accuracy Bonus and Critical Hit",
+    "titles": {
+     "Offensive Titles": "Playing God > Unbound Genus > Guardian of Verteron",
+     "Defensive Title": "Saint of Verteron / Rule All Creation / Dominator of All Dimensions",
+     "Special Titles": "Empty Closet > Through Hell and Back"
+    },
+    "theostones": "Poison and beast performing best early on but later on it's irrelevant all of them perform similarly",
+    "stones": "Front Damage Boost (IF Frontal Build) > Weapon Damage Boost ≈ Critical Damage Boost > Damage Boost > Attack",
+    "pantheon": {
+     "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
+     "Statues": "Priority on Freedom, Death and Space",
+     "Paintings": "Priority on Illusion and Wisdom then Life"
+    }
+   }
   }
+ },
+ "sheet": {
+  "src": "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview",
+  "author": "zxcastform (Discord)",
+  "roadmap": [
+   [
+    "Roadmap",
+    "Vakron Guide"
+   ],
+   [
+    "Go through MSQ to 45 and do some of these while at it or come back later:",
+    "https://www.youtube.com/watch?v=HE1MNfy8Zjo"
+   ],
+   [
+    "1. Sealed Dungeons - these give daevanation crystals for your board + skill points",
+    "Deus Stage 1 Guide"
+   ],
+   [
+    "2. Regional Quests - give daevanation crystals + gear",
+    "https://www.youtube.com/watch?v=2IRfvEWFvqk"
+   ],
+   [
+    "3. Feathers - scrolls for leveling your amulet + stamina + amplification stone shards",
+    "Kromede"
+   ],
+   [
+    "4. Strongholds - scrolls for leveling your belt",
+    "https://www.youtube.com/watch?v=lPAX6cNiXO8"
+   ],
+   [
+    "5. Rifting - sealed dungeons & strongholds in enemy faction (PvP is togglable)",
+    "Ferocious Horn Den"
+   ],
+   [
+    "",
+    "https://www.youtube.com/watch?v=4lT8erUBNAM"
+   ],
+   [
+    "After leveling to 45:",
+    "Ludra Guide"
+   ],
+   [
+    "Go straight into the abyss to grab feathers and your weekly quests",
+    ""
+   ],
+   [
+    "Buy a ring once you have enough abyss points",
+    ""
+   ],
+   [
+    "Finish any side stuff you haven't completed (Feathers are 188 of them)",
+    ""
+   ],
+   [
+    "",
+    ""
+   ],
+   [
+    "Gearing",
+    "Ludra Preparations"
+   ],
+   [
+    "All pieces to +10 and Manastones (should be around ~1400 score) enough for Vakron Sky Island (2* exploration dungeon)",
+    "Weapon, Guard, Rings to +17"
+   ],
+   [
+    "",
+    "Earring and Necklace to +16"
+   ],
+   [
+    "IF it's like KR/TW, Go to the Rift every 3 hours for extra strongholds and dungeons.",
+    "Armor and Bracelet to +15"
+   ],
+   [
+    "",
+    "Class Runes around +5"
+   ],
+   [
+    "Vakron",
+    ""
+   ],
+   [
+    "Do Vakron until you get the full set. IF you have 7/8 pieces and far from pity, do the expedition version instead to hit pity.",
+    "Systems to work on"
+   ],
+   [
+    "Deus Stage 1",
+    "Stigma Points"
+   ],
+   [
+    "Get all Green Cards (Blues are a bonus)",
+    "Skill Points"
+   ],
+   [
+    "Level up your belt and amulet to squeeze some extra gear score and get some more bulk and damage (should be around ~1920 score)",
+    "Board"
+   ],
+   [
+    "Deus Stage 2 + Daevanation Board",
+    "Soulbinding"
+   ],
+   [
+    "Farm Deus till you get all blue cards with ideally some of your main skills to +16 (should be around ~2190 Score)",
+    "Pet Genus"
+   ],
+   [
+    "Kromede",
+    "Pantheon"
+   ],
+   [
+    "Farm Kromede to finish your Accessories",
+    "Crafted Weapon / Guard / Accessories"
+   ],
+   [
+    "If you are not able to craft the Splendent Dark Dragon Lord weapon then just go for the Kromede weapon or something of similar ilvl until you can replace it",
+    ""
+   ],
+   [
+    "",
+    ""
+   ],
+   [
+    "Ferocious Horn Den",
+    ""
+   ],
+   [
+    "Farm Ferocious Horn Den to finish your Guard and Armor pieces (Armor will be used all of season 1). All to +10. (Should be around ~2560).",
+    ""
+   ],
+   [
+    "Deus Stage 3 & 4",
+    ""
+   ],
+   [
+    "Ideally stage 4 but 3 is fine. Farm this till you get all Yellow Cards with the proper skills for your class to hit level 20 on those skills in preparation for Ludra",
+    ""
+   ],
+   [
+    "",
+    ""
+   ],
+   [
+    "Credits to Divided",
+    ""
+   ],
+   [
+    "https://questlog.gg/aion-2/en/character-builder/DestructionWithTheLethalImmunity?build-id=3416",
+    ""
+   ]
+  ],
+  "dailies": [
+   [
+    "",
+    "Main",
+    "Alt"
+   ],
+   [
+    "Daily",
+    "",
+    ""
+   ],
+   [
+    "Duty Quests",
+    "5x",
+    ""
+   ],
+   [
+    "Weekly",
+    "",
+    ""
+   ],
+   [
+    "Ascension Trial",
+    "3.0",
+    "3.0"
+   ],
+   [
+    "Daily Dungeon",
+    "14.0",
+    ""
+   ],
+   [
+    "Battlefield",
+    "3.0",
+    "3.0"
+   ],
+   [
+    "Energy System",
+    "",
+    ""
+   ],
+   [
+    "Dungeons",
+    "*(+120/day, 120/840)",
+    "*(+120/day, 120/840)"
+   ],
+   [
+    "Shugo Festival",
+    "2.0",
+    "2.0"
+   ],
+   [
+    "Nightmare",
+    "2 per day",
+    "2 per day"
+   ],
+   [
+    "Crafting&Shops",
+    "",
+    ""
+   ],
+   [
+    "Substance Morph / Odyle Craft",
+    "20.0",
+    "4.0"
+   ],
+   [
+    "Subscriber Shop",
+    "x",
+    "x"
+   ],
+   [
+    "PvE Weeklies",
+    "12.0",
+    ""
+   ],
+   [
+    "PvP Weeklies",
+    "20.0",
+    ""
+   ],
+   [
+    "Abyss Events",
+    "",
+    ""
+   ],
+   [
+    "Artifact Siege",
+    "",
+    ""
+   ],
+   [
+    "Abyss Corridors",
+    "3.0",
+    "3.0"
+   ],
+   [
+    "Optional",
+    "",
+    ""
+   ],
+   [
+    "World Bosses",
+    "1.0",
+    ""
+   ],
+   [
+    "Supply Request",
+    "",
+    "1.0"
+   ],
+   [
+    "Credit: https://www.youtube.com/watch?v=hAl6c_LwE3M",
+    "",
+    ""
+   ]
+  ],
+  "buffs": [
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "The first 2 buffs for chanter and cleric do not stack. Chanter one takes priority",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Chanter",
+    "Cleric"
+   ],
+   [
+    "",
+    "",
+    "",
+    "Main Differences",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "Chanter",
+    "Cleric",
+    "",
+    "Undefeated Mantra (Toggle)",
+    "Light of Protection (Toggle)"
+   ],
+   [
+    "",
+    "",
+    "",
+    "Extra 200 Crit Hit and 200 Accuracy",
+    "20% Max HP",
+    "",
+    "22.5% Pve Dmg & Tolerance",
+    "22.5% Pve Dmg & Tolerance"
+   ],
+   [
+    "",
+    "",
+    "",
+    "10% crit dmg",
+    "Extra 10% Double Chance",
+    "",
+    "200 Critical Hit",
+    "20% Incoming Heal"
+   ],
+   [
+    "",
+    "",
+    "",
+    "20% Combat Speed",
+    "10% Defense",
+    "",
+    "200 Accuracy",
+    "200 Accuracy"
+   ],
+   [
+    "",
+    "",
+    "",
+    "20% Movement Speed",
+    "Stronger Heals for Prog",
+    "",
+    "10% Critical Damage",
+    "20% Max HP"
+   ],
+   [
+    "",
+    "",
+    "",
+    "10% CDR",
+    "Has a Res",
+    "",
+    "10% Double Chance",
+    "10% Double Chance"
+   ],
+   [
+    "",
+    "",
+    "",
+    "5% Weapon Damage Boost",
+    "Extra 5% Attack",
+    "",
+    "20% Perfect Chance",
+    "20% Perfect Chance"
+   ],
+   [
+    "",
+    "",
+    "",
+    "5% Endurance",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Power of the Storm (lasts 22.5s / 1min cd)",
+    "Earth's Blessing (lasts 20s / 30sec cd)"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "20% Combat Speed",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "Meta comp takes both and Cleric takes off Light of Protection for more heals/shields/self damage.",
+    "",
+    "",
+    "200 Accuracy",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "200 Critical Hit",
+    "10% Double Chance"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "10% CDR",
+    "10% Defense"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "5% Attack",
+    "10% Attack"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "10% Weapon Damage Boost",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Sprint Mantra (Toggle)",
+    "Summon Resurrection (1 to 2 min cd)"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "20-22.5% Movement Speed",
+    "Ressurects all fallen party members and grants invincibility for 3-11 seconds after resurrection"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "20% Incoming Heal",
+    "Restores 20% of Max HP"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "60% Natural Stamina",
+    "This is not an extra res. It just saves you stones"
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "20% Restoration",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "15% Change to restore 615-677 HP on landing an attack (increases amount healed by 200% when hp is 50% or lower.",
+    ""
+   ],
+   [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "5% Endurance",
+    ""
+   ]
+  ]
  }
 }

@@ -24,7 +24,7 @@ Alternate versions (`alts`) use the same stack format: `{"t": title, "s": note, 
 
 ### Class overview (`data/classes.json`)
 
-Per class: `glance` (one line for the home card and header), `summary`, `brings` (`[skill, text]` party value), `core` (`[title, text, skill for the icon]`), `opener`, `good`, `hard`, `mistakes`, `gear` (`stones`, `genus`, `passives`, `wings`, optional `board` = `[label, url]` and `note`), `hits` (per-minute targets shown under the macro), `patches` (`[date, change]`), `src`. `gearCommon` is the advice shown for every class. Skill names resolve against `data/skills.json` first, then the class's stigmas in `data/stigma_db.json`.
+Per class: `glance` (one line for the home card and header), `summary`, `brings` (`[skill, text]` party value), `core` (`[title, text, skill for the icon]`), `opener`, `good`, `hard`, `mistakes`, `gear` (`stones`, `genus`, `passives`, `wings`, optional `board` = `[label, url]` and `note`), `hits` (per-minute targets shown under the macro), `patches` (`[date, change]`), `src`. `gearCommon` is the advice shown for every class. `sheet` (per class) and the top-level `sheet` hold the imported Global class sheet (zxcastform): skill priority `[name, target level, picks]`, passives, stigma order, Arcana / god stat / equip-effect rows, soul binding lines per piece and accessory, Pet Genus lines, wings, titles, Pantheon, plus the roadmap, dailies and Chanter-vs-Cleric buff table. Re-import with `python tools/import_sheet_2026_10_02.py <sheet.xlsx> <allskills.json>` (needs openpyxl; export the sheet with `/export?format=xlsx`). Skill names resolve against `data/skills.json` first, then the class's stigmas in `data/stigma_db.json`.
 
 ### Stigmas, skills and specializations (`data/stigmas.json`)
 

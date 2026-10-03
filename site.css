@@ -359,3 +359,12 @@ footer a{color:var(--muted)}
 .bdg.st{background:var(--gold);color:#2c1c00}
 .bdg.kr{background:#4a1d1a;color:#ffb4ab;border:1px solid #7a2f2a}
 .bdg.lv{background:#22303f;color:#bcd9ff;border:1px solid #35506b}
+/* Global sheet blocks */
+.sheet-prio,.sheet-gear{display:grid;gap:12px;padding:14px;border:1px solid #3b4453;background:#12161c}
+ul.prio2{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.pk{display:flex;gap:4px;margin-top:3px}
+.pk i{display:grid;place-items:center;width:20px;height:20px;font:800 .72rem/1 var(--f-ui);font-style:normal;color:#0b0e12}
+.pk i.o1{background:#6fcf6a} .pk i.o2{background:#6fb6ff} .pk i.o3{background:#f2d03a} .pk i.o4{background:#ff9a3c} .pk i.o5{background:#ff5c5c}
+.pk em{font-size:.76rem;color:var(--dim)}
+.spec-h .pick small{display:block;font:700 .62rem/1 var(--f-ui);letter-spacing:.08em;color:#3d4510;margin-bottom:3px;text-align:center}
+.sheet-gear table td{font-size:.82rem}

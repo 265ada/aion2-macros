@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "baseline": "KR/TW live, after the Sep 23 patch",
   "notice": "Default view = Global Season 1: 4 stigma slots (confirmed on NC's official livestream) with stigma levels capped at 20 (reported by Global guides). Switch to KR/TW for the 6-slot, level-25 builds.",
   "note": "Builds, tiers and priorities come from Korean Inven class boards (Jul 1 – Sep 29, 2026: guides, dummy tests and dungeon threads). Level-25 effects are KR/TW client tooltips; Lv 5–20 effects are from the Global client DB."
@@ -363,7 +363,6 @@
      {
       "t": "PvE DPS",
       "tag": "Most used",
-      "main": true,
       "pick": [
        [
         "Illusive Clone",
@@ -374,16 +373,20 @@
         20
        ],
        [
-        "Savage Fang",
-        15
-       ],
-       [
         "Triniel's Dagger",
         10
+       ],
+       [
+        "Savage Fang",
+        15
        ]
       ],
       "why": "Illusive Clone and Swift Contract are your burst window. Savage Fang is in the macro and gives +10% PvE damage at 15. Triniel's Dagger 10 cuts all your cooldowns by 10% on hit, and Korean guides stop it at 10.",
       "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
        [
         "KR May: levelling priority",
         "https://vortexgaming.io/postdetail/854915"
@@ -392,7 +395,8 @@
         "KR Nov: Triniel 10 + Clone 10 core",
         "https://vortexgaming.io/postdetail/601044"
        ]
-      ]
+      ],
+      "main": true
      },
      {
       "t": "Solo / farming",
@@ -512,10 +516,50 @@
       4,
       5
      ],
+     "lvl": "20",
      "note": "From a 6.9M-DPS setup (Sep 18). Use 2, 4, 5 if you need lifesteal.",
      "src": [
-      "KR Sep 18 Assassin setup (screenshot)",
-      "https://www.inven.co.kr/board/aion2/6449/23617"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Savage Roar",
+     "pick": [
+      2,
+      3
+     ],
+     "lvl": "16",
+     "note": "Korea's Sep optimizer: 2 · 3 · 4. 4 (-1s Shadowstrike cooldown) is the key one.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Shadowstrike",
+     "pick": [
+      2,
+      3
+     ],
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 2 · 5. 2 (+20% crit damage) from level 8.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Ambush",
+     "pick": [
+      1,
+      2
+     ],
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 1 · 2 · 4. Not 5 (extra uses): it slows the motion and lowered damage. Ambush now sits in row 1 of the macro line (Sep 30 guide).",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -525,23 +569,76 @@
       4,
       5
      ],
+     "lvl": "20",
      "note": "Sep 30 guide: option 2 is now required, or damage drops. Ambush's lifesteal in the macro covers sustain.",
      "src": [
-      "KR Mar 31 Assassin specialization guide",
-      "https://vortexgaming.io/postdetail/726439"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Savage Roar",
+     "n": "Storm Rampage",
+     "pick": [
+      4,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Whirlwind Slice",
+     "pick": [
+      1,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Flash Slice",
      "pick": [
       2,
-      3,
       4
      ],
-     "note": "4 (-1s Shadowstrike cooldown) is the key one.",
+     "lvl": "12",
+     "note": "",
      "src": [
-      "KR Mar 31 Assassin specialization guide",
-      "https://vortexgaming.io/postdetail/726439"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Infiltrate",
+     "pick": [
+      1,
+      2
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Shadow Fall",
+     "pick": [
+      1,
+      2
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -551,35 +648,24 @@
       3,
       5
      ],
+     "lvl": "20",
      "note": "Fixed for PvE.",
      "src": [
-      "KR May Assassin PvE guide",
-      "https://vortexgaming.io/postdetail/854915"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Ambush",
+     "n": "Defiance (assassin)",
      "pick": [
-      1,
-      2,
-      4
-     ],
-     "note": "Not 5 (extra uses): it slows the motion and lowered damage. Ambush now sits in row 1 of the macro line (Sep 30 guide).",
-     "src": [
-      "KR Sep 18 Assassin setup (screenshot)",
-      "https://www.inven.co.kr/board/aion2/6449/23617"
-     ]
-    },
-    {
-     "n": "Shadowstrike",
-     "pick": [
-      2,
+      3,
       5
      ],
-     "note": "2 (+20% crit damage) from level 8.",
+     "lvl": "16",
+     "note": "",
      "src": [
-      "KR May Assassin PvE guide",
-      "https://vortexgaming.io/postdetail/854915"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -1019,9 +1105,42 @@
    "gl": {
     "builds": [
      {
-      "t": "Party healer",
+      "t": "Global sheet pick (damage, content on farm)",
       "tag": "Most used",
-      "main": true,
+      "pick": [
+       [
+        "Light of Protection",
+        15
+       ],
+       [
+        "Earth Punishment",
+        20
+       ],
+       [
+        "Noble Aura",
+        15
+       ],
+       [
+        "Prayer of Amplification",
+        20
+       ]
+      ],
+      "why": "The Global sheet's order: Light of Protection, Earth Punishment, Noble Aura, Prayer of Amplification. The sheet calls it a personal-damage setup once content is on farm. While learning a fight, swap #3 or #4 for Benevolence or Summon Resurrection. With a Chanter in the party, swap Light of Protection out, because Undefeated Mantra replaces it.",
+      "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "KR Feb 27 Cleric guide",
+        "https://vortexgaming.io/postdetail/684217"
+       ]
+      ],
+      "main": true
+     },
+     {
+      "t": "Party healer",
+      "tag": "Swap",
       "pick": [
        [
         "Earth Punishment",
@@ -1111,35 +1230,6 @@
        [
         "KR Mar 4 Cleric guide",
         "https://vortexgaming.io/postdetail/688137"
-       ]
-      ]
-     },
-     {
-      "t": "Solo DPS",
-      "tag": "Solo",
-      "pick": [
-       [
-        "Earth Punishment",
-        20
-       ],
-       [
-        "Prayer of Amplification",
-        20
-       ],
-       [
-        "Noble Aura",
-        15
-       ],
-       [
-        "Light of Protection",
-        15
-       ]
-      ],
-      "why": "Korea's Feb solo/damage set was Light of Protection, Earth Punishment, an aura pet and Prayer of Amplification. Noble Aura is that pet: it follows you for 5 minutes and hits your target.",
-      "src": [
-       [
-        "KR Feb 27 Cleric guide",
-        "https://vortexgaming.io/postdetail/684217"
        ]
       ]
      }
@@ -1239,42 +1329,43 @@
    },
    "specs": [
     {
-     "n": "Condemnation",
-     "pick": [
-      2,
-      4,
-      5
-     ],
-     "note": "Level 20 required.",
-     "src": [
-      "KR Sep 24 Cleric optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6452/29213"
-     ]
-    },
-    {
      "n": "Earth's Retribution",
      "pick": [
       2,
-      3,
-      4
+      5
      ],
-     "note": "Your basic-attack cancel skill.",
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 2 · 3 · 4. Your basic-attack cancel skill.",
      "src": [
-      "KR Sep 24 Cleric optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6452/29213"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Bolt",
+     "n": "Judgment Thunder",
      "pick": [
-      3,
-      4,
+      1,
+      2,
       5
      ],
-     "note": "2nd biggest damage source.",
+     "lvl": "20",
+     "note": "",
      "src": [
-      "KR Sep 24 Cleric optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6452/29213"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Debilitating Mark",
+     "pick": [
+      2,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -1284,9 +1375,51 @@
       4,
       5
      ],
+     "lvl": "20",
+     "note": "",
      "src": [
-      "KR Sep 24 Cleric optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6452/29213"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Chain of Torment",
+     "pick": [
+      2,
+      4
+     ],
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 2 · 4 · 5.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Light of Regeneration",
+     "pick": [
+      4,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Condemnation",
+     "pick": [
+      2,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "Level 20 required.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -1294,49 +1427,54 @@
      "pick": [
       1,
       4,
-      3
+      5
      ],
-     "u20": [
-      1,
-      4
-     ],
-     "note": "16 is enough; 3 adds a cleanse at 20.",
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 1 · 4 · 3. 16 is enough; 3 adds a cleanse at 20.",
      "src": [
-      "KR Sep 24 Cleric optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6452/29213"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Radiant Recovery",
      "pick": [
       2,
-      5,
-      1
-     ],
-     "u20": [
-      2,
+      3,
       5
      ],
-     "note": "16 is enough; 1 (removes 2 debuffs) at 20.",
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 2 · 5 · 1. 16 is enough; 1 (removes 2 debuffs) at 20.",
      "src": [
-      "KR Sep 24 Cleric optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6452/29213"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Chain of Torment",
+     "n": "Bolt",
      "pick": [
-      2,
+      3,
       4,
       5
      ],
-     "u20": [
-      2,
-      4
-     ],
+     "lvl": "20",
+     "note": "2nd biggest damage source.",
      "src": [
-      "KR Feb 27 Cleric guide",
-      "https://vortexgaming.io/postdetail/684217"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Defiance (cleric)",
+     "pick": [
+      3,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -1773,7 +1911,6 @@
      {
       "t": "PvE DPS",
       "tag": "Most used",
-      "main": true,
       "pick": [
        [
         "Element Enhancement",
@@ -1795,6 +1932,10 @@
       "why": "Element Enhancement, Fire Wall and Delayed Explosion were Korea's top three with 4 slots and still are. For the 4th, your image and current Korean damage players take Cold Storm. Korea's Feb 4-slot guide took Steel Barrier for safety (see the swap). With two Sorcerers in a party, only one Cold Storm counts.",
       "src": [
        [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
         "KR Feb 4: 4-slot priority",
         "https://vortexgaming.io/postdetail/675679"
        ],
@@ -1802,7 +1943,8 @@
         "KR Sep: 'we're DPS, Cold Storm first'",
         "https://www.inven.co.kr/board/aion2/6453/17196"
        ]
-      ]
+      ],
+      "main": true
      },
      {
       "t": "Korea's Season 1 four (safer)",
@@ -2003,29 +2145,30 @@
    },
    "specs": [
     {
-     "n": "Hellfire",
-     "pick": [
-      1,
-      4,
-      5
-     ],
-     "note": "Level 20 required.",
-     "src": [
-      "KR Sep 22 Sorcerer optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6453/17462"
-     ]
-    },
-    {
-     "n": "Blaze",
+     "n": "Flame Arrow",
      "pick": [
       3,
       4,
       5
      ],
-     "note": "3rd-5th biggest damage source.",
+     "lvl": "20",
+     "note": "",
      "src": [
-      "KR Sep 22 Sorcerer optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6453/17462"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Ice Chain",
+     "pick": [
+      2,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -2035,30 +2178,15 @@
       4,
       5
      ],
+     "lvl": "20",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
      "u20": [
       2,
       5
-     ],
-     "src": [
-      "KR Sep 22 Sorcerer optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6453/17462"
-     ]
-    },
-    {
-     "n": "Wish of Concentration",
-     "pick": [
-      2,
-      4,
-      5
-     ],
-     "u20": [
-      4,
-      5
-     ],
-     "note": "Your required buff.",
-     "src": [
-      "KR Sep 22 Sorcerer optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6453/17462"
      ]
     },
     {
@@ -2068,55 +2196,113 @@
       2,
       4
      ],
+     "lvl": "20",
+     "note": "2 frees you from standing still.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
      "u20": [
       1,
       2
+     ]
+    },
+    {
+     "n": "Blaze",
+     "pick": [
+      1,
+      3,
+      5
      ],
-     "note": "2 frees you from standing still.",
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 3 · 4 · 5. 3rd-5th biggest damage source.",
      "src": [
-      "KR Sep 22 Sorcerer optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6453/17462"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Frost",
+     "pick": [
+      1,
+      2
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Winter's Shackles",
      "pick": [
       3,
-      5,
-      1
+      5
+     ],
+     "lvl": "16",
+     "note": "Korea's Sep optimizer: 3 · 5 · 1. If you can only take one of these two to 20, take Bittercold Wind.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Frost Burst",
+     "pick": [
+      1,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Wish of Concentration",
+     "pick": [
+      2,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "Your required buff.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
-      3,
+      4,
       5
-     ],
-     "note": "If you can only take one of these two to 20, take Bittercold Wind.",
-     "src": [
-      "KR Sep 22 Sorcerer optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6453/17462"
      ]
     },
     {
-     "n": "Flame Arrow",
+     "n": "Hellfire",
      "pick": [
+      1,
       3,
-      4,
       5
      ],
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 1 · 4 · 5. Level 20 required.",
      "src": [
-      "KR Feb 4 Sorcerer guide",
-      "https://vortexgaming.io/postdetail/675679"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Flame Scattershot",
+     "n": "Defiance (sorcerer)",
      "pick": [
-      4,
-      5
+      2,
+      3
      ],
-     "note": "Level 16.",
+     "lvl": "16",
+     "note": "",
      "src": [
-      "KR Feb 4 Sorcerer guide",
-      "https://vortexgaming.io/postdetail/675679"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -2597,9 +2783,46 @@
    "gl": {
     "builds": [
      {
-      "t": "Party tank",
+      "t": "Global sheet pick (damage tank)",
       "tag": "Most used",
-      "main": true,
+      "pick": [
+       [
+        "Battlefield Banner",
+        20
+       ],
+       [
+        "Taunt",
+        20
+       ],
+       [
+        "Noble Armor",
+        20
+       ],
+       [
+        "Doom Shield",
+        15
+       ]
+      ],
+      "why": "The Global sheet's order: Battlefield Banner, Taunt, Noble Armor, Doom Shield. Banner turns Defense into Attack. Taunt's Shrink makes the boss take more damage from the whole party. Noble Armor 15 multiplies Fury by 1.5. Doom Shield is a shield attack, so it opens Judgment (Aug 26 rework), and at 5 it resets Annihilate. For hard bosses, the Party tank and Hard content versions trade damage for Shield of Protection and party saves.",
+      "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "Templar skill/stigma test (Banner value)",
+        "https://www.inven.co.kr/board/aion2/6438/12045"
+       ],
+       [
+        "KR current top picks",
+        "https://www.inven.co.kr/board/aion2/6438/27186"
+       ]
+      ],
+      "main": true
+     },
+     {
+      "t": "Party tank",
+      "tag": "Swap",
       "pick": [
        [
         "Taunt",
@@ -2627,39 +2850,6 @@
        [
         "KR Feb 6 stigma guide (4 slots)",
         "https://www.inven.co.kr/board/aion2/6438/7621"
-       ]
-      ]
-     },
-     {
-      "t": "Geared DPS Templar",
-      "tag": "Swap",
-      "pick": [
-       [
-        "Taunt",
-        20
-       ],
-       [
-        "Battlefield Banner",
-        20
-       ],
-       [
-        "Noble Armor",
-        20
-       ],
-       [
-        "Doom Shield",
-        15
-       ]
-      ],
-      "why": "Battlefield Banner turns Defense into Attack, so it only pays off once your armor is upgraded; early on, Korean players called it poor value for the shards. Doom Shield opens Judgment (Aug 26 rework) and resets Annihilate at 5, which is what the sheet's late-game macro uses.",
-      "src": [
-       [
-        "Templar skill/stigma test (Banner value)",
-        "https://www.inven.co.kr/board/aion2/6438/12045"
-       ],
-       [
-        "KR current top picks",
-        "https://www.inven.co.kr/board/aion2/6438/27186"
        ]
       ]
      },
@@ -2880,20 +3070,21 @@
    },
    "specs": [
     {
-     "n": "Judgment",
+     "n": "Vicious Strike",
      "pick": [
       3,
       4,
       5
      ],
-     "u20": [
-      5,
-      3
-     ],
-     "note": "Swap 3 for 1 (30% lifesteal) when you need sustain.",
+     "lvl": "20",
+     "note": "Required for the Vicious Strike-Judgment setup.",
      "src": [
-      "KR Sep 5 Templar optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6438/25862"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
+     "u20": [
+      4,
+      5
      ]
     },
     {
@@ -2903,61 +3094,72 @@
       4,
       5
      ],
-     "u20": [
-      3,
-      4
-     ],
+     "lvl": "20",
      "note": "The core of the Pummel-Judgment weave.",
      "src": [
-      "KR Sep 5 Templar optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6438/25862"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
+     "u20": [
+      3,
+      4
      ]
     },
     {
-     "n": "Vicious Strike",
+     "n": "Poach",
+     "pick": [
+      1,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Shield Smite",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 2 · 3. Level 12: no MP cost, and a 50% chance to trigger Debilitating Smash.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Judgment",
      "pick": [
       3,
       4,
       5
      ],
-     "u20": [
-      4,
-      5
-     ],
-     "note": "Required for the Vicious Strike-Judgment setup.",
+     "lvl": "20",
+     "note": "Swap 3 for 1 (30% lifesteal) when you need sustain.",
      "src": [
-      "KR Sep 5 Templar optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6438/25862"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
+     "u20": [
+      5,
+      3
      ]
     },
     {
-     "n": "Punishment",
+     "n": "Debilitating Smash",
      "pick": [
       2,
-      3,
       4
      ],
-     "note": "2 and 3 fixed. Third: 4 (castable while moving) for comfort, or 5 (ignores block/evasion, crits) for a little more damage.",
+     "lvl": "12",
+     "note": "",
      "src": [
-      "KR Sep 5 Templar optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6438/25862"
-     ]
-    },
-    {
-     "n": "Annihilate",
-     "pick": [
-      3,
-      4,
-      1
-     ],
-     "u20": [
-      3,
-      4
-     ],
-     "note": "1 (+50% multi-hit) nudges the ceiling at 20.",
-     "src": [
-      "KR Sep 5 Templar optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6438/25862"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -2966,22 +3168,64 @@
       1,
       5
      ],
+     "lvl": "16",
      "note": "Level 16 is enough: -5s cooldown and the party damage-tolerance share.",
      "src": [
-      "KR Templar skill guide (Jan, edited Apr)",
-      "https://www.inven.co.kr/board/aion2/6438/6625"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Shield Smite",
+     "n": "Shield Rush",
      "pick": [
       2,
-      3
+      4
      ],
-     "note": "Level 12: no MP cost, and a 50% chance to trigger Debilitating Smash.",
+     "lvl": "12",
+     "note": "",
      "src": [
-      "KR Mar 13 Templar guide",
-      "https://vortexgaming.io/postdetail/696602"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Annihilate",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 3 · 4 · 1. 1 (+50% multi-hit) nudges the ceiling at 20.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Punishment",
+     "pick": [
+      3,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 2 · 3 · 4. 2 and 3 fixed. Third: 4 (castable while moving) for comfort, or 5 (ignores block/evasion, crits) for a little more damage.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Defiance (templar)",
+     "pick": [
+      3,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -3478,9 +3722,42 @@
    "gl": {
     "builds": [
      {
-      "t": "Buffer",
+      "t": "Global sheet pick (= your image)",
       "tag": "Most used",
-      "main": true,
+      "pick": [
+       [
+        "Undefeated Mantra",
+        20
+       ],
+       [
+        "Power of the Storm",
+        20
+       ],
+       [
+        "Sprint Mantra",
+        10
+       ],
+       [
+        "Marchutan's Wrath",
+        5
+       ]
+      ],
+      "why": "The Global sheet's order, which is also the list from your image: Undefeated Mantra, Power of the Storm, Sprint Mantra, Marchutan's Wrath. Marchutan's Wrath gives the longest Dark Crush window (3 s), so it adds Dark Crush casts on top of Impactful Crush and Spinning Strike. The sheet's next picks are Guardian Blessing, then Focused Defense or Impeding Authority.",
+      "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "Chanter PvE guide",
+        "https://www.inven.co.kr/board/aion2/6451/116"
+       ]
+      ],
+      "main": true
+     },
+     {
+      "t": "Buffer",
+      "tag": "Swap",
       "pick": [
        [
         "Undefeated Mantra",
@@ -3547,35 +3824,6 @@
         "https://www.inven.co.kr/board/aion2/6451/116"
        ]
       ]
-     },
-     {
-      "t": "Your image (5) trimmed to 4",
-      "tag": "Swap",
-      "pick": [
-       [
-        "Undefeated Mantra",
-        20
-       ],
-       [
-        "Power of the Storm",
-        20
-       ],
-       [
-        "Sprint Mantra",
-        10
-       ],
-       [
-        "Marchutan's Wrath",
-        15
-       ]
-      ],
-      "why": "If you like pressing Marchutan's Wrath: it hits 4 targets and opens Dark Crush for 3s. 10 adds a stun chance.",
-      "src": [
-       [
-        "Chanter PvE guide",
-        "https://www.inven.co.kr/board/aion2/6451/116"
-       ]
-      ]
      }
     ],
     "levels": [
@@ -3593,6 +3841,11 @@
       "Guardian Blessing",
       15,
       "10: x1.5 Crossguard. 15: x1.5 Wind's Promise, the reason to take it. 20 only adds healing received."
+     ],
+     [
+      "Marchutan's Wrath",
+      5,
+      "The 3 s Dark Crush window works from level 1. 5: up to +20% damage on fewer targets. 10–20 add stun and anti-heal (PvP)."
      ],
      [
       "Sprint Mantra",
@@ -3660,70 +3913,149 @@
    },
    "specs": [
     {
-     "n": "Dark Crush",
-     "pick": [
-      3,
-      4,
-      5
-     ],
-     "note": "Fixed.",
-     "src": [
-      "KR Sep 17 Chanter optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6451/22932"
-     ]
-    },
-    {
      "n": "Onslaught",
      "pick": [
       3,
       4,
       5
      ],
+     "lvl": "20",
      "note": "Use 2, 4, 5 for more stable lifesteal.",
      "src": [
-      "KR Sep 17 Chanter optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6451/22932"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Spinning Strike",
+     "n": "Incandescent Blow",
      "pick": [
-      1,
       3,
       5
      ],
-     "note": "Use 2, 3, 5 for more healing when there's no Cleric.",
+     "lvl": "16",
+     "note": "",
      "src": [
-      "KR Sep 17 Chanter optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6451/22932"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Rushing Smash",
+     "pick": [
+      1,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Impactful Crush",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 4. +30% skill speed; no other option is worth much.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Dark Crush",
+     "pick": [
+      3,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Heat Wave Blow",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Recuperation",
      "pick": [
       1,
-      4,
-      2
-     ],
-     "u20": [
-      1,
       4
      ],
-     "note": "Third: 2 if the fight has debuffs to cleanse, otherwise 5.",
+     "lvl": "16-20",
+     "note": "Korea's Sep optimizer: 1 · 4 · 2. Third: 2 if the fight has debuffs to cleanse, otherwise 5.",
      "src": [
-      "KR Sep 17 Chanter optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6451/22932"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Impactful Crush",
+     "n": "Tremor Crush",
      "pick": [
+      2,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Wave Blow",
+     "pick": [
+      1,
       4
      ],
-     "note": "+30% skill speed; no other option is worth much.",
+     "lvl": "12",
+     "note": "",
      "src": [
-      "KR Sep 9 Chanter setup",
-      "https://vortexgaming.io/postdetail/1264072"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Spinning Strike",
+     "pick": [
+      1,
+      2,
+      3
+     ],
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 1 · 3 · 5. Use 2, 3, 5 for more healing when there's no Cleric.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Defiance (chanter)",
+     "pick": [
+      3,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -4223,7 +4555,6 @@
      {
       "t": "Party DPS",
       "tag": "Most used",
-      "main": true,
       "pick": [
        [
         "Lunge Stance",
@@ -4234,16 +4565,20 @@
         20
        ],
        [
-        "Rage Burst",
-        20
-       ],
-       [
         "Wave Armor",
         15
+       ],
+       [
+        "Rage Burst",
+        20
        ]
       ],
       "why": "Lunge Stance, Zikel's Blessing and Rage Burst were Korea's fixed Season 1 picks, and all three are still the core. Korea's 4th was Focused Block while Wave Armor was bugged (March). On the balance Global launched with, Wave Armor 10/15 multiplies Experienced Counterstrike and Murderous Burst by 1.5, so it's the better 4th when someone else holds the boss.",
       "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
        [
         "KR Season 1 fixed four",
         "https://vortexgaming.io/postdetail/725199"
@@ -4252,7 +4587,8 @@
         "Jul 7: Counterstrike boost moved to Wave Armor",
         "https://www.inven.co.kr/board/aion2/6448/23042"
        ]
-      ]
+      ],
+      "main": true
      },
      {
       "t": "Battle tank (no Templar)",
@@ -4496,16 +4832,16 @@
    },
    "specs": [
     {
-     "n": "Overhead Slam",
+     "n": "Keen Strike",
      "pick": [
-      3,
-      4,
-      5
+      2,
+      4
      ],
-     "note": "Upward Strike chain, guaranteed crit, no cooldown.",
+     "lvl": "12",
+     "note": "",
      "src": [
-      "KR Sep 5 Gladiator optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6448/31551"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -4515,10 +4851,103 @@
       4,
       5
      ],
+     "lvl": "20",
      "note": "The Overhead Slam-Rending Blow cancel skill.",
      "src": [
-      "KR Sep 5 Gladiator optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6448/31551"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Leaping Slam",
+     "pick": [
+      1,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Mocking Blade",
+     "pick": [
+      1,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Overhead Slam",
+     "pick": [
+      3,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "Upward Strike chain, guaranteed crit, no cooldown.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Ankle Slice",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Crushing Wave",
+     "pick": [
+      1,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Rush Strike",
+     "pick": [
+      2,
+      4
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Aerial Snare",
+     "pick": [
+      1,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -4526,12 +4955,26 @@
      "pick": [
       1,
       4,
-      2
+      5
      ],
-     "note": "1 and 4 fixed. Third: 2 (+12.5m range) for comfort, or 5 for a little more damage. No longer needs level 20.",
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 1 · 4 · 2. 1 and 4 fixed. Third: 2 (+12.5m range) for comfort, or 5 for a little more damage. No longer needs level 20.",
      "src": [
-      "KR Sep 5 Gladiator optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6448/31551"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Defiance (gladiator)",
+     "pick": [
+      3,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -4912,27 +5355,30 @@
      {
       "t": "PvE DPS",
       "tag": "Most used",
-      "main": true,
       "pick": [
-       [
-        "Jointstrike: Corrode",
-        20
-       ],
        [
         "Summon: Ancient Spirit",
         20
        ],
        [
-        "Flame Blessing",
+        "Enhance: Spirit's Benediction",
         20
        ],
        [
-        "Enhance: Spirit's Benediction",
+        "Jointstrike: Corrode",
+        20
+       ],
+       [
+        "Flame Blessing",
         20
        ]
       ],
       "why": "Exactly your image. Korean Spiritmasters call these four the only real PvE stigmas; everything else costs damage.",
       "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
        [
         "'Only 4 usable PvE stigmas'",
         "https://www.inven.co.kr/board/aion2/6454/8922"
@@ -4941,7 +5387,8 @@
         "Newbie guide stigma table",
         "https://www.inven.co.kr/board/aion2/6454/8165"
        ]
-      ]
+      ],
+      "main": true
      },
      {
       "t": "Survival / solo",
@@ -5050,16 +5497,16 @@
    },
    "specs": [
     {
-     "n": "Elemental Fusion",
+     "n": "Cold Shock",
      "pick": [
-      2,
       3,
-      5
+      4
      ],
-     "note": "The charge option (4) tested worse.",
+     "lvl": "16+",
+     "note": "",
      "src": [
-      "KR Sep 16 Spiritmaster optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6454/10286"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -5069,10 +5516,11 @@
       4,
       5
      ],
+     "lvl": "20",
      "note": "Even more important once you hit the Attack cap.",
      "src": [
-      "KR Sep 16 Spiritmaster optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6454/10286"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
@@ -5082,9 +5530,92 @@
       3,
       5
      ],
+     "lvl": "16-20",
+     "note": "",
      "src": [
-      "KR Sep 16 Spiritmaster optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6454/10286"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Summon: Water Spirit",
+     "pick": [
+      2,
+      3,
+      5
+     ],
+     "lvl": "16-20",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Jointstrike: Curse",
+     "pick": [
+      1,
+      2,
+      3
+     ],
+     "lvl": "16-20",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Summon: Earth Spirit",
+     "pick": [
+      2,
+      3
+     ],
+     "lvl": "12-16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Dimensional Control",
+     "pick": [
+      2,
+      3
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Elemental Fusion",
+     "pick": [
+      2,
+      3,
+      5
+     ],
+     "lvl": "20",
+     "note": "The charge option (4) tested worse.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Defiance (spiritmaster)",
+     "pick": [
+      3,
+      5
+     ],
+     "lvl": "16",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],
@@ -5490,7 +6021,6 @@
      {
       "t": "PvE DPS",
       "tag": "Most used",
-      "main": true,
       "pick": [
        [
         "Vaizel's Authority",
@@ -5512,6 +6042,10 @@
       "why": "Exactly the list in your image. Korean Rangers call these four the essential damage stigmas: Bow of Blessing and Vaizel's Authority need 20 to work properly, Supporting Fire always crits at 20, and Griffon Arrow is about 10% of your damage.",
       "src": [
        [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
         "KR: 'four essential' Ranger stigmas",
         "https://vortexgaming.io/postdetail/722757"
        ],
@@ -5519,7 +6053,8 @@
         "Dummy test",
         "https://www.inven.co.kr/board/aion2/6450/15518"
        ]
-      ]
+      ],
+      "main": true
      },
      {
       "t": "Korea's Season 1 four",
@@ -5669,78 +6204,150 @@
    },
    "specs": [
     {
-     "n": "Deadshot",
+     "n": "Snipe",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 4 · 5. Skip 2 and 3: Ranger multi-hit is already 87-94%.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Tempest Shot",
      "pick": [
       2,
       3,
       5
      ],
-     "note": "3 (castable while moving) in real fights; 4 (multi-hit) instead on a training dummy.",
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 3 · 5. Skip 2 (+10% crit) once your crit is capped.",
      "src": [
-      "KR Sep 6 Ranger optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6450/19498"
-     ]
-    },
-    {
-     "n": "Gale Arrow",
-     "pick": [
-      3,
-      4,
-      5
-     ],
-     "note": "A small damage gain, worth 20.",
-     "src": [
-      "KR Sep 6 Ranger optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6450/19498"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Snare Shot",
      "pick": [
       2,
-      3,
-      4
+      3
      ],
-     "note": "+2-3% DPS; take it to 20 for the mobile specialty.",
+     "lvl": "12",
+     "note": "Korea's Sep optimizer: 2 · 3 · 4. +2-3% DPS; take it to 20 for the mobile specialty.",
      "src": [
-      "KR Sep 6 Ranger optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6450/19498"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Snipe",
+     "n": "Marking Shot",
      "pick": [
-      4,
-      5
+      2,
+      3
      ],
-     "note": "Skip 2 and 3: Ranger multi-hit is already 87-94%.",
+     "lvl": "16",
+     "note": "",
      "src": [
-      "KR Sep 6 Ranger optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6450/19498"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Drill Dart",
      "pick": [
-      1,
+      3,
+      4,
       5
      ],
-     "note": "The multi-hit option is wasted for the same reason.",
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 1 · 5. The multi-hit option is wasted for the same reason.",
      "src": [
-      "KR Sep 6 Ranger optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6450/19498"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
-     "n": "Tempest Shot",
+     "n": "Gale Arrow",
+     "pick": [
+      1,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 3 · 4 · 5. A small damage gain, worth 20.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Explosion Trap",
+     "pick": [
+      1,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Burst Arrow",
+     "pick": [
+      2,
+      3
+     ],
+     "lvl": "16+",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Suppressing Arrow",
+     "pick": [
+      1,
+      3
+     ],
+     "lvl": "12",
+     "note": "",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Deadshot",
+     "pick": [
+      2,
+      4,
+      5
+     ],
+     "lvl": "20",
+     "note": "Korea's Sep optimizer: 2 · 3 · 5. 3 (castable while moving) in real fights; 4 (multi-hit) instead on a training dummy.",
+     "src": [
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Defiance (ranger)",
      "pick": [
       3,
       5
      ],
-     "note": "Skip 2 (+10% crit) once your crit is capped.",
+     "lvl": "16",
+     "note": "",
      "src": [
-      "KR Sep 6 Ranger optimizer (screenshots)",
-      "https://www.inven.co.kr/board/aion2/6450/19498"
+      "Global class sheet (zxcastform)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
    ],

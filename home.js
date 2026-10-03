@@ -13,7 +13,7 @@
   }
   $("ladder").innerHTML = h;
 
-  const load = (f) => fetch(f).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
+  const load = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
   Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load))
     .then(([mac, stg, ov, db, sk]) => {
       const icon = (cls, n) => {

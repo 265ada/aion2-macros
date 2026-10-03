@@ -3378,115 +3378,6 @@
 "k": "Mastery",
 "q": 6
 },
-"Punishing Benediction": {
-"d": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack.\n\nCooldown: 1s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 9
-},
-"Ironclad Defense": {
-"d": "Increases the caster's Defense by 7% and Endurance by 1%.",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 11
-},
-"Guarding Seal": {
-"d": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less.\n\nCooldown: 60s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 13
-},
-"Impact Hit (templar)": {
-"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 15
-},
-"Insulting Roar": {
-"d": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack.\n\nCooldown: 5s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 17
-},
-"Fury": {
-"d": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on Block.\n\nCooldown: 1s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 21
-},
-"Survival Willpower (templar)": {
-"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 23
-},
-"Block Pain": {
-"d": "Grants Block Pain for 10s when struck by an enemy.\nBlock Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5%\n\nCooldown: 20s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 25
-},
-"Heightened Sixth Sense": {
-"d": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion.\n\nCooldown: 3s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 1
-},
-"Exploit Weakness": {
-"d": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
-"s": [],
-"m": 0,
-"r": null,
-"k": "Mastery",
-"q": 6
-},
-"Whirlwind Slice": {
-"d": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
-"s": [
-[
-8,
-"+50% Multi-Hit on hit"
-],
-[
-8,
-"Changes to AoE damage"
-],
-[
-8,
-"+16m range"
-],
-[
-12,
-"+20% Stun Chance"
-],
-[
-16,
-"25% chance to reset [Whirlwind Slice] cooldown on Evasion"
-]
-],
-"m": 0,
-"r": "4 m",
-"k": "Mastery",
-"q": 7
-},
 "Apply Poison": {
 "d": "Has a 15% chance to reduce the target's Incoming Heal by 12% and inflict Poison for 10s on landing an attack. Poison deals 233~233 Damage over Time every 1s.\n\nCooldown: 1s",
 "s": [],
@@ -3950,5 +3841,636 @@
 "r": null,
 "k": "Mastery",
 "q": 25
+},
+"Mocking Blade": {
+"d": "Deals 207-207 damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity"
+],
+[
+8,
+"Changes to AoE damage on down strike"
+],
+[
+8,
+"Adds 2 additional strikes"
+],
+[
+12,
+"+1s Knockdown duration"
+],
+[
+16,
+"Ignores Block and Evasion and lands as Multi-Hit"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 3
+},
+"Ankle Slice": {
+"d": "Selects a target within 4m and deals 294-294 damage to up to 4 enemies within 4m with a 50% chance to inflict Root for 3s on Block.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"30% chance to inflict Knockdown for 3s on landing [Ankle Slice]"
+],
+[
+8,
+"Adds [Ankle Smash] Chain Skill"
+],
+[
+8,
+"+16m [Ankle Slice] range"
+],
+[
+12,
+"Ignores Block and Evasion and lands as Multi-Hit"
+],
+[
+16,
+"25% chance to reset [Ankle Slice] cooldown on Block"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 7
+},
+"Crushing Wave": {
+"d": "Deals 206-206 damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Absorbs 2% HP"
+],
+[
+8,
+"Restores 50 MP on landing a Critical Hit"
+],
+[
+8,
+"Up to +20% damage when more targets hit"
+],
+[
+12,
+"Resets cooldown on landing a Critical Hit"
+],
+[
+16,
+"50% chance to pull"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 8
+},
+"Rush Strike": {
+"d": "Moves to a target within 10m and deals 330-330 damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Restores 300 Stamina on hit"
+],
+[
+8,
+"+10m Range"
+],
+[
+8,
+"Changes to Charge Skill and deals AoE damage"
+],
+[
+12,
+"-10s cooldown"
+],
+[
+16,
+"+25% Knockdown Chance"
+]
+],
+"m": 0,
+"r": "10 m",
+"k": "Mastery",
+"q": 10
+},
+"Heat Wave Blow": {
+"d": "Selects a target within 4m and deals 345-345 damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"40% chance to inflict Stun for 3s"
+],
+[
+8,
+"+20% Seal Chance"
+],
+[
+8,
+"Up to +20% damage when more targets hit"
+],
+[
+12,
+"Ignores Block and Evasion and lands as Multi-Hit"
+],
+[
+16,
+"25% chance to reset [Heat Wave Blow] cooldown on Block"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 7
+},
+"Tremor Crush": {
+"d": "Move to a target within 10m and deal 260-260 damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Restores 300 Stamina on hit"
+],
+[
+8,
+"+10m [Tremor Crush] range"
+],
+[
+8,
+"+50% Multi-Hit on hit"
+],
+[
+12,
+"Adds [Surging Strike] Chain Skill"
+],
+[
+16,
+"+25% [Tremor Crush] Stun Chance"
+]
+],
+"m": 0,
+"r": "10 m",
+"k": "Mastery",
+"q": 10
+},
+"Explosion Trap": {
+"d": "Sets an explosive trap at the caster's location. The trap lasts for 10 seconds and deals 344-344 damage to up to 4 enemies within 5m when stepped on. Has a 40% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Pulls enemies on explosion"
+],
+[
+8,
+"+1s Stun duration"
+],
+[
+8,
+"Extra damage after 3s on hit"
+],
+[
+12,
+"+20% Stun Chance"
+],
+[
+16,
+"+1 consecutive use"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 8
+},
+"Suppressing Arrow": {
+"d": "Deals 362-362 damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"+50% Multi-Hit on hit"
+],
+[
+8,
+"+1s Stun duration"
+],
+[
+8,
+"+20% Skill Speed"
+],
+[
+12,
+"+20% Stun Chance"
+],
+[
+16,
+"25% chance to reset cooldown on hit"
+]
+],
+"m": 0,
+"r": "20 m",
+"k": "Mastery",
+"q": 12
+},
+"Defiance (ranger)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Lightning Arrow] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 20% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Defiance (cleric)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Blessing of Regeneration] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 10% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Defiance (spiritmaster)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Curse of Despair] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 20% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Defiance (gladiator)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Wrath Burst] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 20% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Defiance (sorcerer)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Curse: Old Tree] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 20% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Defiance (templar)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Capture] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 20% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Infiltrate": {
+"d": "Moves behind a target within 10m and deals 239-239 damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Restores 300 Stamina on landing [Infiltrate]"
+],
+[
+8,
+"+10m [Infiltrate] range"
+],
+[
+8,
+"Breaks Protective Shields on landing [Infiltrate]"
+],
+[
+12,
+"Adds [Dark Strike] Chain Skill"
+],
+[
+16,
+"+20% [Infiltrate] Blind Chance"
+]
+],
+"m": 0,
+"r": "10 m",
+"k": "Mastery",
+"q": 10
+},
+"Shadow Fall": {
+"d": "Moves to a target afflicted with Stun within 10m, deals 465-465 damage, and inflicts Knockdown for 3s.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+"s": [
+[
+8,
+"Absorbs 10% HP"
+],
+[
+8,
+"Engraves 3 Insignias for 10s on hit"
+],
+[
+8,
+"-5s cooldown"
+],
+[
+12,
+"+1s Knockdown duration"
+],
+[
+16,
+"Can be used on targets afflicted with Blind"
+]
+],
+"m": 0,
+"r": "10 m",
+"k": "Mastery",
+"q": 12
+},
+"Defiance (assassin)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Storm Slice] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 20% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Defiance (chanter)": {
+"d": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+"s": [
+[
+8,
+"Adds [Crushing Strike] Chain Skill"
+],
+[
+8,
+"Restores 1000 Stamina on using [Defiance]"
+],
+[
+8,
+"Restores 10% HP on using [Defiance]"
+],
+[
+12,
+"+2s Tenacity duration"
+],
+[
+16,
+"+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration"
+]
+],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 16
+},
+"Punishing Benediction": {
+"d": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Ironclad Defense": {
+"d": "Increases the caster's Defense by 7% and Endurance by 1%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Guarding Seal": {
+"d": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less.\n\nCooldown: 60s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Impact Hit (templar)": {
+"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Insulting Roar": {
+"d": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack.\n\nCooldown: 5s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Fury": {
+"d": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Survival Willpower (templar)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Block Pain": {
+"d": "Grants Block Pain for 10s when struck by an enemy.\nBlock Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5%\n\nCooldown: 20s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Heightened Sixth Sense": {
+"d": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion.\n\nCooldown: 3s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Exploit Weakness": {
+"d": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Whirlwind Slice": {
+"d": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+"s": [
+[
+8,
+"+50% Multi-Hit on hit"
+],
+[
+8,
+"Changes to AoE damage"
+],
+[
+8,
+"+16m range"
+],
+[
+12,
+"+20% Stun Chance"
+],
+[
+16,
+"25% chance to reset [Whirlwind Slice] cooldown on Evasion"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 7
 }
 }

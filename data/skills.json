@@ -1946,5 +1946,167 @@
 "mp": null,
 "icon": "ICON_CH_SKILL_Passive_008",
 "passive": 1
+},
+"Mocking Blade": {
+"cls": "gladiator",
+"id": "11290000",
+"tw": "蹂躪劍",
+"ko": "유린의 검",
+"cd": 20,
+"mp": 200,
+"icon": "ICON_GL_SKILL_028"
+},
+"Ankle Slice": {
+"cls": "gladiator",
+"id": "11200000",
+"tw": "腳踝斬",
+"ko": "발목 베기",
+"cd": 10,
+"mp": null,
+"icon": "ICON_GL_SKILL_020"
+},
+"Crushing Wave": {
+"cls": "gladiator",
+"id": "11050000",
+"tw": "粉碎波動",
+"ko": "분쇄 파동",
+"cd": 20,
+"mp": 250,
+"icon": "ICON_GL_SKILL_005"
+},
+"Rush Strike": {
+"cls": "gladiator",
+"id": "11360000",
+"tw": "突進一擊",
+"ko": "돌진 일격",
+"cd": 20,
+"mp": null,
+"icon": "ICON_GL_SKILL_036"
+},
+"Heat Wave Blow": {
+"cls": "chanter",
+"id": "18150000",
+"tw": "裂破擊",
+"ko": "열파격",
+"cd": 10,
+"mp": null,
+"icon": "ICON_CH_SKILL_015"
+},
+"Tremor Crush": {
+"cls": "chanter",
+"id": "18210000",
+"tw": "震動碎",
+"ko": "진동쇄",
+"cd": 20,
+"mp": null,
+"icon": "ICON_CH_SKILL_021"
+},
+"Explosion Trap": {
+"cls": "ranger",
+"id": "14170000",
+"tw": "爆炸圈套",
+"ko": "폭발의 덫",
+"cd": 20,
+"mp": 200,
+"icon": "ICON_RA_SKILL_017"
+},
+"Suppressing Arrow": {
+"cls": "ranger",
+"id": "14070000",
+"tw": "壓制箭",
+"ko": "제압 화살",
+"cd": 20,
+"mp": null,
+"icon": "ICON_RA_SKILL_007"
+},
+"Defiance (ranger)": {
+"cls": "ranger",
+"id": "14260000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Defiance (cleric)": {
+"cls": "cleric",
+"id": "17240000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Defiance (spiritmaster)": {
+"cls": "spiritmaster",
+"id": "16200000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Defiance (gladiator)": {
+"cls": "gladiator",
+"id": "11260000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Defiance (sorcerer)": {
+"cls": "sorcerer",
+"id": "15240000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Defiance (templar)": {
+"cls": "templar",
+"id": "12260000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Infiltrate": {
+"cls": "assassin",
+"id": "13360000",
+"tw": "入侵",
+"ko": "침투",
+"cd": 20,
+"mp": null,
+"icon": "ICON_AS_SKILL_036"
+},
+"Shadow Fall": {
+"cls": "assassin",
+"id": "13220000",
+"tw": "降影",
+"ko": "그림자 낙하",
+"cd": 20,
+"mp": 100,
+"icon": "ICON_AS_SKILL_020"
+},
+"Defiance (assassin)": {
+"cls": "assassin",
+"id": "13260000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
+},
+"Defiance (chanter)": {
+"cls": "chanter",
+"id": "18200000",
+"tw": "衝擊解除",
+"ko": "충격 해제",
+"cd": 60,
+"mp": null,
+"icon": "ICON_CO_SKILL_002"
 }
 }

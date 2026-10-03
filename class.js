@@ -240,12 +240,22 @@
       <div class="lt"><b class="lvb ${lv === "20" ? "l20" : "lo"}">${esc(lv.replace("-", DASH))}</b></div></li>`).join("");
     const pas = k.pas.map(([n, why], i) => `<li${hov(n)}>${img(n)}<div><b>${i + 1}. ${esc(nice(n))}<small>${esc(tw(n))}</small></b><span>${esc(why)}</span></div></li>`).join("");
     const first = k.first.map((n) => `<span class="chip"${hov(n)}>${img(n)}${esc(n)} <span class="to">${ARROW} 20</span></span>`).join("");
-    return `<section class="panel" id="skills" aria-labelledby="h-skl"><h2 id="h-skl">Skills to level<small>Regular skills · best DPS and buff skills · target skill level</small></h2>
+    const sh = O.sheet || {};
+    const prioList = (sh.skills || []).map(([n, lv, picks]) => `<li${hov(n)}>${img(n)}<div><b>${esc(nice(n))}<small>${esc(tw(n))}</small></b>
+        <span class="pk">${picks.length ? picks.map((x) => `<i class="o${x}">${x}</i>`).join("") : '<em>no picks needed</em>'}</span></div>
+      <div class="lt"><b class="lvb ${lv === "20" ? "l20" : "lo"}">${lv ? esc(lv) : "–"}</b></div></li>`).join("");
+    const shPas = (sh.passives || []).map((n, i) => `<span class="chip"${hov(n)}>${img(n)}${i + 1}. ${esc(nice(n))}</span>`).join("");
+    const sheetBlock = prioList ? `<div class="sheet-prio"><h4 class="sh">Global sheet: skill priority, target level and specialty picks</h4>
+        <p class="snote">From the shared Global class sheet. Prioritize the skills marked 20 while leveling. Numbers in colored boxes are the specialty options to pick (1 green … 5 red); see Skill specializations below for what each one does.</p>
+        <ul class="lvl skl prio2">${prioList}</ul>
+        ${shPas ? `<div><span class="k">Passive priority (sheet)</span><div class="crow">${shPas}</div></div>` : ""}</div>` : "";
+    return `<section class="panel" id="skills" aria-labelledby="h-skl"><h2 id="h-skl">Skills to level<small>Regular skills · target skill level · specialty picks</small></h2>
+      ${sheetBlock}
       <div class="first2"><span class="k">Push these two to 20 first</span><div class="crow">${first}</div>
         <p>Skill points only reach level 10. Levels 11${DASH}20 come from ring and weapon lines, Daevanion tiles and Arcana cards. Global launches with fewer Arcana cards, so lock in two skills before spreading out.</p></div>
       <div class="skl-grid">
-        <div><h4 class="sh">Active skills</h4><ul class="lvl skl">${act}</ul></div>
-        <div><h4 class="sh">Passives, in priority order</h4><ul class="lvl skl">${pas}</ul>
+        <div><h4 class="sh">Why these skills (Korean endgame guides)</h4><ul class="lvl skl">${act}</ul></div>
+        <div><h4 class="sh">Passives, with reasons</h4><ul class="lvl skl">${pas}</ul>
           <p class="snote" style="margin-top:10px">Passives have no picks: every level just adds more. Level them with armor, necklace and earring lines, Daevanion tiles and Bell / Mirror Arcana cards. Korean endgame players sit at 25${DASH}36 on their top passive.</p></div>
       </div>${srcHtml(k.src)}</section>`;
   }
@@ -257,7 +267,7 @@
         const no = i + 1;
         return `<li class="o${no}${sp.pick.includes(no) ? " on" : ""}"><i>${no}</i><span>${esc(t)}</span><small>Lv ${lv}</small></li>`;
       }).join("");
-      return `<article class="spec"><div class="spec-h"${hov(sp.n)}>${img(sp.n)}<div><b>${esc(nice(sp.n))}</b><small>${esc(tw(sp.n))}</small></div><span class="pick">${sp.pick.join(DOT)}</span></div>
+      return `<article class="spec"><div class="spec-h"${hov(sp.n)}>${img(sp.n)}<div><b>${esc(nice(sp.n))}</b><small>${esc(tw(sp.n))}</small></div><span class="pick">${sp.lvl ? `<small>Lv ${esc(sp.lvl)}</small>` : ""}${sp.pick.join(DOT)}</span></div>
         <ol class="opts">${opts}</ol>${sp.u20 ? `<p class="u20">Before skill Lv 20 (2 slots): <b>${sp.u20.join(" + ")}</b></p>` : ""}${sp.note ? `<p class="snote">${esc(sp.note)}</p>` : ""}
         <p class="src">Source: <a href="${esc(sp.src[1])}" target="_blank" rel="noopener">${esc(sp.src[0])}</a></p></article>`;
     }).join("");
@@ -281,12 +291,30 @@
     const g = O.gear || {};
     const rows = [["Manastones / Soulstones", g.stones], ["Pet Genus", g.genus], ["Gear passives", g.passives], ["Wings", g.wings], ["Note", g.note]].filter((r) => r[1]);
     const wings = S.skills && S.skills.wings;
-    return `<section class="panel gear" id="gear" aria-labelledby="h-gear"><h2 id="h-gear">Gear and stats<small>What changes for ${esc(M.en)} · Korean endgame advice</small></h2>
+    return `<section class="panel gear" id="gear" aria-labelledby="h-gear"><h2 id="h-gear">Gear and stats<small>What changes for ${esc(M.en)} · Global class sheet + Korean endgame advice</small></h2>
       <dl>${rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}
         ${g.board ? `<dt>Daevanion</dt><dd>Take the skill tiles for your key actives first, then the orange tiles. Class node guide: <a href="${esc(g.board[1])}" target="_blank" rel="noopener">${esc(g.board[0])}</a></dd>` : `<dt>Daevanion</dt><dd>Take the skill tiles for your key actives first (they push skills past 10), then the orange tiles. Respec is nearly free.</dd>`}</dl>
-      <p class="snote"><b style="color:#fff">Every class:</b> ${esc(OV.gearCommon)} <a href="index.html#h-gear">Stat values, Arcana and boards</a>.</p>
+      ${sheetGear()}
+      <p class="snote"><b style="color:#fff">Every class (Korean endgame):</b> ${esc(OV.gearCommon)} <a href="index.html#h-gear">Stat values, Arcana and boards</a>.</p>
       ${wings && !g.wings ? `<p class="snote">Wings: ${esc(wings)}</p>` : ""}
     </section>`;
+  }
+  function sheetGear() {
+    const sh = O.sheet;
+    if (!sh) return "";
+    const tbl = (head, rows) => rows.length ? `<div class="tbl-wrap"><table><thead><tr>${head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c, i) => `<td>${i ? esc(c) : `<b>${esc(c)}</b>`}</td>`).join("")}</tr>`).join("")}</tbody></table></div>` : "";
+    const gear = Object.entries(sh.gear || {});
+    const acc = Object.entries(sh.acc || {});
+    const genus = Object.entries(sh.genus || {});
+    const misc = [["Manastone stats", sh.stones], ["Enhancing priority", sh.enhance], ["Meta wings", sh.wings], ["Wings worth leveling", sh.wingsLevel], ["Theostones", sh.theostones]]
+      .concat(Object.entries(sh.titles || {})).concat(Object.entries(sh.pantheon || {}).map(([k, v]) => ["Pantheon " + k.toLowerCase(), v])).filter((r) => r[1]);
+    return `<div class="sheet-gear"><h4 class="sh">Global class sheet: soul binding lines by piece (best first)</h4>
+      <div class="cols2">${tbl(["Piece", "Lines to keep, best first"], gear)}${tbl(["Accessory", "Lines to keep, best first"], acc)}</div>
+      <h4 class="sh">Arcana, god stats and equip effects to target</h4>
+      ${tbl(["Arcana card", "God stat", "Equip effect / skills to target"], (sh.cards || []).map((r) => [r[0], r[1], r[2].replace(/\s*\(\d\)\s*/g, ", ").replace(/^, /, "").replace(/\s+/g, " ").trim()]))}
+      <dl>${misc.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+      ${genus.length ? `<details><summary>Pet Genus lines by board (Global)</summary><div class="inner cols3">${genus.map(([b, lines]) => `<div><b>${esc(b)}</b><ul class="facts">${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul></div>`).join("")}</div></details>` : ""}
+      <p class="src">Source: <a href="${esc(OV.sheet.src)}" target="_blank" rel="noopener">Global class sheet by ${esc(OV.sheet.author)}</a>${sh.guide ? `${DOT}<a href="${esc(sh.guide)}" target="_blank" rel="noopener">${esc(M.en)} in-depth guide</a>` : ""}${sh.creator ? `${DOT}<a href="${esc(sh.creator)}" target="_blank" rel="noopener">content creator</a>` : ""}. The sheet's author notes it's a base to adjust as you learn, not 100% guaranteed.</p></div>`;
   }
   function patches() {
     const P = O.patches || [];
@@ -403,7 +431,7 @@
   const q = new URLSearchParams(location.search);
   if (["early", "late", "full"].includes(q.get("macro"))) mmode = q.get("macro");
   if (["gl", "kr"].includes(q.get("stigma"))) smode = q.get("stigma");
-  const load = (f) => fetch(f).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
+  const load = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
   Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load).concat(load("data/descriptions.json").catch(() => ({}))))
     .then(([mac, stg, ov, db, sk, ds]) => {
       MAC = mac; STG = stg; OV = ov; DB = db; SK = sk; DS = ds;
