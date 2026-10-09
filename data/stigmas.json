@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-10-02",
+  "updated": "2026-10-09",
   "baseline": "KR/TW live, after the Sep 23 patch",
   "notice": "Default view = Global Season 1: 4 stigma slots (confirmed on NC's official livestream) with stigma levels capped at 20 (reported by Global guides). Switch to KR/TW for the 6-slot, level-25 builds.",
   "note": "Builds, tiers and priorities come from Korean Inven class boards (Jul 1 – Sep 29, 2026: guides, dummy tests and dungeon threads). Level-25 effects are KR/TW client tooltips; Lv 5–20 effects are from the Global client DB."
@@ -3874,11 +3874,11 @@
         5
        ],
        [
-        "Guardian Blessing",
+        "Marchutan's Wrath",
         5
        ]
       ],
-      "n": "The Korean guide's opening order (Marchutan's replaced by Guardian Blessing)."
+      "n": "Cheap unlocks first. Marchutan's Wrath's 3 s Dark Crush window works from level 1."
      },
      {
       "s": [
@@ -3886,7 +3886,8 @@
         "Undefeated Mantra",
         20
        ]
-      ]
+      ],
+      "n": "Top Global Chanters this week: Undefeated Mantra at 20, everything else at 5–10."
      },
      {
       "s": [
@@ -3899,17 +3900,9 @@
         20
        ]
       ]
-     },
-     {
-      "s": [
-       [
-        "Guardian Blessing",
-        15
-       ]
-      ]
      }
     ],
-    "imageNote": "Your list has 5; with 4 slots, Marchutan's Wrath is the one to cut, since Dark Crush opens after any ranged skill since the Aug 26 rework. Guardian Blessing stays for its level-15 effect."
+    "imageNote": "Your list has 5; with 4 slots, keep Marchutan's Wrath and drop Guardian Blessing. That's the Global sheet's pick, and 98% of top Global Chanters slot Marchutan's Wrath vs 28% for Guardian Blessing."
    },
    "specs": [
     {

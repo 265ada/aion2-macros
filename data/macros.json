@@ -1,12 +1,16 @@
 {
  "meta": {
   "title": "Aion 2 Class Guides",
-  "updated": "2026-10-02",
+  "updated": "2026-10-09",
   "patchBaseline": "KR/TW patches through Sep 23, 2026",
   "notice": "Global (NA/EU) early access opened Sep 30, 2026, with full free-to-play on Oct 5. The Global client can lag the Korea/Taiwan patches this sheet is built on. For example, the Global database still lists Noble Armor and Guardian Blessing at 5 min. If a Global skill doesn't behave as described, check the Global patch notes.",
   "note": "Stacks are listed row 0 first (row 0 fires first and sits directly above the key in game). null = empty row. A trailing '?' on a skill name marks an icon-matched row that the source didn't name."
  },
  "changelog": [
+  {
+   "date": "2026-10-09",
+   "text": "New on every class page: Max damage plan. It shows which skill to level first and which specialty to slot at skill level 8 / 12 / 16 / 20, with estimated DPS for each step, where top Global players' damage comes from, and what a macro costs vs pressing by hand. Built from this week's top Global boss parses and Korea's top-20 builds (NotMeter). Macro changes: Assassin's Late card is now the Ambush line; Gladiator fires Ruinous Blow from the macro; Templar drops Debilitating Smash. Fixed Chanter text that said Marchutan's Wrath isn't a Global stigma. New home panels: DPS tier list, easiest class to max, and the Bible's Oct 4 Global changes."
+  },
   {
    "date": "2026-10-02",
    "text": "Every class updated from the shared Global class sheet. Late game cards are now each class's Global-client layout (the previous Korea/Taiwan setups are under Other versions). Early game cards no longer use stigmas, and Gladiator gets a leveling line built around Mocking Blade → Overhead Slam. Global stigma picks follow the sheet (Templar: Banner / Taunt / Noble Armor / Doom Shield, Chanter: Marchutan's Wrath as the 4th, Cleric: Light of Protection / Earth Punishment / Noble Aura / Prayer). Specialization picks and skill target levels now come from the sheet for every skill, with Korea's pick noted where it differs. New per-class gear tables: soul binding per piece, accessories, Arcana, Pet Genus, Pantheon."
@@ -67,12 +71,12 @@
    "tw": "殺星",
    "role": "Daggers · melee burst DPS",
    "late": {
-    "src": "Global class sheet (zxcastform), Global-client screenshot",
-    "link": "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview",
+    "src": "Korea Sep 30 optimizer guide line, checked against top Global players (NotMeter, week of Oct 7)",
+    "link": "https://www.inven.co.kr/board/aion2/6449/24247",
     "macros": [
      [
       "Insignia Explosion",
-      null,
+      "Ambush",
       "Heart Gore",
       "Savage Roar"
      ]
@@ -113,25 +117,24 @@
      }
     ],
     "queue": "The guide's in-game setup turns it ON",
-    "why": "The Global sheet's layout: one line, as in Korea. In the screenshot, row 1 holds Smoke Bomb, a 6th stigma Global doesn't have, so leave it empty. Or put Ambush there: Korea's Sep 30 guide found that slightly better on real bosses (Other versions).",
-    "tip": "Press your buffs and the other actives yourself, hold left click + the macro, and dash when needed. Press Swift Contract before Illusive Clone, because the attack-speed buff shortens Clone's animation. Press Savage Fang before Triniel's Dagger: a tester showed the Dagger only cuts cooldowns that are already running (30 s left vs 34 s the other way round). Don't take Ambush's option 5 (+2 uses), which made the motion worse and lowered damage. Smoke Bomb is under 2% of damage, so a mobility stigma is fine in its place. Level Heart Gore, Insignia Explosion and Quick Slice to 20, and Savage Roar next.",
+    "why": "One line. Insignia Explosion fires first whenever it's ready, then Ambush, then Heart Gore, which triggers off your crits, with Savage Roar as the filler when nothing else is up. Ambush in row 1 costs a few Heart Gore hits but raised total damage on real bosses (Korea's Sep 30 guide), and it's in 70% of top Global Assassin parses: its option 1 engraves 2 Insignias on a back attack, which makes the next Insignia Explosion hit harder. With Ambush taking over the lifesteal, Heart Gore needs its Insignia option (2).",
+    "tip": "Stand behind the boss: top Global Assassins land 85% of their hits from behind. Press Swift Contract, then Illusive Clone (the attack-speed buff shortens Clone's animation); the top 10% cast Clone about once a minute, while most median players never do. Press Savage Fang before Triniel's Dagger: the Dagger only cuts cooldowns that are already running. Hold the E key during stagger bars for Storm Rampage's cancel. Don't take Ambush's option 5 (+2 uses); it made the motion worse. Level order and picks: see Max damage plan.",
     "patch": "Sep 16: longer cancel delay on Savage Roar, Savage Smash and Heart Gore. +10% PvE on Insignia Explosion and the slice skills.",
     "alts": [
      {
-      "t": "Korea Sep 30 optimizer line: Ambush in row 1",
-      "s": "One macro line, in the row order the Sep 30 guide found best after dozens of tries. Insignia Explosion goes first, then Ambush, Heart Gore and Savage Roar. Ambush in row 1 costs some Heart Gore hits but raised overall damage, more on real bosses (which have Defense) than on the dummy. Its lifesteal also replaces Heart Gore's: Heart Gore now needs its Insignia option, or damage drops. Savage Roar stays as the filler for moments with no Heart Gore, and it cuts Shadowstrike's cooldown. Hold the Storm Rampage key too, so its stagger cancel fires during groggy windows. That cancel also keeps Illusive Clone up longer. Press Swift Contract before Illusive Clone, because the attack-speed buff shortens Clone's animation. Press Savage Fang before Triniel's Dagger: a tester showed the Dagger only cuts cooldowns that are already running (30 s left vs 34 s the other way round). Don't take Ambush's option 5 (+2 uses), which made the motion worse and lowered damage. Smoke Bomb is under 2% of damage, so a mobility stigma is fine in its place. Level Heart Gore, Insignia Explosion and Quick Slice to 20, and Savage Roar next.",
+      "t": "Global sheet layout (row 1 empty)",
+      "s": "The Global class sheet's screenshot: one line with Smoke Bomb in row 1, a stigma Global doesn't have, so the row stays empty. Same skills otherwise. The Ambush line above is ahead on real bosses.",
       "macros": [
        [
         "Insignia Explosion",
-        "Ambush",
+        null,
         "Heart Gore",
         "Savage Roar"
        ]
       ],
       "hold": [
        "Quick Slice",
-       "Macro key",
-       "Storm Rampage line"
+       "Macro key"
       ]
      },
      {
@@ -512,7 +515,7 @@
     ],
     "queue": "Not stated in the sheet, so test both",
     "why": "The Global sheet's layout, taken from Est's Sorcerer guide (updated Oct 2). The macro on right click only handles the filler. Blaze and Firestorm go on cooldown, and every Firestorm fireball cuts Hellfire's cooldown by 2 s. Winter's Shackles and Frost Burst fire when they're ready. Flame Arrow, held on left click, fills every gap and gives back MP. Everything that decides your burst stays on keys you press, so it lines up: Element Enhancement + Delayed Explosion on key 1, Hellfire on key 2, Fire Wall + Cold Storm on key 3, and Bittercold Wind + Wish of Concentration on key 4.",
-    "tip": "Opener (Est): Element Enhancement → Delayed Explosion → fully charged Hellfire → Fire Wall + Cold Storm → Bittercold Wind → Firestorm → Wish of Concentration (−10 s on every cooldown) → Bittercold Wind → Delayed Explosion → Winter's Shackles → Hellfire → Firestorm. After that, hold left click + the macro and press everything else as it comes up. Hellfire is always fully charged. Blaze needs option 5 (skill level 16) for the rotation to work. Global: cooldown reduction is very low at launch, so Est recommends weaving Ice Chain into the rotation for now.",
+    "tip": "Opener (Est): Element Enhancement → Delayed Explosion → fully charged Hellfire → Fire Wall + Cold Storm → Bittercold Wind → Firestorm → Wish of Concentration (−10 s on every cooldown) → Bittercold Wind → Delayed Explosion → Winter's Shackles → Hellfire → Firestorm. After that, hold left click + the macro and press everything else as it comes up. Hellfire is always fully charged. Blaze needs option 5 (skill level 16) for the rotation to work. Est recommends weaving Ice Chain while Global cooldowns are long, but two thirds of top-10% Global Sorcerer parses never cast it and it measured ±0, so skip it unless you're short on MP.",
     "patch": "Sep 16 (KR/TW): Fire Mark procs 100% and Blaze no longer consumes it. The Global database still shows the old 20% Fire Mark. Until Flame Arrow reaches skill level 12 (option 4 adds Fire Mark) and 16 (option 5 resets Blaze), Blaze fires less often on Global.",
     "alts": [
      {
@@ -839,7 +842,7 @@
      [
       "Battlefield Banner",
       "Taunt",
-      "Debilitating Smash",
+      null,
       null
      ],
      [
@@ -881,7 +884,7 @@
      }
     ],
     "queue": "Not stated in the sheet, so test both",
-    "why": "The Global sheet's layout. The Judgment line is the same as Korea's: Shield Smite and Warding Strike are shield attacks, so they keep opening Judgment, and Pummel fills. The sheet adds a first entry that keeps Battlefield Banner and Taunt on cooldown, with Debilitating Smash under them. Annihilate gets its own entry.",
+    "why": "The Global sheet's layout. The Judgment line is the same as Korea's: Shield Smite and Warding Strike are shield attacks, so they keep opening Judgment, and Pummel fills. The sheet adds a first entry that keeps Battlefield Banner and Taunt on cooldown. Its Debilitating Smash row is now empty: it's 0.8% of damage, its −25% Defense barely matters on bosses (Defense only removes 10% of its value in PvE), and two thirds of the top-10% Global Templars never cast it. Annihilate gets its own entry.",
     "tip": "Press Noble Armor yourself on cooldown. Doom Shield (also a shield attack, and it resets Annihilate) and Shield Rush sit on Q. Fully charge Punishment yourself for Executor (+20% PvE damage).",
     "patch": "Sep 16: longer cancel delay on Pummel, Punishing Strike and Judgment. Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min. Taunt threat now scales with damage.",
     "alts": [
@@ -1080,12 +1083,12 @@
      "Gust Rampage"
     ],
     "why": "This is the Dark Crush build, and it needs only one macro entry. Dark Crush can only be used for 2 s after a ranged skill: Impactful Crush or Spinning Strike (Marchutan's Wrath, your 4th Global stigma, gives 3 s; press it yourself when the macro runs out of Dark Crush windows). With option 5 (skill level 16) Dark Crush has no cooldown, so while a window is open, row 0 is ready on every macro turn. The macro then casts Dark Crush, the Piercing Strike chain (option 4), and Dark Crush again until the window closes. Korean players count about 3 Dark Crush / Piercing Strike casts per window. When the window closes, Dark Crush isn't usable, so the macro drops to rows 1–2 and casts Spinning Strike or Impactful Crush. That opens the next window. Incandescent Blow fills the gaps. A second entry only makes the macro check Dark Crush less often during its 2 s window.",
-    "tip": "Settings: one entry, delay 13 ms in the Global sheet's screenshot (Korean setups use 10 ms; raise it only if skills get skipped), and Dark Crush options 3 · 4 · 5 (crit on hit, Piercing Strike chain, no cooldown). Hold Onslaught (left click) + the macro key. Korean players also hold Gust Rampage for its stagger cancel. How to check it's working: in the DPS meter, the average time between Dark Crush casts should be about 750 ms at 122% Combat Speed, ~800 ms at 118.5% and ~850 ms at 90.5%. Those are Korean values after the Aug 26 patch added 100 ms. If you're much slower, check Combat Speed and ping before the macro. If Incandescent Blow fires right after Impactful Crush instead of Dark Crush, that's the Sep 4 Korean bug tied to Impactful Crush's +30% skill speed option; drop that option until it's fixed on Global. Undefeated Mantra and Sprint Mantra are toggles: never put them in a macro, because a second press switches them off.",
+    "tip": "Settings: one entry, delay 13 ms in the Global sheet's screenshot (Korean setups use 10 ms; raise it only if skills get skipped), and Dark Crush picks by skill level: 3 at 8 (crit), 3 + 4 at 12 (Piercing Strike chain), 3 + 5 at 16 (no cooldown; this beat 4 + 5 by ~5% in Global data), 3 + 4 + 5 at 20. Hold Onslaught (left click) + the macro key. Korean players also hold Gust Rampage for its stagger cancel. How to check it's working: in the DPS meter, the average time between Dark Crush casts should be about 750 ms at 122% Combat Speed, ~800 ms at 118.5% and ~850 ms at 90.5%. Those are Korean values after the Aug 26 patch added 100 ms. If you're much slower, check Combat Speed and ping before the macro. If Incandescent Blow fires right after Impactful Crush instead of Dark Crush, that's the Sep 4 Korean bug tied to Impactful Crush's +30% skill speed option; drop that option until it's fixed on Global. Undefeated Mantra and Sprint Mantra are toggles: never put them in a macro, because a second press switches them off.",
     "patch": "Aug 26: Dark Crush now opens after any ranged skill (was: stunned target). Minimum cancel time added; the Onslaught → Dark Crush weave got 100 ms slower. Sep 16: Guardian Blessing 5 min → 2 min.",
     "alts": [
      {
       "t": "Inven 9/3 two-line test (worth trying)",
-      "s": "The three Dark Crush openers stop overlapping, which gave +3–5 Dark Crush/min and ~+100–150k in Expedition. That's one player's full-auto test, not a top-end setup. Global: Marchutan's Wrath isn't in your 4 stigmas, so its row is skipped. What's left is Dark Crush / Spinning Strike / Incandescent Blow plus Impactful Crush on its own entry.",
+      "s": "The three Dark Crush openers stop overlapping, which gave +3–5 Dark Crush/min and ~+100–150k in Expedition. That's one player's full-auto test, not a top-end setup. Global: Marchutan's Wrath is your 4th stigma from level 37; before that its row is skipped.",
       "macros": [
        [
         "Dark Crush",
@@ -1226,7 +1229,7 @@
      "Recuperation"
     ],
     "why": "The same Dark Crush line as Late game, and every skill in it is a regular skill, so it works from level 4. Impactful Crush (Lv 3) opens Dark Crush (Lv 4) for 2 s; Spinning Strike joins at Lv 14 (its row is skipped until then). Skill points stop at skill level 10, so while leveling Dark Crush still has its 5 s cooldown: one Dark Crush per window. The Piercing Strike chain comes at skill level 12 and no cooldown at 16 (through gear lines, Daevanion and Arcana). The macro doesn't change when that happens.",
-    "tip": "Rushing Smash (Lv 1) gap-closes to the next pack; keep it manual if you take its charge option. Impactful Crush stuns normal mobs, so Wave Blow (Lv 12, needs a stunned target) hits hard right after it. Add Gust Rampage (Lv 5) as a third held key once you're fighting bosses with stagger bars. Stigmas from level 22 don't change the macro. Slot them in this order: 22 Undefeated Mantra (toggle it on), 27 Power of the Storm, 32 Guardian Blessing (stack it on Power of the Storm's key), 37 Sprint Mantra (toggle).",
+    "tip": "Rushing Smash (Lv 1) gap-closes to the next pack; keep it manual if you take its charge option. Impactful Crush stuns normal mobs, so Wave Blow (Lv 12, needs a stunned target) hits hard right after it. Add Gust Rampage (Lv 5) as a third held key once you're fighting bosses with stagger bars. Stigmas from level 22 don't change the macro. Slot them in this order: 22 Undefeated Mantra (toggle it on), 27 Power of the Storm, 32 Sprint Mantra (toggle), 37 Marchutan's Wrath (the Global sheet's order and what 98% of top Global Chanters slot).",
     "alts": [
      {
       "t": "Video version",
@@ -1289,7 +1292,7 @@
      "Rushing Smash"
     ],
     "why": "Lines 1–2 are the '100% in-game macro' setup a 900k Chanter built so nothing needs pressing: splitting Impactful Crush out stops the three Dark Crush openers from overlapping (+3–5 Dark Crush/min). Line 3 adds the 9/17 guide's buff stack so Power of the Storm and Guardian Blessing run themselves.",
-    "loss": "Three lines means each slot is checked a third of the time. Power of the Storm is a party burst buff, so automating it can waste it outside burst windows, and in the Abyss 'Battlefield Might' replaces it during boss fights. Global: Marchutan's Wrath isn't in the Global 4 stigma build, so its row is skipped unless you slot it.",
+    "loss": "Three lines means each slot is checked a third of the time. Power of the Storm is a party burst buff, so automating it can waste it outside burst windows, and in the Abyss 'Battlefield Might' replaces it during boss fights. Global: Marchutan's Wrath is your 4th stigma (slot 4 opens at level 37), so its row is skipped until then.",
     "tip": "Never macro Undefeated or Sprint Mantra: they're toggles, and a second press switches them off."
    }
   },
@@ -1304,7 +1307,7 @@
     "macros": [
      [
       "Zikel's Blessing",
-      null,
+      "Ruinous Blow",
       null,
       null
      ],
@@ -1331,7 +1334,6 @@
      "Macro key"
     ],
     "manual": [
-     "Ruinous Blow",
      "Mocking Blade",
      "Crushing Wave",
      "Ankle Slice",
@@ -1349,7 +1351,7 @@
      }
     ],
     "queue": "Not stated in the sheet, so test both",
-    "why": "The Global sheet's layout: three entries, all in the in-game macro. Entry 1 keeps Zikel's Blessing on cooldown. Entry 2 casts Lifestealing Blade and Lunge Stance, with Rending Blow as the filler. Entry 3 has Rage Burst with Overhead Slam right above it. Rage Burst makes Overhead Slam usable on the target for 10 s (game database), so Overhead Slam fires from that entry during each Rage Burst window. Hold Keen Strike (left click) with the macro: it's your MP source.",
+    "why": "The Global sheet's layout: three entries, all in the in-game macro. Entry 1 keeps Zikel's Blessing and Ruinous Blow on cooldown (Ruinous Blow's Prepare for Battle is +20% PvE damage for 20 s; top Global Gladiators recast it every ~21 s, so this page moved it from your hands into the macro). Entry 2 casts Lifestealing Blade and Lunge Stance, with Rending Blow as the filler. Entry 3 has Rage Burst with Overhead Slam right above it. Rage Burst makes Overhead Slam usable on the target for 10 s (game database), so Overhead Slam fires from that entry during each Rage Burst window. The macro alternates Rending Blow (entry 2) and Overhead Slam (entry 3), which is the Overhead Slam → Rending Blow cancel: the top 10% of Global Gladiators cast ~59 Overhead Slams and ~52 Rending Blows a minute. Hold Keen Strike (left click) only while MP runs short.",
     "tip": "Mana: the sheet warns you'll run short on MP until Rending Blow reaches skill level 16, so keep left click held. The screenshot slots Lifestealing Blade. The sheet's stigma order is Lunge Stance, Zikel's Blessing, Wave Armor, Rage Burst, so if you run Wave Armor instead, press it yourself and that row stays empty. Korean top players mash Overhead Slam on its own key for more hits (Other versions).",
     "patch": "Sep 16: Leaping Slam and Ruinous Blow can't be used while bound. Sep 23: Fracturing Rush now follows your key direction.",
     "alts": [
@@ -1852,7 +1854,7 @@
     ],
     "queue": "Not stated in the sheet, so test both",
     "why": "The Global sheet's layout. Tempest Shot sits at the top of the Griffon line, away from Drill Dart, which is the same rule Korean Rangers use for the Tempest Shot cancel. Snare Shot slows the target, and that's what lets Burst Arrow (on the Gale line) fire. The third entry keeps Vaizel's Authority, Bow of Blessing and Supporting Fire rolling.",
-    "tip": "Keep Marking Shot's debuff up yourself (E). You can also take the 3 buffs out of the macro and press them before the pull (sheet). The Global Ranger guide (Allyria) leaves Marking Shot, Arrow Scattershot, Suppressing Arrow and Explosion Trap out of the macro. Charge Deadshot yourself.",
+    "tip": "Keep Marking Shot's debuff up yourself (E). You can also take the 3 buffs out of the macro and press them before the pull (sheet). The Global Ranger guide (Allyria) leaves Marking Shot, Arrow Scattershot, Suppressing Arrow and Explosion Trap out of the macro. Charge Deadshot yourself. Get Snipe (left click) to skill level 12 early for option 4: −1 s Deadshot cooldown per hit, which gave Global Rangers 2.3x as many Deadshots.",
     "patch": "Sep 16: every Ranger attack has an element. Drill Dart, Griffon and Explosive Arrow are Fire.",
     "alts": [
      {

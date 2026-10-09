@@ -1,4 +1,4 @@
-/* Aion 2 Class Guides home: class cards, stamp, stigma shard ladder and the merged update log. */
+/* Aion 2 Class Guides home: class cards, DPS tier lists, stamp, stigma shard ladder and the merged update log. */
 (function () {
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -14,6 +14,27 @@
   $("ladder").innerHTML = h;
 
   const load = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
+
+  // DPS tier lists: tiers are hand-set (see index.html), numbers come from data/topplayers.json (tools/notmeter_snapshot.py)
+  const TIERS = {
+    gl: { S: ["chanter"], A: ["gladiator", "sorcerer", "ranger"], B: ["assassin", "templar", "spiritmaster"], C: ["cleric"] },
+    kr: { S: ["assassin", "sorcerer", "spiritmaster", "ranger"], A: ["gladiator", "templar"], B: ["chanter"], C: ["cleric"] },
+  };
+  function tierLists(mac) {
+    const name = (id) => (mac.classes.find((c) => c.id === id) || { en: id }).en;
+    const draw = (el, tiers, val) => {
+      el.innerHTML = ["S", "A", "B", "C"].map((t) => `<div class="tier ${t}"><b>${t}</b><div class="items">${tiers[t].map((id) =>
+        `<a class="ti" href="${id}.html"><div class="t">${esc(name(id))}<small>${val(id)}</small></div></a>`).join("")}</div></div>`).join("");
+    };
+    load("data/topplayers.json").then((tp) => {
+      const cp = Object.fromEntries((tp.tiers.globalCp || []).map((r) => [r[0], r[1]]));
+      const nm = Object.fromEntries((tp.tiers.globalNm || []).map((r) => [r[0], r[1]]));
+      const kr = Object.fromEntries((tp.tiers.kr800 || []).map((r) => [r[0], r[1]]));
+      const sgn = (v) => (v > 0 ? "+" : "") + v.toFixed(1) + "%";
+      draw($("tierGl"), TIERS.gl, (id) => `${cp[id] != null ? sgn(cp[id]) + " at equal power" : ""}${nm[id] != null ? " · score " + Math.round(nm[id]) : ""}`);
+      draw($("tierKr"), TIERS.kr, (id) => (kr[id] != null ? "score " + kr[id].toFixed(1) : ""));
+    }).catch(() => { $("tierGl").innerHTML = $("tierKr").innerHTML = `<p class="snote">Couldn't load the tier numbers. Refresh to try again.</p>`; });
+  }
   Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load))
     .then(([mac, stg, ov, db, sk]) => {
       const icon = (cls, n) => {
@@ -35,6 +56,7 @@
           <div class="mini"><span>Global stigmas</span>${gl}</div>
           <span class="go">Open the ${esc(m.en)} page →</span></a>`;
       }).join("");
+      tierLists(mac);
       const upd = mac.meta.updated > stg.meta.updated ? mac.meta.updated : stg.meta.updated;
       $("stamp").innerHTML = `Macros: <b>${esc(mac.meta.patchBaseline)}</b> · Stigmas: <b>Global Season 1</b> + KR/TW · updated ${esc(upd)}`;
       if (mac.meta.notice) { $("notice").textContent = mac.meta.notice; $("notice").hidden = false; }

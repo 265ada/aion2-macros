@@ -73,7 +73,7 @@
     "passives": "Gear lines also carry your 5 key passives (Experienced Counterstrike, Murderous Burst, Attack Preparation, Identify Weakness, Impact Hit)",
     "wings": "Eroded 73%, Talisra 18.5% (Korea, Aug 21)"
    },
-   "hits": "Upward Strike ~95–102 · Overhead Slam ~176–200 · ~980–1,020 total hits per minute (Korean endgame dummy)",
+   "hits": "Upward Strike ~95–102 · Overhead Slam ~176–200 · ~980–1,020 total hits per minute (Korean endgame dummy). Global top 10% in boss fights (this week): Overhead Slam ~59, Upward Strike ~49, Rending Blow ~52 casts a minute",
    "patches": [
     [
      "Sep 23",
@@ -440,7 +440,7 @@
      "https://www.inven.co.kr/board/aion2/6438/22546"
     ]
    },
-   "hits": "",
+   "hits": "Global top 10% in boss fights (this week): Judgment ~45 casts a minute (median top player 38)",
    "patches": [
     [
      "Sep 16",
@@ -794,7 +794,7 @@
     "wings": "Talisra 58%, Awakened Pride 30% (rising) (Korea, Aug 21)",
     "note": "Kanon's guide suggests Death instead of Space on the bracelet for Assassin; the newer Sep 30 Korean guide says Justice + Space is better for PvE."
    },
-   "hits": "Heart Gore ~300 · Insignia Explosion ~70 per minute (after Sep 16, 1.0M+ gear)",
+   "hits": "Heart Gore ~300 · Insignia Explosion ~70 per minute (after Sep 16, 1.0M+ gear). Global top 10% in boss fights (this week): Heart Gore ~52, Insignia Explosion ~17 casts a minute",
    "patches": [
     [
      "Sep 16",
@@ -1138,7 +1138,7 @@
     "passives": "Focused Eye and Hunter's Resolve on gear (a recent buff widened the gap), then Crit in leftover gear slots",
     "wings": "Eroded 54.5%, Talisra 25.5% (Korea, Aug 21)"
    },
-   "hits": "Snipe 16–18 · Deadshot 24–28 · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total per minute",
+   "hits": "Snipe 16–18 · Deadshot 24–28 · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total per minute. Global top 10% in boss fights (this week): Deadshot ~7, Tempest Shot ~107, Drill Dart ~18, Gale Arrow ~9 casts a minute",
    "patches": [
     [
      "Sep 16",
@@ -1493,7 +1493,7 @@
     "wings": "Talisra 91.5% (Korea, Aug 21)",
     "note": "Sorcerer gets the most out of Illusion (cooldown) of any class: use Illusion instead of Wisdom on the Mirror Arcana card."
    },
-   "hits": "Hellfire 26–28 casts · ~960–1,000 total hits per minute (Korean endgame, 43% cooldown reduction)",
+   "hits": "Hellfire 26–28 casts · ~960–1,000 total hits per minute (Korean endgame, 43% cooldown reduction). Global top 10% in boss fights (this week): Hellfire ~6, Blaze ~34, Firestorm ~13 casts a minute",
    "patches": [
     [
      "Sep 16",
@@ -1847,7 +1847,7 @@
     "passives": "Spirit Strike, Element Unification, Mental Focus",
     "wings": "Eroded 45%, Talisra 43.5% (Korea, Aug 21)"
    },
-   "hits": "",
+   "hits": "Global top 10% in boss fights (this week): Elemental Fusion ~20, Combustion ~39 casts a minute",
    "patches": [
     [
      "Sep 10",
@@ -2206,7 +2206,7 @@
     ],
     "note": "Talisra wings when you need maximum Salvation cooldown (new raid tries)."
    },
-   "hits": "Attack speed caps at 94.4%: extra past that is wasted, aim for 32.6% cooldown reduction",
+   "hits": "Attack speed caps at 94.4%: extra past that is wasted, aim for 32.6% cooldown reduction. Global top 10% in boss fights (this week): Condemnation ~40 casts a minute",
    "patches": [],
    "src": [
     [
@@ -2555,7 +2555,7 @@
     "passives": "Wind's Promise, Impact Hit, Attack Preparation (Inspiring Spell only if there's room)",
     "wings": "Eroded 45%, Talisra 23%, Awakened Pride 12.5% (Korea, Aug 21)"
    },
-   "hits": "Dark Crush ~45–54 casts per minute without Marchutan's Wrath, ~58–60 with it (Korean dummy, Sep). The average gap between Dark Crush casts should be ~750 ms at 122% Combat Speed",
+   "hits": "Dark Crush ~45–54 casts per minute without Marchutan's Wrath, ~58–60 with it (Korean dummy, Sep). The average gap between Dark Crush casts should be ~750 ms at 122% Combat Speed. Global top 10% in boss fights (this week, downtime included): Dark Crush ~30, Spinning Strike ~7 casts a minute",
    "patches": [
     [
      "Sep 16",

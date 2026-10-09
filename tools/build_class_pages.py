@@ -11,7 +11,7 @@ ORDER = ["gladiator", "templar", "assassin", "ranger", "sorcerer", "spiritmaster
 M = {c["id"]: c for c in json.load(open(os.path.join(ROOT, "data/macros.json"), encoding="utf-8"))["classes"]}
 O = json.load(open(os.path.join(ROOT, "data/classes.json"), encoding="utf-8"))["classes"]
 
-SECTIONS = [("overview", "Overview"), ("macros", "Macros"), ("stigmas", "Stigmas"), ("skills", "Skills"),
+SECTIONS = [("overview", "Overview"), ("plan", "Max damage"), ("macros", "Macros"), ("stigmas", "Stigmas"), ("skills", "Skills"),
             ("specs", "Specializations"), ("tiers", "Tier list"), ("gear", "Gear"), ("patches", "Patches")]
 
 TPL = """<!doctype html>
@@ -48,7 +48,7 @@ TPL = """<!doctype html>
 <main id="view" style="display:grid;gap:clamp(22px,3vw,36px)"><p class="loading">Loading {en}…</p></main>
 
 <footer>
-  <p><b style="color:#fff">How this was checked.</b> Macros come from the newest Korean Inven class guides and the replies under them, checked against Taiwanese guides and in-game screenshots (rows marked “likely” were matched by icon). Global Season 1 stigma builds use what Korean players ran in their own 4-slot, level-20 season, updated for the Global client's balance. Skill names, icons, cooldowns and effects come from the aion2.app game-client database (Global). Every card links its source. Skill icons and names © NC; this is a fan-made reference.</p>
+  <p><b style="color:#fff">How this was checked.</b> Macros come from the newest Korean Inven class guides and the replies under them, checked against Taiwanese guides and in-game screenshots (rows marked “likely” were matched by icon). Global Season 1 stigma builds use what Korean players ran in their own 4-slot, level-20 season, updated for the Global client's balance. The Max damage plan reads top Global players' boss parses and Korea's top-20 builds from NotMeter's public statistics. Skill names, icons, cooldowns and effects come from the aion2.app game-client database (Global). Every card links its source. Skill icons and names © NC; this is a fan-made reference.</p>
   <p><a href="index.html">← All classes and the basics</a></p>
 </footer>
 </div>

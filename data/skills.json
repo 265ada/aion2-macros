@@ -953,7 +953,7 @@
 "ko": "쾌유의 주문",
 "cd": 15,
 "mp": null,
-"icon": null,
+"icon": "ICON_CH_SKILL_013",
 "note": "The DB has no icon for this skill."
 },
 "Fracturing Blow": {
@@ -1072,7 +1072,8 @@
 "ko": "파열격",
 "cd": null,
 "mp": 120,
-"icon": "ICON_CH_SKILL_005"
+"icon": "ICON_CH_SKILL_005",
+"chain": "Incandescent Blow"
 },
 "Bow of Blessing": {
 "cls": "ranger",
@@ -1109,7 +1110,7 @@
 "ko": "증폭의 기도",
 "cd": 60,
 "mp": null,
-"icon": null
+"icon": "ICON_CL_SKILL_044"
 },
 "Flame Blessing": {
 "cls": "spiritmaster",
@@ -1784,7 +1785,7 @@
 "ko": "치유력 강화",
 "cd": null,
 "mp": null,
-"icon": null,
+"icon": "ICON_CL_SKILL_Passive_003",
 "passive": 1
 },
 "Immortal Veil": {
@@ -1794,7 +1795,7 @@
 "ko": "불사의 장막",
 "cd": null,
 "mp": null,
-"icon": null,
+"icon": "ICON_CL_SKILL_Passive_011",
 "passive": 1
 },
 "Heal Block": {
@@ -1854,7 +1855,7 @@
 "ko": "생명의 축복",
 "cd": null,
 "mp": null,
-"icon": null,
+"icon": "ICON_CH_SKILL_Passive_012",
 "passive": 1
 },
 "Crossguard": {
@@ -2108,5 +2109,315 @@
 "cd": 60,
 "mp": null,
 "icon": "ICON_CO_SKILL_002"
+},
+"Upward Strike": {
+"cls": "gladiator",
+"id": "11440000",
+"tw": "上擊",
+"ko": "올려치기",
+"cd": 0.5,
+"mp": null,
+"icon": "ICON_TE_SKILL_016",
+"chain": "Overhead Slam"
+},
+"Smashing Blow": {
+"cls": "gladiator",
+"id": "11420000",
+"tw": "擊破猛擊",
+"ko": "격파의 맹타",
+"cd": null,
+"mp": 120,
+"icon": "ICON_GL_SKILL_042",
+"chain": "Rending Blow"
+},
+"Wrathful Strike": {
+"cls": "gladiator",
+"id": "11040000",
+"tw": "憤怒一擊",
+"ko": "분노의 일격",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_004",
+"chain": "Keen Strike"
+},
+"Rupture Strike": {
+"cls": "gladiator",
+"id": "11030000",
+"tw": "破裂一擊",
+"ko": "파열의 일격",
+"cd": null,
+"mp": null,
+"icon": "ICON_GL_SKILL_003",
+"chain": "Keen Strike"
+},
+"Punishing Strike": {
+"cls": "templar",
+"id": "12060000",
+"tw": "膺懲一擊",
+"ko": "응징의 일격",
+"cd": null,
+"mp": 120,
+"icon": "ICON_TE_SKILL_014",
+"chain": "Pummel"
+},
+"Desperate Strike": {
+"cls": "templar",
+"id": "12030000",
+"tw": "必死一擊",
+"ko": "필사의 일격",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_003",
+"chain": "Vicious Strike"
+},
+"Decisive Strike": {
+"cls": "templar",
+"id": "12020000",
+"tw": "會心一擊",
+"ko": "회심의 일격",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_002",
+"chain": "Vicious Strike"
+},
+"Threatening Blow": {
+"cls": "templar",
+"id": "12440000",
+"tw": "威脅猛擊",
+"ko": "위협의 맹타",
+"cd": null,
+"mp": null,
+"icon": "ICON_TE_SKILL_044",
+"chain": "Vicious Strike"
+},
+"Swift Slice": {
+"cls": "assassin",
+"id": "13040000",
+"tw": "快速斬",
+"ko": "쾌속 베기",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_004",
+"chain": "Quick Slice"
+},
+"Breaking Slice": {
+"cls": "assassin",
+"id": "13030000",
+"tw": "絕魂斬",
+"ko": "절혼 베기",
+"cd": null,
+"mp": null,
+"icon": "ICON_AS_SKILL_003",
+"chain": "Quick Slice"
+},
+"Savage Smash": {
+"cls": "assassin",
+"id": "13120000",
+"tw": "猛獸揮擊",
+"ko": "맹수의 후려치기",
+"cd": null,
+"mp": 120,
+"icon": "ICON_AS_SKILL_011",
+"chain": "Savage Roar"
+},
+"Savage Back Kick": {
+"cls": "assassin",
+"id": "13110000",
+"tw": "猛獸後踢",
+"ko": "맹수의 뒷발차기",
+"cd": null,
+"mp": 120,
+"icon": "ICON_AS_SKILL_010",
+"chain": "Savage Roar"
+},
+"Tempest Arrow": {
+"cls": "ranger",
+"id": "14100000",
+"tw": "疾風箭",
+"ko": "질풍 화살",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_010",
+"chain": "Snipe"
+},
+"Spiral Arrow": {
+"cls": "ranger",
+"id": "14040000",
+"tw": "螺旋箭",
+"ko": "나선 화살",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_004",
+"chain": "Snipe"
+},
+"Rapid Fire": {
+"cls": "ranger",
+"id": "14030000",
+"tw": "連射",
+"ko": "연사",
+"cd": null,
+"mp": null,
+"icon": "ICON_RA_SKILL_003",
+"chain": "Snipe"
+},
+"Pyroclasm": {
+"cls": "sorcerer",
+"id": "15250000",
+"tw": "烈火",
+"ko": "열화",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_023",
+"chain": "Flame Arrow"
+},
+"Burst": {
+"cls": "sorcerer",
+"id": "15030000",
+"tw": "爆裂",
+"ko": "작렬",
+"cd": null,
+"mp": null,
+"icon": "ICON_SO_SKILL_003",
+"chain": "Flame Arrow"
+},
+"Cold Wave": {
+"cls": "sorcerer",
+"id": "15100000",
+"tw": "冷氣波動",
+"ko": "냉기 파동",
+"cd": null,
+"mp": 120,
+"icon": "ICON_SO_SKILL_010",
+"chain": "Ice Chain"
+},
+"Ashy Call": {
+"cls": "spiritmaster",
+"id": "16050000",
+"tw": "灰燼呼喚",
+"ko": "재의 부름",
+"cd": null,
+"mp": 120,
+"icon": "ICON_EL_SKILL_005",
+"chain": "Combustion"
+},
+"Earth Tremor": {
+"cls": "spiritmaster",
+"id": "16030000",
+"tw": "大地震動",
+"ko": "대지 진동",
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_003",
+"chain": "Cold Shock"
+},
+"Divine Punishment": {
+"cls": "cleric",
+"id": "17050000",
+"tw": "天罰",
+"ko": "천벌",
+"cd": null,
+"mp": 120,
+"icon": "ICON_CL_SKILL_005",
+"chain": "Judgment Thunder"
+},
+"Discharge": {
+"cls": "cleric",
+"id": "17030000",
+"tw": "放電",
+"ko": "방전",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_003",
+"chain": "Earth's Retribution"
+},
+"Thunder and Lightning": {
+"cls": "cleric",
+"id": "17020000",
+"tw": "雷電",
+"ko": "뇌전",
+"cd": null,
+"mp": null,
+"icon": "ICON_CL_SKILL_002",
+"chain": "Earth's Retribution"
+},
+"Piercing Strike": {
+"cls": "chanter",
+"id": "18400000",
+"tw": "貫通碎",
+"ko": "관통쇄",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_040",
+"chain": "Dark Crush"
+},
+"Storm Chain": {
+"cls": "chanter",
+"id": "18370000",
+"tw": "暴風碎",
+"ko": "폭풍쇄",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_037",
+"chain": "Onslaught"
+},
+"Bolt Crush": {
+"cls": "chanter",
+"id": "18030000",
+"tw": "轟雷碎",
+"ko": "벽력쇄",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_003",
+"chain": "Onslaught"
+},
+"Resonance Crush": {
+"cls": "chanter",
+"id": "18020000",
+"tw": "共鳴碎",
+"ko": "공명쇄",
+"cd": null,
+"mp": null,
+"icon": "ICON_CH_SKILL_002",
+"chain": "Onslaught"
+},
+"Vacuum Explosion": {
+"cls": "spiritmaster",
+"id": "16020000",
+"tw": null,
+"ko": null,
+"cd": null,
+"mp": null,
+"icon": null,
+"chain": "Cold Shock"
+},
+"Ancient Spirit: Basic Attack": {
+"cls": "spiritmaster",
+"id": "100051",
+"tw": null,
+"ko": null,
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_025",
+"pet": "Summon: Ancient Spirit"
+},
+"Ancient Spirit: Destruction": {
+"cls": "spiritmaster",
+"id": "16001117",
+"tw": null,
+"ko": null,
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_025",
+"pet": "Summon: Ancient Spirit"
+},
+"Fire Spirit: Basic Attack": {
+"cls": "spiritmaster",
+"id": "100011",
+"tw": null,
+"ko": null,
+"cd": null,
+"mp": null,
+"icon": "ICON_EL_SKILL_010",
+"pet": "Summon: Fire Spirit"
 }
 }

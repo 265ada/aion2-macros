@@ -2645,7 +2645,7 @@
 "cleric:Prayer of Amplification": {
 "id": "17430000",
 "en": "Prayer of Amplification",
-"icon": null,
+"icon": "ICON_CL_SKILL_044",
 "d": "Increases Attack by 20% for 10s.",
 "s": [
 [
@@ -2707,7 +2707,7 @@
 "cleric:Salvation": {
 "id": "17270000",
 "en": "Salvation",
-"icon": null,
+"icon": "ICON_CL_SKILL_026",
 "d": "The caster is immune to damage and status effects for 3s. Cannot block certain powerful attacks. Unaffected by cooldown increase effects. Tenaciousness, Salvation, Barrier Spell effects, and Unstoppable effect cannot be applied for 30s if Invincibility stacking is blocked.",
 "s": [
 [

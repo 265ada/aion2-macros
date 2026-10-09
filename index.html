@@ -33,6 +33,61 @@
 
 <main class="cards" id="cards" aria-label="Classes"><p class="loading">Loading classes…</p></main>
 
+<section class="panel" aria-labelledby="h-tier">
+  <h2 id="h-tier">DPS tier list<small>Which classes deal the most damage · Global right now vs Korea's endgame · tiers set Oct 9, 2026 · numbers from NotMeter</small></h2>
+  <div class="cols2">
+    <div>
+      <h4>Global right now <span class="tc">top players, this week</span></h4>
+      <div class="tiers" id="tierGl"><p class="loading">Loading…</p></div>
+      <p class="snote">First number: damage compared with the average class <b style="color:#fff">at the same combat power</b> on the same boss (all of this week's and all-time top-50 Global boss parses, ~6,200). Second: NotMeter's own Global score this week (100 = the median class). Global top players sit around 125–145k combat power.</p>
+    </div>
+    <div>
+      <h4>Korea endgame <span class="tc">800k+ combat power, where Global is heading</span></h4>
+      <div class="tiers" id="tierKr"><p class="loading">Loading…</p></div>
+      <p class="snote">NotMeter's Korean class score this week (100 = the median class), from 800k+ combat power parties with matched combat power. The 1M+ ranking is the same order. Brawler (Korea only, not in Global) tops it at ~111.</p>
+    </div>
+  </div>
+  <h4>Why the two lists disagree</h4>
+  <ul class="facts">
+    <li><b>Chanter is #1 on Global and 8th in Korea.</b> Global players have skills at 12–16, and the Chanter's no-cooldown Dark Crush (skill level 16) is a huge jump that doesn't need much else. Korea's endgame adds 6 stigmas at level 25, ~35–40% cooldown reduction and 2–5 skills at 20, which the crit and cooldown classes (Assassin, Sorcerer, Spiritmaster, Ranger) scale with far better. Chanter also spends part of its kit on party buffs, which don't show in its own number.</li>
+    <li><b>Assassin is mid on Global and #1 (of Global's 8) in Korea.</b> Its damage stacks multiplicatively on crit, crit damage and back-attack stats that are still low on Global.</li>
+    <li class="warn"><b>Templar and Cleric aren't DPS picks.</b> Templar tanks (it's still ~average damage at equal gear), and Cleric heals; their numbers are here for completeness.</li>
+    <li>Spread inside each class is large: the top 10% of every class deal 35–45% more than their combat power predicts, so <b>how you play moves you more than which class you pick</b>. See each class's Max damage plan.</li>
+  </ul>
+</section>
+
+<section class="panel" aria-labelledby="h-easy">
+  <h2 id="h-easy">Easiest class to max<small>Highest damage for the least effort right now · how much of each class's damage a macro can do for you</small></h2>
+  <div class="cols2">
+    <div>
+      <h4>Pick: <a href="chanter.html">Chanter</a>, then <a href="gladiator.html">Gladiator</a></h4>
+      <ul class="facts">
+        <li class="good"><b>Chanter</b> is the top Global DPS at equal gear right now (+24% vs the average class), and about 97% of its damage runs from <b>one macro key plus held left click</b>: no charge skills, no ground targeting, and Dark Crush hits from 20 m. Parties want its buffs too. What you have to do: push Dark Crush to skill level 16 first (option 5), then Onslaught to 16, and keep Dark Crush casts high. Catch: in Korea's endgame it drops to the bottom of the DPS list, so it's the best pick for Season 1, not forever.</li>
+        <li class="good"><b>Gladiator</b> is A tier with nearly 100% of its damage automatable: one skill (Overhead Slam + Upward Strike) is 60% of it, and the macro alternates it with Rending Blow for you. You stand in front (77% front hits) and in melee.</li>
+        <li><b>Templar</b> is almost as simple (Judgment is 40% on one macro row) but it's the tank, and Punishment (12%) has to be charged by hand.</li>
+        <li class="warn"><b>Hardest to max:</b> Sorcerer (Hellfire charge, two ground AoEs and six skills at 7% or more each), Ranger (Deadshot charge, 23%), Assassin (85% of hits must land from behind). All three are top-tier in Korea's endgame, so the effort pays off later.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>How much a macro can do</h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Class</th><th>Global tier</th><th>Automatable</th><th>What you still do by hand</th></tr></thead>
+        <tbody>
+          <tr><td><a href="chanter.html"><b>Chanter</b></a></td><td><b class="tl S">S</b></td><td>~97%</td><td>Marchutan's Wrath; keep Dark Crush casts up</td></tr>
+          <tr><td><a href="gladiator.html"><b>Gladiator</b></a></td><td><b class="tl A">A</b></td><td>~99%</td><td>Stand in front; Leaping Slam / mobility</td></tr>
+          <tr><td><a href="sorcerer.html"><b>Sorcerer</b></a></td><td><b class="tl A">A</b></td><td>~60–80%</td><td>Charge Hellfire (21%); place Fire Wall + Cold Storm (19%) unless the 6-entry macro does it</td></tr>
+          <tr><td><a href="ranger.html"><b>Ranger</b></a></td><td><b class="tl A">A</b></td><td>~77%</td><td>Charge Deadshot (23%); Marking Shot</td></tr>
+          <tr><td><a href="assassin.html"><b>Assassin</b></a></td><td><b class="tl B">B</b></td><td>~100%</td><td>Stay behind the boss; time Illusive Clone</td></tr>
+          <tr><td><a href="templar.html"><b>Templar</b></a></td><td><b class="tl B">B</b></td><td>~88%</td><td>Charge Punishment (12%); tanking</td></tr>
+          <tr><td><a href="spiritmaster.html"><b>Spiritmaster</b></a></td><td><b class="tl B">B</b></td><td>~100%</td><td>Nothing big; a third of the damage is spirits on their own</td></tr>
+          <tr><td><a href="cleric.html"><b>Cleric</b></a></td><td><b class="tl C">C</b></td><td>~92%</td><td>Charge Bolt (8%); healing</td></tr>
+        </tbody>
+      </table></div>
+      <p class="snote">Automatable = share of a top Global player's damage that comes from skills a macro or held key fires at full strength. Charge skills fired by a macro come out uncharged: in Global parses a tap does only ~35–45% of a Max charge.</p>
+    </div>
+  </div>
+</section>
+
 <section class="panel" aria-labelledby="h-global">
   <h2 id="h-global">Global Season 1: roadmap, weekly checklist, class guides<small>From the shared Global class sheet (zxcastform) and the Global class guides it links</small></h2>
   <div class="cols3">
@@ -258,17 +313,18 @@
       <ul class="facts">
         <li class="warn"><b>Ping and FPS matter a lot.</b> Macros are hit-count setups: a 150–200 ms ping difference was worth roughly 50–70% damage. If your hits per minute are far under the class page's targets, check ping first.</li>
         <li><b>Combat Speed</b> is the stat to stack; more hits also means more procs from everything else.</li>
-        <li class="warn"><b>Crit caps at 80%.</b> If a skill already crits at the cap, a "+crit" specialty does nothing, so take a different pick.</li>
-        <li>Accuracy works the same way against a boss's Block. Korean raid targets (not confirmed for Global): Ludra 1,500 Accuracy / 1,600 Crit; Corroded 2,350 / 2,500; Muspel Hard 2,800 / 3,150.</li>
+        <li class="warn"><b>Crit caps at 50% on Global</b> (80% in Korea; the training dummy caps around 8%). Once a skill crits at the cap, a "+crit" specialty does nothing, so take a different pick. This is also why Precision lines matter less on Global.</li>
+        <li>Accuracy works the same way against a boss's Block. Projected Global Ludra: ~1,200 Accuracy and 1,200–1,400 Crit. Korean raids: Corroded 2,350 / 2,500; Muspel Hard 2,800 / 3,150.</li>
+        <li><b>Potential</b> stats are PvP-only on Global; ignore them for PvE.</li>
         <li>Power Shards: regular ≈ +4.7% damage, Superior ≈ +8.9%.</li>
       </ul>
     </div>
   </div>
-  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a> (twitch.tv/kanonxo). The numbers are Korean endgame values, and the author marks several as unconfirmed for Global.</p>
+  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a> (twitch.tv/kanonxo), Oct 4 Global update. The per-1% values are Korean endgame numbers, and the author marks several as unconfirmed for Global.</p>
 </section>
 
 <section class="panel" aria-labelledby="h-gear">
-  <h2 id="h-gear">Gear and progression<small>Stat lines, stones, Pantheon, Arcana, boards and Pet Genus · from Kanon's Aion 2 Bible (Global lines)</small></h2>
+  <h2 id="h-gear">Gear and progression<small>Stat lines, stones, Pantheon, Arcana, boards, Pet Genus, wings · from Kanon's Aion 2 Bible (Oct 4 Global update)</small></h2>
   <div class="cols3">
     <div class="col">
       <h4>Stat lines to keep (rarest first)</h4>
@@ -302,14 +358,47 @@
     <div class="col">
       <h4>Arcana, Daevanion boards, Pet Genus</h4>
       <ul class="facts">
-        <li><b>Arcana</b> cards give Pantheon stats and skill levels. Kanon expects Global to start like Asia: 5 cards (Chalice, Parchment, Compass, Bell, Mirror) and 2 sets. Key lines: Chalice <b>Time</b> (Combat Speed), Bell <b>Destruction</b>, Mirror <b>Wisdom</b>.</li>
-        <li class="good">Get your two key actives to 20 first, even with a cheaper card set, then craft 4-line cards (Chalice first).</li>
-        <li><b>Daevanion:</b> the four white boards (Nezekan, Zikel, Vaizel, Triniel) share points and give skill levels. Take your key active tiles first, then orange tiles. Multi-hit Resist (Triniel) and Crit Damage Tolerance (Vaizel) are useless in PvE. Respec is nearly free.</li>
-        <li><b>Pet Genus:</b> level each board to 10 before locking any line, then roll for Double Chance and Front/Back Damage Boost lines.</li>
+        <li><b>Arcana at Global launch: 5 cards, 2 sets.</b> Kanon's pick: <b>Primal Vigor</b> on Chalice (<b>Time</b>) + Parchment (Life) for +60 PvE Attack above 70% HP, and <b>Magic Armor</b> on Compass (Death), Bell (<b>Destruction</b>) + Mirror (<b>Wisdom</b>) for an MP refill. The three lines that matter most: Chalice Time (Combat Speed), Bell Destruction (Attack Increase), Mirror Wisdom (Double Chance).</li>
+        <li>Later (8 cards, what Korea's top 20 run in every class): <b>Punishing Overture</b> (4: +60 PvE Attack, +10% PvE damage above 70% HP) + <b>Protected Soul</b> (4: +5% Weapon Damage Boost).</li>
+        <li class="good">Get your two key actives to 20 first, even with a cheaper card set, then craft 4-line cards (Chalice first: it rolls from every skill, so it's the hardest to get perfect). Each class page lists which skills Korea's top players put on Arcana and rings.</li>
+        <li><b>Daevanion:</b> the four white boards (Nezekan, Zikel, Vaizel, Triniel) share points and give skill levels: take your key active tiles first (to reach 12 / 16 / 20), then orange tiles, and pick up every gray Attack Bonus tile eventually. Multi-hit Resist (Triniel) and Crit Damage Tolerance (Vaizel) are useless in PvE. Ariel (PvE), Marchutan (Weapon Damage Boost) and Yustiel (Attack Increase) are separate boards you complete by farming dungeons. Respec is nearly free.</li>
       </ul>
     </div>
   </div>
-  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a>, Sep 20, 2026 update. Class-specific choices (which stone stat, which passives) are on each class page.</p>
+  <h4 id="h-genus">Pet Genus on Global (all classes)</h4>
+  <div class="cols2">
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Board</th><th>Slot 4 (the one that matters)</th><th>Slots 1, 5</th><th>Slots 3, 6, 9</th><th>Slot 7</th></tr></thead>
+      <tbody>
+        <tr><td><b>Special</b> (level it first)</td><td><b>Double Chance</b>, nothing else</td><td>Max Attack &gt; Attack Bonus</td><td>Power Shard Bonus</td><td>Damage Tolerance &gt; Endurance</td></tr>
+        <tr><td><b>Varian</b></td><td><b>Front Damage Boost</b> (Assassin: Back) &gt; PvE Damage Boost</td><td>Max Attack &gt; Attack Bonus</td><td>Power Shard Bonus</td><td>PvE Damage Tolerance &gt; Endurance</td></tr>
+        <tr><td><b>Fera</b></td><td><b>Weapon Damage Boost</b> &gt; Damage Boost, PvE Damage Boost</td><td>Max Attack &gt; Attack Bonus</td><td>Power Shard Bonus</td><td>Damage Tolerance &gt; Endurance</td></tr>
+        <tr><td><b>Cogni</b></td><td><b>Crit Damage Boost</b> &gt; Damage Boost, PvE Damage Boost</td><td>Max Attack &gt; Attack Bonus</td><td>Power Shard Bonus</td><td>Damage Tolerance &gt; Endurance</td></tr>
+        <tr><td><b>Natura</b></td><td><b>PvE Damage Boost</b> &gt; Multi-hit &gt; Perfect</td><td>Max Attack &gt; Attack Bonus</td><td>Power Shard Bonus</td><td>PvE Damage Tolerance &gt; Endurance</td></tr>
+      </tbody>
+    </table></div>
+    <ul class="facts">
+      <li><b>How to roll (Global):</b> don't lock anything; press Analyze until every board is level 9. Then use Auto Analyze with your slot-4 stat at Unique (yellow) grade. Level the Special board first.</li>
+      <li>Upgrade order on each board: slot <b>4</b> → <b>1, 5</b> → <b>6, 9</b> → <b>7</b> → 2, 8. Slots 2 and 8 (HP Increase) cost too many crystals and kinah for what they give, so skip them.</li>
+      <li>Slots 3, 6, 9: take <b>Crit or Accuracy</b> instead of Power Shard Bonus until you reach the boss caps (Global Ludra ~1,200 Accuracy, crit cap 50%).</li>
+      <li>Which positional stat: Korea's top 20 put Front Damage Boost on their stones in every class except Assassin (Back) and Sorcerer / Spiritmaster (Weapon Damage Boost first). Check your own front/back hit rate on the meter.</li>
+      <li><b>Pet "Owned Effects"</b> cap at level 3 on Global and give a Pantheon stat at max. Do <b>Might</b> (Cogni mobs) and <b>Precision</b> (Natura mobs) first; a mob with no Source location lives on the other faction's land.</li>
+    </ul>
+  </div>
+  <h4>Wings, enhancing, transfers</h4>
+  <div class="cols3">
+    <ul class="facts">
+      <li><b>Wings</b> give an equip effect and an owned effect. They can't be enhanced at Global launch. Korea's most-equipped wings (Aug): <b>Eroded</b> for front attackers (Gladiator 73%, Templar 77%, Ranger 55%, Cleric and Chanter 45%), <b>Talisra</b> for Sorcerer (92%) and many Spiritmasters, Talisra → <b>Awaken Pride</b> (back attack) for Assassin.</li>
+    </ul>
+    <ul class="facts">
+      <li><b>Enhancing:</b> yellow gear goes to +15 then 5 Amp levels, orange to +20 then 5 Amp levels (Amp levels add orange stats). A yellow +15 Amp 5 transfers into an orange piece at +20 Amp 0.</li>
+      <li>Runes are the only gear that can break when enhancing; top Korean players sit around +7.</li>
+    </ul>
+    <ul class="facts">
+      <li class="warn"><b>Transfers:</b> Manastones, Soulstones, Theostones, Potential lines and the extra Philosopher's Stone line are lost. Orange transfer fragments are scarce (1 orange piece = 5 fragments; a weapon transfer needs 20), so hoard them. Kanon skips the first orange set (Ancient Spirit) and goes orange on the second (Faded Shadow).</li>
+    </ul>
+  </div>
+  <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a>, Oct 4, 2026 Global update; Korea's top-20 stone and Arcana picks from NotMeter. Class-specific choices (which stone stat, which passives) are on each class page.</p>
 </section>
 
 <section class="panel" aria-labelledby="h-patch">

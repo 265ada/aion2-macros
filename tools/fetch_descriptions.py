@@ -1,12 +1,18 @@
 """Refresh data/descriptions.json from the aion2.app skill database (English).
 
-Usage (from the repo root):  python tools/fetch_descriptions.py
+Usage (from the repo root):  python tools/fetch_descriptions.py [--missing]
 Reads skill IDs from data/skills.json. Values are skill level 1 as listed in the DB.
+--missing only fetches skills that aren't in descriptions.json yet. A failed fetch keeps the existing entry.
 """
 import html, json, re, sys, time, urllib.request
 
 ROOT = __file__.rsplit("tools", 1)[0]
 skills = json.load(open(ROOT + "data/skills.json", encoding="utf-8"))
+try:
+    old = json.load(open(ROOT + "data/descriptions.json", encoding="utf-8"))
+except (OSError, ValueError):
+    old = {}
+only_missing = "--missing" in sys.argv
 
 def strip(s):
     s = re.sub(r"<!--.*?-->", "", s, flags=re.S)
@@ -20,6 +26,9 @@ def fetch(sid):
 out, fails = {}, []
 for name, s in skills.items():
     if name.startswith("_"):
+        continue
+    if only_missing and name in old:
+        out[name] = old[name]
         continue
     try:
         h = fetch(s["id"])
@@ -47,6 +56,8 @@ for name, s in skills.items():
             fails.append(name + " (no description)")
     except Exception as e:  # keep going; report at the end
         fails.append(f"{name}: {e}")
+        if name in old:
+            out[name] = old[name]
     time.sleep(0.15)
 
 json.dump({"_about": "English skill descriptions from aion2.app (Global client DB), skill level 1 values. d=description, s=[[unlock level, specialty]], m=castable while moving, r=range, k=Mastery/Stigma, q=required level. Regenerate with tools/fetch_descriptions.py.", **out},

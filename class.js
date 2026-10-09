@@ -1,13 +1,14 @@
 /* Aion 2 Class Guides: renders one class page (body[data-class]) from
    data/macros.json (macros), data/stigmas.json (stigma builds, skills, specs, tiers), data/classes.json (overview, gear,
-   patches), data/stigma_db.json (stigmas), data/skills.json + data/descriptions.json (skill names, icons, hover text).
+   patches), data/plans.json + data/topplayers.json (max damage plan, top-player numbers), data/stigma_db.json (stigmas),
+   data/skills.json + data/descriptions.json (skill names, icons, hover text).
    To update a class, edit the JSON files only. */
 (function () {
   const CLS = document.body.dataset.class;
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const DOT = " · ", ARROW = "→", DASH = "–";
-  let SK = {}, DS = {}, DB = {}, MAC = null, STG = null, OV = null;
+  let SK = {}, DS = {}, DB = {}, MAC = null, STG = null, OV = null, PL = null, TP = null;
   let M = null, S = null, O = null; // this class's macro / stigma / overview objects
   let mmode = "late", smode = "gl";
 
@@ -57,6 +58,53 @@
         <div class="col"><h4>Common mistakes</h4><ul class="facts">${o.mistakes.map((x) => `<li class="warn">${esc(x)}</li>`).join("")}</ul></div>
       </div>
       <p class="snote">Effects quoted here are from the Global client database. Hover or tap any icon for the full skill text.</p>
+    </section>`;
+  }
+
+  /* ---------- max damage plan (data/plans.json + data/topplayers.json) ---------- */
+  const pkBoxes = (n, picks) => picks.map((x) => {
+    const o = ((DS[n] || {}).s || [])[x - 1];
+    return `<i class="o${x}"${o ? ` title="${esc(x + ": " + o[1] + " (Lv " + o[0] + ")")}"` : ""}>${x}</i>`;
+  }).join("");
+  function plan() {
+    const p = PL && PL.classes[CLS];
+    if (!p) return "";
+    const g = TP && TP.classes[CLS], kr = TP && TP.kr && TP.kr[CLS];
+    const glLv = (n) => g && g.levels.find((r) => r[0] === n);
+    const krAct = (n) => kr && kr.act.find((r) => r[0] === n);
+    const order = p.order.map((o, i) => {
+      const gl = glLv(o.n), k = krAct(o.n);
+      const ev = [gl ? `Global top players: <b>${gl[1]}%</b> at 16+${DOT}<b>${gl[2]}%</b> at 20` : "", k ? `Korea top 20: Lv <b>${k[1]}</b>${k[2] ? " (" + k[2].split("").join(DOT) + ")" : ""}` : ""].filter(Boolean).join(DOT);
+      const steps = o.steps.map(([lv, picks, t]) => `<li><span class="st-lv">Lv ${lv}</span><span class="pk">${pkBoxes(o.n, picks)}</span><span class="st-t">${esc(t)}</span></li>`).join("");
+      return `<li${hov(o.n)}><span class="ord">${i + 1}</span>${img(o.n)}<div><b class="hd">${esc(nice(o.n))} <span class="to">${ARROW} ${o.to}</span>${o.gain ? `<em class="gain">${esc(o.gain)}</em>` : ""}</b>
+        <span class="why">${esc(o.why)}</span><ol class="spsteps">${steps}</ol>${ev ? `<small class="ev">${ev}</small>` : ""}</div></li>`;
+    }).join("");
+    const dmg = g ? `<div class="tbl-wrap"><table class="dmgt"><thead><tr><th>Skill</th><th>% of damage</th><th>Casts / min</th><th>Top 10%</th></tr></thead><tbody>${g.dmg.map(([n, sh, c, ct]) => {
+      const ch = (SK[n] || {}).chain, pet = (SK[n] || {}).pet;
+      return `<tr><td${hov(n)}><span class="dn">${ic(n, "ic sm")}${esc(nice(n))}${ch ? `<small>${esc(ch)} chain</small>` : pet ? "<small>spirit, automatic</small>" : ""}</span></td><td><span class="bar"><i style="width:${Math.min(100, sh * 2.5)}%"></i></span>${sh}%</td><td>${c}</td><td>${ct}</td></tr>`;
+    }).join("")}</tbody></table></div>
+      <p class="snote">${g.parses} boss parses from ${g.players} top Global ${esc(M.en)}s (top 20 per boss; median combat power ${g.cp.toLocaleString("en-US")}). The top 10% of them did <b style="color:#fff">${g.topGain}%</b> more damage than their combat power predicts. Casts per minute cover the whole fight, downtime included, so a training dummy runs higher. Passive procs count as casts.</p>` : "";
+    const auto = p.auto.map(([h, e, t]) => `<li><b>${esc(h)}<em class="est">${esc(e)}</em></b><span>${esc(t)}</span></li>`).join("");
+    const stg = g ? g.stigmas.map(([n, pct, lv]) => `<span class="chip"${hov(n)}>${ic(n, "ic sm")}${esc(nice(n))} <span class="to">${pct}%</span>${lv ? ` <span class="tc">Lv ${lv}</span>` : ""}</span>`).join("") : "";
+    const krb = kr ? `<div class="krend"><h4 class="sh">Korea endgame target (top 20 ${esc(M.en)}s, ${esc(kr.asof)})</h4>
+        <ul class="lvl skl prio2">${kr.act.slice(0, 8).map(([n, lv, pk]) => `<li${hov(n)}>${img(n)}<div><b>${esc(nice(n))}</b><span class="pk">${pk ? pkBoxes(n, pk.split("").map(Number)) : "<em>no picks</em>"}</span></div><div class="lt"><b class="lvb ${lv >= 20 ? "l20" : "lo"}">${lv}</b></div></li>`).join("")}</ul>
+        <p class="snote"><b style="color:#fff">Stigmas:</b> ${kr.stig.slice(0, 6).map(([n, eq, lv]) => `${esc(nice(n))} ${lv}`).join(DOT)} (6 slots, max 25 in Korea).</p>
+        <p class="snote"><b style="color:#fff">Rings (active skill lines):</b> ${kr.rings.map((n) => esc(nice(n))).join(DOT)}${DOT}<b style="color:#fff">Arcana skill lines:</b> ${kr.arcana.slice(0, 7).map(([n, lv]) => `${esc(nice(n))} +${lv}`).join(DOT)}</p>
+        <p class="snote"><b style="color:#fff">Passives:</b> ${kr.pas.slice(0, 5).map(([n, lv]) => `${esc(nice(n))} ${lv}`).join(DOT)}</p></div>` : "";
+    return `<section class="panel" id="plan" aria-labelledby="h-plan">
+      <h2 id="h-plan">Max damage plan<small>What to level first · specialty picks at each skill level · what automating costs · from top Global players this week</small></h2>
+      <p class="ov-sum">${esc(p.sum)}</p>
+      <div class="plan-grid">
+        <div><h4 class="sh">Level order: skill level 16 is hard to reach, so go in this order</h4><ol class="lvord">${order}</ol>
+          <p class="snote">Colored boxes are the specialty options to have slotted at that skill level (1 green … 5 red; hover a box for its effect). One slot at 8, two at 12, option 5 unlocks at 16, three slots at 20. The gain is an estimate for a player at the same gear, from top Global players' parses.</p></div>
+        <div><h4 class="sh">Where top players' damage comes from</h4>${dmg}
+          <h4 class="sh" style="margin-top:16px">Macro or by hand: what it costs</h4><ul class="auto">${auto}</ul></div>
+      </div>
+      <div class="cols2">
+        <div><h4 class="sh">Stigmas top Global players run</h4><div class="chips">${stg}</div><p class="snote" style="margin-top:8px">${esc(p.stig)}</p></div>
+        ${krb}
+      </div>
+      <p class="src">Data: <a href="https://notmeter.com/" target="_blank" rel="noopener">NotMeter</a> public statistics${TP ? ` (Global week of ${esc((TP.meta.week[0] || "").slice(0, 10))}, published ${esc(TP.meta.published)})` : ""}. Specialty picks are read from each parse's skill codes; level shares count a player as 16+ when option 5 is slotted and 20 when three options are. Estimates compare players at the same combat power, so treat ±3% as noise.</p>
     </section>`;
   }
 
@@ -330,7 +378,7 @@
   function render() {
     hide();
     document.body.dataset.mode = smode;
-    $("view").innerHTML = overview() + macros() + stigmas() + skills() + specs() + tiers() + gear() + patches();
+    $("view").innerHTML = overview() + plan() + macros() + stigmas() + skills() + specs() + tiers() + gear() + patches();
     spy();
   }
   function head() {
@@ -432,9 +480,10 @@
   if (["early", "late", "full"].includes(q.get("macro"))) mmode = q.get("macro");
   if (["gl", "kr"].includes(q.get("stigma"))) smode = q.get("stigma");
   const load = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
-  Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load).concat(load("data/descriptions.json").catch(() => ({}))))
-    .then(([mac, stg, ov, db, sk, ds]) => {
-      MAC = mac; STG = stg; OV = ov; DB = db; SK = sk; DS = ds;
+  const opt = (f) => load(f).catch(() => null);
+  Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load).concat([opt("data/descriptions.json"), opt("data/plans.json"), opt("data/topplayers.json")]))
+    .then(([mac, stg, ov, db, sk, ds, pl, tp]) => {
+      MAC = mac; STG = stg; OV = ov; DB = db; SK = sk; DS = ds || {}; PL = pl; TP = tp;
       M = mac.classes.find((c) => c.id === CLS); S = stg.classes.find((c) => c.id === CLS); O = ov.classes[CLS];
       if (!M || !S || !O) throw new Error("no data for " + CLS);
       head(); render();

@@ -1,0 +1,181 @@
+{
+"_about": "Max damage plan per class (hand-written). Level order with the specialty picks at each skill level, what each step is worth, and what automating costs. Numbers come from data/topplayers.json (NotMeter Global top-20 parses per boss, week of Oct 7 2026; Korea top-20 builds) unless the text says otherwise. 'gain' is an estimate of total DPS from that step for a player at the same gear, worked out as (that skill's share of damage) x (the measured change in its casts or damage per cast).",
+"meta": {"updated": "2026-10-09", "week": "Global week of Oct 7–14, 2026"},
+"classes": {
+"chanter": {
+ "sum": "Every Chanter decision runs through Dark Crush. Option 5 (no cooldown, skill level 16) is worth more than anything else you can buy: top Global Chanters with it cast 27 Dark Crush a minute in boss fights, players without it cast 7. Get Dark Crush to 16 first, then Onslaught to 16 for Storm Chain, the clearest difference between the top 10% and everyone else.",
+ "order": [
+  {"n": "Dark Crush", "to": 20, "gain": "+10–15% at 16", "why": "20% of damage, plus 10% more from its Piercing Strike chain. Option 5 removes the cooldown, so every macro press inside a 2 s window is another Dark Crush (3.7x the casts). Option 3 made each Dark Crush hit 47% harder in the data.",
+   "steps": [[8, [3], "Critical Hit on hit"], [12, [3, 4], "add the Piercing Strike chain"], [16, [3, 5], "swap 4 for 5 (no cooldown). At equal combat power 3+5 beat 4+5 by ~5% (102 vs 65 players)"], [20, [3, 4, 5], "Korea's top 20 all end here"]]},
+  {"n": "Onslaught", "to": 16, "gain": "+6–10%", "why": "Your held left click. Option 4 cuts Spinning Strike's cooldown on every hit, which means more Dark Crush windows. Option 5 adds Storm Chain (6% of damage on its own); 81% of the top-10% Global Chanters have it, against about half of everyone else.",
+   "steps": [[8, [3], "+50% Multi-Hit"], [12, [3, 4], "−1 s Spinning Strike cooldown per hit"], [16, [4, 5], "Storm Chain chain skill"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Spinning Strike", "to": 16, "gain": "+3–4%", "why": "12% of damage and your main Dark Crush opener. Never drop option 1: players without it measured 4–5% lower. Option 5 made each cast 29% stronger.",
+   "steps": [[8, [1], "−5 s cooldown"], [12, [1, 3], "+20% damage on few targets"], [16, [1, 5], "always crits, ignores Block"], [20, [1, 3, 5], "Korea endgame"]]},
+  {"n": "Incandescent Blow", "to": 16, "gain": "+3–5%", "why": "The filler row. With its Bursting Blow chain it's 28% of a top Chanter's damage, so the Lv 16 multi-hit (+19% per cast) is worth it after the three above.",
+   "steps": [[8, [3], "+12% on few targets"], [12, [1, 3], "−20% MP (option 4 is only an accuracy debuff)"], [16, [3, 5], "multi-hit, ignores Block"]]},
+  {"n": "Impactful Crush", "to": 12, "gain": "small", "why": "2% damage; it's here to open Dark Crush. 73% of top players run 3+4.",
+   "steps": [[8, [3], "castable while moving"], [12, [3, 4], "+30% skill speed"]]}
+ ],
+ "auto": [
+  ["One macro key + held Onslaught", "covers ~97% of your damage", "Dark Crush, Piercing Strike, Spinning Strike, Impactful Crush and Incandescent Blow (with Bursting Blow) fire from the macro; Onslaught's chain, Storm Chain and Wind's Promise procs come from holding left click. Only Marchutan's Wrath and Rushing Smash (≈2% together) are left to press."],
+  ["Macro vs perfect hand play", "0 to −3%", "The stack order (Dark Crush first, then its two openers, then filler) is the same priority a perfect player follows, so the macro only gives up its 13 ms delay and the odd filler cast just before a window opens. Chanter is the most macro-friendly class in the game right now."],
+  ["Dark Crush per minute", "the number to watch", "Whole boss fights, downtime included: median top-20 Global Chanter 26/min, top 10% 30/min. The few who hold 50–55/min in boss fights did ~20% more than their combat power predicts. Without option 5 you'll see 5–9/min: that's normal until 16."],
+  ["Marchutan's Wrath", "press it between windows", "It opens a 3 s window but costs a cast and deals <1% at stigma level 1–5. Chanters who cast it often measured ~5% lower at equal power, so press it only when Spinning Strike and Impactful Crush are both on cooldown."],
+  ["Gust Rampage", "stagger bars only", "Global Chanters who used it measured 4–8% lower at equal combat power. Hold it only while a boss's stagger bar is up."]
+ ],
+ "stig": "Global top players: Marchutan's Wrath 98%, Undefeated Mantra 97% (at 20), Sprint Mantra 90% (5–10), Power of the Storm 85% (5–10). Guardian Blessing is the swap (28%). Undefeated and Sprint are party buffs; the same 4 as this page's Global build."
+},
+"sorcerer": {
+ "sum": "Hellfire (21%), Blaze (14%), Fire Wall (12%), Bittercold Wind and Firestorm (9% each) and Cold Storm (7%) are 72% of a top Global Sorcerer's damage. The rotation has two engines: every Firestorm cuts Hellfire's cooldown, and Flame Arrow's Pyroclasm resets Blaze. Build those two first.",
+ "order": [
+  {"n": "Firestorm", "to": 12, "gain": "≈ +10% (most of your Hellfires)", "why": "Option 4 takes 2 s off Hellfire per fireball. Top Sorcerers cast ~12 Firestorms a minute, so that's ~24 s of Hellfire cooldown a minute, the reason they get 5–6 Hellfires instead of 2–3. 2+4 measured slightly ahead of 4+5 at equal power; take 5 at 20 (+55% Firestorm damage).",
+   "steps": [[8, [2], "+20% skill speed"], [12, [2, 4], "−2 s Hellfire cooldown per fireball"], [20, [2, 4, 5], "+15% per fireball, up to +75%"]]},
+  {"n": "Hellfire", "to": 16, "gain": "+6–8% at 16", "why": "Your biggest hit. Option 5 (−15 s) gave 40% more Hellfires (5.6 vs 4.0 a minute). Option 1 makes the charge faster, which matters because you hold it to Max every time.",
+   "steps": [[8, [1], "+30% skill speed (faster charge)"], [12, [1, 4], "multi-hit, ignores Block (+10% per cast)"], [16, [1, 5], "−15 s cooldown"], [20, [1, 4, 5], "Korea endgame"]]},
+  {"n": "Flame Arrow", "to": 16, "gain": "+4–5% at 16", "why": "Your held left click and its Pyroclasm chain. Option 4 keeps Fire Mark on the target so Blaze is always usable; option 5 resets Blaze: 34% more Blaze casts. The top 10% cast 34 Blaze a minute vs 23 for the median player.",
+   "steps": [[8, [3], "+50% Multi-Hit"], [12, [3, 4], "Pyroclasm applies Fire Mark"], [16, [4, 5], "Pyroclasm resets Blaze"], [20, [3, 4, 5], "Korea endgame (45% keep 3)"]]},
+  {"n": "Blaze", "to": 16, "gain": "+3–4%", "why": "14% of damage. Option 4 (multi-hit) measured +26% per cast. At 16, Est's Global guide calls option 5 mandatory (−3 s Wish of Concentration per hit); 3+4 and 3+5 measured the same, so take 5 if you press Wish on cooldown.",
+   "steps": [[8, [3], "delayed extra damage"], [12, [3, 4], "multi-hit"], [16, [3, 5], "−3 s Wish of Concentration per hit"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Wish of Concentration", "to": 12, "gain": "+2–3%", "why": "+10% Attack (option 2) and +10% Combat Speed (option 4) on a buff Blaze keeps resetting. Korea runs it at 20 for −10 s on every cooldown.",
+   "steps": [[8, [2], "+10% Attack"], [12, [2, 4], "+10% Combat Speed"], [20, [2, 4, 5], "−10 s all cooldowns"]]},
+  {"n": "Bittercold Wind", "to": 12, "gain": "small", "why": "9% of damage, but its picks are cheap: 58% of top players run 1+4.",
+   "steps": [[8, [1], "+1 s duration"], [12, [1, 4], "always crits"]]}
+ ],
+ "auto": [
+  ["Hellfire in a macro", "−10 to −13%", "A macro fires it uncharged. In Global parses a tap does ~40–70k vs ~100–150k for Max, and Hellfire is 21% of damage. Keep it on its own key and hold it to Max."],
+  ["Fire Wall + Cold Storm by hand", "±3%", "Together 19% of damage. The top 10% land 35–37 hits a minute from each vs 24–29 for the median player. If you forget them when the boss moves, the 6-entry in-game macro (Other versions) fires them for you and loses less than missing casts."],
+  ["Ice Chain weave", "≈ 0", "Est's guide weaves Ice Chain on Global because cooldowns are long. Two thirds of top-10% parses don't cast it at all, and the players who do measured +3% (±2.4), inside the noise. Skip it unless you're short on MP."],
+  ["This page's Late card", "baseline", "One filler line on the macro (Blaze, Firestorm, Winter's Shackles, Frost Burst) plus Flame Arrow held; everything that decides burst stays on keys you press so it lines up."]
+ ],
+ "stig": "Global top players: Element Enhancement 100% (15–20), Fire Wall 99%, Delayed Explosion 97%, Cold Storm 88%. Players without Cold Storm measured ~3% lower. Same 4 as this page."
+},
+"ranger": {
+ "sum": "Deadshot (23%) and Tempest Shot (17.5%) carry the class, then Drill Dart (11%). The cheapest big upgrade in the game is Snipe option 4 at skill level 12: it cuts Deadshot's cooldown on every Snipe hit, and Global Rangers with it cast 2.3x as many Deadshots.",
+ "order": [
+  {"n": "Snipe", "to": 12, "gain": "+12–13% at 12", "why": "Your held left click. Option 4 (−1 s Deadshot cooldown per hit) is why top Rangers fire 6–7 Deadshots a minute instead of ~3. Option 5 at 16 adds the Tempest Arrow chain (~3% of damage; the top 10% cast it 13 times a minute).",
+   "steps": [[8, [3], "+50% Multi-Hit"], [12, [3, 4], "−1 s Deadshot cooldown per hit"], [16, [4, 5], "Tempest Arrow chain"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Deadshot", "to": 16, "gain": "+8% at 16", "why": "Option 5 adds a second hit: +53% damage per Deadshot in the data. Option 2 speeds up the charge; option 3 lets you charge while moving (Global top players: 2+3 and 2+5 are the two most common).",
+   "steps": [[8, [2], "+30% skill speed"], [12, [2, 3], "castable while moving"], [16, [2, 5], "extra damage on hit"], [20, [2, 3, 5], "Korea endgame"]]},
+  {"n": "Drill Dart", "to": 16, "gain": "+5% at 16", "why": "Option 5 fires Drill Dart twice: ~1.9x damage per cast. Players with 3+5 measured ~5% ahead of 3+4 at equal power.",
+   "steps": [[8, [3], "+20% skill speed"], [12, [3, 4], "multi-hit"], [16, [3, 5], "fires 1 extra time"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Tempest Shot", "to": 16, "gain": "+2–3%", "why": "Your most-cast skill (~100 a minute). Option 3 measured +9% per cast; option 5 gave 12% more casts. 76% of top Global Rangers already have it at 16.",
+   "steps": [[8, [3], "+12% on few targets"], [12, [2, 3], "+10% crit"], [16, [3, 5], "+20% skill speed"], [20, [2, 3, 5], "Global Lv 20 pick"]]},
+  {"n": "Gale Arrow", "to": 16, "gain": "+3–4%", "why": "Gale is +7% Combat Speed and +7% PvE damage. Option 5 (−10 s) gave 1.9x the casts, which keeps it up the whole fight.",
+   "steps": [[8, [1], "+5 s Gale duration"], [12, [1, 4], "stronger Gale on few targets"], [16, [4, 5], "−10 s cooldown"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Burst Arrow", "to": 12, "gain": "small", "why": "4% of damage; 3+4 is what 45% of top players run. Option 5 at 16 gave 26% more casts if you have levels to spare.",
+   "steps": [[8, [3], "castable while moving"], [12, [3, 4], "+20% on few targets"]]}
+ ],
+ "auto": [
+  ["Deadshot in a macro", "−10 to −14%", "A macro fires it uncharged: ~35–45% of a Max charge in Global parses, and Deadshot is 23% of damage. Hold it yourself."],
+  ["Tempest Shot cancel layout", "+3%", "Korean testing: Tempest Shot at the top of a different entry from the short-cooldown skills gives more Tempest Shot hits. This page's Late card does this."],
+  ["Buffs in the macro (entry 3)", "0 to −2%", "Vaizel's Authority, Bow of Blessing and Supporting Fire fire on cooldown, which top players do anyway (Supporting Fire 47 hits/min for the top 10%). Check Snipe stays at 16–18 a minute on the dummy; if it drops, press the buffs yourself."]
+ ],
+ "stig": "Global top players: Vaizel's Authority 99% (at 20), Bow of Blessing 98% (10), Supporting Fire 95% (10–15), Griffon Arrow 62%. Explosive Arrow (39%) measured ~4% lower than Griffon Arrow as the 4th. Same 4 as this page."
+},
+"assassin": {
+ "sum": "Heart Gore (25–28%) and Insignia Explosion (20%) are half your damage, and you have to hit from behind: top Global Assassins land 85% of hits on the back. Heart Gore fires off crits, so it runs itself once your crit is high. The real upgrades are Insignia Explosion casts (Quick Slice option 4, then Insignia Explosion option 5) and pressing Illusive Clone, which the median player barely does.",
+ "order": [
+  {"n": "Quick Slice", "to": 12, "gain": "+5–7% at 12", "why": "Your held left click. Option 4 takes 1 s off Insignia Explosion per hit: players with it cast 1.55x as many Insignia Explosions. Option 5 (guaranteed crit) didn't raise Heart Gore casts in the data, so it can wait.",
+   "steps": [[8, [3], "+50% Multi-Hit"], [12, [3, 4], "−1 s Insignia Explosion cooldown per hit"], [16, [4, 5], "always crits"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Insignia Explosion", "to": 16, "gain": "+5% at 16", "why": "20% of damage. Option 5 (−3 s) gave 35% more casts; option 2 (multi-hit) +12% per cast. 2+5 and 2+3 measured even, 3+5 ~5% lower, so always keep 2.",
+   "steps": [[8, [2], "+50% Multi-Hit"], [12, [2, 3], "keep 2 Insignia stacks"], [16, [2, 5], "−3 s cooldown"], [20, [2, 3, 5], "Korea endgame"]]},
+  {"n": "Heart Gore", "to": 16, "gain": "+4% at 12", "why": "Your biggest skill. Option 4 (multi-hit) measured +21% per cast. Option 5 (reset on crit) only added ~6% more casts on Global, because your crit already brings it back fast; take it at 16, not before Insignia Explosion.",
+   "steps": [[8, [2], "each hit engraves an Insignia"], [12, [2, 4], "multi-hit"], [16, [4, 5], "resets on crit"], [20, [2, 4, 5], "Korea endgame"]]},
+  {"n": "Savage Roar", "to": 12, "gain": "+2–3%", "why": "The Savage Roar chain is ~10% of damage. 2+4 measured 3–4% ahead of 2+3: option 4 gave 1.5x Shadowstrikes, and Shadowstrike's option 2 is +20% crit damage for 5 s.",
+   "steps": [[8, [2], "+20% skill speed"], [12, [2, 4], "−1 s Shadowstrike cooldown per hit"]]},
+  {"n": "Storm Rampage", "to": 16, "gain": "stagger windows", "why": "2% of damage, only on staggered bosses; 4+5 is what both Global and Korea run.",
+   "steps": [[12, [4], "multi-hit"], [16, [4, 5], "−1 s all cooldowns per hit"]]}
+ ],
+ "auto": [
+  ["Standing behind the boss", "the biggest skill check", "Top Global Assassins: 85% of hits from behind, 8% from the front. Rear Smite, Ambush (+30%) and Triniel's Dagger (+30%) are back-attack skills, and Korea's top 20 put Back Attack Damage Boost on every manastone. Every hit from the front loses all of that."],
+  ["Illusive Clone", "+2–3%", "Removes Heart Gore's cooldown and adds 20% of your damage for 10 s. The top 10% cast it about once a minute; most median players' parses show no cast at all. Press it with Swift Contract."],
+  ["Macro line with Ambush in row 1", "+1–2%", "Ambush is in 70% of top Global parses. Its option 1 engraves 2 Insignias on a back attack, which feeds Insignia Explosion. It's the Korean Sep 30 optimizer line and now this page's Late card."],
+  ["Macro vs hand play", "≈ 0", "Heart Gore is crit-triggered and everything else in the line is priority-ordered, so the macro plays it the way you would. What the macro can't do is stand behind the boss or time Illusive Clone."]
+ ],
+ "stig": "Global top players: Illusive Clone 100% (15–20), Swift Contract 100% (15), Triniel's Dagger 90%, then Evasion Stance 58% or Savage Fang 44% as the 4th. Evasion Stance is the survival pick; Savage Fang is the damage pick (it engraves 5 Insignias) but didn't measure ahead on Global yet."
+},
+"gladiator": {
+ "sum": "Overhead Slam and its Upward Strike chain are 60% of a Gladiator's damage. Option 3 (the Upward Strike chain) at skill level 8 and option 5 (no cooldown) at 16 aren't optional. Every top Global Gladiator has Overhead Slam at 16+, and over 80% of the top 10% have it at 20.",
+ "order": [
+  {"n": "Overhead Slam", "to": 20, "gain": "the class", "why": "Option 3 adds Upward Strike, 22% of damage by itself. Option 4 (crit) measured +31% per cast. Option 5 removes the cooldown so it can be spammed in every Rage Burst window. Top 10%: 59 Overhead Slams and 49 Upward Strikes a minute.",
+   "steps": [[8, [3], "Upward Strike chain"], [12, [3, 4], "always crits"], [16, [3, 5], "no cooldown"], [20, [3, 4, 5], "top 10% Global and Korea"]]},
+  {"n": "Rending Blow", "to": 16, "gain": "+2–3%, fixes MP", "why": "The other half of the Overhead Slam ↔ Rending Blow alternation (~52 casts a minute for the top 10%), plus its Smashing Blow chain: 21% of damage together. Option 5 restores MP on crits; the Global sheet warns you'll run short on MP until you have it.",
+   "steps": [[8, [3], "castable while moving"], [12, [3, 4], "+12% on few targets"], [16, [3, 5], "MP on crit"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Ruinous Blow", "to": 12, "gain": "+1–2%", "why": "8% of damage plus Prepare for Battle (+20% PvE damage for 20 s on a 45 s cooldown). Option 4 measured +21% per cast.",
+   "steps": [[8, [1], "+20% skill speed"], [12, [1, 4], "extra damage on hit"], [16, [4, 5], "ignores Block, multi-hit"], [20, [1, 4, 5], "Korea endgame"]]},
+  {"n": "Sword Aura Rampage", "to": 16, "gain": "stagger windows", "why": "Only usable on staggered targets. Korea runs 4+5 at 16; on Global it's 1–2% of damage.",
+   "steps": [[12, [4], "multi-hit"], [16, [4, 5], "−1 s all cooldowns per hit"]]}
+ ],
+ "auto": [
+  ["Overhead Slam / Rending Blow alternation", "check: ~50+ of each a minute", "The macro alternates the two (the 内絕 cancel). The top 10% cast 59 Overhead Slam and 52 Rending Blow a minute in boss fights. If you're well under 45 Overhead Slams, the macro isn't reaching its Overhead Slam entry often enough."],
+  ["Ruinous Blow in the macro", "+1–3%", "The Global sheet's layout leaves it to you. Prepare for Battle is +20% PvE damage, and top players keep it on cooldown (2.9 casts a minute), so this page now fires it from the macro's first entry."],
+  ["Keen Strike held", "only for MP", "Top Global Gladiators cast Keen Strike ~3 times a minute: the macro keeps them busy. Hold it only while you're short on MP (before Rending Blow option 5)."]
+ ],
+ "stig": "Global top players: Rage Burst 100% (kept at 5 for −15 s), Lunge Stance 99% (at 20), Zikel's Blessing 94% (10–15), then Focused Block 70% as the survival 4th. Wave Armor (this page's damage 4th) is rare on Global (11%) but measured +4% (±3.7); Lifestealing Blade (25%) measured −2%."
+},
+"templar": {
+ "sum": "Judgment is 38–40% of a Templar's damage, and option 5 (no cooldown, skill level 16) gives five times the Judgments. Before 16 it's a different class. Second is Vicious Strike option 4 at skill level 12: Warding Strike's cooldown drops on every hit, and each Warding Strike opens Judgment.",
+ "order": [
+  {"n": "Judgment", "to": 16, "gain": "+20–30% at 16", "why": "38 Judgments a minute with option 5 vs 8 without. Options 3 and 4 measured about the same (+5–7% per cast); 4+5 is the most common Global pick.",
+   "steps": [[8, [3], "extra damage on hit"], [12, [3, 4], "always crits"], [16, [4, 5], "no cooldown"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Vicious Strike", "to": 16, "gain": "+10–15% at 12", "why": "Your held left click. Option 4 (−2 s Warding Strike per hit) gave 2.5x Warding Strikes and 1.6x Judgments. Option 5 adds Threatening Blow (4% of damage), and the top 10% all use it.",
+   "steps": [[8, [3], "+50% Multi-Hit"], [12, [3, 4], "−2 s Warding Strike cooldown per hit"], [16, [4, 5], "Threatening Blow chain"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Pummel", "to": 16, "gain": "+3%", "why": "Pummel and its Punishing Strike are 11% of damage. Option 4 (−1 s Punishment per Punishing Strike) gave 36% more Punishments.",
+   "steps": [[8, [3], "+12% on few targets"], [12, [3, 4], "−1 s Punishment cooldown"], [16, [4, 5], "Punishing Strike twice"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Punishment", "to": 16, "gain": "+3%", "why": "12% of damage. Hold it to Max. Option 5 measured +29% per cast; option 3 charges faster.",
+   "steps": [[8, [3], "+30% skill speed"], [12, [2, 3], "damage over time"], [16, [3, 5], "crits, ignores Block"], [20, [2, 3, 5], "Korea endgame"]]},
+  {"n": "Warding Strike", "to": 12, "gain": "+1–2%", "why": "Opens Judgment. Option 1 gave 24% more casts.",
+   "steps": [[8, [1], "−5 s cooldown"], [12, [1, 4], "more damage tolerance"]]},
+  {"n": "Shield Smite", "to": 12, "gain": "small", "why": "Also opens Judgment and stuns for Annihilate. Option 4 gave 22% more casts.",
+   "steps": [[8, [2], "no MP cost"], [12, [2, 4], "−2 s cooldown"]]}
+ ],
+ "auto": [
+  ["Punishment in a macro", "−6 to −8%", "Uncharged Punishment does ~30–45% of a Max in Global parses, and it's 12% of damage. Keep it on its own key."],
+  ["Debilitating Smash", "taken out of the macro", "0.8% of damage, and its −25% Defense barely matters on bosses (Defense only removes 10% of its value in PvE). Two thirds of the top 10% don't cast it at all, so its row is now empty."],
+  ["Macro vs hand play", "≈ 0", "Judgment sits on row 0 of the main entry, right above its openers, so the macro casts it the moment a window opens, which is what you'd do by hand."]
+ ],
+ "stig": "Global top players: Taunt 83%, Battlefield Banner 79% (15–20), Noble Armor 72% (15), Doom Shield 68% (5) or Shield of Protection 60% (5). Players without Taunt measured ~4% lower. Same 4 as this page."
+},
+"spiritmaster": {
+ "sum": "Spiritmaster damage is spread out: Elemental Fusion 16%, Combustion 9% (+6% from its Ashy Call chain), Dimensional Control 7%, then the spirits. About a third of it lands whatever you press (spirit basic attacks ~13% plus the spirit skills they fire by themselves ~21%), so the macro matters less than on any other class. Get Combustion to 16 for Ashy Call first.",
+ "order": [
+  {"n": "Combustion", "to": 16, "gain": "+5–7% at 16", "why": "Your filler. Option 5 adds Ashy Call (6% of damage, 30 casts a minute); option 4 gave 23% more casts.",
+   "steps": [[8, [2], "+12% on few targets"], [12, [2, 4], "+20% skill speed"], [16, [4, 5], "Ashy Call chain"], [20, [2, 4, 5], "Korea endgame"]]},
+  {"n": "Elemental Fusion", "to": 16, "gain": "+2–3%", "why": "Your biggest hit, fed by every spirit skill. Option 3 measured +12% per cast. Leave option 4 (charge) alone: a macro can't charge it.",
+   "steps": [[8, [3], "+10 all element boost"], [12, [2, 3], "delayed extra damage"], [16, [3, 5], "25% chance to keep Four Elements"]]},
+  {"n": "Summon: Fire Spirit", "to": 16, "gain": "+2%", "why": "Korea's top 20 run it at 20 (2+3+5). The Fire Spirit's skills and basic attacks are ~11% of damage.",
+   "steps": [[8, [2], "+20% spirit crit damage"], [12, [2, 3], "more skill procs"], [16, [2, 5], "+20% spirit stats"]]},
+  {"n": "Jointstrike: Curse", "to": 12, "gain": "small", "why": "3% of damage plus the Curse; 54% of top players run 3+4.",
+   "steps": [[8, [3], "castable while moving"], [12, [3, 4], "−2 s cooldown"]]},
+  {"n": "Cold Shock", "to": 12, "gain": "small", "why": "Held left click. 69% of top players run 3+4 (+2% Attack stacks from Earth Tremor).",
+   "steps": [[8, [3], "+50% Multi-Hit"], [12, [3, 4], "+2% Attack per Earth Tremor, 5 stacks"]]}
+ ],
+ "auto": [
+  ["Spirits fight on their own", "~a third of damage is automatic", "Spirit basic attacks and the skills spirits fire by themselves (15% chance per hit; Ancient Spirit every 7 attacks) land whatever you press, so Spiritmaster loses the least when the macro (or you) slip."],
+  ["Summon: Ancient Spirit on cooldown", "+2–3%", "Its Plasma Cannon, Destruction and basic attacks are ~14% of damage, and every skill it uses grants Four Elements. The top 10% get 25% more Plasma Cannons than the median."],
+  ["Elemental Fusion charge option", "don't take it", "Option 4 turns it into a charge skill; a macro would fire it uncharged."]
+ ],
+ "stig": "Global top players: Summon: Ancient Spirit 100%, Enhance: Spirit's Benediction 100% (10), Jointstrike: Corrode 98%, Flame Blessing 80% (10). Same 4 as this page."
+},
+"cleric": {
+ "sum": "Condemnation is 35% of a Cleric's damage, and option 4 resets its cooldown on every crit: the top 10% cast 40 a minute vs 30 for the median player. Judgment Thunder (with Divine Punishment) is another 25%. Cleric is a healer first; these picks are for when you can deal damage.",
+ "order": [
+  {"n": "Condemnation", "to": 16, "gain": "core", "why": "Option 4 is in every top Global build (reset on crit). Option 5 measured +14% per cast.",
+   "steps": [[8, [2], "+12% on few targets"], [12, [2, 4], "resets on crit"], [16, [4, 5], "multi-hit"], [20, [2, 4, 5], "Korea endgame"]]},
+  {"n": "Judgment Thunder", "to": 16, "gain": "+2–3%", "why": "Held filler whose Divine Punishment chain is 15% of damage. 67% of top players have option 5 (Divine Punishment 1 extra time).",
+   "steps": [[8, [2], "+12% on few targets"], [12, [1, 2], "−20% MP"], [16, [2, 5], "Divine Punishment twice"]]},
+  {"n": "Earth's Retribution", "to": 12, "gain": "+1–2%", "why": "Option 4 takes 7 s off Bolt every time Discharge procs. Korea runs it at 20.",
+   "steps": [[8, [2], "+20% Discharge chance"], [12, [2, 4], "−7 s Bolt cooldown on Discharge"], [20, [2, 3, 4], "Korea endgame"]]},
+  {"n": "Bolt", "to": 16, "gain": "+2%", "why": "8% of damage. Hold it to Max. Option 5 measured +42% per cast.",
+   "steps": [[8, [3], "+30% skill speed"], [12, [3, 4], "+20% on few targets"], [16, [3, 5], "always crits"], [20, [3, 4, 5], "Korea endgame"]]},
+  {"n": "Chain of Torment", "to": 12, "gain": "party damage", "why": "Condemnation only works on targets with it. Option 4 is a −10% PvE Damage Tolerance debuff on the boss for your whole party; 95% of top players run 2+4.",
+   "steps": [[8, [2], "+3 s duration"], [12, [2, 4], "−10% enemy PvE Damage Tolerance"]]}
+ ],
+ "auto": [
+  ["Bolt in a macro", "−4 to −5%", "Uncharged Bolt is ~35–45% of a Max, and it's 8% of damage."],
+  ["Light of Protection", "costs you ~5% personal damage", "It's a party buff. Clerics who slot it measured ~5% lower themselves, but your party gains more than you lose. Keep it."]
+ ],
+ "stig": "Global top players: Earth Punishment 98% (at 20), Prayer of Amplification 91% (10), Noble Aura 90% (10), then Salvation 33% or Light of Protection 32%."
+}
+}
+}

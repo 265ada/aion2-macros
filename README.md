@@ -1,6 +1,6 @@
 # Aion 2 Class Guides
 
-One page per class for all 8 Aion 2 classes (Global targets, KR/TW data). Each class page has: how it plays (core mechanics, party value, opener, mistakes), the in-game macro (late / full rotation / early, every entry drawn as its 4-row slot stack), Global Season 1 and KR/TW stigma builds with level-up order, skills to level, specializations, a stigma tier list, gear notes and patch history. The home page has the class cards plus the shared basics (macro mechanics, stigma shard rules, damage and gear basics, patches, update log).
+One page per class for all 8 Aion 2 classes (Global targets, KR/TW data). Each class page has: how it plays (core mechanics, party value, opener, mistakes), a max damage plan (which skill to level first, specialty picks at skill level 8/12/16/20, DPS estimates, what a macro costs, built from top Global players' parses), the in-game macro (late / full rotation / early, every entry drawn as its 4-row slot stack), Global Season 1 and KR/TW stigma builds with level-up order, skills to level, specializations, a stigma tier list, gear notes and patch history. The home page has the class cards, a DPS tier list (Global now vs Korea endgame), the easiest class to max, plus the shared basics (macro mechanics, stigma shard rules, damage and gear basics, Pet Genus, patches, update log).
 
 Static site, no build step: `index.html` + `home.js` (home), `gladiator.html` … `chanter.html` + `class.js` (class pages), `site.css` (shared). `stigmas.html` only redirects old links (`stigmas.html#templar` → `templar.html#stigmas`).
 
@@ -16,7 +16,7 @@ All content lives in the JSON files in `data/`. You never need to touch the HTML
 |---|---|
 | `data/macros.json` | Per-class stacks, held keys, manual skills, notes, sources, alternate versions, changelog, "updated" date |
 | `data/skills.json` | Skill reference: TW/KO names, cooldown, MP, icon file, optional `note` (shown in the hover card, e.g. KR/TW patch changes the Global DB doesn't have yet). Add a skill here before using it in a stack. |
-| `data/descriptions.json` | Hover-card text: English description, specialties by unlock level, range, castable-while-moving, Mastery/Stigma. Generated, don't hand-edit. Refresh with `python tools/fetch_descriptions.py` after adding skills or after a patch. |
+| `data/descriptions.json` | Hover-card text: English description, specialties by unlock level, range, castable-while-moving, Mastery/Stigma. Generated, don't hand-edit. Refresh with `python tools/fetch_descriptions.py` after a patch, or `--missing` after adding skills. A failed fetch keeps the old entry. |
 
 Each class has three tabs: `late` (best tested setup), `full` (longer full-rotation macro with buffs; add a `loss` string describing the DPS trade-off) and `early` (improved leveling setup). Any of them can have `keys`: `[{"label": ..., "stack": [4 rows]}]` for held/mashed hotbar keys that are not in the macro; these are drawn under the macro window.
 
@@ -25,6 +25,14 @@ Alternate versions (`alts`) use the same stack format: `{"t": title, "s": note, 
 ### Class overview (`data/classes.json`)
 
 Per class: `glance` (one line for the home card and header), `summary`, `brings` (`[skill, text]` party value), `core` (`[title, text, skill for the icon]`), `opener`, `good`, `hard`, `mistakes`, `gear` (`stones`, `genus`, `passives`, `wings`, optional `board` = `[label, url]` and `note`), `hits` (per-minute targets shown under the macro), `patches` (`[date, change]`), `src`. `gearCommon` is the advice shown for every class. `sheet` (per class) and the top-level `sheet` hold the imported Global class sheet (zxcastform): skill priority `[name, target level, picks]`, passives, stigma order, Arcana / god stat / equip-effect rows, soul binding lines per piece and accessory, Pet Genus lines, wings, titles, Pantheon, plus the roadmap, dailies and Chanter-vs-Cleric buff table. Re-import with `python tools/import_sheet_2026_10_02.py <sheet.xlsx> <allskills.json>` (needs openpyxl; export the sheet with `/export?format=xlsx`). Skill names resolve against `data/skills.json` first, then the class's stigmas in `data/stigma_db.json`.
+
+### Max damage plan and tier list (`data/plans.json`, `data/topplayers.json`)
+
+`data/topplayers.json` is generated, numbers only: `python tools/notmeter_snapshot.py` downloads NotMeter's public statistics (Global top-50 boss parses with per-skill breakdowns, Korea's top-20 builds per class, class performance tables) and writes, per class: damage share and casts per minute of each skill (top 20 per boss, plus the top 10% after adjusting for combat power), how many top players have each skill at 16+ / 20 (read from the specialty digits in each parse's skill code), stigma usage and levels, and Korea's endgame skill levels, picks, stigmas, passives, ring and Arcana lines. It also writes the tier numbers the home page shows. The first run downloads ~100 MB into `.cache/` (git-ignored). Run it weekly; it never touches hand-written text.
+
+`data/plans.json` is hand-written per class: `sum`, `order` (`{n, to, gain, why, steps: [[skill level, [options], note]]}`), `auto` (`[label, estimate, why]`: macro vs hand-play costs) and `stig`. Re-check the `gain` / `why` numbers against a fresh `topplayers.json` after a balance patch. The home page tier letters are set in `home.js` (`TIERS`); the numbers next to them update from `topplayers.json`.
+
+Chain skills (Piercing Strike, Storm Chain, Upward Strike, …) are in `data/skills.json` with `"chain": "<parent skill>"` so the damage table can label them; spirit attacks have `"pet"`.
 
 ### Stigmas, skills and specializations (`data/stigmas.json`)
 
@@ -57,6 +65,7 @@ A macro is a list of entries, and each entry is the 4 rows of one hotbar key, **
 
 ### After a patch
 
+1. Run `python tools/notmeter_snapshot.py` and compare the top players' damage shares and picks with each class's Max damage plan.
 1. Edit `data/macros.json` (and `data/skills.json` if cooldowns changed).
 2. Bump `meta.updated` and `meta.patchBaseline`, and add a line to `changelog`.
 3. If a patch touched stigmas, run `python tools/fetch_stigmas.py`, update `s25`/`note` in `data/stigma_db.json` and the builds in `data/stigmas.json`, and bump its `meta.updated`.
@@ -65,7 +74,7 @@ A macro is a list of entries, and each entry is the 4 rows of one hotbar key, **
 
 ### Adding a skill icon
 
-Icons come from the aion2.app skill database: `https://aion2.app/db-item-icons/<ICON_ID>.webp`. Save the file into `icons/` and set `"icon": "<ICON_ID>"` in `skills.json`.
+Icons come from the aion2.app skill database: `https://aion2.app/db-item-icons/<ICON_ID>.webp`. Save the file into `icons/` and set `"icon": "<ICON_ID>"` in `skills.json`. If aion2.app is down or lacks the icon, NC's own CDN has the PNG at `https://assets.playnccdn.com/static-aion2-gamedata/resources/<ICON_ID>.png` (convert it to a 256 px webp).
 
 ## Preview locally
 
@@ -77,6 +86,6 @@ Then open http://127.0.0.1:8777/
 
 ## Sources
 
-The newest post-patch Korean Inven class guides (Sep 5–24, 2026), a Taiwanese Bahamut built-in-macro guide, official TW patch notes, and the aion2.app client database. Full links are in the page footer and in each class card.
+The newest post-patch Korean Inven class guides (Sep 5–30, 2026), the shared Global class sheet, Kanon's Aion 2 Bible (Oct 4 Global update), NotMeter's public statistics (top Global parses, Korea's top-20 builds), a Taiwanese Bahamut built-in-macro guide, official TW patch notes, and the aion2.app client database. Full links are in the page footer and in each class card.
 
 Skill icons and names © NC. This is a fan-made reference.

@@ -3378,6 +3378,115 @@
 "k": "Mastery",
 "q": 6
 },
+"Punishing Benediction": {
+"d": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 9
+},
+"Ironclad Defense": {
+"d": "Increases the caster's Defense by 7% and Endurance by 1%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 11
+},
+"Guarding Seal": {
+"d": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less.\n\nCooldown: 60s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 13
+},
+"Impact Hit (templar)": {
+"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 15
+},
+"Insulting Roar": {
+"d": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack.\n\nCooldown: 5s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 17
+},
+"Fury": {
+"d": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 21
+},
+"Survival Willpower (templar)": {
+"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 23
+},
+"Block Pain": {
+"d": "Grants Block Pain for 10s when struck by an enemy.\nBlock Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5%\n\nCooldown: 20s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 25
+},
+"Heightened Sixth Sense": {
+"d": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion.\n\nCooldown: 3s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 1
+},
+"Exploit Weakness": {
+"d": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+"s": [],
+"m": 0,
+"r": null,
+"k": "Mastery",
+"q": 6
+},
+"Whirlwind Slice": {
+"d": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+"s": [
+[
+8,
+"+50% Multi-Hit on hit"
+],
+[
+8,
+"Changes to AoE damage"
+],
+[
+8,
+"+16m range"
+],
+[
+12,
+"+20% Stun Chance"
+],
+[
+16,
+"25% chance to reset [Whirlwind Slice] cooldown on Evasion"
+]
+],
+"m": 0,
+"r": "4 m",
+"k": "Mastery",
+"q": 7
+},
 "Apply Poison": {
 "d": "Has a 15% chance to reduce the target's Incoming Heal by 12% and inflict Poison for 10s on landing an attack. Poison deals 233~233 Damage over Time every 1s.\n\nCooldown: 1s",
 "s": [],
@@ -4364,113 +4473,228 @@
 "k": "Mastery",
 "q": 16
 },
-"Punishing Benediction": {
-"d": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal 69-69 extra damage to the target when landing an attack.\n\nCooldown: 1s",
+"Vacuum Explosion": {
+"d": "Deals 57-57 Wind damage to a target within 20m and restores 100 MP.",
+"s": [],
+"m": 1,
+"r": "20 m",
+"k": null,
+"q": null
+},
+"Upward Strike": {
+"d": "Deals 182-182 damage to a target within 4m and increases Enmity.\n5 Stagger Gauge Damage",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 9
+"k": null,
+"q": null
 },
-"Ironclad Defense": {
-"d": "Increases the caster's Defense by 7% and Endurance by 1%.",
+"Smashing Blow": {
+"d": "Deals 76-76 damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 11
+"k": null,
+"q": null
 },
-"Guarding Seal": {
-"d": "Grants a Guarding Seal that blocks damage equaling 21% of Max HP for 30s when HP is 50% or less.\n\nCooldown: 60s",
+"Wrathful Strike": {
+"d": "Deals 63-63 damage to up to 4 enemies within 4m and increases Enmity. Restores 120 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 13
+"k": null,
+"q": null
 },
-"Impact Hit (templar)": {
-"d": "Increases the caster's Impact-type Chance by 11.2% and Double Chance by 0.3%.",
+"Rupture Strike": {
+"d": "Deals 55-55 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 15
+"k": null,
+"q": null
 },
-"Insulting Roar": {
-"d": "Increases Enmity Boost by 100% for the caster and increases Attack by 5.5% for 5s on landing a Front Attack.\n\nCooldown: 5s",
+"Punishing Strike": {
+"d": "Deals 103-103 damage to up to 4 enemies within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 17
+"k": null,
+"q": null
 },
-"Fury": {
-"d": "Increases Front Attack Damage Boost by 0.3% for the caster, and increases PvE Damage Boost by 5.5% and PvP Damage Boost by 2.75% for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+"Desperate Strike": {
+"d": "Deals 100-100 damage to up to 4 enemies within 4m and increases Enmity. Restores 120 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 21
+"k": null,
+"q": null
 },
-"Survival Willpower (templar)": {
-"d": "Increases the caster's Status Effect Resist by 17%. Increases PvE Damage Tolerance by 12% and PvP Damage Tolerance by 6% for 5s when afflicted with Stun, Knockdown, Airborne, Frost, or Fear. Increases Status Effect Resist by 10% for 5s when hit while afflicted with Stun, Knockdown, Airborne, Frost, or Fear (up to 10 stacks).\n\nDamage Tolerance Increase Cooldown: 60s\nStatus Effect Resist Increase Cooldown: 1s",
+"Decisive Strike": {
+"d": "Deals 88-88 damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 23
+"k": null,
+"q": null
 },
-"Block Pain": {
-"d": "Grants Block Pain for 10s when struck by an enemy.\nBlock Pain: Increases PvE Damage Tolerance by 11% and PvP Damage Tolerance by 5.5%\n\nCooldown: 20s",
+"Threatening Blow": {
+"d": "Deals 176-176 damage to up to 4 enemies within 4m and increases Enmity. Restores 150 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 25
+"k": null,
+"q": null
 },
-"Heightened Sixth Sense": {
-"d": "Increases the caster's Evasion by 200 and HP by 150. Increases Max HP by an extra 1.5% and restores 85-102 HP on Evasion.\n\nCooldown: 3s",
+"Swift Slice": {
+"d": "Deals 69-69 damage to up to 4 enemies within 4m and restores 120 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 1
+"k": null,
+"q": null
 },
-"Exploit Weakness": {
-"d": "Increases caster's Critical Hit by 100. Has a 25% chance to increase Attack by 5.5% for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals 17-17 damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+"Breaking Slice": {
+"d": "Deals 62-62 damage to up to 4 enemies within 4m and restores 105 MP.",
 "s": [],
 "m": 0,
 "r": null,
-"k": "Mastery",
-"q": 6
+"k": null,
+"q": null
 },
-"Whirlwind Slice": {
-"d": "Deals 300-300 damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
-"s": [
-[
-8,
-"+50% Multi-Hit on hit"
-],
-[
-8,
-"Changes to AoE damage"
-],
-[
-8,
-"+16m range"
-],
-[
-12,
-"+20% Stun Chance"
-],
-[
-16,
-"25% chance to reset [Whirlwind Slice] cooldown on Evasion"
-]
-],
+"Savage Smash": {
+"d": "Deals 78-78 damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+"s": [],
 "m": 0,
-"r": "4 m",
-"k": "Mastery",
-"q": 7
+"r": null,
+"k": null,
+"q": null
+},
+"Savage Back Kick": {
+"d": "Deals 73-73 damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Tempest Arrow": {
+"d": "Deals 83-83 damage to a target within 20m and restores 180 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Spiral Arrow": {
+"d": "Deals 54-54 damage to a target within 20m and restores 150 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Rapid Fire": {
+"d": "Deals 50-50 damage to a target within 20m and restores 120 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Pyroclasm": {
+"d": "Deals 73-73 Fire damage to a target within 20m and restores 120 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Burst": {
+"d": "Deals 66-66 Fire damage to a target within 20m and restores 100 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Cold Wave": {
+"d": "Selects a target within 20m and deals 86-86 Water damage to up to 4 enemies within 4m of the target.\n\n2 Stagger Gauge Damage",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Ashy Call": {
+"d": "Selects a target within 20m and deals 84-84 Fire damage to up to 4 enemies within 4m of the target.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Earth Tremor": {
+"d": "Deals 63-63 Earth damage to a target within 20m and restores 150 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Divine Punishment": {
+"d": "Selects a target within 20m and deals 85-85 Wind damage to up to 4 enemies within 4m of the target.\n\n2 Stagger Gauge Damage",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Discharge": {
+"d": "Deals 131-131 Wind damage to a target within 20m and restores 150 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Thunder and Lightning": {
+"d": "Deals 52-52 Wind damage to a target within 20m and restores 110 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Piercing Strike": {
+"d": "Deals 336-336 damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Storm Chain": {
+"d": "Deals 199-199 damage to up to 4 enemies within 4m and restores 180 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Bolt Crush": {
+"d": "Deals 104-104 damage to up to 4 enemies within 4m and restores 120 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
+},
+"Resonance Crush": {
+"d": "Deals 83-83 damage to up to 4 enemies within 4m and restores 100 MP.",
+"s": [],
+"m": 0,
+"r": null,
+"k": null,
+"q": null
 }
 }
