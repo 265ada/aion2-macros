@@ -1,6 +1,7 @@
 /* Aion 2 Class Guides: renders one class page (body[data-class]) from
    data/macros.json (macros), data/stigmas.json (stigma builds, skills, specs, tiers), data/classes.json (overview, gear,
-   patches), data/plans.json + data/topplayers.json (max damage plan, top-player numbers), data/stigma_db.json (stigmas),
+   patches), data/plans.json + data/topplayers.json (max damage plan, top-player numbers), data/genus.json (Pet Genus),
+   data/stigma_db.json (stigmas),
    data/skills.json + data/descriptions.json (skill names, icons, hover text).
    To update a class, edit the JSON files only. */
 (function () {
@@ -8,9 +9,9 @@
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const DOT = " · ", ARROW = "→", DASH = "–";
-  let SK = {}, DS = {}, DB = {}, MAC = null, STG = null, OV = null, PL = null, TP = null;
+  let SK = {}, DS = {}, DB = {}, MAC = null, STG = null, OV = null, PL = null, TP = null, GN = null;
   let M = null, S = null, O = null; // this class's macro / stigma / overview objects
-  let mmode = "late", smode = "gl";
+  let mmode = "late", smode = "gl", gmode = "";
 
   /* ---------- name lookup (skills.json first, then this class's stigmas) ---------- */
   const base = (n) => String(n || "").replace(/\s*\((?!gladiator|templar|assassin|ranger|sorcerer|spiritmaster|cleric|chanter)[^)]*\)$/, "").replace(/ line$/, "").replace(/\?$/, "");
@@ -334,6 +335,42 @@
       <p class="tier-key">${legend}</p></section>`;
   }
 
+  /* ---------- Pet Genus (data/genus.json, built by tools/build_genus.py) ---------- */
+  const TAGC = { BiS: "t-bis", Conditional: "t-cond", "Low priority": "t-low", Unverified: "t-unv", "Preferred alternative": "t-alt", "Budget target": "t-bud" };
+  function genus() {
+    if (!GN || !GN.classes[CLS]) return "";
+    const builds = GN.classes[CLS];
+    const b = builds.find((x) => x.id === gmode) || builds[0];
+    const tabs = builds.map((x) => `<button type="button" data-g="${esc(x.id)}" aria-pressed="${x === b}">${esc(x.name)}</button>`).join("");
+    const pool = (board, s) => {
+      const p = GN.pools[board][s - 1].by;
+      return ["heroic", "unique", "epic"].filter((g) => p[g]).map((g) => `<p><b>${g[0].toUpperCase() + g.slice(1)}:</b> ${p[g].map(([n, lo, hi, pc]) => `${esc(n)} ${esc(lo)}–${esc(hi)}`).join(DOT)}</p>`).join("");
+    };
+    const board = (name) => {
+      const rows = b.boards[name].map((l) => `<tr><td><b>${l.s}</b></td><td><b class="gpick">${esc(l.best)}</b><span class="gtag ${TAGC[l.tag] || ""}">${esc(l.tag)}</span></td>
+        <td>${esc(l.alt)}</td><td>${esc(l.grade)}${l.target && l.target !== "—" ? `<br><small>${esc(l.target)}</small>` : ""}</td><td>${l.est ? `<b>${esc(l.est)}</b>` : `<small>${l.prio <= 3 ? "" : "low"}</small>`}</td>
+        <td class="gwhy">${esc(l.why)}</td><td><span class="gconf c-${esc(l.conf.toLowerCase())}">${esc(l.conf)}</span></td></tr>`).join("");
+      return `<div class="gboard"><h4 class="sh">${esc(name)}</h4><div class="tbl-wrap"><table class="gtbl"><thead><tr><th>Line</th><th>Pick</th><th>Alternative</th><th>Target</th><th>Max roll ≈</th><th>Why</th><th>Confidence</th></tr></thead><tbody>${rows}</tbody></table></div>
+        <details><summary>Everything that can roll on ${esc(name)} (Global client)</summary><div class="inner gpool">${[1, 2, 3, 4, 5, 6, 7, 8, 9].map((s) => `<div><b>Line ${s}</b>${pool(name, s)}</div>`).join("")}</div></details></div>`;
+    };
+    const old = (O.gear || {}).genusOld || "";
+    return `<section class="panel" id="genus" aria-labelledby="h-genus"><div class="sec-h"><h2 id="h-genus">Pet Genus<small>Global client · all 5 boards × 9 lines · what to roll for ${esc(M.en)} and why</small></h2>
+        <div class="switch" role="group" aria-label="Build">${tabs}</div></div>
+      <div class="gaudit"><b>Audit, Oct 13:</b> this page used to say <i>${esc(old || "")}</i>. That is Korea's layout: on Korea's client Double Chance rolls on slots 3 and 9. On the Global client (build ${esc(GN.meta.client)}), Double Chance rolls <b>only on Special line 4</b> (max 3%), lines 3/6/9 are crit / accuracy lines and lines 2/8 are defensive. Everything below is built from the Global client's own tables, cross-checked line by line against a second datamine. <a href="index.html#h-genus">How Genus works on Global</a>.</div>
+      <p class="ov-sum"><b>${esc(b.name)}</b>${DOT}${esc(b.role)}. ${esc(b.profile)}</p>
+      <div class="cols2">
+        <div><h4 class="sh">Where to spend first (all boards)</h4><ol class="grank">${b.rank.map(([t, e]) => `<li><span>${esc(t)}</span>${e ? `<b>${esc(e)}</b>` : ""}</li>`).join("")}</ol>
+          <p class="snote">“Max roll ≈” is the estimated damage gain from a top-of-range Heroic roll for a ${esc(M.en)} at top Global players' crit and positioning. It's a model, not a measurement: ranks are solid, exact percentages are ±30%.</p></div>
+        <div><h4 class="sh">Caps, breakpoints and exceptions</h4><ul class="facts">${b.caps.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>
+          <p class="snote"><b style="color:#fff">Budget:</b> ${esc(b.budget)}</p><p class="snote"><b style="color:#fff">Endgame:</b> ${esc(b.endgame)}</p></div>
+      </div>
+      <div class="gboards">${["Special", "Cogni", "Fera", "Natura", "Varian"].map(board).join("")}</div>
+      <p class="snote"><span class="gtag t-bis">BiS</span> best supported pick${DOT}<span class="gtag t-cond">Conditional</span> best only under the stated condition${DOT}<span class="gtag t-low">Low priority</span> fill last, never lock${DOT}Confidence: <span class="gconf c-high">High</span> robust under every assumption tested${DOT}<span class="gconf c-medium">Medium</span> depends on Global stat totals or an unpublished value${DOT}<span class="gconf c-low">Low</span> PvP or thin evidence.</p>
+      ${O.sheet && O.sheet.genus ? `<details><summary>What the Global class sheet lists (for comparison)</summary><div class="inner cols3">${Object.entries(O.sheet.genus).map(([bd, lines]) => `<div><b>${esc(bd)}</b><ul class="facts">${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul></div>`).join("")}</div><p class="snote" style="padding:0 14px 12px">The sheet copies Kanon's Global list: its line layout is right, but it puts Critical Damage Boost, Weapon Damage Boost, Multi-hit or Front/Back Damage Boost on line 4 and Crit / Accuracy / Power Shard on 3/6/9 for every class. The tables above re-rank line 4 for Global's smaller Damage Boost totals and set 3/6/9 by each class's real crit rate.</p></details>` : ""}
+      <p class="src">Sources: ${GN.meta.sources.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(DOT)}.</p>
+    </section>`;
+  }
+
   /* ---------- gear, patches, sources ---------- */
   function gear() {
     const g = O.gear || {};
@@ -378,7 +415,7 @@
   function render() {
     hide();
     document.body.dataset.mode = smode;
-    $("view").innerHTML = overview() + plan() + macros() + stigmas() + skills() + specs() + tiers() + gear() + patches();
+    $("view").innerHTML = overview() + plan() + macros() + stigmas() + skills() + specs() + tiers() + gear() + genus() + patches();
     spy();
   }
   function head() {
@@ -390,13 +427,15 @@
     if (MAC.meta.notice) { $("notice").textContent = MAC.meta.notice; $("notice").hidden = false; }
   }
   $("view").addEventListener("click", (e) => {
-    const b = e.target.closest("button[data-m],button[data-s]");
+    const b = e.target.closest("button[data-m],button[data-s],button[data-g]");
     if (!b) return;
     if (b.dataset.m) { mmode = b.dataset.m; try { localStorage.setItem("aion2-mode", mmode); } catch (x) {} }
     if (b.dataset.s) { smode = b.dataset.s; try { localStorage.setItem("aion2-stigma-mode", smode); } catch (x) {} }
+    if (b.dataset.g) { gmode = b.dataset.g; try { localStorage.setItem("aion2-genus-build", gmode); } catch (x) {} }
     const id = b.closest("section").id, y = b.getBoundingClientRect().top;
     render();
-    const nb = document.querySelector(`#${id} button[data-${b.dataset.m ? "m" : "s"}="${b.dataset.m || b.dataset.s}"]`);
+    const k = b.dataset.m ? "m" : b.dataset.s ? "s" : "g";
+    const nb = document.querySelector(`#${id} button[data-${k}="${b.dataset[k]}"]`);
     if (nb) scrollBy(0, nb.getBoundingClientRect().top - y);
   });
 
@@ -476,14 +515,15 @@
   /* ---------- load ---------- */
   try { const m = localStorage.getItem("aion2-mode"); if (["early", "late", "full"].includes(m)) mmode = m; } catch (e) {}
   try { const m = localStorage.getItem("aion2-stigma-mode"); if (m === "kr" || m === "gl") smode = m; } catch (e) {}
+  try { gmode = localStorage.getItem("aion2-genus-build") || ""; } catch (e) {}
   const q = new URLSearchParams(location.search);
   if (["early", "late", "full"].includes(q.get("macro"))) mmode = q.get("macro");
   if (["gl", "kr"].includes(q.get("stigma"))) smode = q.get("stigma");
   const load = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(f + " " + r.status); return r.json(); });
   const opt = (f) => load(f).catch(() => null);
-  Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load).concat([opt("data/descriptions.json"), opt("data/plans.json"), opt("data/topplayers.json")]))
-    .then(([mac, stg, ov, db, sk, ds, pl, tp]) => {
-      MAC = mac; STG = stg; OV = ov; DB = db; SK = sk; DS = ds || {}; PL = pl; TP = tp;
+  Promise.all(["data/macros.json", "data/stigmas.json", "data/classes.json", "data/stigma_db.json", "data/skills.json"].map(load).concat([opt("data/descriptions.json"), opt("data/plans.json"), opt("data/topplayers.json"), opt("data/genus.json")]))
+    .then(([mac, stg, ov, db, sk, ds, pl, tp, gn]) => {
+      MAC = mac; STG = stg; OV = ov; DB = db; SK = sk; DS = ds || {}; PL = pl; TP = tp; GN = gn;
       M = mac.classes.find((c) => c.id === CLS); S = stg.classes.find((c) => c.id === CLS); O = ov.classes[CLS];
       if (!M || !S || !O) throw new Error("no data for " + CLS);
       head(); render();

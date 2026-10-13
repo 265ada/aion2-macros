@@ -12,7 +12,7 @@ M = {c["id"]: c for c in json.load(open(os.path.join(ROOT, "data/macros.json"), 
 O = json.load(open(os.path.join(ROOT, "data/classes.json"), encoding="utf-8"))["classes"]
 
 SECTIONS = [("overview", "Overview"), ("plan", "Max damage"), ("macros", "Macros"), ("stigmas", "Stigmas"), ("skills", "Skills"),
-            ("specs", "Specializations"), ("tiers", "Tier list"), ("gear", "Gear"), ("patches", "Patches")]
+            ("specs", "Specializations"), ("tiers", "Tier list"), ("gear", "Gear"), ("genus", "Pet Genus"), ("patches", "Patches")]
 
 TPL = """<!doctype html>
 <html lang="en">

@@ -1,12 +1,16 @@
 {
  "meta": {
   "title": "Aion 2 Class Guides",
-  "updated": "2026-10-09",
+  "updated": "2026-10-13",
   "patchBaseline": "KR/TW patches through Sep 23, 2026",
   "notice": "Global (NA/EU) early access opened Sep 30, 2026, with full free-to-play on Oct 5. The Global client can lag the Korea/Taiwan patches this sheet is built on. For example, the Global database still lists Noble Armor and Guardian Blessing at 5 min. If a Global skill doesn't behave as described, check the Global patch notes.",
   "note": "Stacks are listed row 0 first (row 0 fires first and sits directly above the key in game). null = empty row. A trailing '?' on a skill name marks an icon-matched row that the source didn't name."
  },
  "changelog": [
+  {
+   "date": "2026-10-13",
+   "text": "Pet Genus rebuilt from the Global client's own tables (checked line by line against a second datamine). The old advice was Korea's layout: on Global, Double Chance only rolls on Special line 4 (max 3%), and lines 3/6/9 are crit/accuracy lines. New Pet Genus section on every class page: all 5 boards × 9 lines for PvE, PvP, Templar tank and Cleric healer, each line with its pick, alternative, target, estimated value, reason and confidence. Line 4 on Cogni/Fera/Natura/Varian is now PvE Damage Boost for PvE (it out-rolls and, at Global's Damage Boost totals, out-values each board's signature stat). Home page: the Global line layout, grade odds, XP and Analyses per board, lock costs, owned effects."
+  },
   {
    "date": "2026-10-09",
    "text": "New on every class page: Max damage plan. It shows which skill to level first and which specialty to slot at skill level 8 / 12 / 16 / 20, with estimated DPS for each step, where top Global players' damage comes from, and what a macro costs vs pressing by hand. Built from this week's top Global boss parses and Korea's top-20 builds (NotMeter). Macro changes: Assassin's Late card is now the Ambush line; Gladiator fires Ruinous Blow from the macro; Templar drops Debilitating Smash. Fixed Chanter text that said Marchutan's Wrath isn't a Global stigma. New home panels: DPS tier list, easiest class to max, and the Bible's Oct 4 Global changes."

@@ -1,6 +1,6 @@
 {
  "_about": "Class overview content for the class pages (overview, party value, mechanics, opener, mistakes, gear, patch history). Hand-edited. Skill names must match data/skills.json or a stigma in data/stigma_db.json so the hover cards work. Gear notes are Korean endgame advice from the Sep 2026 optimizer guides unless marked otherwise.",
- "gearCommon": "Korean endgame advice (Sep 2026 optimizer guides). Gear stat lines: Damage Boost, Crit Damage Boost and Double Chance first on every piece, then Attack and your key passives. Bracelet: Justice and Space instead of Freedom and Death for PvE (the new raid's Accuracy/Crit requirements came out low). Pet Genus slots 3 and 9: Double Chance; slots 2, 5, 8: Attack Bonus or Max Attack; the rest Boss Attack. Pantheon: Illusion 51 / Wisdom 101 is the realistic top. Global launches with fewer stats and cards, so treat these as the direction to build toward.",
+ "gearCommon": "Korean endgame advice (Sep 2026 optimizer guides). Gear stat lines: Damage Boost, Crit Damage Boost and Double Chance first on every piece, then Attack and your key passives. Bracelet: Justice and Space instead of Freedom and Death for PvE (the new raid's Accuracy/Crit requirements came out low). Pet Genus in Korea: slots 3 and 9 Double Chance, 2/5/8 attack, the rest Boss Attack. That is Korea's layout; Global's is different (Double Chance only on Special line 4), see Pet Genus on each class page. Pantheon: Illusion 51 / Wisdom 101 is the realistic top. Global launches with fewer stats and cards, so treat these as the direction to build toward.",
  "classes": {
   "gladiator": {
    "glance": "Two-skill melee: the Overhead Slam → Rending Blow cancel is the class.",
@@ -69,9 +69,10 @@
    ],
    "gear": {
     "stones": "Front Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.",
-    "genus": "Slots 3 and 9: Double Chance and Front Damage Boost",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Front Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Gear lines also carry your 5 key passives (Experienced Counterstrike, Murderous Burst, Attack Preparation, Identify Weakness, Impact Hit)",
-    "wings": "Eroded 73%, Talisra 18.5% (Korea, Aug 21)"
+    "wings": "Eroded 73%, Talisra 18.5% (Korea, Aug 21)",
+    "genusOld": "Slots 3 and 9: Double Chance and Front Damage Boost"
    },
    "hits": "Upward Strike ~95–102 · Overhead Slam ~176–200 · ~980–1,020 total hits per minute (Korean endgame dummy). Global top 10% in boss fights (this week): Overhead Slam ~59, Upward Strike ~49, Rending Blow ~52 casts a minute",
    "patches": [
@@ -432,13 +433,14 @@
    ],
    "gear": {
     "stones": "Front Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.",
-    "genus": "Slots 3 and 9: Double Chance and Front Damage Boost. Leftover slots: Boss Attack or Defense",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Front Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Three key passives on gear: Fury, Insulting Roar, Impact Hit",
     "wings": "Eroded 77%, Talisra 9% (Korea, Aug 21)",
     "board": [
      "Korean Templar Daevanion node guide",
      "https://www.inven.co.kr/board/aion2/6438/22546"
-    ]
+    ],
+    "genusOld": "Slots 3 and 9: Double Chance and Front Damage Boost. Leftover slots: Boss Attack or Defense"
    },
    "hits": "Global top 10% in boss fights (this week): Judgment ~45 casts a minute (median top player 38)",
    "patches": [
@@ -789,10 +791,11 @@
    ],
    "gear": {
     "stones": "Back Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.",
-    "genus": "Slots 3 and 9: Double Chance; Back Damage Boost on up to 4 slots",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: Back Attack Damage Boost ≈ PvE Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Rear Smite close to 36 (Back damage + PvE damage), then Assault Stance (Crit Damage); Exploit Weakness and Impact Hit where they fit",
     "wings": "Talisra 58%, Awakened Pride 30% (rising) (Korea, Aug 21)",
-    "note": "Kanon's guide suggests Death instead of Space on the bracelet for Assassin; the newer Sep 30 Korean guide says Justice + Space is better for PvE."
+    "note": "Kanon's guide suggests Death instead of Space on the bracelet for Assassin; the newer Sep 30 Korean guide says Justice + Space is better for PvE.",
+    "genusOld": "Slots 3 and 9: Double Chance; Back Damage Boost on up to 4 slots"
    },
    "hits": "Heart Gore ~300 · Insignia Explosion ~70 per minute (after Sep 16, 1.0M+ gear). Global top 10% in boss fights (this week): Heart Gore ~52, Insignia Explosion ~17 casts a minute",
    "patches": [
@@ -1134,9 +1137,10 @@
    ],
    "gear": {
     "stones": "Many Korean Rangers run Front Damage Boost (great on the dummy and in Nightmare). The Sep 6 guide warns it may not hold if bosses make you move; otherwise Weapon Damage Boost.",
-    "genus": "Slots 3 and 9: Double Chance",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Focused Eye and Hunter's Resolve on gear (a recent buff widened the gap), then Crit in leftover gear slots",
-    "wings": "Eroded 54.5%, Talisra 25.5% (Korea, Aug 21)"
+    "wings": "Eroded 54.5%, Talisra 25.5% (Korea, Aug 21)",
+    "genusOld": "Slots 3 and 9: Double Chance"
    },
    "hits": "Snipe 16–18 · Deadshot 24–28 · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total per minute. Global top 10% in boss fights (this week): Deadshot ~7, Tempest Shot ~107, Drill Dart ~18, Gale Arrow ~9 casts a minute",
    "patches": [
@@ -1488,10 +1492,11 @@
    ],
    "gear": {
     "stones": "Weapon Damage Boost first (your kit doesn't use Front/Back damage); Crit Damage Boost if short",
-    "genus": "Slots 3 and 9: Double Chance",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Robe of Flame toward 36. It's your one key passive",
     "wings": "Talisra 91.5% (Korea, Aug 21)",
-    "note": "Sorcerer gets the most out of Illusion (cooldown) of any class: use Illusion instead of Wisdom on the Mirror Arcana card."
+    "note": "Sorcerer gets the most out of Illusion (cooldown) of any class: use Illusion instead of Wisdom on the Mirror Arcana card.",
+    "genusOld": "Slots 3 and 9: Double Chance"
    },
    "hits": "Hellfire 26–28 casts · ~960–1,000 total hits per minute (Korean endgame, 43% cooldown reduction). Global top 10% in boss fights (this week): Hellfire ~6, Blaze ~34, Firestorm ~13 casts a minute",
    "patches": [
@@ -1843,9 +1848,10 @@
    ],
    "gear": {
     "stones": "Weapon Damage Boost first",
-    "genus": "Slots 3 and 9: Double Chance (pull Double Chance from the Genus, damage boosts from stones)",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit → Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Spirit Strike, Element Unification, Mental Focus",
-    "wings": "Eroded 45%, Talisra 43.5% (Korea, Aug 21)"
+    "wings": "Eroded 45%, Talisra 43.5% (Korea, Aug 21)",
+    "genusOld": "Slots 3 and 9: Double Chance (pull Double Chance from the Genus, damage boosts from stones)"
    },
    "hits": "Global top 10% in boss fights (this week): Elemental Fusion ~20, Combustion ~39 casts a minute",
    "patches": [
@@ -2197,14 +2203,15 @@
    ],
    "gear": {
     "stones": "Weapon Damage Boost first, then Crit Damage Boost. Front/Back by taste.",
-    "genus": "Slots 3 and 9: Double Chance; lock 2/5/8 when Attack Bonus or Max Attack rolls high",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Earth's Grace before Empyrean Lord's Grace",
     "wings": "Eroded 45%, Talisra 35% (Korea, Aug 21)",
     "board": [
      "Korean Cleric Daevanion node guide",
      "https://www.inven.co.kr/board/aion2/6452/27247"
     ],
-    "note": "Talisra wings when you need maximum Salvation cooldown (new raid tries)."
+    "note": "Talisra wings when you need maximum Salvation cooldown (new raid tries).",
+    "genusOld": "Slots 3 and 9: Double Chance; lock 2/5/8 when Attack Bonus or Max Attack rolls high"
    },
    "hits": "Attack speed caps at 94.4%: extra past that is wasted, aim for 32.6% cooldown reduction. Global top 10% in boss fights (this week): Condemnation ~40 casts a minute",
    "patches": [],
@@ -2551,9 +2558,10 @@
    ],
    "gear": {
     "stones": "Weapon Damage Boost for now (the guide expects new damage stats soon)",
-    "genus": "Slots 3 and 9: Double Chance (take Double Chance from the Genus, damage boosts from stones)",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Back Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit → Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
     "passives": "Wind's Promise, Impact Hit, Attack Preparation (Inspiring Spell only if there's room)",
-    "wings": "Eroded 45%, Talisra 23%, Awakened Pride 12.5% (Korea, Aug 21)"
+    "wings": "Eroded 45%, Talisra 23%, Awakened Pride 12.5% (Korea, Aug 21)",
+    "genusOld": "Slots 3 and 9: Double Chance (take Double Chance from the Genus, damage boosts from stones)"
    },
    "hits": "Dark Crush ~45–54 casts per minute without Marchutan's Wrath, ~58–60 with it (Korean dummy, Sep). The average gap between Dark Crush casts should be ~750 ms at 122% Combat Speed. Global top 10% in boss fights (this week, downtime included): Dark Crush ~30, Spinning Strike ~7 casts a minute",
    "patches": [
@@ -3366,4 +3374,4 @@
    ]
   ]
  }
-}
+}

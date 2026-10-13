@@ -402,3 +402,20 @@ a.ti{color:inherit;text-decoration:none;grid-template-columns:minmax(0,1fr)}
 a.ti:hover .t{color:var(--neon)}
 b.tl{display:inline-grid;place-items:center;width:22px;height:22px;font:800 .8rem/1 var(--f-display);color:#111}
 b.tl.S{background:var(--t-s)} b.tl.A{background:var(--t-a)} b.tl.B{background:var(--t-b)} b.tl.C{background:var(--t-c)}
+/* Pet Genus section */
+.gaudit{padding:12px 14px;margin:0 0 14px;border:1px solid #6b5a22;background:#221d10;color:#eadfb8;font-size:.86rem;line-height:1.55}
+.gaudit b{color:#fff} .gaudit i{color:#ffcf6b}
+ol.grank{margin:0 0 8px;padding:0;list-style:none;counter-reset:g;display:grid;gap:6px}
+ol.grank li{display:flex;justify-content:space-between;gap:12px;padding:6px 10px;background:#141920;border:1px solid #2c3441;font-size:.84rem;color:#d4d8de;counter-increment:g}
+ol.grank li span::before{content:counter(g) ". ";color:var(--neon);font-weight:700}
+ol.grank li b{white-space:nowrap;color:#9ff0bf}
+.gboards{display:grid;gap:18px;margin-top:16px}
+table.gtbl td{vertical-align:top;font-size:.8rem}
+table.gtbl td.gwhy{min-width:260px;color:#c9ced6;line-height:1.45}
+table.gtbl .gpick{display:block;color:#fff;margin-bottom:3px}
+.gtag{display:inline-block;font:700 .64rem/1 var(--f-ui);letter-spacing:.06em;text-transform:uppercase;padding:3px 5px;background:#2a2f3a;color:#cfd4dc}
+.gtag.t-bis{background:#1f3a2a;color:#9ff0bf} .gtag.t-cond{background:#3a3217;color:#ffd77a} .gtag.t-low{background:#262b33;color:#8b93a1} .gtag.t-unv{background:#3a1d1d;color:#ff9a9a} .gtag.t-alt{background:#1d2a3a;color:#9cc8ff}
+.gconf{font:700 .7rem/1 var(--f-ui);padding:3px 6px;border:1px solid #3a4352}
+.gconf.c-high{color:#9ff0bf;border-color:#2f6b47} .gconf.c-medium{color:#ffd77a;border-color:#5d5130} .gconf.c-low{color:#ff9a9a;border-color:#6b2f2f}
+.gpool{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px 18px;font-size:.78rem;color:#c9ced6}
+.gpool p{margin:3px 0}
