@@ -54,7 +54,7 @@
 "mp": null,
 "icon": "ICON_GL_SKILL_040",
 "s25": "+5s duration (Jul 8)",
-"note": "KR/TW Jul 8: self only (no longer party-wide); base effect adds +100 Accuracy."
+"note": "KR/TW Jul 8: self only (no longer party-wide); base effect adds +100 Accuracy. Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (measured in Global parses). Level 20 only adds +20% status chance."
 },
 "Sword Aura Rampage": {
 "cls": "gladiator",
@@ -92,7 +92,8 @@
 "cd": 45,
 "mp": 100,
 "icon": "ICON_GL_SKILL_039",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Wounded does not stack with a Templar Taunt's Shrink. At level 10 Wounded is -20% Attack."
 },
 "Lunge Stance": {
 "cls": "gladiator",
@@ -103,7 +104,7 @@
 "mp": null,
 "icon": "ICON_GL_SKILL_024",
 "s25": "50% chance to deal extra damage on Critical Hit for the duration",
-"note": "KR/TW Aug 12: the 20% MP-cost reduction was removed."
+"note": "KR/TW Aug 12: the 20% MP-cost reduction was removed. Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (measured in Global parses)."
 },
 "Wave Armor": {
 "cls": "gladiator",
@@ -132,7 +133,7 @@
 "cd": null,
 "mp": 120,
 "icon": "ICON_TE_SKILL_006",
-"note": "KR/TW Sep 16 patch: longer cancel delay into Judgment; specialty #4 now also applies to Pummel; #5 changed to extra damage on hit. The Global DB text may still show the old version."
+"note": "KR/TW Sep 16 patch: longer cancel delay into Judgment; specialty #4 now also applies to Pummel; #5 changed to extra damage on hit. Live on Global: questlog's Global text shows the new #4/#5 and Global logs agree. The aion2.app description is older."
 },
 "Doom Shield": {
 "cls": "templar",
@@ -152,7 +153,7 @@
 "cd": 30,
 "mp": 200,
 "icon": "ICON_TE_SKILL_009",
-"note": "KR/TW Aug 26: now a projectile AoE fired at a target within 20m; Executor PvE bonus 20%."
+"note": "KR/TW Aug 26: now a projectile AoE fired at a target within 20m; Executor PvE bonus 20%. Any cast gives Executor, charged or not; an uncharged cast does about a third of a Max cast (database 1,268 vs 3,805), and macros fire it uncharged."
 },
 "Shield Smite": {
 "cls": "templar",
@@ -200,7 +201,7 @@
 "cd": 120,
 "mp": null,
 "icon": "ICON_TE_SKILL_022",
-"note": "KR/TW Sep 16 patch: 5 min to 2 min. The Global client DB still shows 300 s.",
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: a second Noble Armor buff shows in 452 of 507 Templar fights over 130 s, and questlog's Global data gives 120 s. The aion2.app database still shows 300 s (an older snapshot).",
 "s25": "+10% PvE and +5% PvP Damage Tolerance for the duration"
 },
 "Judgment": {
@@ -211,7 +212,7 @@
 "cd": 5,
 "mp": null,
 "icon": "ICON_TE_SKILL_004",
-"note": "KR/TW Aug 26: now usable after any shield attack skill (was: stunned/knocked-down target). Doom Shield opens it on yourself for 3s."
+"note": "KR/TW Aug 26: now usable after any shield attack skill (was: stunned/knocked-down target). Live on Global. Doom Shield opens it on yourself for 3s."
 },
 "Debilitating Smash": {
 "cls": "templar",
@@ -236,10 +237,10 @@
 "id": "12350000",
 "tw": "庇護一擊",
 "ko": "비호의 일격",
-"cd": 25,
+"cd": 30,
 "mp": 200,
 "icon": "ICON_TE_SKILL_035",
-"note": "KR/TW Aug 26: cooldown 30s to 25s, 30% faster wind-up, castable while moving, spec #1 now -5s cooldown. The Global DB may still show 30s."
+"note": "KR/TW Aug 26: cooldown 30s to 25s, 30% faster wind-up, castable while moving, spec #1 now -5s cooldown. The cooldown cut is NOT live on Global: the database, questlog and Global use rates all fit 30 s."
 },
 "Shield Rush": {
 "cls": "templar",
@@ -294,7 +295,8 @@
 "ko": "암습",
 "cd": 20,
 "mp": 150,
-"icon": "ICON_AS_SKILL_007"
+"icon": "ICON_AS_SKILL_007",
+"note": "Option 2's crit-damage buff lasts 10 s on Global (Korea's Sep 16 value; the aion2.app text says 5 s)."
 },
 "Savage Roar": {
 "cls": "assassin",
@@ -388,7 +390,8 @@
 "ko": "조준 화살",
 "cd": 20,
 "mp": 200,
-"icon": "ICON_RA_SKILL_002"
+"icon": "ICON_RA_SKILL_002",
+"note": "The in-game macro fires Deadshot uncharged: about a third of a Max cast by the tooltip (599 vs 1,798). Global macro-only parses land at roughly 40–90% of a Max cast per cast (small sample, 4 players). Korea's Sep 16 patch (live on Global) fixed option 5's extra damage, which didn't multi-hit unless option 4 was also equipped."
 },
 "Snipe": {
 "cls": "ranger",
@@ -582,7 +585,8 @@
 "ko": "불꽃 화살",
 "cd": null,
 "mp": null,
-"icon": "ICON_SO_SKILL_020"
+"icon": "ICON_SO_SKILL_020",
+"note": "Option 4 is the Sep 16 version on Global: +5% Fire Damage Boost for 10 s on Pyroclasm. The aion2.app database still shows the older 'Inflicts Fire Mark' text; the buff shows in 275 of 282 top Global parses with option 4 and in none without."
 },
 "Bittercold Wind": {
 "cls": "sorcerer",
@@ -591,7 +595,8 @@
 "ko": "혹한의 바람",
 "cd": 15,
 "mp": 150,
-"icon": "ICON_SO_SKILL_025"
+"icon": "ICON_SO_SKILL_025",
+"note": "Oct 13 (Global): option 5's Frost cooldown cut now also works across a height difference."
 },
 "Wish of Concentration": {
 "cls": "sorcerer",
@@ -600,7 +605,8 @@
 "ko": "집중의 기원",
 "cd": 60,
 "mp": 100,
-"icon": "ICON_SO_SKILL_028"
+"icon": "ICON_SO_SKILL_028",
+"note": "Lasts 10 s at level 1, +0.5 s per level (18 s at the Global median level 17)."
 },
 "Delayed Explosion": {
 "cls": "sorcerer",
@@ -796,7 +802,8 @@
 "ko": "벽력",
 "cd": 45,
 "mp": 300,
-"icon": "ICON_CL_SKILL_006"
+"icon": "ICON_CL_SKILL_006",
+"note": "Charged by hand: an uncharged (macro) Bolt does about one third of a Max cast (DB 987 vs 2,963; Global parses 31–35%). 8.6% of a top Cleric's damage."
 },
 "Chain of Torment": {
 "cls": "cleric",
@@ -878,7 +885,8 @@
 "cd": 30,
 "mp": 200,
 "icon": "ICON_CL_SKILL_040",
-"s25": "Extra damage when [Earth's Blessing] attacks land"
+"s25": "Extra damage when [Earth's Blessing] attacks land",
+"note": "Earth's Blessing lasts 10 s at level 1 and 20 s at 20. A party member can't receive a Chanter's Power of the Storm while it is active (it covers 27% of a fight with a Storm Chanter, 37% without)."
 },
 "Noble Aura": {
 "cls": "cleric",
@@ -888,7 +896,8 @@
 "cd": 60,
 "mp": null,
 "icon": "ICON_CL_SKILL_046",
-"s25": "+30% additional damage to targets with Incapacitated Immunity"
+"s25": "+30% additional damage to targets with Incapacitated Immunity",
+"note": "A 300 s companion attack (6.3% of damage). Level 10 adds +20% damage to targets with Debilitating Mark (questlog). Global median level 10; 15 is the most common."
 },
 "Onslaught": {
 "cls": "chanter",
@@ -913,10 +922,10 @@
 "id": "18060000",
 "tw": "打擊碎",
 "ko": "타격쇄",
-"cd": 10,
+"cd": 15,
 "mp": 100,
 "icon": "ICON_CH_SKILL_006",
-"note": "KR/TW Aug 26: cooldown 15s to 10s, +30% PvE damage."
+"note": "KR/TW Aug 26 cut the cooldown to 10 s; Korea's Sep 2 patch set it back to 15 s, which is what the Global DB shows."
 },
 "Wave Blow": {
 "cls": "chanter",
@@ -944,7 +953,7 @@
 "cd": 5,
 "mp": null,
 "icon": "ICON_CH_SKILL_010",
-"note": "KR/TW Aug 26: now usable after any ranged skill (was: stunned/knocked-down target). Marchutan's Wrath opens it on yourself for 3s."
+"note": "KR/TW Aug 26 (live on Global): now usable after any ranged skill (was: stunned/knocked-down target). Marchutan's Wrath opens it on yourself for 3 s. No cooldown at skill level 16 (option 5)."
 },
 "Recuperation": {
 "cls": "chanter",
@@ -974,7 +983,8 @@
 "cd": 5,
 "mp": null,
 "icon": "ICON_CH_SKILL_016",
-"s25": "+5% Iron Wall (Block) chance"
+"s25": "+5% Iron Wall (Block) chance",
+"note": "Toggle. Party move speed: 10.5% at level 1, 15% at 10, 20% at 20. Two Chanters don't stack: only the higher level applies (on third party members the two Chanters' uptimes sum to about one fight length). A battle healer takes it to 15 (derived from the DB)."
 },
 "Undefeated Mantra": {
 "cls": "chanter",
@@ -984,7 +994,8 @@
 "cd": 5,
 "mp": null,
 "icon": "ICON_CH_SKILL_019",
-"s25": "+10% Perfect Chance"
+"s25": "+10% Perfect Chance",
+"note": "Toggle. Party PvE damage and tolerance: 10.5% at level 1, 17.5% at 15, 20% at 20. Two Chanters don't stack: only the higher level applies (Global buff uptimes agree). Doesn't stack with Cleric's Light of Protection (higher level wins; a tie goes to Undefeated). KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles (UNVERIFIED on Global)."
 },
 "Power of the Storm": {
 "cls": "chanter",
@@ -994,17 +1005,18 @@
 "cd": 120,
 "mp": null,
 "icon": "ICON_CH_SKILL_025",
-"s25": "+5% Weapon Damage Boost"
+"s25": "+5% Weapon Damage Boost",
+"note": "Lasts 10 s at level 1, 12 s at 5, 14.5 s at 10, 17 s at 15 and 20 s at 20 (questlog). A party member can't receive it while a Cleric's Earth's Blessing is active. KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles (UNVERIFIED on Global)."
 },
 "Spinning Strike": {
 "cls": "chanter",
 "id": "18290000",
 "tw": "旋轉擊",
 "ko": "회전격",
-"cd": 15,
-"mp": 100,
+"cd": 30,
+"mp": 250,
 "icon": "ICON_CH_SKILL_029",
-"note": "KR/TW Aug 26: cooldown 30s to 15s, MP 250 to 100, castable while moving, +30% skill speed. Dark Crush now opens on any ranged skill. The Global DB may still show the old values."
+"note": "KR/TW Aug 26 cut the cooldown to 15 s; Korea's Sep 2 patch set it back to 30 s (25 s with option 1), which is what the Global DB shows. Dark Crush opens on any ranged skill since Aug 26."
 },
 "Gust Rampage": {
 "cls": "chanter",
@@ -1013,7 +1025,8 @@
 "ko": "질풍 난무",
 "cd": null,
 "mp": null,
-"icon": "ICON_CH_SKILL_030"
+"icon": "ICON_CH_SKILL_030",
+"note": "Stagger bars only: users measured 6–9% lower at equal CP (NotMeter can't tell when it was used). Option 5 takes 1 s off all cooldowns per hit."
 },
 "Marchutan's Wrath": {
 "cls": "chanter",
@@ -1023,7 +1036,8 @@
 "cd": 30,
 "mp": null,
 "icon": "ICON_CH_SKILL_033",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Opens Dark Crush for 3 s. About 97% of top Global Chanters slot it (median level 5). This guide presses it between Spinning Strike / Impactful Crush windows."
 },
 "Guardian Blessing": {
 "cls": "chanter",
@@ -1033,7 +1047,7 @@
 "cd": 120,
 "mp": null,
 "icon": "ICON_CH_SKILL_042",
-"note": "KR/TW Sep 16 patch: 5 min to 2 min. The Global client DB still shows 300 s.",
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: Chanters recast it in 85 of 93 fights longer than 130 s (one cast never lasts past 120 s), and questlog's Global data agrees. The aion2.app DB, an older Sep 18 snapshot, still shows 300 s.",
 "s25": "+10% PvE and +5% PvP Damage Tolerance"
 },
 "Glacial Smite": {
@@ -1110,7 +1124,8 @@
 "ko": "증폭의 기도",
 "cd": 60,
 "mp": null,
-"icon": "ICON_CL_SKILL_044"
+"icon": "ICON_CL_SKILL_044",
+"note": "Self-only: in Global logs it never shows on other party members (0 of 11,573), and the DB text names only the caster. Lasts 10 s at level 1, 17 s at 15, 20 s at 20. 5 is the big step; 20 only adds +15% Attack."
 },
 "Flame Blessing": {
 "cls": "spiritmaster",
@@ -1217,7 +1232,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_GL_SKILL_Passive_008",
-"passive": 1
+"passive": 1,
+"note": "The party buff doesn't stack with a Templar's Fury. +5.4% is the level-1 value."
 },
 "Survival Willpower": {
 "cls": "gladiator",
@@ -1317,7 +1333,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_TE_SKILL_Passive_008",
-"passive": 1
+"passive": 1,
+"note": "5.5% is the level-1 value (about 13.5% at level 17, 15% at 20). The party buff doesn't stack with a Gladiator's Experienced Counterstrike."
 },
 "Survival Willpower (templar)": {
 "cls": "templar",
@@ -1556,7 +1573,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_002",
-"passive": 1
+"passive": 1,
+"note": "Text follows questlog's Global skill data (updated Oct 7): Fire Mark is inflicted on landing a Fire attack, with no chance stated (Korea's Sep 16 change from 20% to 100%). The aion2.app database (client 18.09.2026) still says 20%, and the application rate in the logs is UNVERIFIED. The 20% left in the text is the extra-damage tick on a marked target."
 },
 "Robe of Earth": {
 "cls": "sorcerer",
@@ -1826,7 +1844,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_CL_SKILL_Passive_008",
-"passive": 1
+"passive": 1,
+"note": "Crit Damage Boost is 10.5% at level 1, 17.5% at 15 and 20% at 20."
 },
 "Survival Willpower (cleric)": {
 "cls": "cleric",
@@ -1896,7 +1915,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_GL_SKILL_Passive_005",
-"passive": 1
+"passive": 1,
+"note": "PvE Damage Boost is 5.5% at level 1 and 15% at 20."
 },
 "Impact Hit (chanter)": {
 "cls": "chanter",
@@ -1926,7 +1946,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_CH_SKILL_Passive_010",
-"passive": 1
+"passive": 1,
+"note": "Enemy PvE damage tolerance -5.4% at level 1, -9% at 10, -11% at 15, -13% at 20."
 },
 "Survival Willpower (chanter)": {
 "cls": "chanter",
@@ -1946,7 +1967,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_CH_SKILL_Passive_008",
-"passive": 1
+"passive": 1,
+"note": "Crit Damage Boost is 5.7% at level 1 and 19% at 20; it also has a 50% chance of extra damage on crits (6.1% of Global damage)."
 },
 "Mocking Blade": {
 "cls": "gladiator",

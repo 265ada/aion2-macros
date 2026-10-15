@@ -122,7 +122,8 @@
 "mp": null,
 "tw": "集中格擋",
 "ko": "집중 막기",
-"s25": "+1s block duration"
+"s25": "+1s block duration",
+"note": "Tanking Gladiators press it themselves before big hits. Level 20 restores 10% HP once on a Parry."
 },
 "gladiator:Forced Restraint": {
 "id": "11430000",
@@ -247,7 +248,7 @@
 "tw": "突擊姿態",
 "ko": "돌격 자세",
 "s25": "50% chance to deal extra damage on Critical Hit for the duration",
-"note": "KR/TW Aug 12: the 20% MP-cost reduction was removed."
+"note": "KR/TW Aug 12: the 20% MP-cost reduction was removed. Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (measured in Global parses)."
 },
 "gladiator:Rage Burst": {
 "id": "11390000",
@@ -278,7 +279,8 @@
 "mp": 100,
 "tw": "激怒爆炸",
 "ko": "격노 폭발",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Wounded does not stack with a Templar Taunt's Shrink. At level 10 Wounded is -20% Attack."
 },
 "gladiator:Tenaciousness": {
 "id": "11380000",
@@ -403,7 +405,7 @@
 "tw": "吉凱爾祝福",
 "ko": "지켈의 축복",
 "s25": "+5s duration (Jul 8)",
-"note": "KR/TW Jul 8: self only (no longer party-wide); base effect adds +100 Accuracy."
+"note": "KR/TW Jul 8: self only (no longer party-wide); base effect adds +100 Accuracy. Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (measured in Global parses). Level 20 only adds +20% status chance."
 },
 "templar:Armor of Balance": {
 "id": "12200000",
@@ -496,7 +498,8 @@
 "mp": null,
 "tw": "戰場旗幟",
 "ko": "전장의 깃발",
-"s25": "+10% Combat Speed for the duration"
+"s25": "+10% Combat Speed for the duration",
+"note": "Attack from Defense lasts 10 s at level 1 and 20 s at level 20; level 20 also takes 30 s off the cooldown."
 },
 "templar:Comrade in Arms": {
 "id": "12250000",
@@ -688,7 +691,7 @@
 "id": "12230000",
 "en": "Noble Armor",
 "icon": "ICON_TE_SKILL_022",
-"d": "Increases Max HP by 5.4% for 300s and immediately restores HP by 5.4% of Max HP. Not affected by buff dispel effects.",
+"d": "Increases Max HP by 5.4% for 120s and immediately restores HP by 5.4% of Max HP. Not affected by buff dispel effects.",
 "s": [
 [
 5,
@@ -709,12 +712,12 @@
 ],
 "m": 1,
 "cls": "templar",
-"cd": 300.0,
+"cd": 120.0,
 "mp": null,
 "tw": "高潔甲冑",
 "ko": "고결의 갑주",
 "s25": "+10% PvE and +5% PvP Damage Tolerance for the duration",
-"note": "KR/TW Sep 16: cooldown 5 min to 2 min. The Global DB still shows 300 s."
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: a second Noble Armor buff shows in 452 of 507 Templar fights over 130 s, and questlog's Global data gives 120 s. The aion2.app database still shows 300 s (an older snapshot)."
 },
 "templar:Second Skin": {
 "id": "12190000",
@@ -808,7 +811,7 @@
 "tw": "挑釁",
 "ko": "도발",
 "s25": "Shrink also lowers the target's crit-damage resist by 5% (Jul 8, tuned Jul 22)",
-"note": "Its level-25 crit-damage-resist shred helps every party member, which is why Taunt is a top 25 pick even for DPS parties."
+"note": "Its level-25 crit-damage-resist shred helps every party member, which is why Taunt is a top 25 pick even for DPS parties. On Global (cap 20), Shrink is 15 s (20 s at level 20); logs show a median recast of 33 s at level 20 and 38 s at 15–19, so it isn't up all the time. Rage Burst's Wounded doesn't stack with Taunt's Shrink."
 },
 "assassin:Aerial Bind": {
 "id": "13230000",
@@ -963,7 +966,8 @@
 "mp": 200,
 "tw": "幻影分身",
 "ko": "환영 분신",
-"s25": "Rear Critical Hits cut Illusive Clone's cooldown by 1s (Jul 8)"
+"s25": "Rear Critical Hits cut Illusive Clone's cooldown by 1s (Jul 8)",
+"note": "Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (in the database's per-level data and in Global parses)."
 },
 "assassin:Savage Fang": {
 "id": "13270000",
@@ -1149,7 +1153,8 @@
 "mp": null,
 "tw": "神速契約",
 "ko": "신속의 계약",
-"s25": "+10% Attack for the duration"
+"s25": "+10% Attack for the duration",
+"note": "Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (in the database's per-level data and in Global parses)."
 },
 "assassin:Throw Shadowblade": {
 "id": "13020000",
@@ -1211,7 +1216,8 @@
 "mp": 200,
 "tw": "崔妮爾匕首",
 "ko": "트리니엘의 비수",
-"s25": "+10% Back Damage Boost for 5s on hit"
+"s25": "+10% Back Damage Boost for 5s on hit",
+"note": "Level 20 raises the cooldown increase on the target from 5% to 8% of its duration (questlog's Global text): an enemy-side effect, not a cut to your own cooldowns. The Korean Sep 30 guide says the Dagger's cut no longer reaches Savage Fang when the Dagger is pressed first."
 },
 "ranger:Ambush Kick": {
 "id": "14120000",
@@ -1335,7 +1341,8 @@
 "mp": null,
 "tw": "祝福之弓",
 "ko": "축복의 활",
-"s25": "+5s duration"
+"s25": "+5s duration",
+"note": "Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (+0.5 s per level), measured in Global parses. The database text shows the level-1 value."
 },
 "ranger:Ensnaring Trap": {
 "id": "14180000",
@@ -1614,7 +1621,8 @@
 "mp": null,
 "tw": "白傑爾權能",
 "ko": "바이젤의 권능",
-"s25": "+10% Weapon Damage Boost for the duration"
+"s25": "+10% Weapon Damage Boost for the duration",
+"note": "Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (+0.5 s per level), measured in Global parses. The database text shows the level-1 value."
 },
 "sorcerer:Arctic Armor": {
 "id": "15230000",
@@ -1708,7 +1716,7 @@
 "tw": "冷氣暴風",
 "ko": "냉기 폭풍",
 "s25": "5% chance to inflict Frost for 3s when attacking a target with Frostbite",
-"note": "With two Sorcerers in one party only the stronger Cold Storm debuff counts (Sep 17 player test), so only one of you needs it high."
+"note": "Before Oct 13 a stronger Frostbite from another Sorcerer removed yours (a Korean Sep 17 test). The Oct 13 patch stopped that and made the bonus damage apply across a height difference; whether two Sorcerers' Frostbites stack is unconfirmed. Top Global median stigma level is 5."
 },
 "sorcerer:Curse: Tree": {
 "id": "15140000",
@@ -1770,7 +1778,8 @@
 "mp": 200,
 "tw": "延遲爆炸",
 "ko": "지연 폭발",
-"s25": "Ignores Block and Evasion and lands as a Critical Hit"
+"s25": "Ignores Block and Evasion and lands as a Critical Hit",
+"note": "Since Aug 26 it also works on the ground AoEs in Korea; that is not confirmed on Global. Top Global median stigma level is 10."
 },
 "sorcerer:Divine Burst": {
 "id": "15360000",
@@ -1832,7 +1841,8 @@
 "mp": null,
 "tw": "元素強化",
 "ko": "원소 강화",
-"s25": "+7% Double Chance"
+"s25": "+7% Double Chance",
+"note": "Buff duration grows with stigma level: 10 s at level 1, 14.5 s at 10, 17 s at 15, 20 s at 20 (+0.5 s per level), measured in Global parses. The database text shows the level-1 value."
 },
 "sorcerer:Fire Wall": {
 "id": "15390000",
@@ -1863,7 +1873,8 @@
 "mp": 200,
 "tw": "火之障壁",
 "ko": "불의 장벽",
-"s25": "+10% damage when attacking targets with Embers"
+"s25": "+10% damage when attacking targets with Embers",
+"note": "Oct 13 (Global): the bonus damage now applies across a height difference, and your Embers are no longer removed by another player's stronger Embers. Top Global median stigma level is 11."
 },
 "sorcerer:Glacial Smite": {
 "id": "15120000",
@@ -2173,7 +2184,8 @@
 "mp": null,
 "tw": "強化：精靈加護",
 "ko": "강화: 정령의 가호",
-"s25": "+3s duration (Jul 8)"
+"s25": "+3s duration (Jul 8)",
+"note": "Stays 10 s at every level (the exception to the +0.5 s per level rule). Cast it, and Flame Blessing, before the Ancient Spirit: stats are snapshotted onto spirits when they're summoned."
 },
 "spiritmaster:Flame Blessing": {
 "id": "16370000",
@@ -2204,7 +2216,8 @@
 "mp": null,
 "tw": "烈焰祝福",
 "ko": "불길의 축복",
-"s25": "+100% damage to targets with Incapacitated Immunity (raised from 50%)"
+"s25": "+100% damage to targets with Incapacitated Immunity (raised from 50%)",
+"note": "Buff duration grows with stigma level: 10 s at level 1, 17 s at 15 (+0.5 s per level), measured in Global parses. Sirin: if you use it, at least level 15. Top Global median level 14 (mode 15)."
 },
 "spiritmaster:Jointstrike: Corrode": {
 "id": "16150000",
@@ -2267,7 +2280,7 @@
 "tw": "合擊：破滅攻勢",
 "ko": "협공: 파멸의 공세",
 "s25": "+200% damage to targets with Incapacitated Immunity",
-"note": "KR/TW Sep 10: the Jointstrike no longer overwrites the previous one, so it can be used on cooldown (full charge)."
+"note": "KR/TW Sep 10: the Jointstrike no longer overwrites the previous one, so it can be used on cooldown (full charge). Sirin stops at level 19 to avoid cancelling a bugged double hit seen in KR/TW; whether it exists on Global is UNVERIFIED (she hasn't seen it)."
 },
 "spiritmaster:Kaisinel's Power": {
 "id": "16360000",
@@ -2422,7 +2435,8 @@
 "mp": 200,
 "tw": "召喚：古代精靈",
 "ko": "소환: 고대의 정령",
-"s25": "Ancient Spirit uses its skill after 3 basic attacks"
+"s25": "Ancient Spirit uses its skill after 3 basic attacks",
+"note": "Oct 13 (Global): an issue where Ancient Spirit summons at level 15 or below did not activate skills properly is fixed. Sirin had reported the bug below level 15 (no skill every 7 attacks, no Elemental Fusion); no post-patch parses exist yet to confirm the fix. 90 s cooldown, lasts 30 s."
 },
 "cleric:Absolution": {
 "id": "17290000",
@@ -2546,7 +2560,8 @@
 "mp": 200,
 "tw": "大地懲罰",
 "ko": "대지의 징벌",
-"s25": "Extra damage when [Earth's Blessing] attacks land"
+"s25": "Extra damage when [Earth's Blessing] attacks land",
+"note": "Earth's Blessing lasts 10 s at level 1 and 20 s at 20. A party member can't receive a Chanter's Power of the Storm while it is active (it covers 27% of a fight with a Storm Chanter, 37% without)."
 },
 "cleric:Light of Protection": {
 "id": "17410000",
@@ -2578,7 +2593,7 @@
 "tw": "保護之光",
 "ko": "보호의 빛",
 "s25": "+5% Double Chance",
-"note": "Toggle. Doesn't stack with Chanter's Undefeated Mantra (higher level wins; a tie goes to Undefeated), so drop it when a Chanter is in the party. KR/TW Sep 23: disabled in Abyss boss fights, Rifts and Time-Space battles."
+"note": "Toggle. Party PvE damage and tolerance: 10.5% at level 1, 17.5% at 15, 20% at 20. Doesn't stack with Chanter's Undefeated Mantra (higher level wins; a tie goes to the Mantra), so drop it when a Chanter covers it. KR/TW Sep 23: disabled in Abyss boss fights, Rifts and Time-Space battles (UNVERIFIED on Global)."
 },
 "cleric:Noble Aura": {
 "id": "17440000",
@@ -2609,7 +2624,8 @@
 "mp": null,
 "tw": "高潔氣息",
 "ko": "고결한 기운",
-"s25": "+30% additional damage to targets with Incapacitated Immunity"
+"s25": "+30% additional damage to targets with Incapacitated Immunity",
+"note": "A 300 s companion attack (6.3% of damage). Level 10 adds +20% damage to targets with Debilitating Mark (questlog). Global median level 10; 15 is the most common."
 },
 "cleric:Power Burst": {
 "id": "17280000",
@@ -2671,7 +2687,8 @@
 "mp": null,
 "tw": "增幅祈禱",
 "ko": "증폭의 기도",
-"s25": "+10% PvE and +5% PvP Damage Boost"
+"s25": "+10% PvE and +5% PvP Damage Boost",
+"note": "Self-only: in Global logs it never shows on other party members (0 of 11,573), and the DB text names only the caster. Lasts 10 s at level 1, 17 s at 15, 20 s at 20. 5 is the big step; 20 only adds +15% Attack."
 },
 "cleric:Root": {
 "id": "17190000",
@@ -2733,7 +2750,8 @@
 "mp": null,
 "tw": "救援",
 "ko": "구원",
-"s25": "Gives the whole party Salvation's base effect"
+"s25": "Gives the whole party Salvation's base effect",
+"note": "Level 15 also covers the party's lowest-HP member. 30% of top Global Clerics run it (level unreadable)."
 },
 "cleric:Summon Resurrection": {
 "id": "17390000",
@@ -2826,7 +2844,8 @@
 "mp": null,
 "tw": "尤斯迪埃權能",
 "ko": "유스티엘의 권능",
-"s25": "Shield gains another 20% of max HP"
+"s25": "Shield gains another 20% of max HP",
+"note": "Party PvE Damage Tolerance: 20% at level 1, 30% at 20. The sheet says it 'during certain mechs can be really strong'."
 },
 "chanter:Assault Shock": {
 "id": "18700000",
@@ -2987,7 +3006,7 @@
 "id": "18420000",
 "en": "Guardian Blessing",
 "icon": "ICON_CH_SKILL_042",
-"d": "Increases the caster's Max HP by 5.4% for 300s and immediately restores 5.4% HP. Not affected by buff dispel effects.",
+"d": "Increases the caster's Max HP by 5.4% for 120s and immediately restores 5.4% HP. Not affected by buff dispel effects.",
 "s": [
 [
 5,
@@ -3008,12 +3027,12 @@
 ],
 "m": 0,
 "cls": "chanter",
-"cd": 300.0,
+"cd": 120.0,
 "mp": null,
 "tw": "守護祝福",
 "ko": "수호의 축복",
 "s25": "+10% PvE and +5% PvP Damage Tolerance",
-"note": "KR/TW Sep 16: cooldown 5 min to 2 min. The Global DB still shows 300 s."
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: Chanters recast it in 85 of 93 fights longer than 130 s (one cast never lasts past 120 s), and questlog's Global data agrees. The aion2.app DB, an older Sep 18 snapshot, still shows 300 s."
 },
 "chanter:Healing Touch": {
 "id": "18170000",
@@ -3044,7 +3063,8 @@
 "mp": null,
 "tw": "痊癒之手",
 "ko": "쾌유의 손길",
-"s25": "-5s cooldown"
+"s25": "-5s cooldown",
+"note": "14% of Global battle healers run it (3% with a Cleric). A derived swap for Marchutan's Wrath: Korea's post is a 6-slot, level-25 Sanctuary setup."
 },
 "chanter:Impeding Authority": {
 "id": "18240000",
@@ -3075,7 +3095,8 @@
 "mp": null,
 "tw": "阻斷權能",
 "ko": "차단의 권능",
-"s25": "+10% PvE and +5% PvP Damage Tolerance"
+"s25": "+10% PvE and +5% PvP Damage Tolerance",
+"note": "9% of Global battle healers run it (3% with a Cleric); a swap for Sprint Mantra or Power of the Storm on mechanic-heavy bosses."
 },
 "chanter:Marchutan's Wrath": {
 "id": "18330000",
@@ -3106,7 +3127,8 @@
 "mp": null,
 "tw": "瑪爾庫坦憤怒",
 "ko": "마르쿠탄의 분노",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Opens Dark Crush for 3 s. About 97% of top Global Chanters slot it (median level 5). This guide presses it between Spinning Strike / Impactful Crush windows."
 },
 "chanter:Obliterate": {
 "id": "18220000",
@@ -3169,7 +3191,7 @@
 "tw": "疾風權能",
 "ko": "질풍의 권능",
 "s25": "+5% Weapon Damage Boost",
-"note": "Doesn't stack with Cleric's Earth's Blessing (Storm applies). KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles."
+"note": "Lasts 10 s at level 1, 12 s at 5, 14.5 s at 10, 17 s at 15 and 20 s at 20 (questlog). A party member can't receive it while a Cleric's Earth's Blessing is active. KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles (UNVERIFIED on Global)."
 },
 "chanter:Sprint Mantra": {
 "id": "18160000",
@@ -3201,7 +3223,7 @@
 "tw": "疾走真言",
 "ko": "질주의 진언",
 "s25": "+5% Iron Wall (Block) chance",
-"note": "Toggle. Two Chanters don't stack: only the higher level applies."
+"note": "Toggle. Party move speed: 10.5% at level 1, 15% at 10, 20% at 20. Two Chanters don't stack: only the higher level applies (on third party members the two Chanters' uptimes sum to about one fight length). A battle healer takes it to 15 (derived from the DB)."
 },
 "chanter:Undefeated Mantra": {
 "id": "18190000",
@@ -3233,6 +3255,6 @@
 "tw": "不敗真言",
 "ko": "불패의 진언",
 "s25": "+10% Perfect Chance",
-"note": "Toggle. Two Chanters don't stack: only the higher level applies. Doesn't stack with Cleric's Light of Protection (higher level wins; a tie goes to Undefeated). KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles (Battlefield Authority buff replaces party synergies)."
+"note": "Toggle. Party PvE damage and tolerance: 10.5% at level 1, 17.5% at 15, 20% at 20. Two Chanters don't stack: only the higher level applies (Global buff uptimes agree). Doesn't stack with Cleric's Light of Protection (higher level wins; a tie goes to Undefeated). KR/TW Sep 23: disabled during Abyss boss fights, Rifts and Time-Space battles (UNVERIFIED on Global)."
 }
 }

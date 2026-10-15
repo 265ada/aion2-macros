@@ -34,25 +34,28 @@
 <main class="cards" id="cards" aria-label="Classes"><p class="loading">Loading classes…</p></main>
 
 <section class="panel" aria-labelledby="h-tier">
-  <h2 id="h-tier">DPS tier list<small>Which classes deal the most damage · Global right now vs Korea's endgame · tiers set Oct 9, 2026 · numbers from NotMeter</small></h2>
+  <h2 id="h-tier">DPS tier list<small>Which classes deal the most damage · Global right now vs Korea's endgame · tiers set Oct 14, 2026 (Global build 25926599) · numbers from NotMeter</small></h2>
   <div class="cols2">
     <div>
       <h4>Global right now <span class="tc">top players, this week</span></h4>
       <div class="tiers" id="tierGl"><p class="loading">Loading…</p></div>
-      <p class="snote">First number: damage compared with the average class <b style="color:#fff">at the same combat power</b> on the same boss (all of this week's and all-time top-50 Global boss parses, ~6,200). Second: NotMeter's own Global score this week (100 = the median class). Global top players sit around 125–145k combat power.</p>
+      <p class="snote">First number: damage compared with the average class <b style="color:#fff">at the same combat power</b> on the same boss (every player's best parse per boss in NotMeter's Global top-50 lists, about 7,000 parses recorded Oct 11–15, mostly after the Oct 13 patch). Second: NotMeter's own Global score this week (100 = the median class). Global top players sit around 155–180k combat power. <b style="color:#fff">The tier letters are the audit's call</b>, set on the Oct 7–14 data week, which was recorded before the Oct 13 Spiritmaster and Sorcerer fixes (NotMeter scores: Chanter 118.8, Ranger 114.9, Gladiator 110.5, Sorcerer 105.7, Assassin 96.7, Templar 92.9, Spiritmaster 82.5, Cleric 69.4; damage at equal power: Chanter +22.0%, Sorcerer +9.8%, Gladiator +5.3%, Templar +2.1%, Ranger +0.7%, Assassin −1.8%, Spiritmaster −5.6%, Cleric −25.6%). The class order held after the Oct 13 patch, except that on the newest week Templar edges Assassin (97.0 vs 96.1, inside the margin), which changes neither tier. The equal-power numbers move a few points with the method; on the top-20 set alone Ranger and Assassin swap places, while the top and bottom of the list hold.</p>
     </div>
     <div>
       <h4>Korea endgame <span class="tc">800k+ combat power, where Global is heading</span></h4>
       <div class="tiers" id="tierKr"><p class="loading">Loading…</p></div>
-      <p class="snote">NotMeter's Korean class score this week (100 = the median class), from 800k+ combat power parties with matched combat power. The 1M+ ranking is the same order. Brawler (Korea only, not in Global) tops it at ~111.</p>
+      <p class="snote">NotMeter's Korean class score this week (100 = the median class), from 800k+ combat power parties with matched combat power. The 1M+ ranking is nearly the same order. Brawler (Korea only, not in Global) tops it at ~112.</p>
     </div>
   </div>
   <h4>Why the two lists disagree</h4>
   <ul class="facts">
+    <li><b>Why each Global tier</b> (the audit's reasons, from two measures: NotMeter's score and damage at equal combat power). <b>Chanter S:</b> top on both, plus the best party buffs. <b>Ranger A:</b> a high score, and top Rangers also have the highest median combat power. <b>Gladiator A:</b> strong on both, and it can also tank. <b>Sorcerer A:</b> 2nd at equal combat power. <b>Assassin B:</b> mid, with a big skill ceiling (the top 10% play about 83% above the combat-power trend). <b>Templar B as DPS, S as the only real tank:</b> Taunt's Shrink and Fury raise the whole party's damage. <b>Spiritmaster B−:</b> Global's low cooldown reduction caps the Ancient Spirit. <b>Cleric C as DPS, S as the healer:</b> NotMeter measures damage only.</li>
     <li><b>Chanter is #1 on Global and 8th in Korea.</b> Global players have skills at 12–16, and the Chanter's no-cooldown Dark Crush (skill level 16) is a huge jump that doesn't need much else. Korea's endgame adds 6 stigmas at level 25, ~35–40% cooldown reduction and 2–5 skills at 20, which the crit and cooldown classes (Assassin, Sorcerer, Spiritmaster, Ranger) scale with far better. Chanter also spends part of its kit on party buffs, which don't show in its own number.</li>
     <li><b>Assassin is mid on Global and #1 (of Global's 8) in Korea.</b> Its damage stacks multiplicatively on crit, crit damage and back-attack stats that are still low on Global.</li>
-    <li class="warn"><b>Templar and Cleric aren't DPS picks.</b> Templar tanks (it's still ~average damage at equal gear), and Cleric heals; their numbers are here for completeness.</li>
-    <li>Spread inside each class is large: the top 10% of every class deal 35–45% more than their combat power predicts, so <b>how you play moves you more than which class you pick</b>. See each class's Max damage plan.</li>
+    <li class="warn"><b>Templar and Cleric aren't DPS picks.</b> Templar is the only real tank on Global (in 64% of boss parties), and Cleric is the healer (in 89% of fights). Gladiators tank the Templar-less parties without changing their build, and Chanters cover the Cleric-less ones. "DPS Templar" and "DPS Cleric" aren't separate specs on Global. Their numbers are here for completeness.</li>
+    <li><b>Two Global rules reshape stats.</b> The crit cap is 50%, and top Gladiators, Rangers and Assassins already sit at it, so more Crit is wasted for them. Cooldown reduction tops out around 19–21%, which hurts Sorcerer and Spiritmaster most (Spiritmaster drops to 7th).</li>
+    <li><b>PvP and solo tiers are UNVERIFIED.</b> There is no Global PvP ranking: launch-week opinion pieces put Assassin and Gladiator on top, and Korean PvP rankings don't transfer to Global's 4 stigma slots. For solo and leveling (opinion, no Global speed data): A Ranger, Gladiator, Chanter, Spiritmaster; B+ Sorcerer; B Assassin, Templar, Cleric.</li>
+    <li>Spread inside each class is large: the top 10% of every class deal 35–70% more than their combat power predicts, so <b>how you play moves you more than which class you pick</b>. See each class's Max damage plan.</li>
   </ul>
 </section>
 
@@ -62,10 +65,11 @@
     <div>
       <h4>Pick: <a href="chanter.html">Chanter</a>, then <a href="gladiator.html">Gladiator</a></h4>
       <ul class="facts">
-        <li class="good"><b>Chanter</b> is the top Global DPS at equal gear right now (+24% vs the average class), and about 97% of its damage runs from <b>one macro key plus held left click</b>: no charge skills, no ground targeting, and Dark Crush hits from 20 m. Parties want its buffs too. What you have to do: push Dark Crush to skill level 16 first (option 5), then Onslaught to 16, and keep Dark Crush casts high. Catch: in Korea's endgame it drops to the bottom of the DPS list, so it's the best pick for Season 1, not forever.</li>
-        <li class="good"><b>Gladiator</b> is A tier with nearly 100% of its damage automatable: one skill (Overhead Slam + Upward Strike) is 60% of it, and the macro alternates it with Rending Blow for you. You stand in front (77% front hits) and in melee.</li>
-        <li><b>Templar</b> is almost as simple (Judgment is 40% on one macro row) but it's the tank, and Punishment (12%) has to be charged by hand.</li>
-        <li class="warn"><b>Hardest to max:</b> Sorcerer (Hellfire charge, two ground AoEs and six skills at 7% or more each), Ranger (Deadshot charge, 23%), Assassin (85% of hits must land from behind). All three are top-tier in Korea's endgame, so the effort pays off later.</li>
+        <li class="good"><b>Chanter</b> is the top Global DPS at equal gear right now (+19% vs the average class this week, +22% in the audit's Oct 7–14 week), and about 97% of its damage runs from <b>one macro key plus held left click</b>: no charge skills, no ground targeting, and Dark Crush hits from 20 m. Parties want its buffs too. What you have to do: push Dark Crush to skill level 16 first (option 5), then Onslaught to 16, and keep Dark Crush casts high. Catch: in Korea's endgame it drops to the bottom of the DPS list, so it's the best pick for Season 1, not forever.</li>
+        <li class="good"><b>Gladiator</b> is A tier with nearly 100% of its damage automatable: one skill (Overhead Slam + Upward Strike) is 61% of it, and the macro alternates it with Rending Blow for you. You stand in front (77% front hits) and in melee.</li>
+        <li><b>Templar</b> is almost as simple (Judgment is 42.5% on one macro row) but it's the tank, and Punishment (11.5%) has to be charged by hand.</li>
+        <li><b>Spiritmaster</b> is the audit's runner-up for ease: Sirin calls it a low-skill-floor class that "performs very well on high ping", and about a third of its damage lands whatever you press. Its Global damage is lower (B−).</li>
+        <li class="warn"><b>Hardest to max:</b> Sorcerer (Hellfire charge, two ground AoEs and six skills at 6% or more each), Ranger (Deadshot charge, 23.5%), Assassin (85% of hits must land from behind). All three are top-tier in Korea's endgame, so the effort pays off later.</li>
       </ul>
     </div>
     <div>
@@ -74,35 +78,35 @@
         <thead><tr><th>Class</th><th>Global tier</th><th>Automatable</th><th>What you still do by hand</th></tr></thead>
         <tbody>
           <tr><td><a href="chanter.html"><b>Chanter</b></a></td><td><b class="tl S">S</b></td><td>~97%</td><td>Marchutan's Wrath; keep Dark Crush casts up</td></tr>
+          <tr><td><a href="ranger.html"><b>Ranger</b></a></td><td><b class="tl A">A</b></td><td>~77%</td><td>Charge Deadshot (23.5%); Marking Shot</td></tr>
           <tr><td><a href="gladiator.html"><b>Gladiator</b></a></td><td><b class="tl A">A</b></td><td>~99%</td><td>Stand in front; Leaping Slam / mobility</td></tr>
-          <tr><td><a href="sorcerer.html"><b>Sorcerer</b></a></td><td><b class="tl A">A</b></td><td>~60–80%</td><td>Charge Hellfire (21%); place Fire Wall + Cold Storm (19%) unless the 6-entry macro does it</td></tr>
-          <tr><td><a href="ranger.html"><b>Ranger</b></a></td><td><b class="tl A">A</b></td><td>~77%</td><td>Charge Deadshot (23%); Marking Shot</td></tr>
+          <tr><td><a href="sorcerer.html"><b>Sorcerer</b></a></td><td><b class="tl A">A</b></td><td>~60–80%</td><td>Charge Hellfire (21.7%); place Fire Wall + Cold Storm (19.6%) unless the 6-entry macro does it</td></tr>
           <tr><td><a href="assassin.html"><b>Assassin</b></a></td><td><b class="tl B">B</b></td><td>~100%</td><td>Stay behind the boss; time Illusive Clone</td></tr>
-          <tr><td><a href="templar.html"><b>Templar</b></a></td><td><b class="tl B">B</b></td><td>~88%</td><td>Charge Punishment (12%); tanking</td></tr>
-          <tr><td><a href="spiritmaster.html"><b>Spiritmaster</b></a></td><td><b class="tl B">B</b></td><td>~100%</td><td>Nothing big; a third of the damage is spirits on their own</td></tr>
-          <tr><td><a href="cleric.html"><b>Cleric</b></a></td><td><b class="tl C">C</b></td><td>~92%</td><td>Charge Bolt (8%); healing</td></tr>
+          <tr><td><a href="templar.html"><b>Templar</b></a></td><td><b class="tl B">B</b></td><td>~88%</td><td>Charge Punishment (11.5%); tanking</td></tr>
+          <tr><td><a href="spiritmaster.html"><b>Spiritmaster</b></a></td><td><b class="tl B">B−</b></td><td>~100%</td><td>Nothing big; a third of the damage is spirits on their own</td></tr>
+          <tr><td><a href="cleric.html"><b>Cleric</b></a></td><td><b class="tl C">C</b></td><td>~92%</td><td>Charge Bolt (8.6%); healing</td></tr>
         </tbody>
       </table></div>
-      <p class="snote">Automatable = share of a top Global player's damage that comes from skills a macro or held key fires at full strength. Charge skills fired by a macro come out uncharged: in Global parses a tap does only ~35–45% of a Max charge.</p>
+      <p class="snote">Automatable = share of a top Global player's damage that comes from skills a macro or held key fires at full strength. Charge skills fired by a macro come out uncharged: in Global parses a tap does only about a third of a Max charge (roughly 26–45%, depending on the method).</p>
     </div>
   </div>
 </section>
 
 <section class="panel" aria-labelledby="h-global">
-  <h2 id="h-global">Global Season 1: roadmap, weekly checklist, class guides<small>From the shared Global class sheet (zxcastform) and the Global class guides it links</small></h2>
+  <h2 id="h-global">Global Season 1: roadmap, weekly checklist, class guides<small>From the shared Global class sheet (zxcastform), live roadmap as of Oct 14, and the Global class guides it links</small></h2>
   <div class="cols3">
     <div class="col">
       <h4>Roadmap</h4>
       <ol class="steps">
-        <li><div><b>Level to 45 on the main story.</b> Along the way (or after): Sealed Dungeons (Daevanion crystals + skill points), Regional Quests (crystals + gear), Feathers (188 total: amulet scrolls, stamina, amplification shards), Strongholds (belt scrolls), and Rifting into the enemy faction (PvP can be toggled).</div></li>
-        <li><div><b>At 45:</b> go to the Abyss for feathers and weekly quests, buy a ring with Abyss Points, and finish leftover side content.</div></li>
-        <li><div><b>Vakron Sky Island</b> (2★): every piece +10 with Manastones (~1,400 score). Farm until you have the full set. At 7/8 and far from pity, run the expedition version.</div></li>
-        <li><div><b>Deus Stage 1–2:</b> all green, then all blue Arcana cards, ideally with your main skills to +16. Level belt and amulet (~1,920 → ~2,190 score).</div></li>
-        <li><div><b>Kromede</b> for accessories. Craft the Splendent Dark Dragon Lord weapon, or use the Kromede weapon until you can.</div></li>
-        <li><div><b>Ferocious Horn Den</b> for guard and armor (the armor lasts all of Season 1), all +10 (~2,560).</div></li>
-        <li><div><b>Deus Stage 3–4:</b> all yellow cards with the right skills to reach level 20 for Ludra.</div></li>
+        <li><div><b>Level to 45 on the main story.</b> Along the way: Sealed Dungeons (Daevanion crystals + skill points), regional quests, Feathers (only enough to reach Monolith level 30), Strongholds (belt scrolls) and Rift runs.</div></li>
+        <li><div><b>At 45, early endgame (to about 1,600 score):</b> Draupnir in Exploration (double-claim the first run for the pity). Regional quests for accessory upgrades and Clash Runes, but <b>upgrade each Clash Rune only to +1 for now</b>. Amulet to +10, then Substance Morph it to blue. Spend Azphel (PvP board) points: they add item level. Manastone everything once (about 1,000), then side content and Abyss feathers (about 1,400).</div></li>
+        <li><div><b>Vakron</b> in Exploration (save the pity chest), then Vakron in Conquest for Unique pieces (about 1,600).</div></li>
+        <li><div><b>About 1,600:</b> Uruguru for Unique accessories, while tapping earlier Unique pieces to +10 and running Transcendence level 1 for grey Arcana cards.</div></li>
+        <li><div><b>About 1,900:</b> Transcendence level 2 for blue / green cards. <b>About 2,000:</b> craft a gold Arcana card.</div></li>
+        <li><div><b>Then Ludra prep</b> (below). The Ludra raid (Sanctuary) isn't on Global yet; NC calls it upcoming.</div></li>
+        <li><div><b>Later dungeons</b> (the sheet's older Oct 2 roadmap and Allyria): Kromede for accessories and the weapon, Ferocious Horn Den for armor and guard (the armor lasts all of Season 1), Transcendence 3–4 for gold cards, then the crafted weapon and accessories. Sirin says the Kromede colossus was removed on Global, while the sheet and Allyria still list it.</div></li>
       </ol>
-      <p class="snote"><b style="color:#fff">Ludra prep:</b> weapon, guard and rings +17; earring and necklace +16; armor and bracelet +15; class runes about +5. <b style="color:#fff">Systems to work on:</b> stigma and skill points, Daevanion board, soul binding, Pet Genus, Pantheon, crafted weapon / guard / accessories. Boss guide videos: <a href="https://www.youtube.com/watch?v=HE1MNfy8Zjo" target="_blank" rel="noopener">Vakron</a> · <a href="https://www.youtube.com/watch?v=2IRfvEWFvqk" target="_blank" rel="noopener">Deus Stage 1</a> · <a href="https://www.youtube.com/watch?v=lPAX6cNiXO8" target="_blank" rel="noopener">Kromede</a> · <a href="https://www.youtube.com/watch?v=4lT8erUBNAM" target="_blank" rel="noopener">Ferocious Horn Den</a>.</p>
+      <p class="snote"><b style="color:#fff">Ludra prep:</b> weapon, guard and rings +17; earring and necklace +16; armor and bracelet +15; Clash Runes about +5 (the sheet says only +1 early on; Allyria says not past +6/7 because upgrades are RNG-heavy, and a failed rune upgrade destroys the rune). <b style="color:#fff">Bosses in this week's Global data:</b> Vakron (Tiere, Thamon, Vakron); Transcendence / Deus 4 (Atiel, Gelcos, Nazmun); Fire Temple (Kromede's Desire, Red Spark Ignus, Black Smoke Murute); Ferocious Horn Den (Watchdog Kwapo, Necromancer Duanka, Ferocious Horn Nuakum); Arkanis 4 (Siliator of Deceit, Talisra of the Void, Ruthilis of Pain). <b style="color:#fff">Systems to work on:</b> stigma and skill points, Daevanion board, soul binding, Pet Genus, Pantheon, crafted weapon / guard / accessories. Boss guide videos: <a href="https://www.youtube.com/watch?v=HE1MNfy8Zjo" target="_blank" rel="noopener">Vakron</a> · <a href="https://www.youtube.com/watch?v=2IRfvEWFvqk" target="_blank" rel="noopener">Deus Stage 1</a> · <a href="https://www.youtube.com/watch?v=lPAX6cNiXO8" target="_blank" rel="noopener">Kromede</a> · <a href="https://www.youtube.com/watch?v=4lT8erUBNAM" target="_blank" rel="noopener">Ferocious Horn Den</a>.</p>
     </div>
     <div class="col">
       <h4>Daily / weekly checklist</h4>
@@ -128,16 +132,18 @@
     <div class="col">
       <h4>Global is not Korea (yet)</h4>
       <ul class="facts">
-        <li><b>Stigmas:</b> 4 slots that open at character level 22, 27, 32 and 37, with a max level of 20. A fresh level 45 has about 32 stigma shards (Sirin's Global guide).</li>
+        <li class="good"><b>Skill balance is Korea's, including the Sep 16 patch.</b> Global parses show it live: Templars recast Noble Armor every 2 min (452 of 507 long fights), Chanters Guardian Blessing (85 of 93), and Assassin Shadowstrike's option 2 lasts 10 s. The aion2.app Global database is an older snapshot (Sep 18) that still shows the old values. Korea's Sep 23 changes are UNVERIFIED on Global.</li>
+        <li><b>Stigmas:</b> 4 slots with a max level of 20. A fresh level 45 has about 32 stigma shards, the Abyss Point cap allows about 20 a week, and resets are free (Sirin's Global guide). The levels the slots open at are unresolved: reported as 22 / 27 / 32 / 37, but Allyria says the 4th arrives only at 45.</li>
         <li class="warn"><b>Cooldown reduction is far lower:</b> the best Global gear measured ~19–21% on the launch-scale test, against 34–40% in Korea. Korean macros that rely on cooldown alignment (Sorcerer, Spiritmaster) run looser.</li>
         <li class="warn"><b>Divine (Pantheon) stats count half:</b> 10 points = 1% instead of 5. Titles lost Smite / Double Chance, and Combat Speed and cooldown titles are ~30% lower.</li>
         <li>Gear stat values are roughly halved, and Pet Genus is laid out completely differently (Double Chance only on Special line 4, max 3%). Use the Pet Genus section on each class page.</li>
         <li>Arcana starts with 5 cards (Chalice, Parchment, Compass, Bell, Mirror).</li>
+        <li><b>Gear and boards:</b> no Heroic gear in Season 1, PvE Damage Boost is gone from weapons, guards and accessories (Potential stats are PvP-only), Perfect is gone from capes, the Ariel board is removed, and the stat crit cap is 50%.</li>
         <li><b>Smite = Double Chance:</b> Global guides use both names for the same stat (a 2× damage proc).</li>
       </ul>
     </div>
   </div>
-  <h4>Chanter vs Cleric party buffs (the first two don't stack; the Chanter's wins)</h4>
+  <h4>Chanter vs Cleric party buffs (the first two pairs don't stack: Undefeated Mantra and Light of Protection take the higher level, and the Mantra wins a tie; a party member can't get Power of the Storm while Earth's Blessing is active)</h4>
   <div class="tbl-wrap"><table>
     <thead><tr><th>Chanter</th><th>Effect</th><th>Cleric</th><th>Effect</th></tr></thead>
     <tbody>
@@ -146,7 +152,7 @@
       <tr><td><b>Sprint Mantra</b> (toggle)</td><td>+20–22.5% move speed, +20% healing received, stamina regen, 15% chance to heal on hit, +5% Endurance</td><td><b>Summon Resurrection</b> (1–2 min)</td><td>Raises all fallen party members with 3–11 s invincibility and 20% HP (saves resurrection stones)</td></tr>
     </tbody>
   </table></div>
-  <p class="snote">Meta parties take both and the Cleric drops Light of Protection for more heals, shields or damage. Values are the sheet's max-level numbers.</p>
+  <p class="snote">Meta parties take both and the Cleric drops Light of Protection for more heals, shields or damage. Values are the sheet's max-level numbers (stigma level 25, Korea). At Global's cap of 20, Undefeated Mantra and Light of Protection give 20% and Power of the Storm lasts 20 s: stigma buff durations grow with level, from 10 s at level 1 to 20 s at 20. Other pairs that don't stack: Gladiator's Experienced Counterstrike and Templar's Fury; Gladiator's Rage Burst (Wounded) and Templar Taunt's Shrink; Chanter's Earth's Promise and Cleric's Chain of Torment; two Chanters' Sprint / Undefeated Mantras.</p>
   <h4>Global class guides the sheet links</h4>
   <ul class="facts">
     <li><a href="ranger.html"><b>Ranger</b></a>: <a href="https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit" target="_blank" rel="noopener">Allyria's Global Ranger guide</a> · <a href="https://docs.google.com/document/d/1evrt_6e6WSHRT1vMem2i3O7ZlfANJbqyZoSn66IFrBo/edit" target="_blank" rel="noopener">Ranger in-depth guide</a> · <a href="https://ranger.tgustafsson.se/" target="_blank" rel="noopener">Ranger Daevanion planner</a> · <a href="https://www.twitch.tv/j0eitv" target="_blank" rel="noopener">j0eitv</a></li>
@@ -154,9 +160,9 @@
     <li><a href="spiritmaster.html"><b>Spiritmaster</b></a>: <a href="https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit" target="_blank" rel="noopener">Sirin's Global Spiritmaster guide</a> · <a href="https://aion2-elementalist-guide.netlify.app/" target="_blank" rel="noopener">Elementalist guide</a></li>
     <li><a href="templar.html"><b>Templar</b></a>: <a href="https://app.notion.com/p/Templar-s-Guide-How-Not-to-Brick-Your-Account-037d77a0f9b643d0af3fca41da45c7de" target="_blank" rel="noopener">How Not to Brick Your Account (Notion)</a> · <a href="https://www.twitch.tv/axely" target="_blank" rel="noopener">axely</a> · <a href="https://www.twitch.tv/youmadsin" target="_blank" rel="noopener">youmadsin</a></li>
     <li><a href="assassin.html"><b>Assassin</b></a>: <a href="https://aion2-assassin-guide.onrender.com/" target="_blank" rel="noopener">Assassin guide</a> · <a href="https://assassin.tgustafsson.se/" target="_blank" rel="noopener">Assassin planner</a></li>
-    <li><a href="cleric.html"><b>Cleric</b></a>: <a href="https://www.twitch.tv/youmadsin" target="_blank" rel="noopener">youmadsin</a> · <a href="gladiator.html"><b>Gladiator</b></a> and <a href="chanter.html"><b>Chanter</b></a>: no dedicated Global guide in the sheet yet. Every class: <a href="https://questlog.gg/aion-2/en/skill-builder" target="_blank" rel="noopener">questlog.gg skill builder</a> for Daevanion boards.</li>
+    <li><a href="cleric.html"><b>Cleric</b></a>: <a href="https://www.twitch.tv/youmadsin" target="_blank" rel="noopener">youmadsin</a> · <a href="gladiator.html"><b>Gladiator</b></a>: <a href="https://docs.google.com/document/d/15J0xIIlOGvp0NSGui7NK0MJpbgZTjXuZKAahHnkr2G4/edit" target="_blank" rel="noopener">Tenyon's Global Gladiator guide</a> (not linked by the sheet) · <a href="chanter.html"><b>Chanter</b></a>: no dedicated Global guide in the sheet. Every class: <a href="https://questlog.gg/aion-2/en/skill-builder" target="_blank" rel="noopener">questlog.gg skill builder</a> for Daevanion boards.</li>
   </ul>
-  <p class="src">Source: <a href="https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview" target="_blank" rel="noopener">Personal Aion 2 Class Info</a> (Global class sheet by zxcastform; the author notes it's a starting point, not guaranteed 100% accurate) · Sirin's Global Spiritmaster guide (Sep 21) for the Global-vs-Korea numbers.</p>
+  <p class="src">Source: <a href="https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview" target="_blank" rel="noopener">Personal Aion 2 Class Info</a> (Global class sheet by zxcastform; the author notes it's a starting point, not guaranteed 100% accurate) · Sirin's Global Spiritmaster guide (Sep 21) for the Global-vs-Korea numbers. The sheet's author is moving this content to <a href="https://daevaos.com/guides/classes?author=Castform" target="_blank" rel="noopener">daevaos.com</a>: on Oct 14 the sheet's Chanter, Ranger, Sorcerer and Templar tabs were replaced by links there, while the Cleric, Spiritmaster, Gladiator and Assassin tabs, the Roadmap and Tips remain. Class pages cite the Oct 14 snapshot of the moved tabs.</p>
 </section>
 
 <section class="panel" aria-labelledby="h-how">
@@ -173,7 +179,7 @@
           <div class="row"><span class="cell hot"><img class="ic" src="icons/ICON_AS_SKILL_013.webp" alt=""></span>key</div>
         </div>
         <div style="display:grid;gap:8px;min-width:0">
-          <p>Each hotbar key has four rows above it, numbered <b>0–3</b>. Pressing the key casts the <b>lowest-numbered skill that's ready</b>. Row 0 goes first, and row 3 is the filler.</p>
+          <p>Each hotbar key has four rows above it, numbered <b>0–3</b>. Pressing the key casts the <b>lowest-numbered skill that's ready</b>. Row 0 goes first, and row 3 is the filler. (Row 0 first is how the Korean setups work; no source states the firing order outright and it hasn't been tested on Global, so treat it as UNVERIFIED.)</p>
           <p>A macro entry points to a <b>slot</b>, not a skill. When the macro reaches that entry, it uses the whole stack in priority order. The hotbar icon shows whichever skill is ready next.</p>
         </div>
       </div>
@@ -183,7 +189,7 @@
       <ol class="steps">
         <li><div>Press <kbd>K</kbd>. Drag skills into the <b>rows above a hotbar key</b> in the order on the class page (row 0 at the bottom).</div></li>
         <li><div>Click <span class="tc">基本技能輔助功能</span> [Macro], then <span class="tc">新增輔助功能</span> [Add Macro]. Click the entry's icon, pick the <b>slot</b> you stacked, and set <span class="tc">延遲</span> [Delay] to <b>10 ms</b>.</div></li>
-        <li><div>Bind the key: <span class="path"><span class="tc">設定 → 按鍵設定 → 一般</span> [Settings → Key Settings → General → Skill Macro]</span>. Most players use a mouse button.</div></li>
+        <li><div>Bind the key: <span class="path"><span class="tc">設定 → 按鍵設定 → 一般</span> [Settings → Key Settings → General → Gameplay → Macro]</span>. Most players use a mouse button.</div></li>
         <li><div>Play in <b>Target</b> mode. Hold <b>basic attack + macro key</b> (plus any third key the class page lists). Check your numbers on the training dummy with the DPS meter (<kbd>Ctrl</kbd>+<kbd>X</kbd>).</div></li>
         <li><div>Set <span class="tc">技能預約</span> [Skill queue] as the class page says. If skills stutter or get skipped, flip it and test again.</div></li>
       </ol>
@@ -196,7 +202,7 @@
         <li class="no"><b>Toggles never go in a macro</b> (Chanter mantras): a second press switches them off.</li>
         <li class="no"><b>Keep charge skills manual</b> unless the class page holds that slot on purpose.</li>
         <li><b>Only raise the delay if skills get skipped.</b> 10 ms is standard.</li>
-        <li><b>Mouse-software macros</b> (Logitech, Razer) top the Korean meters. NC patched against them on Sep 16, and every class page has an in-game-only setup.</li>
+        <li class="warn"><b>Mouse-software macros</b> (Logitech, Razer hold-to-run) top the Korean meters, but on Global they are a ban risk: NC's policy bans programs or devices that enable actions impossible for regular players. Its Oct 10 notice (4,996 accounts) named "use of macros, bots or other unauthorized programs", and the Oct 12 (10,000) and Oct 14 (9,422) waves gave the same reasons. Allyria's FAQ calls hold-to-run "not bannable", but that isn't an NC statement. Korea patched against mouse macros on Sep 16 (live on Global). Every class page has an in-game-only setup, the in-game macro is allowed, and no Global patch through Oct 13 has nerfed any class macro.</li>
         <li class="warn"><b>Check ping and FPS before blaming the macro.</b> In Kanon's tests, a 150–200 ms ping gap was worth roughly 50–70% damage.</li>
       </ul>
     </div>
@@ -259,16 +265,17 @@
           <tr><td>21–25</td><td>1 Advanced shard</td><td><b>Lv 25: 75 + 5 Advanced</b></td></tr>
         </tbody>
       </table>
-      <p>Levels 16–20 cost as much as 1–15 combined. That's why every priority list gets several stigmas to their cheap unlocks (5 or 10) first. A full Global build at 20 / 20 / 20 / 15 costs about 260 shards.</p>
+      <p>Levels 16–20 cost as much as 1–15 combined (75 shards to reach 20, confirmed in questlog's Global skill data). That's why every priority list gets several stigmas to their cheap unlocks (5 or 10) first. A full Global build at 20 / 20 / 20 / 15 costs about 260 shards, far more than Global's budget: a fresh level 45 has about 32 shards, the Abyss Point cap allows about 20 a week, and resets are free. Top Global players this week sit at <b>one stigma at 20 and the rest at 5–15</b>.</p>
     </div>
     <div class="col">
       <h4>Global Season 1</h4>
       <ul class="facts">
         <li><b>4 stigma slots</b> (confirmed on NC's official livestream) and a stigma level cap of <b>20</b>, like Korea's launch season (Nov 2025 – Mar 2026).</li>
         <li>No level 21–25 and no Advanced shards yet. Korea added the 5th slot on Mar 25 and the 6th slot plus level 25 on Jul 1, so expect Global to follow later.</li>
-        <li class="good">Effects are read from the Global client database. It has Korea's Aug 26 rework but not the Sep 16 patch.</li>
-        <li>Stigmas unlock at character level <b>22</b>. Each class has <b>13</b>. Every effect at 5 / 10 / 15 / 20 is automatic; there are no picks.</li>
-        <li class="warn">Same-name party buffs don't stack: two Chanters' mantras, Undefeated Mantra vs Light of Protection, Power of the Storm vs Earth's Blessing, two Sorcerers' Cold Storm. The higher one wins.</li>
+        <li class="good">Effects are read from the aion2.app Global database, an older client snapshot (Sep 18). It shows Korea's Aug 26 rework but pre-Sep 16 values; Global parses show the Sep 16 patch is live, so the class pages flag the numbers it changed. Some Aug 26 cooldown cuts (Warding Strike, Spinning Strike) aren't live.</li>
+        <li class="good"><b>Buff durations grow with stigma level.</b> Most self-buffs listed as "for 10s" last 10 s at level 1, 14.5 s at 10, 17 s at 15 and 20 s at 20 (Lunge Stance, Zikel's Blessing, Swift Contract, Illusive Clone, Vaizel's Authority, Bow of Blessing, Battlefield Banner, Element Enhancement, Power of the Storm, Prayer of Amplification, Flame Blessing). Spirit's Benediction and buffs granted by specialty options stay 10 s. The database text shows the level-1 value.</li>
+        <li>Stigmas are learned at character level <b>22</b>, and each class has <b>13</b>. The level each of the 4 slots opens at is unresolved (reported 22 / 27 / 32 / 37; Allyria says the 4th arrives only at 45). Stigmas have no rarity, only levels: every effect at 5 / 10 / 15 / 20 is automatic, and there are no picks.</li>
+        <li class="warn"><b>Party buffs that don't stack:</b> two Chanters' Sprint / Undefeated Mantras; Undefeated Mantra vs Light of Protection (the higher level applies, a tie goes to the Mantra); Power of the Storm vs Earth's Blessing; Experienced Counterstrike vs Fury; Rage Burst's Wounded vs Taunt's Shrink; Earth's Promise vs Chain of Torment. Two Sorcerers' Cold Storm and Fire Wall used to overwrite each other; the Oct 13 patch fixed that, and whether the two stack isn't stated.</li>
       </ul>
     </div>
     <div class="col">
@@ -278,7 +285,7 @@
         <li class="good"><b>+1</b> for every stigma you take to 20 (refunded if you reset it).</li>
         <li>More are sold in the Abyss exchange shop.</li>
         <li>With 6 stigmas at 20 you have 11: <b>two at 25 + one at 21</b>. The ceiling (all 13 at 20, 975 shards) gives <b>three at 25 + one at 23</b>.</li>
-        <li class="warn">Sep 23 (KR/TW): during Abyss boss fights, Rifts and Time-Space battles, <b>Battlefield Might</b> replaces party synergies (Undefeated Mantra, Light of Protection, Power of the Storm, Fury, Experienced Counterstrike and others do nothing there).</li>
+        <li class="warn">Sep 23 (KR/TW): during Abyss boss fights, Rifts and Time-Space battles, <b>Battlefield Might</b> replaces party synergies (Undefeated Mantra, Light of Protection, Power of the Storm, Fury, Experienced Counterstrike and others do nothing there). Nothing confirms it on Global: Korea's Sep 23 changes are UNVERIFIED there.</li>
       </ul>
     </div>
   </div>
@@ -291,10 +298,10 @@
       <h4>Where skill levels come from</h4>
       <ul class="facts">
         <li>Skill points (Wisdom Stones) take an active skill to <b>10</b>. Everything above that is bonus levels.</li>
-        <li class="good"><b>Active skills:</b> ring lines, weapon and guard lines, blue Daevanion tiles, and Parchment / Compass / Chalice Arcana cards.</li>
+        <li class="good"><b>Active skills:</b> ring lines, blue Daevanion tiles, and Parchment / Compass / Chalice Arcana cards. The Bible also lists weapon and guard lines, but no Global weapon or guard line list includes them, so that is UNVERIFIED on Global.</li>
         <li class="good"><b>Passives:</b> armor, necklace and earring lines, green Daevanion tiles, and Bell / Mirror / Chalice Arcana cards.</li>
         <li><b>Level 8:</b> first 3 specialty options and 1 slot. <b>12:</b> option 4 and a 2nd slot. <b>16:</b> option 5. <b>20:</b> the 3rd slot.</li>
-        <li>Korean endgame has 2–5 skills at 20 depending on class. Gladiator (Overhead Slam) and Templar (Judgment) get over 60% of their damage from one skill, so that skill goes first.</li>
+        <li>Korean endgame has 2–5 skills at 20 depending on class. Gladiator's Overhead Slam (with its Upward Strike chain) is 61% of its damage and Templar's Judgment is 42.5%, so those skills go first. Season 1 has only 5 Arcana cards and 4–5 gear lines, so few skills reach 20 on Global.</li>
       </ul>
     </div>
     <div class="col">
@@ -313,9 +320,9 @@
       <ul class="facts">
         <li class="warn"><b>Ping and FPS matter a lot.</b> Macros are hit-count setups: a 150–200 ms ping difference was worth roughly 50–70% damage. If your hits per minute are far under the class page's targets, check ping first.</li>
         <li><b>Combat Speed</b> is the stat to stack; more hits also means more procs from everything else.</li>
-        <li class="warn"><b>Crit caps at 50% on Global</b> (80% in Korea; the training dummy caps around 8%). Once a skill crits at the cap, a "+crit" specialty does nothing, so take a different pick. This is also why Precision lines matter less on Global.</li>
+        <li class="warn"><b>Crit caps at 50% on Global</b> (80% in Korea; the training dummy caps around 8%). Once a skill crits at the cap, a "+crit" specialty does nothing, so take a different pick. This is also why Precision lines matter less on Global. Top Global Gladiators, Rangers and Assassins already sit at the cap, so Crit stats are wasted for them.</li>
         <li>Accuracy works the same way against a boss's Block. Projected Global Ludra: ~1,200 Accuracy and 1,200–1,400 Crit. Korean raids: Corroded 2,350 / 2,500; Muspel Hard 2,800 / 3,150.</li>
-        <li><b>Potential</b> stats are PvP-only on Global; ignore them for PvE.</li>
+        <li><b>Potential</b> stats are PvP-only on Global, and PvE Damage Boost was removed from weapons, guards and accessories; ignore Potential for PvE.</li>
         <li>Power Shards: regular ≈ +4.7% damage, Superior ≈ +8.9%.</li>
       </ul>
     </div>
@@ -333,7 +340,7 @@
         <tbody>
           <tr><td><b>Weapon / Guard</b></td><td>Damage Boost, Combat Speed, Weapon Damage Boost, Might, Multi-hit, Precision, Attack</td></tr>
           <tr><td><b>Helmet</b></td><td>Double Chance, Attack Increase, Attack, then passives</td></tr>
-          <tr><td><b>Cloak</b></td><td>Double Chance, Attack Increase, Perfect, Attack, then passives</td></tr>
+          <tr><td><b>Cloak</b></td><td>Double Chance, Attack Increase, Attack, then passives (Perfect was removed from capes on Global)</td></tr>
           <tr><td><b>Shoulder</b></td><td>Double Chance, Crit Damage Boost, Attack, then passives</td></tr>
           <tr><td><b>Chest</b></td><td>Perfect, Damage Boost, Attack, then passives</td></tr>
           <tr><td><b>Pants</b></td><td>Attack Increase, Perfect, Damage Tolerance, Attack, then passives</td></tr>
@@ -343,7 +350,7 @@
           <tr><td><b>Rings</b></td><td>Might, Precision, Attack, then <b>active skills</b></td></tr>
         </tbody>
       </table></div>
-      <p class="snote">Listed by how rare the roll is, not by value. Reroll single lines with Synch Stones of the same grade; never use a lower-grade stone (10% chance).</p>
+      <p class="snote">Listed by how rare the roll is, not by value. Reroll single lines with Synch Stones of the same grade; never use a lower-grade stone (10% chance). On Global, PvE Damage Boost was removed from weapons, guards and accessories, and Might, Precision and Combat Speed were added to necklaces.</p>
     </div>
     <div class="col">
       <h4>Manastones, Soulstones, Pantheon</h4>
@@ -361,40 +368,44 @@
         <li><b>Arcana at Global launch: 5 cards, 2 sets.</b> Kanon's pick: <b>Primal Vigor</b> on Chalice (<b>Time</b>) + Parchment (Life) for +60 PvE Attack above 70% HP, and <b>Magic Armor</b> on Compass (Death), Bell (<b>Destruction</b>) + Mirror (<b>Wisdom</b>) for an MP refill. The three lines that matter most: Chalice Time (Combat Speed), Bell Destruction (Attack Increase), Mirror Wisdom (Double Chance).</li>
         <li>Later (8 cards, what Korea's top 20 run in every class): <b>Punishing Overture</b> (4: +60 PvE Attack, +10% PvE damage above 70% HP) + <b>Protected Soul</b> (4: +5% Weapon Damage Boost).</li>
         <li class="good">Get your two key actives to 20 first, even with a cheaper card set, then craft 4-line cards (Chalice first: it rolls from every skill, so it's the hardest to get perfect). Each class page lists which skills Korea's top players put on Arcana and rings.</li>
-        <li><b>Daevanion:</b> the four white boards (Nezekan, Zikel, Vaizel, Triniel) share points and give skill levels: take your key active tiles first (to reach 12 / 16 / 20), then orange tiles, and pick up every gray Attack Bonus tile eventually. Multi-hit Resist (Triniel) and Crit Damage Tolerance (Vaizel) are useless in PvE. Ariel (PvE), Marchutan (Weapon Damage Boost) and Yustiel (Attack Increase) are separate boards you complete by farming dungeons. Respec is nearly free.</li>
+        <li><b>Daevanion:</b> the four white boards (Nezekan, Zikel, Vaizel, Triniel) share points and give skill levels: take your key active tiles first (to reach 12 / 16 / 20), then orange tiles, and pick up every gray Attack Bonus tile eventually. Multi-hit Resist (Triniel) and Crit Damage Tolerance (Vaizel) are useless in PvE. Marchutan (Weapon Damage Boost) and Yustiel (Attack Increase) are separate boards you complete by farming dungeons. <b>On Global:</b> the Ariel (PvE) board is removed, orange % tiles went from 2.5% to 1.5% (Attack 5 to 3, Crit 10 to 5), Azphel's PvP stats were cut, and there are about 200 fewer points (about 316 at level 45 after Sealed Dungeons and side quests, plus 50 from the Shugo Festival shop and 50 from the Nightmare shop). Priority: orange &gt; blue &gt; green &gt; white; take a blue tile first when it lifts a key skill to 8 / 12 / 16 / 20, and spend white tiles on Attack &gt; Crit &gt; HP. Resets cost Kinah. Exact tile paths per class are UNVERIFIED (the Global guides publish their boards only as images).</li>
       </ul>
     </div>
   </div>
   <h4 id="h-genus">Pet Genus on Global (verified against the client, Oct 13)</h4>
-  <div class="gaudit"><b>Audit:</b> this site (and most guides) carried <b>Korea's</b> Genus layout: Double Chance on slots 3 and 9, attack on 2/5/8. The Global client is laid out differently, and Double Chance rolls <b>only on Special line 4</b> (max 3%). Every table below comes from the Global client's own tables (build 25800038, Oct 1). They were checked line by line against a second datamine (questlog.gg): 45 of 45 lines identical. No Global patch since has touched Genus. Class picks are on each class page under <b>Pet Genus</b>.</div>
+  <div class="gaudit"><b>Audit:</b> this site (and most guides) carried <b>Korea's</b> Genus layout: Double Chance on slots 3 and 9, attack on 2/5/8. The Global client is laid out differently, and Double Chance rolls <b>only on Special line 4</b> (max 3%). Every table below comes from the Global client's own tables (build 25800038, Oct 1). They were checked line by line against a second datamine (questlog.gg): 45 of 45 lines identical. The Oct 6, Oct 8 and Oct 13 patch notes list no Genus change. Class picks are on each class page under <b>Pet Genus</b>.</div>
   <div id="genusHome"><p class="loading">Loading Genus data…</p></div>
   <h4>Wings, enhancing, transfers</h4>
   <div class="cols3">
     <ul class="facts">
-      <li><b>Wings</b> give an equip effect and an owned effect. They can't be enhanced at Global launch. Korea's most-equipped wings (Aug): <b>Eroded</b> for front attackers (Gladiator 73%, Templar 77%, Ranger 55%, Cleric and Chanter 45%), <b>Talisra</b> for Sorcerer (92%) and many Spiritmasters, Talisra → <b>Awaken Pride</b> (back attack) for Assassin.</li>
+      <li><b>Wings</b> give an equip effect and an owned effect. They can't be enhanced in Season 1, and Talisra wings (Season Shop) are Global's cooldown-reduction goal. Whether Korea's Eroded and Awakened Pride wings drop on Global is UNVERIFIED (Sirin: wings now drop only from dungeon cubes). Korea's most-equipped wings (Aug): <b>Eroded</b> for front attackers (Gladiator 73%, Templar 77%, Ranger 55%, Cleric and Chanter 45%), <b>Talisra</b> for Sorcerer (92%) and many Spiritmasters, Talisra → <b>Awaken Pride</b> (back attack) for Assassin.</li>
     </ul>
     <ul class="facts">
-      <li><b>Enhancing:</b> yellow gear goes to +15 then 5 Amp levels, orange to +20 then 5 Amp levels (Amp levels add orange stats). A yellow +15 Amp 5 transfers into an orange piece at +20 Amp 0.</li>
-      <li>Runes are the only gear that can break when enhancing; top Korean players sit around +7.</li>
+      <li><b>Enhancing:</b> yellow (Unique) gear goes to +15 then 5 Amp levels; orange (Heroic) goes to +20 then 5 Amp levels, but Global Season 1 has no Heroic gear (Amp levels add orange stats). A yellow +15 Amp 5 transfers into an orange piece at +20 Amp 0.</li>
+      <li><b>Settle rarity:</b> Unique (yellow) for every slot in Season 1, except bracelet slot 2, which is a blue (Epic) bracelet. Crafted gear (5 lines) is best in slot and dungeon gear has 4 (an extendable weapon has 3 lines per Sirin or 4 per Kanon's Bible: UNVERIFIED which applies); F2P or sub-only players can stay in dungeon armor "without losing a lot" (Allyria). Take the belt and amulet to Gold early, then stop for now (a Heroic belt or amulet in Season 1 is UNVERIFIED). Pendant, Brooch and Seals aren't on Global yet.</li>
+      <li>Clash Runes (class runes) are the only gear that can break when enhancing: a failed upgrade destroys the rune. The sheet says +1 early on and about +5 before Ludra, Allyria says not past +6/7 because upgrades are RNG-heavy, and top Korean players sit around +7.</li>
     </ul>
     <ul class="facts">
-      <li class="warn"><b>Transfers:</b> Manastones, Soulstones, Theostones, Potential lines and the extra Philosopher's Stone line are lost. Orange transfer fragments are scarce (1 orange piece = 5 fragments; a weapon transfer needs 20), so hoard them. Kanon skips the first orange set (Ancient Spirit) and goes orange on the second (Faded Shadow).</li>
+      <li class="warn"><b>Transfers:</b> Manastones, Soulstones, Theostones, Potential lines and the extra Philosopher's Stone line are lost. Orange transfer fragments are scarce (1 orange piece = 5 fragments; a weapon transfer needs 20), so hoard them. Kanon skips the first orange set (Ancient Spirit) and goes orange on the second (Faded Shadow); orange (Heroic) gear is not in Global Season 1, so that is for later.</li>
     </ul>
   </div>
   <p class="src">Source: <a href="https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview" target="_blank" rel="noopener">Kanon's Aion 2 Bible</a>, Oct 4, 2026 Global update; Korea's top-20 stone and Arcana picks from NotMeter. Class-specific choices (which stone stat, which passives) are on each class page.</p>
 </section>
 
 <section class="panel" aria-labelledby="h-patch">
-  <h2 id="h-patch">Patches that changed macros<small>Korea and Taiwan patch on the same day · Global can lag behind</small></h2>
+  <h2 id="h-patch">Patches that changed macros<small>Korea and Taiwan patch on the same day · Korea's Sep 16 patch is live on Global; Sep 23 and Oct 14 are not confirmed there</small></h2>
   <div class="tbl-wrap"><table>
     <thead><tr><th>Date</th><th>Class</th><th>Change</th><th>What to do</th></tr></thead>
     <tbody>
-      <tr><td>Sep 23</td><td><b>All (Abyss)</b></td><td>"Battlefield Might" replaces Undefeated Mantra, Power of the Storm, Fury, Experienced Counterstrike and others while an Abyss boss is up.</td><td>Those buffs do nothing there.</td></tr>
-      <tr><td>Sep 16</td><td><a href="templar.html#patches"><b>Templar</b></a></td><td>Longer cancel delay on Pummel, Punishing Strike and Judgment. Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min.</td><td>The Pummel→Judgment cancel is dead. Vicious Strike→Judgment is the new top setup.</td></tr>
-      <tr><td>Sep 16</td><td><a href="assassin.html#patches"><b>Assassin</b></a></td><td>Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE.</td><td>Sep 30 guide: Insignia Explosion → Ambush → Heart Gore → Savage Roar in one line.</td></tr>
-      <tr><td>Sep 16</td><td><a href="sorcerer.html#patches"><b>Sorcerer</b></a></td><td>Fire Mark passive now procs 100% (was 20%). Blaze no longer consumes it.</td><td>Fire skills hit more often. The stack order is unchanged.</td></tr>
-      <tr><td>Sep 16</td><td><a href="ranger.html#patches"><b>Ranger</b></a></td><td>Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire.</td><td>No stack change.</td></tr>
-      <tr><td>Sep 16</td><td><a href="chanter.html#patches"><b>Chanter</b></a></td><td>Guardian Blessing 5 min → 2 min.</td><td>Stack it on top of Power of the Storm.</td></tr>
+      <tr><td>Oct 14 (KR)</td><td><b>Cleric · Templar · Chanter · Sorcerer</b></td><td>Korea only so far: Cleric attack elements and level-25 stigma options, Templar Assault Fury and Shield of Protection, Chanter Rushing Smash and Focused Defense, Sorcerer element changes.</td><td>No Global notice yet. Don't assume they apply on Global.</td></tr>
+      <tr><td>Oct 13 (Global)</td><td><a href="spiritmaster.html#patches"><b>Spiritmaster</b></a> · <a href="sorcerer.html#patches"><b>Sorcerer</b></a></td><td>Build 25926599. Spiritmaster: Summon: Ancient Spirit fixed at stigma level 15 and below. Sorcerer: Fire Wall and Cold Storm fixed for height differences and for being overwritten by another player's stronger Embers / Frostbite; Bittercold Wind fixed for height differences. No other class changes.</td><td>No post-patch parses confirm the Ancient Spirit fix yet. Each Sorcerer's damage over time now stays on the target.</td></tr>
+      <tr><td>Oct 6 · Oct 8 (Global)</td><td><b>None</b></td><td>The Oct 6 update (Founder's Pack items, Substance Morph limits, drop rates) and the Oct 8 hotfix (server stability, quest-wing flight power) have no class balance changes.</td><td>No Global patch has nerfed any class macro.</td></tr>
+      <tr><td>Sep 23</td><td><b>All (Abyss)</b></td><td>"Battlefield Might" replaces Undefeated Mantra, Power of the Storm, Fury, Experienced Counterstrike and others while an Abyss boss is up. Korea/Taiwan; UNVERIFIED on Global.</td><td>On KR/TW those buffs do nothing there. Nothing confirms it on Global.</td></tr>
+      <tr><td>Sep 16</td><td><a href="templar.html#patches"><b>Templar</b></a></td><td>Longer cancel delay on Pummel, Punishing Strike and Judgment. Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min.</td><td>Live on Global (Noble Armor is recast every 2 min). The Pummel→Judgment cancel is slower and Vicious Strike→Judgment is the newer setup; the exact cancel timing is UNVERIFIED on Global.</td></tr>
+      <tr><td>Sep 16</td><td><a href="assassin.html#patches"><b>Assassin</b></a></td><td>Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE.</td><td>Live on Global (Shadowstrike option 2 lasts 10 s). The Sep 30 Korean line (Insignia Explosion → Ambush → Heart Gore → Savage Roar) is kept as an alternative: at equal combat power Ambush users trail by about 7%.</td></tr>
+      <tr><td>Sep 16</td><td><a href="sorcerer.html#patches"><b>Sorcerer</b></a></td><td>Fire Mark passive now procs 100% (was 20%). Blaze no longer consumes it.</td><td>Live on Global (Flame Arrow option 4's +5% Fire damage shows in 275 of 282 parses); the Fire Mark rate in the logs is UNVERIFIED. Fire skills hit more often. The stack order is unchanged.</td></tr>
+      <tr><td>Sep 16</td><td><a href="ranger.html#patches"><b>Ranger</b></a></td><td>Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire.</td><td>No stack change. Live on Global, but NotMeter has no element field to confirm it.</td></tr>
+      <tr><td>Sep 16</td><td><a href="chanter.html#patches"><b>Chanter</b></a></td><td>Guardian Blessing 5 min → 2 min.</td><td>Live on Global (recast in 85 of 93 long fights). Stack it on top of Power of the Storm.</td></tr>
       <tr><td>Sep 10</td><td><a href="spiritmaster.html#patches"><b>Spiritmaster</b></a></td><td>Destructive Attack's spirit follow-up now fires immediately.</td><td>Use it on cooldown except when lining up the Ancient Spirit window.</td></tr>
       <tr><td>Aug 26</td><td><b>Templar · Chanter</b></td><td>Core rework: Judgment opens after any shield attack, and Dark Crush after any ranged skill. Minimum skill-cancel time added to every skill.</td><td>Shield attacks share Judgment's line; ranged skills share Dark Crush's.</td></tr>
       <tr><td>Aug 26</td><td><a href="gladiator.html#patches"><b>Gladiator</b></a></td><td>The Overhead Slam→Rending Blow cancel (内絕 / 내절) came back.</td><td>Mash Overhead Slam while holding the macro, or use the one-key layout.</td></tr>
@@ -405,7 +416,7 @@
 <section class="panel" aria-labelledby="h-log"><h2 id="h-log">Update log<small>Newest first</small></h2><ul class="changelog" id="changelog"></ul></section>
 
 <footer>
-  <p><b style="color:#fff">How this was checked.</b> Macros come from the newest Korean Inven class guides (Aug 26 – Sep 30, 2026), which are all post-patch, cross-checked against Taiwanese Bahamut guides and in-game screenshots. Where a source only showed icons, they were matched against the database icons (marked <span class="k blue" style="margin:0">likely</span>). Global Season 1 stigma builds use what Korean players ran in their own 4-slot, level-20 season. Skill names, cooldowns, icons and effects come from the aion2.app game-client database (Global, Korean and Traditional Chinese). Skill icons and names © NC; this is a fan-made reference.</p>
+  <p><b style="color:#fff">How this was checked.</b> Macros come from the newest Korean Inven class guides (Aug 26 – Sep 30, 2026), which are all post-patch, cross-checked against Taiwanese Bahamut guides and in-game screenshots. Where a source only showed icons, they were matched against the database icons (marked <span class="k blue" style="margin:0">likely</span>). Global Season 1 stigma builds follow what top Global players run (NotMeter's Global boss parses, Oct 7–15) and the Global guides, with Korean 4-slot builds as the fallback where Global data is thin. Skill names, cooldowns, icons and effects come from the aion2.app game-client database (Global, Korean and Traditional Chinese; the Global entry is an older Sep 18 snapshot), questlog.gg's Global data and Global combat logs. Skill icons and names © NC; this is a fan-made reference.</p>
 </footer>
 </div>
 <script src="home.js" charset="utf-8"></script>

@@ -374,11 +374,11 @@
 ],
 [
 12,
-"-1s [Punishment] cooldown on landing [Punishing Strike]"
+"-1s [Punishment] cooldown on hit"
 ],
 [
 16,
-"Activates [Punishing Strike] 1 extra time"
+"[Punishing Strike] deals extra damage on hit"
 ]
 ],
 "m": 0,
@@ -549,7 +549,7 @@
 "q": 1
 },
 "Noble Armor": {
-"d": "Increases Max HP by 5.4% for 300s and immediately restores HP by 5.4% of Max HP.\n\nNot affected by buff dispel effects.",
+"d": "Increases Max HP by 5.4% for 120s and immediately restores HP by 5.4% of Max HP.\n\nNot affected by buff dispel effects.",
 "s": [
 [
 5,
@@ -839,7 +839,7 @@
 ],
 [
 8,
-"+20% caster Critical Damage Boost for 5s on hit"
+"+20% caster Critical Damage Boost for 10s on hit"
 ],
 [
 8,
@@ -1668,7 +1668,7 @@
 ],
 [
 12,
-"Inflicts Fire Mark for 5s on landing [Pyroclasm]"
+"+5% Fire Damage Boost for 10s on landing [Pyroclasm]"
 ],
 [
 16,
@@ -2444,7 +2444,7 @@
 ],
 [
 8,
-"+20% Skill Speed"
+"+1 consecutive use"
 ],
 [
 8,
@@ -2988,7 +2988,7 @@
 "q": 22
 },
 "Guardian Blessing": {
-"d": "Increases the caster's Max HP by 5.4% for 300s and immediately restores 5.4% HP.\n\nNot affected by buff dispel effects.",
+"d": "Increases the caster's Max HP by 5.4% for 120s and immediately restores 5.4% HP.\n\nNot affected by buff dispel effects.",
 "s": [
 [
 5,
@@ -3632,7 +3632,7 @@
 "q": 25
 },
 "Fire Mark": {
-"d": "Has a 20% chance to inflict Fire Mark for 5s on landing a Fire attack.\nFire Mark: Has a 20% chance to take 32-32 extra damage when taking Fire damage while afflicted with Fire Mark.\n\nCooldown: 1s",
+"d": "Inflicts Fire Mark for 5s on landing a Fire attack.\nFire Mark: Has a 20% chance to take 32-32 extra damage when taking Fire damage while afflicted with Fire Mark.\n\nCooldown: 1s",
 "s": [],
 "m": 0,
 "r": null,
