@@ -126,18 +126,26 @@ MH_VALUE = 0.33            # +1% Multi-hit ~ 0.33% damage (Kanon, Korean endgame
 PERF_VALUE = 0.10          # +1% Perfect ~ 0.1% (Kanon)
 FLAT = {'Max Attack': 0.019, 'Attack Bonus': 0.0145, 'PvE Attack': 0.0115, 'Boss Attack': 0.0115}  # % damage per point (Kanon's ratios x ~1.4 for smaller Global totals)
 
-# Per-class inputs from top Global boss parses (NotMeter, week of Oct 7, 2026; ~1,500 parses per class):
-#   crit = overall crit rate; ng = crit rate of skills that are not guaranteed to crit (the stat-driven part, vs the 50% Global cap);
+# Per-class inputs from top Global boss parses (NotMeter generation 82ac2ad73047b23f, published Oct 15, 2026; weekly window Oct 14-15
+# plus the all-time rows). Selection = tools/notmeter_snapshot.py's: best parse per player per boss, top 20 per boss per class
+# (300 parses and 95-116 players per class, 15 bosses). Every figure is hit-weighted over that selection.
+#   crit = overall crit rate; ng = crit rate of the hits that are not guaranteed to crit (the stat-driven part, vs the 50% Global cap);
 #   front/back = share of hits; dbl = Double Chance procs per hit; procs = what else crits trigger.
+#   The guaranteed set is read from the data: an option picked on a skill (rawSkillCode) counts as a guarantee when parses with it
+#   crit >= 97% and parses without it < 80% (Overhead Slam / Upward Strike / Judgment opt 4, Assassin Quick / Breaking / Swift Slice opt 5,
+#   Bittercold Wind opt 4, Dark Crush / Piercing Strike opt 3, ...); a skill still at >= 90% crit without any such option is excluded whole
+#   (Sword Aura Rampage, Destruction, Storm Rampage, Condemnation 93%, the *Scattershot skills, ...). Sorcerer fire-only ng is 48% too.
+# NOTE: data/genus.json carries hand-written crit / Accuracy / positioning wording on the Templar, Sorcerer and Chanter profile and caps
+# lines; a rerun of this script overwrites it, so re-apply it afterwards (see site_update_log.md, "Pet Genus recalculation").
 PROF = {
- 'gladiator':   {'crit': .64, 'ng': 51, 'front': .77, 'back': .12, 'dbl': .17, 'procs': '', 'role': 'melee, front'},
- 'templar':     {'crit': .40, 'ng': 28, 'front': .77, 'back': .12, 'dbl': .13, 'procs': '', 'role': 'melee tank, front'},
- 'assassin':    {'crit': .69, 'ng': 53, 'front': .08, 'back': .85, 'dbl': .124, 'procs': 'Heart Gore triggers on crits', 'role': 'melee, back'},
- 'ranger':      {'crit': .51, 'ng': 51, 'front': .37, 'back': .39, 'dbl': .135, 'procs': "Hunter's Soul procs on crits", 'role': 'ranged'},
- 'sorcerer':    {'crit': .44, 'ng': 32, 'front': .31, 'back': .28, 'dbl': .124, 'procs': '', 'role': 'ranged caster'},
- 'spiritmaster': {'crit': .46, 'ng': 46, 'front': .36, 'back': .40, 'dbl': .129, 'procs': 'Corrode procs on crits', 'role': 'ranged caster with spirits'},
- 'cleric':      {'crit': .39, 'ng': 38, 'front': .34, 'back': .42, 'dbl': .143, 'procs': 'Condemnation resets its cooldown on a crit', 'role': 'ranged healer'},
- 'chanter':     {'crit': .50, 'ng': 44, 'front': .15, 'back': .71, 'dbl': .148, 'procs': "Wind's Promise procs on crits", 'role': 'melee/ranged support, mostly behind'},
+ 'gladiator':   {'crit': .71, 'ng': 52, 'front': .80, 'back': .11, 'dbl': .207, 'procs': '', 'role': 'melee, front'},
+ 'templar':     {'crit': .59, 'ng': 42, 'front': .81, 'back': .10, 'dbl': .163, 'procs': '', 'role': 'melee tank, front'},
+ 'assassin':    {'crit': .70, 'ng': 54, 'front': .11, 'back': .84, 'dbl': .160, 'procs': 'Heart Gore triggers on crits', 'role': 'melee, back'},
+ 'ranger':      {'crit': .53, 'ng': 53, 'front': .48, 'back': .34, 'dbl': .189, 'procs': "Hunter's Soul procs on crits", 'role': 'ranged'},
+ 'sorcerer':    {'crit': .56, 'ng': 48, 'front': .37, 'back': .26, 'dbl': .161, 'procs': '', 'role': 'ranged caster'},
+ 'spiritmaster': {'crit': .52, 'ng': 51, 'front': .41, 'back': .39, 'dbl': .165, 'procs': 'Corrode procs on crits', 'role': 'ranged caster with spirits'},
+ 'cleric':      {'crit': .50, 'ng': 42, 'front': .45, 'back': .36, 'dbl': .184, 'procs': 'Condemnation resets its cooldown on a crit', 'role': 'ranged healer'},
+ 'chanter':     {'crit': .58, 'ng': 50, 'front': .26, 'back': .63, 'dbl': .181, 'procs': "Wind's Promise procs on crits", 'role': 'melee/ranged support, mostly behind'},
 }
 EN = {'gladiator': 'Gladiator', 'templar': 'Templar', 'assassin': 'Assassin', 'ranger': 'Ranger', 'sorcerer': 'Sorcerer',
       'spiritmaster': 'Spiritmaster', 'cleric': 'Cleric', 'chanter': 'Chanter'}
@@ -272,7 +280,7 @@ def lines_pve(cls, board, build):
         if tank and not capped:
             out.append(L_(s, 'Critical Hit', 'Block (raid tanking) · Front Attack Critical Hit', 'Heroic', '≥23', 3, 'BiS',
                           f"Your skills that don't auto-crit land crits only ~{p['ng']}% of the time, well under Global's 50% stat cap, so Critical Hit still adds "
-                          f"≈ +{cv:.1f}% per max line. Front Attack Critical Hit (20–40) ties it at your 77% front uptime. For a main tank, Block (25–50) is the "
+                          f"≈ +{cv:.1f}% per max line. Front Attack Critical Hit (20–40) ties it at your {round(p['front'] * 100)}% front uptime. For a main tank, Block (25–50) is the "
                           "survival pick: more blocks, and Fury gives your party +5.5% PvE damage on each block.", 'Medium', f'+{cv:.1f}%'))
         elif capped:
             out.append(L_(s, 'Power Shard Damage Bonus', 'PvE Accuracy (only if bosses parry you)', 'Heroic', '≥12', 4, 'BiS',
@@ -407,18 +415,21 @@ for cls, builds in BUILDS.items():
                                 if bid != 'pvp' else 'Heroic slot 4 and slot 7 on every board, then Max Attack on 1/5.')})
     classes[cls] = out
 
+CDB = [p['crit'] / crit_factor(p['crit']) for p in PROF.values()]  # value of +1% Critical Damage Boost, per class (see v_slot4)
+DCV = [1 / (1 + p['dbl']) for p in PROF.values()]                  # value of +1% Double Chance, per class (high end of v_slot4)
 out = {
- 'meta': {'updated': '2026-10-13', 'client': A['build'], 'clientNote': 'AION 2 Global client build 25800038 (Steam update of Oct 1, 2026). Global patches since (Oct 6, Oct 8) did not touch Pets / Genus Insight.',
+ 'meta': {'updated': '2026-10-15', 'client': A['build'], 'clientNote': 'AION 2 Global client build 25800038 (Steam update of Oct 1, 2026). Global patches since (Oct 6, Oct 8) did not touch Pets / Genus Insight.',
           'sources': [
             ['Global client tables via Aion 2 Timers Genus Insight tool', 'https://www.aion2timers.com/insight/'],
             ['questlog.gg Genus Insight data (45/45 slots identical) and public Global builds', 'https://questlog.gg/aion-2/en/character-builder'],
             ["Kanon's Aion 2 Bible (Oct 4 Global update): damage formula, stat values, Global Genus steps", 'https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview'],
             ['aion2guidance.com pets page (Global): pets, souls, owned effects, crystals', 'https://www.aion2guidance.com/en/pets/'],
             ['Inven KR pet guide (Jan 14, 2026): Korean slot layout, for comparison', 'https://www.inven.co.kr/board/aion2/6444/1077'],
-            ['NotMeter top Global parses (week of Oct 7): crit, positional and parry rates per class', 'https://notmeter.com/'],
+            ['NotMeter top Global parses (Oct 15 snapshot, top 20 per boss): crit, positional and parry rates per class', 'https://notmeter.com/'],
             ["Whelps' Ludra-ready Global Ranger plan (questlog): Global stat totals", 'https://questlog.gg/aion-2/en/character-builder/AelonCommandAndTheSharpMerchant?build-id=8655']],
           'model': ['Damage formula: Kanon (Bible, Oct 4).', f'+1% Damage Boost / PvE Damage Boost ≈ {M_DB[0]}–{M_DB[1]}% damage on Global.', f'+1% Weapon Damage Boost ≈ {M_W[0]}–{M_W[1]}%.',
-                    '+1% Critical Damage Boost ≈ crit rate ÷ (crit rate × 1.55 + non-crit share): 0.35–0.45% for most classes.', '+1% Double Chance ≈ 1 ÷ (1 + your double rate) ≈ 0.87–0.89%.',
+                    f'+1% Critical Damage Boost ≈ crit rate ÷ (crit rate × 1.55 + non-crit share): {min(CDB):.2f}–{max(CDB):.2f}% across the eight classes.',
+                    f'+1% Double Chance ≈ 1 ÷ (1 + your double rate) ≈ {min(DCV):.2f}–{max(DCV):.2f}%.',
                     '+1% Front/Back Damage Boost ≈ your share of hits from that side.', 'Critical Hit: ~0.06% crit chance per point below the 50% cap.',
                     'Multi-hit +1% ≈ 0.33%, Perfect +1% ≈ 0.1% (Kanon, Korean values).', 'Flat attack per point: Max Attack ≈ 0.019%, Attack Bonus ≈ 0.0145%, PvE/Boss Attack ≈ 0.0115%.']},
  'layout': [
