@@ -17,7 +17,7 @@
 
   // DPS tier lists: tiers are hand-set (see index.html), numbers come from data/topplayers.json (tools/notmeter_snapshot.py)
   const TIERS = {
-    gl: { S: ["chanter"], A: ["gladiator", "sorcerer", "ranger"], B: ["assassin", "templar", "spiritmaster"], C: ["cleric"] },
+    gl: { S: ["chanter"], A: ["ranger", "gladiator", "sorcerer"], B: ["assassin", "templar", "spiritmaster"], C: ["cleric"] },
     kr: { S: ["assassin", "sorcerer", "spiritmaster", "ranger"], A: ["gladiator", "templar"], B: ["chanter"], C: ["cleric"] },
   };
   // Pet Genus (data/genus.json, built by tools/build_genus.py from the Global client tables)

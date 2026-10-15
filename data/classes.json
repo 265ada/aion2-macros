@@ -4,29 +4,29 @@
  "classes": {
   "gladiator": {
    "glance": "Two-skill melee: the Overhead Slam → Rending Blow cancel is the class.",
-   "summary": "A greatsword fighter whose damage comes from two skills that cancel into each other. Overhead Slam (plus its Upward Strike chain) and Rending Blow made up about two-thirds of the damage in the Aug 26–30 Korean dummy logs. Everything else (stigmas, buffs, Ruinous Blow) exists to make those two hit harder and faster. It can also off-tank.",
+   "summary": "A greatsword fighter whose damage comes from two skills that cancel into each other. In top Global boss parses, Overhead Slam with its Upward Strike chain (33.5% + 27.4%) and Rending Blow with its Smashing Blow chain (9.5% + 10.8%) make up about 81% of the damage, and Ruinous Blow adds 7.8%. Everything else (stigmas, buffs) exists to make those hit harder and faster. It can also off-tank: on Global, a Gladiator took the tank seat in 55% of the Templar-less parties that have one (908 of 1,644).",
    "brings": [
     [
      "Experienced Counterstrike",
-     "Passive: every Block gives you and the party +5.4% PvE damage for 20 s. Doesn't stack with a Templar's Fury, so the higher one wins."
+     "Passive: every Block gives you and the party +5.4% PvE damage for 20 s (level-1 value). Doesn't stack with a Templar's Fury."
     ],
     [
      "Lifestealing Blade",
-     "Stigma level 10 adds Predation for the party for 20 s."
+     "Stigma level 10 adds Predation for the party for 20 s (Tenyon's Global guide runs it at 10 or more). Only 27% of top Global Gladiators slot it."
     ],
     [
      "Rage Burst",
-     "Wounded: the enemy's Attack -10% for 10 s, and you get +10% PvE damage."
+     "Wounded: the enemy's Attack -10% for 10 s (-20% at stigma level 10), and you get +10% PvE damage. Doesn't stack with a Templar Taunt's Shrink."
     ],
     [
      "Rending Blow",
-     "Raises Enmity. The Battle tank stigma build turns that into a real off-tank."
+     "Raises Enmity (Keen Strike does too). On Global, tanking Gladiators run the same stigmas as DPS ones, so a Templar-less party doesn't need a separate tank build."
     ]
    ],
    "core": [
     [
      "The 내절 cancel",
-     "Pressing Rending Blow right after Overhead Slam cuts Overhead Slam's recovery. The Aug 26 patch brought it back. Hold the macro and the Overhead Slam key and the cancel happens by itself.",
+     "Pressing Rending Blow right after Overhead Slam cuts Overhead Slam's recovery. The Aug 26 balance is in the Global client and Global cast rates match it. With the Global sheet's macro, holding the macro key does the cancel by itself; Korean top players also mash Overhead Slam on its own key.",
      "Overhead Slam"
     ],
     [
@@ -36,57 +36,63 @@
     ],
     [
      "Stagger windows",
-     "Sword Aura Rampage only hits staggered targets. Placed directly under Rending Blow, its cancel fires on its own whenever the boss is staggered.",
+     "Sword Aura Rampage only hits staggered targets: 1.2% of Global damage, used by about half of top Global Gladiators. In Korea's setup it sits directly under Rending Blow so its cancel fires on its own; on Global you press it yourself in stagger windows.",
      "Sword Aura Rampage"
     ],
     [
      "Stigmas multiply passives",
-     "Wave Armor 10 makes Experienced Counterstrike ×1.5, Wave Armor 15 makes Murderous Burst ×1.5, and Lunge Stance 15 makes Identify Weakness ×1.5. That's why those stigmas go to 15–20 first.",
+     "Wave Armor 10 makes Experienced Counterstrike ×1.5 and Wave Armor 15 makes Murderous Burst ×1.5, but only 15% of top Global Gladiators slot it (it is the damage 4th behind a Templar). Lunge Stance 15 makes Identify Weakness ×1.5, which mostly adds crit, and top Global Gladiators already sit at the 50% crit cap.",
      "Wave Armor"
     ]
    ],
    "opener": [
-    "Lunge Stance, Zikel's Blessing, Wave Armor",
-    "Ruinous Blow (Prepare for Battle)",
-    "Hold the macro and mash (or hold) the Overhead Slam key. Rage Burst fires from under it",
-    "Recast Ruinous Blow every 45 s. Use Leaping Slam to close gaps"
+    "Lunge Stance and Zikel's Blessing (20 s at level 20, 17 s at level 15; the database's 10 s is the level-1 value)",
+    "Ruinous Blow (Prepare for Battle, 20 s) and Rage Burst, so all the windows cover the burst",
+    "Hold the macro (and Keen Strike while MP is short). The Overhead Slam ↔ Rending Blow cancel happens by itself. Stay in front of the boss",
+    "Recast Ruinous Blow every 45 s and repeat the buffs on each Zikel's Blessing cooldown (120 s). Leaping Slam closes gaps. This order is derived from the durations and cooldowns; no Global source writes it down"
    ],
    "good": [
-    "Simple core: two skills carry the damage",
-    "Strong self-healing (Lifestealing Blade, lifesteal options)",
-    "Can tank in a pinch (Battle tank stigma build)"
+    "Simple core: two skills carry about 81% of the damage",
+    "Self-healing: Blood Absorption restores HP on hit plus 26% of max HP at 50% HP, and Lifestealing Blade absorbs 10%",
+    "Can off-tank: in Templar-less Global parties with a Gladiator, it took the tank seat in 55% (908 of 1,644) with the same build, and tanking Gladiators died less (0.11 vs 0.29 a fight)",
+    "3rd of 8 in Global PvE: NotMeter score 110.46, +5.3% above the class average at equal CP"
    ],
    "hard": [
-    "Front melee: Front Damage Boost is your stat, so stay in front of the boss",
-    "A hit-count class: Combat Speed, FPS and ping matter a lot",
-    "Top numbers need fast Overhead Slam presses (the one-key layout avoids that)"
+    "Front melee: Experienced Counterstrike adds Front Attack Damage Boost and 77% of top Global hits land from the front, so stay in front of the boss",
+    "A hit-count rotation: FPS and ping matter (Kanon's KR/Asia test, run on other classes, found 150-200 ms of extra ping costs a lot of damage)",
+    "Overhead Slam needs a trigger: a knocked-down target, 10 s after Rage Burst, or a 7% proc per attack on knockdown-immune bosses"
    ],
    "mistakes": [
-    "Putting buffs in a second macro line: that cost 5–6% of Overhead Slam hits in an Aug 12 test",
+    "Putting buffs in a second macro line: that cost 5–6% of Overhead Slam hits in an Aug 12 Korean test",
     "Skipping the Ruinous Blow opener (Prepare for Battle is +20% PvE damage)",
-    "Leveling anything before Overhead Slam and Rending Blow reach 20",
-    "Expecting Experienced Counterstrike and a Templar's Fury to stack: only the higher one counts"
+    "Stopping Ruinous Blow at 12: top Global players' median is 16 (69% at 16+). Get Overhead Slam to 20 and Rending Blow and Ruinous Blow to 16 before taking utility skills past 12",
+    "Expecting Experienced Counterstrike and a Templar's Fury to stack: they don't"
    ],
    "gear": {
-    "stones": "Front Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Front Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Gear lines also carry your 5 key passives (Experienced Counterstrike, Murderous Burst, Attack Preparation, Identify Weakness, Impact Hit)",
-    "wings": "Eroded 73%, Talisra 18.5% (Korea, Aug 21)",
-    "genusOld": "Slots 3 and 9: Double Chance and Front Damage Boost"
+    "stones": "Front Damage Boost > Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack (yellow +100 lines). Front fits because 77% of top Global hits land from the front.",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Front Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus (top Gladiators are at the 50% crit cap); 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
+    "passives": "Gear lines also carry your 5 key passives (Experienced Counterstrike, Murderous Burst, Attack Preparation, Identify Weakness, Impact Hit). The order differs by source: Korea's top 20 put Experienced Counterstrike > Murderous Burst > Attack Preparation ≈ Impact Hit; the Global sheet says Impact Hit > Attack Preparation > Experienced Counterstrike; Tenyon's Global guide says Attack Preparation > Experienced Counterstrike > Murderous Burst. The sheet lines below follow the sheet.",
+    "wings": "Global: wings can't be enhanced in Season 1, and Talisra (Season Shop) is the cooldown-reduction goal. The sheet's figures (Eroded 45%, Talisra 23%) are copied from the Bible's Korean Chanter data, so Eroded Wings on Global are UNVERIFIED. Korea (Aug 21), Gladiator: Eroded 73%, Talisra 18.5%",
+    "genusOld": "Slots 3 and 9: Double Chance and Front Damage Boost",
+    "note": "Settle rarity: Unique (yellow) for every slot except bracelet slot 2, which is a blue (Epic) bracelet in Season 1; there is no Heroic gear in Season 1. Enhance to: weapon, guard and rings +17; earrings and necklace +16; armor and bracelets +15 (Unique gear goes to +15, then 5 Amp levels). Crafted gear (5 stat lines) is best in slot; dungeon gear has 4. Belt and amulet: upgrade with scrolls to Unique, then stop for Season 1 (amulet +10, then Substance Morph). Clash Runes: +1 early, about +5 later, not past +6 or +7 (a failed upgrade destroys the rune). PvE Damage Boost was removed from weapons, guards and accessories on Global, and Potential stats are PvP-only. Rings are the only accessory with active-skill lines (Overhead Slam > Rending Blow > Ruinous Blow); necklaces gain Combat Speed on Global; bracelet Divine stats are at half value (10 = 1%). Weapon and guard skill lines are UNVERIFIED on Global. Tenyon's weapon order is Weapon Damage Boost > Damage Boost > Combat Speed > Might > Multi-hit > Precision, and his cloak order is Double Chance > Perfect > Attack Increase > Attack; the sheet lists Smite and Double Chance as separate cloak lines, and Sirin says Perfect was removed from capes on Global. The crit cap is 50% and top Global Gladiators already sit at it, so extra Crit lines are wasted. Arcana (5 cards in Season 1): aim the skill lines at Overhead Slam, Rending Blow, Experienced Counterstrike and Murderous Burst. Titles: Global removed Double Chance from all titles and cut Combat Speed and cooldown reduction about 30%. Daevanion: about 316 points at 45, plus 50 from the Shugo Festival shop and 50 from the Nightmare shop; orange > blue > green > white, and take a blue Overhead Slam or Rending Blow tile first when it lifts a skill to 8, 12, 16 or 20; white tiles Attack > Crit > HP; skip Multi-hit Resist and Critical Damage Tolerance oranges in PvE. A Gladiator-specific tile path is UNVERIFIED (no Global board guide). Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45. Azphel is the PvP board: fill it for PvP (36 points from Abyss Monolith feathers, more from the Abyss Trade Shop)."
    },
-   "hits": "Upward Strike ~95–102 · Overhead Slam ~176–200 · ~980–1,020 total hits per minute (Korean endgame dummy). Global top 10% in boss fights (this week): Overhead Slam ~59, Upward Strike ~49, Rending Blow ~52 casts a minute",
+   "hits": "Upward Strike ~95–102 · Overhead Slam ~176–200 · ~980–1,020 total hits per minute (Korean endgame dummy). Global top 10% in boss fights (week of Oct 7–14, uses logged per minute): Overhead Slam ~67, Rending Blow ~57",
    "patches": [
     [
+     "Oct 13 (Global)",
+     "No Gladiator change in the Global Oct 6, Oct 8 or Oct 13 notes (build 25926599)."
+    ],
+    [
      "Sep 23",
-     "Fracturing Rush now follows your key direction."
+     "Fracturing Rush now follows your key direction. UNVERIFIED on Global: nothing shows whether Sep 23 shipped there."
     ],
     [
      "Sep 16",
-     "Leaping Slam and Ruinous Blow can't be used while bound."
+     "Leaping Slam and Ruinous Blow can't be used while bound. Korea's Sep 16 patch is live on Global, so this is likely live too (not tested)."
     ],
     [
      "Aug 26",
-     "The Overhead Slam → Rending Blow cancel (内絕 / 내절) came back. Mash Overhead Slam while holding basic attack and the macro."
+     "The Overhead Slam → Rending Blow cancel (内絕 / 내절) came back. Mash Overhead Slam while holding basic attack and the macro. The Global client includes the Aug 26 balance, and Global cast rates match."
     ],
     [
      "Jul 7–8",
@@ -105,6 +111,18 @@
     [
      "Inven Aug 30 in-game macro",
      "https://www.inven.co.kr/board/aion2/6448/30880"
+    ],
+    [
+     "Tenyon's Global Gladiator guide (TEN)",
+     "https://docs.google.com/document/d/15J0xIIlOGvp0NSGui7NK0MJpbgZTjXuZKAahHnkr2G4/edit"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
+    ],
+    [
+     "Kanon's Aion 2 Bible (Oct 4 Global update)",
+     "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
     ]
    ],
    "sheet": {
@@ -300,7 +318,7 @@
      "Chest": "Damage Boost > Impact Hit > Attack Preparation > > Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance > Impact Hit > Attack Preparation > Perfect Increase > Attack increase > Crit > Attack",
      "Gloves/Boots": "Speed > Impact Hit > Attack Preparation > Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Impact Hit > Attack Preparation > Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Cape": "Impact Hit > Attack Preparation > Smite > Double Chance > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Impact Hit > Attack Preparation >  Experienced Counterstrike > Might > Precision > Accuracy > Crit > Attack",
@@ -368,89 +386,105 @@
   },
   "templar": {
    "glance": "Main tank whose damage runs through Judgment, opened by shield attacks.",
-   "summary": "The sword-and-shield main tank. Since the Aug 26 rework, Judgment (no cooldown) opens for 2 s after any shield attack. Kanon's guide puts over 60% of Templar damage on Judgment alone. Templar also brings the party's best defensive tools and a damage buff that triggers when you block.",
+   "summary": "The sword-and-shield main tank, and the only dedicated tank on Global: 64% of Global boss parses (3,400 of 5,303) have a Templar. Judgment is 42.5% of its damage in top Global parses. It has no cooldown at skill level 16, and any shield attack (Warding Strike, Shield Smite, Doom Shield, Shield Rush) opens it for 2–3 s. Templar also brings the party's best defensive tools and a damage buff that triggers when you block. Personal damage is low: NotMeter score 92.92, 6th of 8 (only Spiritmaster and Cleric are lower).",
    "brings": [
     [
+     "Taunt",
+     "Stigma: Shrink cuts the boss's Attack by 10% and Accuracy by 200, and at level 5 its PvE damage tolerance by 10%, so the whole party deals more. With Global's cooldown reduction it isn't up all the time: the median recast in logs is 33 s at level 20 and 38 s at 15–19."
+    ],
+    [
      "Fury",
-     "Passive: every Block gives you and the party +5.5% PvE damage for 20 s (doesn't stack with a Gladiator's Experienced Counterstrike)."
+     "Passive: every Block gives you and the party +PvE damage for 20 s: 5.5% at level 1, about 13.5% at the Global median level 17, 15% at 20 (doesn't stack with a Gladiator's Experienced Counterstrike)."
     ],
     [
      "Debilitating Smash",
-     "On Block, Debilitate the target: Defense -25% for 5 s."
+     "On Block, Debilitate the target: Defense -25% for 5 s. It is under 1% of damage, and Defense only counts for 10% of its value in PvE, so it matters little on bosses."
     ],
     [
      "Nezekan's Shield",
-     "Stigma: a shield worth 41% of Max HP on you and nearby party members."
+     "Stigma: a shield worth 41% of Max HP at level 1 (55% at 15) on you and nearby party members; level 15 adds +20% PvE damage tolerance. 9–12% of Global Templars use it."
     ],
     [
      "Comrade in Arms",
-     "Stigma: take half the damage a party member is hit with, for 6 s."
+     "Stigma: take half the damage a party member is hit with, for 6 s. At level 20 it restores 50% of your HP when it ends, and Korea's Feb guide calls it the best party stigma. About 1% of Global Templars use it."
     ]
    ],
    "core": [
     [
      "Judgment windows",
-     "Warding Strike, Shield Smite and Doom Shield are shield attacks: each opens Judgment for 2 s. That's why they share Judgment's macro line.",
+     "Warding Strike, Shield Smite, Doom Shield and Shield Rush are shield attacks: each opens Judgment for 2–3 s (Doom Shield 3 s). That's why they share Judgment's macro line. At skill level 16 Judgment has no cooldown.",
      "Judgment"
     ],
     [
      "Vicious → Judgment cancel",
-     "Hold Vicious Strike (basic attack) with the macro and it cancels straight into Judgment. The Sep 16 patch killed the old Pummel → Judgment cancel.",
+     "Hold Vicious Strike (basic attack) with the macro and it cancels into Judgment. Korea's Sep 16 patch lengthened the Pummel / Punishing Strike / Judgment cancel delay and it is live on Global, so the old Pummel → Judgment cancel is slower (the exact timing is UNVERIFIED on Global). The Sep 17 Korean post uses plain Vicious + Judgment.",
      "Vicious Strike"
     ],
     [
      "Executor",
-     "A fully charged Punishment gives Executor: +200 Accuracy and +20% PvE damage for 20 s. Charge it before the pull and keep it up.",
+     "Any Punishment cast gives Executor: +200 Accuracy and +20% PvE damage for 20 s (30 s cooldown), charged or not. Charging only adds damage: an uncharged cast does about a third of a Max cast. Macros fire it uncharged, so keep it on its own key and charge it before the pull.",
      "Punishment"
     ],
     [
      "Annihilate reset",
-     "Doom Shield resets Annihilate, so Annihilate → Doom Shield → Annihilate is the top-end burst.",
+     "Doom Shield resets Annihilate (at stigma level 5), so Annihilate → Doom Shield → Annihilate is the top-end burst. Annihilate is 6.9% of damage.",
      "Annihilate"
     ]
    ],
    "opener": [
-    "Noble Armor, Battlefield Banner, Empyrean Lord's Punishment",
-    "Fully charge Punishment (Executor)",
-    "Rush in, hold Vicious Strike + the macro + the Punishment key",
-    "Annihilate → Doom Shield → Annihilate. Shield of Protection every ~20 s or on boss crowd control"
+    "Noble Armor (recast every 2 min) and a Max-charged Punishment (Executor, 20 s)",
+    "Doom Shield (rush, opens Judgment for 3 s) → Taunt (Shrink 15 s) → Battlefield Banner (20 s at level 20); Empyrean Lord's Punishment if you slot it",
+    "Rush in, hold Vicious Strike + the macro (Judgment → Warding Strike / Shield Smite → Pummel) + the Punishment key",
+    "Annihilate → Doom Shield → Annihilate. Recast a charged Punishment every 30 s, and Taunt and Banner on cooldown. Shield of Protection every ~20 s or on boss crowd control. This order is derived from the skill durations"
    ],
    "good": [
-    "The tankiest class, with party shields and damage sharing",
-    "Party damage buff from blocking (Fury)",
+    "The only dedicated tank on Global: a Templar is in 64% of boss parties",
+    "Party damage buffs: Fury on every block, and Taunt's Shrink raises everyone's damage",
+    "Party saves: Nezekan's Shield and Comrade in Arms",
     "Judgment makes the damage plan simple"
    ],
    "hard": [
     "You hold aggro and face the boss, so positioning and Taunt are on you",
     "Damage is concentrated in Judgment: if its level or its windows lag, damage drops",
-    "The Sep 16 cancel nerf made the old macros worse"
+    "Low personal damage: NotMeter score 92.92, 6th of 8",
+    "Korea's Sep 16 cancel-delay change is live on Global and made the old Pummel → Judgment macros slower"
    ],
    "mistakes": [
-    "Still using the Pummel → Judgment cancel (dead since Sep 16)",
-    "Letting Executor fall off instead of recharging Punishment",
-    "Leveling other skills before Judgment and Pummel reach 20",
-    "Running Fury and a Gladiator's Experienced Counterstrike for the same party buff: they don't stack"
+    "Relying on the old Pummel → Judgment cancel (slower since Korea's Sep 16 patch, which is live on Global)",
+    "Letting Executor fall off instead of recasting Punishment every 30 s",
+    "Taking Annihilate, Shield Smite, Debilitating Smash, Shield Rush or Poach past 12 before Judgment is 20 and Vicious Strike, Pummel and Punishment are 16",
+    "Running Fury and a Gladiator's Experienced Counterstrike for the same party buff: they don't stack",
+    "Putting Punishment in a macro: macros fire it uncharged, about a third of a Max cast"
    ],
    "gear": {
-    "stones": "Front Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Front Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Three key passives on gear: Fury, Insulting Roar, Impact Hit",
-    "wings": "Eroded 77%, Talisra 9% (Korea, Aug 21)",
+    "stones": "Front Damage Boost > Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack (yellow +100 lines).",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Front Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit (the sheet and the daevaos build also list Accuracy as a co-priority; top-20 Global Templars crit about 36–38% on skills that don't always crit, per-player median 38%, below the 50% cap); 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
+    "passives": "Three key passives on gear, in the sheet's order: Fury, Impact Hit, Insulting Roar",
+    "wings": "Global: wings can't be enhanced in Season 1, and Talisra (Season Shop) is the cooldown-reduction goal. The sheet's meta wings (Eroded 77%, Talisra 18.5%) aren't labeled by region and match Korea's Aug 21 figures, so Eroded Wings on Global are UNVERIFIED",
     "board": [
-     "Korean Templar Daevanion node guide",
+     "Korean Daevanion node guide (says it works for every class; it assumes Korea's boards and points, so a Global path is UNVERIFIED)",
      "https://www.inven.co.kr/board/aion2/6438/22546"
     ],
-    "genusOld": "Slots 3 and 9: Double Chance and Front Damage Boost. Leftover slots: Boss Attack or Defense"
+    "genusOld": "Slots 3 and 9: Double Chance and Front Damage Boost. Leftover slots: Boss Attack or Defense",
+    "note": "Settle rarity: Unique (yellow) for every slot except bracelet slot 2, which is a blue (Epic) bracelet in Season 1; there is no Heroic gear in Season 1. Enhance to: weapon, guard and rings +17; earrings and necklace +16; armor and bracelets +15 (Unique goes to +15, then 5 Amp levels). Crafted gear (5 stat lines) is best in slot; dungeon gear has 4. Weapon: crafted if you can, else the best dungeon weapon (Kromede on the sheet's older roadmap); guard: the Ferocious Horn Den on that older roadmap. Belt and amulet: upgrade with scrolls to Unique, then stop for Season 1 (amulet +10, then Substance Morph). Clash Runes: +1 early (live sheet), about +5 later, not past +6 or +7 (upgrades are RNG-heavy and a failed upgrade destroys the rune). PvE Damage Boost was removed from weapons, guards and accessories on Global, and Potential stats are PvP-only. Rings: Vicious Strike > Punishment > Judgment (Korea's top-20 ring lines are Vicious Strike, Judgment, Pummel and Punishment). Cloak: Fury > Impact Hit > Double Chance (the sheet also lists Smite, the same stat) > Attack Increase > Crit > Attack; Sirin says Perfect was removed from capes on Global, while the Bible's Global list still has it. Bracelet Divine stats are at half value on Global. Arcana (5 cards in Season 1), skill lines from the sheet author's current build (daevaos, Oct 14), all five cards Unique at level 5: Chalice Pummel, Punishment +2, Judgment +2, Fury; Parchment Judgment +2, Punishment +2; Compass Pummel +4, Shield Smite +2, Warding Strike +2; Bell Fury, Insulting Roar; Mirror Impact Hit. Korea's top 20 use a bigger card set that includes Scales (not on Global): Fury 12 levels, Impact Hit 8, Insulting Roar 7, Vicious Strike 7, Judgment 6, Punishment 5, Pummel 4. Titles: Global removed Double Chance from all titles and cut Combat Speed and cooldown reduction about 30%. Weapon and guard skill lines are UNVERIFIED on Global. Defense tiles rank higher for a Templar than for DPS because Battlefield Banner turns Defense into Attack. Daevanion: about 316 points at 45, plus 50 from the Shugo Festival shop and 50 from the Nightmare shop; orange > blue > green > white; take a Judgment, Vicious Strike or Pummel blue tile first when it lifts a skill to 8, 12, 16 or 20, then the Fury and Insulting Roar green tiles; skip Multi-hit Resist and Crit Damage Tolerance oranges in PvE. Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45. Azphel is the PvP board: fill it for PvP (36 points from Abyss Monolith feathers, more from the Abyss Trade Shop)."
    },
-   "hits": "Global top 10% in boss fights (this week): Judgment ~45 casts a minute (median top player 38)",
+   "hits": "Global top 10% in boss fights (week of Oct 7–14): Judgment ~51 uses a minute (median top Templar 44)",
    "patches": [
     [
+     "Oct 14 (KR only)",
+     "Assault Fury: Defense and all-element tolerance up to 80%, no cooldown-reduction effect. Shield of Protection: -0.3 s cooldown on Block. Neither is in Global's Oct 13 notes or in questlog's Global data."
+    ],
+    [
+     "Oct 13 (Global)",
+     "No Templar change in the Global Oct 6, Oct 8 or Oct 13 notes (build 25926599)."
+    ],
+    [
      "Sep 16",
-     "Longer cancel delay on Pummel, Punishing Strike and Judgment (aimed at mouse macros). Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min. Taunt threat now scales with damage."
+     "Longer cancel delay on Pummel, Punishing Strike and Judgment (aimed at mouse macros). Warding Strike, Annihilate and Punishment +10% PvE, Shield Smite +20%. Noble Armor 5 min → 2 min. Taunt threat now scales with damage. Live on Global (a second Noble Armor buff shows in 452 of 507 Templar fights over 130 s); the cancel delay, damage changes and Taunt threat are likely live but UNVERIFIED."
     ],
     [
      "Aug 26",
-     "Judgment now opens after any shield attack (was: stunned target). Minimum skill-cancel time added to every skill. Warding Strike cooldown 25 s."
+     "Judgment now opens after any shield attack (was: stunned target); this is live on Global. Minimum skill-cancel time added to every skill. Warding Strike cooldown 25 s: NOT live on Global (the database, questlog and Global use rates all fit 30 s)."
     ]
    ],
    "src": [
@@ -465,6 +499,22 @@
     [
      "Templar Daevanion nodes",
      "https://www.inven.co.kr/board/aion2/6438/22546"
+    ],
+    [
+     "Sheet author's current Templar build (daevaos, Oct 14)",
+     "https://daevaos.com/guides/templar-class-guide-pve"
+    ],
+    [
+     "Inven Sep 17 one-click post",
+     "https://www.inven.co.kr/board/aion2/6438/26762"
+    ],
+    [
+     "Inven Feb Templar stigma guide (Comrade, PvP set)",
+     "https://www.inven.co.kr/board/aion2/6438/7621"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
     ]
    ],
    "sheet": {
@@ -659,7 +709,7 @@
      "Chest": "Damage Boost >  Fury > Impact Hit  > Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance >  Fury > Impact Hit > Perfect Increase > Attack increase > Crit > Attack",
      "Gloves/Boots": "Speed >  Fury > Impact Hit > Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Fury > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Cape": "Fury > Impact Hit > Smite > Double Chance > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Fury > Impact Hit > Insulting Roar > Might > Precision > Accuracy > Crit > Attack > N/A",
@@ -725,12 +775,13 @@
      "Colossus": "Priority on Zikel / Kromede then in S2 Kaisinel",
      "Statues": "Priority on Freedom, Death and Space",
      "Paintings": "Priority on Illusion and Wisdom then Life"
-    }
+    },
+    "guide": "https://daevaos.com/guides/templar-class-guide-pve"
    }
   },
   "assassin": {
    "glance": "Back-attack burst: build Insignias, detonate them, chain Heart Gore on crits.",
-   "summary": "A dagger melee built around Insignia stacks and crits. Ambush, Heart Gore and Savage Fang engrave Insignias on the target. Insignia Explosion detonates up to 5 stacks, and Heart Gore fires again every time you crit. Illusive Clone removes Heart Gore's cooldown for 10 s, which is the burst window. You want to be behind the boss.",
+   "summary": "A dagger melee built around Insignia stacks and crits. Ambush (option 1), Heart Gore (option 2), the Savage Roar chain and Savage Fang (5 at once) engrave Insignias on the target. Insignia Explosion (20% of damage) detonates up to 5 stacks, and Heart Gore (28% of damage) fires again every time you crit. Illusive Clone removes Heart Gore's cooldown for 10 s at stigma level 1 (20 s at level 20), which is the burst window. You want to be behind the boss: top Global Assassins land 85% of their hits from the back.",
    "brings": [
     [
      "Defense Break",
@@ -748,60 +799,71 @@
    "core": [
     [
      "Insignias",
-     "Ambush from behind engraves 2, Heart Gore's option 2 engraves 1, Savage Fang engraves 5. Insignia Explosion's damage and stun chance scale with the stack count (max 5).",
+     "Ambush option 1 engraves 2 on a back hit, Heart Gore option 2 engraves 1 per hit, each skill of the Savage Roar chain (Savage Roar, Savage Back Kick, Savage Smash) engraves 1, Savage Fang engraves 5, Shadow Fall option 2 engraves 3, and Exploit Weakness clones build them too. Insignia Explosion's damage and stun chance scale with the stack count (max 5).",
      "Insignia Explosion"
     ],
     [
      "Heart Gore on crits",
-     "Heart Gore can only fire after you land a crit. Option 5 (skill level 16) resets its cooldown on every crit, so crit chance = Heart Gore count.",
+     "Heart Gore can only fire after you land a crit. Option 5 (skill level 16) resets its cooldown on every crit, so crit chance = Heart Gore count. Top Global Assassins already sit at the 50% crit cap.",
      "Heart Gore"
     ],
     [
      "Illusive Clone window",
-     "10 s with no Heart Gore cooldown and +20% extra damage. Press Swift Contract first, because its attack-speed buff shortens Clone's animation.",
+     "10 s at stigma level 1 (14.5 s at 10, 17 s at 15, 20 s at 20) with no Heart Gore cooldown and +20% extra damage. Press Swift Contract first, because its attack-speed buff shortens Clone's animation.",
      "Illusive Clone"
     ],
     [
      "Storm Rampage cancel",
-     "Holding the Storm Rampage key during stagger cancels into Heart Gore faster and keeps Illusive Clone up longer (Sep 30 guide).",
+     "Holding the Storm Rampage key during stagger cancels into Heart Gore faster and keeps Illusive Clone up longer (Korean Sep 30 guide). 69% of top Global Assassins use Storm Rampage.",
      "Storm Rampage"
     ]
    ],
    "opener": [
-    "Swift Contract → Illusive Clone",
-    "Savage Fang → Triniel's Dagger (the Dagger only cuts cooldowns already running)",
+    "Swift Contract → Illusive Clone (both last 17–20 s at levels 15–20, so fit Savage Fang's +10% PvE and Shadowstrike's +20% crit damage, 10 s each, inside that window; this order is derived from the durations)",
+    "Savage Fang → Triniel's Dagger from behind. The Korean Sep 30 guide presses the Dagger first for a smoother motion but says the Dagger's cut no longer reaches Savage Fang then; pressing Fang first is this page's inference (untested on Global)",
     "Hold Quick Slice + the macro, plus the Storm Rampage key in stagger windows",
-    "Stay behind the boss. Use Shadowstep or Throw Shadowblade to get back there"
+    "Stay behind the boss (85% of top Global hits are from the back). Shadowstrike, Infiltrate and Flash Slice put you there"
    ],
    "good": [
-    "The highest burst of any class",
+    "Big skill ceiling: at equal CP the top 10% deal about 83% more than the CP trend line, the widest gap of the 8 classes",
     "Simple macro: one line does it",
-    "Strong mobility stigmas"
+    "Many gap closers that put you behind the target (Shadowstrike, Infiltrate, Flash Slice)",
+    "The top 10% fire Heart Gore about 108 times a minute (median 49.6)"
    ],
    "hard": [
-    "Needs back attacks (Back Damage Boost): you lose a lot when stuck in front",
-    "Attack-speed breakpoints matter (April test: 88.1% and 92%; avoid 99.9–100.7%)",
-    "Patches change the cancels often"
+    "Needs back attacks: top Global Assassins land 85% of hits from the back and 8% from the front (Rear Smite, Ambush and Triniel's Dagger are back-attack bonuses), so you lose a lot when stuck in front",
+    "Mid in Global PvE: 5th of 8 (NotMeter 96.66, -1.8% at equal CP), and one player supplies 13 of the 30 top-10% parses",
+    "Attack-speed breakpoints matter (Korean April test: 88.1% and 92%; avoid 99.9–100.7%)",
+    "Korea's Sep 16 cancel-delay change (Savage Roar, Savage Smash, Heart Gore) is likely live on Global but not measured"
    ],
    "mistakes": [
     "Buffs in the macro: low Heart Gore counts usually mean buffs in the macro or a missing Savage Roar",
-    "Taking Ambush option 5 (+2 uses): it slows the motion and lowered damage",
-    "Dropping Heart Gore option 2 for lifesteal: damage drops, so let Ambush's lifesteal cover sustain",
-    "Pressing Triniel's Dagger before Savage Fang"
+    "Putting Ambush in row 1 because the Korean line does: at equal CP, Global Ambush users trail by about 7% per player",
+    "Taking Ambush option 5 (+2 uses): Korea's Sep 30 guide says it slows the motion and lowered damage",
+    "Dropping Heart Gore option 2 for lifesteal: damage drops",
+    "Pressing Triniel's Dagger before Savage Fang (this page's inference from the Korean Sep 30 guide; untested on Global)"
    ],
    "gear": {
-    "stones": "Back Damage Boost first. If you can't afford it, Weapon Damage Boost or Crit Damage Boost.",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: Back Attack Damage Boost ≈ PvE Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Rear Smite close to 36 (Back damage + PvE damage), then Assault Stance (Crit Damage); Exploit Weakness and Impact Hit where they fit",
-    "wings": "Talisra 58%, Awakened Pride 30% (rising) (Korea, Aug 21)",
-    "note": "Kanon's guide suggests Death instead of Space on the bracelet for Assassin; the newer Sep 30 Korean guide says Justice + Space is better for PvE.",
+    "stones": "Back Damage Boost > Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack (yellow +100 lines).",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: Back Attack Damage Boost ≈ PvE Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus (crit-capped; the daevaos Global guide lists Accuracy 40 / Crit 30 there, and the Bible prefers Crit and Accuracy only below their caps); 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
+    "passives": "Rear Smite as high as gear allows (KR 36: Back damage + PvE damage), then Assault Stance (KR 33, Crit Damage), Exploit Weakness (Global median 17; KR 27) and Impact Hit (KR 24) where they fit. Ambush Stance has a Global median of 15.",
+    "wings": "Global: wings can't be enhanced in Season 1, and Talisra (Season Shop) is the cooldown-reduction goal. The Global sheet lists Awakened Pride wings (back damage), but its percentages are copied from the Bible's Korean Chanter figures, so Awakened Pride on Global is UNVERIFIED. Korea's Assassin pick (Aug 21): Talisra 58%, Awakened Pride 30%",
+    "note": "Bracelets (Divine stats, half value on Global): Wisdom > Destruction > Time > Illusion. Skip Death (crit): Assassin skills that don't auto-crit already crit about 50–56% of the time in Global parses, at the 50% stat cap (the Bible's Global update states the cap, and Korea's Sep 30 guide also says Freedom and Death aren't needed in PvE). Sheet errors to avoid: the Global sheet's Assassin armor rows list Spirit Strike and Mental Focus (Spiritmaster passives) and Wind's Promise (a Chanter passive); the tables below use the Assassin passives from the sheet's own accessory row (Rear Smite > Assault Stance > Exploit Weakness). Settle rarity: Unique (yellow) for every slot except bracelet slot 2, which is a blue (Epic) bracelet in Season 1; there is no Heroic gear in Season 1. Enhance to: weapon, guard and rings +17; earrings and necklace +16; armor and bracelets +15. Crafted gear (5 stat lines) is best in slot. Belt and amulet: upgrade to Unique (gold), then stop for Season 1. Clash Runes: +5 to +7 (upgrades are very RNG-heavy and a failed upgrade destroys the rune). PvE Damage Boost was removed from weapons, guards and accessories on Global, and Potential stats are PvP-only. Rings: Heart Gore > Insignia Explosion > Quick Slice; Korea's top-20 ring lines (100% each) are Savage Roar, Insignia Explosion, Quick Slice and Heart Gore, then Ambush 80% and Storm Rampage 60% (Oct 14 snapshot). Cloak: Rear Smite > Assault Stance > Impact Hit > Double Chance > Attack Increase > Attack; there is no Perfect on capes on Global. Arcana (5 cards): Chalice Time, Parchment Life/Destiny, Compass Freedom (not Death, which is crit-capped), Bell Destruction, Mirror Illusion/Wisdom. Skill lines: Rear Smite, Assault Stance, Heart Gore, Insignia Explosion; the daevaos Global guide's Chalice (Vigor set, Time) lists Heart Gore, Insignia Explosion, Quick Slice and Rear Smite. Titles: Global removed Double Chance from all titles and cut Combat Speed and cooldown reduction about 30%. Weapon and guard skill lines are UNVERIFIED on Global. Daevanion: about 316 points at 45, plus 50 from the Shugo Festival shop and 50 from the Nightmare shop; orange > blue > green > white; Heart Gore, Insignia Explosion and Quick Slice blue tiles at 8, 12, 16 and 20, then the Rear Smite and Assault Stance green tiles; white tiles Attack first (Crit tiles have little value at the crit cap); skip Multi-hit Resist and Crit Damage Tolerance oranges in PvE. A tile-by-tile path is UNVERIFIED (no Global Assassin board guide). Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45. Azphel is the PvP board: fill it for PvP (36 points from Abyss Monolith feathers, more from the Abyss Trade Shop).",
     "genusOld": "Slots 3 and 9: Double Chance; Back Damage Boost on up to 4 slots"
    },
-   "hits": "Heart Gore ~300 · Insignia Explosion ~70 per minute (after Sep 16, 1.0M+ gear). Global top 10% in boss fights (this week): Heart Gore ~52, Insignia Explosion ~17 casts a minute",
+   "hits": "Global top 10% in boss fights (week of Oct 7–14): Heart Gore ~108 uses a minute (median top Assassin 49.6). Korean dummy, after Sep 16, 1.0M+ gear: Heart Gore ~300 · Insignia Explosion ~70 per minute",
    "patches": [
     [
+     "Oct 13 (Global)",
+     "No Assassin change in the Global Oct 6, Oct 8 or Oct 13 notes (build 25926599)."
+    ],
+    [
+     "By Sep 30 (KR guide)",
+     "The Korean Sep 30 guide says Triniel's Dagger's cooldown cut no longer reaches Savage Fang when the Dagger is pressed first (patch date not given). Untested on Global."
+    ],
+    [
      "Sep 16",
-     "Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE."
+     "Longer cancel delay on Savage Roar, Savage Smash and Heart Gore. Quick Slice, Breaking Slice, Swift Slice and Insignia Explosion +10% PvE. Live on Global: Shadowstrike's option-2 buff lasts 10 s there, the Sep 16 value (it was 5 s). The cancel-delay and damage changes are likely live but not measured."
     ]
    ],
    "src": [
@@ -816,6 +878,18 @@
     [
      "Attack-speed cap tests",
      "https://www.inven.co.kr/board/aion2/6449/10014"
+    ],
+    [
+     "Assassin Class Guide PVE, Global (daevaos, Castform)",
+     "https://daevaos.com/guides/assassin-class-guide-pve"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
+    ],
+    [
+     "Inven Aug 29 Assassin PvP stigma review",
+     "https://www.inven.co.kr/board/aion2/6449/20500"
     ]
    ],
    "sheet": {
@@ -1000,12 +1074,12 @@
     "gear": {
      "Weapon": "Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi Hit Chance > Atk",
      "Guard": "Weapon Damage Boost > Combat Speed > Damage Boost > Might > Precision > Multi Hit Chance > Atk",
-     "Helmet": "Incoming Heal > Spirit Strike > Mental Focus > Double Chance > Attack increase > Crit > Attack",
-     "Shoulders": "Crit Damage Boost > Spirit Strike > Mental Focus > Accuracy > Crit > Attack > Defense Increase",
-     "Chest": "Damage Boost > Spirit Strike > Mental Focus > Crit > Accuracy > Attack > Defense Increase",
-     "Legs": "Damage Tolerance > Spirit Strike > Mental Focus > Perfect Increase > Attack increase > Crit > Attack",
-     "Gloves/Boots": "Speed > Spirit Strike > Mental Focus > Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Wind's Promise > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Helmet": "Incoming Heal > Rear Smite > Assault Stance > Double Chance > Attack increase > Crit > Attack",
+     "Shoulders": "Crit Damage Boost > Rear Smite > Assault Stance > Accuracy > Crit > Attack > Defense Increase",
+     "Chest": "Damage Boost > Rear Smite > Assault Stance > Crit > Accuracy > Attack > Defense Increase",
+     "Legs": "Damage Tolerance > Rear Smite > Assault Stance > Perfect Increase > Attack increase > Crit > Attack",
+     "Gloves/Boots": "Speed > Rear Smite > Assault Stance > Perfect Chance > Crit > Attack > Defense increase",
+     "Cape": "Rear Smite > Assault Stance > Impact Hit > Double Chance (Smite) > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Rear Smite > Assault Stance> Exploit Weakness > Might > Precision > Accuracy > Crit > Attack > N/A",
@@ -1075,8 +1149,8 @@
    }
   },
   "ranger": {
-   "glance": "Bow sniper: Marking Shot crits, Deadshot charges and the Tempest Shot cancel.",
-   "summary": "A bow DPS that plays from range on a two-line macro (the most Ranger can use without losing hits). Marking Shot gives Precision (+300 Crit), and Deadshot hits 35% harder with it. Slow and Root effects make Burst Arrow, Explosive Arrow and the Rooting Eye passive hit harder. Few actives need to reach 20, so passives carry a lot.",
+   "glance": "Bow sniper: Marking Shot crits, hand-charged Deadshot and a held Snipe plus the macro.",
+   "summary": "A bow DPS that plays from range with Snipe (left click) held next to the in-game macro. Marking Shot gives Precision (+300 Crit), and Deadshot hits 35% harder with it. Deadshot (23.5% of damage) has to be charged by hand: the in-game macro fires it uncharged, about a third of a Max cast by the tooltip (599 vs 1,798). Slow and Root effects make Burst Arrow, Explosive Arrow and the Rooting Eye passive hit harder. Few actives need to reach 20, so passives carry a lot.",
    "brings": [
     [
      "Shackling Arrow",
@@ -1088,18 +1162,18 @@
     ],
     [
      "Supporting Fire",
-     "Stigma: a 15 s orb that shoots and heals you."
+     "Stigma: an orb that shoots and heals you (15 s; 30 s at stigma level 10, and level 15 cuts its cooldown by 30 s, so a 30 s orb every 60 s)."
     ]
    ],
    "core": [
     [
      "Precision",
-     "Marking Shot gives +300 Crit for 10 s and Deadshot +35% damage. Cast it standing still, and refresh it with ~2 s left.",
+     "Marking Shot gives +300 Crit for 10 s (15 s with option 3) and Deadshot +35% damage while it's up. Cast it standing still and keep it up yourself; don't spam it.",
      "Marking Shot"
     ],
     [
-     "Tempest Shot cancel",
-     "Tempest Shot sits at the top of a different line from the short-cooldown arrows. That gives more Tempest Shot hits (~+3%). Arrow Scattershot directly under it catches the stagger cancel.",
+     "Tempest Shot under Drill Dart",
+     "Tempest Shot is your held-filler spam (16.6% of Global damage). It sits under Drill Dart in the same macro line in both the Global sheet and the Korean Aug 30 post, so the older 'Tempest Shot in its own entry' rule is not used here. Arrow Scattershot is for broken (staggered) bosses only: it refills cooldowns, HP and MP.",
      "Tempest Shot"
     ],
     [
@@ -1109,44 +1183,54 @@
     ],
     [
      "Deadshot charge",
-     "Deadshot has 3 charge levels. It's held on its own key next to the macro.",
+     "Deadshot has 3 charge levels (23.5% of damage). The in-game macro can't fire stage 3, so charge it yourself while holding Snipe + the macro. Global macro-only parses land at roughly 40–90% of a Max cast per cast, a small sample (4 players).",
      "Deadshot"
     ]
    ],
    "opener": [
-    "Marking Shot (standing) → Gale Arrow (+7% Combat Speed)",
-    "Vaizel's Authority and Bow of Blessing for burst",
-    "Hold Snipe + the macro + Deadshot",
-    "Supporting Fire on cooldown"
+    "Marking Shot, standing still (Precision +300 Crit for 10 s; Deadshot +35% while it's up) → Gale Arrow (+7% Combat Speed and +7% PvE damage for 10 s)",
+    "Vaizel's Authority + Bow of Blessing + Supporting Fire, lined up on the same Deadshot: Vaizel's lasts 20 s at stigma level 20, Bow of Blessing 17 s at 15, Gale 10 s, Precision 10–15 s",
+    "Deadshot charged to stage 3 (23.5% of damage). The top 10% of Global parses at equal CP log a median 8.4 a minute",
+    "Hold Snipe + the macro (Snipe option 4: −1 s Deadshot cooldown per hit). Snare Shot goes before Burst Arrow, which only hits Slowed or Rooted targets",
+    "Griffon Arrow on cooldown (Crimson Flames, 3.9% of damage). At Vaizel's 20, every crit has a 50% chance to cut all cooldowns by 1 s, so pack your crits inside it"
    ],
    "good": [
-    "Safe ranged damage",
+    "Safe range (20 m), lots of dashes, and damage doesn't depend on distance",
     "Lots of control (Slow, Root)",
-    "Only 2–3 skills need 20"
+    "Only 2–3 skills need 20",
+    "2nd of 8 on Global by NotMeter score (114.85), and top Rangers have the highest median CP",
+    "Steady damage that 'never really stops' once geared (Allyria)"
    ],
    "hard": [
-    "Two-line macro, and buffs in a third line drop Snipe below 16/min",
-    "Hit-count sensitive: checks like Tempest Shot 250+/min tell you if something is off",
-    "Moving while casting Marking Shot costs damage"
+    "Deadshot must be charged by hand: the in-game macro fires it uncharged",
+    "About even at equal CP: +0.7% on all ranked parses and +0.5% per player on the top-20 set (95% range −3% to +4%), 5th–6th of 8 and not significant. Difficulty: medium (manual Deadshot charging, Marking Shot upkeep, positioning for range)",
+    "Slow early: Combat Speed and cooldown reduction make the class",
+    "Moving while casting Marking Shot costs damage. Allyria: spamming it wastes animations and forces jump movement, which can kill you"
    ],
    "mistakes": [
-    "Putting buffs in the macro (Snipe falls under 16–18/min)",
-    "Tempest Shot in the same line as Drill Dart: the cancel is lost",
+    "Putting Marking Shot, Arrow Scattershot, Suppressing Arrow, Explosion Trap or Mother Nature's Breath in the macro (Allyria keeps all five out)",
+    "Relying on the in-game macro for Deadshot: it fires uncharged",
     "Casting Marking Shot while moving",
-    "Skipping Shackling Arrow and Snare Shot's move-cast option (+2–3%)"
+    "Burst Arrow without Snare Shot first: it only hits Slowed or Rooted targets",
+    "Skipping Shackling Arrow and Snare Shot's move-cast option (+2–3% on the Korean dummy)"
    ],
    "gear": {
-    "stones": "Many Korean Rangers run Front Damage Boost (great on the dummy and in Nightmare). The Sep 6 guide warns it may not hold if bosses make you move; otherwise Weapon Damage Boost.",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Focused Eye and Hunter's Resolve on gear (a recent buff widened the gap), then Crit in leftover gear slots",
-    "wings": "Eroded 54.5%, Talisra 25.5% (Korea, Aug 21)",
-    "genusOld": "Slots 3 and 9: Double Chance"
+    "stones": "Allyria (Global): Crit / Accuracy early in Season 1; end gear two yellow +100 lines (Weapon or Front/Back Damage Boost best), or a +100 line plus Attack (35 Attack is about one +100 line). The sheet: Front Damage Boost (if frontal) > Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack. Many Korean Rangers run Front Damage Boost (great on the dummy and in Nightmare); it may not hold if bosses make you move.",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Power Shard Damage Bonus once Accuracy is covered (top Global Rangers are crit-capped at about 51%; Allyria says Accuracy / Crit, balanced, and the value per point of Power Shard Damage Bonus is unpublished, so UNVERIFIED); 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below. Allyria's list: slot 4 PvE Damage Boost (Fera: Weapon Damage Boost; Varian: PvE / Front / Back; Special: Double Chance); slots 1/5 Max Attack; 7 PvE Damage Tolerance (Special: Damage Tolerance).",
+    "passives": "Focused Eye (+100 Accuracy, +1% PvE Damage Boost, +0.2% Double Chance; Vaizel's 10 makes it ×1.5) and Hunter's Resolve (+6% Crit Damage Boost) on gear, as high as possible (Korea's top 20: 35–36 and 33). Hunter's Soul to 20 (6.5% of Global damage), Rooting Eye / Concentrated Fire 15–17 (2.4% / 2.8% of damage; Korea's top 20: 16 / 17), Melee Fire and Vigilant Eye about 15, then Revitalization Contract, Wind Vigor (Global median 13) and Unyielding Resolve at 10–15.",
+    "wings": "Global: save Season coins for Talisra wings (end of Season 1); wings can't be enhanced in Season 1 (Allyria). Korea's Ranger pick (Aug 21): Eroded 54.5%, Talisra 25.5%. Eroded Wings on Global are UNVERIFIED.",
+    "genusOld": "Slots 3 and 9: Double Chance",
+    "note": "Settle rarity: Unique (yellow) for every slot except bracelet slot 2, which is a blue (Epic) bracelet in Season 1; there is no Heroic gear. PvE crafted gear is best in slot; F2P or sub-only players can stay in dungeon armor 'without losing a lot' (Allyria). Allyria's progression: MSQ golden weapon → Vakron → Transcendence 2/3 → Kromede accessories and weapon → Transcendence 4 → Ferocious Horn Den armor → crafted accessories and bow → Ludra. Enhance to (the sheet's long-term Ludra-prep list; Ludra isn't on Global yet): bow, guard and rings +17; earrings and necklace +16; armor, cape and bracelets +15. Weapon order (Allyria, newer and Ranger-specific): Weapon Damage Boost > Combat Speed > Might > Damage Boost > Multi-hit > Precision > Attack, with the guard the same; the sheet puts Precision before Damage Boost and Multi-hit. Cape: no Perfect on Global (Sirin); in PvP swap Crit for Crit Damage Tolerance. Bracelets (Divine stats, half value on Global): Wisdom > Destruction > Time > Illusion > Death > Justice > Life > Space > Freedom > Destiny; Sanctuary (Ludra) bracelets later, story and side-quest ones until then. Divine stat order (Allyria): Wisdom > Destruction > Time > Death > Illusion > Justice > Freedom > Space > Life > Destiny. Belt and amulet: upgrade early, then stop (expensive in the first weeks); amulet +10, then Substance Morph. Clash Runes: +1 early, about +5 later, 'not recommended to try to get higher than 6/7' (Allyria); upgrades are RNG-heavy and a failed upgrade destroys the rune (Bible). Arcana (5 cards in Season 1; upgrade to +1/+2 and check rather than forcing +5; Allyria's skill lines): Chalice of Vigor (Time): Focused Eye, Hunter's Resolve, Gale Arrow, Deadshot. Parchment of Vigor (Life/Destiny): Drill Dart, Snipe, Burst Arrow, Tempest Shot. Compass of Magic (Death/Freedom): Burst Arrow, Arrow Scattershot, Deadshot, Gale Arrow. Bell of Magic (Destruction): Hunter's Resolve, Revitalization, Vigilant Eye, Rooting Eye. Mirror of Magic (Illusion/Wisdom): Focused Eye, Hunter's Soul, Concentrated Fire, Unyielding Resolve, Melee Fire. Theostones have no PvE impact. Pantheon: artworks Illusion + Wisdom (+ Life); statues Freedom, Death, Space; colossus Zikel/Kromede in Season 1, though Sirin reports the Kromede colossus was removed on Global. Daevanion (Allyria): orange > blue > green > white on every board, blue first when it reaches an 8/12/16/20 skill milestone; white tiles Attack > Crit > HP > Defense > Crit Defense > MP; if you can't max a board, skip non-offensive tiles; boards after the first four can be fully maxed; resets cost Kinah; about 316 points at 45, +50 Shugo, +50 Nightmare. Allyria's tile-by-tile Ranger path is in images, so it is UNVERIFIED here. Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45. Azphel is the PvP board: fill it for PvP (36 points from Abyss Monolith feathers, more from the Abyss Trade Shop)."
    },
-   "hits": "Snipe 16–18 · Deadshot 24–28 · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total per minute. Global top 10% in boss fights (this week): Deadshot ~7, Tempest Shot ~107, Drill Dart ~18, Gale Arrow ~9 casts a minute",
+   "hits": "Korean dummy: Snipe 16–18 · Deadshot 24–28 hits (a hit count; Global parses log 2 hits per Deadshot cast, so roughly 12–14 casts) · Drill Dart 70+ · Tempest Shot 250+ · Gale Arrow 19–20 · 900+ total per minute. Global top 10% in boss fights (week of Oct 7–14): Deadshot a median 8.4 a minute at equal CP (mean 10.6), Tempest Shot ~107, Drill Dart ~18, Gale Arrow ~9 casts a minute",
    "patches": [
     [
-     "Sep 16",
-     "Every attack now has an element. Drill Dart, Griffon Arrow and Explosive Arrow are Fire."
+     "Oct 13 (Global)",
+     "No Ranger change in the Global Oct 6, Oct 8 or Oct 13 notes (build 25926599). NotMeter's week-of-Oct-7 data was recorded on the previous build."
+    ],
+    [
+     "Sep 16 (KR/TW, live on Global)",
+     "Every Ranger attack has an element: Drill Dart, Griffon Arrow and Explosive Arrow are Fire. Likely live on Global, but UNVERIFIED for this specific change (NotMeter has no element field). Also fixed: Deadshot option 5's extra damage no longer needs option 4 to multi-hit."
     ]
    ],
    "src": [
@@ -1161,6 +1245,18 @@
     [
      "Hits vs DPS (Aug 30)",
      "https://www.inven.co.kr/board/aion2/6450/19104"
+    ],
+    [
+     "Allyria's Ranger Guide, Global Edition (updated Oct 11)",
+     "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
+    ],
+    [
+     "Sirin's Global guide (gear and Divine rules)",
+     "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
     ]
    ],
    "sheet": {
@@ -1357,8 +1453,8 @@
      "Shoulders": "Crit Damage Boost > Focused Eye > Hunter's Resolve > Accuracy > Crit > Attack > Defense Increase",
      "Chest": "Damage Boost > Focused Eye > Hunter's Resolve > Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance > Focused Eye > Hunter's Resolve > Perfect Increase > Attack increase > Crit > Attack",
-     "Gloves/Boots": "Speed > Focused Eye > Hunter's Resolve > Perfect Chance",
-     "Cape": "Focused Eye > Hunter's Resolve > Double Chance > Perfect Chance"
+     "Gloves/Boots": "Speed (gloves Combat Speed, boots Move Speed) > Focused Eye > Hunter's Resolve > Perfect > Crit > Attack > Accuracy",
+     "Cape": "Focused Eye > Hunter's Resolve > Double Chance > Attack increase > Crit (PvP: Crit Damage Tolerance) > Accuracy > Attack"
     },
     "acc": {
      "Earring & Necklace": "Focused Eye > Hunter's Resolve > Might > Precision > Accuracy > Crit > Attack",
@@ -1431,15 +1527,15 @@
   },
   "sorcerer": {
    "glance": "Ranged nuker: fully charged Hellfire after Delayed Explosion, plus ground AoEs.",
-   "summary": "A spellbook caster with the highest ceiling among ranged classes. It's also the least forgiving: low HP, slow animations and ground AoEs that miss when the boss moves. Damage is spread over many skills (Hellfire ~21%, Fire Wall ~16%, Blaze ~13–16%, Bittercold Wind ~13–16%, Cold Storm ~10%), so missing any one of them hurts. It relies on cooldown reduction more than any other class.",
+   "summary": "A spellbook caster with the highest ceiling among ranged classes: 2nd at equal CP on Global (+9.8% vs the average). It's also the least forgiving: low HP, no block, slow animations and ground AoEs that miss when the boss moves. Damage is spread over many skills (Hellfire 21.7%, Blaze 14.7%, Fire Wall 13.1%, Bittercold Wind 9.2%, Firestorm 8.9%, Cold Storm 6.5% of top Global damage), so missing any one of them hurts. Skills cut each other's cooldowns (Firestorm → Hellfire, Blaze → Wish of Concentration, Wish → everything), which is why it relies on cooldown reduction more than any other class.",
    "brings": [
     [
      "Cold Storm",
-     "Stigma: ground AoE that slows and roots. Two Sorcerers' Cold Storms don't stack."
+     "Stigma: ground AoE that slows, with Frostbite damage over time (up to 4 within 5 m). Before Oct 13 a stronger Frostbite from another player removed yours; the Oct 13 patch stopped that, and whether two Sorcerers' Frostbites stack is unconfirmed."
     ],
     [
      "Fire Wall",
-     "Stigma: ground AoE with Embers damage over time."
+     "Stigma: ground AoE with Embers damage over time (up to 4 in a 1×10 m wall, +2 m width at 10)."
     ],
     [
      "Winter's Shackles",
@@ -1449,60 +1545,71 @@
    "core": [
     [
      "Delayed Explosion → Hellfire",
-     "Delayed Explosion makes the target take +15% damage from you (+10% more at stigma 20) for 4 s. Land your fully charged Hellfire inside that window.",
+     "Delayed Explosion makes the target take +15% damage from you for 4 s (+10% more at stigma 20). Land your fully charged Hellfire inside that window. Since Aug 26 it also works on the ground AoEs in Korea; that is not confirmed on Global.",
      "Delayed Explosion"
     ],
     [
      "Fire Mark → Blaze",
-     "Blaze only hits targets with Fire Mark. Flame Arrow's option 4 (skill level 12) applies Fire Mark, and option 5 (16) resets Blaze's cooldown. In KR/TW, the Sep 16 patch made Fire Mark proc 100%.",
+     "Blaze only hits targets with Fire Mark. Korea's Sep 16 patch made Fire Mark apply on every Fire attack (it was 20% of them), stopped Blaze from consuming it, and changed Flame Arrow option 4 (Pyroclasm, skill level 12) from 'applies Fire Mark' to +5% Fire damage for 10 s. Option 4 is live on Global: the buff shows in 275 of 282 top parses with it and in none without. Questlog's Global skill text agrees on both changes, but the aion2.app database still says 20%, and the Fire Mark application rate can't be read from the logs (UNVERIFIED). Flame Arrow option 5 (skill level 16) resets Blaze's cooldown.",
      "Blaze"
     ],
     [
      "Cooldown engine",
-     "Wish of Concentration option 5 cuts all cooldowns by 10 s. Firestorm option 4 cuts Hellfire by 2 s per fireball, and Blaze option 5 cuts Wish of Concentration. Korean players aim for 43% cooldown reduction.",
+     "Wish of Concentration option 5 (16) cuts all cooldowns by 10 s. Firestorm option 4 cuts Hellfire by 2 s per fireball (5 fireballs per use in Global parses), and Blaze option 5 cuts Wish by 3 s per hit. Global maximum cooldown reduction is only about 19–21% (Korea 34–40%). Est's minimum for full Wish uptime and the Bittercold Wind breakpoint is 25.6%, which Global can't reach yet; that's why Est tells Global players to weave Ice Chain.",
      "Wish of Concentration"
     ],
     [
      "Element Enhancement",
-     "+20% Fire and Water Attack for 10 s. Stigma level 10 makes Robe of Flame ×1.5, your one key passive.",
+     "+20% Fire and Water Attack for 10 s at stigma level 1 (20 s at level 20). Stigma level 10 makes Robe of Flame ×1.5, your one key passive; level 15 makes Grace of Enhancement ×1.5; level 20 adds +10% more.",
      "Element Enhancement"
     ]
    ],
    "opener": [
-    "Element Enhancement → Delayed Explosion",
-    "Fully charged Hellfire",
-    "Hold Flame Arrow + the macro (Fire Wall and Cold Storm drop from the macro)",
-    "Recharge Hellfire by hand on cooldown, right after Delayed Explosion lands"
+    "Element Enhancement → Delayed Explosion (the target takes +15% from you for 4 s)",
+    "Fully charged Hellfire inside the Delayed Explosion window",
+    "Fire Wall + Cold Storm where the boss stands → Bittercold Wind → Firestorm → Wish of Concentration → Bittercold Wind",
+    "Delayed Explosion → Winter's Shackles → Hellfire → Firestorm. Put Element Enhancement (20 s at level 20), Wish (18 s at the Global median level 17) and Winter's Shackles option 3 (5 s) on the same Hellfire",
+    "Hold Flame Arrow + the macro (Blaze / Firestorm filler) and press the rest on cooldown, recharging Hellfire by hand right after Delayed Explosion lands"
    ],
    "good": [
-    "The highest ranged damage ceiling",
+    "The highest ranged damage ceiling: 4th of 8 by NotMeter score (105.70), 2nd at equal CP (+9.8%; post-patch +7.6%)",
     "Strong AoE",
-    "Only one passive to push"
+    "Only one passive to push",
+    "Delayed Explosion makes the target take +15% (+25% at 20) more damage from you"
    ],
    "hard": [
-    "Lowest HP and slow, 'stuttering' animations",
-    "Ground AoEs miss moving bosses",
-    "Wants 43% cooldown reduction and 112%+ Combat Speed to hit the Korean numbers"
+    "Lowest HP, poor mobility, no block and slow, 'stuttering' animations. Difficulty: medium to high",
+    "Ground AoEs (Fire Wall and Cold Storm, about a fifth of damage) miss moving bosses",
+    "Needs cooldown reduction: Global caps it at about 19–21%, against 34–40% in KR/TW (the Korean numbers assume 43% and 112%+ Combat Speed)"
    ],
    "mistakes": [
-    "Leaving Fire Wall and Cold Storm for 'later': together they're about a quarter of your damage",
-    "Firing Hellfire before Delayed Explosion lands",
+    "Leaving Fire Wall and Cold Storm for 'later': together they're 19.6% of your damage",
+    "Firing Hellfire before Delayed Explosion lands, or letting a macro fire it uncharged (a Max cast does about 3× an uncharged one)",
     "Splitting the main Bittercold Wind line into many different lines (Sorcerer loses the most per unique extra line)",
-    "Ignoring Flame Arrow's options 4 and 5, which make Blaze fire often"
+    "Ignoring Flame Arrow's options 4 and 5 (4: +5% Fire damage for 10 s per Pyroclasm; 5: resets Blaze)",
+    "Expecting Korea's cooldown-reduction numbers on Global"
    ],
    "gear": {
-    "stones": "Weapon Damage Boost first (your kit doesn't use Front/Back damage); Crit Damage Boost if short",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Robe of Flame toward 36. It's your one key passive",
-    "wings": "Talisra 91.5% (Korea, Aug 21)",
-    "note": "Sorcerer gets the most out of Illusion (cooldown) of any class: use Illusion instead of Wisdom on the Mirror Arcana card.",
+    "stones": "Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack (the sheet; your kit doesn't use Front/Back damage). Est (KR/TW): Front Damage Boost % beats Double Chance past some point, but Sorcerer's kit can't always hit from the front. Wish and Element Enhancement give about 300 Accuracy, so you rarely need Accuracy lines.",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit (top-20 Global Sorcerers are at about 42–44% crit, hit-weighted, on fire skills that don't always crit, still under the 50% cap; the daevaos Global guide lists Accuracy 40 / Crit 30 there, and Wish and Element Enhancement already give about 300 Accuracy); 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
+    "passives": "Robe of Flame as high as possible (Est, KR/TW: 31+, which assumes more level-20 actives than Global's gear and 5 Arcana cards allow). Grace of Enhancement second (+20% PvE Damage Boost at 25% MP or more; Est: about 2–3% of damage), though the sheet ranks Fire Mark second (Global shares: Fire Mark 2.5%, Grace 1.5%). Robe of Earth fixes mana ('the solution to all of your mana issues'); Fire Mark, Vitality Evaporation and Cold Snap are low (1–2% each, Est).",
+    "wings": "Talisra (cooldown reduction) is the goal; Forest Spirit or Dark Veil Wings until then (daevaos). Wings can't be enhanced in Season 1. Korea (Aug 21): Talisra 91.5%.",
+    "note": "Sorcerer gets the most out of Illusion (cooldown) of any class: use Illusion instead of Wisdom on the Mirror Arcana card. Settle rarity: Unique (yellow) for every slot except bracelet slot 2, which is a blue (Epic) bracelet in Season 1; there is no Heroic gear. Enhance to (the sheet's long-term Ludra-prep list): weapon, guard and rings +17; earrings and necklace +16; armor, cloak and bracelets +15. Weapon (spellbook): Weapon Damage Boost > Combat Speed > Might > Precision > Damage Boost > Multi-hit > Attack; the guard is the same with Damage Boost 3rd. Cloak: Robe of Flame > Fire Mark > Double Chance (the sheet also lists 'Smite', the same stat on Global) > Attack Increase > Crit > Attack; no Perfect on capes on Global. Earrings / necklace: Robe of Flame > Might > Precision > Fire Mark > Accuracy > Crit > Attack. Rings: Wish of Concentration > Hellfire > Might > Precision > Bittercold Wind > Blaze > Flame Arrow > Firestorm (Korea's top-20 ring lines: Firestorm, Hellfire, Wish, Blaze, Bittercold Wind, Flame Arrow). Bracelets (Divine stats at half value, 10 = 1%): Wisdom > Destruction > Time > Illusion > Death; Est (KR/TW) calls Illusion, Wisdom, Destruction and Time all 'non-negotiable', and the sheet's order is used here. Belt and amulet: upgrade early, then stop; amulet +10, then Substance Morph. Clash Runes: +5 to +7, and they can break. Cooldown reduction (Est, KR/TW): 25.6% minimum, 37% ideal; Global's maximum is about 19–21%, so take every source: Illusion Mirror, Talisra wings, CDR tiles. Arcana (5 cards): Chalice Time · Parchment Life/Destiny · Compass Death/Freedom · Bell Destruction · Mirror Illusion (CDR); skill lines go on Robe of Flame, Hellfire, Blaze, Wish, Firestorm and Bittercold Wind (Compass). The daevaos author's own cards (all Unique, +5): Chalice of Vigor with Robe of Flame +4 and Firestorm +2; Parchment of Vigor with Hellfire +4, Firestorm +2, Blaze +2 (Flame Arrow if possible); Compass of Magic with Bittercold Wind +4 and Winter's Shackles +2; Bell of Magic with Fire Mark / Robe of Cold; Mirror of Vigor with Robe of Flame +4 (the sheet says Mirror (Magic)). It names Wish of Concentration only as an alternative for the Chalice's +2. That author's gear is all Unique except bracelet 2 (Epic): Nuakum armor set with Robe of Flame on every piece, rings with Hellfire / Wish of Concentration / Flame Arrow lines, Noble Belt, Revelation Amulet, Talisra Wings, Clash Runes +1, with armor, cloak, earrings, rings, guard and bracelets recorded at +10; it lists items, not line priorities. Daevanion (Est, Allyria): take all skill and damage nodes and ignore HP / Defense / MP / Crit-resist nodes; orange > blue > green > white, blue first when it reaches a milestone; CDR / Combat Speed orange tiles are the highest value for Sorcerer because Global cooldown reduction is scarce; about 316 points at 45 (+100 from shops). Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45. Azphel is the PvP board: fill it for PvP (36 points from Abyss Monolith feathers, more from the Abyss Trade Shop).",
     "genusOld": "Slots 3 and 9: Double Chance"
    },
-   "hits": "Hellfire 26–28 casts · ~960–1,000 total hits per minute (Korean endgame, 43% cooldown reduction). Global top 10% in boss fights (this week): Hellfire ~6, Blaze ~34, Firestorm ~13 casts a minute",
+   "hits": "Hellfire 26–28 casts · ~960–1,000 total hits per minute (Korean endgame, 43% cooldown reduction; Global tops out at about 19–21%). Global top 10% in boss fights (week of Oct 7–14): Hellfire about 7.9 a minute (top 30 parses by DPS; all 300 parses average 5.8), Blaze ~34, Firestorm ~13 casts a minute",
    "patches": [
     [
-     "Sep 16",
-     "Fire Mark passive procs 100% (was 20%) and Blaze no longer consumes it. The Global database still shows 20%."
+     "Oct 13 (Global)",
+     "Bug fixes only, no nerfs: Fire Wall and Cold Storm bonus damage now applies across a height difference; your Embers / Frostbite are no longer removed by another player's stronger Embers / Frostbite; Bittercold Wind's Frost cooldown cut now also works across a height difference (build 25926599). NotMeter's week-of-Oct-7 data predates it. Post-patch check (Oct 14 generation, 284 parses from 118 players): class score 103.69 (still 4th), +7.6% at equal CP (still 2nd); damage shares Hellfire 22.4%, Blaze 15.0%, Fire Wall 11.4%, Bittercold Wind 9.4%, Firestorm 9.1%, Cold Storm 6.3%; Blaze 3+5 42%, Flame Scattershot 4+5 22%, Ice Chain 2+4 44%."
+    ],
+    [
+     "Oct 14 (KR)",
+     "Korea's Oct 14 Sorcerer element changes are Korea only so far; no Global notice (UNVERIFIED on Global)."
+    ],
+    [
+     "Sep 16 (KR/TW, live on Global)",
+     "Fire Mark is inflicted by every Fire attack (it was 20% of them) and Blaze no longer consumes it. Flame Arrow option 4 (Pyroclasm) became +5% Fire damage for 10 s instead of applying Fire Mark: live on Global (275 of 282 option-4 parses show the buff, none without). Questlog's Global text (updated Oct 7) agrees on both changes, while aion2.app's database (client 18.09.2026) still shows 20%. Fire Mark's application rate in the logs is UNVERIFIED."
     ]
    ],
    "src": [
@@ -1521,6 +1628,30 @@
     [
      "1,000-hit checklist (Aug 29)",
      "https://www.inven.co.kr/board/aion2/6453/16734"
+    ],
+    [
+     "Est's Sorcerer guide (written for TW/KR, updated Oct 11)",
+     "https://docs.google.com/document/d/1XVciQ8mC7bHo7bAApRk7hLwmT61MxVWTm2III6rUzsM/edit"
+    ],
+    [
+     "Sorcerer Class Guide PVE, Global (daevaos, Castform)",
+     "https://daevaos.com/guides/sorcerer-class-guide-pve"
+    ],
+    [
+     "Questlog Global skill text: Flame Arrow",
+     "https://questlog.gg/aion-2/api/trpc/database.getSkill?input=%7B%22id%22%3A%2215210000%22%2C%22language%22%3A%22en%22%7D"
+    ],
+    [
+     "Questlog Global skill text: Fire Mark",
+     "https://questlog.gg/aion-2/api/trpc/database.getSkill?input=%7B%22id%22%3A%2215710000%22%2C%22language%22%3A%22en%22%7D"
+    ],
+    [
+     "Sirin's Global guide (cooldown reduction, gear rules)",
+     "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
     ]
    ],
    "sheet": {
@@ -1716,7 +1847,7 @@
      "Chest": "Damage Boost > Robe of Flame > Fire Mark >  Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance > Robe of Flame > Fire Mark >  Perfect Increase > Attack increase > Crit > Attack",
      "Gloves/Boots": "Speed > Robe of Flame > Fire Mark >  Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Robe of Flame > Fire Mark >  Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Cape": "Robe of Flame > Fire Mark > Double Chance (Smite) > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Robe of Flame > Might > Precision > Fire Mark >  Accuracy > Crit > Attack > N/A",
@@ -1787,7 +1918,7 @@
   },
   "spiritmaster": {
    "glance": "Summoner: four spirits on timers feed Elemental Fusion and Jointstrikes.",
-   "summary": "An orb caster who fights with four spirits. Each spirit's skill gives you an element. At 4 stacks you get Four Elements and can fire Elemental Fusion. Jointstrikes add a spirit follow-up on top of your own hit. The Ancient Spirit (30 s) is the burst window. Part of the damage comes from the spirits themselves, which Kanon notes may make ping matter a little less than for other classes.",
+   "summary": "An orb caster who fights with four spirits. Each spirit's skill gives you an element. At 4 stacks you get Four Elements and can fire Elemental Fusion (17.0% of damage). Combustion (7.6%) with its Ashy Call chain (6.8%) and Dimensional Control (7.5%) fill in around it. Jointstrikes add a spirit follow-up on top of your own hit. The Ancient Spirit (90 s cooldown, lasts 30 s) is the burst window: its attacks are about 15% of damage, and Global's low cooldown reduction (about 19–21%) leaves it substantial downtime. A large share of damage comes from the spirits themselves, and Sirin says the class 'performs very well on high ping'.",
    "brings": [
     [
      "Summon: Earth Spirit",
@@ -1805,58 +1936,73 @@
    "core": [
     [
      "Four Elements",
-     "Every spirit skill adds an element. At 4 you can fire Elemental Fusion (mash it on its own key). The Ancient Spirit grants Four Elements every time it uses its skill.",
+     "Every spirit skill adds an element. At 4 you can fire Elemental Fusion; in Sirin's Global macro it sits as its own entry. The Ancient Spirit grants Four Elements every time it uses its skill.",
      "Elemental Fusion"
     ],
     [
      "Spirit line",
-     "The four summons share a 15 s cooldown pattern and get their own macro line. Water → Earth first keeps skills from being eaten and the Fire Spirit up.",
+     "Cycle Water → Earth → Wind → Fire. That builds the element stacks for Fusion, and each summon enables Dimensional Control. Water → Earth first keeps skills from being eaten and the Fire Spirit up (Korean guides). Wind Spirit has been in Sirin's rotation since Oct 6.",
      "Summon: Water Spirit"
     ],
     [
      "Ancient Spirit window",
-     "Summon the Ancient Spirit, then fully charge Destructive Attack 3–4 s later. Since Sep 10 its spirit follow-up fires instantly.",
+     "Cast Enhance: Spirit's Benediction (and Flame Blessing if slotted) before summoning the Ancient Spirit: stats are snapshotted onto spirits when they're summoned. Then Jointstrike: Corrode, and a fully charged Destructive Attack if slotted. Since Sep 10 (KR/TW) its spirit follow-up fires instantly.",
      "Summon: Ancient Spirit"
     ],
     [
      "Cold Shock stacks",
-     "Keep Cold Shock's 5-stack attack buff running. Fight from about 3 m.",
+     "With specialty option 4, Cold Shock's Earth Tremor chain stacks +2% Attack up to 5 times, so keep the 5-stack buff running. Element Unification stacks Crit Damage up to 5 times on landed spirit-skill hits. Fight from about 3 m (Korean guides).",
      "Cold Shock"
     ]
    ],
    "opener": [
-    "Buffs, then Earth Tremor at 4–5 stacks and Element Unification at full",
-    "Summon: Ancient Spirit",
-    "3–4 s later: fully charged Jointstrike: Destructive Attack",
-    "Hold Cold Shock + the macro and mash Elemental Fusion"
+    "Enhance: Spirit's Benediction (+ Flame Blessing if slotted), then Summon: Ancient Spirit (90 s cooldown, 30 s). Each Ancient skill grants Four Elements",
+    "Jointstrike: Corrode (the target takes +10% damage from the spirit for 20 s), then Jointstrike: Destructive Attack at max charge if slotted",
+    "Cycle Water → Earth → Wind → Fire spirits and weave Cold Shock (held), Combustion, Dimensional Control and Jointstrike: Curse",
+    "Rapid Scattershot at skill level 16 during boss stagger: -1 s on all cooldowns per hit, the way to shorten the Ancient Spirit's downtime on Global"
    ],
    "good": [
-    "Spirits keep dealing damage while you move",
-    "Self-sustain (Wind Spirit, Spirit Communion)",
-    "Earth Spirit can tank adds"
+    "'Fairly tanky', with heals and shields; the spirits keep dealing damage while you move",
+    "'Performs very well on high ping', and a low skill floor (Sirin: low skill floor, medium skill ceiling)",
+    "Self-sustain (Wind Spirit, Spirit Communion); Earth Spirit can tank adds"
    ],
    "hard": [
-    "Lots of moving parts: spirit timers, Fusion stacks, Ancient window",
-    "Spirit skills can get eaten if the summon order is wrong",
-    "Ground and positioning rules (about 3 m) for best results"
+    "7th of 8 on Global: NotMeter score 82.54, -5.6% at equal CP (about -9% on the top-20 set alone). That data predates the Oct 13 Ancient Spirit fix",
+    "Most damage hangs on the Ancient Spirit (90 s cooldown); with Global cooldown reduction at about 19–21% it has 'substantial downtime'",
+    "'Mana intensive': on Global use a mana pot at all times",
+    "Lots of moving parts: spirit timers, Fusion stacks, the Ancient window. Spirit skills can get eaten if the summon order is wrong"
    ],
    "mistakes": [
-    "Summoning in the wrong order (Water → Earth first)",
-    "Using Destructive Attack outside the Ancient Spirit window",
-    "Putting Elemental Fusion in the macro instead of mashing it",
+    "Summoning in the wrong order (Water → Earth first, then Wind and Fire)",
+    "Casting the Ancient Spirit before Enhance: Spirit's Benediction: spirit stats are snapshotted when they're summoned",
+    "Putting buffs in the macro: Sirin says they 'are not part of the macro and cannot be'",
+    "Taking Elemental Fusion's charge option (4): a macro fires it uncharged (Sirin leaves it out)",
     "Letting Cold Shock's 5-stack buff drop"
    ],
    "gear": {
-    "stones": "Weapon Damage Boost first",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit → Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Spirit Strike, Element Unification, Mental Focus",
-    "wings": "Eroded 45%, Talisra 43.5% (Korea, Aug 21)",
-    "genusOld": "Slots 3 and 9: Double Chance (pull Double Chance from the Genus, damage boosts from stones)"
+    "stones": "Weapon Damage Boost first. The sheet: Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack.",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit → Power Shard Damage Bonus (top Global Spiritmasters are at about 46% crit, a few points under the 50% cap; Sirin says Accuracy > Critical Hit > Power Shard Damage Bonus once capped); 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below. Sirin's own line-4 lists by board: Cogni Crit Damage Boost > Damage Boost > PvE Damage Boost; Fera Weapon Damage Boost > Damage Boost > PvE Damage Boost; Natura PvE Damage Boost > Perfect > Multi-hit; Varian Back Damage Boost > PvE Damage Boost; Special Double Chance. The tables below (built from the Global client) rank PvE Damage Boost first on Cogni, Fera, Natura and Varian, so the two disagree on those boards. Sirin's other lines: 1/5 Max Attack > Attack Bonus; 2/8 HP increase; 7 Damage Tolerance > PvE Damage Tolerance. Aim for 2.5%+ rolls on Double Chance / Damage Boost, and don't min-max the first preset. Whether spirits inherit Genus stats is UNVERIFIED.",
+    "passives": "Spirit Strike (PvE Damage Boost and Perfect for you and the spirit; x1.5 at Benediction 10) and Mental Focus (Double Chance) as high as possible (Korea's top-20 median 36 and 32). Element Unification 16+ (Global median 16; Korea 29): stacking Crit Damage Boost. Spirit Revitalization as gear allows (Korea 22): faster summon cooldowns. The Corrode passive (+100 Crit and a 50% proc on crits) is an Arcana line on the Mirror: 3.9% of top Global damage, more than the Jointstrike: Corrode stigma's 0.7%. The others will 'most likely sit at level 14-16' (Sirin).",
+    "wings": "Global (Sirin): early the Vakron Sky Garden cube drop, mid the Nightmare Trade Shop, late Talisra from the Season Shop (cooldown reduction, 'very important'). Wings can't be enhanced in Season 1. Korea (Aug 21): Eroded 45%, Talisra 43.5%; Eroded Wings on Global are UNVERIFIED.",
+    "genusOld": "Slots 3 and 9: Double Chance (pull Double Chance from the Genus, damage boosts from stones)",
+    "note": "Global gear rules (Sirin): there is no Heroic gear in Season 1, so Unique (yellow) is the settle rarity for every slot except bracelet slot 2, which is a blue (Epic) bracelet. PvE crafted gear is best in slot at 5 lines (dungeon gear has 4, and an extendable weapon 3 per Sirin or 4 per Kanon's Bible, UNVERIFIED). Only T1 crafted gear is directly craftable on Global; it is bound and upgrades by Transfer Crafting. PvE Damage Boost was removed from weapons, guards and accessories, some soulbind values were lowered, and base stats were raised. Enhance to (the sheet's Ludra-prep list; Sirin gives none): weapon, guard and rings +17; earrings and necklace +16; armor, cloak and bracelets +15. Sirin's soulbind lines (Oct 12), best first: weapon (orb) Combat Speed > Weapon Damage Boost > Damage Boost > Might > Precision > Multi-hit > Attack (PvP: Status Effect Chance), guard the same; head Double Chance > Attack Increase > Attack > Spirit Strike > Mental Focus > Element Unification > Spirit Revitalization; chest Damage Boost > Perfect > Attack > Spirit Strike > Mental Focus > Element Unification > Spirit Revitalization; pants Attack Increase > Damage Tolerance > Perfect > Attack > Spirit Strike > Mental Focus > Element Unification; cloak Double Chance > Attack Increase > Attack > Spirit Strike > Mental Focus > Element Unification > Spirit Revitalization (Perfect was removed from capes); shoulders Double Chance > Crit Damage Boost > Attack > Spirit Strike and on; gloves Combat Speed > Perfect > Attack > Spirit Strike and on; shoes Move Speed > Perfect > Attack > Spirit Strike and on; earring Move Speed > Might > Precision > Spirit Strike > Mental Focus > Element Unification > Spirit Revitalization; necklace Combat Speed > Spirit Strike > Mental Focus > Element Unification > Spirit Revitalization > Attack; ring Might > Precision > whichever active-skill lines you're missing (drop Precision first if short on space). The sheet's rows below differ from these. Bracelets: story Unique and side-quest blue for now, Sanctuary later; Wisdom > Destruction > Time > Illusion > Justice > Death / Freedom; Sanctuary bracelets can be amplified for +5% Attack. Belt and amulet: upgrade to Gold (Unique). Clash Runes: +5 to +7, and they can break. Divine stats are halved on Global (10 Divine = 1%). Arcana (5 cards, Sirin): Chalice of Vigor (Time): Combustion, Elemental Fusion, Cold Shock / Fire Spirit, Spirit Strike. Parchment of Vigor (Life): Elemental Fusion, Cold Shock, Fire Spirit, Earth Spirit. Compass of Magic (Death): Combustion, Rapid Scattershot, Water Spirit, Wind Spirit (Sirin corrected this row on Oct 14; it used to read Fire Spirit and Earth Spirit). Bell of Magic (Destruction): Spirit Strike, Element Unification, Spirit Revitalization. Mirror (Wisdom, or Illusion in Season 1 for the Ancient Spirit's cooldown): Mental Focus and the Corrode passive. Titles: Global removed Double Chance from titles and cut Combat Speed / cooldown reduction about 30%; the late offensive title is Mastered Genus Insight (level 10 on all boards). Pantheon: Divine stats are halved; the Kromede colossus was removed, so use the Nightmare Trade Shop colossus; statues need 10 Draupnir clears and all Kibelisks; paintings 5 Sanctuary clears, dungeons and world bosses. Daevanion (Sirin): about 316 points at 45 after the Monolith, Sealed Dungeons and side quests, plus 50 Shugo Festival and 50 Nightmare (416); order: all blue and green nodes first, then orange damage nodes (Combat Speed, cooldown reduction, Damage Boost, Crit Damage Boost, Multi-hit), then white Attack and Crit; Azphel (PvP) gets 36 points from the Abyss Monolith feathers and more from the Abyss Trade Shop. Her example Global boards (Nezekan, Zikel, Vaizel, Triniel, Azphel) are images in her doc, so the tile layout isn't reproduced here. Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45. Azphel is the PvP board: fill it for PvP (36 points from Abyss Monolith feathers, more from the Abyss Trade Shop)."
    },
    "hits": "Global top 10% in boss fights (this week): Elemental Fusion ~20, Combustion ~39 casts a minute",
    "patches": [
     [
-     "Sep 10",
+     "Oct 13 (Global)",
+     "Summon: Ancient Spirit summons at level 15 or below 'did not activate skills properly': fixed (build 25926599). Sirin reported the bug below stigma level 15 (no skill every 7 attacks, no Elemental Fusion); NC's notes say 'level 15 or below', one level wider. NotMeter's data (window ends Oct 13 04:21 UTC) predates the patch, so no parses confirm the fix yet. No other Spiritmaster change and no nerfs in the Oct 6, Oct 8 or Oct 13 notes."
+    ],
+    [
+     "Oct 14 (Sirin)",
+     "Sirin's Global guide corrected its Compass of Magic Arcana row: Combustion, Rapid Scattershot, Water Spirit, Wind Spirit (it used to read Fire Spirit and Earth Spirit)."
+    ],
+    [
+     "Oct 6 (Sirin)",
+     "Wind Spirit joined Sirin's rotation (the Global sheet still calls it 'mainly used for mobbing')."
+    ],
+    [
+     "Sep 10 (KR/TW)",
      "Jointstrike: Destructive Attack's spirit follow-up now fires immediately (fixes a Jointstrike overwrite bug)."
     ]
    ],
@@ -1872,6 +2018,14 @@
     [
      "Inven Sep 6 macro settings",
      "https://www.inven.co.kr/board/aion2/6454/8421"
+    ],
+    [
+     "Sirin's Spiritmaster Guide, written for Global (updated Oct 14)",
+     "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
     ]
    ],
    "sheet": {
@@ -2062,7 +2216,7 @@
      "Chest": "Damage Boost > Spirit Strike > Mental Focus > Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance > Spirit Strike > Mental Focus > Perfect Increase > Attack increase > Crit > Attack",
      "Gloves/Boots": "Speed > Spirit Strike > Mental Focus > Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Wind's Promise > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Cape": "Spirit Strike > Mental Focus > Double Chance (Smite) > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Spirit Strike > Mental Focus > Might > Precision > Attack Preparation > Accuracy > Crit > Attack > N/A",
@@ -2134,87 +2288,103 @@
   },
   "cleric": {
    "glance": "Healer with real damage: Chain of Torment opens Condemnation, Earth Punishment makes it crit.",
-   "summary": "A mace healer whose damage matters in Korean raids. Condemnation (no cooldown) only hits targets with Chain of Torment. Earth Punishment makes Condemnation always crit. Cleric's attack speed caps at 94.4% while other classes reach about 121.6%, so Cleric chases cooldown reduction instead and can afford a second macro line.",
+   "summary": "A mace healer, and the healer of record on Global: exactly one Cleric is in 86% of boss parses (4,562 of 5,303). Condemnation (35.6% of damage, 3 s cooldown) only hits targets with Chain of Torment, always crits on targets with Earth Punishment, and resets on a crit (option 4). Judgment Thunder with its Divine Punishment chain adds 23.4%. Healing is manual. NotMeter ranks Cleric's personal damage last (8th of 8: score 69.41, -25.6% at equal CP; 66.98 and still 8th after the Oct 13 patch), but it measures damage only and has no Global healing ranking. A Korean guide author reports that Cleric's attack speed caps at 94.4% while other classes reach about 121.6% (Korea; UNVERIFIED on Global).",
    "brings": [
     [
      "Light of Protection",
-     "Stigma: +10.5% PvE damage and damage tolerance for the party (doesn't stack with a Chanter's Undefeated Mantra)."
+     "Stigma: party PvE damage and damage tolerance, 10.5% at level 1, 17.5% at 15, 20% at 20. It doesn't stack with a Chanter's Undefeated Mantra: the higher level wins, and the Mantra wins ties."
     ],
     [
      "Chain of Torment",
-     "Enemy PvE damage tolerance -5% (doesn't stack with a Chanter's Earth's Promise)."
+     "Enemy PvE damage tolerance -5%; option 4 makes it -15% in total. A Chanter's Earth's Promise doesn't apply on top of it."
     ],
     [
      "Earth Punishment",
-     "Stigma: damage over time, +10% Double Chance for you and +5% for the party."
+     "Stigma: damage over time. Earth's Blessing gives +10% Double Chance to you and +5% to the party (level 10) and +10% Attack and Defense to you and +5% to the party (level 15), for 10 s (20 s at level 20). A party member can't also receive a Chanter's Power of the Storm."
     ],
     [
      "Summon Resurrection",
-     "Stigma: raise a fallen party member, invincible for 3–5 s."
+     "Stigma: raise a fallen party member; at level 10 they are invincible for 3 s after the raise (5 s at 20)."
     ],
     [
      "Yustiel's Power",
-     "Stigma: +20% PvE damage tolerance for the party for 10 s."
+     "Stigma: party PvE damage tolerance for 10 s, 20% at level 1 and 30% at 20."
     ]
    ],
    "core": [
     [
      "Chain → Condemnation",
-     "Condemnation only hits targets with Chain of Torment, which is why Chain sits in the same macro line.",
+     "Condemnation (35.6% of damage) only hits targets with Chain of Torment, which is why Chain sits in the same macro line. Option 4 resets its cooldown on every crit: the top 10% log about 42 uses a minute.",
      "Condemnation"
     ],
     [
      "Earth Punishment crits",
-     "With Earth Punishment on the target, Condemnation always crits. Earth Punishment leads the macro line.",
+     "With Earth Punishment (stigma level 5) on the target, Condemnation always crits. Earth Punishment leads the macro line.",
      "Earth Punishment"
     ],
     [
-     "Attack-speed cap",
-     "Cleric attack speed caps at 94.4%. Anything past it is wasted, so aim for 32.6% cooldown reduction instead.",
+     "Attack-speed cap (Korea)",
+     "A Korean guide author reports that Cleric attack speed caps at 94.4% while other classes reach about 121.6%, so Korea aims for 32.6% cooldown reduction instead. UNVERIFIED on Global, where cooldown reduction tops out at about 19–21%.",
      "Earth's Retribution"
     ],
     [
      "Healing stays manual",
-     "Bolt and heals stay off the macro so a charge never delays a heal. Debilitating Mark only when the party is hurting.",
+     "Heals stay off the macro so you can pick Healing Light or Radiant Recovery for the situation. Bolt stays manual because a charge can delay care (Korean guide), and an uncharged macro Bolt does only about one third of a Max cast. Debilitating Mark only when the party is hurting (Korea).",
      "Bolt"
+    ],
+    [
+     "Prayer of Amplification is self-only",
+     "It never shows on other party members in Global logs (0 of 11,573), and the DB text names only the caster. Its +20% PvE Damage Boost (level 5) and the x1.5 on Empyrean Lord's Grace / Earth's Grace (10 / 15) are for you alone.",
+     "Prayer of Amplification"
     ]
    ],
    "opener": [
-    "Light of Protection / buffs",
-    "Earth Punishment → Chain of Torment → Condemnation (from the macro)",
-    "Hold Earth's Retribution + the macro + Lightning Strike Scattershot",
-    "Heal and Bolt by hand"
+    "Prayer of Amplification (self only), then summon Noble Aura (300 s). Light of Protection on, unless a Chanter runs Undefeated Mantra",
+    "Hold Earth's Retribution + the macro: Earth Punishment → Chain of Torment → Debilitating Mark → Condemnation, then Divine Aura / Light of Regeneration / Judgment Thunder",
+    "Line up Prayer of Amplification (17 s at level 15), Earth Punishment's Earth's Blessing (10 s) and a Max Bolt",
+    "Heal and charge Bolt by hand; Light of Regeneration goes by hand later"
    ],
    "good": [
-    "Required in most parties: heals, cleanses, resurrection",
-    "Real damage on top (Condemnation)",
-    "Two macro lines cost almost nothing"
+    "The healer of record: in 89% of Global fights (86% with exactly one Cleric). Heals, cleanses, resurrection",
+    "Real damage on top: Condemnation 35.6% of damage, Judgment Thunder with Divine Punishment 23.4%",
+    "Party buffs: Earth Punishment (+5% Double Chance and +5% Attack/Defense to the party), Light of Protection (17.5% at level 15) and a boss debuff (Chain of Torment option 4: -15% PvE Damage Tolerance)"
    ],
    "hard": [
-    "You split attention between damage and healing",
-    "Attack speed is capped, so gear priorities differ from other classes",
-    "Several party buffs clash with Chanter buffs (only the higher one counts)"
+    "You split attention between damage and healing (medium difficulty: this guide's call)",
+    "Lowest personal damage on Global: 8th of 8, NotMeter 69.41 and -25.6% at equal CP",
+    "Several party buffs clash with Chanter buffs: Light of Protection vs Undefeated Mantra (higher level wins, the Mantra wins ties), Earth's Blessing vs Power of the Storm (a party member can't have both), Chain of Torment vs Earth's Promise. With two Clerics the higher-level Chain of Torment overrides the other's (Korean guide)",
+    "A Korean guide author reports a 94.4% attack-speed cap against about 121.6% for other classes (Korea; UNVERIFIED on Global)"
    ],
    "mistakes": [
-    "Stacking attack speed past 94.4%",
-    "Casting Debilitating Mark on cooldown (loses damage)",
-    "Putting Bolt in the macro (a charge can delay a heal)",
-    "Taking Empyrean Lord's Grace before Earth's Grace (Earth's Grace tested higher)"
+    "Stacking attack speed past 94.4% (a Korean test; UNVERIFIED on Global)",
+    "Casting Debilitating Mark on cooldown outside the sheet's macro (the Korean guide found it loses damage; the Global sheet's macro does include it)",
+    "Putting Bolt in the macro: it fires uncharged, about one third of a Max cast (DB 987 vs 2,963; Global parses 31–35%), and a charge can delay a heal",
+    "Expecting Prayer of Amplification to buff the party: it is self-only",
+    "Treating the passive order as settled: a Korean guide puts Earth's Grace first ('not a big difference'), the Global sheet puts Empyrean Lord's Grace first"
    ],
    "gear": {
-    "stones": "Weapon Damage Boost first, then Crit Damage Boost. Front/Back by taste.",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Earth's Grace before Empyrean Lord's Grace",
-    "wings": "Eroded 45%, Talisra 35% (Korea, Aug 21)",
+    "stones": "Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack (the sheet).",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below. Top Global Clerics are at about 38% crit on skills without guaranteed crits. No Genus line boosts healing directly, and whether heals scale with Attack is UNVERIFIED.",
+    "passives": "Earth's Grace and Empyrean Lord's Grace, as high as possible (Korea's top 20: 35 and 33). Korea puts Earth's Grace first (a Korean guide: 'not a big difference'); the Global sheet ranks Empyrean Lord's Grace first and lists it first on every gear line. Earth's Grace: Crit Damage Boost 10.5% at level 1, 17.5% at 15, 20% at 20, plus 100 Accuracy. Empyrean Lord's Grace is 5.5% of Global damage. Prayer of Amplification at 10 / 15 multiplies them x1.5. Healing Enhancement third for a healer (Korea 18; no Global level data). Warm Benediction, Prayer of Concentration (Global median 10) and Immortal Veil as filler at 10–15.",
+    "wings": "Talisra (Season Shop) for cooldown reduction on Global. Wings can't be enhanced in Season 1. Korea (Aug 21): Eroded 45%, Talisra 35%, and Talisra for a lower Salvation cooldown.",
     "board": [
      "Korean Cleric Daevanion node guide",
      "https://www.inven.co.kr/board/aion2/6452/27247"
     ],
-    "note": "Talisra wings when you need maximum Salvation cooldown (new raid tries).",
+    "note": "Global gear rules (Sirin): there is no Heroic gear in Season 1, so Unique (yellow) is the settle rarity for every slot except bracelet slot 2, which is a blue (Epic) bracelet. Enhance to (the sheet's long-term 'Ludra Preparations' list; Ludra isn't on Global yet): weapon (mace), guard and rings +17; earrings and necklace +16; armor, cloak and bracelets +15. The sheet's line order by slot is in the table below. On the cloak the sheet and the Bible's Global list still show Perfect, but Sirin says it was removed from capes on Global, and the sheet's 'Smite' is Double Chance. Belt and amulet: upgrade to Unique early, then stop; amulet to +10, then Substance Morph. Clash Runes: +1 early, about +5 later (the sheet); Allyria says not past +6/7 because upgrades are RNG-heavy, and a failed rune upgrade destroys the rune. Bracelets: Wisdom > Destruction > Time > Illusion > Death. Arcana: Chalice Time · Parchment Life/Destiny · Compass Death/Freedom · Bell Destruction · Mirror Illusion/Wisdom; Earth's Grace first on the skill lines (Korea's top 20 all run it at +11). A Korean test puts the weapon's attack-speed cap at 94.4% (UNVERIFIED on Global). Daevanion: about 316 points at 45 (+100 from shops); Orange > Blue > Green > White; blue Condemnation / Judgment Thunder tiles at the 8 / 12 / 16 / 20 milestones and green Earth's Grace / Empyrean Lord's Grace tiles (this guide's application of the rule); a Global Cleric tile path is UNVERIFIED, and Korea has a Cleric node guide (linked above). Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45.",
     "genusOld": "Slots 3 and 9: Double Chance; lock 2/5/8 when Attack Bonus or Max Attack rolls high"
    },
-   "hits": "Attack speed caps at 94.4%: extra past that is wasted, aim for 32.6% cooldown reduction. Global top 10% in boss fights (this week): Condemnation ~40 casts a minute",
-   "patches": [],
+   "hits": "Global top 10% by damage at equal CP, boss fights, downtime included: Condemnation about 42 logged uses a minute (3 s cooldown, resets on a crit). Top Clerics also cast Light of Regeneration 1.85 times a minute (cap 2), Debilitating Mark 5.5 (cap 6) and Earth Punishment 2.2 (cap 2). Korea reports the attack-speed cap at 94.4% (UNVERIFIED on Global)",
+   "patches": [
+    [
+     "Oct 14 (KR/TW, not on Global)",
+     "Korea's Oct 14 update changed Cleric: attack skills gain elements (Lightning Strike Scattershot Wind; Noble Aura and Empyrean Lord's Grace Earth), level-25 stigma options, an Assault Mark change and lower PvP damage (questlog's KR/TW records; aion2hub's summary, secondary). Global's Oct 13 notes have none of it."
+    ],
+    [
+     "Oct 13 (Global)",
+     "No Cleric change in the Oct 13 PDT patch (build 25926599), the Oct 6 patch or the Oct 8 hotfix: no Cleric nerfs on Global."
+    ]
+   ],
    "src": [
     [
      "Inven Sep 24 Cleric guide",
@@ -2227,6 +2397,26 @@
     [
      "Inven PvE guide (May, skills and macros)",
      "https://www.inven.co.kr/board/aion2/6452/19538"
+    ],
+    [
+     "Global class sheet (zxcastform), Cleric tab",
+     "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
+    ],
+    [
+     "questlog: Light of Protection levels",
+     "https://questlog.gg/aion-2/en/db/skill/17410000"
+    ],
+    [
+     "Sirin's Global guide (Global rules: slots, rarity, gear)",
+     "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+    ],
+    [
+     "aion2hub: Korea's Oct 14 update (secondary)",
+     "https://aion2hub.com/updates/aion-2-update-2026-10-14"
     ]
    ],
    "sheet": {
@@ -2348,15 +2538,15 @@
      ],
      [
       3,
-      "Noble Aura"
+      "Absolution"
      ],
      [
       4,
-      "Prayer of Amplification"
+      "Summon Resurrection"
      ]
     ],
     "stigmaNotes": [
-     "Stigmas above are more personal dmg focus once stuff is on farm. Can swap out #3 or #4 for Benevolence or Summon Resurrection if needed for prog. Swap out Light of Protection if running with a chanter."
+     "With a Chanter, swap Light of Protection for 'another heal / shield / self buff-dmg Stigma': Prayer of Amplification or Summon Resurrection. Yustiel's Power 'during certain mechs can be really strong'."
     ],
     "cards": [
      [
@@ -2418,7 +2608,7 @@
      "Chest": "Damage Boost > Empyrean Lord's Grace > Earth's Grace > Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance > Empyrean Lord's Grace > Earth's Grace > Perfect Increase > ATK increase > Crit > Atk",
      "Gloves/Boots": "Speed > Empyrean Lord's Grace > Earth's Grace > Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Empyrean Lord's Grace > Earth's Grace > Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Cape": "Empyrean Lord's Grace > Earth's Grace > Double Chance (Smite) > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Empyrean Lord's Grace > Earth's Grace > Might > Precision > Healing Enhancement > Accuracy > Crit > Attack",
@@ -2466,7 +2656,7 @@
     },
     "notes": [
      "Hold Down The Macro / Charge your (3) Bolt / Use Heals when needed",
-     "IF running Prayer of Amplification first as that your biggest self buff. Noble Aura is your top 2 damage skill so make sure it's summoned pre pull then go ahead and hold down the macro as well as LMB early on.",
+     "Run Prayer of Amplification first (a self buff) and summon Noble Aura before the pull, then hold down the macro as well as LMB early on.",
      "Early on you have to weave in LMB because you won't be able to sustain your mana holding down the macro."
     ],
     "wings": "Eroded Wings (45%) / Talisra Wings (35%) /  Illusory Echo Wings (9%)",
@@ -2489,19 +2679,23 @@
   },
   "chanter": {
    "glance": "Support melee: party buffs plus Dark Crush, opened by ranged skills.",
-   "summary": "A staff fighter who buffs the whole party and still deals solid damage. Its mantras and Power of the Storm are some of the strongest party buffs in the game. Its damage runs through Dark Crush, which opens for 2 s after ranged skills since the Aug 26 rework. It can also cover heals and shields as a battle healer.",
+   "summary": "A staff fighter who buffs the whole party and still deals solid damage: the top Global class, with a NotMeter score of 118.79 (1st of 8) and +22.0% at equal CP (1st); 114.08 and still 1st after the Oct 13 patch. Its mantras and Power of the Storm are some of the strongest party buffs in the game. Its damage runs through Dark Crush, which opens for 2 s after ranged skills since the Aug 26 rework (31.5% of damage with its Piercing Strike chain). One macro entry plus a held Onslaught covers most of it, which makes it the easiest high-damage class on Global right now. Without a Cleric it is also the main healer: in 524 of the 526 Cleric-less parties with any healing between players, the Chanter gave the most.",
    "brings": [
     [
      "Undefeated Mantra",
-     "Toggle: +10.5% PvE damage and damage tolerance for nearby party members (doesn't stack with a Cleric's Light of Protection)."
+     "Toggle: party PvE damage and damage tolerance, 10.5% at level 1, 17.5% at 15, 20% at 20. It doesn't stack with a Cleric's Light of Protection: the higher level wins, and the Mantra wins ties."
     ],
     [
      "Power of the Storm",
-     "Party +20% Combat Speed and -10% cooldowns for 10 s (you: -20%). Blocked by a Cleric's Earth's Blessing."
+     "Party +20% Combat Speed and -10% cooldowns (you: -20%) for 10 s at level 1, 12 s at 5, 14.5 s at 10, 17 s at 15 and 20 s at 20. A party member can't receive it while a Cleric's Earth's Blessing is active (that covers 27% of a fight with a Storm Chanter, 37% without)."
     ],
     [
      "Earth's Promise",
-     "Enemy PvE damage tolerance -5.4% (doesn't stack with a Cleric's Chain of Torment)."
+     "Enemy PvE damage tolerance -5.4% at level 1, -9% at 10, -11% at 15 and -13% at 20. It doesn't apply together with a Cleric's Chain of Torment."
+    ],
+    [
+     "Sprint Mantra",
+     "Toggle: party move speed (10.5% at level 1, 15% at 10, 20% at 20) and a heal on hit. Two Chanters don't stack it; the higher level applies."
     ],
     [
      "Fracturing Blow",
@@ -2509,13 +2703,13 @@
     ],
     [
      "Recuperation",
-     "Party heal + cleanse, with a heal over time."
+     "Party heal + cleanse (1 debuff), with a heal over time. 15 s cooldown. Without a Cleric it is most of the party's healing."
     ]
    ],
    "core": [
     [
      "Dark Crush windows",
-     "Spinning Strike, Impactful Crush and Marchutan's Wrath are ranged skills: each opens Dark Crush for 2 s. Spinning Strike also stacks +15% Crit Damage (×2).",
+     "Spinning Strike and Impactful Crush each open Dark Crush for 2 s (Marchutan's Wrath for 3 s). With option 5 at skill level 16 Dark Crush has no cooldown, so every macro turn inside a window fires it. Spinning Strike also stacks +15% Crit Damage (×2, 30 s).",
      "Dark Crush"
     ],
     [
@@ -2524,54 +2718,74 @@
      "Undefeated Mantra"
     ],
     [
-     "Gust Rampage cancel",
-     "Hold Gust Rampage with the macro: its stagger cancel lowers its cooldown and keeps damage flowing.",
+     "Gust Rampage: stagger only",
+     "Use Gust Rampage only while the stagger bar is up: at skill level 16 it takes 1 s off all cooldowns per hit. Gust Rampage users measured 6–9% lower at equal CP (NotMeter can't tell when it was used), and the sheet lists it as N/A. Korean players hold it with the macro for the stagger cancel.",
      "Gust Rampage"
     ],
     [
-     "Guardian Blessing on Storm",
-     "Stack Guardian Blessing on top of Power of the Storm (both 2 min since Sep 16) so it's never forgotten.",
+     "Guardian Blessing with Storm",
+     "Guardian Blessing has a 2-min cooldown on live Global (Sep 16): Chanters recast it in 85 of 93 fights longer than 130 s. Recast it with Power of the Storm so it's never forgotten.",
      "Power of the Storm"
     ]
    ],
    "opener": [
     "Undefeated Mantra and Sprint Mantra on",
-    "Power of the Storm + Guardian Blessing",
-    "Hold Onslaught + the macro + Gust Rampage",
+    "Power of the Storm (+ Guardian Blessing if slotted)",
+    "Hold Onslaught + the macro; Marchutan's Wrath between windows; Gust Rampage only while the stagger bar is up",
     "Recuperation when the party needs it"
    ],
    "good": [
+    "Top Global class: NotMeter 118.79 (1st) and +22.0% at equal CP (1st), and the easiest high-damage class on Global (one macro entry + held Onslaught)",
     "Huge party value: damage, speed and cooldown buffs",
-    "Can heal, cleanse and shield (battle healer)",
+    "Can heal, cleanse and shield: the main healer in 93% of Cleric-less parties (battle healer)",
     "Melee with solid personal damage"
    ],
    "hard": [
-    "Buff management on top of a damage rotation",
-    "Several buffs clash with Cleric buffs, so coordinate",
-    "Dark Crush windows collide if the macro is built wrong"
+    "Buff management on top of a damage rotation (Marchutan's Wrath, Power of the Storm and the mantras are the skill part)",
+    "Its buffs clash with Cleric buffs: Undefeated Mantra vs Light of Protection (higher level wins, Mantra wins ties), Power of the Storm vs Earth's Blessing, Earth's Promise vs Chain of Torment",
+    "Dark Crush windows collide if the macro is built wrong",
+    "Korea's Sep 23 change (Undefeated Mantra and Power of the Storm disabled during Battlefield Might in Abyss bosses and Rifts) is UNVERIFIED on Global"
    ],
    "mistakes": [
     "Putting toggle mantras in the macro (the macro switches them off)",
     "Stacking Spinning Strike, Impactful Crush and Marchutan's Wrath so their Dark Crush windows overlap",
     "Running Power of the Storm with a Cleric's Earth's Blessing active (blocked)",
-    "Still slotting Marchutan's Wrath out of habit: it's no longer required"
+    "Pressing Marchutan's Wrath on top of an open window: this guide presses it between Spinning Strike / Impactful Crush windows (its own rule, not the sheet's; casters and non-casters differ by -2% at equal CP, not significant)",
+    "Holding Gust Rampage outside stagger windows (users measured 6–9% lower at equal CP)"
    ],
    "gear": {
-    "stones": "Weapon Damage Boost for now (the guide expects new damage stats soon)",
-    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Back Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit → Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below.",
-    "passives": "Wind's Promise, Impact Hit, Attack Preparation (Inspiring Spell only if there's room)",
-    "wings": "Eroded 45%, Talisra 23%, Awakened Pride 12.5% (Korea, Aug 21)",
-    "genusOld": "Slots 3 and 9: Double Chance (take Double Chance from the Genus, damage boosts from stones)"
+    "stones": "Front Damage Boost only if you play from the front; otherwise Weapon Damage Boost ≈ Crit Damage Boost > Damage Boost > Attack. Top Global Chanters land a median 64% of hits from behind (44% for the CP-adjusted top 10%; Korea's top 20 run Front Damage Boost manastones 85% of the time), so Back Damage Boost fits that positioning, but no Chanter source tests it (UNVERIFIED).",
+    "genus": "Global (verified against the client): Special line 4 Double Chance; line 4 on the other boards PvE Damage Boost (Fera: PvE Damage Boost ≈ Weapon Damage Boost; Varian: PvE Damage Boost ≈ Back Attack Damage Boost); lines 1/5 Max Attack; 3/6/9 Critical Hit until the cap (top Global Chanters are at about 44%), then Power Shard Damage Bonus; 7 PvE Damage Tolerance (Special: Damage Tolerance); 2/8 HP increase (never lock). Full 45-line tables in Pet Genus below. The daevaos Global guide (the sheet author's build): finish lines 4, 1 and 5 on every board first, then 3/6/9 (Accuracy 40 or Crit 30), then 2/7/8; Special board line 4 is Double Chance 2.5%+ or Front/Back Damage Boost 3%.",
+    "passives": "Wind's Promise first, as high as possible (KR 36): Crit Damage Boost 5.7% at level 1 and 19% at 20, plus extra damage on crits (6.1% of Global damage); x1.5 at Guardian Blessing 15. Impact Hit (Double Chance, KR 30) and Attack Preparation (PvE Damage Boost 5.5% at level 1 and 15% at 20, +100 Accuracy, KR 30) next. Earth's Promise (KR 19): enemy tolerance -5.4% at level 1, -13% at 20. Protection Circle (Global median 14): Divine Barrier for the party every 10 stacks. Inspiring Spell (KR 21) only if there's room.",
+    "wings": "Talisra (Season Shop) for the cooldown reduction; Forest Spirit or Dark Veil Wings until then (daevaos). Wings can't be enhanced in Season 1. Korea (Aug 21): Eroded 45%, Talisra 23%, Awakened Pride 12.5%.",
+    "genusOld": "Slots 3 and 9: Double Chance (take Double Chance from the Genus, damage boosts from stones)",
+    "note": "Global gear rules (Sirin): there is no Heroic gear in Season 1, so Unique (yellow) is the settle rarity for every slot except bracelet slot 2, which is a blue (Epic) bracelet. Enhance to (the sheet's long-term 'Ludra Preparations' list; Ludra isn't on Global yet, and early on the sheet says Clash Runes +1 and Unique pieces tapped to +10): weapon (staff), guard and rings +17; earrings and necklace +16; armor, cloak and bracelets +15. The daevaos build shows the author's current gear, not a target: Unique armor and jewelry at +10, staff and guard at +15, Clash Runes at +1, one Unique and one Epic bracelet; its weapons follow the sheet's order, and every armor piece and the cloak carries Attack Preparation, which the sheet lists only for earrings and necklace. The sheet's line order by slot is in the table below. On the cloak the sheet and the Bible's Global list still show Perfect, but Sirin says it was removed from capes on Global, and the sheet's 'Smite' is Double Chance. Bracelets: Wisdom > Destruction > Time > Illusion > Death. Belt and amulet: upgrade to Unique early, then stop; amulet to +10, then Substance Morph. Clash Runes: +1 early, about +5 later (the sheet); Allyria says not past +6/7 because upgrades are RNG-heavy, and a failed rune upgrade destroys the rune. Arcana: Chalice Time · Parchment Life/Destiny · Compass Death/Freedom · Bell Destruction · Mirror Illusion/Wisdom, with the sheet's skill lines per card in the table below; daevaos agrees: +4 levels in total on Dark Crush and Onslaught from Chalice and Parchment, +4 on Recuperation from the Compass, and the highest Attack Preparation roll on the Bell. Daevanion: about 316 points at 45 (+100 from shops); Orange > Blue > Green > White; blue Dark Crush / Onslaught / Spinning Strike tiles at 8 / 12 / 16 / 20 and a green Wind's Promise tile; a Global Chanter tile path is UNVERIFIED (the daevaos build stores a node path on five boards, Triniel 75 nodes, Vaizel 65, Nezekan 60, Zikel 60, Azphel 22, that only its planner renders; it was not checked against Global data). Battle healers: HP tiles rise in value, but no Global source sets a path (UNVERIFIED), and no Global source tests heal stats for Chanter (Heal Boost / Restoration lines UNVERIFIED). Global gear changes (all classes): Perfect was removed from capes, necklaces gained Might, Precision and Combat Speed, and wings can't be enhanced in Season 1. Brooch, Seals and Pendant aren't on Global yet (so the sheet's Brooches and Seals rows below don't apply), and the Ludra raid hasn't arrived (NC calls it upcoming). Daevanion changes on Global: orange % tiles cut from 2.5% to 1.5%, Attack 5 → 3 and Crit 10 → 5, the Ariel (PvE) board is removed, Azphel's PvP stats are reduced, and there are about 200 fewer points at 45."
    },
-   "hits": "Dark Crush ~45–54 casts per minute without Marchutan's Wrath, ~58–60 with it (Korean dummy, Sep). The average gap between Dark Crush casts should be ~750 ms at 122% Combat Speed. Global top 10% in boss fights (this week, downtime included): Dark Crush ~30, Spinning Strike ~7 casts a minute",
+   "hits": "Global top-20 Chanters, whole boss fights with downtime: a median 25 Dark Crush uses a minute, and the top 10% by damage at equal CP 35. Without option 5 expect about 5–9. Korean dummy (Sep): Dark Crush ~45–54 casts per minute without Marchutan's Wrath, ~58–60 with it; the Inven Sep 17 post says the 122.6% Combat Speed cap 'suddenly became useless', the skill macro should stay minimal and Marchutan's Wrath is no longer mandatory (Korea)",
    "patches": [
     [
-     "Sep 16",
-     "Guardian Blessing 5 min → 2 min. Stack it on top of Power of the Storm."
+     "Oct 14 (KR/TW, not on Global)",
+     "Korea's Oct 14 update changed Rushing Smash (defense plus all-element resistance up to 80%; its cooldown-reduction effect removed) and Focused Defense (-0.3 s cooldown per successful block). Global's Oct 13 notes have neither."
     ],
     [
-     "Aug 26",
-     "Dark Crush now opens after any ranged skill (was: stunned target). Spinning Strike cooldown 15 s / 100 MP; Impactful Crush 10 s."
+     "Oct 13 (Global)",
+     "No Chanter change in the Oct 13 PDT patch (build 25926599), the Oct 6 patch or the Oct 8 hotfix: no Chanter nerfs on Global."
+    ],
+    [
+     "Sep 23 (KR/TW)",
+     "Undefeated Mantra and Power of the Storm are disabled during Battlefield Might in Abyss bosses and Rifts. UNVERIFIED on Global."
+    ],
+    [
+     "Sep 16 (KR/TW, live on Global)",
+     "Guardian Blessing cooldown 5 min → 2 min. Live on Global: Chanters recast it in 85 of 93 fights longer than 130 s (the aion2.app DB, an older Sep 18 snapshot, still shows 300 s). Recast it with Power of the Storm."
+    ],
+    [
+     "Sep 2 (KR/TW, live on Global)",
+     "Spinning Strike back to a 30 s cooldown (25 s with option 1) and Impactful Crush back to 15 s: this reverted the Aug 26 cuts, and it is what the Global DB shows."
+    ],
+    [
+     "Aug 26 (KR/TW, live on Global)",
+     "Dark Crush now opens after any ranged skill (was: stunned target), and a minimum cancel time was added. The Aug 26 cooldown cuts (Spinning Strike 15 s, Impactful Crush 10 s) are not live: see Sep 2."
     ]
    ],
    "src": [
@@ -2586,6 +2800,30 @@
     [
      "Inven PvE guide (327k views)",
      "https://www.inven.co.kr/board/aion2/6451/116"
+    ],
+    [
+     "Global class sheet (zxcastform), Chanter tab (Oct 14 snapshot; since moved to daevaos)",
+     "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+    ],
+    [
+     "Chanter quick guide (daevaos, Castform)",
+     "https://daevaos.com/guides/chanter-quick-guide"
+    ],
+    [
+     "NotMeter Korea top-20 setup guide",
+     "https://notmeter.com/?view=setup-guide"
+    ],
+    [
+     "Sirin's Global guide (Global rules: slots, rarity, gear)",
+     "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+    ],
+    [
+     "Korea Sep 2 patch notes (Spinning Strike, Impactful Crush)",
+     "https://aion2.plaync.com/ko-kr/board/update/view?articleId=6a9727b8fa34c1011d627551"
+    ],
+    [
+     "Korea Oct 14 patch notes (Rushing Smash, Focused Defense)",
+     "https://aion2.plaync.com/ko-kr/board/update/view?articleId=6ace86b86cfe4756db5b8d81"
     ]
    ],
    "sheet": {
@@ -2709,19 +2947,19 @@
      ],
      [
       4,
-      "Marchutan's Wrath"
+      "Focused Defense"
      ],
      [
       5,
       "Guardian Blessing"
      ],
      [
-      6,
-      "Focused Defense"
+      5,
+      "Impeding Authority"
      ],
      [
-      6,
-      "Impeding Authority"
+      5,
+      "Marchutan's Wrath"
      ]
     ],
     "stigmaNotes": [],
@@ -2785,7 +3023,7 @@
      "Chest": "Damage Boost > Wind's Promise > Impact Hit > Crit > Accuracy > Attack > Defense Increase",
      "Legs": "Damage Tolerance > Wind's Promise > Impact Hit > Perfect Increase > Attack increase > Crit > Attack",
      "Gloves/Boots": "Speed > Wind's Promise > Impact Hit > Perfect Chance > Crit > Attack > Defense increase",
-     "Cape": "Wind's Promise > Impact Hit > Smite > Perfect Chance > Attack increase > Crit > Attack"
+     "Cape": "Wind's Promise > Impact Hit > Double Chance (Smite) > Attack increase > Crit > Attack"
     },
     "acc": {
      "Earring & Necklace": "Wind's Promise > Impact Hit > Attack Preparation > Might > Precision > Accuracy > Crit > Attack > N/A",
@@ -2832,7 +3070,6 @@
      ]
     },
     "notes": [
-     "Manually Press (3) Marchutan when the macro runs out of Dark Crush procs to extend your uptime on Dark Crush",
      "Macro: [ = left click , ] = ingame macro",
      "Option 1: Hold down 2 buttons. LMB (Left click) + In-Macro Key of your choice (RMB Recommended)",
      "Option 2: Mouse button (either hold or toggle) which uses both lmb + in-game macro"

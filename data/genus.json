@@ -14696,7 +14696,7 @@
     "id": "pve",
     "name": "PvE damage / off-tank",
     "role": "melee tank, front",
-    "profile": "Crit 40% overall, 28% on skills without guaranteed crits; 77% front / 12% back hits; doubles 13%.",
+    "profile": "Crit 40% overall, 36–38% on skills without guaranteed crits (top 20); 77% front / 12% back hits; doubles 13%.",
     "boards": {
      "Cogni": [
       {
@@ -15288,7 +15288,7 @@
      ]
     ],
     "caps": [
-     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~28% for top Global players → about 22 points of headroom, so Critical Hit still pays.",
+     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~36–38% for top-20 Global Templars (per-player median 38%; all Global Templars 24%) → about 12 points of headroom, so Critical Hit still pays. The sheet and daevaos also list Accuracy as a co-priority.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
      "Positioning: you land ~77% of hits from the front and ~12% from behind (top Global parses)."
@@ -15301,7 +15301,7 @@
     "id": "tank",
     "name": "PvE main tank (raids)",
     "role": "melee tank, front",
-    "profile": "Crit 40% overall, 28% on skills without guaranteed crits; 77% front / 12% back hits; doubles 13%.",
+    "profile": "Crit 40% overall, 36–38% on skills without guaranteed crits (top 20); 77% front / 12% back hits; doubles 13%.",
     "boards": {
      "Cogni": [
       {
@@ -15893,7 +15893,7 @@
      ]
     ],
     "caps": [
-     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~28% for top Global players → about 22 points of headroom, so Critical Hit still pays.",
+     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~36–38% for top-20 Global Templars (per-player median 38%; all Global Templars 24%) → about 12 points of headroom, so Critical Hit still pays. The sheet and daevaos also list Accuracy as a co-priority.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
      "Positioning: you land ~77% of hits from the front and ~12% from behind (top Global parses)."
@@ -15906,7 +15906,7 @@
     "id": "pvp",
     "name": "PvP (community build)",
     "role": "melee tank, front",
-    "profile": "Crit 40% overall, 28% on skills without guaranteed crits; 77% front / 12% back hits; doubles 13%.",
+    "profile": "Crit 40% overall, 36–38% on skills without guaranteed crits (top 20); 77% front / 12% back hits; doubles 13%.",
     "boards": {
      "Cogni": [
       {
@@ -16486,7 +16486,7 @@
      ]
     ],
     "caps": [
-     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~28% for top Global players → about 22 points of headroom, so Critical Hit still pays.",
+     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~36–38% for top-20 Global Templars (per-player median 38%; all Global Templars 24%) → about 12 points of headroom, so Critical Hit still pays. The sheet and daevaos also list Accuracy as a co-priority.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
      "Positioning: you land ~77% of hits from the front and ~12% from behind (top Global parses)."
@@ -18901,7 +18901,7 @@
     "id": "pve",
     "name": "PvE damage (bosses and dungeons)",
     "role": "ranged caster",
-    "profile": "Crit 44% overall, 32% on skills without guaranteed crits; 31% front / 28% back hits; doubles 12%.",
+    "profile": "Crit 44% overall, about 42–44% (hit-weighted) on fire skills that don't always crit; 31% front / 28% back hits; doubles 12%.",
     "boards": {
      "Cogni": [
       {
@@ -19493,7 +19493,7 @@
      ]
     ],
     "caps": [
-     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~32% for top Global players → about 18 points of headroom, so Critical Hit still pays.",
+     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your fire skills that don't always crit: about 42–44% (hit-weighted) for top Global players → about 6–8 points of headroom, so Critical Hit still pays a little. The daevaos Global guide lists Accuracy 40 / Crit 30 on lines 3/6/9.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
      "Positioning: you land ~31% of hits from the front and ~28% from behind (top Global parses)."
@@ -19506,7 +19506,7 @@
     "id": "pvp",
     "name": "PvP (community build)",
     "role": "ranged caster",
-    "profile": "Crit 44% overall, 32% on skills without guaranteed crits; 31% front / 28% back hits; doubles 12%.",
+    "profile": "Crit 44% overall, about 42–44% (hit-weighted) on fire skills that don't always crit; 31% front / 28% back hits; doubles 12%.",
     "boards": {
      "Cogni": [
       {
@@ -20086,7 +20086,7 @@
      ]
     ],
     "caps": [
-     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~32% for top Global players → about 18 points of headroom, so Critical Hit still pays.",
+     "Stat crit cap on Global: 50% (Kanon, Oct 4). Your fire skills that don't always crit: about 42–44% (hit-weighted) for top Global players → about 6–8 points of headroom, so Critical Hit still pays a little. The daevaos Global guide lists Accuracy 40 / Crit 30 on lines 3/6/9.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
      "Positioning: you land ~31% of hits from the front and ~28% from behind (top Global parses)."
@@ -22504,7 +22504,7 @@
     "id": "pve",
     "name": "PvE damage and support (buffs are unaffected by Genus)",
     "role": "melee/ranged support, mostly behind",
-    "profile": "Crit 50% overall, 44% on skills without guaranteed crits; 15% front / 71% back hits; doubles 15%. Wind's Promise procs on crits.",
+    "profile": "Crit 50% overall, 44% on skills without guaranteed crits; a median 64% of hits from behind (44% for the CP-adjusted top 10%); doubles 15%. Wind's Promise procs on crits.",
     "boards": {
      "Cogni": [
       {
@@ -23099,7 +23099,7 @@
      "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~44% for top Global players → about 6 points of headroom, so Critical Hit still pays.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
-     "Positioning: you land ~15% of hits from the front and ~71% from behind (top Global parses).",
+     "Positioning: top Global Chanters land a median 64% of hits from behind (44% for the CP-adjusted top 10%); Korea's top 20 run Front Damage Boost manastones 85% of the time. Back Damage Boost on manastones fits that positioning, but no Chanter source tests it (UNVERIFIED).",
      "Mantras and Power of the Storm are flat buffs; no Genus line changes what they give your party."
     ],
     "conf": "Medium",
@@ -23110,7 +23110,7 @@
     "id": "pvp",
     "name": "PvP (community build)",
     "role": "melee/ranged support, mostly behind",
-    "profile": "Crit 50% overall, 44% on skills without guaranteed crits; 15% front / 71% back hits; doubles 15%. Wind's Promise procs on crits.",
+    "profile": "Crit 50% overall, 44% on skills without guaranteed crits; a median 64% of hits from behind (44% for the CP-adjusted top 10%); doubles 15%. Wind's Promise procs on crits.",
     "boards": {
      "Cogni": [
       {
@@ -23693,7 +23693,7 @@
      "Stat crit cap on Global: 50% (Kanon, Oct 4). Your skills without guaranteed crits: ~44% for top Global players → about 6 points of headroom, so Critical Hit still pays.",
      "Accuracy: top Global players are parried ~0% on current dungeons (NotMeter parses). Projected Ludra needs ~1,200 (Kanon, aion2guidance; unconfirmed). Take PvE Accuracy on 3/6/9 only while your meter shows parries or blocks.",
      "Slot 4 values assume Global-scale totals (Damage Boost + PvE ≈ 70–95% with a Chanter, Weapon Damage Boost ≈ 27%). As Damage Boost climbs toward Korea's ~180%, Weapon/positional/crit-damage boosts overtake PvE Damage Boost.",
-     "Positioning: you land ~15% of hits from the front and ~71% from behind (top Global parses).",
+     "Positioning: top Global Chanters land a median 64% of hits from behind (44% for the CP-adjusted top 10%); Korea's top 20 run Front Damage Boost manastones 85% of the time. Back Damage Boost on manastones fits that positioning, but no Chanter source tests it (UNVERIFIED).",
      "Mantras and Power of the Storm are flat buffs; no Genus line changes what they give your party."
     ],
     "conf": "Low",

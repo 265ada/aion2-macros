@@ -294,6 +294,14 @@
     [
      "Triniel's Dagger 25",
      "+10% back damage for 5s on hit"
+    ],
+    [
+     "Savage Fang 15",
+     "+10% PvE damage for 10s on hit"
+    ],
+    [
+     "Triniel's Dagger 10",
+     "-10% all your cooldowns on hit"
     ]
    ],
    "tiers": {
@@ -314,7 +322,7 @@
      ],
      [
       "Savage Fang",
-      "Macro skill, +10% PvE damage at 15"
+      "Engraves 5 Insignias, +10% PvE damage at 15"
      ]
     ],
     "B": [
@@ -370,7 +378,7 @@
        ],
        [
         "Swift Contract",
-        20
+        15
        ],
        [
         "Triniel's Dagger",
@@ -381,11 +389,15 @@
         15
        ]
       ],
-      "why": "Illusive Clone and Swift Contract are your burst window. Savage Fang is in the macro and gives +10% PvE damage at 15. Triniel's Dagger 10 cuts all your cooldowns by 10% on hit, and Korean guides stop it at 10.",
+      "why": "Illusive Clone (98% of top Global Assassins, median level 20) and Swift Contract (95%, median 15) are your burst window; Triniel's Dagger (91%) 10 cuts all your cooldowns by 10% on hit, and Korean guides stop it at 10. Savage Fang is the damage 4th (43%, median 15): it engraves 5 Insignias and gives +10% PvE damage at 15. At equal CP, Fang users vs Evasion Stance users (51 vs 55 players) were 4–5% behind per player and 6–7% ahead per parse, so the data can't separate them; Fang is in 15 of the 30 top-10% parses against 2 for Evasion Stance.",
       "src": [
        [
         "Global class sheet (zxcastform)",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
        ],
        [
         "KR May: levelling priority",
@@ -397,6 +409,39 @@
        ]
       ],
       "main": true
+     },
+     {
+      "t": "Survival 4th (learning fights)",
+      "tag": "Swap",
+      "pick": [
+       [
+        "Illusive Clone",
+        20
+       ],
+       [
+        "Swift Contract",
+        15
+       ],
+       [
+        "Triniel's Dagger",
+        10
+       ],
+       [
+        "Evasion Stance",
+        5
+       ]
+      ],
+      "why": "Evasion Stance gives guaranteed evasion of all damage for a brief moment (5 = a second use). 47% of top Global Assassins run it as the 4th (38% of parses), median level 5. It is the survival pick; Savage Fang is the damage pick.",
+      "src": [
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (link retired)",
+        ""
+       ],
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ]
+      ]
      },
      {
       "t": "Solo / farming",
@@ -419,11 +464,44 @@
         15
        ]
       ],
-      "why": "Throw Shadowblade resets on kills at 10 and becomes an AoE at 20, so packs die fast. Korean guides call it essential for field and Abyss hunting.",
+      "why": "Throw Shadowblade resets on kills at 10 and becomes an AoE at 20, so packs die fast. Korean guides call it essential for field and Abyss hunting. No Global source tests this list, so it is derived from the skill effects and Korean (KR/TW) advice.",
       "src": [
        [
         "KR May: Shadowblade for field hunting",
         "https://vortexgaming.io/postdetail/854915"
+       ]
+      ]
+     },
+     {
+      "t": "PvP (this page's pick)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Swift Contract",
+        20
+       ],
+       [
+        "Evasion Stance",
+        20
+       ],
+       [
+        "Smoke Bomb",
+        20
+       ],
+       [
+        "Shadow Walk",
+        20
+       ]
+      ],
+      "why": "UNVERIFIED for Global: there is no Global PvP data, and this four is built from the skill effects. Swift Contract adds Combat Speed; Evasion Stance gives two dodges (15: move speed; 20: 10% HP); Smoke Bomb blinds (10: AoE; 20: second use); Shadow Walk is the stealth opener. The Korean Aug 29 post is a review of all 13 stigmas, not a build: it calls Swift Contract the one still worth taking (for its attack-power bonus), Smoke Bomb marginal but used, and Illusive Clone not used in PvP.",
+      "src": [
+       [
+        "Inven Aug 29 Assassin PvP stigma review (KR/TW)",
+        "https://www.inven.co.kr/board/aion2/6449/20500"
+       ],
+       [
+        "Assembled from the stigma effects; not a single source",
+        ""
        ]
       ]
      }
@@ -432,22 +510,27 @@
      [
       "Illusive Clone",
       20,
-      "10: +20% crit damage in the window (the must-have level). 15: x1.5 Exploit Weakness. 20: extra damage on crits."
+      "10: +20% crit damage in the window (the must-have level). 15: x1.5 Exploit Weakness. 20: 50% chance of extra damage on crits. The window lasts 10s at level 1 and 20s at 20. 98% use it, median 20."
      ],
      [
       "Swift Contract",
-      20,
-      "10: x1.5 Rear Smite. 15: x1.5 Assault Stance. 20: +10% more combat speed."
+      15,
+      "10: x1.5 Rear Smite. 15: x1.5 Assault Stance. 20: +10% more combat speed (later). 95% use it, median 15."
      ],
      [
       "Savage Fang",
       15,
-      "10: +50 stagger. 15: +10% PvE damage for 10s. 20 (always crit) is last."
+      "10: +50 stagger. 15: +10% PvE damage for 10s. 20 (always crit) is last. 43% use it, median 15."
      ],
      [
       "Triniel's Dagger",
       10,
-      "10: -10% all cooldowns on hit. 15 and 20 barely matter in PvE."
+      "10: -10% all your cooldowns on hit. 15 resets on kill. 20 only raises the cooldown increase on the target from 5% to 8% of its duration (an enemy-side effect), so skip it."
+     ],
+     [
+      "Evasion Stance",
+      5,
+      "5: a second dodge. 47% use it, median 5. The survival 4th."
      ],
      [
       "Throw Shadowblade",
@@ -467,31 +550,33 @@
         10
        ],
        [
-        "Savage Fang",
-        10
-       ],
-       [
         "Triniel's Dagger",
         10
        ]
       ],
-      "n": "Korean advice: if levels are 'awkwardly high' on one, drop it to 10 and spread shards."
+      "n": "This page's order, from the Global medians and DB breakpoints. Korea's May guide (6 slots, no 15/20 steps) puts Savage Fang at 10+ alongside Clone and Swift first, then the Dagger at 10, Evasion Stance 5 and Throw Shadowblade 10."
      },
      {
       "s": [
        [
         "Savage Fang",
         15
+       ]
+      ],
+      "n": "Or Evasion Stance 5 if you take the survival 4th. Savage Fang 15 adds +10% PvE damage for 10s."
+     },
+     {
+      "s": [
+       [
+        "Swift Contract",
+        15
        ],
        [
         "Illusive Clone",
         15
-       ],
-       [
-        "Swift Contract",
-        15
        ]
-      ]
+      ],
+      "n": "Swift 15: x1.5 Assault Stance. Clone 15: x1.5 Exploit Weakness."
      },
      {
       "s": [
@@ -503,7 +588,8 @@
         "Swift Contract",
         20
        ]
-      ]
+      ],
+      "n": "Clone 20: 50% chance of extra damage on crits. Swift 20: +10% more combat speed."
      }
     ],
     "imageNote": "3 of 4 match. Throw Shadowblade is the farming pick (resets on kills). For bosses, Korean guides take Triniel's Dagger at 10 instead."
@@ -517,9 +603,9 @@
       5
      ],
      "lvl": "20",
-     "note": "From a 6.9M-DPS setup (Sep 18). Use 2, 4, 5 if you need lifesteal.",
+     "note": "4: -1 s Insignia Explosion cooldown per hit. 5: ignores Block/Evasion and crits. Global top: 4+5 59%. Take 16 first, then 20. The sheet's 3+4+5 is from a Korean 6.9M-DPS setup (Sep 18); use 2, 4, 5 if you need lifesteal. PvP (UNVERIFIED): option 5 is mandatory.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -527,12 +613,12 @@
      "n": "Savage Roar",
      "pick": [
       2,
-      3
+      4
      ],
-     "lvl": "16",
-     "note": "Korea's Sep optimizer: 2 · 3 · 4. 4 (-1s Shadowstrike cooldown) is the key one.",
+     "lvl": "12",
+     "note": "4: -1 s Shadowstrike cooldown per hit (the key one). Global top: 2+4 for 68%; the sheet's 2+3 at 16 is the minority (30%), and Korea runs 2+3+4. No top Global player is past 12.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -543,7 +629,7 @@
       3
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 2 · 5. 2 (+20% crit damage) from level 8.",
+     "note": "Option 2: +20% Crit Damage Boost for 10 s (the aion2.app database still says 5 s; questlog's Global data and Global parses show 10 s). Global top: 2+3 for 56%. Korea's Sep optimizer: 2 · 5. PvP (UNVERIFIED): option 3 (Seal) gains value.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -556,7 +642,7 @@
       2
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 1 · 2 · 4. Not 5 (extra uses): it slows the motion and lowered damage. Ambush now sits in row 1 of the macro line (Sep 30 guide).",
+     "note": "1: 2 Insignias on a back hit. 2: absorb 3% HP. Don't take option 5 (+2 uses): Korea's Sep 30 guide says it slowed the motion and lowered damage, although Korea's top 20 run 4+5 at 16 anyway. On Global, Ambush is no longer in the recommended macro: its users trail at equal CP. 1+2 at 12 is about half of Ambush parses, and 14% are at 16+.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -570,7 +656,7 @@
       5
      ],
      "lvl": "20",
-     "note": "Sep 30 guide: option 2 is now required, or damage drops. Ambush's lifesteal in the macro covers sustain.",
+     "note": "2: an Insignia per hit. 4: multi-hit. 5: resets on crit. Global top: 4+5 55%, 3+4+5 15%. At 20 the third pick differs: sheet 2, Korea 1, Global 3. The Korean Sep 30 guide says option 2 is required for the Ambush line, or damage drops.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -583,7 +669,7 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Option 4 unlocks at 12. Global top: 4+5 45%, 1+4 30% (of users with picks).",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -609,7 +695,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 2+4 for 88%.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -622,7 +708,7 @@
       2
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 1+2 for 59%.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -635,7 +721,7 @@
       2
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Korea runs 1+3.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -649,9 +735,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Fixed for PvE.",
+     "note": "2: multi-hit. 3: keep 2 stacks. 5: -3 s cooldown. Global top: 2+5 55%, 2+3 21%. Take 16 first (77% of top Global players are at 16+), then 20.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -662,7 +748,7 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Global top: 3 alone for 57%.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -672,74 +758,86 @@
    "skills": {
     "first": [
      "Heart Gore",
-     "Quick Slice"
+     "Insignia Explosion"
     ],
     "act": [
      [
       "Heart Gore",
       "20",
       "DPS",
-      "Your core: it resets on crits (pick 5, which needs 16)."
-     ],
-     [
-      "Quick Slice",
-      "20",
-      "DPS",
-      "Held basic attack; pick 4 cuts Insignia Explosion's cooldown on every hit."
+      "28% of damage; it resets on crits (pick 5, which needs 16). 88% of top Global players are at 16+ and 21% at 20."
      ],
      [
       "Insignia Explosion",
       "20",
       "DPS",
-      "Detonates your Insignia stacks."
+      "20.2% of damage; detonates your Insignia stacks. 16 first (-3 s cooldown; 77% of top Global players are at 16+), then 20."
+     ],
+     [
+      "Quick Slice",
+      "20",
+      "DPS",
+      "Held basic attack; its chains are 20% of damage and pick 4 (level 12) cuts Insignia Explosion's cooldown on every hit. 70% of top Global players are at 16+; go to 16, then 20."
      ],
      [
       "Savage Roar",
-      "20",
+      "12",
       "DPS",
-      "Filler that builds Insignias; pick 4 cuts Shadowstrike's cooldown."
+      "Filler that builds Insignias; its chain is about 10% of damage and pick 4 cuts Shadowstrike's cooldown. No top Global player is past 12; the sheet says 16 and Korea's top 20 run 20."
      ],
      [
       "Ambush",
-      "20",
+      "12",
       "DPS",
-      "Ranked just below the four above. Row 1 of the Heart Gore line since the Sep 30 guide."
+      "Optional: it isn't in the recommended macro because its users trail at equal CP. 69% of top Global players use it (1+2 at 12, 14% at 16+)."
      ],
      [
       "Shadowstrike",
-      "16",
+      "12",
       "Buff",
-      "Pick 2 gives +20% crit damage for 5s. 8 is the minimum."
+      "Pick 2 gives +20% crit damage for 10s on Global (the aion2.app database says 5s). 8 is the minimum."
      ],
      [
       "Whirlwind Slice",
-      "16",
+      "12",
       "DPS",
-      "Multi-hit pick fixed; range or AoE by taste."
+      "Sheet level 12. Multi-hit pick fixed; range or AoE by taste."
      ],
      [
       "Storm Rampage",
       "16",
       "DPS",
-      "Stagger-window skill held on its own key."
+      "Stagger-window skill held on its own key. 69% of top Global players use it and 56% of those are at 16. Pick 5: -1 s all cooldowns per hit."
      ]
     ],
     "pas": [
      [
       "Rear Smite",
-      "Back-attack damage boost plus PvE damage. Highest priority. Swift Contract 10 multiplies it x1.5."
-     ],
-     [
-      "Exploit Weakness",
-      "+100 Crit and an Attack proc. Rated tier 1 since it gained the Attack bonus. Illusive Clone 15 multiplies it x1.5."
-     ],
-     [
-      "Impact Hit (assassin)",
-      "Double Chance."
+      "Back-attack damage boost (+3%) plus PvE damage (+3%). Highest priority (KR 36). Swift Contract 10 multiplies it x1.5."
      ],
      [
       "Assault Stance",
-      "Crit damage. Swift Contract 15 multiplies it x1.5."
+      "+6% Crit damage (KR 33). Swift Contract 15 multiplies it x1.5."
+     ],
+     [
+      "Exploit Weakness",
+      "+100 Crit and an Attack proc, 3.0% of damage. Global median level 17 (KR 27). Illusive Clone 15 multiplies it x1.5."
+     ],
+     [
+      "Impact Hit (assassin)",
+      "Double Chance (KR 24)."
+     ],
+     [
+      "Ambush Stance",
+      "A 3.3%-of-damage proc after rushing skills. Global median level 15."
+     ],
+     [
+      "Determination",
+      "Low priority: 2.1% of damage, only on targets at 30% HP or less (KR 18)."
+     ],
+     [
+      "Defense Break",
+      "Filler at 10–15 (KR 13–15), like Apply Poison, Heightened Sixth Sense and Revitalization Contract."
      ]
     ],
     "wings": "Talisra 58%, Awaken Pride 30% (newer, expected to overtake)",
@@ -755,6 +853,18 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Assassin Class Guide PVE, Global (daevaos, Castform)",
+      "https://daevaos.com/guides/assassin-class-guide-pve"
+     ],
+     [
+      "NotMeter Korea top-20 setup guide (KR levels)",
+      "https://notmeter.com/?view=setup-guide"
+     ],
+     [
+      "Global class sheet (zxcastform, Oct 14 copy)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     ]
    }
@@ -804,7 +914,7 @@
        20
       ]
      ],
-     "why": "Light of Protection is a party-wide damage and damage-tolerance toggle. Earth Punishment and Prayer of Amplification are your party damage (tested level-25 damage order: Prayer > Earth Punishment > Light > Noble Aura). Benevolence is your group heal-over-time and cleanse. Salvation is your personal invulnerability; some dungeons (Deus, Noiran) need it.",
+     "why": "Light of Protection is a party-wide damage and damage-tolerance toggle. Earth Punishment and Prayer of Amplification are your damage buffs (Prayer is self-only; tested level-25 damage order: Prayer > Earth Punishment > Light > Noble Aura). Benevolence is your group heal-over-time and cleanse. Salvation is your personal invulnerability; some dungeons (Deus, Noiran) need it.",
      "src": [
       [
        "Max = three 25s + one 23",
@@ -942,7 +1052,7 @@
        5
       ]
      ],
-     "n": "Prayer 5 = +20% PvE damage boost for the party. Earth Punishment 10 = +10% Double Chance (party +5%)."
+     "n": "Prayer 5 = +20% PvE damage boost for you (Prayer is self-only). Earth Punishment 10 = +10% Double Chance (party +5%)."
     },
     {
      "s": [
@@ -1025,7 +1135,7 @@
    "milestones": [
     [
      "Prayer of Amplification 5",
-     "+20% PvE damage boost: the biggest cheap party buff you have"
+     "+20% PvE damage boost, for you only: the biggest cheap damage buff you have"
     ],
     [
      "Earth Punishment 5",
@@ -1048,7 +1158,7 @@
      ],
      [
       "Prayer of Amplification",
-      "+20% PvE damage at 5; top damage pick"
+      "Self buff: +20% PvE damage at 5; top damage pick"
      ],
      [
       "Light of Protection",
@@ -1058,7 +1168,7 @@
     "A": [
      [
       "Noble Aura",
-      "5-minute pet; +30% vs bosses at 15"
+      "300 s companion attack; +30% vs bosses at 15"
      ],
      [
       "Benevolence",
@@ -1072,7 +1182,7 @@
     "B": [
      [
       "Yustiel's Power",
-      "Raid tolerance when a Chanter covers Light"
+      "Party PvE tolerance (20% at level 1, 30% at 20); a swap when a Chanter covers Light"
      ],
      [
       "Absolution",
@@ -1105,41 +1215,49 @@
    "gl": {
     "builds": [
      {
-      "t": "Global sheet pick (damage, content on farm)",
+      "t": "Top Global Clerics (damage-leaning healer)",
       "tag": "Most used",
       "pick": [
        [
-        "Light of Protection",
-        15
-       ],
-       [
         "Earth Punishment",
         20
+       ],
+       [
+        "Prayer of Amplification",
+        15
        ],
        [
         "Noble Aura",
         15
        ],
        [
-        "Prayer of Amplification",
-        20
+        "Light of Protection",
+        15
        ]
       ],
-      "why": "The Global sheet's order: Light of Protection, Earth Punishment, Noble Aura, Prayer of Amplification. The sheet calls it a personal-damage setup once content is on farm. While learning a fight, swap #3 or #4 for Benevolence or Summon Resurrection. With a Chanter in the party, swap Light of Protection out, because Undefeated Mantra replaces it.",
+      "why": "What top Global Clerics run (per player, top 20 per boss: Earth Punishment 100%, Prayer 94%, Noble Aura 85%, Light of Protection 43%) and what Korea's top 20 run. The Global sheet's own priority is different: 1. Light of Protection, 2. Earth Punishment, 3. Absolution, 4. Summon Resurrection, swapping Light of Protection for Prayer of Amplification or Resurrection with a Chanter. Light of Protection takes slot 4 only when no Chanter runs Undefeated Mantra. Prayer is self-only, and its 5 is the big step. Per player, Clerics with Noble Aura (70 players) deal about 12% more personal damage than those with Light of Protection (8), but 177 of the 186 Noble Aura parses had an Undefeated Mantra Chanter and 14 of the 19 Light of Protection parses had none; controlling for that the gap is +3% (range -5% to +11%), not significant, and the meter can't see Light of Protection's party-wide buff. Keep Light of Protection when no Chanter covers it.",
       "src": [
        [
-        "Global class sheet (zxcastform)",
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
+        "Global class sheet (zxcastform): its own priority",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
        ],
        [
-        "KR Feb 27 Cleric guide",
-        "https://vortexgaming.io/postdetail/684217"
+        "NotMeter Korea top-20 setup guide",
+        "https://notmeter.com/?view=setup-guide"
+       ],
+       [
+        "questlog: Light of Protection levels",
+        "https://questlog.gg/aion-2/en/db/skill/17410000"
        ]
       ],
       "main": true
      },
      {
-      "t": "Party healer",
+      "t": "Care loadout (learning fights)",
       "tag": "Swap",
       "pick": [
        [
@@ -1148,22 +1266,30 @@
        ],
        [
         "Prayer of Amplification",
-        20
-       ],
-       [
-        "Light of Protection",
         15
        ],
        [
         "Benevolence",
         20
+       ],
+       [
+        "Salvation",
+        15
        ]
       ],
-      "why": "Korea's 4-slot Clerics always ran Light of Protection 15 and Earth Punishment 20, and by March added Prayer of Amplification 15 as the third. For the 4th, Benevolence (group heal-over-time, cleanse every 5s at 20) is what Korean Clerics bring for care now; it isn't in their Season 1 lists, so it likely arrived in March. Take Prayer to 20 only if you're not already at the Attack cap.",
+      "why": "For progression: Benevolence 20 (group heal over time; cleanses every 5 s at 20) and Salvation 15 (it also protects the lowest-HP party member) or Summon Resurrection 10 (3 s invincibility after the raise; it is 4th in the sheet's own priority list). Costs 220 shards against 180 for the main loadout; with 32 shards at 45 and about 20 a week, that is a few weeks of saving. Korea's 4-slot Clerics brought Benevolence for care too, though it isn't in their Season 1 lists, so it likely arrived in March.",
       "src": [
        [
-        "KR Feb 4: LoP 15 + Earth Punishment 20 fixed",
-        "https://www.inven.co.kr/board/aion2/6452/7695"
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
+        "questlog: Benevolence",
+        "https://questlog.gg/aion-2/en/db/skill/17160000"
+       ],
+       [
+        "Global class sheet (zxcastform): Summon Resurrection 4th",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
        ],
        [
         "KR Mar 4: fixed three + levels",
@@ -1185,7 +1311,7 @@
        ],
        [
         "Prayer of Amplification",
-        20
+        15
        ],
        [
         "Noble Aura",
@@ -1196,8 +1322,16 @@
         20
        ]
       ],
-      "why": "Chanter's Undefeated Mantra overrides your Light of Protection (higher level wins), so the slot goes to Noble Aura: +30% damage to bosses (Incapacitated Immunity) at 15.",
+      "why": "A Chanter's Undefeated Mantra and your Light of Protection don't stack: the higher level wins and the Mantra wins ties (the DB names the Damage Boost part; the sheet says the Chanter's buff takes priority). 81% of single-Cleric Global parties have a Mantra Chanter, and there Clerics run Light of Protection only 20% of the time, against 94% with no Chanter. The sheet lets the Cleric swap it for 'another heal / shield / self buff-dmg Stigma' (it names Prayer of Amplification or Resurrection, and says Yustiel's Power 'during certain mechs can be really strong'). This page suggests Benevolence 20 or Yustiel's Power (party PvE tolerance, 20% at level 1, 30% at 20). Global logs can't settle it: with a Mantra Chanter the most common visible extra stigma is Salvation (15%), Benevolence 9%, Yustiel's Power 6%, and in 104 of 240 parses the 4th stigma isn't visible.",
       "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
        [
         "Presets with / without Chanter",
         "https://www.inven.co.kr/board/aion2/6452/28978"
@@ -1225,11 +1359,69 @@
         15
        ]
       ],
-      "why": "The Mar 4 guide's PvE set. The 4th is situational: Salvation 15 (party lowest-HP gets it too), Voice of Doom 15, or Summon Resurrection 5 for learning runs.",
+      "why": "Korea's Season 1 PvE set from the Mar 4 guide (Korean context, not Global data). The 4th is situational: Salvation 15 (the party's lowest-HP member gets it too), Voice of Doom 15, or Summon Resurrection 5 for learning runs.",
       "src": [
        [
         "KR Mar 4 Cleric guide",
         "https://vortexgaming.io/postdetail/688137"
+       ]
+      ]
+     },
+     {
+      "t": "PvP (this guide's picks)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Salvation",
+        20
+       ],
+       [
+        "Earth Punishment",
+        20
+       ],
+       [
+        "Absolution",
+        20
+       ],
+       [
+        "Yustiel's Power",
+        20
+       ]
+      ],
+      "why": "UNVERIFIED for Global: derived from the DB effects, with no Global Cleric PvP source. Salvation gives 3 s of immunity and, at 20, triggers on Impact-type crowd control. Absolution removes all debuffs at 10. Yustiel's Power is party tolerance. The four at 20 cost 300 shards, which is 9–14 weeks out from 32 at level 45 plus about 20 a week.",
+      "src": [
+       [
+        "aion2.app Global DB: Cleric stigmas",
+        "https://aion2.app/db/skills?class=Cleric"
+       ]
+      ]
+     },
+     {
+      "t": "Solo",
+      "tag": "Solo",
+      "pick": [
+       [
+        "Earth Punishment",
+        20
+       ],
+       [
+        "Prayer of Amplification",
+        15
+       ],
+       [
+        "Noble Aura",
+        15
+       ],
+       [
+        "Benevolence",
+        20
+       ]
+      ],
+      "why": "Earth Punishment, Prayer of Amplification, Noble Aura and Benevolence. Solo target levels are the main loadout's, and Benevolence's is the care loadout's (UNVERIFIED). Korean Clerics found Root and Voice of Doom barely help (this page's Korea notes; no primary source linked).",
+      "src": [
+       [
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
        ]
       ]
      }
@@ -1238,32 +1430,42 @@
      [
       "Earth Punishment",
       20,
-      "5: Condemnation always crits on the target. 10: party Double Chance. 15: party Attack and Defense. 20: +10s. The one to push first."
+      "5: Condemnation always crits on the target. 10: +10% Double Chance (party +5%). 15: Attack and Defense (party +5%). 20: +10 s. Global median 20. The one to push first."
      ],
      [
       "Prayer of Amplification",
-      20,
-      "5: +20% PvE damage boost (huge for 5 shards). 10/15: x1.5 two passives. 20: +15% Attack, useless if you're at the Attack cap."
-     ],
-     [
-      "Light of Protection",
       15,
-      "5: +10% healing received. 15: +10% max HP. Korea's 4-slot level was 15."
-     ],
-     [
-      "Benevolence",
-      20,
-      "5: +10s duration. 15: 2% HP every 5s. 20: cleanses every 5s."
+      "Self-only: it never shows on other party members in Global logs. 5 is the big step (+20% PvE Damage Boost); 10 / 15: x1.5 Empyrean Lord's Grace / Earth's Grace; 20 only adds +15% Attack. A Korean March post says 20 is fine if you aren't Attack-capped (written before Global's 4-slot rules). Lasts 10 s at level 1, 17 s at 15."
      ],
      [
       "Noble Aura",
       15,
-      "15: +30% damage to bosses. 20: attacks 1s faster."
+      "A 300 s companion attack (6.3% of damage). 10: +20% damage to targets with Debilitating Mark. 15: +30% damage to Incapacitated-immune bosses. 20: attacks 1 s faster. Global median 10; 15 is the most common."
+     ],
+     [
+      "Light of Protection",
+      15,
+      "Party PvE damage and tolerance: 10.5% at level 1, 17.5% at 15, 20% at 20. 5: +10% Incoming Heal. 15: +10% max HP. Skip it when a Chanter runs Undefeated Mantra at the same or a higher level."
+     ],
+     [
+      "Benevolence",
+      20,
+      "5: +10 s duration. 15: 2% HP every 5 s. 20: cleanses every 5 s."
      ],
      [
       "Salvation",
       15,
-      "10: heals 20% at the end. 15: also protects your lowest-HP party member."
+      "10: heals 20% at the end. 15: also protects your lowest-HP party member. 30% of top Global Clerics run it (level unreadable)."
+     ],
+     [
+      "Summon Resurrection",
+      10,
+      "10: 3 s invincibility after the raise (5 s at 20). The sheet's own priority list has it 4th."
+     ],
+     [
+      "Yustiel's Power",
+      20,
+      "Party PvE Damage Tolerance, 20% at level 1 and 30% at 20: a swap when a Chanter covers Light of Protection."
      ]
     ],
     "order": [
@@ -1282,11 +1484,11 @@
         5
        ],
        [
-        "Benevolence",
+        "Noble Aura",
         5
        ]
       ],
-      "n": "Korean advice: get every pick to its first level, then push Earth Punishment to 20."
+      "n": "Derived from the DB breakpoints and Korean advice (a Korean video: levels first, then Earth Punishment 20). This loadout at its target levels costs 180 shards; a fresh level 45 has 32, plus about 20 a week."
      },
      {
       "s": [
@@ -1294,50 +1496,39 @@
         "Earth Punishment",
         20
        ]
-      ]
+      ],
+      "n": "Care loadout: Earth Punishment 20, Prayer 15, Benevolence 20 and Salvation 15 cost 220 shards; the PvP four at 20 cost 300."
      },
      {
       "s": [
        [
         "Prayer of Amplification",
+        15
+       ],
+       [
+        "Noble Aura",
         15
        ],
        [
         "Light of Protection",
         15
-       ],
-       [
-        "Benevolence",
-        15
-       ]
-      ]
-     },
-     {
-      "s": [
-       [
-        "Benevolence",
-        20
-       ],
-       [
-        "Prayer of Amplification",
-        20
        ]
       ]
      }
     ],
-    "imageNote": "Your list has 6; with 4 slots keep Earth Punishment, Prayer of Amplification, Light of Protection and Benevolence. Noble Aura replaces Light of Protection when a Chanter is with you. Summon Resurrection is for learning runs only."
+    "imageNote": "Your list has 6; with 4 slots keep what top Global Clerics run: Earth Punishment, Prayer of Amplification, Noble Aura and Light of Protection. With a Chanter, swap Light of Protection for Benevolence (or Yustiel's Power). Summon Resurrection is for learning runs; the sheet's own priority list has it 4th."
    },
    "specs": [
     {
      "n": "Earth's Retribution",
      "pick": [
       2,
-      5
+      4
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 2 · 3 · 4. Your basic-attack cancel skill.",
+     "note": "Global top: 2+4 for 63–66%; the sheet also says 2/4 (an earlier reading of the sheet as 2+5 was wrong). 4: -7 s Bolt cooldown per Discharge proc. Korea's top 20 run 2+3+4 at 20 (Korea's Sep optimizer: 2 · 3 · 4). Your basic-attack cancel skill.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1348,10 +1539,10 @@
       2,
       5
      ],
-     "lvl": "20",
-     "note": "",
+     "lvl": "16–20",
+     "note": "Global top: 2+5 for 69%; 76% picked option 5 (so are at 16+). 1+2 at 12, 2+5 at 16, 1+2+5 at 20 (the sheet says 20). Option 5 repeats Divine Punishment, which is 15.1% of damage on top of Judgment Thunder's 8.3%.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1362,9 +1553,9 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 2+4 for 88%. It lowers the boss's PvE Damage Boost by 5% (15% with option 4): damage mitigation. Top Clerics cast it 5.5 times a minute (cap 6). Korea's guide: cast it only when the party is hurting.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1375,10 +1566,10 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "",
+     "lvl": "12–20",
+     "note": "Global top: 3+4 for about 65%. Level 12 now; 16 for option 5 (-10 s cooldown); the sheet says 20 (3+4+5). Option 2 makes it AoE.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1389,9 +1580,9 @@
       4
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 2 · 4 · 5.",
+     "note": "Global top: 2+4 for 90% (Korea's top 20 too). Option 4: -10% more enemy PvE Damage Tolerance, -15% in total for the whole party. With two Clerics the higher-level Chain of Torment overrides the other's (Korean guide).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1402,9 +1593,9 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Global split: 4+5 21%, 3+4 18% (40% picked option 5, buff median 15). Option 5: party tolerance. The sheet says 4+5 at 16.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1416,9 +1607,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Level 20 required.",
+     "note": "Global top: 2+4 47%, 4+5 35%; the sheet and Korea run 2+4+5 at 20. 4 resets it on a crit (level 12), 5 is multi-hit (16). 51% of top Global Clerics are at 16+, 17% at 20.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1429,10 +1620,10 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "Korea's Sep optimizer: 1 · 4 · 3. 16 is enough; 3 adds a cleanse at 20.",
+     "lvl": "16",
+     "note": "Global top: 1+4 for 59%; the sheet says 1+4+5 at 20. Korea's Sep optimizer: 1 · 4 · 3 (3 adds a cleanse at 20).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1443,11 +1634,11 @@
       3,
       5
      ],
-     "lvl": "20",
-     "note": "Korea's Sep optimizer: 2 · 5 · 1. 16 is enough; 1 (removes 2 debuffs) at 20.",
+     "lvl": "16–20",
+     "note": "Global split: 2+3 about 35%, 2+5 about 25%; 1+2+5 or 2+3+5 at 20. It already removes 1 debuff; option 1 makes it 2. Option 2: aion2.app says +20% skill speed, but questlog's Global data and Korea say +1 consecutive use, and Global logs agree (about 3.4–3.9 uses a minute with option 2 against 2.7–2.8 without). Korea's Sep optimizer: 2 · 5 · 1.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Global class sheet (zxcastform), NotMeter Global and questlog",
+      "https://questlog.gg/aion-2/en/db/skill/17120000"
      ]
     },
     {
@@ -1457,10 +1648,10 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "2nd biggest damage source.",
+     "lvl": "16–20",
+     "note": "Global top: 3+4 for 64%; 27% are at 16+ (option 5 always crits). Hold it to Max: an uncharged macro Bolt is about one third of a Max cast. The sheet and Korea say 20.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -1471,9 +1662,9 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "From the sheet: 3 / 3+5 at 16. No Global player with a readable level reaches 16 (0 of 20).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
@@ -1488,66 +1679,94 @@
       "Condemnation",
       "20",
       "DPS",
-      "The guide calls it 'Cleric itself': resets on crits."
+      "1st damage: 35.6% of damage. The guide calls it 'Cleric itself': resets on crits (12). 51% of top Global Clerics are at 16+, 17% at 20. The sheet lists it among the skills to push to 20 while leveling."
      ],
      [
-      "Earth's Retribution",
-      "20",
+      "Judgment Thunder",
+      "16",
       "DPS",
-      "Held basic attack and the source of your cancels; pick 4 cuts Bolt's cooldown."
+      "2nd damage: 8.3% plus Divine Punishment 15.1%. Option 5 (16) repeats Divine Punishment; 76% picked it. The sheet says 20."
      ],
      [
       "Bolt",
-      "20",
+      "16",
       "DPS",
-      "2nd biggest damage source."
+      "3rd: 8.6% of damage, charged to Max by hand. Option 5 (16) always crits; 27% are at 16+. The sheet and Korea say 20."
      ],
      [
       "Divine Aura",
-      "20",
+      "12",
       "DPS",
-      "4th-5th biggest damage source."
+      "4th: 6.1% of damage; 25% are at 16+ (16 takes 10 s off the cooldown). The sheet says 20."
      ],
      [
-      "Radiant Recovery",
-      "16",
-      "Heal",
-      "16 is enough for damage-focused play; 20 adds a cleanse. Older healer guides took it to 20 first, so do that if your party keeps dying."
-     ],
-     [
-      "Healing Light",
-      "16",
-      "Heal",
-      "16 is enough; 20 adds a cleanse chance."
+      "Earth's Retribution",
+      "12",
+      "DPS",
+      "Held basic attack and the source of your cancels; option 4 takes 7 s off Bolt per Discharge proc. Korea runs it at 20 (2+3+4)."
      ],
      [
       "Chain of Torment",
       "12",
       "Debuff",
-      "12 opens the pick that lowers the target's PvE damage tolerance."
+      "12 opens the pick that lowers the target's PvE damage tolerance by another 10%. 90% run 2+4."
+     ],
+     [
+      "Debilitating Mark",
+      "12",
+      "Debuff",
+      "Lowers the boss's PvE Damage Boost by 5% (15% with option 4): damage mitigation. 88% run 2+4; top Clerics cast it 5.5 times a minute (cap 6)."
+     ],
+     [
+      "Radiant Recovery",
+      "16",
+      "Heal",
+      "Heal + cleanse; it already removes 1 debuff (option 1 makes it 2). 37% picked option 5 (so are at 16+). The sheet says 20; older healer guides took it to 20 first, so do that if your party keeps dying."
+     ],
+     [
+      "Healing Light",
+      "16",
+      "Heal",
+      "Single heal; 1+4 (59%). The sheet says 20."
      ],
      [
       "Light of Regeneration",
       "16",
       "Buff",
-      "Party damage tolerance. The Feb guide called 20 important for full healers."
+      "Party heal over time; option 5: party tolerance. 40% picked option 5, buff median 15. The sheet runs it in macro entry 2 early on; the Feb guide called 20 important for full healers."
+     ],
+     [
+      "Lightning Strike Scattershot",
+      "12",
+      "Utility",
+      "Stagger. Korea 16 (4+5). Global: 3+4 32%, 4+5 23% (47 parses)."
+     ],
+     [
+      "Defiance (cleric)",
+      "16",
+      "Utility",
+      "CC break. 16 per the sheet; 0 of 20 Global players with a readable level are at 16."
      ]
     ],
     "pas": [
      [
       "Earth's Grace",
-      "Crit damage and Accuracy. Highest priority (KR endgame 36; +0.29% per level). Prayer of Amplification 15 multiplies it x1.5."
+      "Crit Damage Boost (10.5% at level 1, 17.5% at 15, 20% at 20) and +100 Accuracy. Korea puts it first and as high as possible (Korea's top 20: 35); the Global sheet ranks it 2nd. Prayer of Amplification 15 multiplies it x1.5."
      ],
      [
       "Empyrean Lord's Grace",
-      "Crit, Double Chance and extra damage (KR 34; +0.15% per level). Prayer of Amplification 10 multiplies it x1.5."
+      "Crit, Double Chance and extra damage: 5.5% of Global damage. The Global sheet ranks it 1st and lists it first on every gear line; a Korean guide puts Earth's Grace ahead, 'not a big difference' (Korea's top 20: 33). Prayer of Amplification 10 multiplies it x1.5."
      ],
      [
       "Healing Enhancement",
-      "Heal boost. Second in the Mar healer order."
+      "Heal boost that scales with Attack. 3rd for a healer (Korea's top 20: 18; no Global level data)."
+     ],
+     [
+      "Warm Benediction",
+      "Filler at 10–15, with Prayer of Concentration (Global median 10) and Immortal Veil."
      ]
     ],
-    "wings": "Eroded Wings 45%, Talisra 35%, Illusory Echo 9%",
+    "wings": "Talisra (Season Shop, cooldown reduction) is the Global goal; wings can't be enhanced in Season 1. Korea (Aug 21): Eroded Wings 45%, Talisra 35%, Illusory Echo 9% (Eroded Wings on Global are UNVERIFIED)",
     "src": [
      [
       "KR Sep 24 optimizer (screenshots)",
@@ -1560,6 +1779,18 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Global class sheet (zxcastform), Cleric tab",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
+     [
+      "NotMeter Korea top-20 setup guide",
+      "https://notmeter.com/?view=setup-guide"
+     ],
+     [
+      "questlog: Light of Protection levels",
+      "https://questlog.gg/aion-2/en/db/skill/17410000"
      ]
     ]
    }
@@ -1648,7 +1879,7 @@
        20
       ]
      ],
-     "why": "Only the stronger Cold Storm debuff counts when two Sorcerers use it, so one of you can drop it for Hibernation.",
+     "why": "Only the stronger Cold Storm debuff counts when two Sorcerers use it, so one of you can drop it for Hibernation (a Korean Sep 17 test; on Global the Oct 13 patch stopped another player's stronger Frostbite from removing yours, and whether two stack is unconfirmed).",
      "src": [
       [
        "Cold Storm doesn't stack",
@@ -1918,22 +2149,30 @@
        ],
        [
         "Fire Wall",
-        20
+        15
        ],
        [
         "Delayed Explosion",
-        20
+        10
        ],
        [
         "Cold Storm",
-        15
+        5
        ]
       ],
-      "why": "Element Enhancement, Fire Wall and Delayed Explosion were Korea's top three with 4 slots and still are. For the 4th, your image and current Korean damage players take Cold Storm. Korea's Feb 4-slot guide took Steel Barrier for safety (see the swap). With two Sorcerers in a party, only one Cold Storm counts.",
+      "why": "What top Global Sorcerers run: Element Enhancement 97% (median level 20), Fire Wall 100% (median 11), Delayed Explosion 97% (median 10) and Cold Storm 90% (median 5). With 32 shards at 45 and about 20 more a week, only Element Enhancement is at 20 today; the other three are 5–15 now and go to 20 later (Est, written for KR/TW: Element Enhancement is 'non negotiable… number 1 priority', Fire Wall the 2nd stigma). Hibernation (27% use, at level 1) and Steel Barrier (11%) show up as swaps. With two Sorcerers in a party, another player's stronger Frostbite no longer removes yours since Oct 13; whether the two stack is unconfirmed.",
       "src": [
        [
         "Global class sheet (zxcastform)",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "Est's Sorcerer guide (TW/KR)",
+        "https://docs.google.com/document/d/1XVciQ8mC7bHo7bAApRk7hLwmT61MxVWTm2III6rUzsM/edit"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
        ],
        [
         "KR Feb 4: 4-slot priority",
@@ -1996,11 +2235,73 @@
         15
        ]
       ],
-      "why": "Arctic Armor adds 20% PvE damage tolerance (40% at 20) and turns part of the damage you take into MP loss, so you can stand in mechanics and keep casting.",
+      "why": "Arctic Armor adds 20% PvE damage tolerance (40% at 20) and turns part of the damage you take into MP loss, so you can stand in mechanics and keep casting. Est (KR/TW) calls Arctic Armor 'extremely powerful' for the hardest content. Steel Barrier (16% HP shield for 60 s) is the lighter safety swap, and Hibernation (5 s immunity, 180 s cooldown) is a mechanics swap.",
       "src": [
        [
         "KR: Arctic Armor for raids",
         "https://www.inven.co.kr/board/aion2/6453/17368"
+       ]
+      ]
+     },
+     {
+      "t": "Solo (UNVERIFIED)",
+      "tag": "Solo",
+      "pick": [
+       [
+        "Element Enhancement",
+        20
+       ],
+       [
+        "Fire Wall",
+        15
+       ],
+       [
+        "Delayed Explosion",
+        10
+       ],
+       [
+        "Steel Barrier",
+        10
+       ]
+      ],
+      "why": "The same damage four works solo. Swap Cold Storm for Steel Barrier (16% HP shield for 60 s) if you die to packs. UNVERIFIED: this comes from the skill effects, not from a Global solo test.",
+      "src": [
+       [
+        "Derived from the stigma effects; not a single source",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "PvP (UNVERIFIED)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Arctic Armor",
+        20
+       ],
+       [
+        "Element Enhancement",
+        20
+       ],
+       [
+        "Hibernation",
+        20
+       ],
+       [
+        "Glacial Smite",
+        20
+       ]
+      ],
+      "why": "UNVERIFIED for Global: this is Korea's 6-slot PvP list cut to 4, and Est covers no PvP. Arctic Armor (tolerance, Magic Displacement) and Element Enhancement (damage) are the core. Hibernation is the escape (20: triggers on Impact-type crowd control). Glacial Smite is 'a good burst of damage in PvP' (Est, KR/TW); Soul Freeze (Seal) is the other burst pick. Est (KR/TW) rates Sorcerer average in 1v1 PvP and top tier in zerging.",
+      "src": [
+       [
+        "Korea's PvP stigma thread (6 slots)",
+        "https://www.inven.co.kr/board/aion2/6453/15652"
+       ],
+       [
+        "Est's Sorcerer guide (TW/KR)",
+        "https://docs.google.com/document/d/1XVciQ8mC7bHo7bAApRk7hLwmT61MxVWTm2III6rUzsM/edit"
        ]
       ]
      }
@@ -2009,27 +2310,37 @@
      [
       "Element Enhancement",
       20,
-      "10: x1.5 Robe of Flame. 15: x1.5 Grace of Enhancement. 20: another +10% Fire and Water Attack."
+      "10: x1.5 Robe of Flame. 15: x1.5 Grace of Enhancement. 20: another +10% Fire and Water Attack. The buff lasts 10 s at level 1 and 20 s at 20. 97% use it, median 20 (Est: 'core buff, non negotiable… number 1 priority')."
      ],
      [
       "Fire Wall",
       20,
-      "5: Embers deal extra damage. 15: +2s wall. 20: +10s Embers (near-permanent burn)."
+      "5: Embers deal extra damage. 10: +2 m wall width. 15: +2s wall. 20: +10s Embers (near-permanent burn). 13.1% of damage (post-patch 11.4%). Top Global median is 11, so 10–15 now and 20 later; Est: the 2nd-priority stigma."
      ],
      [
       "Delayed Explosion",
       20,
-      "10: -10s cooldown. 15: becomes AoE. 20: +10% damage taken from you (on top of 15%)."
+      "10: -10s cooldown (30 to 20 s). 15: becomes AoE. 20: +10% damage taken from you (on top of 15%). Top Global median is 10, so 10 now and 20 later."
      ],
      [
       "Cold Storm",
       15,
-      "5: Frostbite deals extra damage. 15: +3s storm. 20: +10s Frostbite when shards allow."
+      "5: Frostbite deals extra damage. 15: +3s storm. 20: +10s Frostbite when shards allow. 6.5% of damage, split between the ground hit and the debuff. 5 now, 15 or 20 later (top Global median 5; the logged 'level 5' could be a debuff level, UNVERIFIED)."
      ],
      [
       "Steel Barrier",
       10,
-      "5: +10% move speed. 10: HP regen. 15: +10% PvE tolerance if you want it tankier."
+      "Safety swap (11% of top Global Sorcerers): a 16% HP shield for 60 s. 5: +10% move speed. 10: HP regen. 15: +10% PvE tolerance if you want it tankier."
+     ],
+     [
+      "Arctic Armor",
+      20,
+      "Hard-content swap: +20% PvE Damage Tolerance (+20% more at 20). Est (KR/TW): 'extremely powerful' for the hardest content."
+     ],
+     [
+      "Hibernation",
+      1,
+      "Mechanics swap: 5 s immunity on a 180 s cooldown. 27% of top Global Sorcerers use it, at level 1."
      ]
     ],
     "order": [
@@ -2037,46 +2348,55 @@
       "s": [
        [
         "Element Enhancement",
-        5
+        1
        ],
        [
         "Delayed Explosion",
-        10
-       ],
-       [
-        "Element Enhancement",
-        15
+        1
        ],
        [
         "Fire Wall",
-        20
+        5
+       ],
+       [
+        "Cold Storm",
+        5
        ]
       ],
-      "n": "The Korean Feb beginner path, step for step."
+      "n": "Est's KR order, cut to Global's 4 slots and cap of 20."
      },
      {
       "s": [
        [
         "Element Enhancement",
-        20
+        15
        ],
        [
-        "Cold Storm",
+        "Delayed Explosion",
         10
+       ],
+       [
+        "Element Enhancement",
+        20
        ]
       ]
      },
      {
       "s": [
        [
-        "Delayed Explosion",
+        "Fire Wall",
         20
        ],
        [
         "Cold Storm",
-        15
+        20
+       ],
+       [
+        "Delayed Explosion",
+        20
        ]
-      ]
+      ],
+      "n": "The daevaos Global guide takes Fire Wall to 20 right after Element Enhancement, then Delayed Explosion 5, Cold Storm 1 and 5, Delayed Explosion 10, Cold Storm 20, Delayed Explosion 20; the order here keeps Fire Wall at 5 until Element Enhancement is done. Top Global players today: Element Enhancement 20, Fire Wall about 10–15, Delayed Explosion about 10, Cold Storm about 5."
      }
     ],
     "imageNote": "Exactly the Global main build."
@@ -2085,11 +2405,11 @@
     "S": [
      [
       "Element Enhancement",
-      "+Fire and Water Attack; x1.5 two passives"
+      "+Fire and Water Attack; x1.5 two passives; 20 s at 20"
      ],
      [
       "Fire Wall",
-      "Embers damage-over-time"
+      "Embers damage-over-time; 13.1% of damage"
      ],
      [
       "Delayed Explosion",
@@ -2099,21 +2419,21 @@
     "A": [
      [
       "Cold Storm",
-      "Frostbite damage-over-time; one per party"
+      "Frostbite damage-over-time (6.5% of damage); another Sorcerer's stronger Frostbite no longer removes yours since Oct 13"
      ],
      [
       "Steel Barrier",
-      "Korea's Season 1 4th pick"
+      "Safety swap: 16% HP shield for 60 s; 11% of top Global Sorcerers"
      ],
      [
       "Arctic Armor",
-      "Tolerance and Mana Conversion"
+      "Tolerance and Mana Conversion; Est: extremely powerful for the hardest content"
      ]
     ],
     "B": [
      [
       "Hibernation",
-      "Invulnerability for raids and PvP"
+      "5 s immunity, 180 s cooldown; 27% use it at level 1"
      ],
      [
       "Divine Burst",
@@ -2123,7 +2443,7 @@
     "C": [
      [
       "Glacial Smite",
-      "PvP single-target"
+      "PvP single-target burst"
      ],
      [
       "Soul Freeze",
@@ -2151,10 +2471,10 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "",
+     "lvl": "16–20",
+     "note": "Option 4 (skill level 12) is the Sep 16 version on Global: +5% Fire damage for 10 s per Pyroclasm (the aion2.app text still says 'applies Fire Mark'; the buff shows in 275 of 282 top option-4 parses). Option 5 (16) resets Blaze. Global top: 4+5 for 70%; reach 12 early. 76% picked option 5; logged levels: 88% at 16+. Est (KR/TW): 5 > 4 > 2, with 2 for lifesteal; the sheet and Est take the third option at 20. daevaos: 4+5.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -2162,12 +2482,12 @@
      "n": "Ice Chain",
      "pick": [
       2,
-      3
+      4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 2+4 for 59% (post-patch 44%). Est: 2 > 3, or 4 > 2 if you weave Winter's Shackles. The sheet and daevaos pick 2+3 (about a third of Global Ice Chain users). A mobbing skill; Est weaves it on Global because of the low cooldown reduction, but most top parses skip it.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -2178,15 +2498,15 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "",
+     "lvl": "16–20",
+     "note": "4: -2 s Hellfire per fireball (5 fireballs per use in Global parses). 5: +15% damage per fireball, up to +75%. Global top: 2+4 for 55%, 4+5 37%; 42% picked option 5, and logged levels put 59% at 16+. Est (KR/TW): 4 > 5 > 2, and 20 is minor; the sheet says 20. In PvP swap 2 for 3 (-60% Incoming Heal). daevaos: 2+4, plus 5 at 20.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
       2,
-      5
+      4
      ]
     },
     {
@@ -2197,40 +2517,40 @@
       4
      ],
      "lvl": "20",
-     "note": "2 frees you from standing still.",
+     "note": "Global top: 1+4 for 61%. Est (KR/TW): 1 > 2 > 4, so 1+2 now and 1+2+4 at 20 (daevaos too); option 2 makes it mobile. Option 5 (16: -1 s Frost cooldown on hit, the effect the Oct 13 patch fixed across height differences) is picked by only 2–3% of top Global Sorcerers (Korea's top 20: 60%). Logged levels: median 15, about half at 16+.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
       1,
-      2
+      4
      ]
     },
     {
      "n": "Blaze",
      "pick": [
-      1,
       3,
+      4,
       5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 3 · 4 · 5. 3rd-5th biggest damage source.",
+     "note": "Global top: 3+5 for 53% (post-patch 42%). 3: delayed damage (+35%, Est). 5 (16): -3 s Wish of Concentration per hit; Est (KR/TW) ranks 5 > 3 > 4. The sheet runs 1+3+5; Korea's Sep optimizer: 3 · 4 · 5. 3rd-5th biggest damage source; 77% are at 16+.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Frost",
      "pick": [
-      1,
-      2
+      2,
+      3
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 2+3 for 64–68%. The sheet picks 1+2.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -2241,9 +2561,9 @@
       5
      ],
      "lvl": "16",
-     "note": "Korea's Sep optimizer: 3 · 5 · 1. If you can only take one of these two to 20, take Bittercold Wind.",
+     "note": "Global top: a split between 1+3 and 3+5 (35% each); 35% picked option 5, and logged levels put 49% at 16+. Est (KR/TW): level 16, or 20 for the mobile option (5 > 3 > 1). Korea's Sep optimizer: 3 · 5 · 1. If you can only take one of Bittercold Wind and Winter's Shackles to 20, take Bittercold Wind.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -2254,9 +2574,9 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Est (KR/TW): 1 > 2, 'you use this for the lifesteal'. The sheet picks 1+4. Global per player: 1+4 29%, 2+4 29%, 1+2 23%. daevaos has 1+4 now and plans 4+5 at 16.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -2268,9 +2588,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Your required buff.",
+     "note": "Your required buff. 2: +10% Attack. 4: +10% Combat Speed. 5 (16): -10 s all cooldowns. Global per player: 2+5 40%, 4+5 34%, 2+4 18% (players below 16), 2+4+5 8%; Est (KR/TW): 5 > 4 > 2. The buff lasts 10 s at level 1 and +0.5 s per level (18 s at the Global median level 17).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
@@ -2286,9 +2606,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 1 · 4 · 5. Level 20 required.",
+     "note": "Global top: 1+5 for 36% (the most common), with the third pick contested: 3 (mobile) or 4 (multi-hit, ignores Block). Korea's top 20 and Sep optimizer: 1 · 4 · 5; Est (KR/TW): 5 > 3 > 1. Option 5 (16): -15 s cooldown; 72% of top Global Sorcerers are at 16+ and 13% at 20. 16 is the minimum, 20 the target.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -2298,10 +2618,23 @@
       2,
       3
      ],
-     "lvl": "16",
-     "note": "",
+     "lvl": "12",
+     "note": "Est (KR/TW): 3 > 2, and level 12; each level takes 1 s off the cooldown. The sheet says 16.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Flame Scattershot",
+     "pick": [
+      3,
+      5
+     ],
+     "lvl": "16",
+     "note": "Stagger windows only. 5: -1 s all cooldowns per hit (40% are at 16+). Est (KR/TW): 5 > 3. Global top: 4+5 for 32% (post-patch 22%). daevaos runs 3+4 with no option 5, at level 12.",
+     "src": [
+      "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     }
@@ -2309,73 +2642,105 @@
    "skills": {
     "first": [
      "Hellfire",
-     "Blaze"
+     "Wish of Concentration"
     ],
     "act": [
      [
       "Hellfire",
       "20",
       "DPS",
-      "The guide calls it 'Sorcerer itself'. First to 20."
-     ],
-     [
-      "Blaze",
-      "20",
-      "DPS",
-      "3rd-5th biggest damage source; its hits cut Wish of Concentration's cooldown."
-     ],
-     [
-      "Firestorm",
-      "20",
-      "DPS",
-      "Each fireball cuts Hellfire's cooldown by 2s."
+      "1st. 21.7% of damage (post-patch 22.4%). 16 = -15 s cooldown and the minimum: 72% of top Global Sorcerers are at 16+, 13% at 20. Fully charge it by hand; a Max cast does about 3× an uncharged one."
      ],
      [
       "Wish of Concentration",
       "20",
       "Buff",
-      "Your required buff: +20% Attack, +100 Accuracy for 20s, and at 20 also +10% combat speed and -10s on all cooldowns."
+      "1st (tied). +10% Attack (option 2) and +10% Combat Speed (option 4); at 16, option 5 takes 10 s off every cooldown (16 is the minimum). Buff: 10 s at level 1, 18 s at the Global median level 17."
      ],
      [
-      "Bittercold Wind",
+      "Blaze",
       "20",
       "DPS",
-      "Semi-required. If only one more skill can reach 20, take this over Winter's Shackles (shorter cooldown)."
-     ],
-     [
-      "Winter's Shackles",
-      "16-20",
-      "Buff",
-      "+20% PvE damage for 5s on hit."
+      "2nd. 14.7% of damage. 16 is non-negotiable (-3 s Wish per hit); 77% are at 16+."
      ],
      [
       "Flame Arrow",
       "16",
       "DPS",
-      "Held basic attack. Korea's Feb guide had it second to 20; the Sep guide no longer lists it."
+      "3rd. Held filler plus Pyroclasm's +5% Fire damage (option 4: reach skill level 12 first on Global) and Blaze reset (option 5). 76% picked option 5; logged levels: 88% at 16+. The sheet and Est take it to 20."
+     ],
+     [
+      "Firestorm",
+      "16",
+      "DPS",
+      "4th. 8.9% of damage. 12: -2 s Hellfire per fireball. 42% picked option 5; logged levels: 59% at 16+. Est: 20 is minor; the sheet says 20."
+     ],
+     [
+      "Bittercold Wind",
+      "20",
+      "DPS",
+      "5th. 9.2% of damage; 12 is the minimum and the Compass Arcana levels it easily. Logged levels: median 15, about half at 16+ (41 players). If only one of it and Winter's Shackles can reach 20, take this one (shorter cooldown)."
+     ],
+     [
+      "Winter's Shackles",
+      "16-20",
+      "Buff",
+      "6th. Option 3: +20% PvE damage for 5 s on hit. 35% picked option 5; logged levels: 49% at 16+. Est: 16, or 20 for the mobile option."
      ],
      [
       "Flame Scattershot",
       "16",
       "DPS",
-      "Stagger-window skill on the Hellfire key."
+      "Stagger-window skill. Option 5: -1 s all cooldowns per hit; 40% are at 16+."
+     ],
+     [
+      "Ice Chain",
+      "12",
+      "Utility",
+      "Mobbing skill and Est's Global weave: 2+4 (59% Global; post-patch 44%)."
+     ],
+     [
+      "Frost",
+      "12",
+      "Utility",
+      "PvP and stagger (Est)."
+     ],
+     [
+      "Frost Burst",
+      "12",
+      "Utility",
+      "'You use this for the lifesteal' (Est)."
+     ],
+     [
+      "Defiance",
+      "12",
+      "Utility",
+      "CC break: each level takes 1 s off the cooldown (Est 12; the sheet says 16)."
      ]
     ],
     "pas": [
      [
       "Robe of Flame",
-      "The only passive you need: Accuracy, PvE damage and Double Chance (KR endgame 36). Element Enhancement 10 multiplies it x1.5."
+      "The only key passive: Accuracy, PvE damage and Double Chance. Element Enhancement 10 multiplies it x1.5. As high as possible (Est, KR/TW: 31+, which assumes more level-20 actives than Global's gear and 5 Arcana cards allow)."
+     ],
+     [
+      "Grace of Enhancement",
+      "2nd per Est: +20% PvE Damage Boost at 25% MP or more, about 2–3% of damage. The sheet ranks Fire Mark 2nd instead. Spare lines only."
      ],
      [
       "Fire Mark",
-      "Extra fire damage procs. Second in the Feb guide's order."
+      "Extra fire damage procs. 2.5% of Global damage (Grace of Enhancement 1.5%); Est rates it 1–2%. The sheet's 2nd, and 3rd on most armor lines."
+     ],
+     [
+      "Robe of Earth",
+      "Mana: 'the solution to all of your mana issues' (Est). Base level."
      ],
      [
       "Vitality Evaporation",
-      "Extra damage above 70% target HP. Third."
+      "Extra damage above 70% target HP. Low priority (1–2%, Est), like Cold Snap."
      ]
     ],
-    "wings": "Talisra 91.5% (Sorcerer's kit doesn't use front/back damage)",
+    "wings": "Talisra (cooldown reduction) is the goal; Forest Spirit or Dark Veil Wings until then (daevaos); wings can't be enhanced in Season 1. Korea (Aug 21): Talisra 91.5%",
     "src": [
      [
       "KR Sep 22 optimizer (screenshots)",
@@ -2388,6 +2753,14 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Est's Sorcerer guide (TW/KR, updated Oct 11)",
+      "https://docs.google.com/document/d/1XVciQ8mC7bHo7bAApRk7hLwmT61MxVWTm2III6rUzsM/edit"
+     ],
+     [
+      "Sorcerer Class Guide PVE, Global (daevaos, Castform)",
+      "https://daevaos.com/guides/sorcerer-class-guide-pve"
      ]
     ]
    }
@@ -2716,6 +3089,14 @@
     [
      "Taunt 25",
      "Shrink also lowers the target's crit-damage resist by 5%"
+    ],
+    [
+     "Noble Armor 15",
+     "x1.5 Fury (about 13.5% party damage at Fury 17) and 11% Max HP"
+    ],
+    [
+     "Taunt 20",
+     "Shrink +5s: 20s on a 25s cooldown, still not permanent with Global's cooldown reduction"
     ]
    ],
    "tiers": {
@@ -2783,31 +3164,39 @@
    "gl": {
     "builds": [
      {
-      "t": "Global sheet pick (damage tank)",
+      "t": "Damage tank (most used on Global)",
       "tag": "Most used",
       "pick": [
-       [
-        "Battlefield Banner",
-        20
-       ],
        [
         "Taunt",
         20
        ],
        [
-        "Noble Armor",
+        "Battlefield Banner",
         20
+       ],
+       [
+        "Noble Armor",
+        15
        ],
        [
         "Doom Shield",
         15
        ]
       ],
-      "why": "The Global sheet's order: Battlefield Banner, Taunt, Noble Armor, Doom Shield. Banner turns Defense into Attack. Taunt's Shrink makes the boss take more damage from the whole party. Noble Armor 15 multiplies Fury by 1.5. Doom Shield is a shield attack, so it opens Judgment (Aug 26 rework), and at 5 it resets Annihilate. For hard bosses, the Party tank and Hard content versions trade damage for Shield of Protection and party saves.",
+      "why": "Top 20 Global Templars per player: Noble Armor 89% (median 15), Doom Shield 77% (median about 14), Taunt 77% (only 12% at 20, 44% at 15–19), Banner 77% (median 18–20). Taunt's Shrink makes the boss take more damage from the whole party. Noble Armor 15 multiplies Fury by 1.5 and lasts 2 min on live Global. Banner turns Defense into Attack. Doom Shield is a shield attack, so it opens Judgment, and at 5 it resets Annihilate. At equal CP, Banner users (63 players) were about 2–3% ahead of Shield of Protection users (21) per player (re-check +3.2% ±5.0), which isn't significant. The sheet's older order was Banner, Taunt, Noble Armor, Doom Shield; its author's current daevaos build runs Taunt, Banner, Shield of Protection and Doom Shield, all at 20, with no Noble Armor. This page keeps Noble Armor because 89% of top-20 Global Templars slot it.",
       "src": [
        [
-        "Global class sheet (zxcastform)",
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
+        "Global class sheet (zxcastform, Oct 14 snapshot)",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "Sheet author's current build (daevaos, Oct 14)",
+        "https://daevaos.com/guides/templar-class-guide-pve"
        ],
        [
         "Templar skill/stigma test (Banner value)",
@@ -2821,7 +3210,7 @@
       "main": true
      },
      {
-      "t": "Party tank",
+      "t": "Safety tank (hard or new content)",
       "tag": "Swap",
       "pick": [
        [
@@ -2830,18 +3219,18 @@
        ],
        [
         "Noble Armor",
-        20
+        15
        ],
        [
         "Shield of Protection",
-        10
+        5
        ],
        [
         "Empyrean Lord's Punishment",
         15
        ]
       ],
-      "why": "Korea's 4-slot Templars fixed Taunt, Shield of Protection and Empyrean Lord's Punishment, and filled the 4th with Noble Armor. Taunt's Shrink makes the boss take more damage from the whole party. Noble Armor 15 multiplies Fury (your damage passive) by 1.5 and it never drops. Shield of Protection blocks stuns. Empyrean Lord's Punishment adds +10% PvE damage and stagger.",
+      "why": "Replaces Banner with Shield of Protection and Doom Shield with Empyrean Lord's Punishment or Nezekan's Shield. Shield of Protection gives a guaranteed Block and +100% Block Damage Reduction: 5 = a second use, 10 = castable while moving (46–56% of Global Templars use it, median about 8). Empyrean Lord's Punishment 15 adds +10% PvE damage for 10s and 50 stagger. Nezekan's Shield is a party shield worth 41% of Max HP at level 1 (55% at 15), and 15 adds +20% PvE damage tolerance; 9–12% of all Global Templars use it. Korea's 4-slot Templars fixed Taunt, Shield of Protection and Empyrean Lord's Punishment and filled the 4th with Noble Armor.",
       "src": [
        [
         "KR Dec 24: Block, Punishment, Taunt fixed",
@@ -2874,7 +3263,7 @@
         15
        ]
       ],
-      "why": "Comrade in Arms redirects party damage to you and restores 50% of your HP at 20 ('the 4th effect is mandatory'). Nezekan's Shield puts a party shield up for unavoidable hits. Use this for learning hard bosses.",
+      "why": "Comrade in Arms redirects party damage to you and restores 50% of your HP at 20 ('the 4th effect is mandatory'). Nezekan's Shield puts a party shield up for unavoidable hits. Korea's Feb guide (Inven 7621) calls Comrade in Arms the best party stigma and says it needs level 20; it's rare on Global (about 1%).",
       "src": [
        [
         "KR Apr: Taunt, SoP, Comrade, Nezekan",
@@ -2896,21 +3285,50 @@
        ],
        [
         "Noble Armor",
-        20
+        15
        ],
        [
         "Second Skin",
         20
        ],
        [
-        "Empyrean Lord's Punishment",
+        "Battlefield Banner",
         15
        ]
       ],
-      "why": "Taunt does nothing solo. Korean players recommend Second Skin at 20 for solo play (the jump from 15 to 20 adds +20% PvE damage tolerance). Doom Shield opens each pull, resets on kills at 15, and resets Annihilate.",
+      "why": "Taunt does nothing solo. Korean players recommend Second Skin at 20 for solo play (the jump from 15 to 20 adds +20% PvE damage tolerance). Doom Shield opens each pull, resets on kills at 15, and resets Annihilate. Battlefield Banner is the damage pick. This list is derived from the skill effects and is UNVERIFIED on Global.",
       "src": [
        [
         "KR Feb: 'solo = Second Skin 20'",
+        "https://www.inven.co.kr/board/aion2/6438/7621"
+       ]
+      ]
+     },
+     {
+      "t": "PvP (Korea's Feb all-in set)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Comrade in Arms",
+        20
+       ],
+       [
+        "Noble Armor",
+        20
+       ],
+       [
+        "Shield of Protection",
+        20
+       ],
+       [
+        "Second Skin",
+        20
+       ]
+      ],
+      "why": "UNVERIFIED for Global: the guide predates Global's launch, and the Oct 13 patch adjusted Battlefield stats. Comrade in Arms 20 restores 50% HP when it ends; Noble Armor 20 adds +10% Incoming Heal; Shield of Protection gives a guaranteed Block (20 restores 10% HP); Second Skin gives +30% PvE / +15% PvP damage tolerance (20 adds +10% PvP). The same guide doesn't recommend Doom Shield except in special situations, and doesn't list Banner. Out of a party it swaps in Grapple or Armor of Balance.",
+      "src": [
+       [
+        "Inven Feb stigma guide (PvP set)",
         "https://www.inven.co.kr/board/aion2/6438/7621"
        ]
       ]
@@ -2920,32 +3338,32 @@
      [
       "Taunt",
       20,
-      "5: Shrink cuts the boss's PvE damage tolerance by 10% for the party. 15: -5s cooldown. Korean players say you need 20 to keep it up permanently."
+      "5: Shrink cuts the boss's PvE damage tolerance by 10% for the party. 15: -5s cooldown. 20: Shrink +5s (20s on a 25s cooldown). With Global's 19–21% cooldown reduction it isn't up all the time: the median recast is 33s at level 20 and 38s at 15–19. Only 12% of top-20 Global Templars are at 20 (44% at 15–19)."
      ],
      [
       "Noble Armor",
-      20,
-      "15: x1.5 Fury, a big damage gain. 20: +10% healing received."
-     ],
-     [
-      "Shield of Protection",
-      10,
-      "5: second block. 10: castable while moving. 15 and 20 (speed, 10% HP per block) are extras; one Korean tank says a single block is enough once you know the fight."
-     ],
-     [
-      "Empyrean Lord's Punishment",
       15,
-      "10: +50 stagger. 15: +10% PvE damage for 10s on hit. 20 is just +25% stun chance."
+      "Max HP +5.4% at level 1, 11% at 15; lasts and recasts every 2 min on Global. 10: x1.5 Insulting Roar. 15: x1.5 Fury, a big damage gain. 20: +10% healing received (later). 89% use it, median 15."
      ],
      [
       "Battlefield Banner",
       20,
-      "Only once your Defense is high: 10: +10% weapon damage. 20: -30s cooldown."
+      "10: +10% weapon damage boost. 15: +20% Attack from Defense. 20: -30s cooldown. 77% use it, median 18–20. The buff lasts 10s at level 1 and 20s at 20."
      ],
      [
       "Doom Shield",
       15,
-      "5: resets Annihilate. 10: +200 Block. 15: resets on kill. 20 is only knockdown chance."
+      "5: resets Annihilate. 10: +200 Block. 15: resets on kill. 20 is only knockdown chance. 77% use it, median about 14."
+     ],
+     [
+      "Shield of Protection",
+      5,
+      "5: second block. 10 (if you move a lot): castable while moving. 15 and 20 (speed, 10% HP per block) are extras. 46–56% use it, median about 8."
+     ],
+     [
+      "Empyrean Lord's Punishment",
+      15,
+      "10: +50 stagger. 15: +10% PvE damage for 10s on hit. 20 is just +25% stun chance. Used by 16–23% of Global Templars."
      ]
     ],
     "order": [
@@ -2956,93 +3374,94 @@
         5
        ],
        [
-        "Shield of Protection",
+        "Doom Shield",
         5
        ],
        [
-        "Empyrean Lord's Punishment",
-        10
-       ]
-      ],
-      "n": "The 3 fixed picks at their cheap unlocks first."
-     },
-     {
-      "s": [
-       [
-        "Taunt",
-        15
-       ],
-       [
         "Noble Armor",
-        15
-       ]
-      ],
-      "n": "Noble Armor 15 = x1.5 Fury."
-     },
-     {
-      "s": [
-       [
-        "Taunt",
-        20
-       ],
-       [
-        "Shield of Protection",
         10
        ],
        [
-        "Empyrean Lord's Punishment",
-        15
+        "Battlefield Banner",
+        10
        ]
-      ]
+      ],
+      "n": "This page's order, derived from the DB breakpoints and the Global medians. Taunt 5 = party-wide tolerance cut. Doom Shield 5 = resets Annihilate."
      },
      {
       "s": [
        [
         "Noble Armor",
+        15
+       ],
+       [
+        "Taunt",
+        15
+       ],
+       [
+        "Battlefield Banner",
+        15
+       ],
+       [
+        "Doom Shield",
+        15
+       ]
+      ],
+      "n": "Noble Armor 15 = x1.5 Fury. Taunt 15 = -5s cooldown. Banner 15 = +20% Attack from Defense. Doom Shield 15 = resets on kill."
+     },
+     {
+      "s": [
+       [
+        "Battlefield Banner",
+        20
+       ],
+       [
+        "Taunt",
         20
        ]
-      ]
+      ],
+      "n": "Banner 20: -30s cooldown. Taunt 20: Shrink +5s."
      }
     ],
-    "imageNote": "Your list is the damage-leaning version: Battlefield Banner and Doom Shield pay off once your armor is upgraded (see Geared DPS Templar). Korea's 4-slot tanks took Noble Armor and Empyrean Lord's Punishment first."
+    "imageNote": "Your list is the damage-leaning version: Battlefield Banner and Doom Shield. On Global there is one Templar spec: the damage-leaning and safety-leaning versions are two loadouts of the same tank (in the 85 Global parties with two Templars, both received similar healing). Korea's 4-slot tanks took Noble Armor and Empyrean Lord's Punishment first."
    },
    "gtiers": {
     "S": [
      [
       "Taunt",
-      "Party-wide boss debuff; the reason DPS want a Templar"
+      "Party-wide boss debuff; the reason DPS want a Templar (77% of top Global Templars)"
      ],
      [
       "Noble Armor",
-      "x1.5 Fury at 15 plus always-on HP"
+      "x1.5 Fury at 15 plus HP, 2-min cooldown; 89% use, median 15"
      ]
     ],
     "A": [
      [
       "Shield of Protection",
-      "Blocks stuns (2 uses at 5)"
+      "Blocks stuns (2 uses at 5); 46–56% use"
      ],
      [
       "Empyrean Lord's Punishment",
-      "+10% PvE damage and stagger"
+      "+10% PvE damage and stagger at 15; 16–23% use"
      ],
      [
       "Battlefield Banner",
-      "Strong once Defense is high; weak early"
+      "Defense into Attack; 77% use, median 18–20"
      ],
      [
       "Doom Shield",
-      "Engage, opens Judgment, resets Annihilate"
+      "Engage, opens Judgment, resets Annihilate; 77% use"
      ]
     ],
     "B": [
      [
       "Comrade in Arms",
-      "Party saver for hard bosses (needs 20)"
+      "Party saver for hard bosses (needs 20); about 1% on Global"
      ],
      [
       "Nezekan's Shield",
-      "Party shield for hard raids"
+      "Party shield; 9–12% use"
      ],
      [
       "Second Skin",
@@ -3050,7 +3469,7 @@
      ],
      [
       "Assault Fury",
-      "Natural-block DPS setups"
+      "Natural-block DPS setups in Korea; Global has no separate DPS Templar"
      ]
     ],
     "C": [
@@ -3064,7 +3483,7 @@
      ],
      [
       "Executing Blade",
-      "Korean players call it a design miss"
+      "Korean players call it a design miss; 4% of top-20 Global Templars (on the sheet's stigma list)"
      ]
     ]
    },
@@ -3077,9 +3496,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Required for the Vicious Strike-Judgment setup.",
+     "note": "4: -2 s Warding Strike per hit (more Judgment windows). 5: Threatening Blow chain. Global top: 4+5 50%, 3+4 32%. Take 16 first, then 20; the sheet runs 3+4+5 at 20.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
@@ -3095,9 +3514,9 @@
       5
      ],
      "lvl": "20",
-     "note": "The core of the Pummel-Judgment weave.",
+     "note": "4: -1 s Punishment cooldown on hit. 5: Punishing Strike deals extra damage on hit. That is questlog's Global text and Korea's Sep 16 version, and Global logs agree (option 4 holders cast Punishment 2.3 times a minute vs 1.7–1.8; option 5 adds about 42% to Punishing Strike). Global top: 3+4 41%, 4+5 30%. 16 first, then 20.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
@@ -3112,7 +3531,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 1+3 for 42%, 1+4 for 35%.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3125,7 +3544,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 2 · 3. Level 12: no MP cost, and a 50% chance to trigger Debilitating Smash.",
+     "note": "Global top: 3+4 56%, 2+4 36% (option 2 removes the MP cost: use it if you run short). Korea's Sep optimizer: 2 · 3.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3139,9 +3558,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Swap 3 for 1 (30% lifesteal) when you need sustain.",
+     "note": "3: extra damage. 4: always crits. 5: no cooldown (skill level 16). Global top: 3+4+5 36%, 3+5 34%, 4+5 27%.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ],
      "u20": [
@@ -3156,7 +3575,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Under 1% of damage. Global top: 2+4 for 71%.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3169,7 +3588,7 @@
       5
      ],
      "lvl": "16",
-     "note": "Level 16 is enough: -5s cooldown and the party damage-tolerance share.",
+     "note": "Level 16 is enough: -5s cooldown and the party damage-tolerance share. Its cooldown stays 30 s on Global (Korea's Aug 26 cut to 25 s isn't live), so option 1's -5 s matters. Global picks are split.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3182,7 +3601,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 2+4 for 85%.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3195,23 +3614,23 @@
       4
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 3 · 4 · 1. 1 (+50% multi-hit) nudges the ceiling at 20.",
+     "note": "3: +100% damage to Incapacitated-immune bosses. 4: -10 s cooldown. Global top: 3+4 for 76%. Korea's top 20 run it at a median 15, all 3+4 and none with option 1.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Punishment",
      "pick": [
+      2,
       3,
-      4,
       5
      ],
-     "lvl": "20",
-     "note": "Korea's Sep optimizer: 2 · 3 · 4. 2 and 3 fixed. Third: 4 (castable while moving) for comfort, or 5 (ignores block/evasion, crits) for a little more damage.",
+     "lvl": "16-20",
+     "note": "2: damage over time. 3: +30% skill speed. 5: crits and ignores Block. Global top: 2+3 42%, 3+5 28%; the sheet runs 3+4+5 and Korea's Sep optimizer 2 · 3 · 4. Take 2+3 at 12, 3+5 at 16, 2+3+5 at 20. PvP (UNVERIFIED): option 5 becomes mandatory.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -3222,7 +3641,7 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Option 5 at 16: +50% PvE damage tolerance. Global top: 3 alone 41%, 3+4 29%; the sheet runs 3+5.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3232,78 +3651,106 @@
    "skills": {
     "first": [
      "Judgment",
-     "Pummel"
+     "Vicious Strike"
     ],
     "act": [
      [
       "Judgment",
       "20",
       "DPS",
-      "More than half of a Templar's damage comes from this one skill. First to 20; its no-cooldown option needs 16."
-     ],
-     [
-      "Pummel",
-      "20",
-      "DPS",
-      "Your weave skill. 20 opens the third pick (extra Punishing Strike plus Punishment cooldown cuts)."
+      "42.5% of a Templar's damage. 98% of top Global Templars are at 16+ (16 = no cooldown, option 5) and 36% at 20. First to 20."
      ],
      [
       "Vicious Strike",
       "20",
       "DPS",
-      "Held basic attack. 16 is fine until you run the Vicious Strike-Judgment setup, which needs all three picks."
+      "Held basic attack. Its chain (Vicious 3.4% + Decisive 3.9% + Desperate 4.3% + Threatening Blow 4.4%) is a big share, and option 4 at 12 means more Judgment windows. 55% of top Global Templars are at 16+; go to 16, then 20."
+     ],
+     [
+      "Pummel",
+      "20",
+      "DPS",
+      "Pummel 4.6% + Punishing Strike 6.0% of damage. Option 4 at 12 takes 1 s off Punishment on hit. 40% of top Global Templars are at 16+; go to 16, then 20."
      ],
      [
       "Punishment",
-      "16-20",
+      "16",
       "Buff",
-      "A full charge gives Executor: +200 Accuracy and +20% PvE damage for 20s. 12-16 as a buff, 20 if you also want its damage."
+      "11.5% of damage, and any cast gives Executor (+200 Accuracy, +20% PvE damage for 20s). 16 crits and ignores Block. 32% of top Global Templars are at 16+; Korea's top 20 are at 20."
      ],
      [
       "Annihilate",
-      "16-20",
+      "12",
       "DPS",
-      "Optional burst. 12 covers picks 3 and 4; 20 adds the multi-hit pick."
+      "Optional burst, 6.9% of damage. 12 covers picks 3 and 4 (76% of top Global Templars run 3+4). Korea's top 20 sit at a median 15."
      ],
      [
       "Warding Strike",
       "16",
       "Buff",
-      "Warding (+20% PvE damage tolerance) and it re-opens Judgment. 16 unlocks the party tolerance share."
+      "Warding (+20% PvE damage tolerance) and it re-opens Judgment. 12 is the minimum (option 4); 16 unlocks the party tolerance share. The sheet says 16. Its cooldown stays 30s on Global."
      ],
      [
       "Debilitating Smash",
-      "16",
+      "12",
       "Debuff",
-      "Weaken: target Defense -25%."
+      "Weaken: target Defense -25%. Under 1% of damage; 71% of top Global Templars run 2+4."
      ],
      [
       "Shield Smite",
       "12",
       "Utility",
-      "Re-opens Judgment; pick 2 removes its MP cost."
+      "Re-opens Judgment (2.9% of damage); skill level 12 takes 2s off its cooldown, and option 2 removes its MP cost."
+     ],
+     [
+      "Shield Rush",
+      "12",
+      "Utility",
+      "Mobility and opener; 85% of top Global Templars run 2+4."
+     ],
+     [
+      "Poach",
+      "12",
+      "Utility",
+      "Pull; 1+3 (42%) or 1+4 (35%)."
+     ],
+     [
+      "Defiance (templar)",
+      "16",
+      "Utility",
+      "CC break; option 5 gives +50% PvE damage tolerance (sheet level 16). Stop points: don't take Annihilate, Shield Smite, Debilitating Smash, Shield Rush or Poach past 12 until Judgment is 20 and Vicious Strike, Pummel and Punishment are 16."
+     ],
+     [
+      "Flash Rampage",
+      "12",
+      "DPS",
+      "Stagger only. Korea's top 20 sit at a median 14 (7–16), and those at 16+ run 4+5. Not in Global's top-damage list."
      ]
     ],
     "pas": [
      [
       "Fury",
-      "Front damage boost for you, plus PvE damage for the whole party for 20s whenever you block. Highest priority (KR endgame 35-36). Noble Armor 15 multiplies it x1.5."
+      "Front damage boost for you, plus PvE damage for the whole party for 20s whenever you block: 5.5% at level 1, about 13.5% at the Global median 17, 15% at 20 (KR 36). Doesn't stack with a Gladiator's Experienced Counterstrike. Noble Armor 15 multiplies it x1.5."
      ],
      [
       "Impact Hit (templar)",
-      "Double Chance (KR 33)."
+      "Double Chance. Second in the sheet (KR 31)."
      ],
      [
       "Insulting Roar",
-      "+Attack on front attacks (KR 30). About the same value as Impact Hit."
+      "+Attack on front attacks and Enmity: 5.5% at level 1, about 13.5% at 17 (Global median 17; KR 30). Third in the sheet. Noble Armor 10 multiplies it x1.5."
      ],
      [
       "Punishing Benediction",
-      "+100 Crit and extra-damage procs."
+      "+Crit (100 at level 1, 240 at 15) and extra-damage procs, 2.6% of damage. Global median 15."
+     ],
+     [
+      "Block Pain",
+      "Defensive: +PvE damage tolerance when hit (11% at level 1, 25% at 15). Global median 15."
      ],
      [
       "Ironclad Defense",
-      "Defense, which also feeds Battlefield Banner."
+      "Defensive filler at 10–15 (KR 12–16); its Defense also feeds Battlefield Banner."
      ]
     ],
     "wings": "Eroded Wings 77%, Talisra 9%, Brawler 3.5%",
@@ -3323,6 +3770,14 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Sheet author's current Templar build (daevaos, Oct 14)",
+      "https://daevaos.com/guides/templar-class-guide-pve"
+     ],
+     [
+      "NotMeter Korea top-20 setup guide (KR levels)",
+      "https://notmeter.com/?view=setup-guide"
      ]
     ]
    }
@@ -3603,7 +4058,7 @@
        20
       ]
      ],
-     "n": "Guardian Blessing 15 = x1.5 Wind's Promise. Players call 15 the minimum."
+     "n": "Guardian Blessing 15 = x1.5 Wind's Promise. Players call 15 the minimum. 2-min cooldown (live on Global since Sep 16)."
     },
     {
      "s": [
@@ -3675,7 +4130,7 @@
      ],
      [
       "Guardian Blessing",
-      "Always-on HP and tolerance; 15 minimum"
+      "Always-on HP and tolerance; 15 minimum; 2-min cooldown"
      ],
      [
       "Marchutan's Wrath",
@@ -3722,7 +4177,7 @@
    "gl": {
     "builds": [
      {
-      "t": "Global sheet pick (= your image)",
+      "t": "Top Global Chanters (buffer DPS)",
       "tag": "Most used",
       "pick": [
        [
@@ -3742,11 +4197,19 @@
         5
        ]
       ],
-      "why": "The Global sheet's order, which is also the list from your image: Undefeated Mantra, Power of the Storm, Sprint Mantra, Marchutan's Wrath. Marchutan's Wrath gives the longest Dark Crush window (3 s), so it adds Dark Crush casts on top of Impactful Crush and Spinning Strike. The sheet's next picks are Guardian Blessing, then Focused Defense or Impeding Authority.",
+      "why": "What top Global Chanters run (per player, top 20 per boss, 104 players): Marchutan's Wrath about 97% (median 5), Undefeated Mantra about 96% (20; 98% counting a second Chanter's), Power of the Storm about 81% (20) and Sprint Mantra 81% (10). The Global sheet's own priority is different: 1. Undefeated Mantra (20), 2. Power of the Storm (5+), 3. Sprint Mantra (1+), 4. Focused Defense (5), with Guardian Blessing, Impeding Authority and Marchutan's Wrath listed as swaps; Marchutan's Wrath in slot 4 follows the Global data. The daevaos build (the author's own level-45 character) slots the sheet's four: Undefeated Mantra 20, Power of the Storm 20, Sprint Mantra 15 (this page's target is 10) and Focused Defense 5. Marchutan's Wrath gives the longest Dark Crush window (3 s), so it adds Dark Crush casts on top of Impactful Crush and Spinning Strike.",
       "src": [
        [
-        "Global class sheet (zxcastform)",
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
+        "Global class sheet (zxcastform): its own priority",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "Chanter quick guide (daevaos, Castform)",
+        "https://daevaos.com/guides/chanter-quick-guide"
        ],
        [
         "Chanter PvE guide",
@@ -3756,7 +4219,7 @@
       "main": true
      },
      {
-      "t": "Buffer",
+      "t": "Guardian Blessing swap (damage / survival)",
       "tag": "Swap",
       "pick": [
        [
@@ -3776,7 +4239,7 @@
         10
        ]
       ],
-      "why": "Korea's 4-slot Chanters put Undefeated Mantra at 20 first and called Power of the Storm mandatory. Guardian Blessing 15 multiplies Wind's Promise by 1.5, and Korean players call 15 the minimum. Sprint Mantra's low levels are cheap and strong. Marchutan's Wrath is optional now: Dark Crush opens after any ranged skill since the Aug 26 rework.",
+      "why": "Korea's 4-slot Chanters put Undefeated Mantra at 20 first and called Power of the Storm mandatory. Guardian Blessing 15 multiplies Wind's Promise by 1.5 (Korean players call 15 the minimum), and it has a 2-min cooldown on live Global (Sep 16): recast it with Power of the Storm. 25% of top Global Chanters run it (median 15). At equal CP its users (11 players) were about 9% ahead of Sprint Mantra users (71), averaged per player, but the 95% range is -1% to +21%, so this isn't significant; two-Chanter parties don't explain it, since both Chanters run Sprint in 96% of them. Korea's Sep 17 dummy test says Marchutan's Wrath is no longer mandatory (KR/TW), but 97% of top Global Chanters still slot it.",
       "src": [
        [
         "KR Mar 4 Chanter guide",
@@ -3789,6 +4252,14 @@
        [
         "KR Sep 17: Marchutan's no longer required",
         "https://www.inven.co.kr/board/aion2/6451/22932"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
+        "questlog: Guardian Blessing",
+        "https://questlog.gg/aion-2/en/db/skill/18420000"
        ]
       ]
      },
@@ -3801,19 +4272,56 @@
         20
        ],
        [
-        "Power of the Storm",
+        "Sprint Mantra",
         15
        ],
        [
-        "Healing Touch",
+        "Power of the Storm",
         20
+       ],
+       [
+        "Marchutan's Wrath",
+        5
+       ]
+      ],
+      "why": "A role played with the support-DPS build plus Recuperation, not a different loadout. In the 565 Cleric-less Global parses that had a Chanter (week of Oct 7–14), the Chanter gave the most healing in 524 of the 526 with any healing between players (39 had none; 93% of all 565), a median 100% of the party's healing from others. The heal is mostly Recuperation, then Sprint Mantra's heal on hit, then Healing Touch. Across 709 Chanter appearances in Cleric-less parties they keep the buffer four (Marchutan's Wrath 99%, Sprint Mantra 91%, Undefeated Mantra 90%, Power of the Storm 77%); only Healing Touch (14% vs 3% with a Cleric) and Impeding Authority (9% vs 3%) shift a little, and the median damage share drops from 19.0% to 16.4%. Sprint Mantra 15 (+50% heal at HP 50% or less; 20: +10% Restoration) is derived from the DB effect: Global battle healers' Sprint levels aren't logged, so it is UNVERIFIED as a measured gain. Weaknesses: no resurrection, weaker burst healing than a Cleric, Recuperation has a 15 s cooldown.",
+      "src": [
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
+        "aion2.app Global DB: Sprint Mantra, Recuperation",
+        "https://aion2.app/db/skills/18160000"
+       ],
+       [
+        "Chanter quick guide (daevaos): Sprint 15 as a DPS build",
+        "https://daevaos.com/guides/chanter-quick-guide"
+       ]
+      ]
+     },
+     {
+      "t": "Battle healer, hard content",
+      "tag": "Battle healer",
+      "pick": [
+       [
+        "Undefeated Mantra",
+        20
+       ],
+       [
+        "Power of the Storm",
+        20
+       ],
+       [
+        "Healing Touch",
+        15
        ],
        [
         "Impeding Authority",
         15
        ]
       ],
-      "why": "Healing Touch heals the party and removes 5 debuffs at 15 (+5% heal at 20). Impeding Authority shields the party for 16% of max HP and adds 10% PvE tolerance at 15. Korea's Mar guide lists both as the care picks.",
+      "why": "Korea's battle-healer picks, with the effects checked in the Global DB; the levels are derived from the DB. Healing Touch replaces Marchutan's Wrath (party heal; 15 removes 5 debuffs; 20 adds +5% heal; 14% of Global battle healers run it). Impeding Authority replaces Sprint Mantra or Power of the Storm on mechanic-heavy bosses (a party shield of 16% max HP; 15: +10% PvE Damage Tolerance; 20: 7% HP back when the shield ends; 9% of Global battle healers). Barrier Spell 5 is the emergency button: the party can't drop below 10% HP for 3 s (180 s cooldown). The Korean post behind these picks is a 6-slot, level-25 Sanctuary setup, which Global doesn't have.",
       "src": [
        [
         "KR Mar 4: care picks",
@@ -3821,6 +4329,72 @@
        ],
        [
         "No-Cleric party run",
+        "https://www.inven.co.kr/board/aion2/6451/116"
+       ],
+       [
+        "Support 25s: Healing Touch, Sprint, Storm",
+        "https://www.inven.co.kr/board/aion2/6451/22811"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ]
+      ]
+     },
+     {
+      "t": "PvP (this guide's picks)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Marchutan's Wrath",
+        20
+       ],
+       [
+        "Healing Touch",
+        20
+       ],
+       [
+        "Focused Defense",
+        20
+       ],
+       [
+        "Undefeated Mantra",
+        20
+       ]
+      ],
+      "why": "UNVERIFIED for Global: Korea's Abyss/PvP list cut to 4 slots. Marchutan's Wrath at 10 stuns and at 15 cuts incoming heals and potion recovery by 70%. Healing Touch is a party heal that removes 5 debuffs at 15. Focused Defense guarantees a Block. The 4th slot is Undefeated Mantra or Power of the Storm for group PvP; Korea's Sep 23 Battlefield Might block is UNVERIFIED on Global.",
+      "src": [
+       [
+        "aion2.app Global DB: Chanter stigmas",
+        "https://aion2.app/db/skills?class=Chanter"
+       ]
+      ]
+     },
+     {
+      "t": "Solo",
+      "tag": "Solo",
+      "pick": [
+       [
+        "Undefeated Mantra",
+        20
+       ],
+       [
+        "Power of the Storm",
+        20
+       ],
+       [
+        "Marchutan's Wrath",
+        5
+       ],
+       [
+        "Focused Defense",
+        5
+       ]
+      ],
+      "why": "Undefeated Mantra, Power of the Storm, Marchutan's Wrath and Focused Defense. A Korean guide says solo Nightmare was much easier with Focused Defense (Inven, KR/TW).",
+      "src": [
+       [
+        "Solo Nightmare note",
         "https://www.inven.co.kr/board/aion2/6451/116"
        ]
       ]
@@ -3830,32 +4404,37 @@
      [
       "Undefeated Mantra",
       20,
-      "5: +100 Crit. 10: +100 Accuracy. 15: +5% crit damage. 20: +5% Double Chance. First to 20."
+      "5: +100 Crit. 10: +100 Accuracy. 15: +5% crit damage. 20: +5% Double Chance. The party buff is 10.5% at level 1, 17.5% at 15 and 20% at 20, and the higher level wins against a Cleric's Light of Protection (the Mantra wins ties). Global median 20. First to 20."
      ],
      [
       "Power of the Storm",
       20,
-      "5: -30s cooldown (120s to 90s). 20: +20% Attack for you, +10% for the party."
+      "5 is the cheap big step: -30 s cooldown (120 s to 90 s). 20: +20% Attack for you, +10% for the party. Lasts 10 s at level 1, 12 s at 5, 14.5 s at 10, 17 s at 15 and 20 s at 20. Global median 20."
      ],
      [
       "Guardian Blessing",
       15,
-      "10: x1.5 Crossguard. 15: x1.5 Wind's Promise, the reason to take it. 20 only adds healing received."
+      "10: x1.5 Crossguard. 15: x1.5 Wind's Promise, the reason to take it. 20 only adds healing received. 2-min cooldown on live Global (Sep 16); recast it with Power of the Storm."
      ],
      [
       "Marchutan's Wrath",
       5,
-      "The 3 s Dark Crush window works from level 1. 5: up to +20% damage on fewer targets. 10–20 add stun and anti-heal (PvP)."
+      "The 3 s Dark Crush window works from level 1. 5: up to +20% damage on fewer targets. 10–20 add stun and anti-heal (PvP). Global median 5."
      ],
      [
       "Sprint Mantra",
       10,
-      "5: +10% healing received. 10: +30% stamina regen. The guide says low levels are the value; 15-20 later."
+      "Party move speed (10.5% at level 1, 15% at 10, 20% at 20) and heal on hit. 5: +10% healing received. 10: +30% stamina regen. Two Chanters don't stack it; the higher level applies. Global median 10. A battle healer takes it to 15 (derived)."
      ],
      [
       "Healing Touch",
       15,
-      "15: removes 5 debuffs. 20: +5% heal."
+      "15: removes 5 debuffs. 20: +5% heal. A battle healer's swap for Marchutan's Wrath."
+     ],
+     [
+      "Impeding Authority",
+      15,
+      "A party shield of 16% max HP. 15: +10% PvE Damage Tolerance. 20: 7% HP back when the shield ends. A battle healer's swap on mechanic-heavy bosses."
      ]
     ],
     "order": [
@@ -3878,7 +4457,7 @@
         5
        ]
       ],
-      "n": "Cheap unlocks first. Marchutan's Wrath's 3 s Dark Crush window works from level 1."
+      "n": "Derived from the DB breakpoints and the NotMeter medians. Cheap unlocks first; Marchutan's Wrath's 3 s Dark Crush window works from level 1."
      },
      {
       "s": [
@@ -3887,7 +4466,7 @@
         20
        ]
       ],
-      "n": "Top Global Chanters this week: Undefeated Mantra at 20, everything else at 5–10."
+      "n": "Global medians among top Chanters: Undefeated Mantra 20, Power of the Storm 20, Sprint Mantra 10, Marchutan's Wrath 5."
      },
      {
       "s": [
@@ -3900,9 +4479,22 @@
         20
        ]
       ]
+     },
+     {
+      "s": [
+       [
+        "Sprint Mantra",
+        15
+       ],
+       [
+        "Healing Touch",
+        15
+       ]
+      ],
+      "n": "Battle healer: Undefeated 20 → Sprint 15 → Storm 20 → Healing Touch 15 (if used). Derived from the DB effects."
      }
     ],
-    "imageNote": "Your list has 5; with 4 slots, keep Marchutan's Wrath and drop Guardian Blessing. That's the Global sheet's pick, and 98% of top Global Chanters slot Marchutan's Wrath vs 28% for Guardian Blessing."
+    "imageNote": "Your list has 5; with 4 slots, keep Marchutan's Wrath and drop Guardian Blessing. That's what top Global Chanters run (Marchutan's Wrath about 97%, Guardian Blessing 25%), not the sheet's own priority (Undefeated Mantra, Power of the Storm, Sprint Mantra, Focused Defense)."
    },
    "specs": [
     {
@@ -3913,9 +4505,9 @@
       5
      ],
      "lvl": "20",
-     "note": "Use 2, 4, 5 for more stable lifesteal.",
+     "note": "Global top: 4+5 for 63% (at 16); Cleric-less battle healers 3+4 39%, 4+5 34%. The sheet says 3/4/5 at 20. 'Use 2, 4, 5 for more stable lifesteal' is this repo's note, not the sheet's; Korea's Inven guide uses 2+3+5 at 20 (2+5 before) for the lifesteal (KR/TW), and the daevaos build runs 3+4+5.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -3926,22 +4518,22 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Global top: 3+5 for 61%.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
     {
      "n": "Rushing Smash",
      "pick": [
-      1,
+      3,
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global top: 3+4 for 43%, 1+4 about 30%. The sheet lists 1/4 and the daevaos build runs 1+4. Global buff median level 15.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -3952,9 +4544,9 @@
       4
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 4. +30% skill speed; no other option is worth much.",
+     "note": "Global top: 3+4 for 67%. Option 4 is +30% skill speed; Korea's Sep optimizer takes 4 and calls no other option worth much. 15 s cooldown (the Aug 26 cut to 10 s is not live).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -3965,11 +4557,15 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "",
+     "lvl": "16–20",
+     "note": "3: always crits. 4: Piercing Strike chain. 5: no cooldown. Global top: 3+4+5 41%, 3+5 38%, 4+5 17%. At 16, 3+5 vs 4+5 at equal CP is +1–2%, within noise; Korea's Inven guide recommends 3+5 at 16 and 3+4+5 at 20 (KR/TW).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
+     "u20": [
+      3,
+      5
      ]
     },
     {
@@ -3992,9 +4588,9 @@
       4
      ],
      "lvl": "16-20",
-     "note": "Korea's Sep optimizer: 1 · 4 · 2. Third: 2 if the fight has debuffs to cleanse, otherwise 5.",
+     "note": "Global top: 1+4 for 64% (per player); the daevaos build runs 1+4+5. Third pick at 20: 2 (cleanse) if the fight has debuffs, otherwise 5. Korea's Sep optimizer: 1 · 4 · 2. Battle healer: 1 at 8 (two consecutive casts, the heal over time stacks twice), 1+4 at 12, 1+5 or 1+4 at 16, 1+4+5 at 20, or 1+4+2 when there are debuffs; 62% of Global battle healers run 1+4.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -4014,13 +4610,13 @@
     {
      "n": "Wave Blow",
      "pick": [
-      1,
+      2,
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Option 4: -15% enemy PvE Damage Boost. Global top: 2+4 for 41%, 1+4 23%. The sheet lists 1/4; the daevaos build runs 2+4.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -4028,14 +4624,18 @@
      "n": "Spinning Strike",
      "pick": [
       1,
-      2,
-      3
+      3,
+      5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 1 · 3 · 5. Use 2, 3, 5 for more healing when there's no Cleric.",
+     "note": "Option 1 (-5 s cooldown): never drop it. Global top: 1+3 for 50%, 1+5 29%; Korea and the daevaos build run 1+3+5; the sheet lists 1/2/3. With no Cleric, a Korean note suggests 2+3+5 for healing, and this page keeps option 1: 1+2 at 12 and 1+2+5 at 20 (option 2 is +10% Heal Boost, stacking to 20%). That is derived from the DB and untested on Global: Cleric-less Global Chanters still run 1+3 (54%), 1+2 only 5%.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "NotMeter Korea top-20 setup guide and NotMeter Global",
+      "https://notmeter.com/?view=setup-guide"
+     ],
+     "u20": [
+      1,
+      3
      ]
     },
     {
@@ -4045,10 +4645,23 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "From the sheet: 3 / 3+5 at 16. Global top: option 3 for 58%.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Gust Rampage",
+     "pick": [
+      4,
+      5
+     ],
+     "lvl": "16",
+     "note": "Korea 4+5; the sheet lists it as N/A. Option 5: -1 s all cooldowns per hit. Stagger bars only: Gust Rampage users measured 6–9% lower at equal CP (NotMeter can't tell when it was used).",
+     "src": [
+      "NotMeter Korea top-20 setup guide and NotMeter Global",
+      "https://notmeter.com/?view=setup-guide"
      ]
     }
    ],
@@ -4062,55 +4675,79 @@
       "Dark Crush",
       "20",
       "DPS",
-      "The guide calls it 'Chanter itself'. First to 20."
+      "1st. The guide calls it 'Chanter itself'. 18.0% of damage plus the Piercing Strike chain 13.5%. 16 is mandatory (option 5 removes the cooldown); 96% of top Global Chanters are at 16+, 41% at 20."
      ],
      [
       "Onslaught",
-      "20",
+      "16",
       "DPS",
-      "Held basic attack and the source of your cancels; pick 4 cuts Spinning Strike's cooldown."
+      "2nd, your held basic attack and the source of your cancels. 12: -1 s Spinning Strike per hit. 16: Storm Chain (7.2% of damage); 70% are at 16+. Then 20 (the sheet says 20)."
      ],
      [
       "Spinning Strike",
-      "20",
+      "16",
       "Buff",
-      "Semi-required: big hit, +15% crit damage for 30s (2 stacks), and it opens Dark Crush."
-     ],
-     [
-      "Recuperation",
-      "16-20",
-      "Heal",
-      "Semi-required for care: 16 gives two casts and +5% heal; 20 adds a cleanse or cooldown pick."
+      "3rd: 11.9% of damage, +15% crit damage for 30 s (2 stacks), and it opens Dark Crush. 16: always crits and ignores Block; 48% are at 16+. Then 20 (the sheet says 20)."
      ],
      [
       "Incandescent Blow",
       "16",
       "DPS",
-      "Macro filler."
-     ],
-     [
-      "Wave Blow",
-      "16",
-      "DPS",
-      ""
-     ],
-     [
-      "Gust Rampage",
-      "16",
-      "DPS",
-      "Stagger-window skill; useful when fights run long."
+      "4th, the macro filler: 12.4% plus Bursting Blow 14.5%. 16: multi-hit, ignores Block; 67% are at 16+."
      ],
      [
       "Impactful Crush",
       "12",
       "DPS",
-      "Opens Dark Crush; take the +30% skill speed pick."
+      "Opens Dark Crush; take 3+4 (67% of Global top Chanters; 4 is +30% skill speed)."
+     ],
+     [
+      "Recuperation",
+      "16",
+      "Heal",
+      "Party heal. 16 (-3 s cooldown), then 20 (Korea's top 20: 20). Option 1 (two casts) at 8, 4 at 12. For a battle healer it is the main heal; 62% of Global battle healers run 1+4."
+     ],
+     [
+      "Rushing Smash",
+      "12",
+      "DPS",
+      "Gap closer. Global buff median 15; 3+4 (43%) or 1+4."
+     ],
+     [
+      "Gust Rampage",
+      "16",
+      "DPS",
+      "Stagger-window skill only. 5 (16): -1 s all cooldowns per hit. Users measured 6–9% lower at equal CP."
+     ],
+     [
+      "Wave Blow",
+      "12",
+      "Debuff",
+      "Option 4: -15% enemy PvE Damage Boost. Level from the sheet, with Tremor Crush and Heat Wave Blow."
+     ],
+     [
+      "Tremor Crush",
+      "12",
+      "Utility",
+      "On Q with Wave Blow (sheet levels)."
+     ],
+     [
+      "Heat Wave Blow",
+      "12",
+      "DPS",
+      "Sheet levels."
+     ],
+     [
+      "Defiance (chanter)",
+      "16",
+      "Utility",
+      "CC break. 16 per the sheet; Global 3 (58%)."
      ]
     ],
     "pas": [
      [
       "Wind's Promise",
-      "Crit damage plus extra damage on crits. Highest priority (KR endgame 36). Guardian Blessing 15 multiplies it x1.5."
+      "Crit Damage Boost (5.7% at level 1, 19% at 20) plus extra damage on crits: 6.1% of Global damage. Highest priority, as high as possible (KR endgame 36). Guardian Blessing 15 multiplies it x1.5."
      ],
      [
       "Impact Hit (chanter)",
@@ -4118,14 +4755,22 @@
      ],
      [
       "Attack Preparation (chanter)",
-      "PvE damage (KR 30)."
+      "PvE Damage Boost (5.5% at level 1, 15% at 20) and +100 Accuracy (KR 30)."
+     ],
+     [
+      "Earth's Promise",
+      "Party debuff: enemy PvE damage tolerance -5.4% at level 1, -9% at 10, -11% at 15, -13% at 20 (KR 19). Doesn't apply with a Cleric's Chain of Torment."
+     ],
+     [
+      "Protection Circle",
+      "A party shield: Divine Barrier every 10 stacks. Global median level 14; worth more to a battle healer."
      ],
      [
       "Inspiring Spell",
-      "Crit and Perfect; small effect."
+      "Crit and Perfect (+100 Crit, +0.5% Perfect); small effect. If there's room (KR 21)."
      ]
     ],
-    "wings": "Eroded Wings 45%, Talisra 23%, Awaken Pride 12.5%",
+    "wings": "Talisra (Season Shop, cooldown reduction) is the Global goal; Forest Spirit or Dark Veil Wings until then (daevaos); wings can't be enhanced in Season 1. Korea (Aug 21): Eroded Wings 45%, Talisra 23%, Awaken Pride 12.5%",
     "src": [
      [
       "KR Sep 17 optimizer (screenshots)",
@@ -4138,6 +4783,18 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Global class sheet (zxcastform), Chanter tab (Oct 14 snapshot)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ],
+     [
+      "Chanter quick guide (daevaos, Castform)",
+      "https://daevaos.com/guides/chanter-quick-guide"
+     ],
+     [
+      "NotMeter Korea top-20 setup guide",
+      "https://notmeter.com/?view=setup-guide"
      ]
     ]
    }
@@ -4248,6 +4905,10 @@
       [
        "Assembled from the current effects",
        ""
+      ],
+      [
+       "Korea's no-Templar tank set (a forum question, not a build post)",
+       "https://www.inven.co.kr/board/aion2/6448/22575"
       ]
      ]
     },
@@ -4479,6 +5140,14 @@
     [
      "Wave Armor 25",
      "Becomes a 2-hit attack (Jul 8)"
+    ],
+    [
+     "Rage Burst 10",
+     "Wounded lowers the boss's Attack by 20% (a tank's first step)"
+    ],
+    [
+     "Lunge Stance 20",
+     "50% chance to cut all cooldowns by 1s on a crit"
     ]
    ],
    "tiers": {
@@ -4517,7 +5186,7 @@
      ],
      [
       "Tenaciousness",
-      "Invulnerability for progression and PvE wipes, PvP"
+      "Invulnerability for progression and PvE wipes, PvP. Equipped by 95% of Korea's top 20, who run about 8 stigmas on average (NotMeter Korea)"
      ]
     ],
     "C": [
@@ -4555,30 +5224,34 @@
        ],
        [
         "Zikel's Blessing",
-        20
-       ],
-       [
-        "Wave Armor",
         15
        ],
        [
         "Rage Burst",
         20
+       ],
+       [
+        "Focused Block",
+        5
        ]
       ],
-      "why": "Lunge Stance, Zikel's Blessing and Rage Burst were Korea's fixed Season 1 picks, and all three are still the core. Korea's 4th was Focused Block while Wave Armor was bugged (March). On the balance Global launched with, Wave Armor 10/15 multiplies Experienced Counterstrike and Murderous Burst by 1.5, so it's the better 4th when someone else holds the boss.",
+      "why": "Lunge Stance (97% of top Global Gladiators, median level 20), Zikel's Blessing (94%, median 15) and Rage Burst (99%, most players at 5) are the core. Focused Block is the 4th for 64% of them (median 5): it covers mistakes and learning fights. Rage Burst only needs 5 for now (-15s cooldown); take it to 20 after Lunge Stance 20 and Zikel's 15. Behind a Templar, Wave Armor is the damage 4th (see the swap below).",
       "src": [
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
        [
         "Global class sheet (zxcastform)",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
        ],
        [
-        "KR Season 1 fixed four",
-        "https://vortexgaming.io/postdetail/725199"
+        "Tenyon's Global Gladiator guide",
+        "https://docs.google.com/document/d/15J0xIIlOGvp0NSGui7NK0MJpbgZTjXuZKAahHnkr2G4/edit"
        ],
        [
-        "Jul 7: Counterstrike boost moved to Wave Armor",
-        "https://www.inven.co.kr/board/aion2/6448/23042"
+        "KR Season 1 fixed four",
+        "https://vortexgaming.io/postdetail/725199"
        ]
       ],
       "main": true
@@ -4588,30 +5261,71 @@
       "tag": "Battle tank",
       "pick": [
        [
+        "Rage Burst",
+        20
+       ],
+       [
         "Lunge Stance",
         20
+       ],
+       [
+        "Zikel's Blessing",
+        15
+       ],
+       [
+        "Focused Block",
+        20
+       ]
+      ],
+      "why": "On Global, tank Gladiator is a role, not a different loadout. In the 1,644 Templar-less parties that have a Gladiator, the Gladiator got the most healing in 908 (55%), with the same stigmas as the DPS build (Rage Burst 98%, Lunge Stance 97%, Zikel's Blessing 89%, Focused Block 67%; medians 6, 20, 15 and 5). They dealt a bigger damage share (median 20.8% vs 17.2%) and died less (0.11 vs 0.29 a fight). Two tank steps beyond the DPS build: Rage Burst 10 doubles Wounded to -20% boss Attack, and Focused Block 20 restores 10% HP once on a Parry. Those two targets come from the skill effects; Global tanks mostly sit at 5–6, so the gain is UNVERIFIED as a measured one. Armor of Balance (under 2%) and Tenaciousness (about 1%) are Korea's picks and aren't used on Global.",
+      "src": [
+       [
+        "Global party analysis: NotMeter, 5,303 boss fights (Oct 7–14 week; link retired)",
+        ""
+       ],
+       [
+        "Korea's no-Templar tank set (a forum question, not a build post)",
+        "https://www.inven.co.kr/board/aion2/6448/22575"
+       ],
+       [
+        "NotMeter Korea setup guide (Tenaciousness: 95% of Korea's top 20)",
+        "https://notmeter.com/?view=setup-guide"
+       ]
+      ]
+     },
+     {
+      "t": "Behind a Templar (damage 4th)",
+      "tag": "Swap",
+      "pick": [
+       [
+        "Lunge Stance",
+        20
+       ],
+       [
+        "Zikel's Blessing",
+        15
        ],
        [
         "Rage Burst",
         20
        ],
        [
-        "Focused Block",
-        20
-       ],
-       [
-        "Armor of Balance",
+        "Wave Armor",
         15
        ]
       ],
-      "why": "Rage Burst 10 lowers the boss's Attack by 20% (Wounded), the best tank tool you have. Focused Block gives 2 parries from level 5 and heals 10% HP per parry at 20, and parrying keeps Experienced Counterstrike's frontal buff up. Armor of Balance 10/15 boosts your lifesteal and Protection Armor and adds CC resist. Short on threat or damage? Swap Armor of Balance for Zikel's Blessing.",
+      "why": "The Templar takes the block mechanics, so Wave Armor can replace Focused Block: 10 makes Experienced Counterstrike x1.5 and 15 makes Murderous Burst x1.5. Only 15% of top Global Gladiators use it. At equal CP its users (16 players) vs Focused Block users (72) were 3–4% ahead per player (an independent re-check: +2.6%, range -8% to +15%), which the data can't tell from zero. Lifestealing Blade is the sheet's first alternate for the 4th slot and Tenyon's 4th (27% use): at equal CP it was 1.5% behind Focused Block per player, and the sign flips under another grouping, so there's no difference.",
       "src": [
        [
-        "KR tank combo (no Templar)",
-        "https://www.inven.co.kr/board/aion2/6448/22575"
+        "Global class sheet (zxcastform)",
+        "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
        ],
        [
-        "Built from those effects, trimmed to 4",
+        "Tenyon's Global Gladiator guide",
+        "https://docs.google.com/document/d/15J0xIIlOGvp0NSGui7NK0MJpbgZTjXuZKAahHnkr2G4/edit"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (link retired)",
         ""
        ]
       ]
@@ -4666,11 +5380,44 @@
         15
        ]
       ],
-      "why": "Lifestealing Blade heals 10% of the damage it deals to up to 4 targets, and 15 cuts its cooldown by 30s. Rage Burst 5 alone brings its cooldown from 45s to 30s.",
+      "why": "Lifestealing Blade heals 10% of the damage it deals to up to 4 targets, and 15 cuts its cooldown by 30s. Rage Burst 5 alone brings its cooldown from 45s to 30s. This list is derived from the stigma effects and is UNVERIFIED: no source tests it.",
       "src": [
        [
         "Assembled from the stigma effects; not a single source",
         ""
+       ]
+      ]
+     },
+     {
+      "t": "PvP (this page's pick)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Focused Block",
+        20
+       ],
+       [
+        "Tenaciousness",
+        20
+       ],
+       [
+        "Rage Burst",
+        20
+       ],
+       [
+        "Blade Toss",
+        15
+       ]
+      ],
+      "why": "UNVERIFIED for Global: there is no Global PvP data, and this four is built from the skill effects. Focused Block (2 parries, mobile at 10, +20% move speed on parry at 15) and Tenaciousness (3 s damage and CC immunity; 20 triggers it on Impact-type CC) are the defense. Rage Burst adds +5% PvP damage and always crits at 15. Blade Toss cuts the target's Incoming Heal by 50% and breaks shields at 15, for fights against healers. The Korean post it was first tied to (Inven Sep 9) only asks which PvP stigmas people use. The Oct 13 patch also adjusted Battlefield stats, so older PvP experience may not hold.",
+      "src": [
+       [
+        "Assembled from the stigma effects; not a single source",
+        ""
+       ],
+       [
+        "Inven Sep 9 PvP question (lists no build)",
+        "https://www.inven.co.kr/board/aion2/6448/31743"
        ]
       ]
      }
@@ -4679,125 +5426,127 @@
      [
       "Lunge Stance",
       20,
-      "15: x1.5 Identify Weakness. 20: 50% chance to cut all cooldowns by 1s on crits. Worth the full 75."
+      "5: +5% Double Chance. 15: x1.5 Identify Weakness (mostly crit, which top Gladiators already cap). 20: 50% chance to cut all cooldowns by 1s on crits. 97% run it, median 20. Worth the full 75."
      ],
      [
       "Zikel's Blessing",
-      20,
-      "10: +10% PvE damage. 15: +50% multi-hit. 20 only adds status-effect chance, so stop at 15 if shards are tight."
+      15,
+      "10: +10% PvE damage. 15: +50% multi-hit. 20 only adds +20% status-effect chance, so stop at 15 if shards are tight. 94% run it, median 15."
      ],
      [
       "Rage Burst",
       20,
-      "5: -15s cooldown. 10: Wounded lowers enemy Attack by 20%. 15: always crits. 20: +10% PvE damage."
+      "5 first: -15s cooldown (99% run it, most at 5). 10: Wounded lowers enemy Attack by 20% (a tank's first step). 15: always crits. 20: +10% PvE damage."
+     ],
+     [
+      "Focused Block",
+      5,
+      "5: second parry. 10: castable while moving. 20 restores 10% HP once on a Parry, a tank-only reason to go higher. 64% run it, median 5."
      ],
      [
       "Wave Armor",
       15,
-      "10: x1.5 Experienced Counterstrike. 15: x1.5 Murderous Burst. 20 only reflects 10% of damage taken, so skip it."
+      "10: x1.5 Experienced Counterstrike. 15: x1.5 Murderous Burst. 20 only reflects 10% of damage taken, so skip it. Only 15% of top Global Gladiators use it."
      ],
      [
-      "Focused Block",
+      "Lifestealing Blade",
       10,
-      "5: second parry. 10: castable while moving. Go to 20 only if you tank (10% HP per parry)."
+      "Slot 4 alternative. Tenyon runs it at 10 or more for the party's Predation; 15 cuts its cooldown by 30s. About 4.3% of your damage when slotted. 27% use, median 15."
      ]
     ],
     "order": [
      {
       "s": [
        [
+        "Rage Burst",
+        5
+       ],
+       [
         "Lunge Stance",
-        10
+        5
        ],
        [
         "Zikel's Blessing",
         10
        ],
        [
-        "Rage Burst",
-        10
+        "Focused Block",
+        5
        ]
       ],
-      "n": "Rage Burst 5 = -15s cooldown; 10 = boss -20% Attack."
+      "n": "Derived from the Global medians and breakpoints. Rage Burst 5 = -15s cooldown; Zikel's 10 = +10% PvE damage. Run Lifestealing Blade 10 instead of Focused Block if you slot it. Tenyon's order: Rage Burst 5 → 20, Zikel's at least 10, Lunge Stance 5 → 20, Lifestealing Blade at least 10."
      },
      {
       "s": [
-       [
-        "Wave Armor",
-        10
-       ]
-      ],
-      "n": "x1.5 Experienced Counterstrike."
-     },
-     {
-      "s": [
-       [
-        "Lunge Stance",
-        20
-       ],
        [
         "Zikel's Blessing",
         15
+       ],
+       [
+        "Lunge Stance",
+        15
        ]
-      ]
+      ],
+      "n": "Zikel's before Lunge: Lunge 10 only adds move speed, and Lunge 15's Identify Weakness boost mostly adds crit, which top Gladiators already cap."
+     },
+     {
+      "s": [
+       [
+        "Lunge Stance",
+        20
+       ]
+      ],
+      "n": "Lunge 20: 50% chance to cut all cooldowns 1s on crit."
      },
      {
       "s": [
        [
         "Rage Burst",
         20
-       ],
-       [
-        "Wave Armor",
-        15
-       ],
-       [
-        "Zikel's Blessing",
-        20
        ]
       ],
-      "n": "Rage Burst 20: +10% PvE damage."
+      "n": "Rage Burst 10 = boss -20% Attack (the tank's first step); 15 always crits; 20 = +10% PvE damage."
      }
     ],
-    "imageNote": "Your list has 5. Lunge Stance, Zikel's Blessing and Rage Burst are the core. For the 4th: Focused Block if you're tanking or learning a fight, Wave Armor for damage behind a Templar. Lifestealing Blade is the solo pick."
+    "imageNote": "Your list has 5. Lunge Stance, Zikel's Blessing and Rage Burst are the core. For the 4th: Focused Block is what 64% of top Global Gladiators run (tanking, pugs, learning a fight); Wave Armor is the damage swap behind a Templar (15% use); Lifestealing Blade is the sheet's first alternate and the solo pick (27% use)."
    },
    "gtiers": {
     "S": [
      [
       "Lunge Stance",
-      "Combat speed plus cooldown cuts on crit"
+      "Combat speed plus cooldown cuts on crit; 97% use, median 20"
      ],
      [
       "Zikel's Blessing",
-      "+20% Attack, +10% PvE damage"
+      "+20% Attack, +10% PvE damage; 94% use, median 15"
      ],
      [
       "Rage Burst",
-      "-20% boss Attack, +10% PvE damage"
+      "-20% boss Attack, +10% PvE damage; 99% use"
      ]
     ],
     "A": [
      [
-      "Wave Armor",
-      "x1.5 two damage passives at 10/15"
+      "Focused Block",
+      "The usual 4th (64% use, median 5): parries for tanking and pugs"
      ],
      [
-      "Focused Block",
-      "Parries for tanking and pugs"
+      "Wave Armor",
+      "Damage 4th behind a Templar: x1.5 two passives at 10/15; 15% use"
      ],
      [
       "Lifestealing Blade",
-      "Sustain and party Predation"
+      "Sheet's first alternate: sustain and party Predation; 27% use"
      ]
     ],
     "B": [
      [
       "Armor of Balance",
-      "Tank lifesteal and CC resist"
+      "Tank lifesteal and CC resist; under 2% on Global (Korea's tank set)"
      ],
      [
       "Tenaciousness",
-      "Invulnerability for progression and PvP"
+      "Invulnerability for PvP; about 1% on Global (Korea's top 20 equip it)"
      ]
     ],
     "C": [
@@ -4827,13 +5576,13 @@
     {
      "n": "Keen Strike",
      "pick": [
-      2,
+      1,
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Global: option 1 (MP) is the top pick (39% of players); the sheet takes 2 (lifesteal). 4: -1 s Ruinous Blow cooldown per hit (needs level 12).",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -4845,7 +5594,7 @@
       5
      ],
      "lvl": "20",
-     "note": "The Overhead Slam-Rending Blow cancel skill.",
+     "note": "The Overhead Slam-Rending Blow cancel skill. 3: mobile. 4: +12% on few targets. 5: restores MP on crit. Global top: 3+5 for 75%. Tanking: option 2 (+200 Block while casting) is a tank-only choice no Global source picks, so it is UNVERIFIED.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4858,7 +5607,7 @@
       3
      ],
      "lvl": "12",
-     "note": "",
+     "note": "1: 3 s of Prepare for Battle. 3: resets on kill. Global top: 1+3 for 67%; median buff level 14. Tanking: 1+4 (+20% PvE damage tolerance for 3 s) is derived from the skill text and UNVERIFIED.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4871,7 +5620,7 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Sheet pick: 1+5 at 16 (option 5 ignores Block/Evasion). Global: used by 20% of top players (23 of 114); the most common pick is 1+4 (39% of users), not the sheet's 1+5. 12 is enough unless you want option 5.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4885,7 +5634,7 @@
       5
      ],
      "lvl": "20",
-     "note": "Upward Strike chain, guaranteed crit, no cooldown.",
+     "note": "3: Upward Strike chain. 4: always crits. 5: no cooldown. Global top: 3+4+5 54%, 3+5 27%, 4+5 18%. Option 2 turns it into an AoE but costs those picks. PvP (UNVERIFIED, from the skill text): keeps 3+4+5.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4911,7 +5660,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Option 4 at 12 resets it on crit. Korea's 4+5 rests on one sample.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4924,7 +5673,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Option 4 at 12: -10 s cooldown. Global top: 83% of its users (83 players) run 2+4.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4950,10 +5699,10 @@
       4,
       5
      ],
-     "lvl": "20",
-     "note": "Korea's Sep optimizer: 1 · 4 · 2. 1 and 4 fixed. Third: 2 (+12.5m range) for comfort, or 5 for a little more damage. No longer needs level 20.",
+     "lvl": "16-20",
+     "note": "Global: top players' median skill level is 16 (69% at 16+, 100% at 12+; 33% picked option 5). Picks split between 3+4 (32%), 1+4 (19%) and 4+5 (19%). The sheet and Korea's top 20 run 1+4+5 at 20, and Tenyon says at least 12. 4 (extra damage) is the fixed pick. Korea's Sep optimizer: 1 · 4 · 2 (2 is +12.5 m range, for comfort). PvP (UNVERIFIED): option 5 ignores Block/Evasion, so it is the PvP pick over option 1.",
      "src": [
-      "Global class sheet (zxcastform)",
+      "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     },
@@ -4964,10 +5713,23 @@
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "Option 5 at 16: +50% PvE damage tolerance during Tenacity. Global picks are mixed: 3 alone 33%, 3+4 32%. Option 3 restores 20% HP. PvP (UNVERIFIED): option 1 adds the Wrath Burst chain.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+     ]
+    },
+    {
+     "n": "Sword Aura Rampage",
+     "pick": [
+      4,
+      5
+     ],
+     "lvl": "16",
+     "note": "4: multi-hit. 5: -1 s all cooldowns per hit. Global picks are mixed (2+4, 4+5, 2+5); Korea runs 4+5. Stagger windows only: 1.2% of damage, and 39% of the players who use it (20% of all) are at 16+.",
+     "src": [
+      "NotMeter Korea setup guide and NotMeter Global",
+      "https://notmeter.com/?view=setup-guide"
      ]
     }
    ],
@@ -4981,47 +5743,75 @@
       "Overhead Slam",
       "20",
       "DPS",
-      "More than half of a Gladiator's damage. First to 20."
+      "About 61% of a Gladiator's damage with its Upward Strike chain (33.5% + 27.4%). Every top Global player is at 16+ (16 = no cooldown) and 54% are at 20. First to 20."
      ],
      [
       "Rending Blow",
       "20",
       "DPS",
-      "The other half of the Overhead Slam-Rending Blow cancel."
+      "The other half of the cancel, with its Smashing Blow chain (9.5% + 10.8%). Go to 16 first (option 5 fixes MP; 83% of top Global players have it), then 20."
      ],
      [
       "Ruinous Blow",
       "16",
       "Buff",
-      "Opener: Prepare for Battle gives +20% PvE damage and +100 Crit for 20s. It no longer needs 20."
+      "7.8% of damage plus Prepare for Battle (+20% PvE damage and +100 Crit for 20s). The buff logs the real skill level: top Global median 16 (69% at 16+). The sheet and Korea's top 20 run 20; Tenyon says at least 12."
+     ],
+     [
+      "Sword Aura Rampage",
+      "16",
+      "DPS",
+      "Stagger windows only: 1.2% of damage. About half of top Global players use it and 39% of those are at 16+. Option 5 at 16 = -1 s all cooldowns per hit."
+     ],
+     [
+      "Keen Strike",
+      "12",
+      "Utility",
+      "Your MP source (left click). Option 4 at 12: -1 s Ruinous Blow cooldown per hit. Stop points: leave Leaping Slam, Keen Strike, Mocking Blade, Crushing Wave, Ankle Slice, Rush Strike and Aerial Snare at 12; nothing past 12 adds damage for them."
+     ],
+     [
+      "Leaping Slam",
+      "12",
+      "Utility",
+      "Gap closer; median buff level 14 in Global parses. Options 1+3 at 12."
+     ],
+     [
+      "Defiance (gladiator)",
+      "16",
+      "Utility",
+      "CC break. Option 5 at 16: +50% PvE damage tolerance during Tenacity."
      ],
      [
       "Aerial Snare",
       "12",
       "DPS",
-      "Optional: one tester gained about 300k DPS using it in Sword Aura Rampage's spot, at the cost of some Overhead Slam hits."
+      "Optional (sheet level 12): one Korean tester gained about 300k DPS using it in Sword Aura Rampage's spot, at the cost of some Overhead Slam hits."
      ]
     ],
     "pas": [
      [
       "Experienced Counterstrike",
-      "Front damage boost, plus PvE damage for the party when you block. Highest priority (KR endgame 36). Wave Armor 10 multiplies it x1.5."
+      "Front damage boost, plus PvE damage for the party when you block (+5.4% at level 1; doesn't stack with a Templar's Fury). First for Korea's top 20 (KR 35); Global median level 17. Wave Armor 10 multiplies it x1.5."
      ],
      [
       "Murderous Burst",
-      "Crit damage (KR 30). Wave Armor 15 multiplies it x1.5."
+      "AoE proc and crit damage (KR 31); Global median level 16. Wave Armor 15 multiplies it x1.5."
      ],
      [
       "Attack Preparation",
-      "PvE damage (KR 29)."
+      "+5.5% PvE damage and +100 Accuracy at level 1 (KR 27). Tenyon ranks it first, the sheet second. NotMeter can't log its level."
      ],
      [
       "Identify Weakness",
-      "Crit and Perfect (KR 22). Lunge Stance 15 multiplies it x1.5."
+      "+100 Crit and +0.5% Perfect at level 1 (KR 18). Ranks lower on Global because top Gladiators already sit at the 50% crit cap. Lunge Stance 15 multiplies it x1.5."
      ],
      [
       "Impact Hit",
-      "Double Chance (KR 21). The guide rates these last three about equal."
+      "Mainly +11.2% Impact-type chance, plus +0.3% Double Chance at level 1 (KR 27). The sheet ranks it first. NotMeter can't log its level."
+     ],
+     [
+      "Survival Willpower",
+      "Defensive: status resist and damage tolerance when you're hit by CC. Global median level 15."
      ]
     ],
     "wings": "Eroded Wings 73%, Talisra 18.5%",
@@ -5033,6 +5823,18 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Tenyon's Global Gladiator guide",
+      "https://docs.google.com/document/d/15J0xIIlOGvp0NSGui7NK0MJpbgZTjXuZKAahHnkr2G4/edit"
+     ],
+     [
+      "NotMeter Korea setup guide (KR passive levels)",
+      "https://notmeter.com/?view=setup-guide"
+     ],
+     [
+      "Global class sheet (zxcastform, Oct 14 copy)",
+      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
      ]
     ]
    }
@@ -5285,7 +6087,7 @@
     "S": [
      [
       "Jointstrike: Corrode",
-      "Target takes more damage from you and spirits"
+      "Target takes +10% damage from the spirit (+15% more at 5). Sirin: 5, then straight to 20"
      ],
      [
       "Summon: Ancient Spirit",
@@ -5295,7 +6097,7 @@
     "A": [
      [
       "Flame Blessing",
-      "Extra damage procs; proc cooldown halved at 20"
+      "Extra damage procs; proc cooldown halved at 20. 87% of top Global Spiritmasters run it (median level 14)"
      ],
      [
       "Enhance: Spirit's Benediction",
@@ -5305,17 +6107,17 @@
     "B": [
      [
       "Jointstrike: Destructive Attack",
-      "Charge nuke; usable on cooldown since Sep 10"
+      "Charge nuke; usable on cooldown since Sep 10 (KR/TW). Sirin's Global pick for the 4th slot, with weak support in Global parses"
      ],
      [
       "Siphon",
-      "Heal and 30% HP shield at 15"
+      "Heal and 30% HP shield at 15. Solo and PvP option; 1% of top Global parses"
      ]
     ],
     "C": [
      [
       "Command: Proxy",
-      "Spirit tanks for you; costs damage in PvE"
+      "Spirit tanks for you; costs damage in PvE. In Sirin's PvP pairs (with Kaisinel's Power or Siphon)"
      ],
      [
       "Assault Terror",
@@ -5327,7 +6129,7 @@
      ],
      [
       "Kaisinel's Power",
-      "Status effect buff"
+      "Status effect buff; Sirin's general PvP option with Command: Proxy"
      ],
      [
       "Cry of Terror",
@@ -5339,7 +6141,7 @@
      ],
      [
       "Seize Magic",
-      "PvP buff strip"
+      "PvP buff strip; Sirin pairs it with Command: Proxy (seals from 10)"
      ]
     ]
    },
@@ -5363,14 +6165,22 @@
        ],
        [
         "Flame Blessing",
-        20
+        15
        ]
       ],
-      "why": "Exactly your image. Korean Spiritmasters call these four the only real PvE stigmas; everything else costs damage.",
+      "why": "What 87% of top Global Spiritmasters run in the 4th slot (Flame Blessing: median level 14, mode 15). Summon: Ancient Spirit (100%), Corrode (98%) and Benediction (98%, median 10) are the other three; Korean Spiritmasters call these four the only real PvE stigmas. Sirin's Global guide prefers Jointstrike: Destructive Attack in the 4th slot instead (see the Destructive Attack card); at equal CP the two are within error. Siphon is the survival swap.",
       "src": [
        [
         "Global class sheet (zxcastform)",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+       ],
+       [
+        "Sirin's Spiritmaster Guide (Global)",
+        "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
        ],
        [
         "'Only 4 usable PvE stigmas'",
@@ -5382,6 +6192,39 @@
        ]
       ],
       "main": true
+     },
+     {
+      "t": "Destructive Attack 4th (Sirin's pick)",
+      "tag": "Swap",
+      "pick": [
+       [
+        "Summon: Ancient Spirit",
+        20
+       ],
+       [
+        "Enhance: Spirit's Benediction",
+        20
+       ],
+       [
+        "Jointstrike: Corrode",
+        20
+       ],
+       [
+        "Jointstrike: Destructive Attack",
+        19
+       ]
+      ],
+      "why": "Sirin: 'from early testing, Destruction [Destructive Attack] performs a bit better' than Flame Blessing; it is a charge skill from 5 (up to +200%) and her 'number 1 stagger skill', and level 20 resets Curse and Corrode. She stops at 19 to avoid cancelling a bugged double hit seen in KR/TW, 'if it gets fixed' otherwise; whether that bug exists on Global is UNVERIFIED (she hasn't seen it). Global parses at equal CP: its users (32 parses from only 14 players, two of them supplying 15 parses) came out about 4% ahead of Flame Blessing users (116 players), averaged per player, with a 95% range of -2% to +11%, so this is weak support. Only 11% of top Global Spiritmasters run it. Recommended 4th slot, with Flame Blessing the common alternative.",
+      "src": [
+       [
+        "Sirin's Spiritmaster Guide (Global)",
+        "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (link retired)",
+        ""
+       ]
+      ]
      },
      {
       "t": "Survival / solo",
@@ -5404,86 +6247,131 @@
         15
        ]
       ],
-      "why": "Siphon heals, restores MP, and from 15 shields you for 30% of max HP for 30s.",
+      "why": "Sirin's solo pick: Siphon (15) in place of the 4th slot. It heals, restores MP, and from 15 shields you for 30% of max HP for 30 s. 'You won't really have space for this' in a damage build: only 1% of top Global parses (4 of 300) use it.",
       "src": [
        [
         "Siphon for survival",
         "https://www.inven.co.kr/board/aion2/6454/10248"
        ]
       ]
+     },
+     {
+      "t": "PvP (Sirin's Global suggestions)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Enhance: Spirit's Benediction",
+        20
+       ],
+       [
+        "Summon: Ancient Spirit",
+        20
+       ],
+       [
+        "Kaisinel's Power",
+        20
+       ],
+       [
+        "Command: Proxy",
+        20
+       ]
+      ],
+      "why": "Benediction and Ancient Spirit are fixed ('non-negotiable', 20). The other two slots are one of Sirin's pairs: Kaisinel's Power + Command: Proxy (general: status effect chance and resist, plus survival, shown here); Corrode + Destructive Attack (burst: 'Corrode into Destruction into Corrode can be really deadly'); Siphon + Proxy (defensive: self-heal and shield); Seize Magic + Command: Proxy (buff removal and crowd control, 10+; seals from 10). Flame Blessing is in her 'not recommended' row for PvP. She writes that 'predicting how PvP will play out during season 1 on global is impossible', so all of these are low confidence (UNVERIFIED).",
+      "src": [
+       [
+        "Sirin's Spiritmaster Guide (Global), PvP section",
+        "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+       ]
+      ]
      }
     ],
     "levels": [
      [
-      "Jointstrike: Corrode",
-      20,
-      "5: +15% spirit damage on the target. 20: +10s, so it barely drops. Level it first."
-     ],
-     [
       "Summon: Ancient Spirit",
       20,
-      "10: x1.5 Spirit's Descent. 15: skill after 5 basic attacks. 20: +20% spirit stats."
-     ],
-     [
-      "Flame Blessing",
-      20,
-      "15: +10% crit damage. 20: extra-damage proc cooldown halved. 20 is the big one."
+      "Sirin: 'the biggest source of your damage'. 15 first (skill after 5 attacks); her '15 ASAP' was a workaround for a Global bug below level 15 that NC's Oct 13 patch fixed (level 15 or below), but 15 is still the first big step. 20: +20% spirit stats. 90 s cooldown, lasts 30 s."
      ],
      [
       "Enhance: Spirit's Benediction",
       20,
-      "10: x1.5 Spirit Strike. 15: x1.5 Spirit Communion. 20: +25% PvE damage and tolerance for you and the spirit."
+      "Sirin: 'your main buff… never take off your hotbar'. 10: x1.5 Spirit Strike. 15: x1.5 Spirit Communion. 20: +25% PvE damage and tolerance for you and the spirit; take it to 20 first late. Stays 10 s at every level. Global median 10."
+     ],
+     [
+      "Jointstrike: Corrode",
+      20,
+      "'All or nothing': 5 (+15% spirit damage taken), then straight to 20 (+10 s, so it barely drops). The target takes +10% damage from the spirit for 20 s. Level it first."
+     ],
+     [
+      "Flame Blessing",
+      15,
+      "Sirin: 'if you are going to use this it needs to be at least lvl 15'. 15: +10% crit damage. 20: extra-damage proc cooldown halved. Buff lasts 10 s at level 1 and 17 s at 15. 87% use it, median 14 (mode 15)."
+     ],
+     [
+      "Jointstrike: Destructive Attack",
+      19,
+      "10 early, 19 late. 5: a charge skill (up to +200%), Sirin's 'number 1 stagger skill'. 20 resets Curse and Corrode, but she stops at 19 to avoid a bugged double hit seen in KR/TW. Only if you take it over Flame Blessing."
+     ],
+     [
+      "Siphon",
+      15,
+      "Survival option: a 30% max-HP shield at 15 for solo play. 'You won't really have space for this.'"
      ]
     ],
     "order": [
      {
       "s": [
        [
-        "Jointstrike: Corrode",
-        10
-       ],
-       [
         "Summon: Ancient Spirit",
-        10
+        15
        ],
        [
-        "Flame Blessing",
-        10
+        "Jointstrike: Corrode",
+        5
        ],
        [
         "Enhance: Spirit's Benediction",
-        10
-       ]
-      ]
-     },
-     {
-      "s": [
+        5
+       ],
        [
-        "Jointstrike: Corrode",
-        20
+        "Jointstrike: Destructive Attack",
+        10
        ]
       ],
-      "n": "Korean advice: if you can only push one, push Corrode."
+      "n": "Sirin's early stage (Destructive Attack 5–10; Flame Blessing 15 if you take it instead). Her reason for Ancient 15, a Global bug, was fixed on Oct 13; 15 is still the first big step."
      },
      {
       "s": [
+       [
+        "Enhance: Spirit's Benediction",
+        10
+       ],
+       [
+        "Jointstrike: Destructive Attack",
+        15
+       ]
+      ],
+      "n": "Mid: Ancient Spirit 15–20, Corrode 5, Benediction 10, Destructive Attack 15."
+     },
+     {
+      "s": [
+       [
+        "Enhance: Spirit's Benediction",
+        20
+       ],
        [
         "Summon: Ancient Spirit",
         20
        ],
        [
-        "Enhance: Spirit's Benediction",
+        "Jointstrike: Corrode",
         20
-       ]
-      ]
-     },
-     {
-      "s": [
+       ],
        [
-        "Flame Blessing",
-        20
+        "Jointstrike: Destructive Attack",
+        19
        ]
-      ]
+      ],
+      "n": "Late, all to 20, Sirin's order: Benediction → Ancient Spirit → Corrode → Destructive Attack (19)."
      }
     ],
     "imageNote": "Exactly the Global main build."
@@ -5495,11 +6383,11 @@
       3,
       4
      ],
-     "lvl": "16+",
-     "note": "",
+     "lvl": "16",
+     "note": "Sirin: 3 / 3+4 / 3+4 / 2+3+4 (option 2 only for survival, or at 20). 4: +2% Attack per Earth Tremor, 5 stacks. Global top: 3+4 for 74%. Level 20 gives its passive healing.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
@@ -5510,10 +6398,10 @@
       5
      ],
      "lvl": "20",
-     "note": "Even more important once you hit the Attack cap.",
+     "note": "Sirin: 2 / 2+4 / 4+5 / 2+4+5. 5: Ashy Call chain (6.8% of damage). 4: +20% skill speed. Global top: 4+5 52%; 70% are at 16+. Even more important once you hit the Attack cap.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
@@ -5524,51 +6412,49 @@
       5
      ],
      "lvl": "16-20",
-     "note": "",
+     "note": "Sirin: 2 / 2+3 / 2+5 / 2+3+5 (option 5 if you are at 20 or under 16). Global top: 2+3 62%, 2+5 26%; 34% are at 16+. Fire Spirit skill + basic attacks are about 10.9% of damage.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
      "n": "Summon: Water Spirit",
      "pick": [
       2,
-      3,
       5
      ],
-     "lvl": "16-20",
-     "note": "",
+     "lvl": "16",
+     "note": "Sirin: 2 / 2+3 / 2+5 (option 5 from 16). Global top: 2+3 58%, 2+5 20%; about 24% of the players who run it are at 16+.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
      "n": "Jointstrike: Curse",
      "pick": [
-      1,
-      2,
-      3
+      3,
+      4
      ],
-     "lvl": "16-20",
-     "note": "",
+     "lvl": "12",
+     "note": "Sirin: 3 / 3+4 (level 12-14 group). Global top: 3+4 for 49%. The sheet says 16-20 with picks 1+2+3.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
      "n": "Summon: Earth Spirit",
      "pick": [
-      2,
-      3
+      3,
+      5
      ],
-     "lvl": "12-16",
-     "note": "",
+     "lvl": "16",
+     "note": "Sirin: 3 / 2+3 / 3+5 (option 5 from 16). Global top: 2+3 34%, 3+5 20%; about 25% of the players who run it are at 16+.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
@@ -5577,11 +6463,11 @@
       2,
       3
      ],
-     "lvl": "16",
-     "note": "",
+     "lvl": "12",
+     "note": "Sirin: 2 / 2+3. Global: 2+3 for 95% where both picks are readable (61 of 64 players); many logs only show option 2. No top Global player is past 12; the sheet says 16.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
@@ -5592,23 +6478,62 @@
       5
      ],
      "lvl": "20",
-     "note": "The charge option (4) tested worse.",
+     "note": "Sirin: 2 / 2+3 / 2+5 / 2+3+5. 5: 25% chance to keep Four Elements. She leaves option 4 (charge skill) out; this page's reading is that a macro would fire it uncharged (the charge option also tested worse in Korea). Global, among the 175 parses with readable picks: 3+5 46%, 2+3 24%, 2+5 14%, 2+3+5 12%; 50% of players are at 16+.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     },
     {
      "n": "Defiance (spiritmaster)",
      "pick": [
       3,
+      4
+     ],
+     "lvl": "12",
+     "note": "Sirin: 3 / 3+4, level 12-14. The sheet says 16 with picks 3+5.",
+     "src": [
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+     ]
+    },
+    {
+     "n": "Summon: Wind Spirit",
+     "pick": [
+      2,
       5
      ],
      "lvl": "16",
-     "note": "",
+     "note": "In Sirin's rotation since Oct 6 (the sheet calls it 'mainly for mobbing'). Sirin: 2 / 2+3 / 2+5 (option 5 from 16). Global top: 2+3 for 57%; about 14% of the players who run it are at 16+.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+     ]
+    },
+    {
+     "n": "Rapid Scattershot",
+     "pick": [
+      4,
+      5
+     ],
+     "lvl": "16",
+     "note": "Sirin: option 4 at 12, 4+5 at 16. 5: -1 s all cooldowns per hit, 'crucial early': the way to shorten the Ancient Spirit's downtime on Global. Use it during boss stagger (E key).",
+     "src": [
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
+     ]
+    },
+    {
+     "n": "Soul's Cry",
+     "pick": [
+      3,
+      4
+     ],
+     "lvl": "12",
+     "note": "Sirin: 3 / 3+4, level 12-14, on her R key in all three layouts; 53 of 300 top Global parses use it. Korea runs 3+4 too (NotMeter Korea setup guide).",
+     "src": [
+      "Sirin's Spiritmaster Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     }
    ],
@@ -5622,76 +6547,98 @@
       "Combustion",
       "20",
       "DPS",
-      "Highest-priority skill, and even more important once you hit the Attack cap."
+      "1st. 7.6% of damage plus 6.8% from its Ashy Call chain, which opens at 16. 70% of top Global Spiritmasters are at 16+. Even more important once you hit the Attack cap."
      ],
      [
       "Elemental Fusion",
       "20",
       "DPS",
-      "The guide calls it 'Spiritmaster itself'."
-     ],
-     [
-      "Summon: Fire Spirit",
-      "20",
-      "DPS",
-      "Your main spirit; 20 opens the +20% stats pick."
-     ],
-     [
-      "Cold Shock",
-      "16-20",
-      "Buff",
-      "Held basic attack; keeps your 5-stack Attack buff running. Worth 20 if you can."
-     ],
-     [
-      "Jointstrike: Curse",
-      "16",
-      "Debuff",
-      "Curse on the target."
+      "1st. 17.0% of damage. 16 first (option 5: 25% chance to keep Four Elements); 50% are at 16+. A Korean guide calls it 'Spiritmaster itself'."
      ],
      [
       "Rapid Scattershot",
       "16",
       "DPS",
-      "Stagger-window skill."
+      "Sirin's 16 priority: -1 s all cooldowns per hit, 'crucial early'. It is the way to shorten the Ancient Spirit's downtime on Global. Stagger windows."
+     ],
+     [
+      "Summon: Fire Spirit",
+      "16",
+      "DPS",
+      "Your main spirit: its skill + basic attacks are about 10.8% of damage. 16 (20 is optional); 34% are at 16+."
+     ],
+     [
+      "Cold Shock",
+      "16",
+      "Buff",
+      "Held basic attack; keeps your 5-stack Attack buff running. 16–20; 20 gives its passive healing."
      ],
      [
       "Summon: Water Spirit",
       "16",
       "DPS",
-      "Returns MP on hits."
+      "16 for option 5 (+20% stats). Returns MP on hits. About 24% of the players who run it are at 16+."
      ],
      [
       "Summon: Earth Spirit",
       "16",
       "DPS",
-      ""
+      "16 for option 5. About 25% of the players who run it are at 16+."
+     ],
+     [
+      "Summon: Wind Spirit",
+      "16",
+      "DPS",
+      "In Sirin's rotation since Oct 6; option 5 from 16. About 14% of the players who run it are at 16+."
+     ],
+     [
+      "Jointstrike: Curse",
+      "12",
+      "Debuff",
+      "3.0% of damage plus the Curse. Sirin's 12–14 group; 3+4 for 49% of top Global players. The sheet says 16–20."
      ],
      [
       "Dimensional Control",
-      "16",
+      "12",
       "DPS",
-      "Use it once it reaches 16."
+      "7.5% of damage. Sirin 12–14; the sheet says 16. No top Global player is past 12."
+     ],
+     [
+      "Soul's Cry",
+      "12",
+      "Utility",
+      "In Sirin's 12–14 group and on her R key in all three layouts. 53 of 300 top Global parses use it."
+     ],
+     [
+      "Defiance",
+      "12",
+      "Utility",
+      "CC break. Sirin 12–14; the sheet says 16."
      ]
     ],
     "pas": [
      [
       "Spirit Strike",
-      "PvE damage and Perfect for you and your spirit. Highest priority (KR endgame 36). Spirit's Benediction 10 multiplies it x1.5."
-     ],
-     [
-      "Element Unification",
-      "Stacking crit damage (KR 29). Slightly ahead of Mental Focus."
+      "S. PvE damage and Perfect for you and your spirit. Highest priority, as high as possible (Korea's top-20 median 36; Korean context). Spirit's Benediction 10 multiplies it x1.5."
      ],
      [
       "Mental Focus",
-      "Double Chance (KR 32)."
+      "S. Double Chance. As high as possible (Korea 32; Korean context)."
+     ],
+     [
+      "Element Unification",
+      "A. Stacking Crit Damage Boost. 16+ (Global median 16; Korea 29, Korean context)."
      ],
      [
       "Spirit Revitalization",
-      "Third tier: cuts spirit summon cooldowns."
+      "A. Faster summon cooldowns. As gear allows (Korea 22, Korean context)."
+     ],
+     [
+      "Corrode",
+      "The Mirror Arcana line: +100 Crit and a 50% proc on crits. 3.9% of top Global damage, more than the Jointstrike: Corrode stigma's 0.7%."
      ]
     ],
-    "wings": "Eroded Wings 45%, Talisra 43.5%",
+    "wings": "Global (Sirin): Vakron Sky Garden cube drop early, Nightmare Trade Shop mid, Talisra from the Season Shop late (cooldown reduction, 'very important'); wings can't be enhanced in Season 1. Korea (Aug 21): Eroded 45%, Talisra 43.5% (Eroded Wings on Global are UNVERIFIED)",
     "src": [
      [
       "KR Sep 16 optimizer (screenshots)",
@@ -5704,6 +6651,10 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Sirin's Spiritmaster Guide, written for Global (updated Oct 14)",
+      "https://docs.google.com/document/d/16RBdqrTCKJ4TZJNEkYri9hLYcMv-Hle2pW6HXSNCX7c/edit"
      ]
     ]
    }
@@ -5969,11 +6920,11 @@
      ],
      [
       "Explosive Arrow",
-      "Big hit on slowed targets"
+      "Big hit on slowed targets; 30% of Global top builds"
      ],
      [
       "Mother Nature's Breath",
-      "Best 6th slot: tolerance and cleanse"
+      "Best 6th slot in Korea: tolerance and cleanse. On Global, 0 of 106 top Rangers run it"
      ]
     ],
     "B": [
@@ -6001,7 +6952,7 @@
      ],
      [
       "Arrow Storm",
-      "AoE stun"
+      "AoE stun; 50 stagger. 0 of 106 top Global Rangers run it"
      ],
      [
       "Assault Smite",
@@ -6021,29 +6972,37 @@
        ],
        [
         "Bow of Blessing",
-        20
+        15
        ],
        [
         "Supporting Fire",
-        20
+        15
        ],
        [
         "Griffon Arrow",
         15
        ]
       ],
-      "why": "Exactly the list in your image. Korean Rangers call these four the essential damage stigmas: Bow of Blessing and Vaizel's Authority need 20 to work properly, Supporting Fire always crits at 20, and Griffon Arrow is about 10% of your damage.",
+      "why": "Vaizel's Authority (97% of top Global Rangers, median 20), Bow of Blessing (96%, median 15) and Supporting Fire (96%, buff median 10, mode 15) are the three buffs; Griffon Arrow (72%, median 15) is the damage 4th (Crimson Flames, 3.9% of damage). Bow and Supporting Fire go to 15 first, then 20. Explosive Arrow (30%) is the alternative 4th: at equal CP the two are even (Griffon users, 72 players, vs Explosive users, 29: +0.1% per player, 95% range −6% to +6%). Korean Rangers call these four the essential damage stigmas.",
       "src": [
        [
         "Global class sheet (zxcastform)",
         "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
        ],
        [
+        "Allyria's Ranger Guide, Global Edition",
+        "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
+       ],
+       [
+        "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
+        ""
+       ],
+       [
         "KR: 'four essential' Ranger stigmas",
         "https://vortexgaming.io/postdetail/722757"
        ],
        [
-        "Dummy test",
+        "Dummy test (a Korean PvE test; it suggests Mother Nature's Breath or Ambush Kick only as a 6th-slot utility)",
         "https://www.inven.co.kr/board/aion2/6450/15518"
        ]
       ],
@@ -6070,7 +7029,7 @@
         10
        ]
       ],
-      "why": "What Korean Rangers ran in Dec 2025, before Supporting Fire became the pick: both buffs, Arrow Storm for stagger, and Explosive Arrow (or Ambush Kick).",
+      "why": "What Korean Rangers ran in Dec 2025, before Supporting Fire became the pick: both buffs, Arrow Storm for stagger, and Explosive Arrow (or Ambush Kick). On Global, 0 of 106 top Rangers run Arrow Storm (50 stagger, the most of any Ranger skill; Slow at 10) and Explosive Arrow is in 30% of builds.",
       "src": [
        [
         "KR Dec 24 thread",
@@ -6099,11 +7058,44 @@
         10
        ]
       ],
-      "why": "Mother Nature's Breath is Korea's 6th-slot pick: damage tolerance, crit resist and a heal chance. It cleanses damage-over-time at 5.",
+      "why": "Allyria's survival flex: Mother Nature's Breath replaces Griffon Arrow (tolerance, lifesteal; it cleanses damage over time at 5). Ambush Kick (level 10) is her alternative 4th for movement and survivability. Korea runs Mother Nature's Breath as its 6th-slot pick. 0 of 106 top Global Rangers run it, so this is a safety swap.",
       "src": [
        [
         "25 and 6th slot summary",
         "https://www.inven.co.kr/board/aion2/6450/15571"
+       ]
+      ]
+     },
+     {
+      "t": "PvP (this page's pick)",
+      "tag": "PvP",
+      "pick": [
+       [
+        "Vaizel's Authority",
+        20
+       ],
+       [
+        "Mother Nature's Breath",
+        20
+       ],
+       [
+        "Ambush Kick",
+        20
+       ],
+       [
+        "Bow of Blessing",
+        20
+       ]
+      ],
+      "why": "UNVERIFIED for Global: Allyria has no PvP section, and this four is built from the DB effects. Vaizel's Authority is the burst; Mother Nature's Breath cleanses damage over time (+10% PvP tolerance at 20, 20% in total); Ambush Kick is the escape (stun at 15–20). The 4th is Bow of Blessing for burst, or Ensnaring Trap (20) to strip buffs. The Korean post it was first tied to is a PvE dummy test.",
+      "src": [
+       [
+        "Assembled from the stigma effects; not a single source",
+        ""
+       ],
+       [
+        "Korean PvE dummy test (not a PvP source)",
+        "https://www.inven.co.kr/board/aion2/6450/15518"
        ]
       ]
      }
@@ -6112,22 +7104,32 @@
      [
       "Vaizel's Authority",
       20,
-      "10: x1.5 Focused Eye. 15: x1.5 Hunter's Soul. 20: 50% chance to cut all cooldowns 1s on crits."
+      "10: x1.5 Focused Eye. 15: x1.5 Hunter's Soul. 20: 50% chance to cut all cooldowns 1s on crits. The buff lasts 10 s at level 1 and 20 s at 20. 97% use it, median 20."
      ],
      [
       "Bow of Blessing",
-      20,
-      "10: Attack from Crit. 15: +20% crit damage. 20: +7% Double Chance."
+      15,
+      "10: Attack from Crit. 15: +20% crit damage (the buff lasts 17 s at 15). 20: +7% Double Chance, once shards allow. 96% use it, median 15."
      ],
      [
       "Supporting Fire",
-      20,
-      "5: +25% fire chance. 10: +15s duration. 15: -30s cooldown. 20: always crits."
+      15,
+      "5: +25% fire chance. 10: +15s duration (a 30 s orb). 15: -30s cooldown, so a 30 s orb every 60 s. 20: always crits. 4.4% of damage. 96% use it (buff median 10, mode 15)."
      ],
      [
       "Griffon Arrow",
       15,
-      "5: castable while moving. 10: +5s burn. 15: Enhanced Crimson Flames. 20 (burn ticks twice as fast) when shards allow."
+      "5: castable while moving. 10: +5s burn. 15: Enhanced Crimson Flames. 20 (burn ticks twice as fast) when shards allow. 72% use it, median 15."
+     ],
+     [
+      "Arrow Storm",
+      10,
+      "The slot-4 stagger / AoE swap: 50 stagger, the most of any Ranger skill (up to 4 targets). 10: Slow. 0 of 106 top Global Rangers run it."
+     ],
+     [
+      "Mother Nature's Breath",
+      5,
+      "The survival swap for Griffon Arrow. 5: cleanses damage over time. Tolerance and lifesteal. 0 of 106 top Global Rangers run it."
      ]
     ],
     "order": [
@@ -6166,23 +7168,16 @@
         15
        ]
       ],
-      "n": "Bow 15 = +20% crit damage."
+      "n": "Supporting Fire 15 = -30s cooldown (a 30 s orb every 60 s). Bow 15 = +20% crit damage."
      },
      {
       "s": [
        [
         "Vaizel's Authority",
         20
-       ],
-       [
-        "Bow of Blessing",
-        20
-       ],
-       [
-        "Supporting Fire",
-        20
        ]
-      ]
+      ],
+      "n": "Vaizel's 20: every crit has a 50% chance to cut all cooldowns by 1 s."
      },
      {
       "s": [
@@ -6191,6 +7186,19 @@
         15
        ]
       ]
+     },
+     {
+      "s": [
+       [
+        "Bow of Blessing",
+        20
+       ],
+       [
+        "Supporting Fire",
+        20
+       ]
+      ],
+      "n": "This page's own plan, from the Global medians and the DB breakpoints. A Korean 5-slot post says Bow and Vaizel's must reach 20."
      }
     ],
     "imageNote": "Exactly the Global main build."
@@ -6199,14 +7207,14 @@
     {
      "n": "Snipe",
      "pick": [
-      3,
-      4
+      4,
+      5
      ],
-     "lvl": "20",
-     "note": "Korea's Sep optimizer: 4 · 5. Skip 2 and 3: Ranger multi-hit is already 87-94%.",
+     "lvl": "16",
+     "note": "Allyria: 3 early, 3+4 at 12, 4+5 at 16, 3+4+5 at 20. 4: -1 s Deadshot cooldown per hit (12 is the big jump); 5: Tempest Arrow chain (3.3% of damage). Global top: 4+5 64%, and 69% picked option 5 (so at least 16). Option 3 (multi-hit) early; Allyria suggests 0.7% HP regen instead if HP is short. Korea's Sep optimizer: 4 · 5.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
@@ -6217,10 +7225,10 @@
       5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 3 · 5. Skip 2 (+10% crit) once your crit is capped.",
+     "note": "Allyria: 3 / 2+3 / 3+5 / 2+3+5. 3: +12% on few targets. 5: +20% skill speed. 2: +10% crit, the last pick (Allyria gives no reason; the crit-cap reason, top Rangers sit at about 51%, is this page's inference). Global top: 3+5 55%; 85% picked option 5 (so at least 16). Korea's Sep optimizer: 3 · 5.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
@@ -6230,23 +7238,23 @@
       3
      ],
      "lvl": "12",
-     "note": "Korea's Sep optimizer: 2 · 3 · 4. +2-3% DPS; take it to 20 for the mobile specialty.",
+     "note": "Enables Burst Arrow. Allyria: 3 / 2+3, or 2+4. Option 4 (Shackling Arrow) is 'higher dmg overall' but clunky; use orange instead of yellow, which gives 2+4. Global top: 2+3 66%, 3+4 14%, 2+4 9%. Korea's Sep optimizer: 2 · 3 · 4 (+2-3% DPS); take it to 20 for the mobile specialty.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
      "n": "Marking Shot",
      "pick": [
-      2,
+      1,
       3
      ],
-     "lvl": "16",
-     "note": "",
+     "lvl": "12–16",
+     "note": "Allyria: 1 / 1+3. 1: +5% Perfect Chance. 3: +5 s Precision (15 s). Global top: 1+3 for 90%. Their level can't be inferred, since 1+3 is available from 12 (the sheet says 16).",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
@@ -6257,24 +7265,24 @@
       5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 1 · 5. The multi-hit option is wasted for the same reason.",
+     "note": "Allyria: 3 / 3+4 / 3+5 / 3+4+5. 5: fires 1 extra time (67% picked it, so at least 16). Global top: 3+5 44%. Allyria: 3% HP regen (option 1) instead of multi-hit early if HP is short. Korea's Sep optimizer: 1 · 5. The multi-hit option is wasted for the same reason.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
      "n": "Gale Arrow",
      "pick": [
-      1,
+      3,
       4,
       5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 3 · 4 · 5. A small damage gain, worth 20.",
+     "note": "Allyria: 1 / 1+4 / 4+5 / 3+4+5. Option 1 (+5 s) only early; at 16 switch to -10 s cooldown (5) plus Combat Speed / damage when hitting few targets (4). 69% picked option 5 (so at least 16); Global top: 4+5 62%. Korea's Sep optimizer: 3 · 4 · 5.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
@@ -6284,23 +7292,24 @@
       3
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Grouping only: option 1 pulls enemies, 'only used for pulling mobs together' in PvE (up to 4 within 5 m). Allyria: 1 / 1+3.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
      "n": "Burst Arrow",
      "pick": [
-      2,
-      3
+      3,
+      4,
+      5
      ],
-     "lvl": "16+",
-     "note": "",
+     "lvl": "20",
+     "note": "Allyria: 3 / 3+4 / 4+5 / 3+4+5. 5: 25% chance to reset (21% picked it, so at least 16). 4: +20% on few targets. 3: mobile. Option 1 (10% HP regen) if HP is short. Global top: 3+4 for 52%; Allyria's 4+5 at 16 is only 10% of top Global Rangers.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
@@ -6310,94 +7319,156 @@
       3
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Allyria: 'not used at all' in PvE (tier 4, no investment). Picks 3 / 1+3.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
      "n": "Deadshot",
      "pick": [
       2,
-      4,
+      3,
       5
      ],
      "lvl": "20",
-     "note": "Korea's Sep optimizer: 2 · 3 · 5. 3 (castable while moving) in real fights; 4 (multi-hit) instead on a training dummy.",
+     "note": "Allyria: 2 / 2+3 / 2+3 at 16 / 2+3+5. Global's most common at 16 is 2+5 (38%), then 2+3 (24%) and 2+3+5 (15%); 2+4+5 is about 9%. 2: +30% skill speed. 3: mobile. 5: extra damage on hit; option 4 (multi-hit, ignores Block and Evasion, nice for PvP) is 'total trash with a geared character' per Allyria but may beat 5 early. Korea's Sep 16 patch (live on Global) fixed option 5's extra damage, which didn't multi-hit unless option 4 was also equipped, so the 'orange may beat red early' note is weaker now. Korea's Sep optimizer: 2 · 3 · 5.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     },
     {
      "n": "Defiance (ranger)",
      "pick": [
-      3,
+      3
+     ],
+     "lvl": "",
+     "note": "Allyria: 3 / 2+3 / 3+5, with no skill investment (tier 4). Global top: option 3 alone for 64%. The sheet says level 16 with picks 3+5.",
+     "src": [
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
+     ]
+    },
+    {
+     "n": "Arrow Scattershot",
+     "pick": [
+      4,
       5
      ],
-     "lvl": "16",
-     "note": "",
+     "lvl": "12 (16)",
+     "note": "Allyria: 1 early, 1+4 at 12, 4+5 at 16. For broken (staggered) bosses only: 5 is -1 s all cooldowns per hit, and it refills cooldown, HP and MP. Level 12 is enough; 16 for option 5.",
      "src": [
-      "Global class sheet (zxcastform)",
-      "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
+      "Allyria's Ranger Guide (Global) and NotMeter Global",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     }
    ],
    "skills": {
     "first": [
-     "Deadshot",
-     "Gale Arrow"
+     "Gale Arrow",
+     "Deadshot"
     ],
     "act": [
-     [
-      "Deadshot",
-      "20",
-      "DPS",
-      "The guide calls it 'Ranger itself'. First to 20."
-     ],
      [
       "Gale Arrow",
       "20",
       "Buff",
-      "Gale: +9-15% combat speed and PvE damage for 10s. 20 adds the -10s cooldown pick."
+      "Allyria tier 1. Gale: +7% Combat Speed and +7% PvE damage for 10 s. 16 = option 5 (-10 s cooldown, full uptime): 69% of top Global players picked it."
      ],
      [
-      "Snare Shot",
+      "Deadshot",
       "20",
       "DPS",
-      "+2-3% DPS with the castable-while-moving pick and the Shackling Arrow chain."
+      "Tier 1. 23.5% of damage. 70–72% picked option 5 (so at least 16) and 24–25% have three picks (20). Charge it by hand."
+     ],
+     [
+      "Drill Dart",
+      "20",
+      "DPS",
+      "Tier 1. 10.9% of damage. 16 = option 5 (fires twice): 67% picked it."
+     ],
+     [
+      "Tempest Shot",
+      "20",
+      "DPS",
+      "Tier 1. 16.6% of damage. 16 = +20% skill speed: 85% picked option 5."
+     ],
+     [
+      "Burst Arrow",
+      "20",
+      "DPS",
+      "Tier 1 (last). 4.1% of damage. 16 for option 5: 21% picked it."
      ],
      [
       "Snipe",
       "16",
       "DPS",
-      "Held basic attack. 16 opens picks 4 and 5."
+      "Tier 2. Held basic attack. 12 is the big jump (option 4: -1 s Deadshot per hit); 69% picked option 5 (so at least 16)."
      ],
      [
-      "Drill Dart",
+      "Marking Shot",
       "16",
-      "DPS",
-      "16 opens its extra-activation pick."
+      "Buff",
+      "Tier 2. Keep Precision up yourself, standing still. 12 is enough for 1+3, which 90% of top Global players run."
      ],
      [
-      "Tempest Shot",
-      "16",
-      "DPS",
-      "The cancel skill at the top of your macro line."
+      "Snare Shot",
+      "12",
+      "Debuff",
+      "Tier 3. Enables Burst Arrow (2+3, 67%). Korea takes it to 20 for the move-cast and Shackling Arrow picks (+2-3%)."
+     ],
+     [
+      "Explosion Trap",
+      "12",
+      "Utility",
+      "Tier 3. Grouping packs only."
+     ],
+     [
+      "Arrow Scattershot",
+      "12",
+      "Utility",
+      "Tier 3. Stagger windows only."
+     ],
+     [
+      "Defiance",
+      "10",
+      "Utility",
+      "Tier 4: no investment, skill-point level (10 at most). Suppressing Arrow is the same: 'not used at all' in PvE."
      ]
     ],
     "pas": [
      [
       "Focused Eye",
-      "PvE damage, Accuracy and Double Chance. Highest priority (KR endgame 36). Vaizel's Authority 10 multiplies it x1.5."
+      "S. +100 Accuracy, +1% PvE damage and +0.2% Double Chance. Highest priority, as high as possible (Korea's top 20: 35–36). Vaizel's Authority 10 multiplies it x1.5."
      ],
      [
       "Hunter's Resolve",
-      "Crit damage (KR 33-34)."
+      "S. +6% Crit Damage Boost. As high as possible (Korea's top 20: 33)."
+     ],
+     [
+      "Hunter's Soul",
+      "Tier 1. Procs on crits: 6.5% of Global damage. Level 20 (Korea's top 20: 20)."
+     ],
+     [
+      "Rooting Eye",
+      "Tier 2. 2.4% of damage; procs on Slowed or Rooted targets. 15–17 (Korea's top 20: 16)."
+     ],
+     [
+      "Concentrated Fire",
+      "Tier 2. 2.8% of damage. 15–17 (Korea's top 20: 17)."
+     ],
+     [
+      "Melee Fire",
+      "Tier 2. Level 15 (Korea's top 20)."
+     ],
+     [
+      "Vigilant Eye",
+      "Tier 2. Level 15 (Korea's top 20). Revitalization Contract, Wind Vigor (Global median 13) and Unyielding Resolve are tier 3, at 10–15."
      ]
     ],
-    "wings": "Eroded Wings 54.5%, Talisra 25.5%, Illusory Echo 6.5%",
+    "wings": "Talisra from the Season Shop (save Season coins; end of Season 1), and wings can't be enhanced in Season 1 (Allyria). Korea (Aug 21): Eroded 54.5%, Talisra 25.5%, Illusory Echo 6.5%; Eroded Wings on Global are UNVERIFIED",
     "src": [
      [
       "KR Sep 6 optimizer (screenshots)",
@@ -6406,6 +7477,10 @@
      [
       "Kanon's Aion 2 Bible (Sep 20)",
       "https://docs.google.com/document/d/11u4wLCG1WfL-xSka2Aze0rI9vYRa7mq3N3Gp1bt0AWY/preview"
+     ],
+     [
+      "Allyria's Ranger Guide, Global Edition (updated Oct 11)",
+      "https://docs.google.com/document/d/1GwcOMFMMJj9eHrsYp-OVtddBxfQhNOjAzmV1eOkmiAk/edit"
      ]
     ]
    }

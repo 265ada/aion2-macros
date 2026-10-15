@@ -58,7 +58,7 @@
           <h4 style="margin-top:6px">Watch out for</h4><ul class="facts">${o.hard.map((x) => `<li class="warn">${esc(x)}</li>`).join("")}</ul></div>
         <div class="col"><h4>Common mistakes</h4><ul class="facts">${o.mistakes.map((x) => `<li class="warn">${esc(x)}</li>`).join("")}</ul></div>
       </div>
-      <p class="snote">Effects quoted here are from the Global client database. Hover or tap any icon for the full skill text.</p>
+      <p class="snote">Effects quoted here are from the aion2.app Global database (client 18.09.2026, an older snapshot) and questlog's Global data, and are level-1 values unless a level is given. Korea's Sep 16 patch is live on Global, so some current numbers differ from the database text; the page says where. Hover or tap any icon for the full skill text.</p>
     </section>`;
   }
 
@@ -105,7 +105,7 @@
         <div><h4 class="sh">Stigmas top Global players run</h4><div class="chips">${stg}</div><p class="snote" style="margin-top:8px">${esc(p.stig)}</p></div>
         ${krb}
       </div>
-      <p class="src">Data: <a href="https://notmeter.com/" target="_blank" rel="noopener">NotMeter</a> public statistics${TP ? ` (Global week of ${esc((TP.meta.week[0] || "").slice(0, 10))}, published ${esc(TP.meta.published)})` : ""}. Specialty picks are read from each parse's skill codes; level shares count a player as 16+ when option 5 is slotted and 20 when three options are. Estimates compare players at the same combat power, so treat ±3% as noise.</p>
+      <p class="src">Data: <a href="https://notmeter.com/" target="_blank" rel="noopener">NotMeter</a> public statistics${TP ? ` (Global week of ${esc((TP.meta.week[0] || "").slice(0, 10))}, published ${esc(TP.meta.published)})` : ""}. Specialty picks are read from each parse's skill codes; level shares count a player as 16+ when option 5 is slotted and 20 when three options are. Estimates compare players at the same combat power, so treat ±3% as noise. The written advice above (summary, reasons, stigma note) quotes the audit's Oct 7–14 week (NotMeter generation 7a95660ba62a7ef4, parses Oct 11–13); the table, chips and level shares follow the newest week, so a share can differ by a few points.</p>
     </section>`;
   }
 
@@ -117,7 +117,7 @@
   function badge(n) {
     const b = base(n);
     if (isStigma(n)) {
-      return gl4().has(b) ? `<span class="bdg st" title="Stigma: needs character level 22+ and a free stigma slot (Global: 1 slot at 22, 2 at 27, 3 at 32, 4 at 37)">Stigma</span>`
+      return gl4().has(b) ? `<span class="bdg st" title="Stigma: needs character level 22+ and a free stigma slot (Global slot unlock levels are unresolved: reported as 22, 27, 32 and 37, but Allyria's Global guide says the 4th slot arrives only at 45)">Stigma</span>`
         : `<span class="bdg kr" title="A stigma that isn't in the Global Season 1 4-slot build on this page. If you don't slot it, the game skips this row.">Not in Global 4</span>`;
     }
     const q = (DS[b] || {}).q;
@@ -288,24 +288,24 @@
     const act = k.act.map(([n, lv, tag, why]) => `<li${hov(n)}>${img(n)}<div><b>${esc(nice(n))}<small>${esc(tw(n))}</small><i class="rt ${tagCls[tag] || ""}">${esc(tag)}</i></b><span>${esc(why)}</span></div>
       <div class="lt"><b class="lvb ${lv === "20" ? "l20" : "lo"}">${esc(lv.replace("-", DASH))}</b></div></li>`).join("");
     const pas = k.pas.map(([n, why], i) => `<li${hov(n)}>${img(n)}<div><b>${i + 1}. ${esc(nice(n))}<small>${esc(tw(n))}</small></b><span>${esc(why)}</span></div></li>`).join("");
-    const first = k.first.map((n) => `<span class="chip"${hov(n)}>${img(n)}${esc(n)} <span class="to">${ARROW} 20</span></span>`).join("");
+    const first = k.first.map((n) => `<span class="chip"${hov(n)}>${img(n)}${esc(n)}</span>`).join("");
     const sh = O.sheet || {};
     const prioList = (sh.skills || []).map(([n, lv, picks]) => `<li${hov(n)}>${img(n)}<div><b>${esc(nice(n))}<small>${esc(tw(n))}</small></b>
         <span class="pk">${picks.length ? picks.map((x) => `<i class="o${x}">${x}</i>`).join("") : '<em>no picks needed</em>'}</span></div>
       <div class="lt"><b class="lvb ${lv === "20" ? "l20" : "lo"}">${lv ? esc(lv) : "–"}</b></div></li>`).join("");
     const shPas = (sh.passives || []).map((n, i) => `<span class="chip"${hov(n)}>${img(n)}${i + 1}. ${esc(nice(n))}</span>`).join("");
-    const sheetBlock = prioList ? `<div class="sheet-prio"><h4 class="sh">Global sheet: skill priority, target level and specialty picks</h4>
-        <p class="snote">From the shared Global class sheet. Prioritize the skills marked 20 while leveling. Numbers in colored boxes are the specialty options to pick (1 green … 5 red); see Skill specializations below for what each one does.</p>
+    const sheetBlock = prioList ? `<div class="sheet-prio"><h4 class="sh">Class sheet: skill priority, target level and specialty picks</h4>
+        <p class="snote">From the shared Global class sheet (its Chanter, Ranger, Sorcerer and Templar tabs moved to daevaos.com on Oct 14, so those classes show the Oct 14 snapshot). Prioritize the skills marked 20 while leveling. Numbers in colored boxes are the specialty options to pick (1 green … 5 red); see Skill specializations below for what each one does.</p>
         <ul class="lvl skl prio2">${prioList}</ul>
         ${shPas ? `<div><span class="k">Passive priority (sheet)</span><div class="crow">${shPas}</div></div>` : ""}</div>` : "";
     return `<section class="panel" id="skills" aria-labelledby="h-skl"><h2 id="h-skl">Skills to level<small>Regular skills · target skill level · specialty picks</small></h2>
       ${sheetBlock}
-      <div class="first2"><span class="k">Push these two to 20 first</span><div class="crow">${first}</div>
-        <p>Skill points only reach level 10. Levels 11${DASH}20 come from ring and weapon lines, Daevanion tiles and Arcana cards. Global launches with fewer Arcana cards, so lock in two skills before spreading out.</p></div>
+      <div class="first2"><span class="k">Level these two first</span><div class="crow">${first}</div>
+        <p>Skill points only reach level 10. Levels 11${DASH}20 come from ring lines, Daevanion tiles and Arcana cards (weapon and guard skill lines are UNVERIFIED on Global). Season 1 has only 5 Arcana cards and 4${DASH}5 gear lines, so few skills reach 20: lock in two skills before spreading out. Each skill's target level is in the lists below.</p></div>
       <div class="skl-grid">
-        <div><h4 class="sh">Why these skills (Korean endgame guides)</h4><ul class="lvl skl">${act}</ul></div>
+        <div><h4 class="sh">Why these skills (Global parses and guides)</h4><ul class="lvl skl">${act}</ul></div>
         <div><h4 class="sh">Passives, with reasons</h4><ul class="lvl skl">${pas}</ul>
-          <p class="snote" style="margin-top:10px">Passives have no picks: every level just adds more. Level them with armor, necklace and earring lines, Daevanion tiles and Bell / Mirror Arcana cards. Korean endgame players sit at 25${DASH}36 on their top passive.</p></div>
+          <p class="snote" style="margin-top:10px">Passives have no picks: every level just adds more. Level them with armor, necklace and earring lines, Daevanion tiles and Bell / Mirror Arcana cards. Korean endgame players sit at 25${DASH}36 on their top passive (Korea only; Global passive levels aren't in NotMeter's data).</p></div>
       </div>${srcHtml(k.src)}</section>`;
   }
   function specs() {
@@ -376,7 +376,7 @@
     const g = O.gear || {};
     const rows = [["Manastones / Soulstones", g.stones], ["Pet Genus", g.genus], ["Gear passives", g.passives], ["Wings", g.wings], ["Note", g.note]].filter((r) => r[1]);
     const wings = S.skills && S.skills.wings;
-    return `<section class="panel gear" id="gear" aria-labelledby="h-gear"><h2 id="h-gear">Gear and stats<small>What changes for ${esc(M.en)} · Global class sheet + Korean endgame advice</small></h2>
+    return `<section class="panel gear" id="gear" aria-labelledby="h-gear"><h2 id="h-gear">Gear and stats<small>What changes for ${esc(M.en)} · Global class sheet (Oct 14 snapshot), Global guides and Korean endgame advice</small></h2>
       <dl>${rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}
         ${g.board ? `<dt>Daevanion</dt><dd>Take the skill tiles for your key actives first, then the orange tiles. Class node guide: <a href="${esc(g.board[1])}" target="_blank" rel="noopener">${esc(g.board[0])}</a></dd>` : `<dt>Daevanion</dt><dd>Take the skill tiles for your key actives first (they push skills past 10), then the orange tiles. Respec is nearly free.</dd>`}</dl>
       ${sheetGear()}
@@ -393,20 +393,20 @@
     const genus = Object.entries(sh.genus || {});
     const misc = [["Manastone stats", sh.stones], ["Enhancing priority", sh.enhance], ["Meta wings", sh.wings], ["Wings worth leveling", sh.wingsLevel], ["Theostones", sh.theostones]]
       .concat(Object.entries(sh.titles || {})).concat(Object.entries(sh.pantheon || {}).map(([k, v]) => ["Pantheon " + k.toLowerCase(), v])).filter((r) => r[1]);
-    return `<div class="sheet-gear"><h4 class="sh">Global class sheet: soul binding lines by piece (best first)</h4>
+    return `<div class="sheet-gear"><h4 class="sh">Class sheet (Oct 14 snapshot): soul binding lines by piece (best first)</h4>
       <div class="cols2">${tbl(["Piece", "Lines to keep, best first"], gear)}${tbl(["Accessory", "Lines to keep, best first"], acc)}</div>
       <h4 class="sh">Arcana, god stats and equip effects to target</h4>
       ${tbl(["Arcana card", "God stat", "Equip effect / skills to target"], (sh.cards || []).map((r) => [r[0], r[1], r[2].replace(/\s*\(\d\)\s*/g, ", ").replace(/^, /, "").replace(/\s+/g, " ").trim()]))}
       <dl>${misc.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
       ${genus.length ? `<details><summary>Pet Genus lines by board (Global)</summary><div class="inner cols3">${genus.map(([b, lines]) => `<div><b>${esc(b)}</b><ul class="facts">${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul></div>`).join("")}</div></details>` : ""}
-      <p class="src">Source: <a href="${esc(OV.sheet.src)}" target="_blank" rel="noopener">Global class sheet by ${esc(OV.sheet.author)}</a>${sh.guide ? `${DOT}<a href="${esc(sh.guide)}" target="_blank" rel="noopener">${esc(M.en)} in-depth guide</a>` : ""}${sh.creator ? `${DOT}<a href="${esc(sh.creator)}" target="_blank" rel="noopener">content creator</a>` : ""}. The sheet's author notes it's a base to adjust as you learn, not 100% guaranteed.</p></div>`;
+      <p class="src">Source: <a href="${esc(OV.sheet.src)}" target="_blank" rel="noopener">Global class sheet by ${esc(OV.sheet.author)}</a>${sh.guide ? `${DOT}<a href="${esc(sh.guide)}" target="_blank" rel="noopener">${esc(M.en)} in-depth guide</a>` : ""}${sh.creator ? `${DOT}<a href="${esc(sh.creator)}" target="_blank" rel="noopener">content creator</a>` : ""}. The sheet's author notes it's a base to adjust as you learn, not 100% guaranteed. This is the Oct 14 snapshot: the Chanter, Ranger, Sorcerer and Templar tabs moved to daevaos.com that day.</p></div>`;
   }
   function patches() {
     const P = O.patches || [];
     const src = [].concat(O.src || []);
-    return `<section class="panel" id="patches" aria-labelledby="h-pat"><h2 id="h-pat">Patches and sources<small>KR/TW changes that affect this page · Global can lag behind</small></h2>
-      ${P.length ? `<div class="tbl-wrap"><table><thead><tr><th>Date</th><th>Change</th></tr></thead><tbody>${P.map(([d, t]) => `<tr><td><b>${esc(d)}</b></td><td>${esc(t)}</td></tr>`).join("")}</tbody></table></div>` : `<p class="snote">No ${esc(M.en)} changes in the recent KR/TW patches this page tracks (through Sep 30, 2026).</p>`}
-      <p class="snote">Sep 23 (KR/TW): during Abyss boss fights, Rifts and Time-Space battles, Battlefield Might replaces party synergies such as Undefeated Mantra, Light of Protection, Power of the Storm, Fury and Experienced Counterstrike.</p>
+    return `<section class="panel" id="patches" aria-labelledby="h-pat"><h2 id="h-pat">Patches and sources<small>Global and KR/TW changes that affect this page · Korea's Sep 16 patch is live on Global</small></h2>
+      ${P.length ? `<div class="tbl-wrap"><table><thead><tr><th>Date</th><th>Change</th></tr></thead><tbody>${P.map(([d, t]) => `<tr><td><b>${esc(d)}</b></td><td>${esc(t)}</td></tr>`).join("")}</tbody></table></div>` : `<p class="snote">No ${esc(M.en)} changes in the Global notes (Oct 6, Oct 8, Oct 13) or the recent KR/TW patches this page tracks (through Sep 30, 2026).</p>`}
+      <p class="snote">Sep 23 (KR/TW): during Abyss boss fights, Rifts and Time-Space battles, Battlefield Might replaces party synergies such as Undefeated Mantra, Light of Protection, Power of the Storm, Fury and Experienced Counterstrike. UNVERIFIED on Global: Korea's Sep 16 patch is live there, but nothing shows whether Sep 23 shipped.</p>
       ${srcHtml(src, "Class guides used")}
     </section>`;
   }
@@ -468,7 +468,7 @@
       <p class="tt-desc">${esc(s.d || "No description in the database.")}</p>
       ${L ? `<div class="tt-spec-h">Effects by stigma level (all automatic)</div><ul class="tt-specs">${L}</ul>` : ""}
       ${s.note ? `<p class="tt-note">${esc(s.note)}</p>` : ""}
-      <p class="tt-foot">Level 1${DASH}20 values from the Global client database; level 25 from KR/TW.</p>`;
+      <p class="tt-foot">Level 1${DASH}20 values from the aion2.app Global database (an older snapshot); buff durations grow with stigma level; level 25 from KR/TW.</p>`;
   }
   function skillTip(n) {
     const s = SK[n] || {}, d = DS[n] || {};
@@ -486,7 +486,7 @@
       <p class="tt-desc">${esc(d.d || "No description in the database.")}</p>
       ${opts ? `<div class="tt-spec-h">Specialty options (pick up to 3)</div><ul class="tt-specs">${opts}</ul>` : ""}
       ${s.note ? `<p class="tt-note">${esc(s.note)}</p>` : ""}
-      <p class="tt-foot">Skill level 1 values from the Global client database.</p>`;
+      <p class="tt-foot">Skill level 1 values from the aion2.app Global database (an older snapshot, before Korea's Sep 16 patch).</p>`;
   }
   function place(t) {
     const r = t.getBoundingClientRect(), w = tipEl.offsetWidth, h = tipEl.offsetHeight, pad = 10;
