@@ -105,7 +105,7 @@
         <div><h4 class="sh">Stigmas top Global players run</h4><div class="chips">${stg}</div><p class="snote" style="margin-top:8px">${esc(p.stig)}</p></div>
         ${krb}
       </div>
-      <p class="src">Data: <a href="https://notmeter.com/" target="_blank" rel="noopener">NotMeter</a> public statistics${TP ? ` (Global week of ${esc((TP.meta.week[0] || "").slice(0, 10))}, published ${esc(TP.meta.published)})` : ""}. Specialty picks are read from each parse's skill codes; level shares count a player as 16+ when option 5 is slotted and 20 when three options are. Estimates compare players at the same combat power, so treat ±3% as noise. The written advice above (summary, reasons, stigma note) quotes the audit's Oct 7–14 week (NotMeter generation 7a95660ba62a7ef4, parses Oct 11–13); the table, chips and level shares follow the newest week, so a share can differ by a few points.</p>
+      <p class="src">Data: <a href="https://notmeter.com/" target="_blank" rel="noopener">NotMeter</a> public statistics${TP ? ` (Global week of ${esc((TP.meta.week[0] || "").slice(0, 10))}, published ${esc(TP.meta.published)})` : ""}. Specialty picks are read from each parse's skill codes; level shares count a player as 16+ when option 5 is slotted and 20 when three options are. Estimates compare players at the same combat power, so treat ±3% as noise. Damage shares, casts a minute, skill levels, specialty picks and stigma shares in the written advice follow the newest week shown in the table; per-cast gains, equal-CP comparisons and party counts marked Oct 7–14 come from the audit's earlier week (NotMeter generation 7a95660ba62a7ef4).</p>
     </section>`;
   }
 
