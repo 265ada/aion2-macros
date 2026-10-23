@@ -2941,7 +2941,8 @@
 "mp": 200,
 "tw": "結縛之印",
 "ko": "결박의 낙인",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Damage to up to 4 targets (questlog Global data): 2,107 at stigma Lv 10, 2,514 at 15, 2,895 at 20. Like Marchutan's Wrath it opens Dark Crush for 3 s, on a 60 s cooldown."
 },
 "chanter:Focused Defense": {
 "id": "18140000",
@@ -2972,7 +2973,8 @@
 "mp": null,
 "tw": "集中防禦",
 "ko": "집중 방어",
-"s25": "+1s Weapon Block duration"
+"s25": "+1s Weapon Block duration",
+"note": "MP and Stamina restored on a Block (questlog Global data): 110 at stigma Lv 1, 150 at 5, 200 at 10, 250 at 15, 300 at 20."
 },
 "chanter:Fracturing Blow": {
 "id": "18130000",
@@ -3003,7 +3005,8 @@
 "mp": 100,
 "tw": "粉碎擊",
 "ko": "분쇄격",
-"s25": "Target's skill cooldowns +3%"
+"s25": "Target's skill cooldowns +3%",
+"note": "Damage (questlog Global data): 2,625 at stigma Lv 10, 3,132 at 15, 3,606 at 20. Option 4 (Lv 20) makes it always crit and raises the Impact-type bonus to +50%."
 },
 "chanter:Guardian Blessing": {
 "id": "18420000",
@@ -3035,7 +3038,7 @@
 "tw": "守護祝福",
 "ko": "수호의 축복",
 "s25": "+10% PvE and +5% PvP Damage Tolerance",
-"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: Chanters recast it in 85 of 93 fights longer than 130 s (one cast never lasts past 120 s), and questlog's Global data agrees. The aion2.app DB, an older Sep 18 snapshot, still shows 300 s."
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: Chanters recast it in 85 of 93 fights longer than 130 s (one cast never lasts past 120 s), and questlog's Global data agrees. The aion2.app DB, an older Sep 18 snapshot, still shows 300 s. Max HP bonus and instant heal (questlog Global data): 5.4% at stigma Lv 1, 7% at 5, 9% at 10, 11% at 15, 13% at 20."
 },
 "chanter:Healing Touch": {
 "id": "18170000",
@@ -3067,7 +3070,7 @@
 "tw": "痊癒之手",
 "ko": "쾌유의 손길",
 "s25": "-5s cooldown",
-"note": "14% of Global battle healers run it (3% with a Cleric). A derived swap for Marchutan's Wrath: Korea's post is a 6-slot, level-25 Sanctuary setup."
+"note": "14% of Global battle healers run it (3% with a Cleric). A derived swap for Marchutan's Wrath: Korea's post is a 6-slot, level-25 Sanctuary setup. Heal (questlog Global data): 927-1,020 at stigma Lv 1, 1,147-1,262 at 5, 1,422-1,564 at 10, 1,697-1,867 at 15, 1,978-2,176 at 20."
 },
 "chanter:Impeding Authority": {
 "id": "18240000",
@@ -3099,7 +3102,7 @@
 "tw": "阻斷權能",
 "ko": "차단의 권능",
 "s25": "+10% PvE and +5% PvP Damage Tolerance",
-"note": "9% of Global battle healers run it (3% with a Cleric); a swap for Sprint Mantra or Power of the Storm on mechanic-heavy bosses."
+"note": "9% of Global battle healers run it (3% with a Cleric); a swap for Sprint Mantra or Power of the Storm on mechanic-heavy bosses. The shield grows with level (questlog Global data): 16% of max HP at stigma Lv 1, 20% at 5, 25% at 10, 30% at 15, 35% at 20."
 },
 "chanter:Marchutan's Wrath": {
 "id": "18330000",
@@ -3131,7 +3134,7 @@
 "tw": "瑪爾庫坦憤怒",
 "ko": "마르쿠탄의 분노",
 "s25": "Ignores Block and Evasion",
-"note": "Opens Dark Crush for 3 s. About 97% of top Global Chanters slot it (median level 5). This guide presses it between Spinning Strike / Impactful Crush windows."
+"note": "Opens Dark Crush for 3 s. About 97% of top Global Chanters slot it (median level 5). This guide presses it between Spinning Strike / Impactful Crush windows. Damage to up to 4 targets (questlog Global data): 1,384 at stigma Lv 1, 2,171 at 5, 2,822 at 10, 3,366 at 15, 3,876 at 20."
 },
 "chanter:Obliterate": {
 "id": "18220000",
@@ -3226,7 +3229,7 @@
 "tw": "疾走真言",
 "ko": "질주의 진언",
 "s25": "+5% Iron Wall (Block) chance",
-"note": "Toggle. Party move speed: 10.5% at level 1, 15% at 10, 20% at 20. Two Chanters don't stack: only the higher level applies (on third party members the two Chanters' uptimes sum to about one fight length). A battle healer takes it to 15 (derived from the DB)."
+"note": "Toggle. Party move speed: 10.5% at level 1, 15% at 10, 20% at 20. Two Chanters don't stack: only the higher level applies (on third party members the two Chanters' uptimes sum to about one fight length). A battle healer takes it to 15 (derived from the DB). Heal on hit (15% chance, 1 s cooldown; questlog Global data): 127-140 HP at stigma Lv 1, 155-171 at 5, 190-209 at 10, 225-248 at 15, 271-298 at 20."
 },
 "chanter:Undefeated Mantra": {
 "id": "18190000",

@@ -1342,6 +1342,22 @@
         null
        ]
       ]
+     },
+     {
+      "t": "Dark Crush alone (most common on questlog; mourasb 'Chanters2')",
+      "s": "One entry with only Dark Crush, held with Onslaught: 11 of 25 distinct endgame-level public Global Chanter builds on questlog use exactly this, including the most-liked one ('Chanters2' by mourasb, 62 likes, whose note says to hold left and right click). It still uses Dark Crush's option 5 (no cooldown). The build doesn't say how Spinning Strike, Impactful Crush and Marchutan's Wrath are pressed, and no Global parse compares it with the four-row line above, so it is the simple option, not a proven better one.",
+      "macros": [
+       [
+        "Dark Crush",
+        null,
+        null,
+        null
+       ]
+      ],
+      "hold": [
+       "Onslaught",
+       "Macro key"
+      ]
      }
     ],
     "keys": [

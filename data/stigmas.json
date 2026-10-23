@@ -4251,6 +4251,10 @@
        [
         "Chanter PvE guide",
         "https://www.inven.co.kr/board/aion2/6451/116"
+       ],
+       [
+        "Questlog Chanter class page and skill builds (Global)",
+        "https://questlog.gg/aion-2/en/classes/chanter"
        ]
       ],
       "main": true
@@ -4276,7 +4280,7 @@
         10
        ]
       ],
-      "why": "Korea's 4-slot Chanters put Undefeated Mantra at 20 first and called Power of the Storm mandatory. Guardian Blessing 15 multiplies Wind's Promise by 1.5 (Korean players call 15 the minimum), and it has a 2-min cooldown on live Global (Sep 16): recast it with Power of the Storm. 25% of top Global Chanters run it (median 15). At equal CP its users (11 players) were about 9% ahead of Sprint Mantra users (71), averaged per player, but the 95% range is -1% to +21%, so this isn't significant; two-Chanter parties don't explain it, since both Chanters run Sprint in 96% of them. Korea's Sep 17 dummy test says Marchutan's Wrath is no longer mandatory (KR/TW), but 97% of top Global Chanters still slot it.",
+      "why": "Korea's 4-slot Chanters put Undefeated Mantra at 20 first and called Power of the Storm mandatory. Guardian Blessing 15 multiplies Wind's Promise by 1.5 (Korean players call 15 the minimum), and it has a 2-min cooldown on live Global (Sep 16): recast it with Power of the Storm. 25% of top Global Chanters run it (median 15). At equal CP its users (11 players) were about 9% ahead of Sprint Mantra users (71), averaged per player, but the 95% range is -1% to +21%, so this isn't significant; two-Chanter parties don't explain it, since both Chanters run Sprint in 96% of them. Korea's Sep 17 dummy test says Marchutan's Wrath is no longer mandatory (KR/TW), but 97% of top Global Chanters still slot it. Questlog's public Global builds agree it is a real choice: 7 of 25 distinct endgame-level Chanter builds slot it (median level 20), for example dimach's 'PvE' (35 likes), which runs Undefeated Mantra, Power of the Storm, Sprint Mantra and Guardian Blessing, all at 20.",
       "src": [
        [
         "KR Mar 4 Chanter guide",
@@ -4297,6 +4301,43 @@
        [
         "questlog: Guardian Blessing",
         "https://questlog.gg/aion-2/en/db/skill/18420000"
+       ],
+       [
+        "Questlog build 'PvE' by dimach",
+        "https://questlog.gg/aion-2/en/skill-builder/epiJ0LgiWQqY?build-id=8669"
+       ]
+      ]
+     },
+     {
+      "t": "Questlog build: Fracturing Blow (mourasb)",
+      "tag": "Community",
+      "pick": [
+       [
+        "Undefeated Mantra",
+        20
+       ],
+       [
+        "Power of the Storm",
+        20
+       ],
+       [
+        "Marchutan's Wrath",
+        20
+       ],
+       [
+        "Fracturing Blow",
+        20
+       ]
+      ],
+      "why": "The most-liked public Global Chanter skill build on questlog ('Chanters2' by mourasb, 62 likes, updated Oct 14), and the skill build of the most-liked Global Chanter character (413 likes). It runs Fracturing Blow in the fourth slot instead of Sprint Mantra: Defense -30% on the target for 5 s, 3,606 damage at 20 and a 45 s cooldown (30 s from level 5). Its macro is Dark Crush alone with Onslaught held. Cross-check: the build was copied about 14 times, so Fracturing Blow looks more common than it is; only 2 of 25 distinct endgame-level public builds run it, and no NotMeter parse shows a top Global Chanter with it. Treat it as an untested alternative, not a recommendation.",
+      "src": [
+       [
+        "Questlog build 'Chanters2' by mourasb",
+        "https://questlog.gg/aion-2/en/skill-builder/Y34OLziq81yK?build-id=12103"
+       ],
+       [
+        "Questlog Chanter class page and skill builds (Global)",
+        "https://questlog.gg/aion-2/en/classes/chanter"
        ]
       ]
      },
@@ -4358,7 +4399,7 @@
         15
        ]
       ],
-      "why": "Korea's battle-healer picks, with the effects checked in the Global DB; the levels are derived from the DB. Healing Touch replaces Marchutan's Wrath (party heal; 15 removes 5 debuffs; 20 adds +5% heal; 14% of Global battle healers run it). Impeding Authority replaces Sprint Mantra or Power of the Storm on mechanic-heavy bosses (a party shield of 16% max HP; 15: +10% PvE Damage Tolerance; 20: 7% HP back when the shield ends; 9% of Global battle healers). Barrier Spell 5 is the emergency button: the party can't drop below 10% HP for 3 s (180 s cooldown). The Korean post behind these picks is a 6-slot, level-25 Sanctuary setup, which Global doesn't have.",
+      "why": "Korea's battle-healer picks, with the effects checked in the Global DB; the levels are derived from the DB. Healing Touch replaces Marchutan's Wrath (party heal; 15 removes 5 debuffs; 20 adds +5% heal; 14% of Global battle healers run it). Impeding Authority replaces Sprint Mantra or Power of the Storm on mechanic-heavy bosses (a party shield of 16% max HP at level 1, 30% at 15 and 35% at 20; 15: +10% PvE Damage Tolerance; 20: 7% HP back when the shield ends; 9% of Global battle healers). Barrier Spell 5 is the emergency button: the party can't drop below 10% HP for 3 s (180 s cooldown). The Korean post behind these picks is a 6-slot, level-25 Sanctuary setup, which Global doesn't have.",
       "src": [
        [
         "KR Mar 4: care picks",
@@ -4375,6 +4416,39 @@
        [
         "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
         ""
+       ]
+      ]
+     },
+     {
+      "t": "Questlog build: Healing Touch + Impeding Authority (offdarkzz)",
+      "tag": "Battle healer",
+      "pick": [
+       [
+        "Undefeated Mantra",
+        20
+       ],
+       [
+        "Sprint Mantra",
+        20
+       ],
+       [
+        "Healing Touch",
+        20
+       ],
+       [
+        "Impeding Authority",
+        20
+       ]
+      ],
+      "why": "A public Global support draft on questlog tagged healer and support ('PVE Sup' by offdarkzz, Oct 8), with a near-identical 'PvE Support' by kennysurvivor (Oct 18). Both slot Undefeated Mantra, Sprint Mantra, Healing Touch and Impeding Authority at 20, drop Power of the Storm and Marchutan's Wrath, and take Recuperation to 20. At 20 Healing Touch heals 1,978-2,176 and Impeding Authority shields 35% of max HP. Neither picks specialization options and neither has likes, and offdarkzz puts the two Mantras in the macro, which switches them off. Cross-check: NotMeter shows Global battle healers keep Marchutan's Wrath (99%) and Power of the Storm (77%), with Healing Touch at 14% and Impeding Authority at 9%, so this is a heavier-support swap, not the common setup.",
+      "src": [
+       [
+        "Questlog build 'PVE Sup' by offdarkzz",
+        "https://questlog.gg/aion-2/en/skill-builder/p5QVEc3hYM6Z?build-id=15526"
+       ],
+       [
+        "Questlog build 'PvE Support' by kennysurvivor",
+        "https://questlog.gg/aion-2/en/skill-builder/kYrhWfl3ubEf?build-id=19712"
        ]
       ]
      },
@@ -4451,27 +4525,27 @@
      [
       "Guardian Blessing",
       15,
-      "10: x1.5 Crossguard. 15: x1.5 Wind's Promise, the reason to take it. 20 only adds healing received. 2-min cooldown on live Global (Sep 16); recast it with Power of the Storm."
+      "10: x1.5 Crossguard. 15: x1.5 Wind's Promise, the reason to take it. 20 only adds healing received. 2-min cooldown on live Global (Sep 16); recast it with Power of the Storm. Max HP bonus 5.4% at level 1, 9% at 10, 11% at 15, 13% at 20."
      ],
      [
       "Marchutan's Wrath",
       5,
-      "The 3 s Dark Crush window works from level 1. 5: up to +20% damage on fewer targets. 10–20 add stun and anti-heal (PvP). Global median 5."
+      "The 3 s Dark Crush window works from level 1. 5: up to +20% damage on fewer targets. 10–20 add stun and anti-heal (PvP). Global median 5. Damage 2,171 at 5, 2,822 at 10, 3,876 at 20."
      ],
      [
       "Sprint Mantra",
       10,
-      "Party move speed (10.5% at level 1, 15% at 10, 20% at 20) and heal on hit. 5: +10% healing received. 10: +30% stamina regen. Two Chanters don't stack it; the higher level applies. Global median 10. A battle healer takes it to 15 (derived)."
+      "Party move speed (10.5% at level 1, 15% at 10, 20% at 20) and heal on hit. 5: +10% healing received. 10: +30% stamina regen. Two Chanters don't stack it; the higher level applies. Global median 10. Heal on hit: 190-209 at 10, 225-248 at 15, 271-298 at 20. A battle healer takes it to 15 (derived)."
      ],
      [
       "Healing Touch",
       15,
-      "15: removes 5 debuffs. 20: +5% heal. A battle healer's swap for Marchutan's Wrath."
+      "15: removes 5 debuffs. 20: +5% heal. Heals 1,697-1,867 at 15 and 1,978-2,176 at 20. A battle healer's swap for Marchutan's Wrath."
      ],
      [
       "Impeding Authority",
       15,
-      "A party shield of 16% max HP. 15: +10% PvE Damage Tolerance. 20: 7% HP back when the shield ends. A battle healer's swap on mechanic-heavy bosses."
+      "A party shield that grows: 16% of max HP at level 1, 25% at 10, 30% at 15, 35% at 20. 15: +10% PvE Damage Tolerance. 20: 7% HP back when the shield ends. A battle healer's swap on mechanic-heavy bosses."
      ]
     ],
     "order": [
@@ -4612,7 +4686,7 @@
       4
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Questlog's public Global builds (16 distinct, skill Lv 12+): 3+4 in 10, 1+2 in 3. Option 4 ignores Block and Evasion and lands as Multi-Hit.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4625,7 +4699,7 @@
       4
      ],
      "lvl": "16-20",
-     "note": "Global top: 1+4 for 64% (per player); the daevaos build runs 1+4+5. Third pick at 20: 2 (cleanse) if the fight has debuffs, otherwise 5. Korea's Sep optimizer: 1 · 4 · 2. Battle healer: 1 at 8 (two consecutive casts, the heal over time stacks twice), 1+4 at 12, 1+5 or 1+4 at 16, 1+4+5 at 20, or 1+4+2 when there are debuffs; 62% of Global battle healers run 1+4.",
+     "note": "Global top: 1+4 for 64% (per player); the daevaos build runs 1+4+5. Third pick at 20: 2 (cleanse) if the fight has debuffs, otherwise 5. Korea's Sep optimizer: 1 · 4 · 2. Battle healer: 1 at 8 (two consecutive casts, the heal over time stacks twice), 1+4 at 12, 1+5 or 1+4 at 16, 1+4+5 at 20, or 1+4+2 when there are debuffs; 62% of Global battle healers run 1+4. Questlog's public Global builds (21 distinct, skill Lv 12+) agree: 1+4 (6) and 1+4+5 (4) lead, 1+2 follows (4).",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4638,7 +4712,7 @@
       3
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Questlog's public Global builds (17 distinct, skill Lv 12+) split: 1+2 in 7, 2+3 in 4, 2+4 in 2. Option 4 adds a Surging Strike chain skill.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4682,7 +4756,7 @@
       5
      ],
      "lvl": "16",
-     "note": "From the sheet: 3 / 3+5 at 16. Global top: option 3 for 58%.",
+     "note": "From the sheet: 3 / 3+5 at 16. Global top: option 3 for 58%. Questlog's public Global builds with Defiance 12+ split between 4+5 (3 of 10; option 4 is +2 s Tenacity, option 5 is +50% PvE Damage Tolerance during it) and 3+5 (3); option 3 restores 10% HP.",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -4742,7 +4816,7 @@
       "Recuperation",
       "16",
       "Heal",
-      "Party heal. 16 (-3 s cooldown), then 20 (Korea's top 20: 20). Option 1 (two casts) at 8, 4 at 12. For a battle healer it is the main heal; 62% of Global battle healers run 1+4."
+      "Party heal. 16 (-3 s cooldown), then 20 (Korea's top 20: 20). Option 1 (two casts) at 8, 4 at 12. Heals 1,008-1,109 at 16 and 1,228-1,351 at 20, plus a heal over time. For a battle healer it is the main heal; 62% of Global battle healers run 1+4."
      ],
      [
       "Rushing Smash",
@@ -4784,15 +4858,15 @@
     "pas": [
      [
       "Wind's Promise",
-      "Crit Damage Boost (5.7% at level 1, 19% at 20) plus extra damage on crits: 6.1% of Global damage. Highest priority, as high as possible (KR endgame 36). Guardian Blessing 15 multiplies it x1.5."
+      "Crit Damage Boost (5.7% at level 1, 19% at 20) plus extra damage on crits: 6.1% of Global damage. Highest priority, as high as possible (KR endgame 36). Guardian Blessing 15 multiplies it x1.5. Questlog Global data: 12% at 10, 15.5% at 15; the extra hit is 554 at level 1 and 1,402 at 20. Public Global builds take it to 20."
      ],
      [
       "Impact Hit (chanter)",
-      "Double Chance (KR 30). Slightly ahead of Attack Preparation."
+      "Double Chance (KR 30): 0.3% at level 1, 3% at 10, 6% at 20, plus Impact-type Chance 11.2% at level 1 and 34% at 20 (questlog Global data). Slightly ahead of Attack Preparation."
      ],
      [
       "Attack Preparation (chanter)",
-      "PvE Damage Boost (5.5% at level 1, 15% at 20) and +100 Accuracy (KR 30)."
+      "PvE Damage Boost (5.5% at level 1, 10% at 10, 15% at 20) and +100 Accuracy (KR 30)."
      ],
      [
       "Earth's Promise",
@@ -4800,11 +4874,11 @@
      ],
      [
       "Protection Circle",
-      "A party shield: Divine Barrier every 10 stacks. Global median level 14; worth more to a battle healer."
+      "A party shield: Divine Barrier every 10 stacks. Global median level 14; worth more to a battle healer. The barrier is 3.1% of max HP at level 1 and 5% at 20, and the passive also gives you a Noble Protective Shield (21% damage block for 5 s below 50% HP, 40% at 20; 60 s cooldown)."
      ],
      [
       "Inspiring Spell",
-      "Crit and Perfect (+100 Crit, +0.5% Perfect); small effect. If there's room (KR 21)."
+      "+100 Crit and +0.5% Perfect at level 1, +290 and +10% at 20 (questlog Global data). The sheet ranks it last of its five passives. If there's room (KR 21)."
      ]
     ],
     "wings": "Talisra (Season Shop, cooldown reduction) is the Global goal; Forest Spirit or Dark Veil Wings until then (daevaos); wings can't be enhanced in Season 1. Korea (Aug 21): Eroded Wings 45%, Talisra 23%, Awaken Pride 12.5%",

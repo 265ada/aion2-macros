@@ -913,7 +913,8 @@
 "ko": "격파쇄",
 "cd": null,
 "mp": null,
-"icon": "ICON_CH_SKILL_001"
+"icon": "ICON_CH_SKILL_001",
+"note": "Per hit (questlog Global data): 738 at skill Lv 12, 940 at 16, 1,125 at 20. Restores 100 MP."
 },
 "Incandescent Blow": {
 "cls": "chanter",
@@ -922,7 +923,8 @@
 "ko": "백열격",
 "cd": null,
 "mp": 120,
-"icon": "ICON_CH_SKILL_004"
+"icon": "ICON_CH_SKILL_004",
+"note": "Per hit (questlog Global data): 1,962 at skill Lv 12, 2,512 at 16, 3,013 at 20."
 },
 "Impactful Crush": {
 "cls": "chanter",
@@ -932,7 +934,7 @@
 "cd": 15,
 "mp": 100,
 "icon": "ICON_CH_SKILL_006",
-"note": "KR/TW Aug 26 cut the cooldown to 10 s; Korea's Sep 2 patch set it back to 15 s, which is what the Global DB shows."
+"note": "KR/TW Aug 26 cut the cooldown to 10 s; Korea's Sep 2 patch set it back to 15 s, which is what the Global DB shows. Per hit (questlog Global data): 2,024 at skill Lv 12, 2,502 at 16, 2,948 at 20, with a 60% chance to stun for 3 s."
 },
 "Wave Blow": {
 "cls": "chanter",
@@ -941,7 +943,8 @@
 "ko": "파동격",
 "cd": 20,
 "mp": null,
-"icon": "ICON_CH_SKILL_008"
+"icon": "ICON_CH_SKILL_008",
+"note": "Per hit on a stunned target (questlog Global data): 2,296 at skill Lv 12, 2,759 at 16, 3,126 at 20."
 },
 "Rushing Smash": {
 "cls": "chanter",
@@ -950,7 +953,8 @@
 "ko": "돌진 격파",
 "cd": 15,
 "mp": null,
-"icon": "ICON_CH_SKILL_009"
+"icon": "ICON_CH_SKILL_009",
+"note": "Per hit (questlog Global data): 1,600 at skill Lv 12, 2,055 at 16, 2,469 at 20. Restores 100 MP."
 },
 "Dark Crush": {
 "cls": "chanter",
@@ -960,7 +964,7 @@
 "cd": 5,
 "mp": null,
 "icon": "ICON_CH_SKILL_010",
-"note": "KR/TW Aug 26 (live on Global): now usable after any ranged skill (was: stunned/knocked-down target). Marchutan's Wrath opens it on yourself for 3 s. No cooldown at skill level 16 (option 5)."
+"note": "KR/TW Aug 26 (live on Global): now usable after any ranged skill (was: stunned/knocked-down target). Marchutan's Wrath opens it on yourself for 3 s. No cooldown at skill level 16 (option 5). Per hit (questlog Global data): 2,036 at skill Lv 12, 2,518 at 16, 2,966 at 20."
 },
 "Recuperation": {
 "cls": "chanter",
@@ -970,7 +974,7 @@
 "cd": 15,
 "mp": null,
 "icon": "ICON_CH_SKILL_013",
-"note": "The DB has no icon for this skill."
+"note": "The DB has no icon for this skill. Heal (questlog Global data): 1,008-1,109 at skill Lv 16 and 1,228-1,351 at 20, plus a heal over time every 2 s for 8 s."
 },
 "Fracturing Blow": {
 "cls": "chanter",
@@ -1023,7 +1027,7 @@
 "cd": 30,
 "mp": 250,
 "icon": "ICON_CH_SKILL_029",
-"note": "KR/TW Aug 26 cut the cooldown to 15 s; Korea's Sep 2 patch set it back to 30 s (25 s with option 1), which is what the Global DB shows. Dark Crush opens on any ranged skill since Aug 26."
+"note": "KR/TW Aug 26 cut the cooldown to 15 s; Korea's Sep 2 patch set it back to 30 s (25 s with option 1), which is what the Global DB shows. Dark Crush opens on any ranged skill since Aug 26. Per hit (questlog Global data): 8,023 at skill Lv 12, 9,451 at 16, 10,669 at 20."
 },
 "Gust Rampage": {
 "cls": "chanter",
@@ -1033,7 +1037,7 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_CH_SKILL_030",
-"note": "Stagger bars only: users measured 6–9% lower at equal CP (NotMeter can't tell when it was used). Option 5 takes 1 s off all cooldowns per hit."
+"note": "Stagger bars only: users measured 6–9% lower at equal CP (NotMeter can't tell when it was used). Option 5 takes 1 s off all cooldowns per hit. Per hit (questlog Global data): 813 at skill Lv 12, 993 at 16, 1,149 at 20."
 },
 "Marchutan's Wrath": {
 "cls": "chanter",
@@ -1903,7 +1907,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_CH_SKILL_Passive_001",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data: Divine Barrier blocks 3.1% of max HP for 10 s at passive Lv 1, 4% at 10 and 5% at 20. A second effect, Noble Protective Shield, blocks 21% of damage for 5 s when your HP drops below 50% (30% at Lv 10, 40% at 20; 60 s cooldown)."
 },
 "Inspiring Spell": {
 "cls": "chanter",
@@ -1913,7 +1918,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_CH_SKILL_Passive_011",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data: +100 Crit and +0.5% Perfect Chance at passive Lv 1, +190 and +5% at 10, +290 and +10% at 20."
 },
 "Attack Preparation (chanter)": {
 "cls": "chanter",
@@ -1924,7 +1930,7 @@
 "mp": null,
 "icon": "ICON_GL_SKILL_Passive_005",
 "passive": 1,
-"note": "PvE Damage Boost is 5.5% at level 1 and 15% at 20."
+"note": "PvE Damage Boost is 5.5% at level 1 and 15% at 20. Questlog Global data: 7.5% at Lv 5, 10% at 10 and 12.5% at 15 (PvP is half)."
 },
 "Impact Hit (chanter)": {
 "cls": "chanter",
@@ -1934,7 +1940,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_GL_SKILL_Passive_006",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data: Impact-type Chance 11.2% at passive Lv 1, 22% at 10 and 34% at 20; Double Chance 0.3% at Lv 1, 3% at 10 and 6% at 20."
 },
 "Raging Spell": {
 "cls": "chanter",
@@ -1976,7 +1983,7 @@
 "mp": null,
 "icon": "ICON_CH_SKILL_Passive_008",
 "passive": 1,
-"note": "Crit Damage Boost is 5.7% at level 1 and 19% at 20; it also has a 50% chance of extra damage on crits (6.1% of Global damage)."
+"note": "Crit Damage Boost is 5.7% at level 1 and 19% at 20; it also has a 50% chance of extra damage on crits (6.1% of Global damage). Questlog Global data: Crit Damage Boost 12% at passive Lv 10 and 15.5% at 15; the extra hit (1 s cooldown) is 554 at Lv 1, 1,042 at 10 and 1,402 at 20."
 },
 "Mocking Blade": {
 "cls": "gladiator",
@@ -2021,7 +2028,8 @@
 "ko": "열파격",
 "cd": 10,
 "mp": null,
-"icon": "ICON_CH_SKILL_015"
+"icon": "ICON_CH_SKILL_015",
+"note": "Per hit (questlog Global data): 1,872 at skill Lv 12, 2,298 at 16, 2,615 at 20."
 },
 "Tremor Crush": {
 "cls": "chanter",
@@ -2030,7 +2038,8 @@
 "ko": "진동쇄",
 "cd": 20,
 "mp": null,
-"icon": "ICON_CH_SKILL_021"
+"icon": "ICON_CH_SKILL_021",
+"note": "Per hit (questlog Global data): 1,109 at skill Lv 12, 1,332 at 16, 1,510 at 20."
 },
 "Explosion Trap": {
 "cls": "ranger",
