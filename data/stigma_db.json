@@ -1687,7 +1687,8 @@
 "mp": null,
 "tw": "強襲轟炸",
 "ko": "강습 폭격",
-"s25": "-1 min cooldown"
+"s25": "-1 min cooldown",
+"note": "Damage to up to 4 targets (questlog Global data): 886 at stigma Lv 1, 1,390 at 5, 1,806 at 10, 2,155 at 15, 2,481 at 20."
 },
 "sorcerer:Cold Storm": {
 "id": "15200000",
@@ -1719,7 +1720,7 @@
 "tw": "冷氣暴風",
 "ko": "냉기 폭풍",
 "s25": "5% chance to inflict Frost for 3s when attacking a target with Frostbite",
-"note": "Before Oct 13 a stronger Frostbite from another Sorcerer removed yours (a Korean Sep 17 test). The Oct 13 patch stopped that and made the bonus damage apply across a height difference; whether two Sorcerers' Frostbites stack is unconfirmed. Top Global median stigma level is 5."
+"note": "Before Oct 13 a stronger Frostbite from another Sorcerer removed yours (a Korean Sep 17 test). The Oct 13 patch stopped that and made the bonus damage apply across a height difference; whether two Sorcerers' Frostbites stack is unconfirmed. Top Global median stigma level is 5. Storm hit (questlog Global data): 945 at stigma Lv 1, 1,483 at 5, 1,927 at 10, 2,299 at 15, 2,647 at 20. Frostbite tick every second for 10 s: 472, 741, 963, 1,149, 1,323."
 },
 "sorcerer:Curse: Tree": {
 "id": "15140000",
@@ -1782,7 +1783,7 @@
 "tw": "延遲爆炸",
 "ko": "지연 폭발",
 "s25": "Ignores Block and Evasion and lands as a Critical Hit",
-"note": "Since Aug 26 it also works on the ground AoEs in Korea; that is not confirmed on Global. Top Global median stigma level is 10."
+"note": "Since Aug 26 it also works on the ground AoEs in Korea; that is not confirmed on Global. Top Global median stigma level is 10. Explosion damage (questlog Global data): 1,116 at stigma Lv 1, 1,752 at 5, 2,276 at 10, 2,715 at 15, 3,127 at 20."
 },
 "sorcerer:Divine Burst": {
 "id": "15360000",
@@ -1813,7 +1814,8 @@
 "mp": 200,
 "tw": "神聖爆炸",
 "ko": "신성 폭발",
-"s25": "+100% damage to targets with Incapacitated Immunity"
+"s25": "+100% damage to targets with Incapacitated Immunity",
+"note": "Damage (questlog Global data): 1,140 at stigma Lv 1, 1,789 at 5, 2,325 at 10, 2,774 at 15, 3,194 at 20."
 },
 "sorcerer:Element Enhancement": {
 "id": "15400000",
@@ -1877,7 +1879,7 @@
 "tw": "火之障壁",
 "ko": "불의 장벽",
 "s25": "+10% damage when attacking targets with Embers",
-"note": "Oct 13 (Global): the bonus damage now applies across a height difference, and your Embers are no longer removed by another player's stronger Embers. Top Global median stigma level is 11."
+"note": "Oct 13 (Global): the bonus damage now applies across a height difference, and your Embers are no longer removed by another player's stronger Embers. Top Global median stigma level is 11. Wall hit (questlog Global data): 1,300 at stigma Lv 1, 2,039 at 5, 2,649 at 10, 3,161 at 15, 3,639 at 20. Embers tick every second for 10 s: 650, 1,019, 1,324, 1,580, 1,819."
 },
 "sorcerer:Glacial Smite": {
 "id": "15120000",
@@ -1908,7 +1910,8 @@
 "mp": 200,
 "tw": "冰河強擊",
 "ko": "빙하 강타",
-"s25": "+25% Frost chance"
+"s25": "+25% Frost chance",
+"note": "Damage to up to 4 targets (questlog Global data): 1,477 at stigma Lv 1, 2,317 at 5, 3,011 at 10, 3,592 at 15, 4,136 at 20."
 },
 "sorcerer:Hibernation": {
 "id": "15410000",
@@ -1970,7 +1973,8 @@
 "mp": 300,
 "tw": "露梅爾空間",
 "ko": "루미엘의 공간",
-"s25": "Double Aerial Bind chance on Frozen or Slowed targets"
+"s25": "Double Aerial Bind chance on Frozen or Slowed targets",
+"note": "Damage to up to 4 targets (questlog Global data): 998 at stigma Lv 1, 1,566 at 5, 2,035 at 10, 2,428 at 15, 2,796 at 20."
 },
 "sorcerer:Soul Freeze": {
 "id": "15130000",
@@ -2001,7 +2005,8 @@
 "mp": 200,
 "tw": "靈魂凍結",
 "ko": "영혼 동결",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Damage (questlog Global data): 1,037 at stigma Lv 1, 1,626 at 5, 2,113 at 10, 2,521 at 15, 2,903 at 20."
 },
 "sorcerer:Steel Barrier": {
 "id": "15160000",
@@ -2032,7 +2037,8 @@
 "mp": null,
 "tw": "鋼鐵屏障",
 "ko": "강철 보호막",
-"s25": "No extra damage from rear attacks"
+"s25": "No extra damage from rear attacks",
+"note": "The shield is 16% of max HP at every level (questlog Global data); the levels only unlock options."
 },
 "spiritmaster:Assault Terror": {
 "id": "16700000",

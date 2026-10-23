@@ -528,7 +528,8 @@
 "ko": "불꽃 작살",
 "cd": 5,
 "mp": 250,
-"icon": "ICON_SO_SKILL_004"
+"icon": "ICON_SO_SKILL_004",
+"note": "Per hit (questlog Global data): 1,629 at skill Lv 12, 2,093 at 16, 2,515 at 20."
 },
 "Blaze": {
 "cls": "sorcerer",
@@ -537,7 +538,8 @@
 "ko": "불꽃 폭발",
 "cd": 5,
 "mp": null,
-"icon": "ICON_SO_SKILL_005"
+"icon": "ICON_SO_SKILL_005",
+"note": "Per hit (questlog Global data): 1,790 at skill Lv 12, 2,214 at 16, 2,608 at 20. Restores 100 MP."
 },
 "Hellfire": {
 "cls": "sorcerer",
@@ -546,7 +548,8 @@
 "ko": "지옥의 화염",
 "cd": 45,
 "mp": 200,
-"icon": "ICON_SO_SKILL_006"
+"icon": "ICON_SO_SKILL_006",
+"note": "From an uncharged to a fully charged cast (questlog Global data): 3,887-11,663 at skill Lv 12, 4,579-13,739 at 16, 5,170-15,510 at 20. A full charge does 3x an uncharged cast."
 },
 "Ice Chain": {
 "cls": "sorcerer",
@@ -555,7 +558,8 @@
 "ko": "얼음 사슬",
 "cd": null,
 "mp": 120,
-"icon": "ICON_SO_SKILL_009"
+"icon": "ICON_SO_SKILL_009",
+"note": "Per hit (questlog Global data): 808 at skill Lv 12, 1,030 at 16, 1,233 at 20."
 },
 "Winter's Shackles": {
 "cls": "sorcerer",
@@ -564,7 +568,8 @@
 "ko": "겨울의 속박",
 "cd": 45,
 "mp": 200,
-"icon": "ICON_SO_SKILL_011"
+"icon": "ICON_SO_SKILL_011",
+"note": "Per hit (questlog Global data): 1,492 at skill Lv 12, 1,831 at 16, 2,083 at 20."
 },
 "Frost": {
 "cls": "sorcerer",
@@ -573,7 +578,8 @@
 "ko": "빙결",
 "cd": 30,
 "mp": 100,
-"icon": "ICON_SO_SKILL_015"
+"icon": "ICON_SO_SKILL_015",
+"note": "Per hit (questlog Global data): 967 at skill Lv 12, 1,187 at 16, 1,350 at 20, with a 50% chance to inflict Frost (100% on NPCs)."
 },
 "Cold Storm": {
 "cls": "sorcerer",
@@ -593,7 +599,7 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_020",
-"note": "Option 4 is the Sep 16 version on Global: +5% Fire Damage Boost for 10 s on Pyroclasm. The aion2.app database still shows the older 'Inflicts Fire Mark' text; the buff shows in 275 of 282 top Global parses with option 4 and in none without."
+"note": "Option 4 is the Sep 16 version on Global: +5% Fire Damage Boost for 10 s on Pyroclasm. The aion2.app database still shows the older 'Inflicts Fire Mark' text; the buff shows in 275 of 282 top Global parses with option 4 and in none without. Per hit (questlog Global data): 558 at skill Lv 12, 710 at 16, 848 at 20, and it restores 100 MP."
 },
 "Bittercold Wind": {
 "cls": "sorcerer",
@@ -603,7 +609,7 @@
 "cd": 15,
 "mp": 150,
 "icon": "ICON_SO_SKILL_025",
-"note": "Oct 13 (Global): option 5's Frost cooldown cut now also works across a height difference."
+"note": "Oct 13 (Global): option 5's Frost cooldown cut now also works across a height difference. Per hit (questlog Global data): 2,152 at skill Lv 12, 2,661 at 16, 3,135 at 20, with a 60% chance to Root (100% on NPCs)."
 },
 "Wish of Concentration": {
 "cls": "sorcerer",
@@ -613,7 +619,7 @@
 "cd": 60,
 "mp": 100,
 "icon": "ICON_SO_SKILL_028",
-"note": "Lasts 10 s at level 1, +0.5 s per level (18 s at the Global median level 17)."
+"note": "Lasts 10 s at level 1, +0.5 s per level (18 s at the Global median level 17). +10% Attack and +100 Accuracy at every level (questlog Global data); the level changes only the duration."
 },
 "Delayed Explosion": {
 "cls": "sorcerer",
@@ -1078,7 +1084,8 @@
 "ko": "빙결 폭발",
 "cd": 10,
 "mp": null,
-"icon": "ICON_SO_SKILL_022"
+"icon": "ICON_SO_SKILL_022",
+"note": "Per hit (questlog Global data): 1,685 at skill Lv 12, 2,025 at 16, 2,294 at 20. It needs a target with Frost."
 },
 "Ensnaring Mark": {
 "cls": "chanter",
@@ -1154,7 +1161,8 @@
 "ko": "화염 난사",
 "cd": null,
 "mp": null,
-"icon": "ICON_SO_SKILL_001"
+"icon": "ICON_SO_SKILL_001",
+"note": "Per hit on a target afflicted with Stagger (questlog Global data): 813 at skill Lv 12, 993 at 16, 1,149 at 20."
 },
 "Flash Rampage": {
 "cls": "templar",
@@ -1586,7 +1594,7 @@
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_002",
 "passive": 1,
-"note": "Text follows questlog's Global skill data (updated Oct 7): Fire Mark is inflicted on landing a Fire attack, with no chance stated (Korea's Sep 16 change from 20% to 100%). The aion2.app database (client 18.09.2026) still says 20%, and the application rate in the logs is UNVERIFIED. The 20% left in the text is the extra-damage tick on a marked target."
+"note": "Text follows questlog's Global skill data (updated Oct 7): Fire Mark is inflicted on landing a Fire attack, with no chance stated (Korea's Sep 16 change from 20% to 100%). The aion2.app database (client 18.09.2026) still says 20%, and the application rate in the logs is UNVERIFIED. The 20% left in the text is the extra-damage tick on a marked target. Extra damage on a marked target (20% chance, 1 s cooldown; questlog Global data): 32 at passive Lv 1, 369 at 10, 674 at 20, 945 at 31."
 },
 "Robe of Earth": {
 "cls": "sorcerer",
@@ -1596,7 +1604,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_006",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data, by passive level: Max MP +7% at Lv 1, 25% at 10, 45% at 20, 67% at 31; Critical Hit +105, 150, 200, 255 while MP is 50% or more; Natural MP Regen +5 per level."
 },
 "Cold Snap": {
 "cls": "sorcerer",
@@ -1606,7 +1615,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_003",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data: a 50% chance (1 s cooldown) to deal 43 extra damage at passive Lv 1, 213 at 10, 330 at 20, 440 at 31 against a Slowed target."
 },
 "Robe of Flame": {
 "cls": "sorcerer",
@@ -1616,7 +1626,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_004",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data, by passive level: PvE Damage Boost 1% at Lv 1, 10% at 10, 20% at 20, 31% at 31 (PvP half); Double Chance 0.2%, 2%, 4%, 6.2%; Accuracy +100 at every level. Each level adds the same amount."
 },
 "Absorb Essence": {
 "cls": "sorcerer",
@@ -1656,7 +1667,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_007",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data: the +20% PvE Damage Boost (+10% PvP) at 25% MP or more is the same at every level. Levels only raise the 50%-chance bonus hit (1 s cooldown): 106 at Lv 1, 216 at 10, 297 at 20, 383 at 31."
 },
 "Revitalization Contract (sorcerer)": {
 "cls": "sorcerer",
@@ -1676,7 +1688,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_Passive_008",
-"passive": 1
+"passive": 1,
+"note": "Questlog Global data: bonus hit on a target above 70% HP (1 s cooldown): 261 at passive Lv 1, 492 at 10, 662 at 20, 848 at 31."
 },
 "Spirit Strike": {
 "cls": "spiritmaster",
@@ -2309,7 +2322,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_023",
-"chain": "Flame Arrow"
+"chain": "Flame Arrow",
+"note": "Per hit (questlog Global data): 719 at skill Lv 12, 916 at 16, 1,096 at 20; restores 120 MP."
 },
 "Burst": {
 "cls": "sorcerer",
@@ -2319,7 +2333,8 @@
 "cd": null,
 "mp": null,
 "icon": "ICON_SO_SKILL_003",
-"chain": "Flame Arrow"
+"chain": "Flame Arrow",
+"note": "Per hit (questlog Global data): 619 at skill Lv 12, 788 at 16, 942 at 20; restores 100 MP."
 },
 "Cold Wave": {
 "cls": "sorcerer",
@@ -2329,7 +2344,8 @@
 "cd": null,
 "mp": 120,
 "icon": "ICON_SO_SKILL_010",
-"chain": "Ice Chain"
+"chain": "Ice Chain",
+"note": "Per hit (questlog Global data): 897 at skill Lv 12, 1,145 at 16, 1,370 at 20."
 },
 "Ashy Call": {
 "cls": "spiritmaster",

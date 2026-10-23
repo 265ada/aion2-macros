@@ -798,6 +798,25 @@
         null
        ]
       ]
+     },
+     {
+      "t": "Most-liked questlog macro (shr1kn): Element Enhancement, Winter's Shackles, Blaze, Ice Chain",
+      "s": "The macro line of the most-liked public Global Sorcerer builds on questlog: 'Leveling (0-1200 GS)' by shr1kn has 116 likes, and the same author's 'End Game PvE (3400+ GS)' adds Ice Chain as row 3; others copy it. One right-click macro (10 ms), Flame Arrow held on left click, and Hellfire, Wish of Concentration and Delayed Explosion pressed by hand: Hellfire fully charged right after Delayed Explosion, Wish right after Hellfire once Wish has option 5. Firestorm, Fire Wall, Cold Storm and Bittercold Wind are not in the macro, and the author's text does not say how they are pressed. Compared with the Late card it puts Element Enhancement (60 s cooldown) inside the macro, so it may fire before Delayed Explosion and Hellfire are ready (derived). No Global parse tests it; it is the simple option, not a proven better one.",
+      "macros": [
+       [
+        "Element Enhancement",
+        "Winter's Shackles",
+        "Blaze",
+        "Ice Chain"
+       ]
+      ],
+      "hold": [
+       "Flame Arrow",
+       "Macro key"
+      ],
+      "delays": [
+       10
+      ]
      }
     ]
    },

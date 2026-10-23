@@ -2197,7 +2197,7 @@
         5
        ]
       ],
-      "why": "What top Global Sorcerers run: Element Enhancement 97% (median level 20), Fire Wall 100% (median 11), Delayed Explosion 97% (median 10) and Cold Storm 90% (median 5). With 32 shards at 45 and about 20 more a week, only Element Enhancement is at 20 today; the other three are 5–15 now and go to 20 later (Est, written for KR/TW: Element Enhancement is 'non negotiable… number 1 priority', Fire Wall the 2nd stigma). Hibernation (27% use, at level 1) and Steel Barrier (11%) show up as swaps. With two Sorcerers in a party, another player's stronger Frostbite no longer removes yours since Oct 13; whether the two stack is unconfirmed.",
+      "why": "What top Global Sorcerers run: Element Enhancement 97% (median level 20), Fire Wall 100% (median 11), Delayed Explosion 97% (median 10) and Cold Storm 90% (median 5). With 32 shards at 45 and about 20 more a week, only Element Enhancement is at 20 today; the other three are 5–15 now and go to 20 later (Est, written for KR/TW: Element Enhancement is 'non negotiable… number 1 priority', Fire Wall the 2nd stigma). Hibernation (27% use, at level 1) and Steel Barrier (11%) show up as swaps. With two Sorcerers in a party, another player's stronger Frostbite no longer removes yours since Oct 13; whether the two stack is unconfirmed. Questlog's public Global builds agree: of 33 distinct endgame-level Sorcerer builds (Hellfire 12+, 3+ stigmas slotted), 31 run Element Enhancement (median 20), 24 Fire Wall (20), 20 Delayed Explosion (20) and 19 Cold Storm (15), and 15 run exactly these four. Many follow a gear-score ladder (shr1kn's Early, Mid and End Game PvE builds go 10/10/10/15, then 15/15/15/20, then all 20), and 5 of the 15 put all four at 20, which is more shards than a Global player has now.",
       "src": [
        [
         "Global class sheet (zxcastform)",
@@ -2218,6 +2218,10 @@
        [
         "KR Sep: 'we're DPS, Cold Storm first'",
         "https://www.inven.co.kr/board/aion2/6453/17196"
+       ],
+       [
+        "Questlog Sorcerer class page and skill builds (Global)",
+        "https://questlog.gg/aion-2/en/classes/sorcerer"
        ]
       ],
       "main": true
@@ -2310,6 +2314,35 @@
       ]
      },
      {
+      "t": "Questlog build: pack farming with Glacial Smite + Steel Barrier (vin.n.y)",
+      "tag": "Community",
+      "pick": [
+       [
+        "Element Enhancement",
+        20
+       ],
+       [
+        "Delayed Explosion",
+        20
+       ],
+       [
+        "Glacial Smite",
+        20
+       ],
+       [
+        "Steel Barrier",
+        20
+       ]
+      ],
+      "why": "A public Global build on questlog for killing mob groups while running ('3 – Farming (mobil)' by vin.n.y, Oct 23, no likes yet). It drops Fire Wall and Cold Storm, since ground effects miss moving packs, and takes Glacial Smite (more damage the more targets it hits; 4,136 at 20) and Steel Barrier (a 16% HP shield, +10% move speed from 5) beside Element Enhancement and Delayed Explosion (an AoE from 15). Its right-click macro lists Bittercold Wind, Delayed Explosion, Frost Burst and Blaze with Flame Arrow held; Hellfire (charged while running) and Wish of Concentration are on their own keys. The author's own advice is to switch to the standard four ('1 – PvE Highest DPS') for longer dungeon bosses. Untested: no Global parse or pack-clear test covers it.",
+      "src": [
+       [
+        "Questlog build '3 – Farming (mobil)' by vin.n.y",
+        "https://questlog.gg/aion-2/en/skill-builder/hPQbcUhvwysP?build-id=22151"
+       ]
+      ]
+     },
+     {
       "t": "PvP (UNVERIFIED)",
       "tag": "PvP",
       "pick": [
@@ -2330,7 +2363,7 @@
         20
        ]
       ],
-      "why": "UNVERIFIED for Global: this is Korea's 6-slot PvP list cut to 4, and Est covers no PvP. Arctic Armor (tolerance, Magic Displacement) and Element Enhancement (damage) are the core. Hibernation is the escape (20: triggers on Impact-type crowd control). Glacial Smite is 'a good burst of damage in PvP' (Est, KR/TW); Soul Freeze (Seal) is the other burst pick. Est (KR/TW) rates Sorcerer average in 1v1 PvP and top tier in zerging.",
+      "why": "UNVERIFIED for Global: this is Korea's 6-slot PvP list cut to 4, and Est covers no PvP. Arctic Armor (tolerance, Magic Displacement) and Element Enhancement (damage) are the core. Hibernation is the escape (20: triggers on Impact-type crowd control). Glacial Smite is 'a good burst of damage in PvP' (Est, KR/TW); Soul Freeze (Seal) is the other burst pick. Est (KR/TW) rates Sorcerer average in 1v1 PvP and top tier in zerging. Questlog's public Global PvP drafts lean the other way on the last slot: 5 of 33 distinct endgame-level builds run exactly Arctic Armor, Element Enhancement, Hibernation and Soul Freeze (for example '.ytsur.' 'PVP BUILD & MACRO', 7 likes, all four at 20), and only 3 builds slot Glacial Smite, one of them a PvP draft. Still UNVERIFIED on Global.",
       "src": [
        [
         "Korea's PvP stigma thread (6 slots)",
@@ -2339,6 +2372,10 @@
        [
         "Est's Sorcerer guide (TW/KR)",
         "https://docs.google.com/document/d/1XVciQ8mC7bHo7bAApRk7hLwmT61MxVWTm2III6rUzsM/edit"
+       ],
+       [
+        "Questlog build 'PVP BUILD & MACRO' by .ytsur.",
+        "https://questlog.gg/aion-2/en/skill-builder/XMIwMkVumMBM?build-id=9933"
        ]
       ]
      }
@@ -2352,22 +2389,22 @@
      [
       "Fire Wall",
       20,
-      "5: Embers deal extra damage. 10: +2 m wall width. 15: +2s wall. 20: +10s Embers (near-permanent burn). 13.1% of damage (post-patch 11.4%). Top Global median is 11, so 10–15 now and 20 later; Est: the 2nd-priority stigma."
+      "5: Embers deal extra damage. 10: +2 m wall width. 15: +2s wall. 20: +10s Embers (near-permanent burn). 13.1% of damage (post-patch 11.4%). Top Global median is 11, so 10–15 now and 20 later; Est: the 2nd-priority stigma. Questlog values: the wall hits for 1,300 at level 1, 2,649 at 10 and 3,639 at 20; Embers tick 650, 1,324 and 1,819 a second."
      ],
      [
       "Delayed Explosion",
       20,
-      "10: -10s cooldown (30 to 20 s). 15: becomes AoE. 20: +10% damage taken from you (on top of 15%). Top Global median is 10, so 10 now and 20 later."
+      "10: -10s cooldown (30 to 20 s). 15: becomes AoE. 20: +10% damage taken from you (on top of 15%). Top Global median is 10, so 10 now and 20 later. Explosion damage 1,116 at level 1, 2,276 at 10, 3,127 at 20 (questlog)."
      ],
      [
       "Cold Storm",
       15,
-      "5: Frostbite deals extra damage. 15: +3s storm. 20: +10s Frostbite when shards allow. 6.5% of damage, split between the ground hit and the debuff. 5 now, 15 or 20 later (top Global median 5; the logged 'level 5' could be a debuff level, UNVERIFIED)."
+      "5: Frostbite deals extra damage. 15: +3s storm. 20: +10s Frostbite when shards allow. 6.5% of damage, split between the ground hit and the debuff. 5 now, 15 or 20 later (top Global median 5; the logged 'level 5' could be a debuff level, UNVERIFIED). Questlog values: the storm hits for 945 at level 1, 1,927 at 10 and 2,647 at 20; Frostbite ticks 472, 963 and 1,323 a second."
      ],
      [
       "Steel Barrier",
       10,
-      "Safety swap (11% of top Global Sorcerers): a 16% HP shield for 60 s. 5: +10% move speed. 10: HP regen. 15: +10% PvE tolerance if you want it tankier."
+      "Safety swap (11% of top Global Sorcerers): a 16% HP shield for 60 s. 5: +10% move speed. 10: HP regen. 15: +10% PvE tolerance if you want it tankier. 20: -15 s cooldown. The shield stays 16% at every level (questlog Global data)."
      ],
      [
       "Arctic Armor",
@@ -2377,7 +2414,7 @@
      [
       "Hibernation",
       1,
-      "Mechanics swap: 5 s immunity on a 180 s cooldown. 27% of top Global Sorcerers use it, at level 1."
+      "Mechanics swap: 5 s immunity on a 180 s cooldown. 27% of top Global Sorcerers use it, at level 1. Options (questlog Global data): 5 +100% Incoming Heal, 10 restores 5% max HP a second, 15 +2 s, 20 triggers when an Impact-type status hits you."
      ]
     ],
     "order": [
@@ -2509,7 +2546,7 @@
       5
      ],
      "lvl": "16–20",
-     "note": "Option 4 (skill level 12) is the Sep 16 version on Global: +5% Fire damage for 10 s per Pyroclasm (the aion2.app text still says 'applies Fire Mark'; the buff shows in 275 of 282 top option-4 parses). Option 5 (16) resets Blaze. Global top: 4+5 for 70%; reach 12 early. 76% picked option 5; logged levels: 88% at 16+. Est (KR/TW): 5 > 4 > 2, with 2 for lifesteal; the sheet and Est take the third option at 20. daevaos: 4+5.",
+     "note": "Option 4 (skill level 12) is the Sep 16 version on Global: +5% Fire damage for 10 s per Pyroclasm (the aion2.app text still says 'applies Fire Mark'; the buff shows in 275 of 282 top option-4 parses). Option 5 (16) resets Blaze. Global top: 4+5 for 70%; reach 12 early. 76% picked option 5; logged levels: 88% at 16+. Est (KR/TW): 5 > 4 > 2, with 2 for lifesteal; the sheet and Est take the third option at 20. daevaos: 4+5. Questlog's public Global builds (30 distinct, skill Lv 12+): 4+5 in 13, 3+4+5 in 8, so they agree with the Global top.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2522,7 +2559,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Global top: 2+4 for 59% (post-patch 44%). Est: 2 > 3, or 4 > 2 if you weave Winter's Shackles. The sheet and daevaos pick 2+3 (about a third of Global Ice Chain users). A mobbing skill; Est weaves it on Global because of the low cooldown reduction, but most top parses skip it.",
+     "note": "Global top: 2+4 for 59% (post-patch 44%). Est: 2 > 3, or 4 > 2 if you weave Winter's Shackles. The sheet and daevaos pick 2+3 (about a third of Global Ice Chain users). A mobbing skill; Est weaves it on Global because of the low cooldown reduction, but most top parses skip it. Questlog (21 distinct builds): 2+4 in 15, 2+3 in 3, which matches the Global top.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2536,7 +2573,7 @@
       5
      ],
      "lvl": "16–20",
-     "note": "4: -2 s Hellfire per fireball (5 fireballs per use in Global parses). 5: +15% damage per fireball, up to +75%. Global top: 2+4 for 55%, 4+5 37%; 42% picked option 5, and logged levels put 59% at 16+. Est (KR/TW): 4 > 5 > 2, and 20 is minor; the sheet says 20. In PvP swap 2 for 3 (-60% Incoming Heal). daevaos: 2+4, plus 5 at 20.",
+     "note": "4: -2 s Hellfire per fireball (5 fireballs per use in Global parses). 5: +15% damage per fireball, up to +75%. Global top: 2+4 for 55%, 4+5 37%; 42% picked option 5, and logged levels put 59% at 16+. Est (KR/TW): 4 > 5 > 2, and 20 is minor; the sheet says 20. In PvP swap 2 for 3 (-60% Incoming Heal). daevaos: 2+4, plus 5 at 20. Questlog (29 distinct builds): 2+4+5 in 10, 2+4 in 7, 4+5 in 5; option 2 (+20% skill speed) is in most of them.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2554,7 +2591,7 @@
       4
      ],
      "lvl": "20",
-     "note": "Global top: 1+4 for 61%. Est (KR/TW): 1 > 2 > 4, so 1+2 now and 1+2+4 at 20 (daevaos too); option 2 makes it mobile. Option 5 (16: -1 s Frost cooldown on hit, the effect the Oct 13 patch fixed across height differences) is picked by only 2–3% of top Global Sorcerers (Korea's top 20: 60%). Logged levels: median 15, about half at 16+.",
+     "note": "Global top: 1+4 for 61%. Est (KR/TW): 1 > 2 > 4, so 1+2 now and 1+2+4 at 20 (daevaos too); option 2 makes it mobile. Option 5 (16: -1 s Frost cooldown on hit, the effect the Oct 13 patch fixed across height differences) is picked by only 2–3% of top Global Sorcerers (Korea's top 20: 60%). Logged levels: median 15, about half at 16+. Questlog (29 distinct builds) is split: 1+2 in 6, 1+4 in 5, 3+4 in 4 (option 3 pulls enemies in).",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2572,7 +2609,7 @@
       5
      ],
      "lvl": "20",
-     "note": "Global top: 3+5 for 53% (post-patch 42%). 3: delayed damage (+35%, Est). 5 (16): -3 s Wish of Concentration per hit; Est (KR/TW) ranks 5 > 3 > 4. The sheet runs 1+3+5; Korea's Sep optimizer: 3 · 4 · 5. 3rd-5th biggest damage source; 77% are at 16+.",
+     "note": "Global top: 3+5 for 53% (post-patch 42%). 3: delayed damage (+35%, Est). 5 (16): -3 s Wish of Concentration per hit; Est (KR/TW) ranks 5 > 3 > 4. The sheet runs 1+3+5; Korea's Sep optimizer: 3 · 4 · 5. 3rd-5th biggest damage source; 77% are at 16+. Questlog (29 distinct builds): 3+4+5 in 13, 4+5 in 4, 3+4 in 3; players with a level 20 Blaze usually take all three options.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2585,7 +2622,7 @@
       3
      ],
      "lvl": "12",
-     "note": "Global top: 2+3 for 64–68%. The sheet picks 1+2.",
+     "note": "Global top: 2+3 for 64–68%. The sheet picks 1+2. Questlog (24 distinct builds): 2+3 in 13, matching the Global top.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2598,7 +2635,7 @@
       5
      ],
      "lvl": "16",
-     "note": "Global top: a split between 1+3 and 3+5 (35% each); 35% picked option 5, and logged levels put 49% at 16+. Est (KR/TW): level 16, or 20 for the mobile option (5 > 3 > 1). Korea's Sep optimizer: 3 · 5 · 1. If you can only take one of Bittercold Wind and Winter's Shackles to 20, take Bittercold Wind.",
+     "note": "Global top: a split between 1+3 and 3+5 (35% each); 35% picked option 5, and logged levels put 49% at 16+. Est (KR/TW): level 16, or 20 for the mobile option (5 > 3 > 1). Korea's Sep optimizer: 3 · 5 · 1. If you can only take one of Bittercold Wind and Winter's Shackles to 20, take Bittercold Wind. Questlog (28 distinct builds): 3+5 in 11, 1+3+5 in 5, 2+3 in 4.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2611,7 +2648,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Est (KR/TW): 1 > 2, 'you use this for the lifesteal'. The sheet picks 1+4. Global per player: 1+4 29%, 2+4 29%, 1+2 23%. daevaos has 1+4 now and plans 4+5 at 16.",
+     "note": "Est (KR/TW): 1 > 2, 'you use this for the lifesteal'. The sheet picks 1+4. Global per player: 1+4 29%, 2+4 29%, 1+2 23%. daevaos has 1+4 now and plans 4+5 at 16. Questlog (27 distinct builds): 1+2 in 10, 2+4 in 7, 3+4 in 4, 1+4 in 3, so the sheet's 1+4 is a minority pick there.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2625,7 +2662,7 @@
       5
      ],
      "lvl": "20",
-     "note": "Your required buff. 2: +10% Attack. 4: +10% Combat Speed. 5 (16): -10 s all cooldowns. Global per player: 2+5 40%, 4+5 34%, 2+4 18% (players below 16), 2+4+5 8%; Est (KR/TW): 5 > 4 > 2. The buff lasts 10 s at level 1 and +0.5 s per level (18 s at the Global median level 17).",
+     "note": "Your required buff. 2: +10% Attack. 4: +10% Combat Speed. 5 (16): -10 s all cooldowns. Global per player: 2+5 40%, 4+5 34%, 2+4 18% (players below 16), 2+4+5 8%; Est (KR/TW): 5 > 4 > 2. The buff lasts 10 s at level 1 and +0.5 s per level (18 s at the Global median level 17). Questlog (29 distinct builds): 2+4+5 in 19 (all three at level 20), 2+5 in 4, 2+4 in 3.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2643,7 +2680,7 @@
       5
      ],
      "lvl": "20",
-     "note": "Global top: 1+5 for 36% (the most common), with the third pick contested: 3 (mobile) or 4 (multi-hit, ignores Block). Korea's top 20 and Sep optimizer: 1 · 4 · 5; Est (KR/TW): 5 > 3 > 1. Option 5 (16): -15 s cooldown; 72% of top Global Sorcerers are at 16+ and 13% at 20. 16 is the minimum, 20 the target.",
+     "note": "Global top: 1+5 for 36% (the most common), with the third pick contested: 3 (mobile) or 4 (multi-hit, ignores Block). Korea's top 20 and Sep optimizer: 1 · 4 · 5; Est (KR/TW): 5 > 3 > 1. Option 5 (16): -15 s cooldown; 72% of top Global Sorcerers are at 16+ and 13% at 20. 16 is the minimum, 20 the target. Questlog (29 distinct builds): 1+4+5 in 10, 1+3+5 in 6, 1+5 in 4, 1+4 in 3; option 4 (ignores Block and Evasion, lands as Multi-Hit) is more common there than the mobile option 3.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2656,7 +2693,7 @@
       3
      ],
      "lvl": "12",
-     "note": "Est (KR/TW): 3 > 2, and level 12; each level takes 1 s off the cooldown. The sheet says 16.",
+     "note": "Est (KR/TW): 3 > 2, and level 12; each level takes 1 s off the cooldown. The sheet says 16. Questlog (19 distinct builds): 4+5 in 12 and 2+3 in 4. Option 4 is +2 s Tenacity and option 5 gives +50% PvE and +25% PvP Damage Tolerance while Tenacity lasts; option 5 needs skill Lv 16, so the page's 2+3 stays the pick until then.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2669,7 +2706,7 @@
       5
      ],
      "lvl": "16",
-     "note": "Stagger windows only. 5: -1 s all cooldowns per hit (40% are at 16+). Est (KR/TW): 5 > 3. Global top: 4+5 for 32% (post-patch 22%). daevaos runs 3+4 with no option 5, at level 12.",
+     "note": "Stagger windows only. 5: -1 s all cooldowns per hit (40% are at 16+). Est (KR/TW): 5 > 3. Global top: 4+5 for 32% (post-patch 22%). daevaos runs 3+4 with no option 5, at level 12. Questlog (14 distinct builds) has no clear pick: 4+5 in 4, 3+4 in 3, 1+5 in 3.",
      "src": [
       "Global class sheet (zxcastform), Est (TW/KR) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -2758,23 +2795,23 @@
     "pas": [
      [
       "Robe of Flame",
-      "The only key passive: Accuracy, PvE damage and Double Chance. Element Enhancement 10 multiplies it x1.5. As high as possible (Est, KR/TW: 31+, which assumes more level-20 actives than Global's gear and 5 Arcana cards allow)."
+      "The only key passive: Accuracy, PvE damage and Double Chance. Element Enhancement 10 multiplies it x1.5. As high as possible (Est, KR/TW: 31+, which assumes more level-20 actives than Global's gear and 5 Arcana cards allow). Questlog Global data: it scales evenly, +1% PvE Damage Boost and +0.2% Double Chance per level (10% and 2% at 10, 20% and 4% at 20, 31% and 6.2% at 31; PvP half), so every point is worth the same. Public builds keep it at a median of 19."
      ],
      [
       "Grace of Enhancement",
-      "2nd per Est: +20% PvE Damage Boost at 25% MP or more, about 2–3% of damage. The sheet ranks Fire Mark 2nd instead. Spare lines only."
+      "2nd per Est: +20% PvE Damage Boost at 25% MP or more, about 2–3% of damage. The sheet ranks Fire Mark 2nd instead. Spare lines only. Questlog Global data: the +20% PvE Damage Boost is flat at every level. Only the 50%-chance bonus hit scales (106 at level 1, 216 at 10, 297 at 20), so levels beyond what gear gives add little (derived). Public builds keep it at a median of 13."
      ],
      [
       "Fire Mark",
-      "Extra fire damage procs. 2.5% of Global damage (Grace of Enhancement 1.5%); Est rates it 1–2%. The sheet's 2nd, and 3rd on most armor lines."
+      "Extra fire damage procs. 2.5% of Global damage (Grace of Enhancement 1.5%); Est rates it 1–2%. The sheet's 2nd, and 3rd on most armor lines. Questlog Global data: the extra hit (20% chance, 1 s cooldown) is 32 at level 1, 369 at 10, 674 at 20 and 945 at 31."
      ],
      [
       "Robe of Earth",
-      "Mana: 'the solution to all of your mana issues' (Est). Base level."
+      "Mana: 'the solution to all of your mana issues' (Est). Base level. Questlog Global data: Max MP +7% at level 1, 25% at 10 and 45% at 20; Critical Hit +105 at level 1 and +200 at 20 while MP is 50% or more; Natural MP Regen +5 per level."
      ],
      [
       "Vitality Evaporation",
-      "Extra damage above 70% target HP. Low priority (1–2%, Est), like Cold Snap."
+      "Extra damage above 70% target HP. Low priority (1–2%, Est), like Cold Snap. Questlog Global data: the bonus hit is 261 at level 1, 492 at 10 and 662 at 20."
      ]
     ],
     "wings": "Talisra (cooldown reduction) is the goal; Forest Spirit or Dark Veil Wings until then (daevaos); wings can't be enhanced in Season 1. Korea (Aug 21): Talisra 91.5%",
