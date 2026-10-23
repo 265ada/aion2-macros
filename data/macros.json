@@ -1140,6 +1140,47 @@
        "Vicious Strike",
        "Macro key"
       ]
+     },
+     {
+      "t": "Solashur (solashur.com): DPS 'Berserk' Templar, right-click and R-key lines",
+      "s": "A streamer's DPS-first setup, an alternative and not this page's recommendation. Right click is the in-game macro; the PvE line is shown (his PvX line is Doom Shield, Annihilate, Debilitating Smash, Pummel, so Doom Shield's resets on mobs feed Annihilate). The macro runs row 0 first and skips any skill that isn't ready, so with nothing procced it just repeats Pummel; he keeps the delay at 10-30 ms so right click can cancel Judgment. His second line sits on the R key (Judgment, Shield Smite, Warding Strike, Doom Shield). He presses R about 10 times a second with a Razer Synapse thumb-button turbo. That software is external and a ban risk on Global (only the in-game macro is allowed); without it, press R yourself. He opens with Punishment and runs no Noble Armor.",
+      "macros": [
+       [
+        "Annihilate",
+        "Debilitating Smash",
+        "Flash Rampage",
+        "Pummel"
+       ],
+       [
+        "Judgment",
+        "Shield Smite",
+        "Warding Strike",
+        "Doom Shield"
+       ]
+      ],
+      "delays": [
+       10,
+       10
+      ]
+     },
+     {
+      "t": "Most-liked questlog Templar build (_leonis, 'Offensive Setup - Midgame', 27 likes)",
+      "s": "One short macro: Judgment on row 0, Annihilate on row 1, 10 ms delay, with left and right mouse held together (his instruction). Others on questlog are just as short: across the 41 distinct public builds, Taunt then Judgment is in 7, Judgment then Debilitating Smash in 5, Judgment then Taunt in 4, and Judgment then Annihilate or Annihilate then Judgment in 3 each. This page's longer Judgment line also uses Warding Strike and Shield Smite, which are what open Judgment, so it keeps Judgment lit between its short windows.",
+      "macros": [
+       [
+        "Judgment",
+        "Annihilate",
+        null,
+        null
+       ]
+      ],
+      "hold": [
+       "Vicious Strike",
+       "Macro key"
+      ],
+      "delays": [
+       10
+      ]
      }
     ]
    },

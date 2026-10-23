@@ -3258,7 +3258,7 @@
         15
        ]
       ],
-      "why": "Top 20 Global Templars per player: Noble Armor 89% (median 15), Doom Shield 77% (median about 14), Taunt 77% (only 12% at 20, 44% at 15–19), Banner 77% (median 18–20). Taunt's Shrink makes the boss take more damage from the whole party. Noble Armor 15 multiplies Fury by 1.5 and lasts 2 min on live Global. Banner turns Defense into Attack. Doom Shield is a shield attack, so it opens Judgment, and at 5 it resets Annihilate. At equal CP, Banner users (63 players) were about 2–3% ahead of Shield of Protection users (21) per player (re-check +3.2% ±5.0), which isn't significant. The sheet's older order was Banner, Taunt, Noble Armor, Doom Shield; its author's current daevaos build runs Taunt, Banner, Shield of Protection and Doom Shield, all at 20, with no Noble Armor. This page keeps Noble Armor because 89% of top-20 Global Templars slot it.",
+      "why": "Top 20 Global Templars per player: Noble Armor 89% (median 15), Doom Shield 77% (median about 14), Taunt 77% (only 12% at 20, 44% at 15–19), Banner 77% (median 18–20). Taunt's Shrink makes the boss take more damage from the whole party. Noble Armor 15 multiplies Fury by 1.5 and lasts 2 min on live Global. Banner turns Defense into Attack. Doom Shield is a shield attack, so it opens Judgment, and at 5 it resets Annihilate. At equal CP, Banner users (63 players) were about 2–3% ahead of Shield of Protection users (21) per player (re-check +3.2% ±5.0), which isn't significant. The sheet's older order was Banner, Taunt, Noble Armor, Doom Shield; its author's current daevaos build runs Taunt, Banner, Shield of Protection and Doom Shield, all at 20, with no Noble Armor. This page keeps Noble Armor because 89% of top-20 Global Templars slot it. Questlog cross-check (public Global builds; 41 distinct endgame-level Templar builds with Judgment 12+ and 3+ stigmas, copies counted once): Noble Armor in 33 (median level 15), Battlefield Banner 30 (20), Taunt 26 (20), Doom Shield 25 (10), Shield of Protection 24 (15) and Empyrean Lord's Punishment 13 (10). The commonest full set is Banner, Noble Armor, Shield of Protection and Taunt (8 builds); Banner, Doom Shield, Noble Armor and Taunt, as here, is in 4. _leonis's 'Offensive Setup - Midgame' (27 likes) runs Banner 20, Noble Armor 15, Empyrean Lord's Punishment 10 and Doom Shield 5, and his 'ENDGAME FINAL MEGAGIGASUPER' Taunt 20, Banner 20, Noble Armor 15 and Shield of Protection 10. Planner builds don't enforce the shard budget, so their levels show intent. Cost per stigma: 1, 5, 15, 35 and 75 shards to reach level 1, 5, 10, 15 and 20, so this loadout is 220 shards. The NotMeter top-20 data above still decides the picks.",
       "src": [
        [
         "NotMeter Global top 20 per boss, Oct 11–13 parses (NotMeter has retired that link)",
@@ -3279,6 +3279,18 @@
        [
         "KR current top picks",
         "https://www.inven.co.kr/board/aion2/6438/27186"
+       ],
+       [
+        "Questlog Templar class page (Global skill picks, gear)",
+        "https://questlog.gg/aion-2/en/classes/templar"
+       ],
+       [
+        "Questlog build 'Offensive Setup - Midgame' by _leonis (27 likes)",
+        "https://questlog.gg/aion-2/en/skill-builder/Wrhg9nuE7PbP?build-id=12972"
+       ],
+       [
+        "Questlog build 'ENDGAME FINAL MEGAGIGASUPER' by _leonis",
+        "https://questlog.gg/aion-2/en/skill-builder/Wrhg9nuE7PbP?build-id=19867"
        ]
       ],
       "main": true
@@ -3304,7 +3316,7 @@
         15
        ]
       ],
-      "why": "Replaces Banner with Shield of Protection and Doom Shield with Empyrean Lord's Punishment or Nezekan's Shield. Shield of Protection gives a guaranteed Block and +100% Block Damage Reduction: 5 = a second use, 10 = castable while moving (46–56% of Global Templars use it, median about 8). Empyrean Lord's Punishment 15 adds +10% PvE damage for 10s and 50 stagger. Nezekan's Shield is a party shield worth 41% of Max HP at level 1 (55% at 15), and 15 adds +20% PvE damage tolerance; 9–12% of all Global Templars use it. Korea's 4-slot Templars fixed Taunt, Shield of Protection and Empyrean Lord's Punishment and filled the 4th with Noble Armor.",
+      "why": "Replaces Banner with Shield of Protection and Doom Shield with Empyrean Lord's Punishment or Nezekan's Shield. Shield of Protection gives a guaranteed Block and +100% Block Damage Reduction: 5 = a second use, 10 = castable while moving (46–56% of Global Templars use it, median about 8). Empyrean Lord's Punishment 15 adds +10% PvE damage for 10s and 50 stagger. Nezekan's Shield is a party shield worth 41% of Max HP at level 1 (55% at 15), and 15 adds +20% PvE damage tolerance; 9–12% of all Global Templars use it. Korea's 4-slot Templars fixed Taunt, Shield of Protection and Empyrean Lord's Punishment and filled the 4th with Noble Armor. Questlog's most-liked tank build, _leonis's 'GIGATANKY (Midgame)' (18 likes), is this loadout with Nezekan's Shield in place of Doom Shield: Shield of Protection 10, Taunt 15, Noble Armor 15 and Nezekan's Shield 15, Judgment 16. He says his damage builds stay tanky because Warding Strike's buff (healing and 20% PvE damage tolerance) is up all the time. xia_qingyue's 'Dungeon Build (No LvL 20 Banner)' (15 likes) is Taunt 20, Shield of Protection 15, Noble Armor 15 and Doom Shield 5. Questlog's Global text: Shield of Protection restores 110 MP and Stamina on its Block, option 1 (level 5) adds a use and option 2 (level 10) makes it castable while moving.",
       "src": [
        [
         "KR Dec 24: Block, Punishment, Taunt fixed",
@@ -3313,6 +3325,14 @@
        [
         "KR Feb 6 stigma guide (4 slots)",
         "https://www.inven.co.kr/board/aion2/6438/7621"
+       ],
+       [
+        "Questlog build 'GIGATANKY (Midgame)' by _leonis (18 likes)",
+        "https://questlog.gg/aion-2/en/skill-builder/Wrhg9nuE7PbP?build-id=12462"
+       ],
+       [
+        "Questlog build 'Dungeon Build (No LvL 20 Banner)' by xia_qingyue (15 likes)",
+        "https://questlog.gg/aion-2/en/skill-builder/HcCNCEyUYT6E?build-id=13856"
        ]
       ]
      },
@@ -3337,7 +3357,7 @@
         15
        ]
       ],
-      "why": "Comrade in Arms redirects party damage to you and restores 50% of your HP at 20 ('the 4th effect is mandatory'). Nezekan's Shield puts a party shield up for unavoidable hits. Korea's Feb guide (Inven 7621) calls Comrade in Arms the best party stigma and says it needs level 20; it's rare on Global (about 1%).",
+      "why": "Comrade in Arms redirects party damage to you and restores 50% of your HP at 20 ('the 4th effect is mandatory'). Nezekan's Shield puts a party shield up for unavoidable hits. Korea's Feb guide (Inven 7621) calls Comrade in Arms the best party stigma and says it needs level 20; it's rare on Global (about 1%). Questlog's Global text confirms the numbers: Comrade in Arms gives you +20% PvE and +10% PvP Damage Tolerance, shares 50% of each party hit with you for 6 s, restores 25% of your HP once at level 5 if you are hit under 25% HP, and 50% when it ends at level 20. Only 1 of the 41 public builds runs it and 3 run Nezekan's Shield.",
       "src": [
        [
         "KR Apr: Taunt, SoP, Comrade, Nezekan",
@@ -3370,11 +3390,44 @@
         15
        ]
       ],
-      "why": "Taunt does nothing solo. Korean players recommend Second Skin at 20 for solo play (the jump from 15 to 20 adds +20% PvE damage tolerance). Doom Shield opens each pull, resets on kills at 15, and resets Annihilate. Battlefield Banner is the damage pick. This list is derived from the skill effects and is UNVERIFIED on Global.",
+      "why": "Taunt does nothing solo. Korean players recommend Second Skin at 20 for solo play (the jump from 15 to 20 adds +20% PvE damage tolerance). Doom Shield opens each pull, resets on kills at 15, and resets Annihilate. Battlefield Banner is the damage pick. This list is derived from the skill effects and is UNVERIFIED on Global. Questlog's Global text: Second Skin gives +30% PvE and +15% PvP Damage Tolerance for 10 s at every level (90 s cooldown), and level 20 adds +20% PvE and +10% PvP. Solashur's open-world loadout (see the community card) leans on Doom Shield instead.",
       "src": [
        [
         "KR Feb: 'solo = Second Skin 20'",
         "https://www.inven.co.kr/board/aion2/6438/7621"
+       ]
+      ]
+     },
+     {
+      "t": "Solashur's DPS 'Berserk' Templar (alternative)",
+      "tag": "Community",
+      "pick": [
+       [
+        "Doom Shield",
+        15
+       ],
+       [
+        "Battlefield Banner",
+        10
+       ],
+       [
+        "Empyrean Lord's Punishment",
+        10
+       ],
+       [
+        "Grapple",
+        10
+       ]
+      ],
+      "why": "Streamer Solashur (solashur.com) plays Templar as a DPS first, not as the party tank, and his stigmas are the levels he states on Oct 7 for his open-world PvX loadout. His Sep 29 presets are PvX Empyrean Lord's Punishment, Executing Blade, Battlefield Banner and Doom Shield; PvE Empyrean Lord's Punishment, Battlefield Banner, Doom Shield and Taunt; PvP Executing Blade, Empyrean Lord's Punishment, Doom Shield and Nezekan's Shield. He takes Judgment, Punishment and Pummel to 20 (his 'Holy Trinity'), with Annihilate 20 and its AoE option as the alternate. Caveats: he plans stigmas up to level 25 and assumes 6 slots, while Global Season 1 caps at 20 with 4 slots. He runs no Noble Armor, although 89% of top Global Templars do. His Judgment spam uses a Razer thumb-button turbo, which is external software and a ban risk; only the in-game macro is allowed (see his macro under Other versions). His Pet Genus table looks like the Korean layout, not the Global one on this page. Keep this as an alternative, not the recommendation.",
+      "src": [
+       [
+        "Solashur (solashur.com): Templar Global build, Lv45 vs Lv50 stigmas (Sep 29)",
+        "https://solashur.com/builds/templar-global-build.html"
+       ],
+       [
+        "Solashur (solashur.com): Templar Global build 2026 (Oct 7)",
+        "https://solashur.com/builds/aion2-templar-global-build-guide.html"
        ]
       ]
      },
@@ -3399,11 +3452,15 @@
         20
        ]
       ],
-      "why": "UNVERIFIED for Global: the guide predates Global's launch, and the Oct 13 patch adjusted Battlefield stats. Comrade in Arms 20 restores 50% HP when it ends; Noble Armor 20 adds +10% Incoming Heal; Shield of Protection gives a guaranteed Block (20 restores 10% HP); Second Skin gives +30% PvE / +15% PvP damage tolerance (20 adds +10% PvP). The same guide doesn't recommend Doom Shield except in special situations, and doesn't list Banner. Out of a party it swaps in Grapple or Armor of Balance.",
+      "why": "UNVERIFIED for Global: the guide predates Global's launch, and the Oct 13 patch adjusted Battlefield stats. Comrade in Arms 20 restores 50% HP when it ends; Noble Armor 20 adds +10% Incoming Heal; Shield of Protection gives a guaranteed Block (20 restores 10% HP); Second Skin gives +30% PvE / +15% PvP damage tolerance (20 adds +10% PvP). The same guide doesn't recommend Doom Shield except in special situations, and doesn't list Banner. Out of a party it swaps in Grapple or Armor of Balance. Questlog's Global stigma text matches these numbers (Comrade in Arms 20 restores 50% HP, Noble Armor 20 +10% Incoming Heal, Shield of Protection 20 restores 10% HP on Block, Second Skin +30% PvE / +15% PvP tolerance), so only the Oct 13 Battlefield change is unchecked. A public 5v5 build, xia_qingyue's '5v5' (4 likes), runs Comrade in Arms 20, Grapple 15 and Doom Shield 5 with Pummel and Debilitating Smash at 20.",
       "src": [
        [
         "Inven Feb stigma guide (PvP set)",
         "https://www.inven.co.kr/board/aion2/6438/7621"
+       ],
+       [
+        "Questlog build '5v5' by xia_qingyue (PvP tank)",
+        "https://questlog.gg/aion-2/en/skill-builder/HcCNCEyUYT6E?build-id=16770"
        ]
       ]
      }
@@ -3412,32 +3469,32 @@
      [
       "Taunt",
       20,
-      "5: Shrink cuts the boss's PvE damage tolerance by 10% for the party. 15: -5s cooldown. 20: Shrink +5s (20s on a 25s cooldown). With Global's 19–21% cooldown reduction it isn't up all the time: the median recast is 33s at level 20 and 38s at 15–19. Only 12% of top-20 Global Templars are at 20 (44% at 15–19)."
+      "5: Shrink cuts the boss's PvE damage tolerance by 10% for the party. 15: -5s cooldown. 20: Shrink +5s (20s on a 25s cooldown). With Global's 19–21% cooldown reduction it isn't up all the time: the median recast is 33s at level 20 and 38s at 15–19. Only 12% of top-20 Global Templars are at 20 (44% at 15–19). Questlog values: the Taunt hit is 888 at level 1, 1,813 at 10 and 2,487 at 20; level 10 doubles Shrink's Attack cut from 10% to 20%."
      ],
      [
       "Noble Armor",
       15,
-      "Max HP +5.4% at level 1, 11% at 15; lasts and recasts every 2 min on Global. 10: x1.5 Insulting Roar. 15: x1.5 Fury, a big damage gain. 20: +10% healing received (later). 89% use it, median 15."
+      "Max HP +5.4% at level 1, 11% at 15; lasts and recasts every 2 min on Global. 10: x1.5 Insulting Roar. 15: x1.5 Fury, a big damage gain. 20: +10% healing received (later). 89% use it, median 15. Questlog values: the HP buff and the instant heal are both 5.4% at level 1, 9% at 10, 11% at 15 and 13% at 20; level 5 adds +5% Defense, which Banner turns into Attack."
      ],
      [
       "Battlefield Banner",
       20,
-      "10: +10% weapon damage boost. 15: +20% Attack from Defense. 20: -30s cooldown. 77% use it, median 18–20. The buff lasts 10s at level 1 and 20s at 20."
+      "10: +10% weapon damage boost. 15: +20% Attack from Defense. 20: -30s cooldown. 77% use it, median 18–20. The buff lasts 10s at level 1 and 20s at 20. Level 5 adds +10% Multi-Hit Chance; the buff is 14.5 s at 10 and 17 s at 15; 90 s cooldown, 60 s at 20."
      ],
      [
       "Doom Shield",
       15,
-      "5: resets Annihilate. 10: +200 Block. 15: resets on kill. 20 is only knockdown chance. 77% use it, median about 14."
+      "5: resets Annihilate. 10: +200 Block. 15: resets on kill. 20 is only knockdown chance. 77% use it, median about 14. Questlog values: the rush hits for 1,254 at level 1, 2,562 at 10, 3,055 at 15 and 3,514 at 20, and gives a 5% Max HP shield for 5 s."
      ],
      [
       "Shield of Protection",
       5,
-      "5: second block. 10 (if you move a lot): castable while moving. 15 and 20 (speed, 10% HP per block) are extras. 46–56% use it, median about 8."
+      "5: second block. 10 (if you move a lot): castable while moving. 15 and 20 (speed, 10% HP per block) are extras. 46–56% use it, median about 8. Questlog: restores 110 MP and Stamina once on its Block; 20 s cooldown; the levels only unlock options."
      ],
      [
       "Empyrean Lord's Punishment",
       15,
-      "10: +50 stagger. 15: +10% PvE damage for 10s on hit. 20 is just +25% stun chance. Used by 16–23% of Global Templars."
+      "10: +50 stagger. 15: +10% PvE damage for 10s on hit. 20 is just +25% stun chance. Used by 16–23% of Global Templars. Questlog values: the hit is 939 at level 1, 1,918 at 10 and 2,632 at 20; 60 s cooldown, 200 MP; level 5 adds up to +20% damage when fewer targets are hit."
      ]
     ],
     "order": [
@@ -3570,7 +3627,7 @@
       5
      ],
      "lvl": "20",
-     "note": "4: -2 s Warding Strike per hit (more Judgment windows). 5: Threatening Blow chain. Global top: 4+5 50%, 3+4 32%. Take 16 first, then 20; the sheet runs 3+4+5 at 20.",
+     "note": "4: -2 s Warding Strike per hit (more Judgment windows). 5: Threatening Blow chain. Global top: 4+5 50%, 3+4 32%. Take 16 first, then 20; the sheet runs 3+4+5 at 20. Questlog (37 distinct public builds at skill Lv 12+): 4+5 in 12, 3+4+5 in 10, 3+4 in 6; median skill level 16. Option 3 is +50% Multi-Hit, 1 +20% MP restored, 2 absorbs 1% HP.",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3588,7 +3645,7 @@
       5
      ],
      "lvl": "20",
-     "note": "4: -1 s Punishment cooldown on hit. 5: Punishing Strike deals extra damage on hit. That is questlog's Global text and Korea's Sep 16 version, and Global logs agree (option 4 holders cast Punishment 2.3 times a minute vs 1.7–1.8; option 5 adds about 42% to Punishing Strike). Global top: 3+4 41%, 4+5 30%. 16 first, then 20.",
+     "note": "4: -1 s Punishment cooldown on hit. 5: Punishing Strike deals extra damage on hit. That is questlog's Global text and Korea's Sep 16 version, and Global logs agree (option 4 holders cast Punishment 2.3 times a minute vs 1.7–1.8; option 5 adds about 42% to Punishing Strike). Global top: 3+4 41%, 4+5 30%. 16 first, then 20. Questlog (39 distinct public builds at skill Lv 12+): 1+4 in 9, 3+4 in 9, 4+5 in 9; median skill level 16. Option 1 (-20% MP, Pummel costs 120) is common there but isn't among the Global top picks above; option 2 makes Punishing Strike absorb 3% HP.",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3605,7 +3662,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Global top: 1+3 for 42%, 1+4 for 35%.",
+     "note": "Global top: 1+3 for 42%, 1+4 for 35%. Questlog (30 distinct public builds at skill Lv 12+): 1+4 in 23, 1+3 in 3, 2+4 in 2; median skill level 12. Option 1 moves you to a target that has Incapacitated Immunity, 3 resets the cooldown on a kill, 4 gives a 10% Max HP shield, 5 a 50% Stun.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3618,7 +3675,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Global top: 3+4 56%, 2+4 36% (option 2 removes the MP cost: use it if you run short). Korea's Sep optimizer: 2 · 3.",
+     "note": "Global top: 3+4 56%, 2+4 36% (option 2 removes the MP cost: use it if you run short). Korea's Sep optimizer: 2 · 3. Questlog (39 distinct public builds at skill Lv 12+): 3+4 in 20, 2+4 in 14, 1+3 in 2; median skill level 12. Option 1 is +1 s Stun, 5 an AoE Stun.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3632,7 +3689,7 @@
       5
      ],
      "lvl": "20",
-     "note": "3: extra damage. 4: always crits. 5: no cooldown (skill level 16). Global top: 3+4+5 36%, 3+5 34%, 4+5 27%.",
+     "note": "3: extra damage. 4: always crits. 5: no cooldown (skill level 16). Global top: 3+4+5 36%, 3+5 34%, 4+5 27%. Questlog (39 distinct public builds at skill Lv 12+): 3+4+5 in 23, 4+5 in 6, 3+5 in 5; median skill level 20. Option 1 absorbs 1% HP, 2 adds damage against an Impact-type status.",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3649,7 +3706,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Under 1% of damage. Global top: 2+4 for 71%.",
+     "note": "Under 1% of damage. Global top: 2+4 for 71%. Questlog (24 distinct public builds at skill Lv 12+): 2+4 in 18, 1+3+5 in 1, 1+2+5 in 1; median skill level 12. Option 4 ignores Block and Evasion and lands as Multi-Hit; 2 is +3 s Debilitate (8 s), 3 -60% Incoming Heal, 1 a 30% Stun, 5 a 25% cooldown reset on Block.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3662,7 +3719,7 @@
       5
      ],
      "lvl": "16",
-     "note": "Level 16 is enough: -5s cooldown and the party damage-tolerance share. Its cooldown stays 30 s on Global (Korea's Aug 26 cut to 25 s isn't live), so option 1's -5 s matters. Global picks are split.",
+     "note": "Level 16 is enough: -5s cooldown and the party damage-tolerance share. Its cooldown stays 30 s on Global (Korea's Aug 26 cut to 25 s isn't live), so option 1's -5 s matters. Global picks are split. Questlog (39 distinct public builds at skill Lv 12+): 1+3 in 17, 1+5 in 14, 1+4 in 3; median skill level 16. So the commonest public second pick is option 3 (heal over time while Warding), then 5; option 2 is +100 Block while Warding, 4 adds more damage tolerance when more targets are hit.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3675,7 +3732,7 @@
       4
      ],
      "lvl": "12",
-     "note": "Global top: 2+4 for 85%.",
+     "note": "Global top: 2+4 for 85%. Questlog (36 distinct public builds at skill Lv 12+): 2+4 in 30, 1+4 in 3, 4+5 in 1; median skill level 12. Option 4 cuts the cooldown from 20 s to 10 s, 2 adds 10 m range, 5 +25% Stun chance; it also opens Judgment for 2 s.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3688,7 +3745,7 @@
       4
      ],
      "lvl": "12",
-     "note": "3: +100% damage to Incapacitated-immune bosses. 4: -10 s cooldown. Global top: 3+4 for 76%. Korea's top 20 run it at a median 15, all 3+4 and none with option 1.",
+     "note": "3: +100% damage to Incapacitated-immune bosses. 4: -10 s cooldown. Global top: 3+4 for 76%. Korea's top 20 run it at a median 15, all 3+4 and none with option 1. Questlog (38 distinct public builds at skill Lv 12+): 3+4 in 17, 1+4 in 9, 1+3+4 in 4; median skill level 15. Option 5 (skill Lv 16) turns it into an AoE that also hits up to 4 nearby enemies, 1 is +50% Multi-Hit, 2 +20% Knockdown chance; Solashur takes it to 20 for that (alternative build).",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3702,7 +3759,7 @@
       5
      ],
      "lvl": "16-20",
-     "note": "2: damage over time. 3: +30% skill speed. 5: crits and ignores Block. Global top: 2+3 42%, 3+5 28%; the sheet runs 3+4+5 and Korea's Sep optimizer 2 · 3 · 4. Take 2+3 at 12, 3+5 at 16, 2+3+5 at 20. PvP (UNVERIFIED): option 5 becomes mandatory.",
+     "note": "2: damage over time. 3: +30% skill speed. 5: crits and ignores Block. Global top: 2+3 42%, 3+5 28%; the sheet runs 3+4+5 and Korea's Sep optimizer 2 · 3 · 4. Take 2+3 at 12, 3+5 at 16, 2+3+5 at 20. PvP (UNVERIFIED): option 5 becomes mandatory. Questlog (38 distinct public builds at skill Lv 12+): 2+3 in 18, 2+3+5 in 6, 3+4 in 4; median skill level 16. Option 4 (mobile skill) is in 8 of those builds, as in Korea's Sep optimizer; option 1 absorbs 10% HP.",
      "src": [
       "Global class sheet (zxcastform) and NotMeter Global",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3715,7 +3772,7 @@
       5
      ],
      "lvl": "16",
-     "note": "Option 5 at 16: +50% PvE damage tolerance. Global top: 3 alone 41%, 3+4 29%; the sheet runs 3+5.",
+     "note": "Option 5 at 16: +50% PvE damage tolerance. Global top: 3 alone 41%, 3+4 29%; the sheet runs 3+5. Questlog (9 distinct public builds at skill Lv 12+): 2+3 in 3, 3+4 in 3, 3+5 in 1; median skill level 12. Questlog's Global text: option 4 is +2 s Tenacity (7 s), 5 gives +50% PvE and +25% PvP Damage Tolerance while Tenacity lasts, 3 restores 20% HP, 2 restores 1,000 Stamina, 1 adds the Capture chain. Few public builds take it.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -3804,27 +3861,43 @@
     "pas": [
      [
       "Fury",
-      "Front damage boost for you, plus PvE damage for the whole party for 20s whenever you block: 5.5% at level 1, about 13.5% at the Global median 17, 15% at 20 (KR 36). Doesn't stack with a Gladiator's Experienced Counterstrike. Noble Armor 15 multiplies it x1.5."
+      "Front damage boost for you, plus PvE damage for the whole party for 20s whenever you block: 5.5% at level 1, about 13.5% at the Global median 17, 15% at 20 (KR 36). Doesn't stack with a Gladiator's Experienced Counterstrike. Noble Armor 15 multiplies it x1.5. Questlog Global values: PvE Damage Boost 5.5% at level 1, 10% at 10, 12.5% at 15, 15% at 20 (PvP half); your own Front Attack Damage Boost is 0.3% at 1, 3% at 10, 6% at 20. Public builds: median level 16."
      ],
      [
       "Impact Hit (templar)",
-      "Double Chance. Second in the sheet (KR 31)."
+      "Double Chance. Second in the sheet (KR 31). Questlog Global values: Double Chance 0.3% at level 1, 3% at 10, 4.5% at 15, 6% at 20 (+0.3% a level), plus Impact-type Chance 11.2% to 34%. Public builds: median 16."
      ],
      [
       "Insulting Roar",
-      "+Attack on front attacks and Enmity: 5.5% at level 1, about 13.5% at 17 (Global median 17; KR 30). Third in the sheet. Noble Armor 10 multiplies it x1.5."
+      "+Attack on front attacks and Enmity: 5.5% at level 1, about 13.5% at 17 (Global median 17; KR 30). Third in the sheet. Noble Armor 10 multiplies it x1.5. Questlog Global values: the Attack bonus (5 s on a Front Attack) is 5.5% at level 1, 10% at 10, 12.5% at 15, 15% at 20, and Enmity +100% at every level. Public builds: median 15."
      ],
      [
       "Punishing Benediction",
-      "+Crit (100 at level 1, 240 at 15) and extra-damage procs, 2.6% of damage. Global median 15."
+      "+Crit (100 at level 1, 240 at 15) and extra-damage procs, 2.6% of damage. Global median 15. Questlog Global values: Critical Hit +100 at level 1, 190 at 10, 240 at 15, 290 at 20; the proc hits for 69 at 1, 342 at 10, 444 at 15, 530 at 20 (50% chance, 1 s cooldown). Public builds: median 16."
      ],
      [
       "Block Pain",
-      "Defensive: +PvE damage tolerance when hit (11% at level 1, 25% at 15). Global median 15."
+      "Defensive: +PvE damage tolerance when hit (11% at level 1, 25% at 15). Global median 15. Questlog Global values: 11% PvE tolerance at level 1, 20% at 10, 25% at 15, 30% at 20 for 10 s after a hit (20 s cooldown). Public builds: median 14."
      ],
      [
       "Ironclad Defense",
-      "Defensive filler at 10–15 (KR 12–16); its Defense also feeds Battlefield Banner."
+      "Defensive filler at 10–15 (KR 12–16); its Defense also feeds Battlefield Banner. Questlog Global values: Defense +7% at level 1, 25% at 10, 35% at 15, 45% at 20, and Endurance +1% to 20%. Public builds: median 15."
+     ],
+     [
+      "Enhance Health",
+      "Questlog Global values: Max HP +7.5% at level 1, 30% at 10, 55% at 20, flat HP up to 5,000, and Incoming Heal +6% to 25%. Public builds: median 15. Low priority for damage."
+     ],
+     [
+      "Warding Shield",
+      "+200 Block at every level (feeds Fury) and a small heal on Block: 53 at level 1, 553 at 15, 695 at 20 (3 s cooldown). Public builds: median 14."
+     ],
+     [
+      "Survival Willpower (templar)",
+      "Status Effect Resist 17% at level 1, 45% at 15, 55% at 20, and PvE tolerance 12% to 50% for 5 s while Stunned, Knocked down, Airborne, Frozen or Feared. Public builds: median 12."
+     ],
+     [
+      "Guarding Seal",
+      "A 21% Max HP shield at level 1 (40% at 20) for 30 s under 50% HP, 60 s cooldown. Public builds: median 10."
      ]
     ],
     "wings": "Eroded Wings 77%, Talisra 9%, Brawler 3.5%",
@@ -3852,6 +3925,14 @@
      [
       "NotMeter Korea top-20 setup guide (KR levels)",
       "https://notmeter.com/?view=setup-guide"
+     ],
+     [
+      "Questlog Templar class page (skill picks)",
+      "https://questlog.gg/aion-2/en/classes/templar"
+     ],
+     [
+      "Questlog Judgment skill page (per-level values)",
+      "https://questlog.gg/aion-2/en/db/skill/12240000"
      ]
     ]
    }

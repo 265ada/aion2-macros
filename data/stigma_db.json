@@ -467,7 +467,8 @@
 "mp": null,
 "tw": "強襲猛擊",
 "ko": "강습 맹격",
-"s25": "-1 min cooldown"
+"s25": "-1 min cooldown",
+"note": "Hit (questlog Global data): 951 at stigma Lv 1, 1,494 at 5, 1,942 at 10, 2,315 at 15, 2,664 at 20. 120 s cooldown; Defense +20% at most, by targets hit. The Oct 14 KR change (Defense and element tolerance up to 80%) is not in Global's record."
 },
 "templar:Battlefield Banner": {
 "id": "12450000",
@@ -499,7 +500,7 @@
 "tw": "戰場旗幟",
 "ko": "전장의 깃발",
 "s25": "+10% Combat Speed for the duration",
-"note": "Attack from Defense lasts 10 s at level 1 and 20 s at level 20; level 20 also takes 30 s off the cooldown."
+"note": "Attack from Defense lasts 10 s at level 1 and 20 s at level 20; level 20 also takes 30 s off the cooldown. Questlog Global data: 14.5 s at stigma Lv 10 and 17 s at 15 (12 s at 5); 90 s cooldown, 60 s at 20. Level 5 adds +10% Multi-Hit Chance."
 },
 "templar:Comrade in Arms": {
 "id": "12250000",
@@ -530,7 +531,8 @@
 "mp": null,
 "tw": "戰友保護",
 "ko": "전우 보호",
-"s25": "+20% Ailment Resist for the duration"
+"s25": "+20% Ailment Resist for the duration",
+"note": "Questlog Global data: you gain +20% PvE and +10% PvP Damage Tolerance and take 50% of each hit a party member within 40 m takes, for 6 s (the same at every level); 120 s cooldown."
 },
 "templar:Doom Shield": {
 "id": "12070000",
@@ -561,7 +563,8 @@
 "mp": null,
 "tw": "破滅盾牌",
 "ko": "파멸의 방패",
-"s25": "Ignores Block and Evasion"
+"s25": "Ignores Block and Evasion",
+"note": "Rush damage (questlog Global data): 1,254 at stigma Lv 1, 1,971 at 5, 2,562 at 10, 3,055 at 15, 3,514 at 20. 30 s cooldown; the 5% Max HP shield lasts 5 s and Judgment opens for 3 s."
 },
 "templar:Empyrean Lord's Punishment": {
 "id": "12310000",
@@ -592,7 +595,8 @@
 "mp": 200,
 "tw": "主神懲罰",
 "ko": "주신의 징벌",
-"s25": "+200% damage to targets with Incapacitated Immunity"
+"s25": "+200% damage to targets with Incapacitated Immunity",
+"note": "Hit (questlog Global data): 939 at stigma Lv 1, 1,476 at 5, 1,918 at 10, 2,287 at 15, 2,632 at 20. 200 MP, 60 s cooldown; a 50% chance to Stun for 3 s (100% on NPCs)."
 },
 "templar:Executing Blade": {
 "id": "12410000",
@@ -623,7 +627,8 @@
 "mp": 100,
 "tw": "處刑劍",
 "ko": "처형의 검",
-"s25": "Target's skill cooldowns +3%"
+"s25": "Target's skill cooldowns +3%",
+"note": "Hit (questlog Global data): 1,335 at stigma Lv 1, 2,097 at 5, 2,726 at 10, 3,250 at 15, 3,739 at 20. 100 MP, 45 s cooldown; Defense -30% for 5 s."
 },
 "templar:Grapple": {
 "id": "12220000",
@@ -654,7 +659,8 @@
 "mp": 200,
 "tw": "逮捕",
 "ko": "나포",
-"s25": "+2 targets"
+"s25": "+2 targets",
+"note": "Hit to up to 4 targets (questlog Global data): 1,045 at stigma Lv 1, 1,642 at 5, 2,135 at 10, 2,545 at 15, 2,929 at 20. 200 MP, 90 s cooldown; Root for 3 s."
 },
 "templar:Nezekan's Shield": {
 "id": "12320000",
@@ -685,7 +691,8 @@
 "mp": null,
 "tw": "奈薩肯盾牌",
 "ko": "네자칸의 방패",
-"s25": "+100% shield amount"
+"s25": "+100% shield amount",
+"note": "Shield (questlog Global data): 41% of Max HP at stigma Lv 1, 45% at 5, 50% at 10, 55% at 15, 60% at 20, for 3 s (+2 s from level 10); 60 s cooldown."
 },
 "templar:Noble Armor": {
 "id": "12230000",
@@ -717,7 +724,7 @@
 "tw": "高潔甲冑",
 "ko": "고결의 갑주",
 "s25": "+10% PvE and +5% PvP Damage Tolerance for the duration",
-"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: a second Noble Armor buff shows in 452 of 507 Templar fights over 130 s, and questlog's Global data gives 120 s. The aion2.app database still shows 300 s (an older snapshot)."
+"note": "KR/TW Sep 16: cooldown 5 min to 2 min. Live on Global: a second Noble Armor buff shows in 452 of 507 Templar fights over 130 s, and questlog's Global data gives 120 s. The aion2.app database still shows 300 s (an older snapshot). Questlog Global data: the Max HP buff and the instant heal are both 5.4% at stigma Lv 1, 7% at 5, 9% at 10, 11% at 15, 13% at 20. Level 5 adds +5% Defense, which Battlefield Banner turns into Attack."
 },
 "templar:Second Skin": {
 "id": "12190000",
@@ -748,7 +755,8 @@
 "mp": null,
 "tw": "雙重盔甲",
 "ko": "이중 갑옷",
-"s25": "Enrage effect x1.5 and -30s cooldown (Jul 8)"
+"s25": "Enrage effect x1.5 and -30s cooldown (Jul 8)",
+"note": "Questlog Global data: +30% PvE and +15% PvP Damage Tolerance for 10 s at every level; 90 s cooldown. Level 20 adds +20% PvE and +10% PvP on top."
 },
 "templar:Shield of Protection": {
 "id": "12110000",
@@ -779,7 +787,8 @@
 "mp": null,
 "tw": "保護盾牌",
 "ko": "보호의 방패",
-"s25": "+1 consecutive use (Jul 29)"
+"s25": "+1 consecutive use (Jul 29)",
+"note": "Questlog Global data: guarantees a Block with +100% Block Damage Reduction and restores 110 MP and Stamina once on that Block; 20 s cooldown. The numbers don't change with level, only the options do."
 },
 "templar:Taunt": {
 "id": "12120000",
@@ -811,7 +820,7 @@
 "tw": "挑釁",
 "ko": "도발",
 "s25": "Shrink also lowers the target's crit-damage resist by 5% (Jul 8, tuned Jul 22)",
-"note": "Its level-25 crit-damage-resist shred helps every party member, which is why Taunt is a top 25 pick even for DPS parties. On Global (cap 20), Shrink is 15 s (20 s at level 20); logs show a median recast of 33 s at level 20 and 38 s at 15–19, so it isn't up all the time. Rage Burst's Wounded doesn't stack with Taunt's Shrink."
+"note": "Its level-25 crit-damage-resist shred helps every party member, which is why Taunt is a top 25 pick even for DPS parties. On Global (cap 20), Shrink is 15 s (20 s at level 20); logs show a median recast of 33 s at level 20 and 38 s at 15–19, so it isn't up all the time. Rage Burst's Wounded doesn't stack with Taunt's Shrink. Taunt hit (questlog Global data): 888 at stigma Lv 1, 1,395 at 5, 1,813 at 10, 2,162 at 15, 2,487 at 20. Shrink's Attack cut is 10%, and 20% from level 10; 30 s cooldown, 25 s from level 15."
 },
 "assassin:Aerial Bind": {
 "id": "13230000",
