@@ -124,8 +124,8 @@
       ]
      }
     ],
-    "queue": "Not stated for this line, so test both (the guide behind the Ambush line turns it ON)",
-    "why": "One line, no Ambush. Insignia Explosion fires first whenever it's ready, then Heart Gore, which triggers off your crits, with Savage Roar as the filler when nothing else is up. The Global sheet's screenshot has Smoke Bomb in row 1, a stigma that isn't in the Global four, so this page leaves that row out. Ambush stays out because Global data doesn't support it: at equal CP, Ambush users trail on all 15 bosses (per player about -7%: 86 players with Ambush vs 51 without, 95% range about -14% to 0%), and only 4 of the top-10% parses (from 3 of the 13 players) use it. This is observational data. The Korean Sep 30 Ambush line is under Other versions. Row 0 firing first is how the Korean setups work; no Global source states it, so it is UNVERIFIED on Global.",
+    "queue": "Not stated for this line, so test both (the guide behind the Ambush line turns it ON); delcatta's questlog build runs it ON at 10 ms with the Boss Orientation Indicator set to Back",
+    "why": "One line, no Ambush. Insignia Explosion fires first whenever it's ready, then Heart Gore, which triggers off your crits, with Savage Roar as the filler when nothing else is up. The Global sheet's screenshot has Smoke Bomb in row 1, a stigma that isn't in the Global four, so this page leaves that row out. Ambush stays out because Global data doesn't support it: at equal CP, Ambush users trail on all 15 bosses (per player about -7%: 86 players with Ambush vs 51 without, 95% range about -14% to 0%), and only 4 of the top-10% parses (from 3 of the 13 players) use it. This is observational data. The Korean Sep 30 Ambush line is under Other versions. Row 0 firing first is how the Korean setups work. A public Global PvE build on questlog (delcatta, 'Preset 1 Boss') also lists row 0 first for this same Insignia Explosion, Heart Gore, Savage Roar line, but that is a player's note, not a game source, so it stays UNVERIFIED.",
     "tip": "Stand behind the boss: top Global Assassins land 85% of their hits from behind. Press Swift Contract, then Illusive Clone (the attack-speed buff shortens Clone's animation); the top 10% log 2.9 Clone casts a minute and the median 1.2 (real casts of 1–3 per fight; the rate looks high because 73% of these fights last under 90 s). The Korean Sep 30 guide presses Triniel's Dagger before Savage Fang for a smoother motion but says that, since Korea's latest patch, the Dagger's cut no longer reaches Savage Fang then; pressing Fang first is this page's inference (untested on Global). Hold the E key during stagger bars for Storm Rampage's cancel. Korea's Sep 30 guide says Ambush's option 5 (+2 uses) slows the motion and lowers damage. Level order and picks: see Max damage plan.",
     "patch": "Sep 16 (KR/TW, live on Global): longer cancel delay on Savage Roar, Savage Smash and Heart Gore; +10% PvE on Insignia Explosion and the slice skills. The cancel-delay and damage changes are likely live but not measured; Shadowstrike's 10 s buff is the one change seen in Global logs. No Assassin change in the Global Oct 6, Oct 8 or Oct 13 notes. The in-game macro is allowed; external macro software or hardware is a ban risk (NC's policy; the Oct 10, Oct 12 and Oct 14 ban waves named macros).",
     "alts": [
@@ -194,6 +194,21 @@
       "hold": [
        "Quick Slice",
        "Macro key"
+      ]
+     },
+     {
+      "t": "Pack farming line from questlog (l4z4i, 'Yuriko the Tiger's Shadow')",
+      "s": "Throw Shadowblade, Infiltrate, Ambush, Whirlwind Slice in one stack, all gap closers or AoE. Four of the 41 endgame-level public Global Assassin builds on questlog use this same stack. All four skills exist on Global; Throw Shadowblade is a stigma, so it needs its slot (it resets on kills at stigma 10 and is an AoE at 20), otherwise the game skips that row. No Global parse covers it, so use it for trash and field packs, not bosses.",
+      "macros": [
+       [
+        "Throw Shadowblade",
+        "Infiltrate",
+        "Ambush",
+        "Whirlwind Slice"
+       ]
+      ],
+      "delays": [
+       10
       ]
      }
     ]

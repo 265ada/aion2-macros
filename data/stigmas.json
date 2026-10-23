@@ -464,11 +464,48 @@
         15
        ]
       ],
-      "why": "Throw Shadowblade resets on kills at 10 and becomes an AoE at 20, so packs die fast. Korean guides call it essential for field and Abyss hunting. No Global source tests this list, so it is derived from the skill effects and Korean (KR/TW) advice.",
+      "why": "Throw Shadowblade resets on kills at 10 and becomes an AoE at 20, so packs die fast. Korean guides call it essential for field and Abyss hunting. No Global source tests this list, so it is derived from the skill effects and Korean (KR/TW) advice. Questlog's public Global builds use it too (not a test): 10 of the 41 endgame-level ones run Throw Shadowblade, median level 20, for example teivor's 'PvE - Farming' with Throw Shadowblade 20, Swift Contract 20 and Illusive Clone 15, spamming it with Swift Contract up.",
       "src": [
        [
         "KR May: Shadowblade for field hunting",
         "https://vortexgaming.io/postdetail/854915"
+       ],
+       [
+        "Questlog build 'PvE - Farming' by teivor",
+        "https://questlog.gg/aion-2/en/skill-builder/UDvelyVLo2Xs?build-id=15699"
+       ]
+      ]
+     },
+     {
+      "t": "Questlog build: Clone 20, Swift 20 (delcatta)",
+      "tag": "Community",
+      "pick": [
+       [
+        "Illusive Clone",
+        20
+       ],
+       [
+        "Swift Contract",
+        20
+       ],
+       [
+        "Triniel's Dagger",
+        10
+       ],
+       [
+        "Evasion Stance",
+        10
+       ]
+      ],
+      "why": "A public Global PvE goal build on questlog by delcatta ('PvE DPS goal', updated Oct 11), based on the top Abyss Assassins' setups. It spends 180 stigma points on this set. Its level 16 skill picks match this page: Quick Slice 4+5, Heart Gore 4+5, Insignia Explosion 2+5, Storm Rampage 4+5, Defiance 3+5, with Flash Slice at 12. Cross-check: of 41 endgame-level public Global builds on questlog (Heart Gore 10+), 40 run Illusive Clone (median 20), 34 Swift Contract (median 20), 31 Triniel's Dagger (median 10), 17 Evasion Stance (median 10) and 15 Savage Fang (median 15). Those builds come from players who share them, so this backs the NotMeter picks rather than replacing them.",
+      "src": [
+       [
+        "Questlog build 'PvE DPS goal' by delcatta",
+        "https://questlog.gg/aion-2/en/skill-builder/VJyPgErlZMnS?build-id=13162"
+       ],
+       [
+        "Questlog Global Assassin skill builds (aggregate of 41)",
+        "https://questlog.gg/aion-2/en/skill-builder"
        ]
       ]
      },
@@ -682,7 +719,7 @@
       3
      ],
      "lvl": "12",
-     "note": "",
+     "note": "Questlog's public Global builds (41, skill Lv 12+) are split: 3+4 and 1+2 are the most common pairs, so this is a minor pick.",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -748,7 +785,7 @@
       5
      ],
      "lvl": "16",
-     "note": "Global top: 3 alone for 57%.",
+     "note": "Global top: 3 alone for 57%. Option 3 returns 20% HP when you use it; option 5 (Lv 16) gives +50% PvE Damage Tolerance during Tenacity's 5 s. Questlog builds with Defiance 12+ most often take 2+3 (5 builds) or 3+5 (4).",
      "src": [
       "Global class sheet (zxcastform)",
       "https://docs.google.com/spreadsheets/d/1lbHaVairHaz26M8XGNF9CBWqiiHHBM6CylTwNKnlOug/htmlview"
@@ -821,11 +858,11 @@
      ],
      [
       "Exploit Weakness",
-      "+100 Crit and an Attack proc, 3.0% of damage. Global median level 17 (KR 27). Illusive Clone 15 multiplies it x1.5."
+      "+100 Crit and an Attack proc, 3.0% of damage. On a crit it can also summon clones that hit and engrave Insignia, so it feeds Insignia Explosion. Global median level 17 (KR 27). Illusive Clone 15 multiplies it x1.5."
      ],
      [
       "Impact Hit (assassin)",
-      "Double Chance (KR 24)."
+      "Impact-type chance plus a little Double Chance (KR 24)."
      ],
      [
       "Ambush Stance",

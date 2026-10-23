@@ -935,7 +935,8 @@
 "mp": null,
 "tw": "迴避姿態",
 "ko": "회피 자세",
-"s25": "+1s duration"
+"s25": "+1s duration",
+"note": "MP and Stamina restored on an evasion (questlog Global data): 110 at stigma Lv 1, 150 at 5, 200 at 10, 250 at 15, 300 at 20."
 },
 "assassin:Illusive Clone": {
 "id": "13310000",
@@ -998,7 +999,8 @@
 "mp": 200,
 "tw": "猛獸獠牙",
 "ko": "맹수의 송곳니",
-"s25": "+200% damage to targets with Incapacitated Immunity"
+"s25": "+200% damage to targets with Incapacitated Immunity",
+"note": "Damage to up to 4 targets (questlog Global data): 2,202 at stigma Lv 10, 2,622 at 15, 3,012 at 20."
 },
 "assassin:Shadow Walk": {
 "id": "13180000",
@@ -1185,7 +1187,8 @@
 "mp": null,
 "tw": "投擲暗劍",
 "ko": "암검 투척",
-"s25": "+30% Skill Speed"
+"s25": "+30% Skill Speed",
+"note": "Damage (questlog Global data): 1,596 at stigma Lv 10, 2,183 at 20, plus Slow for 5 s."
 },
 "assassin:Triniel's Dagger": {
 "id": "13300000",
@@ -1217,7 +1220,7 @@
 "tw": "崔妮爾匕首",
 "ko": "트리니엘의 비수",
 "s25": "+10% Back Damage Boost for 5s on hit",
-"note": "Level 20 raises the cooldown increase on the target from 5% to 8% of its duration (questlog's Global text): an enemy-side effect, not a cut to your own cooldowns. The Korean Sep 30 guide says the Dagger's cut no longer reaches Savage Fang when the Dagger is pressed first."
+"note": "Level 20 raises the cooldown increase on the target from 5% to 8% of its duration (questlog's Global text): an enemy-side effect, not a cut to your own cooldowns. The Korean Sep 30 guide says the Dagger's cut no longer reaches Savage Fang when the Dagger is pressed first. Damage (questlog Global data): 2,818 at stigma Lv 10, 3,356 at 15, 3,855 at 20, plus 30% from behind."
 },
 "ranger:Ambush Kick": {
 "id": "14120000",

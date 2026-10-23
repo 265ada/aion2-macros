@@ -258,7 +258,8 @@
 "ko": "빠른 베기",
 "cd": null,
 "mp": null,
-"icon": "ICON_AS_SKILL_001"
+"icon": "ICON_AS_SKILL_001",
+"note": "Per hit (questlog Global data): 565 at skill Lv 12, 720 at 16, 860 at 20."
 },
 "Throw Shadowblade": {
 "cls": "assassin",
@@ -277,7 +278,8 @@
 "ko": "섬광 베기",
 "cd": 10,
 "mp": 50,
-"icon": "ICON_AS_SKILL_005"
+"icon": "ICON_AS_SKILL_005",
+"note": "Per hit (questlog Global data): 1,004 at skill Lv 12, 1,235 at 16."
 },
 "Ambush": {
 "cls": "assassin",
@@ -286,7 +288,8 @@
 "ko": "기습",
 "cd": 10,
 "mp": 100,
-"icon": "ICON_AS_SKILL_006"
+"icon": "ICON_AS_SKILL_006",
+"note": "Per hit (questlog Global data): 1,167 at skill Lv 12 and 1,444 at 16, plus 30% when it lands from behind."
 },
 "Shadowstrike": {
 "cls": "assassin",
@@ -296,7 +299,7 @@
 "cd": 20,
 "mp": 150,
 "icon": "ICON_AS_SKILL_007",
-"note": "Option 2's crit-damage buff lasts 10 s on Global (Korea's Sep 16 value; the aion2.app text says 5 s)."
+"note": "Option 2's crit-damage buff lasts 10 s on Global (Korea's Sep 16 value; the aion2.app text says 5 s). Per hit (questlog Global data): 772 at skill Lv 12, 993 at 16."
 },
 "Savage Roar": {
 "cls": "assassin",
@@ -305,7 +308,8 @@
 "ko": "맹수의 포효",
 "cd": null,
 "mp": 120,
-"icon": "ICON_AS_SKILL_009"
+"icon": "ICON_AS_SKILL_009",
+"note": "Per hit (questlog Global data): 670 at skill Lv 12, 854 at 16, 1,021 at 20."
 },
 "Insignia Explosion": {
 "cls": "assassin",
@@ -314,7 +318,8 @@
 "ko": "문양 폭발",
 "cd": 10,
 "mp": 200,
-"icon": "ICON_AS_SKILL_013"
+"icon": "ICON_AS_SKILL_013",
+"note": "Questlog Global data: 2,712 damage at skill Lv 16 (3,055 at 20) with no Insignia on the target and 4,340 (4,889) with 5, because each stack adds about 12%. Option 5 makes the cooldown 7 s."
 },
 "Savage Fang": {
 "cls": "assassin",
@@ -362,7 +367,8 @@
 "ko": "폭풍 난무",
 "cd": null,
 "mp": null,
-"icon": "ICON_AS_SKILL_034"
+"icon": "ICON_AS_SKILL_034",
+"note": "Per hit (questlog Global data): 742 at skill Lv 12, 908 at 16, 1,049 at 20. It only hits a staggered target."
 },
 "Heart Gore": {
 "cls": "assassin",
@@ -371,7 +377,8 @@
 "ko": "심장 찌르기",
 "cd": 5,
 "mp": null,
-"icon": "ICON_AS_SKILL_035"
+"icon": "ICON_AS_SKILL_035",
+"note": "Per hit (questlog Global data): 1,032 at skill Lv 12, 1,277 at 16, 1,504 at 20."
 },
 "Assault Ambush": {
 "cls": "assassin",
@@ -1383,7 +1390,8 @@
 "ko": "회오리 베기",
 "cd": 10.0,
 "mp": null,
-"icon": "ICON_AS_SKILL_019"
+"icon": "ICON_AS_SKILL_019",
+"note": "Per hit (questlog Global data): 1,662 at skill Lv 12, 2,044 at 16."
 },
 "Apply Poison": {
 "cls": "assassin",
@@ -2103,7 +2111,8 @@
 "ko": "침투",
 "cd": 20,
 "mp": null,
-"icon": "ICON_AS_SKILL_036"
+"icon": "ICON_AS_SKILL_036",
+"note": "Per hit (questlog Global data): 1,042 at skill Lv 12, 1,253 at 16."
 },
 "Shadow Fall": {
 "cls": "assassin",
@@ -2112,7 +2121,8 @@
 "ko": "그림자 낙하",
 "cd": 20,
 "mp": 100,
-"icon": "ICON_AS_SKILL_020"
+"icon": "ICON_AS_SKILL_020",
+"note": "Per hit (questlog Global data): 2,025 at skill Lv 12, 2,435 at 16. It only works on a stunned target."
 },
 "Defiance (assassin)": {
 "cls": "assassin",
